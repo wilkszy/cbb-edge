@@ -49,12 +49,7 @@ UA = ("Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
 def fetch_kenpom_html() -> str:
     if os.getenv("KENPOM_HTML"):
         return Path(os.environ["KENPOM_HTML"]).read_text()
-    try:
-        import cloudscraper  # handles kenpom's bot check better than requests
-        s = cloudscraper.create_scraper()
-    except ImportError:
-        s = requests.Session()
-    r = s.get("https://kenpom.com/", headers={"User-Agent": UA}, timeout=30)
+    r = requests.get("https://kenpom.com/", headers={"User-Agent": UA}, timeout=30)
     r.raise_for_status()
     return r.text
 
