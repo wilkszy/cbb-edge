@@ -4,29 +4,17 @@ A daily dashboard of college basketball games where the sportsbook spread differ
 
 ## How it runs
 
-KenPom blocks GitHub's servers, so the ratings pull happens on your computer:
+kenpom.com blocks scripted requests, so the ratings come from a page you save in your browser:
 
-1. **Your computer, each morning:** `python src/pull_kenpom.py` saves the public KenPom ratings to `data/kenpom.json` and pushes them.
-2. **GitHub, automatically:** that push triggers the workflow, which pulls odds and rebuilds the dashboard. Lines refresh again at about 4:17 PM ET using the morning's ratings.
+1. **You, each day (about 15 seconds):** open https://kenpom.com, press Cmd+S, save to Downloads, then run `python3 src/pull_kenpom.py` from the cbb-edge folder. It reads the saved page and pushes the ratings.
+2. **GitHub, automatically:** the push triggers the odds pull and dashboard rebuild. Lines refresh again at about 4:17 PM ET using that day's ratings.
 
 Dashboard: https://wilkszy.github.io/cbb-edge/
 
 ## One-time setup on your computer
 
-Needs Python 3 and Git, signed in to GitHub.
-
-    git clone https://github.com/wilkszy/cbb-edge.git
-    cd cbb-edge
-    pip3 install -r requirements.txt
-    python3 src/pull_kenpom.py        # test run
-
-**Schedule it on a Mac** (runs 9:05 AM daily if the Mac is awake): run `crontab -e` and add
-
-    5 9 * * * cd ~/cbb-edge && /usr/bin/python3 src/pull_kenpom.py >> ~/cbb-edge-pull.log 2>&1
-
-**Schedule it on Windows** (catches up after sleep): in Command Prompt from the cbb-edge folder,
-
-    schtasks /create /tn "CBB Edge KenPom" /sc daily /st 09:05 /tr "cmd /c cd /d %CD% && python src\pull_kenpom.py"
+    git clone https://github.com/wilkszy/cbb-edge.git ~/cbb-edge
+    python3 -m pip install --user beautifulsoup4 lxml requests
 
 ## How the numbers work
 
