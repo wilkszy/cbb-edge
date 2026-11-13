@@ -2,15 +2,31 @@
 
 A daily dashboard of college basketball games where the sportsbook spread differs most from a projection built on KenPom's public ratings. Runs on GitHub Actions and publishes to GitHub Pages: no server, no cost.
 
-## Setup (about 10 minutes)
+## How it runs
 
-1. **Get an odds key.** Sign up for the free plan at the-odds-api.com (500 credits/month). Each run uses about 2 credits, so two runs a day comes to about 120 a month.
-2. **Create a GitHub repo** (private is fine for Actions; Pages on a private repo needs a paid GitHub plan, so use a public repo if you're on the free plan). Upload everything in this folder, including the hidden `.github` folder.
-3. **Add the key.** Repo > Settings > Secrets and variables > Actions > New repository secret. Name: `ODDS_API_KEY`.
-4. **Turn on Pages.** Repo > Settings > Pages > Source: "Deploy from a branch", Branch: `main`, folder `/docs`.
-5. **Run it once.** Actions tab > "Daily CBB Edge refresh" > Run workflow. Your dashboard is live at `https://<username>.github.io/<repo>/` within a minute or two.
+KenPom blocks GitHub's servers, so the ratings pull happens on your computer:
 
-After that it refreshes automatically at about 9:17 AM and 4:17 PM ET. Edit the `cron` lines in `.github/workflows/daily.yml` to change the times.
+1. **Your computer, each morning:** `python src/pull_kenpom.py` saves the public KenPom ratings to `data/kenpom.json` and pushes them.
+2. **GitHub, automatically:** that push triggers the workflow, which pulls odds and rebuilds the dashboard. Lines refresh again at about 4:17 PM ET using the morning's ratings.
+
+Dashboard: https://wilkszy.github.io/cbb-edge/
+
+## One-time setup on your computer
+
+Needs Python 3 and Git, signed in to GitHub.
+
+    git clone https://github.com/wilkszy/cbb-edge.git
+    cd cbb-edge
+    pip3 install -r requirements.txt
+    python3 src/pull_kenpom.py        # test run
+
+**Schedule it on a Mac** (runs 9:05 AM daily if the Mac is awake): run `crontab -e` and add
+
+    5 9 * * * cd ~/cbb-edge && /usr/bin/python3 src/pull_kenpom.py >> ~/cbb-edge-pull.log 2>&1
+
+**Schedule it on Windows** (catches up after sleep): in Command Prompt from the cbb-edge folder,
+
+    schtasks /create /tn "CBB Edge KenPom" /sc daily /st 09:05 /tr "cmd /c cd /d %CD% && python src\pull_kenpom.py"
 
 ## How the numbers work
 
@@ -25,7 +41,7 @@ This is a ratings-based projection, **not** KenPom's own game predictions (those
 
 - **Neutral-site games:** the odds feed doesn't flag them. Add the game's Odds API event `id` (shown in `docs/data/latest.json`) to `src/neutral_sites.json` to drop home-court advantage for it.
 - **Unmatched team names:** listed at the bottom of the dashboard. Add a line to `src/aliases.json`: `"Odds API name": "KenPom name"`.
-- **If a run fails:** the Actions tab shows the error. The most likely cause is kenpom.com blocking GitHub's servers or changing its page layout; the script stops rather than publishing bad numbers.
+- **If a run fails:** the Actions tab shows the error. If the local pull fails, kenpom.com may have changed its page layout; the script stops rather than publishing bad numbers.
 - **Archive:** each day's slate is saved to `docs/data/YYYY-MM-DD.json`, so you can grade results later.
 
 ## Local test

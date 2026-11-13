@@ -232,9 +232,21 @@ def build(kp: dict, odds: list, now: datetime) -> dict:
             "avg_t": round(avg_t, 1)}
 
 
+KP_FILE = ROOT / "data" / "kenpom.json"
+
+
+def load_kenpom():
+    """In GitHub Actions, use the ratings snapshot pushed from your computer."""
+    if os.getenv("KENPOM_HTML") or not KP_FILE.exists():
+        return parse_kenpom(fetch_kenpom_html())
+    snap = json.loads(KP_FILE.read_text())
+    print(f"Using KenPom snapshot pulled {snap['pulled_at']}")
+    return snap["teams"], snap["through"]
+
+
 def main():
     now = datetime.now(timezone.utc)
-    kp, through = parse_kenpom(fetch_kenpom_html())
+    kp, through = load_kenpom()
     result = build(kp, fetch_odds(), now)
     payload = {
         "slate_date": now.astimezone(TZ).strftime("%Y-%m-%d"),
