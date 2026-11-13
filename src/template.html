@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CBB Edge | Book vs. KenPom</title>
+<style>
+  :root{
+    --bg:#0b0d0c; --panel:#141716; --line:#232826; --ink:#f2f4f3; --ink2:#a9b1ad; --muted:#6f7874;
+    --accent:#3ddc84; --accent-dim:#1f6b43; --bar-bg:#1c211f;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);font:14px/1.45 -apple-system,BlinkMacSystemFont,"Inter","Segoe UI",Roboto,sans-serif}
+  .wrap{max-width:1180px;margin:0 auto;padding:32px 20px 60px}
+  h1{font-size:28px;margin:0 0 4px;letter-spacing:-.02em}
+  .sub{color:var(--ink2);margin:0 0 24px}
+  .tiles{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px;margin-bottom:24px}
+  .tile{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:16px}
+  .tile .k{color:var(--muted);font-size:12px;text-transform:uppercase;letter-spacing:.06em}
+  .tile .v{font-size:34px;font-weight:700;color:var(--accent);margin-top:4px;font-variant-numeric:tabular-nums}
+  .tile .d{color:var(--ink2);font-size:13px}
+  .controls{display:flex;flex-wrap:wrap;gap:16px;align-items:center;margin-bottom:12px;color:var(--ink2)}
+  .controls input[type=range]{accent-color:var(--accent)}
+  .controls input[type=search]{background:var(--panel);border:1px solid var(--line);color:var(--ink);border-radius:8px;padding:7px 10px;width:220px}
+  table{width:100%;border-collapse:collapse;background:var(--panel);border:1px solid var(--line);border-radius:10px;overflow:hidden}
+  th,td{padding:10px 12px;text-align:left;border-bottom:1px solid var(--line);vertical-align:middle}
+  th{color:var(--muted);font-weight:600;font-size:12px;text-transform:uppercase;letter-spacing:.05em;cursor:pointer;user-select:none;white-space:nowrap}
+  th:hover{color:var(--ink)}
+  td:first-child{white-space:nowrap}
+  td.num{font-variant-numeric:tabular-nums;text-align:right;white-space:nowrap}
+  th.num{text-align:right}
+  tr:last-child td{border-bottom:none}
+  tbody tr:hover{background:#181c1a}
+  .match .t{font-weight:600}
+  .match .r{color:var(--muted);font-size:12px;margin-left:4px}
+  .match .meta{color:var(--muted);font-size:12px}
+  .pick{font-weight:700;color:var(--accent)}
+  .edge{display:flex;align-items:center;gap:8px;justify-content:flex-end}
+  .bar{width:90px;height:8px;background:var(--bar-bg);border-radius:4px;overflow:hidden}
+  .bar>span{display:block;height:100%;background:var(--accent);border-radius:0 4px 4px 0}
+  .edge b{min-width:38px;text-align:right}
+  .books{color:var(--muted);font-size:12px}
+  .tag{display:inline-block;font-size:11px;padding:1px 6px;border:1px solid var(--line);border-radius:999px;color:var(--ink2);margin-left:6px}
+  .note{color:var(--muted);font-size:12px;margin-top:18px;max-width:900px}
+  .empty{padding:40px;text-align:center;color:var(--ink2)}
+  details{margin-top:10px;color:var(--muted);font-size:12px}
+  @media (max-width:760px){ .hide-sm{display:none} }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>CBB Edge: Book vs. KenPom</h1>
+  <p class="sub" id="sub"></p>
+
+  <div class="tiles" id="tiles"></div>
+
+  <div class="controls">
+    <label>Min spread gap <input type="range" id="minDiff" min="0" max="8" step="0.5" value="0"> <b id="minDiffV">0.0</b> pts</label>
+    <input type="search" id="q" placeholder="Filter team or conference">
+  </div>
+
+  <table>
+    <thead><tr>
+      <th data-k="tip">Tip</th>
+      <th data-k="away">Matchup</th>
+      <th class="num" data-k="book_spread">Book (home)</th>
+      <th class="num" data-k="proj_spread">KenPom proj (home)</th>
+      <th class="num" data-k="absdiff">Spread gap</th>
+      <th data-k="pick">Value side</th>
+      <th class="hide-sm" data-k="best">Best line</th>
+      <th class="num hide-sm" data-k="ml_edge">ML edge</th>
+    </tr></thead>
+    <tbody id="rows"></tbody>
+  </table>
+
+  <p class="note" id="note"></p>
+</div>
+
+<script>
+const DATA = /*__DATA__*/null;
+const fmt = n => (n > 0 ? "+" : "") + n.toFixed(1);
+const pct = n => (n > 0 ? "+" : "") + (n * 100).toFixed(1) + "%";
+const esc = s => String(s).replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+
+let sortKey = "absdiff", sortDir = -1;
+
+function render(){
+  if(!DATA){ document.getElementById("rows").innerHTML = '<tr><td colspan="8" class="empty">No data yet. The first daily run will fill this in.</td></tr>'; return; }
+  const games = DATA.games.map(g => ({...g, absdiff: Math.abs(g.diff), best: g.best_line ? g.best_line.point : 0}));
+  const maxAbs = Math.max(4, ...games.map(g => g.absdiff));
+
+  document.getElementById("sub").textContent =
+    `Slate for ${DATA.slate_date}. Updated ${DATA.generated}. KenPom data through ${DATA.kenpom_through || "latest"}.`;
+
+  const big = games.filter(g => g.absdiff >= 3).length;
+  const top = games[0];
+  const mlTop = games.filter(g => g.ml_edge != null).sort((a,b) => b.ml_edge - a.ml_edge)[0];
+  document.getElementById("tiles").innerHTML = [
+    ["Games on the board", games.length, "matched to KenPom"],
+    ["Gaps of 3+ points", big, "book vs. projection"],
+    ["Biggest gap", top ? top.absdiff.toFixed(1) : "–", top ? `${esc(top.pick)} (${esc(top.away)} @ ${esc(top.home)})` : ""],
+    ["Top ML edge", mlTop ? pct(mlTop.ml_edge) : "–", mlTop ? esc(mlTop.pick) : ""],
+  ].map(([k,v,d]) => `<div class="tile"><div class="k">${k}</div><div class="v">${v}</div><div class="d">${d}</div></div>`).join("");
+
+  const min = +document.getElementById("minDiff").value;
+  const q = document.getElementById("q").value.trim().toLowerCase();
+  const rows = games
+    .filter(g => g.absdiff >= min)
+    .filter(g => !q || [g.home,g.away,g.home_conf,g.away_conf].join(" ").toLowerCase().includes(q))
+    .sort((a,b) => {
+      const x = a[sortKey], y = b[sortKey];
+      if (sortKey === "tip") return sortDir * (a.tip_iso < b.tip_iso ? -1 : 1);
+      return sortDir * ((x ?? -99) > (y ?? -99) ? 1 : (x ?? -99) < (y ?? -99) ? -1 : 0);
+    });
+
+  document.getElementById("rows").innerHTML = rows.length ? rows.map(g => {
+    const books = Object.entries(g.books).map(([b,v]) => `${b} ${fmt(v)}`).join(" · ");
+    const bl = g.best_line ? `${fmt(g.best_line.point)} (${g.best_line.price > 0 ? "+" : ""}${g.best_line.price}) ${esc(g.best_line.book)}` : "–";
+    return `<tr>
+      <td>${esc(g.tip)}</td>
+      <td class="match">
+        <div><span class="t">${esc(g.away)}</span><span class="r">#${g.away_rank}</span> @ <span class="t">${esc(g.home)}</span><span class="r">#${g.home_rank}</span>${g.neutral ? '<span class="tag">Neutral</span>' : ""}</div>
+        <div class="meta">Proj: ${esc(g.proj_score)} · ${g.poss} poss</div>
+      </td>
+      <td class="num">${fmt(g.book_spread)}<div class="books">${books}</div></td>
+      <td class="num">${fmt(g.proj_spread)}</td>
+      <td class="num"><div class="edge"><div class="bar"><span style="width:${(g.absdiff / maxAbs * 100).toFixed(0)}%"></span></div><b>${g.absdiff.toFixed(1)}</b></div></td>
+      <td class="pick">${esc(g.pick)}</td>
+      <td class="hide-sm">${bl}</td>
+      <td class="num hide-sm">${g.ml_edge == null ? "–" : pct(g.ml_edge)}</td>
+    </tr>`;
+  }).join("") : '<tr><td colspan="8" class="empty">No games match these filters.</td></tr>';
+
+  document.getElementById("note").innerHTML =
+    `How it works: projections use public KenPom ratings (AdjO, AdjD, AdjT) with the standard tempo-adjusted formula and ` +
+    `${DATA.hca} pts home-court advantage. They are not KenPom's official game predictions. Book line is the median home spread across listed books. ` +
+    `Spread gap = projected margin minus book margin. ML edge = projected win probability minus the market's no-vig probability for the value side ` +
+    `(win prob assumes a ${DATA.margin_sd}-pt margin std. dev.). Neutral-site games are only flagged when listed in neutral_sites.json.` +
+    (DATA.unmatched.length ? `<details><summary>${DATA.unmatched.length} team name(s) not matched to KenPom (games skipped)</summary>${DATA.unmatched.map(esc).join(", ")}</details>` : "");
+}
+
+document.querySelectorAll("th[data-k]").forEach(th => th.addEventListener("click", () => {
+  const k = th.dataset.k; sortDir = (sortKey === k) ? -sortDir : -1; sortKey = k; render();
+}));
+document.getElementById("minDiff").addEventListener("input", e => { document.getElementById("minDiffV").textContent = (+e.target.value).toFixed(1); render(); });
+document.getElementById("q").addEventListener("input", render);
+render();
+</script>
+</body>
+</html>
