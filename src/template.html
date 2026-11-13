@@ -6,44 +6,69 @@
 <title>CBB Edge | Book vs. KenPom</title>
 <style>
   :root{
-    --bg:#0b0d0c; --panel:#141716; --line:#232826; --ink:#f2f4f3; --ink2:#a9b1ad; --muted:#6f7874;
-    --accent:#3ddc84; --accent-dim:#1f6b43; --bar-bg:#1c211f;
+    --bg:#0b0d0c; --panel:#141716; --panel2:#181c1a; --line:#232826; --ink:#f2f4f3; --ink2:#a9b1ad; --muted:#6f7874;
+    --accent:#3ddc84; --bar-bg:#1c211f;
   }
   *{box-sizing:border-box}
   body{margin:0;background:var(--bg);color:var(--ink);font:14px/1.45 -apple-system,BlinkMacSystemFont,"Inter","Segoe UI",Roboto,sans-serif}
   .wrap{max-width:1180px;margin:0 auto;padding:32px 20px 60px}
   h1{font-size:28px;margin:0 0 4px;letter-spacing:-.02em}
+  h2{font-size:18px;margin:28px 0 4px}
+  h3{font-size:15px;margin:0}
   .sub{color:var(--ink2);margin:0 0 24px}
-  .tiles{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px;margin-bottom:24px}
+  .hint{color:var(--muted);font-size:13px;margin:0 0 12px}
+  .tiles{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px;margin-bottom:20px}
   .tile{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:16px}
   .tile .k{color:var(--muted);font-size:12px;text-transform:uppercase;letter-spacing:.06em}
   .tile .v{font-size:34px;font-weight:700;color:var(--accent);margin-top:4px;font-variant-numeric:tabular-nums}
   .tile .d{color:var(--ink2);font-size:13px}
+  .tabs{display:flex;gap:4px;border-bottom:1px solid var(--line);margin-bottom:18px}
+  .tabs button{background:none;border:none;color:var(--ink2);font:inherit;font-weight:600;padding:10px 14px;cursor:pointer;border-bottom:2px solid transparent;margin-bottom:-1px}
+  .tabs button:hover{color:var(--ink)}
+  .tabs button.on{color:var(--ink);border-bottom-color:var(--accent)}
+  .view{display:none}.view.on{display:block}
   .controls{display:flex;flex-wrap:wrap;gap:16px;align-items:center;margin-bottom:12px;color:var(--ink2)}
-  .controls input[type=range]{accent-color:var(--accent)}
+  .controls input[type=range],.controls input[type=checkbox]{accent-color:var(--accent)}
   .controls input[type=search]{background:var(--panel);border:1px solid var(--line);color:var(--ink);border-radius:8px;padding:7px 10px;width:220px}
   table{width:100%;border-collapse:collapse;background:var(--panel);border:1px solid var(--line);border-radius:10px;overflow:hidden}
   th,td{padding:10px 12px;text-align:left;border-bottom:1px solid var(--line);vertical-align:middle}
-  th{color:var(--muted);font-weight:600;font-size:12px;text-transform:uppercase;letter-spacing:.05em;cursor:pointer;user-select:none;white-space:nowrap}
-  th:hover{color:var(--ink)}
-  td:first-child{white-space:nowrap}
+  th{color:var(--muted);font-weight:600;font-size:12px;text-transform:uppercase;letter-spacing:.05em;white-space:nowrap}
+  th[data-k]{cursor:pointer;user-select:none}
+  th[data-k]:hover{color:var(--ink)}
+  td.tip{white-space:nowrap}
   td.num{font-variant-numeric:tabular-nums;text-align:right;white-space:nowrap}
   th.num{text-align:right}
   tr:last-child td{border-bottom:none}
-  tbody tr:hover{background:#181c1a}
+  tbody tr:hover{background:var(--panel2)}
+  .match{min-width:220px}
   .match .t{font-weight:600}
   .match .r{color:var(--muted);font-size:12px;margin-left:4px}
   .match .meta{color:var(--muted);font-size:12px}
   .pick{font-weight:700;color:var(--accent)}
   .edge{display:flex;align-items:center;gap:8px;justify-content:flex-end}
-  .bar{width:90px;height:8px;background:var(--bar-bg);border-radius:4px;overflow:hidden}
+  .bar{width:80px;height:8px;background:var(--bar-bg);border-radius:4px;overflow:hidden}
   .bar>span{display:block;height:100%;background:var(--accent);border-radius:0 4px 4px 0}
   .edge b{min-width:38px;text-align:right}
-  .books{color:var(--muted);font-size:12px}
-  .tag{display:inline-block;font-size:11px;padding:1px 6px;border:1px solid var(--line);border-radius:999px;color:var(--ink2);margin-left:6px}
-  .note{color:var(--muted);font-size:12px;margin-top:18px;max-width:900px}
-  .empty{padding:40px;text-align:center;color:var(--ink2)}
-  details{margin-top:10px;color:var(--muted);font-size:12px}
+  .books{color:var(--muted);font-size:12px;white-space:normal;max-width:170px;margin-left:auto}
+  .tag{display:inline-block;font-size:11px;padding:1px 6px;border:1px solid var(--line);border-radius:999px;color:var(--ink2);margin-left:6px;white-space:nowrap}
+  .cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:12px}
+  .card{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:16px;display:flex;flex-direction:column;gap:6px}
+  .card .rank{color:var(--muted);font-size:12px}
+  .card .big{font-size:30px;font-weight:700;color:var(--accent);font-variant-numeric:tabular-nums;line-height:1.1}
+  .card .big small{font-size:13px;color:var(--ink2);font-weight:500;margin-left:6px}
+  .card .side{font-size:16px;font-weight:700}
+  .card .line{color:var(--ink2);font-size:13px}
+  .card .vs{color:var(--muted);font-size:12px}
+  .conf{background:var(--panel);border:1px solid var(--line);border-radius:10px;margin-bottom:12px;overflow:hidden}
+  .conf summary{display:flex;justify-content:space-between;align-items:center;padding:14px 16px;cursor:pointer;list-style:none}
+  .conf summary::-webkit-details-marker{display:none}
+  .conf summary .stats{color:var(--ink2);font-size:13px;font-variant-numeric:tabular-nums}
+  .conf summary .stats b{color:var(--accent)}
+  .conf table{border:none;border-radius:0;border-top:1px solid var(--line);table-layout:fixed}
+  .conf col.c1{width:90px}.conf col.c3,.conf col.c4{width:120px}.conf col.c5{width:150px}.conf col.c6{width:190px}.conf col.c7{width:90px}
+  .note{color:var(--muted);font-size:12px;margin-top:22px;max-width:900px}
+  .empty{padding:32px;text-align:center;color:var(--ink2)}
+  details.unm{margin-top:10px;color:var(--muted);font-size:12px}
   @media (max-width:760px){ .hide-sm{display:none} }
 </style>
 </head>
@@ -51,27 +76,51 @@
 <div class="wrap">
   <h1>CBB Edge: Book vs. KenPom</h1>
   <p class="sub" id="sub"></p>
-
   <div class="tiles" id="tiles"></div>
 
-  <div class="controls">
-    <label>Min spread gap <input type="range" id="minDiff" min="0" max="8" step="0.5" value="0"> <b id="minDiffV">0.0</b> pts</label>
-    <input type="search" id="q" placeholder="Filter team or conference">
+  <div class="tabs">
+    <button data-v="value" class="on">Best value</button>
+    <button data-v="all">All games</button>
+    <button data-v="conf">By conference</button>
   </div>
 
-  <table>
-    <thead><tr>
-      <th data-k="tip">Tip</th>
-      <th data-k="away">Matchup</th>
-      <th class="num" data-k="book_spread">Book (home)</th>
-      <th class="num" data-k="proj_spread">KenPom proj (home)</th>
-      <th class="num" data-k="absdiff">Spread gap</th>
-      <th data-k="pick">Value side</th>
-      <th class="hide-sm" data-k="best">Best line</th>
-      <th class="num hide-sm" data-k="ml_edge">ML edge</th>
-    </tr></thead>
-    <tbody id="rows"></tbody>
-  </table>
+  <section class="view on" id="v-value">
+    <h2>Best spread value</h2>
+    <p class="hint">Biggest gaps between the book and the KenPom projection, in games with spreads of 20 or less. Huge spreads are left out because projections run consistently smaller than the book there.</p>
+    <div class="cards" id="spreadCards"></div>
+    <h2>Best moneyline value</h2>
+    <p class="hint">KenPom win probability minus the market's no-vig probability, for sides the market gives a 15% to 85% chance.</p>
+    <div class="cards" id="mlCards"></div>
+    <h2>Spread and moneyline agree</h2>
+    <p class="hint">Games where both the spread gap (2+ pts) and the moneyline edge point to the same side.</p>
+    <div class="cards" id="agreeCards"></div>
+  </section>
+
+  <section class="view" id="v-all">
+    <div class="controls">
+      <label>Min spread gap <input type="range" id="minDiff" min="0" max="8" step="0.5" value="0"> <b id="minDiffV">0.0</b> pts</label>
+      <label><input type="checkbox" id="hideBig"> Hide spreads over 20</label>
+      <input type="search" id="q" placeholder="Filter team or conference">
+    </div>
+    <table>
+      <thead><tr>
+        <th data-k="tip">Tip</th>
+        <th data-k="away">Matchup</th>
+        <th class="num" data-k="book_spread">Book (home)</th>
+        <th class="num" data-k="proj_spread">KenPom proj (home)</th>
+        <th class="num" data-k="absdiff">Spread gap</th>
+        <th data-k="pick">Value side</th>
+        <th class="hide-sm" data-k="best">Best line</th>
+        <th class="num hide-sm" data-k="ml_edge">ML edge</th>
+      </tr></thead>
+      <tbody id="rows"></tbody>
+    </table>
+  </section>
+
+  <section class="view" id="v-conf">
+    <p class="hint">Non-conference games appear under both teams' conferences. Conferences are sorted by number of games today.</p>
+    <div id="confList"></div>
+  </section>
 
   <p class="note" id="note"></p>
 </div>
@@ -80,71 +129,141 @@
 const DATA = /*__DATA__*/null;
 const fmt = n => (n > 0 ? "+" : "") + n.toFixed(1);
 const pct = n => (n > 0 ? "+" : "") + (n * 100).toFixed(1) + "%";
+const p0 = n => (n * 100).toFixed(0) + "%";
 const esc = s => String(s).replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const BIG = 20;
 
-let sortKey = "absdiff", sortDir = -1;
+let sortKey = "absdiff", sortDir = -1, games = [], maxAbs = 4;
 
-function render(){
-  if(!DATA){ document.getElementById("rows").innerHTML = '<tr><td colspan="8" class="empty">No data yet. The first daily run will fill this in.</td></tr>'; return; }
-  const games = DATA.games.map(g => ({...g, absdiff: Math.abs(g.diff), best: g.best_line ? g.best_line.point : 0}));
-  const maxAbs = Math.max(4, ...games.map(g => g.absdiff));
+function prep(){
+  games = DATA.games.map(g => {
+    const pickHome = g.pick === g.home;
+    return {...g, absdiff: Math.abs(g.diff), best: g.best_line ? g.best_line.point : 0,
+      pickHome, confGame: g.home_conf === g.away_conf,
+      kpPick: pickHome ? g.kp_home_wp : 1 - g.kp_home_wp,
+      mktPick: g.mkt_home_wp == null ? null : (pickHome ? g.mkt_home_wp : 1 - g.mkt_home_wp),
+      pickSpread: pickHome ? g.book_spread : -g.book_spread};
+  });
+  maxAbs = Math.max(4, ...games.map(g => g.absdiff));
+}
 
+const matchup = g => `<span class="t">${esc(g.away)}</span><span class="r">#${g.away_rank}</span> @ <span class="t">${esc(g.home)}</span><span class="r">#${g.home_rank}</span>${g.neutral ? '<span class="tag">Neutral</span>' : ""}`;
+const bestLine = g => g.best_line ? `${fmt(g.best_line.point)} (${g.best_line.price > 0 ? "+" : ""}${g.best_line.price}) ${esc(g.best_line.book)}` : "–";
+const edgeCell = g => `<div class="edge"><div class="bar"><span style="width:${(g.absdiff / maxAbs * 100).toFixed(0)}%"></span></div><b>${g.absdiff.toFixed(1)}</b></div>`;
+
+function header(){
   document.getElementById("sub").textContent =
     `Slate for ${DATA.slate_date}. Updated ${DATA.generated}. KenPom data through ${DATA.kenpom_through || "latest"}.`;
-
-  const big = games.filter(g => g.absdiff >= 3).length;
-  const top = games[0];
-  const mlTop = games.filter(g => g.ml_edge != null).sort((a,b) => b.ml_edge - a.ml_edge)[0];
+  const comp = games.filter(g => Math.abs(g.book_spread) <= BIG);
+  const top = [...comp].sort((a,b) => b.absdiff - a.absdiff)[0];
+  const ml = games.filter(g => g.mktPick != null && g.mktPick >= .15 && g.mktPick <= .85).sort((a,b) => b.ml_edge - a.ml_edge)[0];
   document.getElementById("tiles").innerHTML = [
-    ["Games on the board", games.length, "matched to KenPom"],
-    ["Gaps of 3+ points", big, "book vs. projection"],
-    ["Biggest gap", top ? top.absdiff.toFixed(1) : "–", top ? `${esc(top.pick)} (${esc(top.away)} @ ${esc(top.home)})` : ""],
-    ["Top ML edge", mlTop ? pct(mlTop.ml_edge) : "–", mlTop ? esc(mlTop.pick) : ""],
+    ["Games on the board", games.length, `across ${new Set(games.flatMap(g => [g.home_conf, g.away_conf])).size} conferences`],
+    ["Gaps of 3+ points", games.filter(g => g.absdiff >= 3 && Math.abs(g.book_spread) <= BIG).length, `in games with spreads of ${BIG} or less`],
+    ["Best spread value", top ? top.absdiff.toFixed(1) : "–", top ? `${esc(top.pick)} ${fmt(top.pickSpread)}` : ""],
+    ["Best ML value", ml ? pct(ml.ml_edge) : "–", ml ? `${esc(ml.pick)} (KenPom ${p0(ml.kpPick)} vs. market ${p0(ml.mktPick)})` : ""],
   ].map(([k,v,d]) => `<div class="tile"><div class="k">${k}</div><div class="v">${v}</div><div class="d">${d}</div></div>`).join("");
+}
 
+function card(g, i, mode){
+  const big = mode === "ml" ? `${pct(g.ml_edge)}<small>win prob edge</small>` : `${g.absdiff.toFixed(1)}<small>pt gap</small>`;
+  const detail = mode === "ml"
+    ? `KenPom ${p0(g.kpPick)} vs. market ${p0(g.mktPick)} · spread gap ${g.absdiff.toFixed(1)}`
+    : `Book ${fmt(g.pickSpread)} · KenPom ${fmt(g.pickHome ? g.proj_spread : -g.proj_spread)}` + (g.ml_edge != null ? ` · ML edge ${pct(g.ml_edge)}` : "");
+  return `<div class="card">
+    <div class="rank">#${i + 1} · ${esc(g.tip)}</div>
+    <div class="big">${big}</div>
+    <div class="side">${esc(g.pick)} ${fmt(g.pickSpread)}</div>
+    <div class="line">${detail}</div>
+    <div class="line">Best line: ${bestLine(g)}</div>
+    <div class="vs">${esc(g.away)} @ ${esc(g.home)}${g.confGame ? ` · ${esc(g.home_conf)}` : ` · ${esc(g.away_conf)} vs. ${esc(g.home_conf)}`}</div>
+  </div>`;
+}
+const fill = (id, list, mode) => document.getElementById(id).innerHTML =
+  list.length ? list.map((g, i) => card(g, i, mode)).join("") : '<div class="empty">Nothing qualifies today.</div>';
+
+function renderValue(){
+  const comp = games.filter(g => Math.abs(g.book_spread) <= BIG);
+  fill("spreadCards", [...comp].sort((a,b) => b.absdiff - a.absdiff).slice(0, 6), "spread");
+  fill("mlCards", games.filter(g => g.mktPick != null && g.mktPick >= .15 && g.mktPick <= .85 && g.ml_edge > 0)
+    .sort((a,b) => b.ml_edge - a.ml_edge).slice(0, 6), "ml");
+  fill("agreeCards", comp.filter(g => g.absdiff >= 2 && g.ml_edge > 0 && g.mktPick >= .15 && g.mktPick <= .85)
+    .sort((a,b) => b.absdiff - a.absdiff).slice(0, 6), "spread");
+}
+
+function row(g){
+  const books = Object.entries(g.books).map(([b,v]) => `${b} ${fmt(v)}`).join(" · ");
+  return `<tr>
+    <td class="tip">${esc(g.tip)}</td>
+    <td class="match"><div>${matchup(g)}</div><div class="meta">Proj: ${esc(g.proj_score)} · ${g.poss} poss</div></td>
+    <td class="num">${fmt(g.book_spread)}<div class="books">${books}</div></td>
+    <td class="num">${fmt(g.proj_spread)}</td>
+    <td class="num">${edgeCell(g)}</td>
+    <td class="pick">${esc(g.pick)}</td>
+    <td class="hide-sm">${bestLine(g)}</td>
+    <td class="num hide-sm">${g.ml_edge == null ? "–" : pct(g.ml_edge)}</td>
+  </tr>`;
+}
+
+function renderAll(){
   const min = +document.getElementById("minDiff").value;
+  const hideBig = document.getElementById("hideBig").checked;
   const q = document.getElementById("q").value.trim().toLowerCase();
   const rows = games
-    .filter(g => g.absdiff >= min)
+    .filter(g => g.absdiff >= min && (!hideBig || Math.abs(g.book_spread) <= BIG))
     .filter(g => !q || [g.home,g.away,g.home_conf,g.away_conf].join(" ").toLowerCase().includes(q))
     .sort((a,b) => {
-      const x = a[sortKey], y = b[sortKey];
       if (sortKey === "tip") return sortDir * (a.tip_iso < b.tip_iso ? -1 : 1);
-      return sortDir * ((x ?? -99) > (y ?? -99) ? 1 : (x ?? -99) < (y ?? -99) ? -1 : 0);
+      const x = a[sortKey] ?? -99, y = b[sortKey] ?? -99;
+      return sortDir * (x > y ? 1 : x < y ? -1 : 0);
     });
+  document.getElementById("rows").innerHTML = rows.length ? rows.map(row).join("")
+    : '<tr><td colspan="8" class="empty">No games match these filters.</td></tr>';
+}
 
-  document.getElementById("rows").innerHTML = rows.length ? rows.map(g => {
-    const books = Object.entries(g.books).map(([b,v]) => `${b} ${fmt(v)}`).join(" · ");
-    const bl = g.best_line ? `${fmt(g.best_line.point)} (${g.best_line.price > 0 ? "+" : ""}${g.best_line.price}) ${esc(g.best_line.book)}` : "–";
-    return `<tr>
-      <td>${esc(g.tip)}</td>
-      <td class="match">
-        <div><span class="t">${esc(g.away)}</span><span class="r">#${g.away_rank}</span> @ <span class="t">${esc(g.home)}</span><span class="r">#${g.home_rank}</span>${g.neutral ? '<span class="tag">Neutral</span>' : ""}</div>
-        <div class="meta">Proj: ${esc(g.proj_score)} · ${g.poss} poss</div>
-      </td>
-      <td class="num">${fmt(g.book_spread)}<div class="books">${books}</div></td>
-      <td class="num">${fmt(g.proj_spread)}</td>
-      <td class="num"><div class="edge"><div class="bar"><span style="width:${(g.absdiff / maxAbs * 100).toFixed(0)}%"></span></div><b>${g.absdiff.toFixed(1)}</b></div></td>
-      <td class="pick">${esc(g.pick)}</td>
-      <td class="hide-sm">${bl}</td>
-      <td class="num hide-sm">${g.ml_edge == null ? "–" : pct(g.ml_edge)}</td>
-    </tr>`;
-  }).join("") : '<tr><td colspan="8" class="empty">No games match these filters.</td></tr>';
+function renderConf(){
+  const by = {};
+  games.forEach(g => new Set([g.home_conf, g.away_conf]).forEach(c => (by[c] = by[c] || []).push(g)));
+  const confs = Object.entries(by).sort((a,b) => b[1].length - a[1].length || a[0].localeCompare(b[0]));
+  document.getElementById("confList").innerHTML = confs.map(([c, list], i) => {
+    list.sort((a,b) => b.absdiff - a.absdiff);
+    const avg = list.reduce((s,g) => s + g.absdiff, 0) / list.length;
+    const inConf = list.filter(g => g.confGame).length;
+    return `<details class="conf"${i < 3 ? " open" : ""}>
+      <summary><h3>${esc(c)}</h3><span class="stats">${list.length} game${list.length > 1 ? "s" : ""}${inConf ? ` (${inConf} in-conference)` : ""} · avg gap ${avg.toFixed(1)} · top gap <b>${list[0].absdiff.toFixed(1)}</b></span></summary>
+      <table><colgroup><col class="c1"><col><col class="c3"><col class="c4"><col class="c5"><col class="c6"><col class="c7 hide-sm"></colgroup><thead><tr><th>Tip</th><th>Matchup</th><th class="num">Book (home)</th><th class="num">KenPom proj</th><th class="num">Spread gap</th><th>Value side</th><th class="num hide-sm">ML edge</th></tr></thead>
+      <tbody>${list.map(g => `<tr>
+        <td class="tip">${esc(g.tip)}</td>
+        <td class="match"><div>${matchup(g)}${g.confGame ? '<span class="tag">Conf</span>' : ""}</div></td>
+        <td class="num">${fmt(g.book_spread)}</td><td class="num">${fmt(g.proj_spread)}</td>
+        <td class="num">${edgeCell(g)}</td><td class="pick">${esc(g.pick)}</td>
+        <td class="num hide-sm">${g.ml_edge == null ? "–" : pct(g.ml_edge)}</td></tr>`).join("")}</tbody></table>
+    </details>`;
+  }).join("");
+}
 
+function init(){
+  if(!DATA){ document.querySelector(".wrap").insertAdjacentHTML("beforeend", '<div class="empty">No data yet. The first daily run will fill this in.</div>'); return; }
+  prep(); header(); renderValue(); renderAll(); renderConf();
   document.getElementById("note").innerHTML =
     `How it works: projections use public KenPom ratings (AdjO, AdjD, AdjT) with the standard tempo-adjusted formula and ` +
     `${DATA.hca} pts home-court advantage. They are not KenPom's official game predictions. Book line is the median home spread across listed books. ` +
     `Spread gap = projected margin minus book margin. ML edge = projected win probability minus the market's no-vig probability for the value side ` +
-    `(win prob assumes a ${DATA.margin_sd}-pt margin std. dev.). Neutral-site games are only flagged when listed in neutral_sites.json.` +
-    (DATA.unmatched.length ? `<details><summary>${DATA.unmatched.length} team name(s) not matched to KenPom (games skipped)</summary>${DATA.unmatched.map(esc).join(", ")}</details>` : "");
+    `(win prob assumes a ${DATA.margin_sd}-pt margin std. dev.). Neutral-site games are only flagged when listed in neutral_sites.json. No injury or lineup news is included.` +
+    (DATA.unmatched.length ? `<details class="unm"><summary>${DATA.unmatched.length} team name(s) not matched to KenPom (games skipped)</summary>${DATA.unmatched.map(esc).join(", ")}</details>` : "");
 }
 
-document.querySelectorAll("th[data-k]").forEach(th => th.addEventListener("click", () => {
-  const k = th.dataset.k; sortDir = (sortKey === k) ? -sortDir : -1; sortKey = k; render();
+document.querySelectorAll(".tabs button").forEach(b => b.addEventListener("click", () => {
+  document.querySelectorAll(".tabs button").forEach(x => x.classList.toggle("on", x === b));
+  document.querySelectorAll(".view").forEach(v => v.classList.toggle("on", v.id === "v-" + b.dataset.v));
 }));
-document.getElementById("minDiff").addEventListener("input", e => { document.getElementById("minDiffV").textContent = (+e.target.value).toFixed(1); render(); });
-document.getElementById("q").addEventListener("input", render);
-render();
+document.querySelectorAll("th[data-k]").forEach(th => th.addEventListener("click", () => {
+  const k = th.dataset.k; sortDir = (sortKey === k) ? -sortDir : -1; sortKey = k; renderAll();
+}));
+document.getElementById("minDiff").addEventListener("input", e => { document.getElementById("minDiffV").textContent = (+e.target.value).toFixed(1); renderAll(); });
+document.getElementById("hideBig").addEventListener("change", renderAll);
+document.getElementById("q").addEventListener("input", renderAll);
+init();
 </script>
 </body>
 </html>
