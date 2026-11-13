@@ -179,6 +179,7 @@ def build(kp: dict, odds: list, now: datetime) -> dict:
         if not h_kp or not a_kp:
             continue
         home_spreads, ml_home_p, books = {}, [], []
+        ml_prices_h, ml_prices_a = [], []
         best_home = best_away = None
         for bk in ev.get("bookmakers", []):
             for mk in bk.get("markets", []):
@@ -195,6 +196,7 @@ def build(kp: dict, odds: list, now: datetime) -> dict:
                 elif mk["key"] == "h2h":
                     ph, pa = implied(outs[h_name]["price"]), implied(outs[a_name]["price"])
                     ml_home_p.append(ph / (ph + pa))  # vig removed
+                    ml_prices_h.append(outs[h_name]["price"]); ml_prices_a.append(outs[a_name]["price"])
         if not home_spreads:
             continue
         neutral = ev["id"] in neutral_ids
@@ -224,6 +226,8 @@ def build(kp: dict, odds: list, now: datetime) -> dict:
                 {"point": best[0], "price": best[1], "book": BOOK_LABELS.get(best[2], best[2])},
             "kp_home_wp": round(wp, 3),
             "mkt_home_wp": None if mkt_wp is None else round(mkt_wp, 3),
+            "ml_home": statistics.median(ml_prices_h) if ml_prices_h else None,
+            "ml_away": statistics.median(ml_prices_a) if ml_prices_a else None,
             "ml_edge": None if mkt_wp is None else round(
                 (wp - mkt_wp) if pick_home else ((1 - wp) - (1 - mkt_wp)), 3),
         })
@@ -255,6 +259,8 @@ def main():
         "hca": HCA, "margin_sd": MARGIN_SD, **result,
     }
     (DOCS / "data").mkdir(parents=True, exist_ok=True)
+    from track import update_track
+    payload["track"] = update_track(payload["games"], now, DOCS / "data" / "ledger.json")
     (DOCS / "data" / f"{payload['slate_date']}.json").write_text(json.dumps(payload, indent=2))
     (DOCS / "data" / "latest.json").write_text(json.dumps(payload, indent=2))
     tpl = (ROOT / "src" / "template.html").read_text()
