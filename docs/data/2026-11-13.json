@@ -1,9 +1,10 @@
 {
   "slate_date": "2026-11-13",
-  "generated": "Nov 13, 2026 11:51 AM ET",
+  "generated": "Nov 13, 2026 12:35 PM ET",
   "kenpom_through": "Thursday, November 12",
   "hca": 3.2,
   "margin_sd": 11.0,
+  "luck_flag": 0.15,
   "games": [
     {
       "id": "d92ca99754896c9df89f8734a83693b1",
@@ -31,11 +32,29 @@
       "pick": "SIUE",
       "best_line": {
         "point": 44.5,
-        "price": -110,
+        "price": -104,
         "book": "FD"
       },
       "kp_home_wp": 0.999,
       "mkt_home_wp": 0.971,
+      "home_luck": -0.15,
+      "away_luck": -0.229,
+      "proj_total": 147.9,
+      "book_total": 148.5,
+      "totals_books": {
+        "FD": 148.5,
+        "ESPN": 148.5,
+        "DK": 148.5,
+        "MGM": 148.5,
+        "BR": 148.5
+      },
+      "tot_diff": -0.6,
+      "ou_pick": "Under",
+      "ou_best": {
+        "point": 148.5,
+        "price": -110,
+        "book": "FD"
+      },
       "ml_home": -10000,
       "ml_away": 3300,
       "ml_edge": -0.028
@@ -57,7 +76,7 @@
         "ESPN": -36.5,
         "DK": -36.5,
         "MGM": -36.5,
-        "BR": -36.5
+        "BR": -35.5
       },
       "proj_spread": -26.9,
       "proj_score": "Sam Houston St. 70, Illinois 97",
@@ -71,6 +90,24 @@
       },
       "kp_home_wp": 0.993,
       "mkt_home_wp": 0.971,
+      "home_luck": -0.14,
+      "away_luck": 0.114,
+      "proj_total": 166.9,
+      "book_total": 171.5,
+      "totals_books": {
+        "FD": 171.5,
+        "ESPN": 171.5,
+        "DK": 171.5,
+        "MGM": 171.5,
+        "BR": 172.5
+      },
+      "tot_diff": -4.6,
+      "ou_pick": "Under",
+      "ou_best": {
+        "point": 172.5,
+        "price": -113,
+        "book": "BR"
+      },
       "ml_home": -10000,
       "ml_away": 3300,
       "ml_edge": -0.022
@@ -106,6 +143,24 @@
       },
       "kp_home_wp": 0.98,
       "mkt_home_wp": 0.971,
+      "home_luck": -0.087,
+      "away_luck": 0.152,
+      "proj_total": 144.1,
+      "book_total": 146.5,
+      "totals_books": {
+        "DK": 147.5,
+        "ESPN": 146.5,
+        "MGM": 146.5,
+        "FD": 146.5,
+        "BR": 147.5
+      },
+      "tot_diff": -2.4,
+      "ou_pick": "Under",
+      "ou_best": {
+        "point": 147.5,
+        "price": -115,
+        "book": "DK"
+      },
       "ml_home": -10000,
       "ml_away": 3300,
       "ml_edge": -0.009
@@ -127,7 +182,7 @@
         "ESPN": -15.5,
         "MGM": -15.5,
         "BR": -16.5,
-        "FD": -15.5
+        "FD": -14.5
       },
       "proj_spread": -6.9,
       "proj_score": "Arkansas Pine Bluff 72, Cal Baptist 79",
@@ -136,14 +191,32 @@
       "pick": "Arkansas Pine Bluff",
       "best_line": {
         "point": 16.5,
-        "price": -112,
+        "price": -132,
         "book": "BR"
       },
       "kp_home_wp": 0.735,
-      "mkt_home_wp": 0.912,
+      "mkt_home_wp": 0.906,
+      "home_luck": -0.041,
+      "away_luck": -0.0,
+      "proj_total": 151.1,
+      "book_total": 145.5,
+      "totals_books": {
+        "DK": 145.5,
+        "ESPN": 145.5,
+        "MGM": 145.5,
+        "BR": 149.5,
+        "FD": 145.5
+      },
+      "tot_diff": 5.6,
+      "ou_pick": "Over",
+      "ou_best": {
+        "point": 145.5,
+        "price": -108,
+        "book": "DK"
+      },
       "ml_home": -1800,
-      "ml_away": 980,
-      "ml_edge": 0.177
+      "ml_away": 920,
+      "ml_edge": 0.171
     },
     {
       "id": "434e3816a0d976cb0b270d5b09b24286",
@@ -175,6 +248,24 @@
       },
       "kp_home_wp": 0.936,
       "mkt_home_wp": 0.964,
+      "home_luck": -0.101,
+      "away_luck": 0.08,
+      "proj_total": 147.2,
+      "book_total": 149.5,
+      "totals_books": {
+        "DK": 149.5,
+        "ESPN": 149.5,
+        "MGM": 148.5,
+        "BR": 149.5,
+        "FD": 148.5
+      },
+      "tot_diff": -2.3,
+      "ou_pick": "Under",
+      "ou_best": {
+        "point": 149.5,
+        "price": -115,
+        "book": "DK"
+      },
       "ml_home": -10000.0,
       "ml_away": 2750.0,
       "ml_edge": 0.028
@@ -193,7 +284,7 @@
       "book_spread": -29.5,
       "books": {
         "FD": -29.5,
-        "ESPN": -29.5,
+        "ESPN": -30.5,
         "DK": -29.5,
         "MGM": -29.5,
         "BR": -30.5
@@ -205,11 +296,29 @@
       "pick": "Louisiana Monroe",
       "best_line": {
         "point": 30.5,
-        "price": -117,
-        "book": "BR"
+        "price": -115,
+        "book": "ESPN"
       },
       "kp_home_wp": 0.979,
       "mkt_home_wp": 0.976,
+      "home_luck": 0.008,
+      "away_luck": -0.18,
+      "proj_total": 152.2,
+      "book_total": 146.5,
+      "totals_books": {
+        "FD": 146.5,
+        "ESPN": 146.5,
+        "DK": 147.5,
+        "MGM": 146.5,
+        "BR": 146.5
+      },
+      "tot_diff": 5.7,
+      "ou_pick": "Over",
+      "ou_best": {
+        "point": 146.5,
+        "price": -110,
+        "book": "FD"
+      },
       "ml_home": -55000.0,
       "ml_away": 4150.0,
       "ml_edge": -0.003
@@ -245,6 +354,24 @@
       },
       "kp_home_wp": 0.98,
       "mkt_home_wp": 0.974,
+      "home_luck": 0.0,
+      "away_luck": -0.008,
+      "proj_total": 157.9,
+      "book_total": 163.5,
+      "totals_books": {
+        "DK": 163.5,
+        "ESPN": 163.5,
+        "MGM": 162.5,
+        "BR": 164.5,
+        "FD": 162.5
+      },
+      "tot_diff": -5.6,
+      "ou_pick": "Under",
+      "ou_best": {
+        "point": 164.5,
+        "price": -117,
+        "book": "BR"
+      },
       "ml_home": -30000.0,
       "ml_away": 3650.0,
       "ml_edge": -0.006
@@ -280,6 +407,24 @@
       },
       "kp_home_wp": 0.924,
       "mkt_home_wp": 0.957,
+      "home_luck": 0.009,
+      "away_luck": 0.09,
+      "proj_total": 147.8,
+      "book_total": 149.5,
+      "totals_books": {
+        "FD": 148.5,
+        "ESPN": 149.5,
+        "DK": 149.5,
+        "MGM": 148.5,
+        "BR": 149.5
+      },
+      "tot_diff": -1.7,
+      "ou_pick": "Under",
+      "ou_best": {
+        "point": 149.5,
+        "price": -115,
+        "book": "ESPN"
+      },
       "ml_home": -10000.0,
       "ml_away": 2200.0,
       "ml_edge": 0.033
@@ -297,10 +442,10 @@
       "neutral": false,
       "book_spread": -32.5,
       "books": {
-        "FD": -33.5,
+        "FD": -32.5,
         "ESPN": -32.5,
         "DK": -32.5,
-        "BR": -32.5
+        "BR": -33.5
       },
       "proj_spread": -25.8,
       "proj_score": "North Alabama 61, Miami FL 86",
@@ -309,11 +454,29 @@
       "pick": "North Alabama",
       "best_line": {
         "point": 33.5,
-        "price": -110,
-        "book": "FD"
+        "price": -118,
+        "book": "BR"
       },
       "kp_home_wp": 0.99,
       "mkt_home_wp": 0.971,
+      "home_luck": -0.094,
+      "away_luck": 0.12,
+      "proj_total": 147.2,
+      "book_total": 152.5,
+      "totals_books": {
+        "FD": 151.5,
+        "ESPN": 152.5,
+        "DK": 152.5,
+        "MGM": 151.5,
+        "BR": 152.5
+      },
+      "tot_diff": -5.3,
+      "ou_pick": "Under",
+      "ou_best": {
+        "point": 152.5,
+        "price": -120,
+        "book": "ESPN"
+      },
       "ml_home": -10000,
       "ml_away": 3300,
       "ml_edge": -0.019
@@ -332,7 +495,7 @@
       "book_spread": -40.5,
       "books": {
         "DK": -40.5,
-        "ESPN": -40.5,
+        "ESPN": -41.5,
         "BR": -40.5,
         "FD": -40.5
       },
@@ -342,12 +505,30 @@
       "diff": -6.5,
       "pick": "Prairie View A&M",
       "best_line": {
-        "point": 40.5,
-        "price": -105,
-        "book": "DK"
+        "point": 41.5,
+        "price": -115,
+        "book": "ESPN"
       },
       "kp_home_wp": 0.999,
       "mkt_home_wp": 0.971,
+      "home_luck": 0.008,
+      "away_luck": -0.159,
+      "proj_total": 153.2,
+      "book_total": 154.5,
+      "totals_books": {
+        "DK": 154.5,
+        "ESPN": 154.5,
+        "MGM": 154.5,
+        "BR": 153.5,
+        "FD": 153.5
+      },
+      "tot_diff": -1.3,
+      "ou_pick": "Under",
+      "ou_best": {
+        "point": 154.5,
+        "price": -110,
+        "book": "DK"
+      },
       "ml_home": -10000,
       "ml_away": 3300,
       "ml_edge": -0.028
@@ -383,6 +564,24 @@
       },
       "kp_home_wp": 0.994,
       "mkt_home_wp": 0.971,
+      "home_luck": 0.037,
+      "away_luck": -0.01,
+      "proj_total": 153.9,
+      "book_total": 157.5,
+      "totals_books": {
+        "DK": 157.5,
+        "ESPN": 157.5,
+        "MGM": 157.5,
+        "BR": 155.5,
+        "FD": 156.5
+      },
+      "tot_diff": -3.6,
+      "ou_pick": "Under",
+      "ou_best": {
+        "point": 157.5,
+        "price": -115,
+        "book": "DK"
+      },
       "ml_home": -10000,
       "ml_away": 3300,
       "ml_edge": -0.023
@@ -401,7 +600,7 @@
       "book_spread": -36.5,
       "books": {
         "FD": -35.5,
-        "ESPN": -35.5,
+        "ESPN": -36.5,
         "DK": -36.5,
         "MGM": -36.5,
         "BR": -36.5
@@ -413,11 +612,29 @@
       "pick": "Merrimack",
       "best_line": {
         "point": 36.5,
-        "price": -112,
-        "book": "DK"
+        "price": -115,
+        "book": "ESPN"
       },
       "kp_home_wp": 0.997,
       "mkt_home_wp": 0.971,
+      "home_luck": 0.105,
+      "away_luck": -0.061,
+      "proj_total": 141.5,
+      "book_total": 141.5,
+      "totals_books": {
+        "FD": 141.5,
+        "ESPN": 140.5,
+        "DK": 141.5,
+        "MGM": 141.5,
+        "BR": 142.5
+      },
+      "tot_diff": 0.0,
+      "ou_pick": "Under",
+      "ou_best": {
+        "point": 142.5,
+        "price": -114,
+        "book": "BR"
+      },
       "ml_home": -10000,
       "ml_away": 3300,
       "ml_edge": -0.026
@@ -453,6 +670,24 @@
       },
       "kp_home_wp": 0.989,
       "mkt_home_wp": 0.976,
+      "home_luck": 0.054,
+      "away_luck": -0.014,
+      "proj_total": 154.2,
+      "book_total": 153.5,
+      "totals_books": {
+        "FD": 153.5,
+        "ESPN": 153.5,
+        "DK": 153.5,
+        "MGM": 153.5,
+        "BR": 154.5
+      },
+      "tot_diff": 0.7,
+      "ou_pick": "Over",
+      "ou_best": {
+        "point": 153.5,
+        "price": -115,
+        "book": "FD"
+      },
       "ml_home": -55000.0,
       "ml_away": 4150.0,
       "ml_edge": -0.013
@@ -488,6 +723,24 @@
       },
       "kp_home_wp": 0.941,
       "mkt_home_wp": 0.961,
+      "home_luck": 0.015,
+      "away_luck": -0.118,
+      "proj_total": 149.5,
+      "book_total": 152.5,
+      "totals_books": {
+        "FD": 151.5,
+        "ESPN": 152.5,
+        "DK": 152.5,
+        "MGM": 152.5,
+        "BR": 151.5
+      },
+      "tot_diff": -3.0,
+      "ou_pick": "Under",
+      "ou_best": {
+        "point": 152.5,
+        "price": -115,
+        "book": "ESPN"
+      },
       "ml_home": -10000.0,
       "ml_away": 2400.0,
       "ml_edge": 0.02
@@ -523,6 +776,24 @@
       },
       "kp_home_wp": 0.96,
       "mkt_home_wp": 0.968,
+      "home_luck": -0.021,
+      "away_luck": 0.007,
+      "proj_total": 156.1,
+      "book_total": 160.5,
+      "totals_books": {
+        "FD": 160.5,
+        "ESPN": 160.5,
+        "DK": 160.5,
+        "MGM": 160.5,
+        "BR": 159.5
+      },
+      "tot_diff": -4.4,
+      "ou_pick": "Under",
+      "ou_best": {
+        "point": 160.5,
+        "price": -105,
+        "book": "FD"
+      },
       "ml_home": -15000.0,
       "ml_away": 2900.0,
       "ml_edge": 0.007
@@ -558,6 +829,24 @@
       },
       "kp_home_wp": 0.87,
       "mkt_home_wp": 0.925,
+      "home_luck": 0.052,
+      "away_luck": 0.127,
+      "proj_total": 154.6,
+      "book_total": 156.5,
+      "totals_books": {
+        "FD": 156.5,
+        "ESPN": 156.5,
+        "DK": 156.5,
+        "MGM": 156.5,
+        "BR": 156.5
+      },
+      "tot_diff": -1.9,
+      "ou_pick": "Under",
+      "ou_best": {
+        "point": 156.5,
+        "price": -110,
+        "book": "FD"
+      },
       "ml_home": -3500,
       "ml_away": 1200,
       "ml_edge": 0.055
@@ -593,6 +882,24 @@
       },
       "kp_home_wp": 0.833,
       "mkt_home_wp": 0.918,
+      "home_luck": 0.0,
+      "away_luck": -0.032,
+      "proj_total": 153.9,
+      "book_total": 152.5,
+      "totals_books": {
+        "DK": 151.5,
+        "ESPN": 152.5,
+        "MGM": 152.5,
+        "FD": 152.5,
+        "BR": 152.5
+      },
+      "tot_diff": 1.4,
+      "ou_pick": "Over",
+      "ou_best": {
+        "point": 151.5,
+        "price": -110,
+        "book": "DK"
+      },
       "ml_home": -2800,
       "ml_away": 1160,
       "ml_edge": 0.085
@@ -628,9 +935,79 @@
       },
       "kp_home_wp": 0.837,
       "mkt_home_wp": 0.91,
+      "home_luck": 0.053,
+      "away_luck": 0.097,
+      "proj_total": 146.0,
+      "book_total": 142.5,
+      "totals_books": {
+        "DK": 142.5,
+        "ESPN": 141.5,
+        "MGM": 142.5,
+        "BR": 144.5,
+        "FD": 142.5
+      },
+      "tot_diff": 3.5,
+      "ou_pick": "Over",
+      "ou_best": {
+        "point": 141.5,
+        "price": -115,
+        "book": "ESPN"
+      },
       "ml_home": -2000,
       "ml_away": 1000,
       "ml_edge": 0.073
+    },
+    {
+      "id": "2151748c9e4175d788ed587a685e52d7",
+      "tip": "3:00 PM",
+      "tip_iso": "2026-11-13T20:00:00+00:00",
+      "home": "Cleveland St.",
+      "away": "West Florida",
+      "home_rank": 314,
+      "away_rank": 349,
+      "home_conf": "Horz",
+      "away_conf": "ASun",
+      "neutral": false,
+      "book_spread": -2.5,
+      "books": {
+        "DK": -2.5,
+        "ESPN": -2.5,
+        "MGM": -2.5,
+        "BR": -2.5
+      },
+      "proj_spread": -7.1,
+      "proj_score": "West Florida 75, Cleveland St. 82",
+      "poss": 70.5,
+      "diff": 4.6,
+      "pick": "Cleveland St.",
+      "best_line": {
+        "point": -2.5,
+        "price": -108,
+        "book": "DK"
+      },
+      "kp_home_wp": 0.742,
+      "mkt_home_wp": 0.561,
+      "home_luck": -0.101,
+      "away_luck": -0.141,
+      "proj_total": 157.7,
+      "book_total": 149.5,
+      "totals_books": {
+        "DK": 150.5,
+        "ESPN": 149.5,
+        "MGM": 149.5,
+        "BR": 150.5,
+        "FD": 149.5
+      },
+      "tot_diff": 8.2,
+      "ou_pick": "Over",
+      "ou_best": {
+        "point": 149.5,
+        "price": -115,
+        "book": "ESPN"
+      },
+      "ml_home": -143.5,
+      "ml_away": 117.5,
+      "ml_edge": 0.181
     },
     {
       "id": "fd82be15da4dd502ed746a9c5f329f08",
@@ -663,43 +1040,27 @@
       },
       "kp_home_wp": 0.986,
       "mkt_home_wp": 0.972,
+      "home_luck": 0.0,
+      "away_luck": 0.0,
+      "proj_total": 151.8,
+      "book_total": 158.5,
+      "totals_books": {
+        "FD": 158.5,
+        "ESPN": 159.5,
+        "DK": 158.5,
+        "MGM": 158.5,
+        "BR": 159.5
+      },
+      "tot_diff": -6.7,
+      "ou_pick": "Under",
+      "ou_best": {
+        "point": 159.5,
+        "price": -115,
+        "book": "ESPN"
+      },
       "ml_home": -15000.0,
       "ml_away": 3400.0,
       "ml_edge": -0.014
-    },
-    {
-      "id": "2151748c9e4175d788ed587a685e52d7",
-      "tip": "3:00 PM",
-      "tip_iso": "2026-11-13T20:00:00+00:00",
-      "home": "Cleveland St.",
-      "away": "West Florida",
-      "home_rank": 314,
-      "away_rank": 349,
-      "home_conf": "Horz",
-      "away_conf": "ASun",
-      "neutral": false,
-      "book_spread": -3.0,
-      "books": {
-        "DK": -3.5,
-        "ESPN": -2.5,
-        "MGM": -3.5,
-        "BR": -2.5
-      },
-      "proj_spread": -7.1,
-      "proj_score": "West Florida 75, Cleveland St. 82",
-      "poss": 70.5,
-      "diff": 4.1,
-      "pick": "Cleveland St.",
-      "best_line": {
-        "point": -2.5,
-        "price": -120,
-        "book": "ESPN"
-      },
-      "kp_home_wp": 0.742,
-      "mkt_home_wp": 0.586,
-      "ml_home": -158.5,
-      "ml_away": 131.5,
-      "ml_edge": 0.156
     },
     {
       "id": "58ad8bd17a0fe9ec1b9661c093ebef4b",
@@ -717,7 +1078,7 @@
         "FD": -2.5,
         "ESPN": -3.5,
         "DK": -3.5,
-        "BR": -3.5,
+        "BR": -2.5,
         "MGM": -3.5
       },
       "proj_spread": 0.2,
@@ -731,10 +1092,28 @@
         "book": "ESPN"
       },
       "kp_home_wp": 0.492,
-      "mkt_home_wp": 0.589,
+      "mkt_home_wp": 0.588,
+      "home_luck": -0.058,
+      "away_luck": 0.092,
+      "proj_total": 156.0,
+      "book_total": 159.5,
+      "totals_books": {
+        "FD": 158.5,
+        "ESPN": 159.5,
+        "DK": 159.5,
+        "BR": 159.5,
+        "MGM": 158.5
+      },
+      "tot_diff": -3.5,
+      "ou_pick": "Under",
+      "ou_best": {
+        "point": 159.5,
+        "price": -110,
+        "book": "ESPN"
+      },
       "ml_home": -160,
       "ml_away": 135,
-      "ml_edge": 0.098
+      "ml_edge": 0.097
     },
     {
       "id": "86f30fdb256a08b2d2226f9bad22af76",
@@ -767,6 +1146,24 @@
       },
       "kp_home_wp": 0.958,
       "mkt_home_wp": 0.956,
+      "home_luck": 0.109,
+      "away_luck": -0.125,
+      "proj_total": 160.0,
+      "book_total": 165.5,
+      "totals_books": {
+        "FD": 166.5,
+        "ESPN": 166.5,
+        "DK": 165.5,
+        "MGM": 165.5,
+        "BR": 165.5
+      },
+      "tot_diff": -5.5,
+      "ou_pick": "Under",
+      "ou_best": {
+        "point": 166.5,
+        "price": -110,
+        "book": "FD"
+      },
       "ml_home": -10000.0,
       "ml_away": 2175.0,
       "ml_edge": -0.002
@@ -801,10 +1198,28 @@
         "book": "FD"
       },
       "kp_home_wp": 0.88,
-      "mkt_home_wp": 0.818,
-      "ml_home": -600,
-      "ml_away": 430,
-      "ml_edge": 0.062
+      "mkt_home_wp": 0.815,
+      "home_luck": 0.002,
+      "away_luck": 0.205,
+      "proj_total": 144.2,
+      "book_total": 142.5,
+      "totals_books": {
+        "FD": 141.5,
+        "ESPN": 142.5,
+        "DK": 142.5,
+        "MGM": 142.5,
+        "BR": 142.5
+      },
+      "tot_diff": 1.7,
+      "ou_pick": "Over",
+      "ou_best": {
+        "point": 141.5,
+        "price": -115,
+        "book": "FD"
+      },
+      "ml_home": -575,
+      "ml_away": 425,
+      "ml_edge": 0.065
     },
     {
       "id": "4aaf9aaa841777a18f681f1721dd5913",
@@ -836,7 +1251,25 @@
         "book": "FD"
       },
       "kp_home_wp": 0.527,
-      "mkt_home_wp": 0.432,
+      "mkt_home_wp": 0.433,
+      "home_luck": 0.0,
+      "away_luck": -0.079,
+      "proj_total": 156.7,
+      "book_total": 159.5,
+      "totals_books": {
+        "FD": 158.5,
+        "ESPN": 159.5,
+        "DK": 159.5,
+        "BR": 158.5,
+        "MGM": 159.5
+      },
+      "tot_diff": -2.8,
+      "ou_pick": "Under",
+      "ou_best": {
+        "point": 159.5,
+        "price": -115,
+        "book": "ESPN"
+      },
       "ml_home": 120,
       "ml_away": -145,
       "ml_edge": 0.094
@@ -857,7 +1290,7 @@
         "FD": 3.5,
         "DK": 3.5,
         "MGM": 3.5,
-        "BR": 3.5,
+        "BR": 4.5,
         "ESPN": 3.5
       },
       "proj_spread": 0.3,
@@ -866,15 +1299,33 @@
       "diff": 3.2,
       "pick": "Mississippi St.",
       "best_line": {
-        "point": 3.5,
-        "price": -105,
-        "book": "FD"
+        "point": 4.5,
+        "price": -110,
+        "book": "BR"
       },
       "kp_home_wp": 0.488,
-      "mkt_home_wp": 0.391,
-      "ml_home": 145,
-      "ml_away": -175,
-      "ml_edge": 0.098
+      "mkt_home_wp": 0.38,
+      "home_luck": 0.011,
+      "away_luck": 0.0,
+      "proj_total": 160.9,
+      "book_total": 163.5,
+      "totals_books": {
+        "FD": 163.5,
+        "DK": 162.5,
+        "MGM": 163.5,
+        "BR": 162.5,
+        "ESPN": 163.5
+      },
+      "tot_diff": -2.6,
+      "ou_pick": "Under",
+      "ou_best": {
+        "point": 163.5,
+        "price": -110,
+        "book": "FD"
+      },
+      "ml_home": 146,
+      "ml_away": -180,
+      "ml_edge": 0.108
     },
     {
       "id": "2320c172615410b0a773eb086dcef8ea",
@@ -907,6 +1358,24 @@
       },
       "kp_home_wp": 0.336,
       "mkt_home_wp": 0.472,
+      "home_luck": 0.0,
+      "away_luck": 0.032,
+      "proj_total": 158.1,
+      "book_total": 156.5,
+      "totals_books": {
+        "FD": 156.5,
+        "ESPN": 157.5,
+        "DK": 157.5,
+        "MGM": 156.5,
+        "BR": 156.5
+      },
+      "tot_diff": 1.6,
+      "ou_pick": "Over",
+      "ou_best": {
+        "point": 156.5,
+        "price": -110,
+        "book": "FD"
+      },
       "ml_home": 104,
       "ml_away": -125,
       "ml_edge": 0.135
@@ -941,10 +1410,28 @@
         "book": "FD"
       },
       "kp_home_wp": 0.804,
-      "mkt_home_wp": 0.867,
+      "mkt_home_wp": 0.868,
+      "home_luck": 0.0,
+      "away_luck": 0.0,
+      "proj_total": 152.2,
+      "book_total": 157.5,
+      "totals_books": {
+        "FD": 157.5,
+        "ESPN": 158.5,
+        "DK": 158.5,
+        "MGM": 157.5,
+        "BR": 157.5
+      },
+      "tot_diff": -5.3,
+      "ou_pick": "Under",
+      "ou_best": {
+        "point": 158.5,
+        "price": -115,
+        "book": "ESPN"
+      },
       "ml_home": -1000,
       "ml_away": 640,
-      "ml_edge": 0.063
+      "ml_edge": 0.064
     },
     {
       "id": "6a3539e00089c558aaee7d93f756c67b",
@@ -976,6 +1463,24 @@
       },
       "kp_home_wp": 0.446,
       "mkt_home_wp": 0.521,
+      "home_luck": 0.0,
+      "away_luck": -0.0,
+      "proj_total": 163.1,
+      "book_total": 168.5,
+      "totals_books": {
+        "FD": 168.5,
+        "ESPN": 168.5,
+        "DK": 168.5,
+        "MGM": 168.5,
+        "BR": 168.5
+      },
+      "tot_diff": -5.4,
+      "ou_pick": "Under",
+      "ou_best": {
+        "point": 168.5,
+        "price": -110,
+        "book": "FD"
+      },
       "ml_home": -120,
       "ml_away": 100,
       "ml_edge": 0.075
@@ -993,10 +1498,10 @@
       "neutral": false,
       "book_spread": -27.5,
       "books": {
-        "FD": -28.5,
+        "FD": -27.5,
         "ESPN": -27.5,
         "BR": -27.5,
-        "MGM": -28.5,
+        "MGM": -27.5,
         "DK": -27.5
       },
       "proj_spread": -24.7,
@@ -1005,12 +1510,30 @@
       "diff": -2.8,
       "pick": "Mount St. Mary's",
       "best_line": {
-        "point": 28.5,
-        "price": -110,
+        "point": 27.5,
+        "price": -102,
         "book": "FD"
       },
       "kp_home_wp": 0.988,
       "mkt_home_wp": 0.974,
+      "home_luck": 0.072,
+      "away_luck": 0.153,
+      "proj_total": 150.0,
+      "book_total": 148.5,
+      "totals_books": {
+        "FD": 148.5,
+        "ESPN": 148.5,
+        "BR": 148.5,
+        "MGM": 148.5,
+        "DK": 148.5
+      },
+      "tot_diff": 1.5,
+      "ou_pick": "Over",
+      "ou_best": {
+        "point": 148.5,
+        "price": -110,
+        "book": "FD"
+      },
       "ml_home": -30000.0,
       "ml_away": 3650.0,
       "ml_edge": -0.014
@@ -1045,10 +1568,28 @@
         "book": "FD"
       },
       "kp_home_wp": 0.925,
-      "mkt_home_wp": 0.938,
-      "ml_home": -4500,
-      "ml_away": 1500,
-      "ml_edge": 0.014
+      "mkt_home_wp": 0.937,
+      "home_luck": -0.269,
+      "away_luck": 0.0,
+      "proj_total": 150.8,
+      "book_total": 150.5,
+      "totals_books": {
+        "FD": 150.5,
+        "ESPN": 149.5,
+        "DK": 150.5,
+        "BR": 151.5,
+        "MGM": 150.5
+      },
+      "tot_diff": 0.3,
+      "ou_pick": "Over",
+      "ou_best": {
+        "point": 149.5,
+        "price": -115,
+        "book": "ESPN"
+      },
+      "ml_home": -4000,
+      "ml_away": 1400,
+      "ml_edge": 0.012
     },
     {
       "id": "6939a5b0fa016ba48db4addc3f95fa94",
@@ -1067,7 +1608,7 @@
         "ESPN": -22.5,
         "DK": -22.5,
         "MGM": -22.5,
-        "BR": -23.5
+        "BR": -22.5
       },
       "proj_spread": -19.8,
       "proj_score": "Milwaukee 67, TCU 87",
@@ -1075,12 +1616,30 @@
       "diff": -2.7,
       "pick": "Milwaukee",
       "best_line": {
-        "point": 23.5,
-        "price": -113,
-        "book": "BR"
+        "point": 22.5,
+        "price": -110,
+        "book": "FD"
       },
       "kp_home_wp": 0.964,
       "mkt_home_wp": 0.958,
+      "home_luck": 0.084,
+      "away_luck": 0.09,
+      "proj_total": 153.6,
+      "book_total": 156.5,
+      "totals_books": {
+        "FD": 156.5,
+        "ESPN": 156.5,
+        "DK": 156.5,
+        "MGM": 156.5,
+        "BR": 157.5
+      },
+      "tot_diff": -2.9,
+      "ou_pick": "Under",
+      "ou_best": {
+        "point": 157.5,
+        "price": -115,
+        "book": "BR"
+      },
       "ml_home": -10000.0,
       "ml_away": 2200.0,
       "ml_edge": -0.006
@@ -1115,6 +1674,24 @@
       },
       "kp_home_wp": 0.79,
       "mkt_home_wp": 0.849,
+      "home_luck": 0.066,
+      "away_luck": 0.007,
+      "proj_total": 146.7,
+      "book_total": 146.5,
+      "totals_books": {
+        "FD": 146.5,
+        "ESPN": 146.5,
+        "DK": 147.5,
+        "BR": 147.5,
+        "MGM": 146.5
+      },
+      "tot_diff": 0.2,
+      "ou_pick": "Over",
+      "ou_best": {
+        "point": 146.5,
+        "price": -110,
+        "book": "FD"
+      },
       "ml_home": -800,
       "ml_away": 550,
       "ml_edge": 0.059
@@ -1150,6 +1727,24 @@
       },
       "kp_home_wp": 0.673,
       "mkt_home_wp": 0.547,
+      "home_luck": 0.141,
+      "away_luck": -0.107,
+      "proj_total": 152.4,
+      "book_total": 150.5,
+      "totals_books": {
+        "FD": 150.5,
+        "ESPN": 150.5,
+        "DK": 150.5,
+        "MGM": 150.5,
+        "BR": 150.5
+      },
+      "tot_diff": 1.9,
+      "ou_pick": "Over",
+      "ou_best": {
+        "point": 150.5,
+        "price": -110,
+        "book": "FD"
+      },
       "ml_home": -135,
       "ml_away": 110,
       "ml_edge": 0.126
@@ -1168,8 +1763,8 @@
       "book_spread": -1.5,
       "books": {
         "DK": -1.5,
-        "ESPN": -1.5,
-        "MGM": -1.5,
+        "ESPN": -2.5,
+        "MGM": -2.5,
         "BR": -1.5,
         "FD": -1.5
       },
@@ -1180,14 +1775,32 @@
       "pick": "Lehigh",
       "best_line": {
         "point": -1.5,
-        "price": -110,
+        "price": -115,
         "book": "DK"
       },
       "kp_home_wp": 0.638,
-      "mkt_home_wp": 0.538,
-      "ml_home": -125,
-      "ml_away": 105,
-      "ml_edge": 0.101
+      "mkt_home_wp": 0.547,
+      "home_luck": 0.058,
+      "away_luck": -0.127,
+      "proj_total": 132.2,
+      "book_total": 133.5,
+      "totals_books": {
+        "DK": 133.5,
+        "ESPN": 133.5,
+        "MGM": 133.5,
+        "BR": 132.5,
+        "FD": 132.5
+      },
+      "tot_diff": -1.3,
+      "ou_pick": "Under",
+      "ou_best": {
+        "point": 133.5,
+        "price": -115,
+        "book": "DK"
+      },
+      "ml_home": -134,
+      "ml_away": 110,
+      "ml_edge": 0.092
     },
     {
       "id": "d4369adb02249ce5a740751f824b5ae3",
@@ -1220,6 +1833,24 @@
       },
       "kp_home_wp": 0.989,
       "mkt_home_wp": 0.974,
+      "home_luck": 0.068,
+      "away_luck": 0.003,
+      "proj_total": 152.9,
+      "book_total": 154.5,
+      "totals_books": {
+        "FD": 154.5,
+        "ESPN": 155.5,
+        "DK": 154.5,
+        "MGM": 154.5,
+        "BR": 154.5
+      },
+      "tot_diff": -1.6,
+      "ou_pick": "Under",
+      "ou_best": {
+        "point": 155.5,
+        "price": -110,
+        "book": "ESPN"
+      },
       "ml_home": -30000.0,
       "ml_away": 3650.0,
       "ml_edge": -0.015
@@ -1255,6 +1886,24 @@
       },
       "kp_home_wp": 0.802,
       "mkt_home_wp": 0.847,
+      "home_luck": 0.075,
+      "away_luck": 0.0,
+      "proj_total": 135.6,
+      "book_total": 133.5,
+      "totals_books": {
+        "FD": 133.5,
+        "ESPN": 134.5,
+        "DK": 133.5,
+        "MGM": 133.5,
+        "BR": 133.5
+      },
+      "tot_diff": 2.1,
+      "ou_pick": "Over",
+      "ou_best": {
+        "point": 133.5,
+        "price": -115,
+        "book": "FD"
+      },
       "ml_home": -800,
       "ml_away": 525,
       "ml_edge": 0.045
@@ -1289,10 +1938,28 @@
         "book": "FD"
       },
       "kp_home_wp": 0.728,
-      "mkt_home_wp": 0.621,
+      "mkt_home_wp": 0.623,
+      "home_luck": 0.092,
+      "away_luck": 0.001,
+      "proj_total": 158.9,
+      "book_total": 164.5,
+      "totals_books": {
+        "FD": 164.5,
+        "ESPN": 164.5,
+        "DK": 164.5,
+        "MGM": 164.5,
+        "BR": 163.5
+      },
+      "tot_diff": -5.6,
+      "ou_pick": "Under",
+      "ou_best": {
+        "point": 164.5,
+        "price": -110,
+        "book": "FD"
+      },
       "ml_home": -190,
       "ml_away": 155,
-      "ml_edge": 0.107
+      "ml_edge": 0.106
     },
     {
       "id": "cf5a095835a9ee434f87cd29f05948c5",
@@ -1324,10 +1991,28 @@
         "book": "FD"
       },
       "kp_home_wp": 0.808,
-      "mkt_home_wp": 0.741,
-      "ml_home": -340,
+      "mkt_home_wp": 0.742,
+      "home_luck": -0.011,
+      "away_luck": 0.052,
+      "proj_total": 133.4,
+      "book_total": 130.5,
+      "totals_books": {
+        "FD": 130.5,
+        "ESPN": 130.5,
+        "DK": 130.5,
+        "MGM": 130.5,
+        "BR": 130.5
+      },
+      "tot_diff": 2.9,
+      "ou_pick": "Over",
+      "ou_best": {
+        "point": 130.5,
+        "price": -110,
+        "book": "FD"
+      },
+      "ml_home": -345,
       "ml_away": 270,
-      "ml_edge": 0.068
+      "ml_edge": 0.066
     },
     {
       "id": "e8f581fca659627171b85fcbe82784ca",
@@ -1360,6 +2045,24 @@
       },
       "kp_home_wp": 0.85,
       "mkt_home_wp": 0.878,
+      "home_luck": 0.0,
+      "away_luck": -0.075,
+      "proj_total": 160.8,
+      "book_total": 158.5,
+      "totals_books": {
+        "ESPN": 157.5,
+        "FD": 158.5,
+        "DK": 158.5,
+        "MGM": 158.5,
+        "BR": 158.5
+      },
+      "tot_diff": 2.3,
+      "ou_pick": "Over",
+      "ou_best": {
+        "point": 157.5,
+        "price": -120,
+        "book": "ESPN"
+      },
       "ml_home": -1100,
       "ml_away": 680,
       "ml_edge": 0.027
@@ -1394,10 +2097,28 @@
         "book": "FD"
       },
       "kp_home_wp": 0.308,
-      "mkt_home_wp": 0.407,
-      "ml_home": 135,
-      "ml_away": -160,
-      "ml_edge": 0.099
+      "mkt_home_wp": 0.403,
+      "home_luck": -0.131,
+      "away_luck": -0.129,
+      "proj_total": 150.9,
+      "book_total": 144.5,
+      "totals_books": {
+        "FD": 144.5,
+        "ESPN": 143.5,
+        "DK": 143.5,
+        "MGM": 144.5,
+        "BR": 145.5
+      },
+      "tot_diff": 6.4,
+      "ou_pick": "Over",
+      "ou_best": {
+        "point": 143.5,
+        "price": -110,
+        "book": "ESPN"
+      },
+      "ml_home": 136,
+      "ml_away": -165,
+      "ml_edge": 0.095
     },
     {
       "id": "fb185c92b4800a8c22db26c4fc95a853",
@@ -1429,10 +2150,28 @@
         "book": "DK"
       },
       "kp_home_wp": 0.368,
-      "mkt_home_wp": 0.324,
+      "mkt_home_wp": 0.325,
+      "home_luck": -0.0,
+      "away_luck": -0.064,
+      "proj_total": 145.3,
+      "book_total": 146.5,
+      "totals_books": {
+        "DK": 146.5,
+        "ESPN": 146.5,
+        "MGM": 146.5,
+        "BR": 146.5,
+        "FD": 145.5
+      },
+      "tot_diff": -1.2,
+      "ou_pick": "Under",
+      "ou_best": {
+        "point": 146.5,
+        "price": -110,
+        "book": "DK"
+      },
       "ml_home": 200,
-      "ml_away": -245,
-      "ml_edge": 0.044
+      "ml_away": -240,
+      "ml_edge": 0.042
     },
     {
       "id": "838d1ef6513a649bf75f324f5983b4ca",
@@ -1451,7 +2190,7 @@
         "ESPN": -7.5,
         "DK": -7.5,
         "MGM": -7.5,
-        "BR": -6.5
+        "BR": -7.5
       },
       "proj_spread": -5.7,
       "proj_score": "Iona 66, Hofstra 72",
@@ -1464,10 +2203,28 @@
         "book": "FD"
       },
       "kp_home_wp": 0.699,
-      "mkt_home_wp": 0.721,
-      "ml_home": -300,
-      "ml_away": 245,
-      "ml_edge": 0.022
+      "mkt_home_wp": 0.728,
+      "home_luck": -0.197,
+      "away_luck": 0.072,
+      "proj_total": 137.9,
+      "book_total": 134.5,
+      "totals_books": {
+        "FD": 133.5,
+        "ESPN": 133.5,
+        "DK": 134.5,
+        "MGM": 134.5,
+        "BR": 134.5
+      },
+      "tot_diff": 3.4,
+      "ou_pick": "Over",
+      "ou_best": {
+        "point": 133.5,
+        "price": -115,
+        "book": "FD"
+      },
+      "ml_home": -305,
+      "ml_away": 250,
+      "ml_edge": 0.029
     },
     {
       "id": "85a997dbe516f43742ed9726057606b1",
@@ -1483,8 +2240,8 @@
       "book_spread": -6.0,
       "books": {
         "FD": -5.5,
-        "ESPN": -5.5,
-        "DK": -6.5,
+        "ESPN": -6.5,
+        "DK": -5.5,
         "BR": -6.5
       },
       "proj_spread": -7.8,
@@ -1498,10 +2255,28 @@
         "book": "FD"
       },
       "kp_home_wp": 0.76,
-      "mkt_home_wp": 0.697,
+      "mkt_home_wp": 0.693,
+      "home_luck": -0.077,
+      "away_luck": 0.024,
+      "proj_total": 150.0,
+      "book_total": 150.5,
+      "totals_books": {
+        "FD": 151.5,
+        "ESPN": 150.5,
+        "DK": 150.5,
+        "MGM": 150.5,
+        "BR": 151.5
+      },
+      "tot_diff": -0.5,
+      "ou_pick": "Under",
+      "ou_best": {
+        "point": 151.5,
+        "price": -105,
+        "book": "FD"
+      },
       "ml_home": -270,
-      "ml_away": 220,
-      "ml_edge": 0.064
+      "ml_away": 215,
+      "ml_edge": 0.067
     },
     {
       "id": "a7588bfc726ad6da426fc78330827a7b",
@@ -1534,6 +2309,24 @@
       },
       "kp_home_wp": 0.503,
       "mkt_home_wp": 0.486,
+      "home_luck": 0.0,
+      "away_luck": 0.0,
+      "proj_total": 149.3,
+      "book_total": 153.5,
+      "totals_books": {
+        "FD": 153.5,
+        "DK": 154.5,
+        "ESPN": 153.5,
+        "MGM": 154.5,
+        "BR": 153.5
+      },
+      "tot_diff": -4.2,
+      "ou_pick": "Under",
+      "ou_best": {
+        "point": 154.5,
+        "price": -115,
+        "book": "DK"
+      },
       "ml_home": -105,
       "ml_away": -115,
       "ml_edge": 0.017
@@ -1568,10 +2361,28 @@
         "book": "ESPN"
       },
       "kp_home_wp": 0.499,
-      "mkt_home_wp": 0.501,
-      "ml_home": -110,
-      "ml_away": -112,
-      "ml_edge": 0.002
+      "mkt_home_wp": 0.509,
+      "home_luck": 0.002,
+      "away_luck": 0.148,
+      "proj_total": 139.8,
+      "book_total": 137.5,
+      "totals_books": {
+        "FD": 137.5,
+        "ESPN": 137.5,
+        "DK": 137.5,
+        "MGM": 137.5,
+        "BR": 138.5
+      },
+      "tot_diff": 2.3,
+      "ou_pick": "Over",
+      "ou_best": {
+        "point": 137.5,
+        "price": -115,
+        "book": "FD"
+      },
+      "ml_home": -115,
+      "ml_away": -105,
+      "ml_edge": 0.01
     },
     {
       "id": "8cccff6700d899b19e557f4243965f3c",
@@ -1604,6 +2415,24 @@
       },
       "kp_home_wp": 0.602,
       "mkt_home_wp": 0.547,
+      "home_luck": -0.19,
+      "away_luck": 0.0,
+      "proj_total": 153.0,
+      "book_total": 159.5,
+      "totals_books": {
+        "DK": 160.5,
+        "ESPN": 159.5,
+        "MGM": 159.5,
+        "BR": 159.5,
+        "FD": 159.5
+      },
+      "tot_diff": -6.5,
+      "ou_pick": "Under",
+      "ou_best": {
+        "point": 160.5,
+        "price": -115,
+        "book": "DK"
+      },
       "ml_home": -134,
       "ml_away": 110,
       "ml_edge": 0.055
@@ -1639,6 +2468,24 @@
       },
       "kp_home_wp": 0.4,
       "mkt_home_wp": 0.456,
+      "home_luck": 0.081,
+      "away_luck": 0.03,
+      "proj_total": 153.6,
+      "book_total": 153.5,
+      "totals_books": {
+        "FD": 153.5,
+        "ESPN": 154.5,
+        "DK": 154.5,
+        "MGM": 153.5,
+        "BR": 153.5
+      },
+      "tot_diff": 0.1,
+      "ou_pick": "Over",
+      "ou_best": {
+        "point": 153.5,
+        "price": -115,
+        "book": "FD"
+      },
       "ml_home": 110,
       "ml_away": -134,
       "ml_edge": 0.056
@@ -1673,10 +2520,28 @@
         "book": "BR"
       },
       "kp_home_wp": 0.919,
-      "mkt_home_wp": 0.924,
+      "mkt_home_wp": 0.923,
+      "home_luck": 0.0,
+      "away_luck": -0.025,
+      "proj_total": 135.0,
+      "book_total": 137.5,
+      "totals_books": {
+        "DK": 137.5,
+        "ESPN": 138.5,
+        "MGM": 137.5,
+        "BR": 136.5,
+        "FD": 136.5
+      },
+      "tot_diff": -2.5,
+      "ou_pick": "Under",
+      "ou_best": {
+        "point": 138.5,
+        "price": -115,
+        "book": "ESPN"
+      },
       "ml_home": -2800,
-      "ml_away": 1160,
-      "ml_edge": 0.005
+      "ml_away": 1100,
+      "ml_edge": 0.004
     },
     {
       "id": "a75b53f6f3069aebd0d6889fd109a53d",
@@ -1693,7 +2558,7 @@
       "books": {
         "FD": -5.5,
         "ESPN": -5.5,
-        "DK": -6.5,
+        "DK": -5.5,
         "MGM": -5.5,
         "BR": -5.5
       },
@@ -1709,6 +2574,24 @@
       },
       "kp_home_wp": 0.716,
       "mkt_home_wp": 0.683,
+      "home_luck": 0.214,
+      "away_luck": 0.061,
+      "proj_total": 147.3,
+      "book_total": 148.5,
+      "totals_books": {
+        "FD": 148.5,
+        "ESPN": 149.5,
+        "DK": 148.5,
+        "MGM": 148.5,
+        "BR": 147.5
+      },
+      "tot_diff": -1.2,
+      "ou_pick": "Under",
+      "ou_best": {
+        "point": 149.5,
+        "price": -105,
+        "book": "ESPN"
+      },
       "ml_home": -250,
       "ml_away": 200,
       "ml_edge": 0.033
@@ -1743,10 +2626,28 @@
         "book": "DK"
       },
       "kp_home_wp": 0.881,
-      "mkt_home_wp": 0.872,
-      "ml_home": -1000,
-      "ml_away": 625,
-      "ml_edge": 0.009
+      "mkt_home_wp": 0.873,
+      "home_luck": 0.172,
+      "away_luck": -0.032,
+      "proj_total": 144.4,
+      "book_total": 144.5,
+      "totals_books": {
+        "DK": 144.5,
+        "ESPN": 144.5,
+        "MGM": 144.5,
+        "BR": 144.5,
+        "FD": 143.5
+      },
+      "tot_diff": -0.1,
+      "ou_pick": "Under",
+      "ou_best": {
+        "point": 144.5,
+        "price": -110,
+        "book": "DK"
+      },
+      "ml_home": -1100,
+      "ml_away": 650,
+      "ml_edge": 0.007
     },
     {
       "id": "6826c51239f255c0bbc2ca893df748b9",
@@ -1778,10 +2679,28 @@
         "book": "ESPN"
       },
       "kp_home_wp": 0.973,
-      "mkt_home_wp": 0.956,
-      "ml_home": -9000.0,
-      "ml_away": 2100.0,
-      "ml_edge": -0.016
+      "mkt_home_wp": 0.955,
+      "home_luck": 0.0,
+      "away_luck": 0.055,
+      "proj_total": 147.6,
+      "book_total": 147.5,
+      "totals_books": {
+        "ESPN": 147.5,
+        "DK": 147.5,
+        "MGM": 147.5,
+        "BR": 148.5,
+        "FD": 148.5
+      },
+      "tot_diff": 0.1,
+      "ou_pick": "Over",
+      "ou_best": {
+        "point": 147.5,
+        "price": -110,
+        "book": "ESPN"
+      },
+      "ml_home": -8500.0,
+      "ml_away": 2000.0,
+      "ml_edge": -0.017
     },
     {
       "id": "83b4c6a6cad10ef31246d4526bfcf3cf",
@@ -1813,10 +2732,28 @@
         "book": "FD"
       },
       "kp_home_wp": 0.669,
-      "mkt_home_wp": 0.638,
+      "mkt_home_wp": 0.636,
+      "home_luck": 0.0,
+      "away_luck": 0.066,
+      "proj_total": 149.4,
+      "book_total": 147.5,
+      "totals_books": {
+        "FD": 146.5,
+        "ESPN": 147.5,
+        "DK": 147.5,
+        "MGM": 147.5,
+        "BR": 146.5
+      },
+      "tot_diff": 1.9,
+      "ou_pick": "Over",
+      "ou_best": {
+        "point": 146.5,
+        "price": -115,
+        "book": "FD"
+      },
       "ml_home": -198,
       "ml_away": 164,
-      "ml_edge": 0.031
+      "ml_edge": 0.033
     },
     {
       "id": "43c9888e11386fb7cd8000f3ffe347de",
@@ -1849,6 +2786,24 @@
       },
       "kp_home_wp": 0.669,
       "mkt_home_wp": 0.637,
+      "home_luck": -0.0,
+      "away_luck": -0.0,
+      "proj_total": 153.4,
+      "book_total": 152.5,
+      "totals_books": {
+        "FD": 152.5,
+        "ESPN": 152.5,
+        "DK": 152.5,
+        "MGM": 152.5,
+        "BR": 153.5
+      },
+      "tot_diff": 0.9,
+      "ou_pick": "Over",
+      "ou_best": {
+        "point": 152.5,
+        "price": -115,
+        "book": "FD"
+      },
       "ml_home": -200,
       "ml_away": 165,
       "ml_edge": 0.032
@@ -1883,10 +2838,28 @@
         "book": "FD"
       },
       "kp_home_wp": 0.274,
-      "mkt_home_wp": 0.314,
+      "mkt_home_wp": 0.313,
+      "home_luck": -0.11,
+      "away_luck": 0.0,
+      "proj_total": 153.4,
+      "book_total": 152.5,
+      "totals_books": {
+        "FD": 152.5,
+        "ESPN": 152.5,
+        "DK": 152.5,
+        "MGM": 152.5,
+        "BR": 153.5
+      },
+      "tot_diff": 0.9,
+      "ou_pick": "Over",
+      "ou_best": {
+        "point": 152.5,
+        "price": -115,
+        "book": "FD"
+      },
       "ml_home": 200,
       "ml_away": -250,
-      "ml_edge": 0.04
+      "ml_edge": 0.039
     },
     {
       "id": "1409008f5ea7fd435902852f280c6fec",
@@ -1917,6 +2890,22 @@
       },
       "kp_home_wp": 0.752,
       "mkt_home_wp": 0.74,
+      "home_luck": -0.102,
+      "away_luck": 0.122,
+      "proj_total": 148.7,
+      "book_total": 151.5,
+      "totals_books": {
+        "BR": 150.5,
+        "FD": 151.5,
+        "DK": 152.5
+      },
+      "tot_diff": -2.8,
+      "ou_pick": "Under",
+      "ou_best": {
+        "point": 152.5,
+        "price": -112,
+        "book": "DK"
+      },
       "ml_home": -330,
       "ml_away": 260,
       "ml_edge": -0.013
