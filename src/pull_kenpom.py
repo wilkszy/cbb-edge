@@ -23,7 +23,7 @@ def newest_saved_page():
                    key=lambda p: p.stat().st_mtime, reverse=True)
     for p in cands:
         html = p.read_text(errors="ignore")
-        if 'id="ratings-table"' in html:
+        if "ratings-table" in html:
             return p, html
     sys.exit("No KenPom page saved in the last 24 hours. Open kenpom.com, press Cmd+S, "
              "save to Downloads (format: 'Web Page, HTML Only' or 'Page Source'), then rerun.")

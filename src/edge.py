@@ -92,7 +92,7 @@ def parse_kenpom(html: str) -> tuple[dict, str]:
     if len(bad) > 10:
         raise RuntimeError("KenPom columns look shifted (AdjO - AdjD != AdjEM). Check the parser.")
     through = ""
-    m = re.search(r"Data through games of ([^<\n]+)", html)
+    m = re.search(r"Data through games of\s*(?:<a[^>]*>)?([^<\n]+)", html)
     if m:
         through = m.group(1).strip()
     return teams, through
