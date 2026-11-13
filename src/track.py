@@ -18,7 +18,8 @@ import requests
 TZ = ZoneInfo(os.getenv("TZ_NAME", "America/New_York"))
 LOCK_FIELDS = ["home", "away", "home_conf", "away_conf", "tip", "tip_iso", "neutral",
                "book_spread", "proj_spread", "diff", "pick", "kp_home_wp", "mkt_home_wp",
-               "ml_home", "ml_away", "ml_edge", "best_line"]
+               "ml_home", "ml_away", "ml_edge", "best_line",
+               "book_total", "proj_total", "tot_diff", "ou_pick"]
 BUCKETS = [("Under 2", 0, 2), ("2 to 3", 2, 3), ("3 to 5", 3, 5), ("5+", 5, 999)]
 
 
@@ -50,6 +51,7 @@ def lock_lines(ledger: dict, games: list, now: datetime) -> int:
         entry["date"] = tip.astimezone(TZ).strftime("%Y-%m-%d")
         entry["locked_at"] = now.astimezone(TZ).strftime("%Y-%m-%d %H:%M")
         entry["opened_spread"] = prev.get("opened_spread", g["book_spread"])
+        entry["opened_total"] = prev.get("opened_total", g.get("book_total"))
         ledger[g["id"]] = entry
         n += 1
     return n
@@ -97,6 +99,13 @@ def grade(e: dict) -> dict:
         "gap": abs(e["diff"]),
         "big": abs(e["book_spread"]) > 20,
     }
+    if e.get("book_total") is not None and e.get("proj_total") is not None:
+        tot = e["home_score"] + e["away_score"]
+        side = (tot > e["book_total"]) - (tot < e["book_total"])  # 1 over, -1 under, 0 push
+        want = 1 if e["ou_pick"] == "Over" else -1
+        g["tot"] = {"actual": tot, "proj_err": abs(e["proj_total"] - tot),
+                    "book_err": abs(e["book_total"] - tot), "gap": abs(e["tot_diff"]),
+                    "res": "P" if side == 0 else ("W" if side == want else "L")}
     mkt = e.get("mkt_home_wp")
     if mkt is not None and e.get("ml_edge") is not None:
         mkt_pick = mkt if pick_home else 1 - mkt
@@ -114,6 +123,19 @@ def _ats(rows):
     return {"w": w, "l": l, "p": p, "pct": round(w / (w + l), 3) if w + l else None}
 
 
+def _tot(rows):
+    t = [r["tot"] for r in rows if "tot" in r]
+    if not t:
+        return None
+    w = sum(x["res"] == "W" for x in t); l = sum(x["res"] == "L" for x in t); p = sum(x["res"] == "P" for x in t)
+    big = [x for x in t if x["gap"] >= 4]
+    bw = sum(x["res"] == "W" for x in big); bl = sum(x["res"] == "L" for x in big)
+    return {"n": len(t), "proj_mae": round(sum(x["proj_err"] for x in t) / len(t), 2),
+            "book_mae": round(sum(x["book_err"] for x in t) / len(t), 2),
+            "rec": {"w": w, "l": l, "p": p, "pct": round(w / (w + l), 3) if w + l else None},
+            "rec4": {"w": bw, "l": bl, "p": 0, "pct": round(bw / (bw + bl), 3) if bw + bl else None}}
+
+
 def _summ(rows):
     if not rows:
         return None
@@ -129,6 +151,7 @@ def _summ(rows):
         "book_win": round(sum(br) / len(br), 3) if br else None,
         "ats": _ats(rows),
         "ats_value": _ats([r for r in rows if r["gap"] >= 3 and not r["big"]]),
+        "tot": _tot(rows),
         "ml": {"n": len(ml), "w": sum(m["won"] for m in ml),
                "units": round(sum(m["units"] for m in ml), 2),
                "exp": round(sum(m["mkt"] for m in ml) / len(ml), 3) if ml else None},
@@ -161,7 +184,8 @@ def update_track(games: list, now: datetime, path: Path) -> dict:
                     for lab, lo, hi in BUCKETS],
         "recent": [{k: r.get(k) for k in ("date", "tip", "away", "home", "away_score", "home_score",
                                            "book_spread", "proj_spread", "pick", "ats", "proj_err",
-                                           "book_err", "gap", "big")}
+                                           "book_err", "gap", "big", "book_total", "ou_pick")}
+                   | ({"tot_res": r["tot"]["res"], "tot_actual": r["tot"]["actual"]} if "tot" in r else {})
                    | ({"ml_won": r["ml"]["won"], "ml_price": r["ml"]["price"]} if "ml" in r else {})
                    for r in graded[:60]],
     }

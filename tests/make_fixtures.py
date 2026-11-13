@@ -20,6 +20,7 @@ for k,(h,a,s) in enumerate(pairs):
     bms = []
     for b,j in [("draftkings",0),("fanduel",0.5),("betmgm",-0.5)]:
         bms.append({"key":b,"markets":[{"key":"spreads","outcomes":[{"name":h,"point":s+j,"price":-110},{"name":a,"point":-(s+j),"price":-110}]},
-                                       {"key":"h2h","outcomes":[{"name":h,"price":-150 if s<0 else 120},{"name":a,"price":130 if s<0 else -140}]}]})
+                                       {"key":"h2h","outcomes":[{"name":h,"price":-150 if s<0 else 120},{"name":a,"price":130 if s<0 else -140}]},
+                                       {"key":"totals","outcomes":[{"name":"Over","point":140.5+j,"price":-110},{"name":"Under","point":140.5+j,"price":-110}]}]})
     ev.append({"id":f"g{k}","commence_time":(now - timedelta(hours=3)).isoformat().replace("+00:00","Z"),"home_team":h,"away_team":a,"bookmakers":bms})
 json.dump(ev, open("tests/fixtures/odds.json","w"))

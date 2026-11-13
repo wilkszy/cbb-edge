@@ -37,6 +37,7 @@ NEUTRAL_FILE = ROOT / "src" / "neutral_sites.json"
 
 HCA = float(os.getenv("HCA", "3.2"))
 MARGIN_SD = float(os.getenv("MARGIN_SD", "11.0"))
+LUCK_FLAG = float(os.getenv("LUCK_FLAG", "0.15"))
 TZ = ZoneInfo(os.getenv("TZ_NAME", "America/New_York"))
 BOOKS = ["draftkings", "fanduel", "betmgm", "williamhill_us", "espnbet", "betrivers", "fanatics"]
 BOOK_LABELS = {"draftkings": "DK", "fanduel": "FD", "betmgm": "MGM", "williamhill_us": "CZR",
@@ -82,6 +83,7 @@ def parse_kenpom(html: str) -> tuple[dict, str]:
                 "adj_o": _num(tds[5].get_text()),
                 "adj_d": _num(tds[7].get_text()),
                 "adj_t": _num(tds[9].get_text()),
+                "luck": _num(tds[11].get_text()) if len(tds) > 11 else 0.0,
             }
         except (ValueError, IndexError):
             continue
@@ -107,7 +109,7 @@ def fetch_odds() -> list:
         sys.exit("ODDS_API_KEY is not set.")
     r = requests.get(
         "https://api.the-odds-api.com/v4/sports/basketball_ncaab/odds",
-        params={"apiKey": key, "regions": "us", "markets": "spreads,h2h",
+        params={"apiKey": key, "regions": "us", "markets": "spreads,h2h,totals",
                 "oddsFormat": "american", "bookmakers": ",".join(BOOKS)},
         timeout=30,
     )
@@ -180,10 +182,19 @@ def build(kp: dict, odds: list, now: datetime) -> dict:
             continue
         home_spreads, ml_home_p, books = {}, [], []
         ml_prices_h, ml_prices_a = [], []
+        totals, best_over, best_under = {}, None, None
         best_home = best_away = None
         for bk in ev.get("bookmakers", []):
             for mk in bk.get("markets", []):
                 outs = {o["name"]: o for o in mk["outcomes"]}
+                if mk["key"] == "totals" and "Over" in outs and "Under" in outs:
+                    pt = outs["Over"]["point"]
+                    totals[bk["key"]] = pt
+                    if best_over is None or pt < best_over[0]:
+                        best_over = (pt, outs["Over"]["price"], bk["key"])
+                    if best_under is None or outs["Under"]["point"] > best_under[0]:
+                        best_under = (outs["Under"]["point"], outs["Under"]["price"], bk["key"])
+                    continue
                 if h_name not in outs or a_name not in outs:
                     continue
                 if mk["key"] == "spreads":
@@ -226,6 +237,15 @@ def build(kp: dict, odds: list, now: datetime) -> dict:
                 {"point": best[0], "price": best[1], "book": BOOK_LABELS.get(best[2], best[2])},
             "kp_home_wp": round(wp, 3),
             "mkt_home_wp": None if mkt_wp is None else round(mkt_wp, 3),
+            "home_luck": kp[h_kp].get("luck"), "away_luck": kp[a_kp].get("luck"),
+            "proj_total": round(pts_h + pts_a, 1),
+            "book_total": statistics.median(totals.values()) if totals else None,
+            "totals_books": {BOOK_LABELS.get(k, k): v for k, v in totals.items()},
+            "tot_diff": round(pts_h + pts_a - statistics.median(totals.values()), 1) if totals else None,
+            "ou_pick": None if not totals else ("Over" if pts_h + pts_a > statistics.median(totals.values()) else "Under"),
+            "ou_best": None if not totals else (lambda b: None if b is None else
+                {"point": b[0], "price": b[1], "book": BOOK_LABELS.get(b[2], b[2])})(
+                best_over if pts_h + pts_a > statistics.median(totals.values()) else best_under),
             "ml_home": statistics.median(ml_prices_h) if ml_prices_h else None,
             "ml_away": statistics.median(ml_prices_a) if ml_prices_a else None,
             "ml_edge": None if mkt_wp is None else round(
@@ -256,7 +276,7 @@ def main():
         "slate_date": now.astimezone(TZ).strftime("%Y-%m-%d"),
         "generated": now.astimezone(TZ).strftime("%b %-d, %Y %-I:%M %p ET"),
         "kenpom_through": through,
-        "hca": HCA, "margin_sd": MARGIN_SD, **result,
+        "hca": HCA, "margin_sd": MARGIN_SD, "luck_flag": LUCK_FLAG, **result,
     }
     (DOCS / "data").mkdir(parents=True, exist_ok=True)
     from track import update_track

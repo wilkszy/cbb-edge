@@ -9,7 +9,8 @@
    "adj_em": 33.93,
    "adj_o": 124.7,
    "adj_d": 90.8,
-   "adj_t": 71.6
+   "adj_t": 71.6,
+   "luck": 0.105
   },
   "Duke": {
    "rank": 2,
@@ -18,7 +19,8 @@
    "adj_em": 33.13,
    "adj_o": 123.6,
    "adj_d": 90.4,
-   "adj_t": 71.3
+   "adj_t": 71.3,
+   "luck": -0.15
   },
   "Houston": {
    "rank": 3,
@@ -27,7 +29,8 @@
    "adj_em": 32.79,
    "adj_o": 120.2,
    "adj_d": 87.4,
-   "adj_t": 69.0
+   "adj_t": 69.0,
+   "luck": 0.013
   },
   "Kansas": {
    "rank": 4,
@@ -36,7 +39,8 @@
    "adj_em": 32.37,
    "adj_o": 121.3,
    "adj_d": 88.9,
-   "adj_t": 72.8
+   "adj_t": 72.8,
+   "luck": 0.011
   },
   "Michigan St.": {
    "rank": 5,
@@ -45,7 +49,8 @@
    "adj_em": 30.38,
    "adj_o": 120.4,
    "adj_d": 90.0,
-   "adj_t": 71.0
+   "adj_t": 71.0,
+   "luck": 0.068
   },
   "Illinois": {
    "rank": 6,
@@ -54,7 +59,8 @@
    "adj_em": 30.12,
    "adj_o": 124.8,
    "adj_d": 94.7,
-   "adj_t": 73.7
+   "adj_t": 73.7,
+   "luck": -0.14
   },
   "Vanderbilt": {
    "rank": 7,
@@ -63,7 +69,8 @@
    "adj_em": 29.36,
    "adj_o": 121.7,
    "adj_d": 92.4,
-   "adj_t": 70.9
+   "adj_t": 70.9,
+   "luck": 0.008
   },
   "Texas": {
    "rank": 8,
@@ -72,7 +79,8 @@
    "adj_em": 27.91,
    "adj_o": 121.9,
    "adj_d": 94.0,
-   "adj_t": 71.2
+   "adj_t": 71.2,
+   "luck": 0.0
   },
   "Connecticut": {
    "rank": 9,
@@ -81,7 +89,8 @@
    "adj_em": 27.72,
    "adj_o": 118.7,
    "adj_d": 91.0,
-   "adj_t": 69.2
+   "adj_t": 69.2,
+   "luck": 0.066
   },
   "Virginia": {
    "rank": 10,
@@ -90,7 +99,8 @@
    "adj_em": 27.63,
    "adj_o": 121.1,
    "adj_d": 93.5,
-   "adj_t": 71.1
+   "adj_t": 71.1,
+   "luck": 0.0
   },
   "Gonzaga": {
    "rank": 11,
@@ -99,7 +109,8 @@
    "adj_em": 27.01,
    "adj_o": 122.0,
    "adj_d": 95.0,
-   "adj_t": 72.3
+   "adj_t": 72.3,
+   "luck": 0.17
   },
   "Arizona": {
    "rank": 12,
@@ -108,7 +119,8 @@
    "adj_em": 26.05,
    "adj_o": 120.0,
    "adj_d": 93.9,
-   "adj_t": 73.0
+   "adj_t": 73.0,
+   "luck": -0.079
   },
   "Nebraska": {
    "rank": 13,
@@ -117,7 +129,8 @@
    "adj_em": 25.83,
    "adj_o": 118.3,
    "adj_d": 92.5,
-   "adj_t": 70.4
+   "adj_t": 70.4,
+   "luck": 0.047
   },
   "Iowa St.": {
    "rank": 14,
@@ -126,7 +139,8 @@
    "adj_em": 25.8,
    "adj_o": 116.5,
    "adj_d": 90.7,
-   "adj_t": 70.7
+   "adj_t": 70.7,
+   "luck": -0.158
   },
   "Alabama": {
    "rank": 15,
@@ -135,7 +149,8 @@
    "adj_em": 25.7,
    "adj_o": 122.6,
    "adj_d": 96.9,
-   "adj_t": 76.3
+   "adj_t": 76.3,
+   "luck": 0.052
   },
   "UCLA": {
    "rank": 16,
@@ -144,7 +159,8 @@
    "adj_em": 25.6,
    "adj_o": 118.7,
    "adj_d": 93.1,
-   "adj_t": 70.3
+   "adj_t": 70.3,
+   "luck": 0.082
   },
   "Texas Tech": {
    "rank": 17,
@@ -153,7 +169,8 @@
    "adj_em": 24.91,
    "adj_o": 119.8,
    "adj_d": 94.9,
-   "adj_t": 69.2
+   "adj_t": 69.2,
+   "luck": 0.086
   },
   "Texas A&M": {
    "rank": 18,
@@ -162,7 +179,8 @@
    "adj_em": 24.56,
    "adj_o": 120.0,
    "adj_d": 95.4,
-   "adj_t": 75.4
+   "adj_t": 75.4,
+   "luck": 0.0
   },
   "St. John's": {
    "rank": 19,
@@ -171,7 +189,8 @@
    "adj_em": 23.83,
    "adj_o": 117.1,
    "adj_d": 93.3,
-   "adj_t": 72.5
+   "adj_t": 72.5,
+   "luck": 0.014
   },
   "Louisville": {
    "rank": 20,
@@ -180,7 +199,8 @@
    "adj_em": 23.75,
    "adj_o": 118.0,
    "adj_d": 94.2,
-   "adj_t": 72.5
+   "adj_t": 72.5,
+   "luck": 0.107
   },
   "Auburn": {
    "rank": 21,
@@ -189,7 +209,8 @@
    "adj_em": 23.04,
    "adj_o": 119.5,
    "adj_d": 96.5,
-   "adj_t": 70.5
+   "adj_t": 70.5,
+   "luck": 0.0
   },
   "Miami FL": {
    "rank": 22,
@@ -198,7 +219,8 @@
    "adj_em": 22.99,
    "adj_o": 116.2,
    "adj_d": 93.2,
-   "adj_t": 71.6
+   "adj_t": 71.6,
+   "luck": -0.094
   },
   "Missouri": {
    "rank": 23,
@@ -207,7 +229,8 @@
    "adj_em": 22.83,
    "adj_o": 122.1,
    "adj_d": 99.3,
-   "adj_t": 69.9
+   "adj_t": 69.9,
+   "luck": -0.159
   },
   "Tennessee": {
    "rank": 24,
@@ -216,7 +239,8 @@
    "adj_em": 22.77,
    "adj_o": 117.1,
    "adj_d": 94.3,
-   "adj_t": 69.5
+   "adj_t": 69.5,
+   "luck": 0.0
   },
   "Michigan": {
    "rank": 25,
@@ -225,7 +249,8 @@
    "adj_em": 22.37,
    "adj_o": 117.4,
    "adj_d": 95.0,
-   "adj_t": 73.0
+   "adj_t": 73.0,
+   "luck": -0.044
   },
   "BYU": {
    "rank": 26,
@@ -234,7 +259,8 @@
    "adj_em": 21.95,
    "adj_o": 123.2,
    "adj_d": 101.2,
-   "adj_t": 71.7
+   "adj_t": 71.7,
+   "luck": 0.067
   },
   "LSU": {
    "rank": 27,
@@ -243,7 +269,8 @@
    "adj_em": 21.62,
    "adj_o": 116.9,
    "adj_d": 95.3,
-   "adj_t": 73.0
+   "adj_t": 73.0,
+   "luck": 0.0
   },
   "USC": {
    "rank": 28,
@@ -252,7 +279,8 @@
    "adj_em": 21.44,
    "adj_o": 117.0,
    "adj_d": 95.6,
-   "adj_t": 73.3
+   "adj_t": 73.3,
+   "luck": 0.095
   },
   "Arkansas": {
    "rank": 29,
@@ -261,7 +289,8 @@
    "adj_em": 21.43,
    "adj_o": 119.5,
    "adj_d": 98.1,
-   "adj_t": 71.5
+   "adj_t": 71.5,
+   "luck": -0.021
   },
   "Mississippi": {
    "rank": 30,
@@ -270,7 +299,8 @@
    "adj_em": 21.35,
    "adj_o": 114.8,
    "adj_d": 93.4,
-   "adj_t": 70.9
+   "adj_t": 70.9,
+   "luck": 0.0
   },
   "Baylor": {
    "rank": 31,
@@ -279,7 +309,8 @@
    "adj_em": 21.14,
    "adj_o": 117.9,
    "adj_d": 96.8,
-   "adj_t": 72.8
+   "adj_t": 72.8,
+   "luck": 0.012
   },
   "Marquette": {
    "rank": 32,
@@ -288,7 +319,8 @@
    "adj_em": 20.6,
    "adj_o": 114.3,
    "adj_d": 93.7,
-   "adj_t": 71.1
+   "adj_t": 71.1,
+   "luck": -0.109
   },
   "Minnesota": {
    "rank": 33,
@@ -297,7 +329,8 @@
    "adj_em": 20.57,
    "adj_o": 114.3,
    "adj_d": 93.8,
-   "adj_t": 66.9
+   "adj_t": 66.9,
+   "luck": 0.085
   },
   "Ohio St.": {
    "rank": 34,
@@ -306,7 +339,8 @@
    "adj_em": 20.37,
    "adj_o": 118.8,
    "adj_d": 98.4,
-   "adj_t": 70.6
+   "adj_t": 70.6,
+   "luck": 0.007
   },
   "Saint Louis": {
    "rank": 35,
@@ -315,7 +349,8 @@
    "adj_em": 19.75,
    "adj_o": 119.4,
    "adj_d": 99.6,
-   "adj_t": 74.1
+   "adj_t": 74.1,
+   "luck": 0.124
   },
   "Kentucky": {
    "rank": 36,
@@ -324,7 +359,8 @@
    "adj_em": 19.7,
    "adj_o": 120.0,
    "adj_d": 100.3,
-   "adj_t": 71.1
+   "adj_t": 71.1,
+   "luck": 0.054
   },
   "Purdue": {
    "rank": 37,
@@ -333,7 +369,8 @@
    "adj_em": 19.61,
    "adj_o": 117.6,
    "adj_d": 98.0,
-   "adj_t": 66.6
+   "adj_t": 66.6,
+   "luck": -0.269
   },
   "Cincinnati": {
    "rank": 38,
@@ -342,7 +379,8 @@
    "adj_em": 19.59,
    "adj_o": 112.9,
    "adj_d": 93.3,
-   "adj_t": 71.1
+   "adj_t": 71.1,
+   "luck": -0.166
   },
   "Xavier": {
    "rank": 39,
@@ -351,7 +389,8 @@
    "adj_em": 19.52,
    "adj_o": 114.8,
    "adj_d": 95.3,
-   "adj_t": 75.5
+   "adj_t": 75.5,
+   "luck": 0.0
   },
   "West Virginia": {
    "rank": 40,
@@ -360,7 +399,8 @@
    "adj_em": 19.49,
    "adj_o": 114.2,
    "adj_d": 94.7,
-   "adj_t": 67.4
+   "adj_t": 67.4,
+   "luck": 0.02
   },
   "Villanova": {
    "rank": 41,
@@ -369,7 +409,8 @@
    "adj_em": 19.44,
    "adj_o": 117.4,
    "adj_d": 97.9,
-   "adj_t": 69.7
+   "adj_t": 69.7,
+   "luck": -0.176
   },
   "Virginia Tech": {
    "rank": 42,
@@ -378,7 +419,8 @@
    "adj_em": 19.16,
    "adj_o": 118.6,
    "adj_d": 99.5,
-   "adj_t": 70.7
+   "adj_t": 70.7,
+   "luck": 0.072
   },
   "Utah St.": {
    "rank": 43,
@@ -387,7 +429,8 @@
    "adj_em": 18.56,
    "adj_o": 117.7,
    "adj_d": 99.2,
-   "adj_t": 70.9
+   "adj_t": 70.9,
+   "luck": 0.0
   },
   "Iowa": {
    "rank": 44,
@@ -396,7 +439,8 @@
    "adj_em": 18.37,
    "adj_o": 117.5,
    "adj_d": 99.2,
-   "adj_t": 65.6
+   "adj_t": 65.6,
+   "luck": -0.132
   },
   "North Carolina": {
    "rank": 45,
@@ -405,7 +449,8 @@
    "adj_em": 18.26,
    "adj_o": 115.9,
    "adj_d": 97.7,
-   "adj_t": 71.3
+   "adj_t": 71.3,
+   "luck": 0.092
   },
   "Oklahoma St.": {
    "rank": 46,
@@ -414,7 +459,8 @@
    "adj_em": 18.18,
    "adj_o": 115.7,
    "adj_d": 97.6,
-   "adj_t": 73.9
+   "adj_t": 73.9,
+   "luck": -0.051
   },
   "Indiana": {
    "rank": 47,
@@ -423,7 +469,8 @@
    "adj_em": 18.15,
    "adj_o": 117.2,
    "adj_d": 99.0,
-   "adj_t": 70.3
+   "adj_t": 70.3,
+   "luck": 0.053
   },
   "Wisconsin": {
    "rank": 48,
@@ -432,7 +479,8 @@
    "adj_em": 18.14,
    "adj_o": 114.3,
    "adj_d": 96.2,
-   "adj_t": 71.0
+   "adj_t": 71.0,
+   "luck": 0.17
   },
   "Grand Canyon": {
    "rank": 49,
@@ -441,7 +489,8 @@
    "adj_em": 18.03,
    "adj_o": 114.7,
    "adj_d": 96.7,
-   "adj_t": 74.5
+   "adj_t": 74.5,
+   "luck": 0.0
   },
   "Boise St.": {
    "rank": 50,
@@ -450,7 +499,8 @@
    "adj_em": 16.82,
    "adj_o": 114.2,
    "adj_d": 97.4,
-   "adj_t": 72.4
+   "adj_t": 72.4,
+   "luck": 0.011
   },
   "Providence": {
    "rank": 51,
@@ -459,7 +509,8 @@
    "adj_em": 16.31,
    "adj_o": 111.7,
    "adj_d": 95.4,
-   "adj_t": 72.5
+   "adj_t": 72.5,
+   "luck": -0.086
   },
   "TCU": {
    "rank": 52,
@@ -468,7 +519,8 @@
    "adj_em": 16.16,
    "adj_o": 114.5,
    "adj_d": 98.4,
-   "adj_t": 70.8
+   "adj_t": 70.8,
+   "luck": 0.084
   },
   "Creighton": {
    "rank": 53,
@@ -477,7 +529,8 @@
    "adj_em": 15.94,
    "adj_o": 114.2,
    "adj_d": 98.2,
-   "adj_t": 71.4
+   "adj_t": 71.4,
+   "luck": -0.091
   },
   "Florida St.": {
    "rank": 54,
@@ -486,7 +539,8 @@
    "adj_em": 15.65,
    "adj_o": 114.7,
    "adj_d": 99.1,
-   "adj_t": 73.2
+   "adj_t": 73.2,
+   "luck": -0.101
   },
   "VCU": {
    "rank": 55,
@@ -495,7 +549,8 @@
    "adj_em": 15.42,
    "adj_o": 114.2,
    "adj_d": 98.8,
-   "adj_t": 71.7
+   "adj_t": 71.7,
+   "luck": -0.113
   },
   "Mississippi St.": {
    "rank": 56,
@@ -504,7 +559,8 @@
    "adj_em": 15.31,
    "adj_o": 115.3,
    "adj_d": 100.0,
-   "adj_t": 71.0
+   "adj_t": 71.0,
+   "luck": 0.011
   },
   "Oregon": {
    "rank": 57,
@@ -513,7 +569,8 @@
    "adj_em": 14.93,
    "adj_o": 116.8,
    "adj_d": 101.9,
-   "adj_t": 70.5
+   "adj_t": 70.5,
+   "luck": 0.001
   },
   "New Mexico": {
    "rank": 58,
@@ -522,7 +579,8 @@
    "adj_em": 14.8,
    "adj_o": 115.1,
    "adj_d": 100.3,
-   "adj_t": 71.7
+   "adj_t": 71.7,
+   "luck": 0.0
   },
   "Arizona St.": {
    "rank": 59,
@@ -531,7 +589,8 @@
    "adj_em": 14.75,
    "adj_o": 115.5,
    "adj_d": 100.8,
-   "adj_t": 67.5
+   "adj_t": 67.5,
+   "luck": 0.008
   },
   "N.C. State": {
    "rank": 60,
@@ -540,7 +599,8 @@
    "adj_em": 14.63,
    "adj_o": 116.0,
    "adj_d": 101.4,
-   "adj_t": 70.8
+   "adj_t": 70.8,
+   "luck": 0.009
   },
   "DePaul": {
    "rank": 61,
@@ -549,7 +609,8 @@
    "adj_em": 14.5,
    "adj_o": 111.2,
    "adj_d": 96.8,
-   "adj_t": 69.6
+   "adj_t": 69.6,
+   "luck": 0.148
   },
   "Maryland": {
    "rank": 62,
@@ -558,7 +619,8 @@
    "adj_em": 14.14,
    "adj_o": 115.1,
    "adj_d": 101.0,
-   "adj_t": 70.3
+   "adj_t": 70.3,
+   "luck": -0.11
   },
   "Pittsburgh": {
    "rank": 63,
@@ -567,7 +629,8 @@
    "adj_em": 14.13,
    "adj_o": 112.0,
    "adj_d": 97.8,
-   "adj_t": 70.0
+   "adj_t": 70.0,
+   "luck": 0.092
   },
   "High Point": {
    "rank": 64,
@@ -576,7 +639,8 @@
    "adj_em": 14.1,
    "adj_o": 112.9,
    "adj_d": 98.8,
-   "adj_t": 70.8
+   "adj_t": 70.8,
+   "luck": 0.003
   },
   "Notre Dame": {
    "rank": 65,
@@ -585,7 +649,8 @@
    "adj_em": 13.99,
    "adj_o": 112.8,
    "adj_d": 98.8,
-   "adj_t": 70.3
+   "adj_t": 70.3,
+   "luck": 0.064
   },
   "Georgia": {
    "rank": 66,
@@ -594,7 +659,8 @@
    "adj_em": 13.95,
    "adj_o": 116.5,
    "adj_d": 102.6,
-   "adj_t": 71.7
+   "adj_t": 71.7,
+   "luck": 0.001
   },
   "Oklahoma": {
    "rank": 67,
@@ -603,7 +669,8 @@
    "adj_em": 13.78,
    "adj_o": 114.4,
    "adj_d": 100.6,
-   "adj_t": 69.4
+   "adj_t": 69.4,
+   "luck": -0.087
   },
   "Saint Mary's": {
    "rank": 68,
@@ -612,7 +679,8 @@
    "adj_em": 13.72,
    "adj_o": 113.8,
    "adj_d": 100.1,
-   "adj_t": 70.5
+   "adj_t": 70.5,
+   "luck": -0.077
   },
   "San Diego St.": {
    "rank": 69,
@@ -621,7 +689,8 @@
    "adj_em": 13.28,
    "adj_o": 113.4,
    "adj_d": 100.1,
-   "adj_t": 71.5
+   "adj_t": 71.5,
+   "luck": 0.003
   },
   "SMU": {
    "rank": 70,
@@ -630,7 +699,8 @@
    "adj_em": 13.27,
    "adj_o": 113.1,
    "adj_d": 99.8,
-   "adj_t": 74.0
+   "adj_t": 74.0,
+   "luck": 0.015
   },
   "Santa Clara": {
    "rank": 71,
@@ -639,7 +709,8 @@
    "adj_em": 13.01,
    "adj_o": 114.1,
    "adj_d": 101.1,
-   "adj_t": 74.8
+   "adj_t": 74.8,
+   "luck": 0.074
   },
   "Syracuse": {
    "rank": 72,
@@ -648,7 +719,8 @@
    "adj_em": 12.95,
    "adj_o": 112.5,
    "adj_d": 99.6,
-   "adj_t": 69.8
+   "adj_t": 69.8,
+   "luck": -0.118
   },
   "Clemson": {
    "rank": 73,
@@ -657,7 +729,8 @@
    "adj_em": 12.8,
    "adj_o": 115.9,
    "adj_d": 103.1,
-   "adj_t": 68.5
+   "adj_t": 68.5,
+   "luck": 0.0
   },
   "UCF": {
    "rank": 74,
@@ -666,7 +739,8 @@
    "adj_em": 12.64,
    "adj_o": 115.1,
    "adj_d": 102.4,
-   "adj_t": 70.7
+   "adj_t": 70.7,
+   "luck": 0.109
   },
   "Stanford": {
    "rank": 75,
@@ -675,7 +749,8 @@
    "adj_em": 12.23,
    "adj_o": 111.4,
    "adj_d": 99.1,
-   "adj_t": 69.8
+   "adj_t": 69.8,
+   "luck": 0.0
   },
   "Nevada": {
    "rank": 76,
@@ -684,7 +759,8 @@
    "adj_em": 12.15,
    "adj_o": 111.0,
    "adj_d": 98.9,
-   "adj_t": 70.5
+   "adj_t": 70.5,
+   "luck": 0.04
   },
   "Rutgers": {
    "rank": 77,
@@ -693,7 +769,8 @@
    "adj_em": 12.04,
    "adj_o": 114.0,
    "adj_d": 101.9,
-   "adj_t": 71.8
+   "adj_t": 71.8,
+   "luck": 0.0
   },
   "Memphis": {
    "rank": 78,
@@ -702,7 +779,8 @@
    "adj_em": 12.0,
    "adj_o": 116.7,
    "adj_d": 104.7,
-   "adj_t": 72.3
+   "adj_t": 72.3,
+   "luck": 0.326
   },
   "Seton Hall": {
    "rank": 79,
@@ -711,7 +789,8 @@
    "adj_em": 11.84,
    "adj_o": 107.5,
    "adj_d": 95.7,
-   "adj_t": 68.5
+   "adj_t": 68.5,
+   "luck": 0.127
   },
   "Wichita St.": {
    "rank": 80,
@@ -720,7 +799,8 @@
    "adj_em": 11.82,
    "adj_o": 113.3,
    "adj_d": 101.5,
-   "adj_t": 72.0
+   "adj_t": 72.0,
+   "luck": -0.08
   },
   "UC Santa Barbara": {
    "rank": 81,
@@ -729,7 +809,8 @@
    "adj_em": 11.55,
    "adj_o": 114.2,
    "adj_d": 102.6,
-   "adj_t": 67.9
+   "adj_t": 67.9,
+   "luck": 0.01
   },
   "South Carolina": {
    "rank": 82,
@@ -738,7 +819,8 @@
    "adj_em": 10.81,
    "adj_o": 112.0,
    "adj_d": 101.2,
-   "adj_t": 68.2
+   "adj_t": 68.2,
+   "luck": 0.039
   },
   "Murray St.": {
    "rank": 83,
@@ -747,7 +829,8 @@
    "adj_em": 10.56,
    "adj_o": 111.5,
    "adj_d": 100.9,
-   "adj_t": 74.8
+   "adj_t": 74.8,
+   "luck": 0.0
   },
   "Georgetown": {
    "rank": 84,
@@ -756,7 +839,8 @@
    "adj_em": 10.27,
    "adj_o": 113.1,
    "adj_d": 102.8,
-   "adj_t": 69.3
+   "adj_t": 69.3,
+   "luck": 0.066
   },
   "Colorado St.": {
    "rank": 85,
@@ -765,7 +849,8 @@
    "adj_em": 10.21,
    "adj_o": 113.5,
    "adj_d": 103.3,
-   "adj_t": 69.5
+   "adj_t": 69.5,
+   "luck": 0.0
   },
   "Washington": {
    "rank": 86,
@@ -774,7 +859,8 @@
    "adj_em": 10.16,
    "adj_o": 113.4,
    "adj_d": 103.2,
-   "adj_t": 70.2
+   "adj_t": 70.2,
+   "luck": 0.0
   },
   "Colorado": {
    "rank": 87,
@@ -783,7 +869,8 @@
    "adj_em": 9.99,
    "adj_o": 110.1,
    "adj_d": 100.1,
-   "adj_t": 71.7
+   "adj_t": 71.7,
+   "luck": -0.015
   },
   "Butler": {
    "rank": 88,
@@ -792,7 +879,8 @@
    "adj_em": 9.97,
    "adj_o": 113.1,
    "adj_d": 103.2,
-   "adj_t": 73.8
+   "adj_t": 73.8,
+   "luck": -0.058
   },
   "Northwestern": {
    "rank": 89,
@@ -801,7 +889,8 @@
    "adj_em": 9.92,
    "adj_o": 112.1,
    "adj_d": 102.2,
-   "adj_t": 67.7
+   "adj_t": 67.7,
+   "luck": 0.002
   },
   "George Washington": {
    "rank": 90,
@@ -810,7 +899,8 @@
    "adj_em": 9.79,
    "adj_o": 107.7,
    "adj_d": 97.9,
-   "adj_t": 70.9
+   "adj_t": 70.9,
+   "luck": 0.075
   },
   "Oregon St.": {
    "rank": 91,
@@ -819,7 +909,8 @@
    "adj_em": 9.51,
    "adj_o": 114.2,
    "adj_d": 104.7,
-   "adj_t": 71.8
+   "adj_t": 71.8,
+   "luck": 0.037
   },
   "UC San Diego": {
    "rank": 92,
@@ -828,7 +919,8 @@
    "adj_em": 9.49,
    "adj_o": 111.3,
    "adj_d": 101.8,
-   "adj_t": 69.8
+   "adj_t": 69.8,
+   "luck": 0.0
   },
   "Wake Forest": {
    "rank": 93,
@@ -837,7 +929,8 @@
    "adj_em": 9.25,
    "adj_o": 108.9,
    "adj_d": 99.7,
-   "adj_t": 70.6
+   "adj_t": 70.6,
+   "luck": 0.091
   },
   "Boston College": {
    "rank": 94,
@@ -846,7 +939,8 @@
    "adj_em": 9.18,
    "adj_o": 111.7,
    "adj_d": 102.5,
-   "adj_t": 66.8
+   "adj_t": 66.8,
+   "luck": 0.0
   },
   "South Florida": {
    "rank": 95,
@@ -855,7 +949,8 @@
    "adj_em": 8.5,
    "adj_o": 114.0,
    "adj_d": 105.5,
-   "adj_t": 71.8
+   "adj_t": 71.8,
+   "luck": -0.329
   },
   "Utah": {
    "rank": 96,
@@ -864,7 +959,8 @@
    "adj_em": 8.38,
    "adj_o": 107.9,
    "adj_d": 99.6,
-   "adj_t": 68.3
+   "adj_t": 68.3,
+   "luck": 0.104
   },
   "Akron": {
    "rank": 97,
@@ -873,7 +969,8 @@
    "adj_em": 7.98,
    "adj_o": 110.4,
    "adj_d": 102.5,
-   "adj_t": 71.6
+   "adj_t": 71.6,
+   "luck": 0.0
   },
   "Penn St.": {
    "rank": 98,
@@ -882,7 +979,8 @@
    "adj_em": 7.93,
    "adj_o": 112.8,
    "adj_d": 104.8,
-   "adj_t": 71.9
+   "adj_t": 71.9,
+   "luck": -0.004
   },
   "Davidson": {
    "rank": 99,
@@ -891,7 +989,8 @@
    "adj_em": 7.9,
    "adj_o": 109.0,
    "adj_d": 101.1,
-   "adj_t": 68.1
+   "adj_t": 68.1,
+   "luck": 0.0
   },
   "UNLV": {
    "rank": 100,
@@ -900,7 +999,8 @@
    "adj_em": 7.82,
    "adj_o": 109.0,
    "adj_d": 101.1,
-   "adj_t": 72.6
+   "adj_t": 72.6,
+   "luck": 0.0
   },
   "Kansas St.": {
    "rank": 101,
@@ -909,7 +1009,8 @@
    "adj_em": 7.34,
    "adj_o": 110.3,
    "adj_d": 103.0,
-   "adj_t": 73.2
+   "adj_t": 73.2,
+   "luck": -0.108
   },
   "George Mason": {
    "rank": 102,
@@ -918,7 +1019,8 @@
    "adj_em": 7.34,
    "adj_o": 108.0,
    "adj_d": 100.7,
-   "adj_t": 67.7
+   "adj_t": 67.7,
+   "luck": 0.028
   },
   "UNC Wilmington": {
    "rank": 103,
@@ -927,7 +1029,8 @@
    "adj_em": 7.31,
    "adj_o": 111.4,
    "adj_d": 104.1,
-   "adj_t": 70.5
+   "adj_t": 70.5,
+   "luck": 0.171
   },
   "Texas St.": {
    "rank": 104,
@@ -936,7 +1039,8 @@
    "adj_em": 7.31,
    "adj_o": 111.2,
    "adj_d": 103.9,
-   "adj_t": 67.3
+   "adj_t": 67.3,
+   "luck": 0.002
   },
   "Illinois Chicago": {
    "rank": 105,
@@ -945,7 +1049,8 @@
    "adj_em": 7.23,
    "adj_o": 110.8,
    "adj_d": 103.6,
-   "adj_t": 69.6
+   "adj_t": 69.6,
+   "luck": 0.024
   },
   "McNeese": {
    "rank": 106,
@@ -954,7 +1059,8 @@
    "adj_em": 6.92,
    "adj_o": 110.8,
    "adj_d": 103.9,
-   "adj_t": 69.3
+   "adj_t": 69.3,
+   "luck": -0.09
   },
   "Georgia Tech": {
    "rank": 107,
@@ -963,7 +1069,8 @@
    "adj_em": 6.84,
    "adj_o": 109.1,
    "adj_d": 102.3,
-   "adj_t": 72.7
+   "adj_t": 72.7,
+   "luck": 0.0
   },
   "California": {
    "rank": 108,
@@ -972,7 +1079,8 @@
    "adj_em": 6.72,
    "adj_o": 110.5,
    "adj_d": 103.8,
-   "adj_t": 70.5
+   "adj_t": 70.5,
+   "luck": -0.037
   },
   "Wright St.": {
    "rank": 109,
@@ -981,7 +1089,8 @@
    "adj_em": 6.53,
    "adj_o": 111.7,
    "adj_d": 105.1,
-   "adj_t": 69.8
+   "adj_t": 69.8,
+   "luck": 0.032
   },
   "North Texas": {
    "rank": 110,
@@ -990,7 +1099,8 @@
    "adj_em": 6.37,
    "adj_o": 107.3,
    "adj_d": 101.0,
-   "adj_t": 68.7
+   "adj_t": 68.7,
+   "luck": -0.105
   },
   "UC Irvine": {
    "rank": 111,
@@ -999,7 +1109,8 @@
    "adj_em": 6.05,
    "adj_o": 105.3,
    "adj_d": 99.2,
-   "adj_t": 72.1
+   "adj_t": 72.1,
+   "luck": 0.0
   },
   "Richmond": {
    "rank": 112,
@@ -1008,7 +1119,8 @@
    "adj_em": 5.66,
    "adj_o": 108.7,
    "adj_d": 103.1,
-   "adj_t": 71.2
+   "adj_t": 71.2,
+   "luck": -0.071
   },
   "Wyoming": {
    "rank": 113,
@@ -1017,7 +1129,8 @@
    "adj_em": 5.54,
    "adj_o": 109.7,
    "adj_d": 104.1,
-   "adj_t": 69.0
+   "adj_t": 69.0,
+   "luck": -0.108
   },
   "Dayton": {
    "rank": 114,
@@ -1026,7 +1139,8 @@
    "adj_em": 5.43,
    "adj_o": 108.8,
    "adj_d": 103.3,
-   "adj_t": 70.4
+   "adj_t": 70.4,
+   "luck": -0.272
   },
   "Fordham": {
    "rank": 115,
@@ -1035,7 +1149,8 @@
    "adj_em": 5.13,
    "adj_o": 108.3,
    "adj_d": 103.2,
-   "adj_t": 70.0
+   "adj_t": 70.0,
+   "luck": 0.172
   },
   "Tulsa": {
    "rank": 116,
@@ -1044,7 +1159,8 @@
    "adj_em": 5.13,
    "adj_o": 111.6,
    "adj_d": 106.5,
-   "adj_t": 70.5
+   "adj_t": 70.5,
+   "luck": 0.023
   },
   "Rhode Island": {
    "rank": 117,
@@ -1053,7 +1169,8 @@
    "adj_em": 5.0,
    "adj_o": 107.7,
    "adj_d": 102.7,
-   "adj_t": 69.7
+   "adj_t": 69.7,
+   "luck": 0.072
   },
   "Charlotte": {
    "rank": 118,
@@ -1062,7 +1179,8 @@
    "adj_em": 4.98,
    "adj_o": 109.2,
    "adj_d": 104.2,
-   "adj_t": 68.6
+   "adj_t": 68.6,
+   "luck": -0.011
   },
   "Illinois St.": {
    "rank": 119,
@@ -1071,7 +1189,8 @@
    "adj_em": 4.93,
    "adj_o": 111.0,
    "adj_d": 106.0,
-   "adj_t": 68.4
+   "adj_t": 68.4,
+   "luck": -0.129
   },
   "Charleston": {
    "rank": 120,
@@ -1080,7 +1199,8 @@
    "adj_em": 4.81,
    "adj_o": 111.8,
    "adj_d": 107.0,
-   "adj_t": 71.9
+   "adj_t": 71.9,
+   "luck": 0.0
   },
   "Utah Valley": {
    "rank": 121,
@@ -1089,7 +1209,8 @@
    "adj_em": 4.46,
    "adj_o": 108.2,
    "adj_d": 103.8,
-   "adj_t": 72.7
+   "adj_t": 72.7,
+   "luck": 0.0
   },
   "Miami OH": {
    "rank": 122,
@@ -1098,7 +1219,8 @@
    "adj_em": 4.04,
    "adj_o": 108.9,
    "adj_d": 104.9,
-   "adj_t": 72.6
+   "adj_t": 72.6,
+   "luck": 0.0
   },
   "Saint Joseph's": {
    "rank": 123,
@@ -1107,7 +1229,8 @@
    "adj_em": 3.47,
    "adj_o": 103.1,
    "adj_d": 99.7,
-   "adj_t": 72.6
+   "adj_t": 72.6,
+   "luck": 0.023
   },
   "Western Kentucky": {
    "rank": 124,
@@ -1116,7 +1239,8 @@
    "adj_em": 3.42,
    "adj_o": 107.6,
    "adj_d": 104.2,
-   "adj_t": 74.0
+   "adj_t": 74.0,
+   "luck": -0.22
   },
   "Montana St.": {
    "rank": 125,
@@ -1125,7 +1249,8 @@
    "adj_em": 3.23,
    "adj_o": 108.4,
    "adj_d": 105.2,
-   "adj_t": 70.2
+   "adj_t": 70.2,
+   "luck": -0.074
   },
   "Furman": {
    "rank": 126,
@@ -1134,7 +1259,8 @@
    "adj_em": 2.76,
    "adj_o": 109.8,
    "adj_d": 107.0,
-   "adj_t": 70.9
+   "adj_t": 70.9,
+   "luck": 0.0
   },
   "Valparaiso": {
    "rank": 127,
@@ -1143,7 +1269,8 @@
    "adj_em": 2.75,
    "adj_o": 107.0,
    "adj_d": 104.3,
-   "adj_t": 68.7
+   "adj_t": 68.7,
+   "luck": 0.074
   },
   "Washington St.": {
    "rank": 128,
@@ -1152,7 +1279,8 @@
    "adj_em": 2.57,
    "adj_o": 110.5,
    "adj_d": 108.0,
-   "adj_t": 68.6
+   "adj_t": 68.6,
+   "luck": -0.1
   },
   "Duquesne": {
    "rank": 129,
@@ -1161,7 +1289,8 @@
    "adj_em": 2.26,
    "adj_o": 107.8,
    "adj_d": 105.6,
-   "adj_t": 69.7
+   "adj_t": 69.7,
+   "luck": 0.163
   },
   "Pacific": {
    "rank": 130,
@@ -1170,7 +1299,8 @@
    "adj_em": 2.2,
    "adj_o": 103.5,
    "adj_d": 101.3,
-   "adj_t": 68.3
+   "adj_t": 68.3,
+   "luck": -0.162
   },
   "Ohio": {
    "rank": 131,
@@ -1179,7 +1309,8 @@
    "adj_em": 1.6,
    "adj_o": 109.8,
    "adj_d": 108.2,
-   "adj_t": 72.2
+   "adj_t": 72.2,
+   "luck": 0.0
   },
   "Loyola Chicago": {
    "rank": 132,
@@ -1188,7 +1319,8 @@
    "adj_em": 1.17,
    "adj_o": 106.0,
    "adj_d": 104.8,
-   "adj_t": 70.3
+   "adj_t": 70.3,
+   "luck": -0.063
   },
   "James Madison": {
    "rank": 133,
@@ -1197,7 +1329,8 @@
    "adj_em": 1.15,
    "adj_o": 108.7,
    "adj_d": 107.6,
-   "adj_t": 69.2
+   "adj_t": 69.2,
+   "luck": -0.082
   },
   "Seattle": {
    "rank": 134,
@@ -1206,7 +1339,8 @@
    "adj_em": 1.02,
    "adj_o": 102.1,
    "adj_d": 101.1,
-   "adj_t": 71.0
+   "adj_t": 71.0,
+   "luck": -0.122
   },
   "Florida Atlantic": {
    "rank": 135,
@@ -1215,7 +1349,8 @@
    "adj_em": 1.0,
    "adj_o": 108.2,
    "adj_d": 107.2,
-   "adj_t": 72.2
+   "adj_t": 72.2,
+   "luck": 0.22
   },
   "Yale": {
    "rank": 136,
@@ -1224,7 +1359,8 @@
    "adj_em": 0.99,
    "adj_o": 109.0,
    "adj_d": 108.0,
-   "adj_t": 68.0
+   "adj_t": 68.0,
+   "luck": 0.03
   },
   "UAB": {
    "rank": 137,
@@ -1233,7 +1369,8 @@
    "adj_em": 0.91,
    "adj_o": 108.7,
    "adj_d": 107.8,
-   "adj_t": 72.3
+   "adj_t": 72.3,
+   "luck": 0.097
   },
   "Penn": {
    "rank": 138,
@@ -1242,7 +1379,8 @@
    "adj_em": 0.87,
    "adj_o": 106.3,
    "adj_d": 105.4,
-   "adj_t": 74.5
+   "adj_t": 74.5,
+   "luck": -0.016
   },
   "St. Bonaventure": {
    "rank": 139,
@@ -1251,7 +1389,8 @@
    "adj_em": 0.74,
    "adj_o": 104.0,
    "adj_d": 103.3,
-   "adj_t": 69.7
+   "adj_t": 69.7,
+   "luck": -0.11
   },
   "New Mexico St.": {
    "rank": 140,
@@ -1260,7 +1399,8 @@
    "adj_em": 0.6,
    "adj_o": 104.9,
    "adj_d": 104.3,
-   "adj_t": 68.2
+   "adj_t": 68.2,
+   "luck": -0.214
   },
   "Harvard": {
    "rank": 141,
@@ -1269,7 +1409,8 @@
    "adj_em": 0.51,
    "adj_o": 103.6,
    "adj_d": 103.1,
-   "adj_t": 67.4
+   "adj_t": 67.4,
+   "luck": 0.0
   },
   "Toledo": {
    "rank": 142,
@@ -1278,7 +1419,8 @@
    "adj_em": 0.45,
    "adj_o": 106.1,
    "adj_d": 105.7,
-   "adj_t": 71.6
+   "adj_t": 71.6,
+   "luck": -0.035
   },
   "Stephen F. Austin": {
    "rank": 143,
@@ -1287,7 +1429,8 @@
    "adj_em": 0.27,
    "adj_o": 106.1,
    "adj_d": 105.9,
-   "adj_t": 68.5
+   "adj_t": 68.5,
+   "luck": 0.0
   },
   "Northern Iowa": {
    "rank": 144,
@@ -1296,7 +1439,8 @@
    "adj_em": 0.24,
    "adj_o": 109.3,
    "adj_d": 109.0,
-   "adj_t": 70.2
+   "adj_t": 70.2,
+   "luck": 0.003
   },
   "Towson": {
    "rank": 145,
@@ -1305,7 +1449,8 @@
    "adj_em": 0.18,
    "adj_o": 102.8,
    "adj_d": 102.7,
-   "adj_t": 67.8
+   "adj_t": 67.8,
+   "luck": -0.095
   },
   "Liberty": {
    "rank": 146,
@@ -1314,7 +1459,8 @@
    "adj_em": -0.04,
    "adj_o": 105.9,
    "adj_d": 105.9,
-   "adj_t": 67.8
+   "adj_t": 67.8,
+   "luck": 0.0
   },
   "Old Dominion": {
    "rank": 147,
@@ -1323,7 +1469,8 @@
    "adj_em": -0.05,
    "adj_o": 104.2,
    "adj_d": 104.3,
-   "adj_t": 68.1
+   "adj_t": 68.1,
+   "luck": 0.001
   },
   "Southern Illinois": {
    "rank": 148,
@@ -1332,7 +1479,8 @@
    "adj_em": -0.08,
    "adj_o": 106.7,
    "adj_d": 106.8,
-   "adj_t": 72.5
+   "adj_t": 72.5,
+   "luck": -0.056
   },
   "Drake": {
    "rank": 149,
@@ -1341,7 +1489,8 @@
    "adj_em": -0.25,
    "adj_o": 105.1,
    "adj_d": 105.3,
-   "adj_t": 70.6
+   "adj_t": 70.6,
+   "luck": 0.0
   },
   "Hawaii": {
    "rank": 150,
@@ -1350,7 +1499,8 @@
    "adj_em": -0.27,
    "adj_o": 103.0,
    "adj_d": 103.2,
-   "adj_t": 70.7
+   "adj_t": 70.7,
+   "luck": 0.132
   },
   "San Francisco": {
    "rank": 151,
@@ -1359,7 +1509,8 @@
    "adj_em": -0.48,
    "adj_o": 103.6,
    "adj_d": 104.0,
-   "adj_t": 68.9
+   "adj_t": 68.9,
+   "luck": 0.019
   },
   "San Jose St.": {
    "rank": 152,
@@ -1368,7 +1519,8 @@
    "adj_em": -0.6,
    "adj_o": 108.6,
    "adj_d": 109.2,
-   "adj_t": 70.7
+   "adj_t": 70.7,
+   "luck": -0.196
   },
   "East Tennessee St.": {
    "rank": 153,
@@ -1377,7 +1529,8 @@
    "adj_em": -0.67,
    "adj_o": 106.7,
    "adj_d": 107.4,
-   "adj_t": 66.4
+   "adj_t": 66.4,
+   "luck": -0.098
   },
   "Belmont": {
    "rank": 154,
@@ -1386,7 +1539,8 @@
    "adj_em": -0.67,
    "adj_o": 105.6,
    "adj_d": 106.3,
-   "adj_t": 71.4
+   "adj_t": 71.4,
+   "luck": -0.042
   },
   "Hofstra": {
    "rank": 155,
@@ -1395,7 +1549,8 @@
    "adj_em": -0.8,
    "adj_o": 104.5,
    "adj_d": 105.3,
-   "adj_t": 68.1
+   "adj_t": 68.1,
+   "luck": -0.197
   },
   "Eastern Washington": {
    "rank": 156,
@@ -1404,7 +1559,8 @@
    "adj_em": -0.86,
    "adj_o": 108.1,
    "adj_d": 108.9,
-   "adj_t": 71.5
+   "adj_t": 71.5,
+   "luck": -0.055
   },
   "Western Michigan": {
    "rank": 157,
@@ -1413,7 +1569,8 @@
    "adj_em": -0.92,
    "adj_o": 107.5,
    "adj_d": 108.4,
-   "adj_t": 68.4
+   "adj_t": 68.4,
+   "luck": -0.004
   },
   "Central Arkansas": {
    "rank": 158,
@@ -1422,7 +1579,8 @@
    "adj_em": -1.01,
    "adj_o": 104.7,
    "adj_d": 105.7,
-   "adj_t": 71.4
+   "adj_t": 71.4,
+   "luck": 0.007
   },
   "South Dakota St.": {
    "rank": 159,
@@ -1431,7 +1589,8 @@
    "adj_em": -1.07,
    "adj_o": 107.4,
    "adj_d": 108.5,
-   "adj_t": 68.9
+   "adj_t": 68.9,
+   "luck": 0.162
   },
   "Sam Houston St.": {
    "rank": 160,
@@ -1440,7 +1599,8 @@
    "adj_em": -1.09,
    "adj_o": 105.6,
    "adj_d": 106.7,
-   "adj_t": 72.7
+   "adj_t": 72.7,
+   "luck": 0.114
   },
   "Kent St.": {
    "rank": 161,
@@ -1449,7 +1609,8 @@
    "adj_em": -1.14,
    "adj_o": 107.4,
    "adj_d": 108.5,
-   "adj_t": 71.3
+   "adj_t": 71.3,
+   "luck": -0.005
   },
   "Cal Poly": {
    "rank": 162,
@@ -1458,7 +1619,8 @@
    "adj_em": -1.19,
    "adj_o": 107.3,
    "adj_d": 108.5,
-   "adj_t": 76.4
+   "adj_t": 76.4,
+   "luck": -0.0
   },
   "Kennesaw St.": {
    "rank": 163,
@@ -1467,7 +1629,8 @@
    "adj_em": -1.2,
    "adj_o": 102.3,
    "adj_d": 103.5,
-   "adj_t": 74.7
+   "adj_t": 74.7,
+   "luck": 0.123
   },
   "Massachusetts": {
    "rank": 164,
@@ -1476,7 +1639,8 @@
    "adj_em": -1.24,
    "adj_o": 101.9,
    "adj_d": 103.1,
-   "adj_t": 70.9
+   "adj_t": 70.9,
+   "luck": 0.158
   },
   "Marshall": {
    "rank": 165,
@@ -1485,7 +1649,8 @@
    "adj_em": -1.43,
    "adj_o": 103.9,
    "adj_d": 105.4,
-   "adj_t": 73.9
+   "adj_t": 73.9,
+   "luck": -0.247
   },
   "CSUN": {
    "rank": 166,
@@ -1494,7 +1659,8 @@
    "adj_em": -1.62,
    "adj_o": 103.2,
    "adj_d": 104.9,
-   "adj_t": 75.6
+   "adj_t": 75.6,
+   "luck": -0.0
   },
   "Western Carolina": {
    "rank": 167,
@@ -1503,7 +1669,8 @@
    "adj_em": -1.79,
    "adj_o": 106.4,
    "adj_d": 108.2,
-   "adj_t": 70.6
+   "adj_t": 70.6,
+   "luck": -0.004
   },
   "Tulane": {
    "rank": 168,
@@ -1512,7 +1679,8 @@
    "adj_em": -1.83,
    "adj_o": 108.8,
    "adj_d": 110.6,
-   "adj_t": 70.9
+   "adj_t": 70.9,
+   "luck": -0.045
   },
   "Portland": {
    "rank": 169,
@@ -1521,7 +1689,8 @@
    "adj_em": -1.85,
    "adj_o": 106.5,
    "adj_d": 108.3,
-   "adj_t": 71.8
+   "adj_t": 71.8,
+   "luck": -0.102
   },
   "Temple": {
    "rank": 170,
@@ -1530,7 +1699,8 @@
    "adj_em": -1.94,
    "adj_o": 104.5,
    "adj_d": 106.4,
-   "adj_t": 69.7
+   "adj_t": 69.7,
+   "luck": -0.01
   },
   "Sacramento St.": {
    "rank": 171,
@@ -1539,7 +1709,8 @@
    "adj_em": -1.97,
    "adj_o": 103.6,
    "adj_d": 105.6,
-   "adj_t": 75.0
+   "adj_t": 75.0,
+   "luck": 0.0
   },
   "Princeton": {
    "rank": 172,
@@ -1548,7 +1719,8 @@
    "adj_em": -2.04,
    "adj_o": 103.4,
    "adj_d": 105.5,
-   "adj_t": 67.9
+   "adj_t": 67.9,
+   "luck": 0.163
   },
   "San Diego": {
    "rank": 173,
@@ -1557,7 +1729,8 @@
    "adj_em": -2.07,
    "adj_o": 106.2,
    "adj_d": 108.2,
-   "adj_t": 71.0
+   "adj_t": 71.0,
+   "luck": 0.053
   },
   "Bowling Green": {
    "rank": 174,
@@ -1566,7 +1739,8 @@
    "adj_em": -2.11,
    "adj_o": 108.8,
    "adj_d": 110.9,
-   "adj_t": 70.6
+   "adj_t": 70.6,
+   "luck": 0.073
   },
   "William & Mary": {
    "rank": 175,
@@ -1575,7 +1749,8 @@
    "adj_em": -2.18,
    "adj_o": 108.5,
    "adj_d": 110.7,
-   "adj_t": 74.2
+   "adj_t": 74.2,
+   "luck": -0.197
   },
   "UTEP": {
    "rank": 176,
@@ -1584,7 +1759,8 @@
    "adj_em": -2.33,
    "adj_o": 102.8,
    "adj_d": 105.2,
-   "adj_t": 68.1
+   "adj_t": 68.1,
+   "luck": 0.029
   },
   "Pepperdine": {
    "rank": 177,
@@ -1593,7 +1769,8 @@
    "adj_em": -2.58,
    "adj_o": 107.4,
    "adj_d": 110.0,
-   "adj_t": 70.8
+   "adj_t": 70.8,
+   "luck": -0.184
   },
   "UC Riverside": {
    "rank": 178,
@@ -1602,7 +1779,8 @@
    "adj_em": -2.65,
    "adj_o": 102.0,
    "adj_d": 104.6,
-   "adj_t": 71.5
+   "adj_t": 71.5,
+   "luck": 0.0
   },
   "Loyola Marymount": {
    "rank": 179,
@@ -1611,7 +1789,8 @@
    "adj_em": -2.87,
    "adj_o": 106.9,
    "adj_d": 109.8,
-   "adj_t": 68.8
+   "adj_t": 68.8,
+   "luck": -0.095
   },
   "East Carolina": {
    "rank": 180,
@@ -1620,7 +1799,8 @@
    "adj_em": -2.88,
    "adj_o": 102.7,
    "adj_d": 105.5,
-   "adj_t": 72.8
+   "adj_t": 72.8,
+   "luck": -0.072
   },
   "Vermont": {
    "rank": 181,
@@ -1629,7 +1809,8 @@
    "adj_em": -2.89,
    "adj_o": 105.3,
    "adj_d": 108.2,
-   "adj_t": 65.9
+   "adj_t": 65.9,
+   "luck": -0.289
   },
   "Eastern Michigan": {
    "rank": 182,
@@ -1638,7 +1819,8 @@
    "adj_em": -3.13,
    "adj_o": 102.9,
    "adj_d": 106.0,
-   "adj_t": 68.4
+   "adj_t": 68.4,
+   "luck": 0.241
   },
   "St. Thomas": {
    "rank": 183,
@@ -1647,7 +1829,8 @@
    "adj_em": -3.14,
    "adj_o": 106.5,
    "adj_d": 109.6,
-   "adj_t": 70.4
+   "adj_t": 70.4,
+   "luck": -0.008
   },
   "Queens": {
    "rank": 184,
@@ -1656,7 +1839,8 @@
    "adj_em": -3.22,
    "adj_o": 110.8,
    "adj_d": 114.0,
-   "adj_t": 74.5
+   "adj_t": 74.5,
+   "luck": 0.227
   },
   "American": {
    "rank": 185,
@@ -1665,7 +1849,8 @@
    "adj_em": -3.32,
    "adj_o": 103.8,
    "adj_d": 107.1,
-   "adj_t": 68.7
+   "adj_t": 68.7,
+   "luck": 0.11
   },
   "Jacksonville St.": {
    "rank": 186,
@@ -1674,7 +1859,8 @@
    "adj_em": -3.36,
    "adj_o": 103.9,
    "adj_d": 107.3,
-   "adj_t": 68.3
+   "adj_t": 68.3,
+   "luck": -0.214
   },
   "La Salle": {
    "rank": 187,
@@ -1683,7 +1869,8 @@
    "adj_em": -3.4,
    "adj_o": 105.3,
    "adj_d": 108.7,
-   "adj_t": 70.6
+   "adj_t": 70.6,
+   "luck": 0.107
   },
   "Elon": {
    "rank": 188,
@@ -1692,7 +1879,8 @@
    "adj_em": -3.4,
    "adj_o": 104.6,
    "adj_d": 108.0,
-   "adj_t": 69.0
+   "adj_t": 69.0,
+   "luck": 0.141
   },
   "Fresno St.": {
    "rank": 189,
@@ -1701,7 +1889,8 @@
    "adj_em": -3.56,
    "adj_o": 105.3,
    "adj_d": 108.8,
-   "adj_t": 71.3
+   "adj_t": 71.3,
+   "luck": 0.195
   },
   "Middle Tennessee": {
    "rank": 190,
@@ -1710,7 +1899,8 @@
    "adj_em": -3.64,
    "adj_o": 103.2,
    "adj_d": 106.9,
-   "adj_t": 69.9
+   "adj_t": 69.9,
+   "luck": 0.214
   },
   "Jacksonville": {
    "rank": 191,
@@ -1719,7 +1909,8 @@
    "adj_em": -3.66,
    "adj_o": 104.3,
    "adj_d": 108.0,
-   "adj_t": 67.5
+   "adj_t": 67.5,
+   "luck": 0.077
   },
   "Troy": {
    "rank": 192,
@@ -1728,7 +1919,8 @@
    "adj_em": -3.67,
    "adj_o": 103.0,
    "adj_d": 106.7,
-   "adj_t": 68.5
+   "adj_t": 68.5,
+   "luck": 0.09
   },
   "Bethune Cookman": {
    "rank": 193,
@@ -1737,7 +1929,8 @@
    "adj_em": -3.72,
    "adj_o": 103.9,
    "adj_d": 107.6,
-   "adj_t": 71.3
+   "adj_t": 71.3,
+   "luck": -0.0
   },
   "Howard": {
    "rank": 194,
@@ -1746,7 +1939,8 @@
    "adj_em": -3.81,
    "adj_o": 102.9,
    "adj_d": 106.7,
-   "adj_t": 71.4
+   "adj_t": 71.4,
+   "luck": -0.012
   },
   "Texas A&M Corpus Chris": {
    "rank": 195,
@@ -1755,7 +1949,8 @@
    "adj_em": -3.88,
    "adj_o": 99.7,
    "adj_d": 103.6,
-   "adj_t": 69.2
+   "adj_t": 69.2,
+   "luck": 0.08
   },
   "Monmouth": {
    "rank": 196,
@@ -1764,7 +1959,8 @@
    "adj_em": -3.92,
    "adj_o": 102.0,
    "adj_d": 106.0,
-   "adj_t": 71.3
+   "adj_t": 71.3,
+   "luck": 0.12
   },
   "Lipscomb": {
    "rank": 197,
@@ -1773,7 +1969,8 @@
    "adj_em": -3.95,
    "adj_o": 105.9,
    "adj_d": 109.8,
-   "adj_t": 72.4
+   "adj_t": 72.4,
+   "luck": 0.102
   },
   "Austin Peay": {
    "rank": 198,
@@ -1782,7 +1979,8 @@
    "adj_em": -4.04,
    "adj_o": 102.7,
    "adj_d": 106.8,
-   "adj_t": 71.3
+   "adj_t": 71.3,
+   "luck": 0.0
   },
   "Mercer": {
    "rank": 199,
@@ -1791,7 +1989,8 @@
    "adj_em": -4.25,
    "adj_o": 105.7,
    "adj_d": 109.9,
-   "adj_t": 72.2
+   "adj_t": 72.2,
+   "luck": 0.076
   },
   "Samford": {
    "rank": 200,
@@ -1800,7 +1999,8 @@
    "adj_em": -4.26,
    "adj_o": 107.1,
    "adj_d": 111.3,
-   "adj_t": 71.6
+   "adj_t": 71.6,
+   "luck": 0.0
   },
   "FIU": {
    "rank": 201,
@@ -1809,7 +2009,8 @@
    "adj_em": -4.34,
    "adj_o": 102.7,
    "adj_d": 107.0,
-   "adj_t": 73.0
+   "adj_t": 73.0,
+   "luck": 0.0
   },
   "UTSA": {
    "rank": 202,
@@ -1818,7 +2019,8 @@
    "adj_em": -4.38,
    "adj_o": 103.8,
    "adj_d": 108.2,
-   "adj_t": 71.8
+   "adj_t": 71.8,
+   "luck": 0.118
   },
   "Green Bay": {
    "rank": 203,
@@ -1827,7 +2029,8 @@
    "adj_em": -4.4,
    "adj_o": 106.7,
    "adj_d": 111.1,
-   "adj_t": 67.8
+   "adj_t": 67.8,
+   "luck": 0.026
   },
   "Tennessee Tech": {
    "rank": 204,
@@ -1836,7 +2039,8 @@
    "adj_em": -4.4,
    "adj_o": 107.1,
    "adj_d": 111.5,
-   "adj_t": 74.4
+   "adj_t": 74.4,
+   "luck": 0.157
   },
   "Denver": {
    "rank": 205,
@@ -1845,7 +2049,8 @@
    "adj_em": -4.43,
    "adj_o": 103.4,
    "adj_d": 107.9,
-   "adj_t": 70.7
+   "adj_t": 70.7,
+   "luck": -0.004
   },
   "Cal St. Fullerton": {
    "rank": 206,
@@ -1854,7 +2059,8 @@
    "adj_em": -4.56,
    "adj_o": 102.4,
    "adj_d": 107.0,
-   "adj_t": 75.3
+   "adj_t": 75.3,
+   "luck": 0.226
   },
   "Iona": {
    "rank": 207,
@@ -1863,7 +2069,8 @@
    "adj_em": -4.6,
    "adj_o": 101.4,
    "adj_d": 106.0,
-   "adj_t": 69.7
+   "adj_t": 69.7,
+   "luck": 0.072
   },
   "UC Davis": {
    "rank": 208,
@@ -1872,7 +2079,8 @@
    "adj_em": -4.65,
    "adj_o": 102.2,
    "adj_d": 106.8,
-   "adj_t": 72.6
+   "adj_t": 72.6,
+   "luck": -0.14
   },
   "South Alabama": {
    "rank": 209,
@@ -1881,7 +2089,8 @@
    "adj_em": -4.87,
    "adj_o": 106.0,
    "adj_d": 110.9,
-   "adj_t": 66.2
+   "adj_t": 66.2,
+   "luck": 0.075
   },
   "Northern Kentucky": {
    "rank": 210,
@@ -1890,7 +2099,8 @@
    "adj_em": -4.88,
    "adj_o": 105.0,
    "adj_d": 109.8,
-   "adj_t": 73.9
+   "adj_t": 73.9,
+   "luck": 0.22
   },
   "Florida Gulf Coast": {
    "rank": 211,
@@ -1899,7 +2109,8 @@
    "adj_em": -4.9,
    "adj_o": 105.1,
    "adj_d": 110.0,
-   "adj_t": 69.6
+   "adj_t": 69.6,
+   "luck": -0.19
   },
   "Houston Christian": {
    "rank": 212,
@@ -1908,7 +2119,8 @@
    "adj_em": -4.97,
    "adj_o": 101.2,
    "adj_d": 106.2,
-   "adj_t": 69.4
+   "adj_t": 69.4,
+   "luck": 0.001
   },
   "Northern Colorado": {
    "rank": 213,
@@ -1917,7 +2129,8 @@
    "adj_em": -5.02,
    "adj_o": 105.6,
    "adj_d": 110.6,
-   "adj_t": 71.7
+   "adj_t": 71.7,
+   "luck": 0.0
   },
   "Appalachian St.": {
    "rank": 214,
@@ -1926,7 +2139,8 @@
    "adj_em": -5.1,
    "adj_o": 101.4,
    "adj_d": 106.5,
-   "adj_t": 65.6
+   "adj_t": 65.6,
+   "luck": 0.052
   },
   "UT Arlington": {
    "rank": 215,
@@ -1935,7 +2149,8 @@
    "adj_em": -5.2,
    "adj_o": 100.6,
    "adj_d": 105.8,
-   "adj_t": 72.1
+   "adj_t": 72.1,
+   "luck": 0.118
   },
   "Longwood": {
    "rank": 216,
@@ -1944,7 +2159,8 @@
    "adj_em": -5.38,
    "adj_o": 103.0,
    "adj_d": 108.4,
-   "adj_t": 71.3
+   "adj_t": 71.3,
+   "luck": 0.075
   },
   "Siena": {
    "rank": 217,
@@ -1953,7 +2169,8 @@
    "adj_em": -5.43,
    "adj_o": 103.5,
    "adj_d": 109.0,
-   "adj_t": 74.4
+   "adj_t": 74.4,
+   "luck": -0.076
   },
   "Youngstown St.": {
    "rank": 218,
@@ -1962,7 +2179,8 @@
    "adj_em": -5.45,
    "adj_o": 104.8,
    "adj_d": 110.3,
-   "adj_t": 71.6
+   "adj_t": 71.6,
+   "luck": 0.055
   },
   "Georgia St.": {
    "rank": 219,
@@ -1971,7 +2189,8 @@
    "adj_em": -5.56,
    "adj_o": 104.1,
    "adj_d": 109.6,
-   "adj_t": 70.3
+   "adj_t": 70.3,
+   "luck": -0.112
   },
   "Long Beach St.": {
    "rank": 220,
@@ -1980,7 +2199,8 @@
    "adj_em": -5.73,
    "adj_o": 101.7,
    "adj_d": 107.4,
-   "adj_t": 69.6
+   "adj_t": 69.6,
+   "luck": 0.039
   },
   "Arkansas St.": {
    "rank": 221,
@@ -1989,7 +2209,8 @@
    "adj_em": -5.77,
    "adj_o": 101.0,
    "adj_d": 106.8,
-   "adj_t": 74.9
+   "adj_t": 74.9,
+   "luck": 0.18
   },
   "Tarleton St.": {
    "rank": 222,
@@ -1998,7 +2219,8 @@
    "adj_em": -5.91,
    "adj_o": 103.4,
    "adj_d": 109.3,
-   "adj_t": 71.2
+   "adj_t": 71.2,
+   "luck": 0.0
   },
   "Buffalo": {
    "rank": 223,
@@ -2007,7 +2229,8 @@
    "adj_em": -6.06,
    "adj_o": 102.9,
    "adj_d": 109.0,
-   "adj_t": 71.5
+   "adj_t": 71.5,
+   "luck": -0.0
   },
   "Chattanooga": {
    "rank": 224,
@@ -2016,7 +2239,8 @@
    "adj_em": -6.08,
    "adj_o": 106.6,
    "adj_d": 112.6,
-   "adj_t": 71.0
+   "adj_t": 71.0,
+   "luck": -0.107
   },
   "Colgate": {
    "rank": 225,
@@ -2025,7 +2249,8 @@
    "adj_em": -6.21,
    "adj_o": 103.8,
    "adj_d": 110.1,
-   "adj_t": 71.4
+   "adj_t": 71.4,
+   "luck": -0.128
   },
   "Little Rock": {
    "rank": 226,
@@ -2034,7 +2259,8 @@
    "adj_em": -6.25,
    "adj_o": 105.1,
    "adj_d": 111.4,
-   "adj_t": 70.3
+   "adj_t": 70.3,
+   "luck": -0.111
   },
   "Indiana St.": {
    "rank": 227,
@@ -2043,7 +2269,8 @@
    "adj_em": -6.29,
    "adj_o": 102.9,
    "adj_d": 109.1,
-   "adj_t": 71.1
+   "adj_t": 71.1,
+   "luck": 0.091
   },
   "Robert Morris": {
    "rank": 228,
@@ -2052,7 +2279,8 @@
    "adj_em": -6.34,
    "adj_o": 100.2,
    "adj_d": 106.6,
-   "adj_t": 68.4
+   "adj_t": 68.4,
+   "luck": -0.0
   },
   "Columbia": {
    "rank": 229,
@@ -2061,7 +2289,8 @@
    "adj_em": -6.45,
    "adj_o": 103.6,
    "adj_d": 110.0,
-   "adj_t": 69.2
+   "adj_t": 69.2,
+   "luck": -0.064
   },
   "Ball St.": {
    "rank": 230,
@@ -2070,7 +2299,8 @@
    "adj_em": -6.49,
    "adj_o": 99.6,
    "adj_d": 106.0,
-   "adj_t": 69.0
+   "adj_t": 69.0,
+   "luck": -0.118
   },
   "Tennessee St.": {
    "rank": 231,
@@ -2079,7 +2309,8 @@
    "adj_em": -6.52,
    "adj_o": 100.5,
    "adj_d": 107.0,
-   "adj_t": 74.3
+   "adj_t": 74.3,
+   "luck": 0.0
   },
   "Stony Brook": {
    "rank": 232,
@@ -2088,7 +2319,8 @@
    "adj_em": -6.76,
    "adj_o": 103.4,
    "adj_d": 110.2,
-   "adj_t": 68.0
+   "adj_t": 68.0,
+   "luck": -0.0
   },
   "Oakland": {
    "rank": 233,
@@ -2097,7 +2329,8 @@
    "adj_em": -6.76,
    "adj_o": 106.2,
    "adj_d": 113.0,
-   "adj_t": 70.2
+   "adj_t": 70.2,
+   "luck": -0.005
   },
   "Montana": {
    "rank": 234,
@@ -2106,7 +2339,8 @@
    "adj_em": -6.82,
    "adj_o": 100.7,
    "adj_d": 107.5,
-   "adj_t": 70.6
+   "adj_t": 70.6,
+   "luck": -0.104
   },
   "Cal St. Bakersfield": {
    "rank": 235,
@@ -2115,7 +2349,8 @@
    "adj_em": -6.83,
    "adj_o": 106.0,
    "adj_d": 112.9,
-   "adj_t": 71.2
+   "adj_t": 71.2,
+   "luck": 0.0
   },
   "Milwaukee": {
    "rank": 236,
@@ -2124,7 +2359,8 @@
    "adj_em": -6.83,
    "adj_o": 101.8,
    "adj_d": 108.7,
-   "adj_t": 72.3
+   "adj_t": 72.3,
+   "luck": 0.09
   },
   "Central Michigan": {
    "rank": 237,
@@ -2133,7 +2369,8 @@
    "adj_em": -6.86,
    "adj_o": 104.4,
    "adj_d": 111.2,
-   "adj_t": 70.6
+   "adj_t": 70.6,
+   "luck": 0.055
   },
   "Delaware": {
    "rank": 238,
@@ -2142,7 +2379,8 @@
    "adj_em": -7.0,
    "adj_o": 101.9,
    "adj_d": 108.9,
-   "adj_t": 68.4
+   "adj_t": 68.4,
+   "luck": -0.0
   },
   "Bradley": {
    "rank": 239,
@@ -2151,7 +2389,8 @@
    "adj_em": -7.04,
    "adj_o": 96.5,
    "adj_d": 103.5,
-   "adj_t": 68.3
+   "adj_t": 68.3,
+   "luck": 0.147
   },
   "Southern Miss": {
    "rank": 240,
@@ -2160,7 +2399,8 @@
    "adj_em": -7.06,
    "adj_o": 100.7,
    "adj_d": 107.7,
-   "adj_t": 71.5
+   "adj_t": 71.5,
+   "luck": 0.205
   },
   "Tennessee Martin": {
    "rank": 241,
@@ -2169,7 +2409,8 @@
    "adj_em": -7.22,
    "adj_o": 100.7,
    "adj_d": 108.0,
-   "adj_t": 68.1
+   "adj_t": 68.1,
+   "luck": -0.34
   },
   "Cornell": {
    "rank": 242,
@@ -2178,7 +2419,8 @@
    "adj_em": -7.25,
    "adj_o": 104.1,
    "adj_d": 111.4,
-   "adj_t": 73.2
+   "adj_t": 73.2,
+   "luck": 0.117
   },
   "Idaho": {
    "rank": 243,
@@ -2187,7 +2429,8 @@
    "adj_em": -7.26,
    "adj_o": 101.3,
    "adj_d": 108.5,
-   "adj_t": 70.6
+   "adj_t": 70.6,
+   "luck": 0.0
   },
   "Rice": {
    "rank": 244,
@@ -2196,7 +2439,8 @@
    "adj_em": -7.32,
    "adj_o": 102.8,
    "adj_d": 110.1,
-   "adj_t": 70.8
+   "adj_t": 70.8,
+   "luck": -0.212
   },
   "Winthrop": {
    "rank": 245,
@@ -2205,7 +2449,8 @@
    "adj_em": -7.34,
    "adj_o": 106.5,
    "adj_d": 113.9,
-   "adj_t": 74.4
+   "adj_t": 74.4,
+   "luck": -0.023
   },
   "Northeastern": {
    "rank": 246,
@@ -2214,7 +2459,8 @@
    "adj_em": -7.38,
    "adj_o": 104.0,
    "adj_d": 111.4,
-   "adj_t": 72.4
+   "adj_t": 72.4,
+   "luck": 0.081
   },
   "Portland St.": {
    "rank": 247,
@@ -2223,7 +2469,8 @@
    "adj_em": -7.41,
    "adj_o": 100.3,
    "adj_d": 107.7,
-   "adj_t": 71.4
+   "adj_t": 71.4,
+   "luck": -0.0
   },
   "Quinnipiac": {
    "rank": 248,
@@ -2232,7 +2479,8 @@
    "adj_em": -7.48,
    "adj_o": 101.5,
    "adj_d": 109.0,
-   "adj_t": 70.4
+   "adj_t": 70.4,
+   "luck": 0.124
   },
   "Louisiana": {
    "rank": 249,
@@ -2241,7 +2489,8 @@
    "adj_em": -7.5,
    "adj_o": 99.8,
    "adj_d": 107.3,
-   "adj_t": 67.5
+   "adj_t": 67.5,
+   "luck": -0.014
   },
   "Kansas City": {
    "rank": 250,
@@ -2250,7 +2499,8 @@
    "adj_em": -7.5,
    "adj_o": 104.4,
    "adj_d": 111.9,
-   "adj_t": 70.2
+   "adj_t": 70.2,
+   "luck": -0.035
   },
   "Abilene Christian": {
    "rank": 251,
@@ -2259,7 +2509,8 @@
    "adj_em": -7.52,
    "adj_o": 102.0,
    "adj_d": 109.5,
-   "adj_t": 70.7
+   "adj_t": 70.7,
+   "luck": 0.079
   },
   "Drexel": {
    "rank": 252,
@@ -2268,7 +2519,8 @@
    "adj_em": -7.54,
    "adj_o": 101.4,
    "adj_d": 108.9,
-   "adj_t": 68.0
+   "adj_t": 68.0,
+   "luck": 0.044
   },
   "UT Rio Grande Valley": {
    "rank": 253,
@@ -2277,7 +2529,8 @@
    "adj_em": -7.55,
    "adj_o": 102.5,
    "adj_d": 110.1,
-   "adj_t": 67.8
+   "adj_t": 67.8,
+   "luck": 0.057
   },
   "North Dakota St.": {
    "rank": 254,
@@ -2286,7 +2539,8 @@
    "adj_em": -7.57,
    "adj_o": 105.7,
    "adj_d": 113.3,
-   "adj_t": 69.5
+   "adj_t": 69.5,
+   "luck": -0.131
   },
   "Missouri St.": {
    "rank": 255,
@@ -2295,7 +2549,8 @@
    "adj_em": -7.67,
    "adj_o": 101.5,
    "adj_d": 109.2,
-   "adj_t": 69.2
+   "adj_t": 69.2,
+   "luck": 0.0
   },
   "Hampton": {
    "rank": 256,
@@ -2304,7 +2559,8 @@
    "adj_em": -7.79,
    "adj_o": 99.0,
    "adj_d": 106.8,
-   "adj_t": 69.8
+   "adj_t": 69.8,
+   "luck": -0.0
   },
   "East Texas A&M": {
    "rank": 257,
@@ -2313,7 +2569,8 @@
    "adj_em": -7.83,
    "adj_o": 100.6,
    "adj_d": 108.4,
-   "adj_t": 69.1
+   "adj_t": 69.1,
+   "luck": 0.122
   },
   "Southeast Missouri": {
    "rank": 258,
@@ -2322,7 +2579,8 @@
    "adj_em": -7.98,
    "adj_o": 98.7,
    "adj_d": 106.6,
-   "adj_t": 73.2
+   "adj_t": 73.2,
+   "luck": 0.061
   },
   "Utah Tech": {
    "rank": 259,
@@ -2331,7 +2589,8 @@
    "adj_em": -8.08,
    "adj_o": 103.5,
    "adj_d": 111.6,
-   "adj_t": 72.9
+   "adj_t": 72.9,
+   "luck": -0.0
   },
   "Coastal Carolina": {
    "rank": 260,
@@ -2340,7 +2599,8 @@
    "adj_em": -8.11,
    "adj_o": 100.0,
    "adj_d": 108.2,
-   "adj_t": 70.1
+   "adj_t": 70.1,
+   "luck": 0.005
   },
   "Merrimack": {
    "rank": 261,
@@ -2349,7 +2609,8 @@
    "adj_em": -8.14,
    "adj_o": 99.2,
    "adj_d": 107.3,
-   "adj_t": 66.1
+   "adj_t": 66.1,
+   "luck": -0.061
   },
   "Presbyterian": {
    "rank": 262,
@@ -2358,7 +2619,8 @@
    "adj_em": -8.18,
    "adj_o": 104.8,
    "adj_d": 113.0,
-   "adj_t": 68.1
+   "adj_t": 68.1,
+   "luck": -0.068
   },
   "Southern Utah": {
    "rank": 263,
@@ -2367,7 +2629,8 @@
    "adj_em": -8.32,
    "adj_o": 101.1,
    "adj_d": 109.4,
-   "adj_t": 73.2
+   "adj_t": 73.2,
+   "luck": 0.0
   },
   "Louisiana Tech": {
    "rank": 264,
@@ -2376,7 +2639,8 @@
    "adj_em": -8.36,
    "adj_o": 101.2,
    "adj_d": 109.5,
-   "adj_t": 68.7
+   "adj_t": 68.7,
+   "luck": 0.158
   },
   "Air Force": {
    "rank": 265,
@@ -2385,7 +2649,8 @@
    "adj_em": -8.39,
    "adj_o": 103.0,
    "adj_d": 111.4,
-   "adj_t": 74.7
+   "adj_t": 74.7,
+   "luck": 0.234
   },
   "Lamar": {
    "rank": 266,
@@ -2394,7 +2659,8 @@
    "adj_em": -8.56,
    "adj_o": 100.5,
    "adj_d": 109.1,
-   "adj_t": 71.4
+   "adj_t": 71.4,
+   "luck": 0.0
   },
   "Georgia Southern": {
    "rank": 267,
@@ -2403,7 +2669,8 @@
    "adj_em": -8.6,
    "adj_o": 101.8,
    "adj_d": 110.4,
-   "adj_t": 73.3
+   "adj_t": 73.3,
+   "luck": -0.125
   },
   "Radford": {
    "rank": 268,
@@ -2412,7 +2679,8 @@
    "adj_em": -8.8,
    "adj_o": 99.9,
    "adj_d": 108.7,
-   "adj_t": 72.2
+   "adj_t": 72.2,
+   "luck": -0.0
   },
   "Fairfield": {
    "rank": 269,
@@ -2421,7 +2689,8 @@
    "adj_em": -8.91,
    "adj_o": 99.0,
    "adj_d": 107.9,
-   "adj_t": 71.1
+   "adj_t": 71.1,
+   "luck": 0.059
   },
   "LIU": {
    "rank": 270,
@@ -2430,7 +2699,8 @@
    "adj_em": -8.94,
    "adj_o": 97.4,
    "adj_d": 106.3,
-   "adj_t": 71.6
+   "adj_t": 71.6,
+   "luck": -0.032
   },
   "Northern Illinois": {
    "rank": 271,
@@ -2439,7 +2709,8 @@
    "adj_em": -9.0,
    "adj_o": 105.0,
    "adj_d": 114.0,
-   "adj_t": 69.5
+   "adj_t": 69.5,
+   "luck": 0.009
   },
   "Southeastern Louisiana": {
    "rank": 272,
@@ -2448,7 +2719,8 @@
    "adj_em": -9.06,
    "adj_o": 101.1,
    "adj_d": 110.1,
-   "adj_t": 69.7
+   "adj_t": 69.7,
+   "luck": 0.164
   },
   "Evansville": {
    "rank": 273,
@@ -2457,7 +2729,8 @@
    "adj_em": -9.09,
    "adj_o": 99.4,
    "adj_d": 108.5,
-   "adj_t": 70.1
+   "adj_t": 70.1,
+   "luck": 0.124
   },
   "UNC Greensboro": {
    "rank": 274,
@@ -2466,7 +2739,8 @@
    "adj_em": -9.26,
    "adj_o": 102.8,
    "adj_d": 112.0,
-   "adj_t": 69.8
+   "adj_t": 69.8,
+   "luck": -0.0
   },
   "North Alabama": {
    "rank": 275,
@@ -2475,7 +2749,8 @@
    "adj_em": -9.26,
    "adj_o": 100.2,
    "adj_d": 109.5,
-   "adj_t": 69.8
+   "adj_t": 69.8,
+   "luck": 0.12
   },
   "UMass Lowell": {
    "rank": 276,
@@ -2484,7 +2759,8 @@
    "adj_em": -9.68,
    "adj_o": 99.6,
    "adj_d": 109.3,
-   "adj_t": 71.3
+   "adj_t": 71.3,
+   "luck": 0.12
   },
   "Brown": {
    "rank": 277,
@@ -2493,7 +2769,8 @@
    "adj_em": -9.71,
    "adj_o": 97.8,
    "adj_d": 107.6,
-   "adj_t": 69.2
+   "adj_t": 69.2,
+   "luck": -0.198
   },
   "Eastern Kentucky": {
    "rank": 278,
@@ -2502,7 +2779,8 @@
    "adj_em": -9.94,
    "adj_o": 101.1,
    "adj_d": 111.1,
-   "adj_t": 71.8
+   "adj_t": 71.8,
+   "luck": 0.0
   },
   "Lehigh": {
    "rank": 279,
@@ -2511,7 +2789,8 @@
    "adj_em": -10.07,
    "adj_o": 96.4,
    "adj_d": 106.5,
-   "adj_t": 69.7
+   "adj_t": 69.7,
+   "luck": 0.058
   },
   "Boston University": {
    "rank": 280,
@@ -2520,7 +2799,8 @@
    "adj_em": -10.37,
    "adj_o": 102.1,
    "adj_d": 112.5,
-   "adj_t": 68.3
+   "adj_t": 68.3,
+   "luck": 0.215
   },
   "Alabama St.": {
    "rank": 281,
@@ -2529,7 +2809,8 @@
    "adj_em": -10.41,
    "adj_o": 100.3,
    "adj_d": 110.7,
-   "adj_t": 72.8
+   "adj_t": 72.8,
+   "luck": 0.0
   },
   "Nicholls": {
    "rank": 282,
@@ -2538,7 +2819,8 @@
    "adj_em": -10.61,
    "adj_o": 97.9,
    "adj_d": 108.6,
-   "adj_t": 70.0
+   "adj_t": 70.0,
+   "luck": -0.032
   },
   "LSU New Orleans": {
    "rank": 283,
@@ -2547,7 +2829,8 @@
    "adj_em": -10.64,
    "adj_o": 101.2,
    "adj_d": 111.9,
-   "adj_t": 73.5
+   "adj_t": 73.5,
+   "luck": 0.0
   },
   "Southern": {
    "rank": 284,
@@ -2556,7 +2839,8 @@
    "adj_em": -10.76,
    "adj_o": 97.9,
    "adj_d": 108.6,
-   "adj_t": 72.6
+   "adj_t": 72.6,
+   "luck": -0.063
   },
   "Navy": {
    "rank": 285,
@@ -2565,7 +2849,8 @@
    "adj_em": -10.77,
    "adj_o": 98.8,
    "adj_d": 109.5,
-   "adj_t": 69.4
+   "adj_t": 69.4,
+   "luck": 0.326
   },
   "UMBC": {
    "rank": 286,
@@ -2574,7 +2859,8 @@
    "adj_em": -10.94,
    "adj_o": 101.6,
    "adj_d": 112.5,
-   "adj_t": 73.3
+   "adj_t": 73.3,
+   "luck": -0.035
   },
   "Marist": {
    "rank": 287,
@@ -2583,7 +2869,8 @@
    "adj_em": -11.06,
    "adj_o": 95.3,
    "adj_d": 106.4,
-   "adj_t": 69.6
+   "adj_t": 69.6,
+   "luck": -0.127
   },
   "Nebraska Omaha": {
    "rank": 288,
@@ -2592,7 +2879,8 @@
    "adj_em": -11.06,
    "adj_o": 100.7,
    "adj_d": 111.7,
-   "adj_t": 70.8
+   "adj_t": 70.8,
+   "luck": -0.0
   },
   "Bellarmine": {
    "rank": 289,
@@ -2601,7 +2889,8 @@
    "adj_em": -11.08,
    "adj_o": 104.7,
    "adj_d": 115.8,
-   "adj_t": 68.3
+   "adj_t": 68.3,
+   "luck": -0.094
   },
   "Oral Roberts": {
    "rank": 290,
@@ -2610,7 +2899,8 @@
    "adj_em": -11.13,
    "adj_o": 100.9,
    "adj_d": 112.0,
-   "adj_t": 70.4
+   "adj_t": 70.4,
+   "luck": -0.087
   },
   "Dartmouth": {
    "rank": 291,
@@ -2619,7 +2909,8 @@
    "adj_em": -11.25,
    "adj_o": 99.2,
    "adj_d": 110.4,
-   "adj_t": 70.4
+   "adj_t": 70.4,
+   "luck": 0.028
   },
   "North Carolina A&T": {
    "rank": 292,
@@ -2628,7 +2919,8 @@
    "adj_em": -11.36,
    "adj_o": 98.5,
    "adj_d": 109.8,
-   "adj_t": 71.3
+   "adj_t": 71.3,
+   "luck": -0.023
   },
   "South Dakota": {
    "rank": 293,
@@ -2637,7 +2929,8 @@
    "adj_em": -11.39,
    "adj_o": 103.9,
    "adj_d": 115.3,
-   "adj_t": 74.0
+   "adj_t": 74.0,
+   "luck": -0.075
   },
   "SIUE": {
    "rank": 294,
@@ -2646,7 +2939,8 @@
    "adj_em": -11.39,
    "adj_o": 98.8,
    "adj_d": 110.1,
-   "adj_t": 68.9
+   "adj_t": 68.9,
+   "luck": -0.229
   },
   "Mount St. Mary's": {
    "rank": 295,
@@ -2655,7 +2949,8 @@
    "adj_em": -11.5,
    "adj_o": 96.2,
    "adj_d": 107.7,
-   "adj_t": 71.1
+   "adj_t": 71.1,
+   "luck": 0.153
   },
   "Purdue Fort Wayne": {
    "rank": 296,
@@ -2664,7 +2959,8 @@
    "adj_em": -11.67,
    "adj_o": 99.3,
    "adj_d": 110.9,
-   "adj_t": 71.6
+   "adj_t": 71.6,
+   "luck": -0.09
   },
   "Campbell": {
    "rank": 297,
@@ -2673,7 +2969,8 @@
    "adj_em": -11.74,
    "adj_o": 101.3,
    "adj_d": 113.1,
-   "adj_t": 69.2
+   "adj_t": 69.2,
+   "luck": 0.0
   },
   "Wofford": {
    "rank": 298,
@@ -2682,7 +2979,8 @@
    "adj_em": -11.8,
    "adj_o": 101.2,
    "adj_d": 113.0,
-   "adj_t": 72.3
+   "adj_t": 72.3,
+   "luck": -0.0
   },
   "Northern Arizona": {
    "rank": 299,
@@ -2691,7 +2989,8 @@
    "adj_em": -11.83,
    "adj_o": 103.6,
    "adj_d": 115.4,
-   "adj_t": 67.0
+   "adj_t": 67.0,
+   "luck": -0.014
   },
   "Grambling St.": {
    "rank": 300,
@@ -2700,7 +2999,8 @@
    "adj_em": -11.83,
    "adj_o": 100.6,
    "adj_d": 112.5,
-   "adj_t": 70.8
+   "adj_t": 70.8,
+   "luck": 0.231
   },
   "Stetson": {
    "rank": 301,
@@ -2709,7 +3009,8 @@
    "adj_em": -12.03,
    "adj_o": 102.1,
    "adj_d": 114.1,
-   "adj_t": 68.1
+   "adj_t": 68.1,
+   "luck": -0.031
   },
   "VMI": {
    "rank": 302,
@@ -2718,7 +3019,8 @@
    "adj_em": -12.05,
    "adj_o": 98.3,
    "adj_d": 110.3,
-   "adj_t": 71.5
+   "adj_t": 71.5,
+   "luck": -0.105
   },
   "IU Indy": {
    "rank": 303,
@@ -2727,7 +3029,8 @@
    "adj_em": -12.12,
    "adj_o": 101.4,
    "adj_d": 113.5,
-   "adj_t": 73.9
+   "adj_t": 73.9,
+   "luck": 0.116
   },
   "Jackson St.": {
    "rank": 304,
@@ -2736,7 +3039,8 @@
    "adj_em": -12.12,
    "adj_o": 98.3,
    "adj_d": 110.4,
-   "adj_t": 72.5
+   "adj_t": 72.5,
+   "luck": 0.065
   },
   "Weber St.": {
    "rank": 305,
@@ -2745,7 +3049,8 @@
    "adj_em": -12.17,
    "adj_o": 102.1,
    "adj_d": 114.3,
-   "adj_t": 72.8
+   "adj_t": 72.8,
+   "luck": -0.066
   },
   "North Florida": {
    "rank": 306,
@@ -2754,7 +3059,8 @@
    "adj_em": -12.33,
    "adj_o": 99.6,
    "adj_d": 111.9,
-   "adj_t": 75.5
+   "adj_t": 75.5,
+   "luck": 0.139
   },
   "North Dakota": {
    "rank": 307,
@@ -2763,7 +3069,8 @@
    "adj_em": -12.52,
    "adj_o": 104.0,
    "adj_d": 116.5,
-   "adj_t": 70.2
+   "adj_t": 70.2,
+   "luck": 0.137
   },
   "UNC Asheville": {
    "rank": 308,
@@ -2772,7 +3079,8 @@
    "adj_em": -12.53,
    "adj_o": 100.2,
    "adj_d": 112.7,
-   "adj_t": 70.7
+   "adj_t": 70.7,
+   "luck": 0.101
   },
   "Louisiana Monroe": {
    "rank": 309,
@@ -2781,7 +3089,8 @@
    "adj_em": -12.6,
    "adj_o": 100.9,
    "adj_d": 113.5,
-   "adj_t": 72.5
+   "adj_t": 72.5,
+   "luck": -0.18
   },
   "Chicago St.": {
    "rank": 310,
@@ -2790,7 +3099,8 @@
    "adj_em": -12.77,
    "adj_o": 97.7,
    "adj_d": 110.5,
-   "adj_t": 69.0
+   "adj_t": 69.0,
+   "luck": 0.097
   },
   "Mercyhurst": {
    "rank": 311,
@@ -2799,7 +3109,8 @@
    "adj_em": -12.81,
    "adj_o": 97.9,
    "adj_d": 110.7,
-   "adj_t": 66.5
+   "adj_t": 66.5,
+   "luck": -0.005
   },
   "Lindenwood": {
    "rank": 312,
@@ -2808,7 +3119,8 @@
    "adj_em": -12.84,
    "adj_o": 97.1,
    "adj_d": 110.0,
-   "adj_t": 74.0
+   "adj_t": 74.0,
+   "luck": -0.0
   },
   "Northwestern St.": {
    "rank": 313,
@@ -2817,7 +3129,8 @@
    "adj_em": -12.9,
    "adj_o": 97.2,
    "adj_d": 110.1,
-   "adj_t": 68.9
+   "adj_t": 68.9,
+   "luck": -0.014
   },
   "Cleveland St.": {
    "rank": 314,
@@ -2826,7 +3139,8 @@
    "adj_em": -12.91,
    "adj_o": 104.5,
    "adj_d": 117.4,
-   "adj_t": 70.3
+   "adj_t": 70.3,
+   "luck": -0.101
   },
   "Charleston Southern": {
    "rank": 315,
@@ -2835,7 +3149,8 @@
    "adj_em": -12.98,
    "adj_o": 97.7,
    "adj_d": 110.6,
-   "adj_t": 73.2
+   "adj_t": 73.2,
+   "luck": -0.0
   },
   "Detroit Mercy": {
    "rank": 316,
@@ -2844,7 +3159,8 @@
    "adj_em": -13.08,
    "adj_o": 99.7,
    "adj_d": 112.8,
-   "adj_t": 72.0
+   "adj_t": 72.0,
+   "luck": -0.004
   },
   "Le Moyne": {
    "rank": 317,
@@ -2853,7 +3169,8 @@
    "adj_em": -13.16,
    "adj_o": 98.0,
    "adj_d": 111.1,
-   "adj_t": 72.2
+   "adj_t": 72.2,
+   "luck": -0.0
   },
   "Southern Indiana": {
    "rank": 318,
@@ -2862,7 +3179,8 @@
    "adj_em": -13.26,
    "adj_o": 95.4,
    "adj_d": 108.6,
-   "adj_t": 70.0
+   "adj_t": 70.0,
+   "luck": -0.179
   },
   "Bryant": {
    "rank": 319,
@@ -2871,7 +3189,8 @@
    "adj_em": -13.3,
    "adj_o": 94.4,
    "adj_d": 107.7,
-   "adj_t": 70.3
+   "adj_t": 70.3,
+   "luck": 0.055
   },
   "Manhattan": {
    "rank": 320,
@@ -2880,7 +3199,8 @@
    "adj_em": -13.38,
    "adj_o": 98.2,
    "adj_d": 111.6,
-   "adj_t": 69.7
+   "adj_t": 69.7,
+   "luck": 0.025
   },
   "Prairie View A&M": {
    "rank": 321,
@@ -2889,7 +3209,8 @@
    "adj_em": -13.64,
    "adj_o": 97.2,
    "adj_d": 110.9,
-   "adj_t": 72.0
+   "adj_t": 72.0,
+   "luck": -0.159
   },
   "Sacred Heart": {
    "rank": 322,
@@ -2898,7 +3219,8 @@
    "adj_em": -14.02,
    "adj_o": 101.8,
    "adj_d": 115.8,
-   "adj_t": 71.2
+   "adj_t": 71.2,
+   "luck": -0.106
   },
   "The Citadel": {
    "rank": 323,
@@ -2907,7 +3229,8 @@
    "adj_em": -14.45,
    "adj_o": 98.9,
    "adj_d": 113.3,
-   "adj_t": 67.6
+   "adj_t": 67.6,
+   "luck": 0.0
   },
   "Central Connecticut": {
    "rank": 324,
@@ -2916,7 +3239,8 @@
    "adj_em": -14.53,
    "adj_o": 97.7,
    "adj_d": 112.2,
-   "adj_t": 66.7
+   "adj_t": 66.7,
+   "luck": 0.188
   },
   "Norfolk St.": {
    "rank": 325,
@@ -2925,7 +3249,8 @@
    "adj_em": -14.57,
    "adj_o": 98.9,
    "adj_d": 113.4,
-   "adj_t": 69.9
+   "adj_t": 69.9,
+   "luck": -0.048
   },
   "Maine": {
    "rank": 326,
@@ -2934,7 +3259,8 @@
    "adj_em": -14.67,
    "adj_o": 93.1,
    "adj_d": 107.8,
-   "adj_t": 69.7
+   "adj_t": 69.7,
+   "luck": 0.023
   },
   "Alabama A&M": {
    "rank": 327,
@@ -2943,7 +3269,8 @@
    "adj_em": -14.69,
    "adj_o": 97.8,
    "adj_d": 112.5,
-   "adj_t": 68.6
+   "adj_t": 68.6,
+   "luck": 0.238
   },
   "New Hampshire": {
    "rank": 328,
@@ -2952,7 +3279,8 @@
    "adj_em": -14.85,
    "adj_o": 92.5,
    "adj_d": 107.3,
-   "adj_t": 70.0
+   "adj_t": 70.0,
+   "luck": -0.018
   },
   "Fairleigh Dickinson": {
    "rank": 329,
@@ -2961,7 +3289,8 @@
    "adj_em": -14.97,
    "adj_o": 97.6,
    "adj_d": 112.6,
-   "adj_t": 68.5
+   "adj_t": 68.5,
+   "luck": 0.152
   },
   "South Carolina St.": {
    "rank": 330,
@@ -2970,7 +3299,8 @@
    "adj_em": -14.97,
    "adj_o": 96.3,
    "adj_d": 111.3,
-   "adj_t": 73.4
+   "adj_t": 73.4,
+   "luck": 0.237
   },
   "Texas Southern": {
    "rank": 331,
@@ -2979,7 +3309,8 @@
    "adj_em": -14.99,
    "adj_o": 95.0,
    "adj_d": 109.9,
-   "adj_t": 72.4
+   "adj_t": 72.4,
+   "luck": -0.008
   },
   "Binghamton": {
    "rank": 332,
@@ -2988,7 +3319,8 @@
    "adj_em": -15.06,
    "adj_o": 99.6,
    "adj_d": 114.7,
-   "adj_t": 67.0
+   "adj_t": 67.0,
+   "luck": 0.234
   },
   "West Georgia": {
    "rank": 333,
@@ -2997,7 +3329,8 @@
    "adj_em": -15.27,
    "adj_o": 94.3,
    "adj_d": 109.6,
-   "adj_t": 71.7
+   "adj_t": 71.7,
+   "luck": -0.088
   },
   "Cal Baptist": {
    "rank": 334,
@@ -3006,7 +3339,8 @@
    "adj_em": -15.28,
    "adj_o": 98.5,
    "adj_d": 113.8,
-   "adj_t": 68.4
+   "adj_t": 68.4,
+   "luck": -0.041
   },
   "Lafayette": {
    "rank": 335,
@@ -3015,7 +3349,8 @@
    "adj_em": -15.3,
    "adj_o": 92.1,
    "adj_d": 107.4,
-   "adj_t": 70.7
+   "adj_t": 70.7,
+   "luck": -0.111
   },
   "Incarnate Word": {
    "rank": 336,
@@ -3024,7 +3359,8 @@
    "adj_em": -15.47,
    "adj_o": 96.4,
    "adj_d": 111.8,
-   "adj_t": 70.9
+   "adj_t": 70.9,
+   "luck": -0.018
   },
   "Wagner": {
    "rank": 337,
@@ -3033,7 +3369,8 @@
    "adj_em": -15.51,
    "adj_o": 94.1,
    "adj_d": 109.6,
-   "adj_t": 69.1
+   "adj_t": 69.1,
+   "luck": -0.002
   },
   "Niagara": {
    "rank": 338,
@@ -3042,7 +3379,8 @@
    "adj_em": -15.55,
    "adj_o": 97.6,
    "adj_d": 113.2,
-   "adj_t": 69.9
+   "adj_t": 69.9,
+   "luck": -0.162
   },
   "Idaho St.": {
    "rank": 339,
@@ -3051,7 +3389,8 @@
    "adj_em": -15.85,
    "adj_o": 98.4,
    "adj_d": 114.2,
-   "adj_t": 70.8
+   "adj_t": 70.8,
+   "luck": -0.061
   },
   "Morehead St.": {
    "rank": 340,
@@ -3060,7 +3399,8 @@
    "adj_em": -16.09,
    "adj_o": 98.7,
    "adj_d": 114.8,
-   "adj_t": 68.2
+   "adj_t": 68.2,
+   "luck": -0.014
   },
   "Alcorn St.": {
    "rank": 341,
@@ -3069,7 +3409,8 @@
    "adj_em": -16.17,
    "adj_o": 98.7,
    "adj_d": 114.9,
-   "adj_t": 71.4
+   "adj_t": 71.4,
+   "luck": -0.032
   },
   "Saint Peter's": {
    "rank": 342,
@@ -3078,7 +3419,8 @@
    "adj_em": -16.21,
    "adj_o": 91.6,
    "adj_d": 107.8,
-   "adj_t": 65.9
+   "adj_t": 65.9,
+   "luck": -0.159
   },
   "Bucknell": {
    "rank": 343,
@@ -3087,7 +3429,8 @@
    "adj_em": -16.41,
    "adj_o": 97.6,
    "adj_d": 114.0,
-   "adj_t": 69.7
+   "adj_t": 69.7,
+   "luck": -0.0
   },
   "Army": {
    "rank": 344,
@@ -3096,7 +3439,8 @@
    "adj_em": -16.65,
    "adj_o": 96.0,
    "adj_d": 112.7,
-   "adj_t": 69.4
+   "adj_t": 69.4,
+   "luck": -0.11
   },
   "USC Upstate": {
    "rank": 345,
@@ -3105,7 +3449,8 @@
    "adj_em": -17.13,
    "adj_o": 94.8,
    "adj_d": 111.9,
-   "adj_t": 70.8
+   "adj_t": 70.8,
+   "luck": -0.0
   },
   "New Haven": {
    "rank": 346,
@@ -3114,7 +3459,8 @@
    "adj_em": -17.3,
    "adj_o": 93.0,
    "adj_d": 110.3,
-   "adj_t": 66.1
+   "adj_t": 66.1,
+   "luck": 0.072
   },
   "Morgan St.": {
    "rank": 347,
@@ -3123,7 +3469,8 @@
    "adj_em": -17.55,
    "adj_o": 95.6,
    "adj_d": 113.1,
-   "adj_t": 74.3
+   "adj_t": 74.3,
+   "luck": 0.119
   },
   "Albany": {
    "rank": 348,
@@ -3132,7 +3479,8 @@
    "adj_em": -17.65,
    "adj_o": 97.7,
    "adj_d": 115.4,
-   "adj_t": 69.3
+   "adj_t": 69.3,
+   "luck": 0.084
   },
   "West Florida": {
    "rank": 349,
@@ -3141,7 +3489,8 @@
    "adj_em": -17.8,
    "adj_o": 98.4,
    "adj_d": 116.2,
-   "adj_t": 70.9
+   "adj_t": 70.9,
+   "luck": -0.141
   },
   "Gardner Webb": {
    "rank": 350,
@@ -3150,7 +3499,8 @@
    "adj_em": -18.27,
    "adj_o": 94.6,
    "adj_d": 112.9,
-   "adj_t": 72.2
+   "adj_t": 72.2,
+   "luck": -0.0
   },
   "North Carolina Central": {
    "rank": 351,
@@ -3159,7 +3509,8 @@
    "adj_em": -18.46,
    "adj_o": 93.0,
    "adj_d": 111.4,
-   "adj_t": 68.9
+   "adj_t": 68.9,
+   "luck": -0.025
   },
   "Florida A&M": {
    "rank": 352,
@@ -3168,7 +3519,8 @@
    "adj_em": -18.72,
    "adj_o": 95.2,
    "adj_d": 113.9,
-   "adj_t": 72.1
+   "adj_t": 72.1,
+   "luck": -0.001
   },
   "Stonehill": {
    "rank": 353,
@@ -3177,7 +3529,8 @@
    "adj_em": -18.77,
    "adj_o": 93.9,
    "adj_d": 112.7,
-   "adj_t": 69.0
+   "adj_t": 69.0,
+   "luck": 0.0
   },
   "Canisius": {
    "rank": 354,
@@ -3186,7 +3539,8 @@
    "adj_em": -18.79,
    "adj_o": 98.2,
    "adj_d": 117.0,
-   "adj_t": 69.9
+   "adj_t": 69.9,
+   "luck": 0.165
   },
   "Delaware St.": {
    "rank": 355,
@@ -3195,7 +3549,8 @@
    "adj_em": -19.1,
    "adj_o": 93.5,
    "adj_d": 112.6,
-   "adj_t": 70.3
+   "adj_t": 70.3,
+   "luck": -0.0
   },
   "Coppin St.": {
    "rank": 356,
@@ -3204,7 +3559,8 @@
    "adj_em": -19.19,
    "adj_o": 90.7,
    "adj_d": 109.9,
-   "adj_t": 69.5
+   "adj_t": 69.5,
+   "luck": -0.122
   },
   "Loyola MD": {
    "rank": 357,
@@ -3213,7 +3569,8 @@
    "adj_em": -20.14,
    "adj_o": 94.9,
    "adj_d": 115.0,
-   "adj_t": 70.5
+   "adj_t": 70.5,
+   "luck": -0.013
   },
   "Arkansas Pine Bluff": {
    "rank": 358,
@@ -3222,7 +3579,8 @@
    "adj_em": -20.4,
    "adj_o": 95.6,
    "adj_d": 116.0,
-   "adj_t": 74.2
+   "adj_t": 74.2,
+   "luck": -0.0
   },
   "NJIT": {
    "rank": 359,
@@ -3231,7 +3589,8 @@
    "adj_em": -20.45,
    "adj_o": 92.6,
    "adj_d": 113.1,
-   "adj_t": 68.9
+   "adj_t": 68.9,
+   "luck": 0.139
   },
   "Rider": {
    "rank": 360,
@@ -3240,7 +3599,8 @@
    "adj_em": -20.47,
    "adj_o": 94.5,
    "adj_d": 114.9,
-   "adj_t": 69.0
+   "adj_t": 69.0,
+   "luck": -0.066
   },
   "Maryland Eastern Shore": {
    "rank": 361,
@@ -3249,7 +3609,8 @@
    "adj_em": -20.7,
    "adj_o": 91.1,
    "adj_d": 111.8,
-   "adj_t": 66.8
+   "adj_t": 66.8,
+   "luck": -0.001
   },
   "Holy Cross": {
    "rank": 362,
@@ -3258,7 +3619,8 @@
    "adj_em": -21.18,
    "adj_o": 94.3,
    "adj_d": 115.5,
-   "adj_t": 71.1
+   "adj_t": 71.1,
+   "luck": -0.034
   },
   "Eastern Illinois": {
    "rank": 363,
@@ -3267,7 +3629,8 @@
    "adj_em": -21.49,
    "adj_o": 92.4,
    "adj_d": 113.8,
-   "adj_t": 70.4
+   "adj_t": 70.4,
+   "luck": -0.002
   },
   "Western Illinois": {
    "rank": 364,
@@ -3276,7 +3639,8 @@
    "adj_em": -22.3,
    "adj_o": 93.0,
    "adj_d": 115.3,
-   "adj_t": 71.1
+   "adj_t": 71.1,
+   "luck": -0.081
   },
   "Mississippi Valley St.": {
    "rank": 365,
@@ -3285,7 +3649,8 @@
    "adj_em": -24.95,
    "adj_o": 92.8,
    "adj_d": 117.7,
-   "adj_t": 69.3
+   "adj_t": 69.3,
+   "luck": -0.01
   }
  }
 }

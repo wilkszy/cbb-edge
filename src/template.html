@@ -67,6 +67,7 @@
   .conf table{border:none;border-radius:0;border-top:1px solid var(--line);table-layout:fixed}
   .conf col.c1{width:90px}.conf col.c3,.conf col.c4{width:120px}.conf col.c5{width:150px}.conf col.c6{width:190px}.conf col.c7{width:90px}
   .note{color:var(--muted);font-size:12px;margin-top:22px;max-width:900px}
+  .luck{border-color:#5a4a1f;color:#e8c46a}.unluck{border-color:#2c4a5e;color:#8cc4e8}
   .res-W{color:var(--accent);font-weight:700}.res-L{color:#e5484d;font-weight:700}.res-P{color:var(--ink2);font-weight:700}
   .empty{padding:32px;text-align:center;color:var(--ink2)}
   details.unm{margin-top:10px;color:var(--muted);font-size:12px}
@@ -83,6 +84,7 @@
     <button data-v="value" class="on">Best value</button>
     <button data-v="all">All games</button>
     <button data-v="conf">By conference</button>
+    <button data-v="ou">Over/Under</button>
     <button data-v="track">Track record</button>
   </div>
 
@@ -124,6 +126,25 @@
     <div id="confList"></div>
   </section>
 
+  <section class="view" id="v-ou">
+    <h2>Best total value</h2>
+    <p class="hint">Projected combined score (from KenPom tempo and efficiency) vs. the book total. Biggest gaps first.</p>
+    <div class="cards" id="ouCards"></div>
+    <h2>All totals</h2>
+    <div class="controls">
+      <label>Min total gap <input type="range" id="minTot" min="0" max="12" step="0.5" value="0"> <b id="minTotV">0.0</b> pts</label>
+    </div>
+    <div style="overflow-x:auto"><table>
+      <thead><tr>
+        <th data-t="tip">Tip</th><th data-t="away">Matchup</th>
+        <th class="num" data-t="book_total">Book total</th><th class="num" data-t="proj_total">KenPom proj</th>
+        <th class="num" data-t="abstot">Total gap</th><th data-t="ou_pick">Lean</th>
+        <th class="hide-sm">Best line</th><th class="num hide-sm" data-t="poss">Proj poss</th>
+      </tr></thead>
+      <tbody id="ouRows"></tbody>
+    </table></div>
+  </section>
+
   <section class="view" id="v-track">
     <p class="hint" id="trackHead"></p>
     <div class="tiles" id="trackTiles"></div>
@@ -133,6 +154,9 @@
     <h2>By size of gap</h2>
     <p class="hint">Does a bigger gap between the book and the projection mean the value side covers more often?</p>
     <div style="overflow-x:auto"><table id="bucketTbl"></table></div>
+    <h2>Totals</h2>
+    <p class="hint">Over/under lean vs. the locked book total. "Gap 4+" counts only games where the projection and the book differed by 4 or more points.</p>
+    <div style="overflow-x:auto"><table id="totTbl"></table></div>
     <h2>Recent results</h2>
     <div style="overflow-x:auto"><table id="recentTbl"></table></div>
   </section>
@@ -153,7 +177,7 @@ let sortKey = "absdiff", sortDir = -1, games = [], maxAbs = 4;
 function prep(){
   games = DATA.games.map(g => {
     const pickHome = g.pick === g.home;
-    return {...g, absdiff: Math.abs(g.diff), best: g.best_line ? g.best_line.point : 0,
+    return {...g, absdiff: Math.abs(g.diff), abstot: g.tot_diff == null ? null : Math.abs(g.tot_diff), best: g.best_line ? g.best_line.point : 0,
       pickHome, confGame: g.home_conf === g.away_conf,
       kpPick: pickHome ? g.kp_home_wp : 1 - g.kp_home_wp,
       mktPick: g.mkt_home_wp == null ? null : (pickHome ? g.mkt_home_wp : 1 - g.mkt_home_wp),
@@ -162,7 +186,13 @@ function prep(){
   maxAbs = Math.max(4, ...games.map(g => g.absdiff));
 }
 
-const matchup = g => `<span class="t">${esc(g.away)}</span><span class="r">#${g.away_rank}</span> @ <span class="t">${esc(g.home)}</span><span class="r">#${g.home_rank}</span>${g.neutral ? '<span class="tag">Neutral</span>' : ""}`;
+const luckTag = v => {
+  if (v == null || !DATA.luck_flag || Math.abs(v) < DATA.luck_flag) return "";
+  const n = (v > 0 ? "+" : "−") + Math.abs(v).toFixed(2).replace(/^0/, "");
+  return v > 0 ? `<span class="tag luck" title="KenPom luck: won more than their game-by-game efficiency predicts">Lucky ${n}</span>`
+               : `<span class="tag unluck" title="KenPom luck: won less than their game-by-game efficiency predicts">Unlucky ${n}</span>`;
+};
+const matchup = g => `<span class="t">${esc(g.away)}</span><span class="r">#${g.away_rank}</span>${luckTag(g.away_luck)} @ <span class="t">${esc(g.home)}</span><span class="r">#${g.home_rank}</span>${luckTag(g.home_luck)}${g.neutral ? '<span class="tag">Neutral</span>' : ""}`;
 const bestLine = g => g.best_line ? `${fmt(g.best_line.point)} (${g.best_line.price > 0 ? "+" : ""}${g.best_line.price}) ${esc(g.best_line.book)}` : "–";
 const edgeCell = g => `<div class="edge"><div class="bar"><span style="width:${(g.absdiff / maxAbs * 100).toFixed(0)}%"></span></div><b>${g.absdiff.toFixed(1)}</b></div>`;
 
@@ -191,7 +221,7 @@ function card(g, i, mode){
     <div class="side">${esc(g.pick)} ${fmt(g.pickSpread)}</div>
     <div class="line">${detail}</div>
     <div class="line">Best line: ${bestLine(g)}</div>
-    <div class="vs">${esc(g.away)} @ ${esc(g.home)}${g.confGame ? ` · ${esc(g.home_conf)}` : ` · ${esc(g.away_conf)} vs. ${esc(g.home_conf)}`}</div>
+    <div class="vs">${esc(g.away)}${luckTag(g.away_luck)} @ ${esc(g.home)}${luckTag(g.home_luck)}${g.confGame ? ` · ${esc(g.home_conf)}` : ` · ${esc(g.away_conf)} vs. ${esc(g.home_conf)}`}</div>
   </div>`;
 }
 const fill = (id, list, mode) => document.getElementById(id).innerHTML =
@@ -268,7 +298,7 @@ function renderTrack(){
   const head = document.getElementById("trackHead");
   if(!T || !T.overall){
     head.textContent = T ? `Tracking since ${T.started}. ${T.pending} games have locked lines and are waiting on final scores, which are pulled at the next refresh after games finish.` : "Tracking starts with the next refresh.";
-    ["monthTbl","bucketTbl","recentTbl"].forEach(id => document.getElementById(id).innerHTML = '<tr><td class="empty">No graded games yet.</td></tr>');
+    ["monthTbl","bucketTbl","totTbl","recentTbl"].forEach(id => document.getElementById(id).innerHTML = '<tr><td class="empty">No graded games yet.</td></tr>');
     return;
   }
   const O = T.overall;
@@ -292,24 +322,62 @@ function renderTrack(){
     `<thead><tr><th>Spread gap</th><th class="num">ATS, all games</th><th class="num">ATS, spreads 20 or less</th></tr></thead><tbody>` +
     T.buckets.map(b => `<tr><td>${b.label} pts</td><td class="num">${rec(b.all)}${rp(b.all)}</td><td class="num">${rec(b.comp)}${rp(b.comp)}</td></tr>`).join("") + "</tbody>";
 
+  document.getElementById("totTbl").innerHTML =
+    `<thead><tr><th>Month</th><th class="num">Games</th><th class="num">Proj avg miss</th><th class="num">Book avg miss</th><th class="num">O/U lean record</th><th class="num">Gap 4+ record</th></tr></thead><tbody>` +
+    [...T.months.map(m => [new Date(m.month + "-15").toLocaleString("en-US", {month: "long", year: "numeric"}), m.tot]), ["All", O.tot]].map(([lab, t]) =>
+      t ? `<tr${lab === "All" ? ' style="font-weight:700"' : ""}><td>${lab}</td><td class="num">${t.n}</td><td class="num">${t.proj_mae.toFixed(1)}</td><td class="num">${t.book_mae.toFixed(1)}</td><td class="num">${rec(t.rec)}${rp(t.rec)}</td><td class="num">${rec(t.rec4)}${rp(t.rec4)}</td></tr>`
+        : `<tr><td>${lab}</td><td colspan="5" class="books">No totals graded yet</td></tr>`).join("") + "</tbody>";
   document.getElementById("recentTbl").innerHTML =
-    `<thead><tr><th>Date</th><th>Final</th><th class="num">Book (home)</th><th class="num">Proj (home)</th><th>Value side</th><th class="num">Gap</th><th>ATS</th><th class="num">Miss: proj / book</th><th class="num hide-sm">ML</th></tr></thead><tbody>` +
+    `<thead><tr><th>Date</th><th>Final</th><th class="num">Book (home)</th><th class="num">Proj (home)</th><th>Value side</th><th class="num">Gap</th><th>ATS</th><th class="num">Miss: proj / book</th><th class="num hide-sm">ML</th><th class="num hide-sm">O/U</th></tr></thead><tbody>` +
     T.recent.map(r => `<tr><td class="tip">${r.date.slice(5)}</td>
       <td class="match"><span class="t">${esc(r.away)}</span> ${r.away_score}, <span class="t">${esc(r.home)}</span> ${r.home_score}</td>
       <td class="num">${fmt(r.book_spread)}</td><td class="num">${fmt(r.proj_spread)}</td><td>${esc(r.pick)}${r.big ? '<span class="tag">20+</span>' : ""}</td>
       <td class="num">${r.gap.toFixed(1)}</td><td class="res-${r.ats}">${r.ats}</td>
       <td class="num">${r.proj_err.toFixed(1)} / ${r.book_err.toFixed(1)}</td>
-      <td class="num hide-sm">${r.ml_won == null ? "–" : (r.ml_won ? '<span class="res-W">W</span>' : '<span class="res-L">L</span>') + ` ${r.ml_price > 0 ? "+" : ""}${r.ml_price}`}</td></tr>`).join("") + "</tbody>";
+      <td class="num hide-sm">${r.ml_won == null ? "–" : (r.ml_won ? '<span class="res-W">W</span>' : '<span class="res-L">L</span>') + ` ${r.ml_price > 0 ? "+" : ""}${r.ml_price}`}</td>
+      <td class="num hide-sm">${r.tot_res ? `<span class="res-${r.tot_res}">${r.tot_res}</span> ${r.ou_pick[0]} ${r.book_total} (${r.tot_actual})` : "–"}</td></tr>`).join("") + "</tbody>";
+}
+
+
+let tSortKey = "abstot", tSortDir = -1;
+const ouLine = g => g.ou_best ? `${g.ou_pick[0]} ${g.ou_best.point} (${g.ou_best.price > 0 ? "+" : ""}${g.ou_best.price}) ${esc(g.ou_best.book)}` : "–";
+function renderOU(){
+  const withT = games.filter(g => g.book_total != null);
+  const top = [...withT].sort((a,b) => b.abstot - a.abstot).slice(0, 6);
+  document.getElementById("ouCards").innerHTML = top.length ? top.map((g, i) => `<div class="card">
+    <div class="rank">#${i + 1} · ${esc(g.tip)}</div>
+    <div class="big">${g.abstot.toFixed(1)}<small>pt gap</small></div>
+    <div class="side">${g.ou_pick} ${g.book_total}</div>
+    <div class="line">Book ${g.book_total} · KenPom ${g.proj_total} · ${g.poss} poss</div>
+    <div class="line">Best line: ${ouLine(g)}</div>
+    <div class="vs">${esc(g.away)}${luckTag(g.away_luck)} @ ${esc(g.home)}${luckTag(g.home_luck)}</div>
+  </div>`).join("") : '<div class="empty">No totals posted yet.</div>';
+  const min = +document.getElementById("minTot").value;
+  const rows = withT.filter(g => g.abstot >= min).sort((a,b) => {
+    if (tSortKey === "tip") return tSortDir * (a.tip_iso < b.tip_iso ? -1 : 1);
+    const x = a[tSortKey] ?? -99, y = b[tSortKey] ?? -99;
+    return tSortDir * (x > y ? 1 : x < y ? -1 : 0);
+  });
+  const maxT = Math.max(4, ...withT.map(g => g.abstot));
+  document.getElementById("ouRows").innerHTML = rows.length ? rows.map(g => `<tr>
+    <td class="tip">${esc(g.tip)}</td>
+    <td class="match"><div>${matchup(g)}</div><div class="meta">Proj: ${esc(g.proj_score)}</div></td>
+    <td class="num">${g.book_total}<div class="books">${Object.entries(g.totals_books || {}).map(([b,v]) => `${b} ${v}`).join(" · ")}</div></td>
+    <td class="num">${g.proj_total.toFixed(1)}</td>
+    <td class="num"><div class="edge"><div class="bar"><span style="width:${(g.abstot / maxT * 100).toFixed(0)}%"></span></div><b>${g.abstot.toFixed(1)}</b></div></td>
+    <td class="pick">${g.ou_pick}</td><td class="hide-sm">${ouLine(g)}</td><td class="num hide-sm">${g.poss}</td>
+  </tr>`).join("") : '<tr><td colspan="8" class="empty">No games match.</td></tr>';
 }
 
 function init(){
   if(!DATA){ document.querySelector(".wrap").insertAdjacentHTML("beforeend", '<div class="empty">No data yet. The first daily run will fill this in.</div>'); return; }
-  prep(); header(); renderValue(); renderAll(); renderConf(); renderTrack();
+  prep(); header(); renderValue(); renderAll(); renderConf(); renderOU(); renderTrack();
   document.getElementById("note").innerHTML =
     `How it works: projections use public KenPom ratings (AdjO, AdjD, AdjT) with the standard tempo-adjusted formula and ` +
     `${DATA.hca} pts home-court advantage. They are not KenPom's official game predictions. Book line is the median home spread across listed books. ` +
     `Spread gap = projected margin minus book margin. ML edge = projected win probability minus the market's no-vig probability for the value side ` +
-    `(win prob assumes a ${DATA.margin_sd}-pt margin std. dev.). Neutral-site games are only flagged when listed in neutral_sites.json. No injury or lineup news is included.` +
+    `(win prob assumes a ${DATA.margin_sd}-pt margin std. dev.). Neutral-site games are only flagged when listed in neutral_sites.json. No injury or lineup news is included. ` +
+    `Luck flags mark teams whose KenPom luck is ${DATA.luck_flag ? "±" + DATA.luck_flag.toFixed(2).replace(/^0/, "") : "large"} or beyond: their record is better (Lucky) or worse (Unlucky) than their game-by-game efficiency suggests. Luck isn't part of the ratings, so it doesn't change the projection, but records can make lucky teams look stronger than they are. Over/Under projections use the same ratings, with no adjustment for pace in close games or end-of-game fouling.` +
     (DATA.unmatched.length ? `<details class="unm"><summary>${DATA.unmatched.length} team name(s) not matched to KenPom (games skipped)</summary>${DATA.unmatched.map(esc).join(", ")}</details>` : "");
 }
 
@@ -322,6 +390,10 @@ document.querySelectorAll("th[data-k]").forEach(th => th.addEventListener("click
 }));
 document.getElementById("minDiff").addEventListener("input", e => { document.getElementById("minDiffV").textContent = (+e.target.value).toFixed(1); renderAll(); });
 document.getElementById("hideBig").addEventListener("change", renderAll);
+document.getElementById("minTot").addEventListener("input", e => { document.getElementById("minTotV").textContent = (+e.target.value).toFixed(1); renderOU(); });
+document.querySelectorAll("th[data-t]").forEach(th => th.addEventListener("click", () => {
+  const k = th.dataset.t; tSortDir = (tSortKey === k) ? -tSortDir : -1; tSortKey = k; renderOU();
+}));
 document.getElementById("q").addEventListener("input", renderAll);
 init();
 </script>
