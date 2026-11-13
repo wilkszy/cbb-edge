@@ -1,6 +1,6 @@
 {
   "slate_date": "2026-11-13",
-  "generated": "Nov 13, 2026 11:29 AM ET",
+  "generated": "Nov 13, 2026 11:35 AM ET",
   "kenpom_through": "Thursday, November 12",
   "hca": 3.2,
   "margin_sd": 11.0,
@@ -19,7 +19,7 @@
       "book_spread": -44.5,
       "books": {
         "FD": -44.5,
-        "ESPN": -43.5,
+        "ESPN": -44.5,
         "DK": -44.5,
         "MGM": -44.5,
         "BR": -44.5
@@ -167,8 +167,8 @@
         "book": "BR"
       },
       "kp_home_wp": 0.735,
-      "mkt_home_wp": 0.913,
-      "ml_edge": 0.178
+      "mkt_home_wp": 0.912,
+      "ml_edge": 0.177
     },
     {
       "id": "434e3816a0d976cb0b270d5b09b24286",
@@ -391,7 +391,7 @@
       "pick": "Merrimack",
       "best_line": {
         "point": 36.5,
-        "price": -115,
+        "price": -112,
         "book": "DK"
       },
       "kp_home_wp": 0.997,
@@ -415,7 +415,7 @@
         "ESPN": -30.5,
         "DK": -30.5,
         "MGM": -30.5,
-        "BR": -31.5
+        "BR": -30.5
       },
       "proj_spread": -25.2,
       "proj_score": "Northern Arizona 64, Kentucky 90",
@@ -423,13 +423,13 @@
       "diff": -5.3,
       "pick": "Northern Arizona",
       "best_line": {
-        "point": 31.5,
-        "price": -109,
-        "book": "BR"
+        "point": 30.5,
+        "price": -110,
+        "book": "FD"
       },
       "kp_home_wp": 0.989,
-      "mkt_home_wp": 0.971,
-      "ml_edge": -0.018
+      "mkt_home_wp": 0.976,
+      "ml_edge": -0.013
     },
     {
       "id": "2f94aaacef24591bb8cd0254b3c90b97",
@@ -663,39 +663,6 @@
       "ml_edge": 0.098
     },
     {
-      "id": "6939a5b0fa016ba48db4addc3f95fa94",
-      "tip": "8:00 PM",
-      "tip_iso": "2026-11-14T01:00:00+00:00",
-      "home": "TCU",
-      "away": "Milwaukee",
-      "home_rank": 52,
-      "away_rank": 236,
-      "home_conf": "B12",
-      "away_conf": "Horz",
-      "neutral": false,
-      "book_spread": -23.5,
-      "books": {
-        "FD": -23.5,
-        "ESPN": -23.5,
-        "DK": -23.5,
-        "MGM": -23.5,
-        "BR": -23.5
-      },
-      "proj_spread": -19.8,
-      "proj_score": "Milwaukee 67, TCU 87",
-      "poss": 72.4,
-      "diff": -3.7,
-      "pick": "Milwaukee",
-      "best_line": {
-        "point": 23.5,
-        "price": -110,
-        "book": "FD"
-      },
-      "kp_home_wp": 0.964,
-      "mkt_home_wp": 0.961,
-      "ml_edge": -0.003
-    },
-    {
       "id": "2151748c9e4175d788ed587a685e52d7",
       "tip": "3:00 PM",
       "tip_iso": "2026-11-13T20:00:00+00:00",
@@ -906,7 +873,7 @@
       "book_spread": -12.5,
       "books": {
         "FD": -12.5,
-        "ESPN": -11.5,
+        "ESPN": -12.5,
         "DK": -12.5,
         "MGM": -12.5,
         "BR": -12.5
@@ -1024,6 +991,39 @@
       "ml_edge": 0.014
     },
     {
+      "id": "6939a5b0fa016ba48db4addc3f95fa94",
+      "tip": "8:00 PM",
+      "tip_iso": "2026-11-14T01:00:00+00:00",
+      "home": "TCU",
+      "away": "Milwaukee",
+      "home_rank": 52,
+      "away_rank": 236,
+      "home_conf": "B12",
+      "away_conf": "Horz",
+      "neutral": false,
+      "book_spread": -22.5,
+      "books": {
+        "FD": -22.5,
+        "ESPN": -22.5,
+        "DK": -22.5,
+        "MGM": -22.5,
+        "BR": -23.5
+      },
+      "proj_spread": -19.8,
+      "proj_score": "Milwaukee 67, TCU 87",
+      "poss": 72.4,
+      "diff": -2.7,
+      "pick": "Milwaukee",
+      "best_line": {
+        "point": 23.5,
+        "price": -113,
+        "book": "BR"
+      },
+      "kp_home_wp": 0.964,
+      "mkt_home_wp": 0.958,
+      "ml_edge": -0.006
+    },
+    {
       "id": "82d63fe987183f4f973a6edc91edce1d",
       "tip": "7:30 PM",
       "tip_iso": "2026-11-14T00:30:00+00:00",
@@ -1085,7 +1085,7 @@
         "book": "FD"
       },
       "kp_home_wp": 0.673,
-      "mkt_home_wp": 0.548,
+      "mkt_home_wp": 0.547,
       "ml_edge": 0.126
     },
     {
@@ -1217,8 +1217,8 @@
         "book": "FD"
       },
       "kp_home_wp": 0.728,
-      "mkt_home_wp": 0.617,
-      "ml_edge": 0.111
+      "mkt_home_wp": 0.621,
+      "ml_edge": 0.107
     },
     {
       "id": "cf5a095835a9ee434f87cd29f05948c5",
@@ -1632,7 +1632,7 @@
         "ESPN": -5.5,
         "DK": -6.5,
         "MGM": -5.5,
-        "BR": -6.5
+        "BR": -5.5
       },
       "proj_spread": -6.3,
       "proj_score": "Southeast Missouri 70, Middle Tennessee 77",
@@ -1645,8 +1645,8 @@
         "book": "FD"
       },
       "kp_home_wp": 0.716,
-      "mkt_home_wp": 0.687,
-      "ml_edge": 0.029
+      "mkt_home_wp": 0.683,
+      "ml_edge": 0.033
     },
     {
       "id": "8a917d60990d18e2b64e3a3f99fbe14a",
