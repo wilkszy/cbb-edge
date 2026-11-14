@@ -1,6 +1,6 @@
 {
   "slate_date": "2026-11-14",
-  "generated": "Nov 14, 2026 10:36 AM ET",
+  "generated": "Nov 14, 2026 10:37 AM ET",
   "kenpom_through": "Friday, November 13",
   "hca": 3.2,
   "margin_sd": 11.0,
@@ -310,7 +310,7 @@
         "FD": 156.5,
         "DK": 156.5,
         "ESPN": 155.5,
-        "MGM": 156.5,
+        "MGM": 155.5,
         "BR": 156.5
       },
       "tot_diff": -5.5,
@@ -445,9 +445,9 @@
       "books": {
         "FD": -31.5,
         "DK": -31.5,
-        "ESPN": -32.5,
-        "MGM": -32.5,
-        "BR": -31.5
+        "ESPN": -31.5,
+        "MGM": -31.5,
+        "BR": -32.5
       },
       "proj_spread": -27.4,
       "proj_score": "Louisiana Monroe 68, Grand Canyon 96",
@@ -456,8 +456,8 @@
       "pick": "Louisiana Monroe",
       "best_line": {
         "point": 32.5,
-        "price": -105,
-        "book": "ESPN"
+        "price": -109,
+        "book": "BR"
       },
       "kp_home_wp": 0.994,
       "mkt_home_wp": 0.971,
@@ -535,6 +535,59 @@
       "ml_home": 260,
       "ml_away": -325,
       "ml_edge": 0.109
+    },
+    {
+      "id": "e67728580d608d1ac0d327750a3c7bd7",
+      "tip": "4:00 PM",
+      "tip_iso": "2026-11-14T21:00:00+00:00",
+      "home": "Northern Colorado",
+      "away": "South Dakota St.",
+      "home_rank": 214,
+      "away_rank": 159,
+      "home_conf": "BSky",
+      "away_conf": "Sum",
+      "neutral": false,
+      "book_spread": 3.5,
+      "books": {
+        "FD": 3.5,
+        "DK": 3.5,
+        "ESPN": 3.5,
+        "MGM": 3.5,
+        "BR": 3.5
+      },
+      "proj_spread": -0.4,
+      "proj_score": "South Dakota St. 77, Northern Colorado 77",
+      "poss": 70.0,
+      "diff": 3.9,
+      "pick": "Northern Colorado",
+      "best_line": {
+        "point": 3.5,
+        "price": -110,
+        "book": "FD"
+      },
+      "kp_home_wp": 0.515,
+      "mkt_home_wp": 0.398,
+      "home_luck": 0.0,
+      "away_luck": 0.162,
+      "proj_total": 154.0,
+      "book_total": 150.5,
+      "totals_books": {
+        "FD": 150.5,
+        "DK": 150.5,
+        "ESPN": 150.5,
+        "MGM": 150.5,
+        "BR": 151.5
+      },
+      "tot_diff": 3.5,
+      "ou_pick": "Over",
+      "ou_best": {
+        "point": 150.5,
+        "price": -110,
+        "book": "FD"
+      },
+      "ml_home": 140,
+      "ml_away": -170,
+      "ml_edge": 0.117
     },
     {
       "id": "4b25bcaf9f4a6dcfa8d36ebd39eb0c28",
@@ -628,13 +681,13 @@
         "DK": 149.5,
         "BR": 150.5,
         "FD": 150.5,
-        "MGM": 148.5
+        "MGM": 149.5
       },
       "tot_diff": 3.4,
       "ou_pick": "Over",
       "ou_best": {
         "point": 148.5,
-        "price": -110,
+        "price": -115,
         "book": "ESPN"
       },
       "ml_home": 102.5,
@@ -989,7 +1042,7 @@
         "book": "FD"
       },
       "kp_home_wp": 0.505,
-      "mkt_home_wp": 0.415,
+      "mkt_home_wp": 0.419,
       "home_luck": -0.214,
       "away_luck": 0.097,
       "proj_total": 151.1,
@@ -1009,8 +1062,8 @@
         "book": "FD"
       },
       "ml_home": 130,
-      "ml_away": -156,
-      "ml_edge": 0.09
+      "ml_away": -155,
+      "ml_edge": 0.086
     },
     {
       "id": "d5cbf37f2b89719fb252a764888448e5",
@@ -2225,6 +2278,58 @@
       "ml_edge": 0.019
     },
     {
+      "id": "84a52a3db442eb031b5a4f1d404cc914",
+      "tip": "6:30 PM",
+      "tip_iso": "2026-11-14T23:30:00+00:00",
+      "home": "Saint Joseph's",
+      "away": "Penn",
+      "home_rank": 122,
+      "away_rank": 136,
+      "home_conf": "A10",
+      "away_conf": "Ivy",
+      "neutral": false,
+      "book_spread": -4.5,
+      "books": {
+        "FD": -4.5,
+        "DK": -4.5,
+        "ESPN": -5.5,
+        "BR": -4.5
+      },
+      "proj_spread": -5.3,
+      "proj_score": "Penn 75, Saint Joseph's 80",
+      "poss": 76.5,
+      "diff": 0.8,
+      "pick": "Saint Joseph's",
+      "best_line": {
+        "point": -4.5,
+        "price": -110,
+        "book": "FD"
+      },
+      "kp_home_wp": 0.685,
+      "mkt_home_wp": 0.637,
+      "home_luck": 0.023,
+      "away_luck": -0.016,
+      "proj_total": 155.1,
+      "book_total": 152.5,
+      "totals_books": {
+        "FD": 152.5,
+        "DK": 152.5,
+        "ESPN": 152.5,
+        "MGM": 152.5,
+        "BR": 152.5
+      },
+      "tot_diff": 2.6,
+      "ou_pick": "Over",
+      "ou_best": {
+        "point": 152.5,
+        "price": -115,
+        "book": "FD"
+      },
+      "ml_home": -198,
+      "ml_away": 165,
+      "ml_edge": 0.047
+    },
+    {
       "id": "619bf4e7c16d9baf970b9fb253a6a02c",
       "tip": "7:00 PM",
       "tip_iso": "2026-11-15T00:00:00+00:00",
@@ -2451,7 +2556,7 @@
       "books": {
         "FD": 6.5,
         "DK": 6.5,
-        "ESPN": 5.5,
+        "ESPN": 6.5,
         "MGM": 6.5,
         "BR": 6.5
       },
@@ -2461,12 +2566,12 @@
       "diff": -0.4,
       "pick": "Cincinnati",
       "best_line": {
-        "point": -5.5,
+        "point": -6.5,
         "price": -110,
-        "book": "ESPN"
+        "book": "FD"
       },
       "kp_home_wp": 0.265,
-      "mkt_home_wp": 0.294,
+      "mkt_home_wp": 0.292,
       "home_luck": -0.272,
       "away_luck": -0.166,
       "proj_total": 145.9,
@@ -2485,9 +2590,9 @@
         "price": -110,
         "book": "FD"
       },
-      "ml_home": 225,
+      "ml_home": 230,
       "ml_away": -280,
-      "ml_edge": 0.03
+      "ml_edge": 0.027
     },
     {
       "id": "0039563fd667f48d9f7345c620c428bf",
@@ -2965,15 +3070,12 @@
       "ml_edge": 0.039
     }
   ],
-  "unmatched": [
-    "N Colorado Bears",
-    "Pennsylvania Quakers"
-  ],
+  "unmatched": [],
   "avg_o": 106.0,
   "avg_t": 70.7,
   "track": {
     "started": "2026-11-13",
-    "pending": 56,
+    "pending": 58,
     "no_result": 0,
     "overall": {
       "n": 55,
