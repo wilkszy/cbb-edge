@@ -1,66 +1,11 @@
 {
   "slate_date": "2026-11-14",
-  "generated": "Nov 14, 2026 10:39 AM ET",
+  "generated": "Nov 14, 2026 10:40 AM ET",
   "kenpom_through": "Friday, November 13",
   "hca": 3.2,
   "margin_sd": 11.0,
   "luck_flag": 0.15,
   "games": [
-    {
-      "id": "6978a95112246801ef38d2a89b486d51",
-      "tip": "8:00 PM",
-      "tip_iso": "2026-11-15T01:00:00+00:00",
-      "home": "Arkansas",
-      "away": "Northwestern St.",
-      "home_raw": "Arkansas-Little Rock Trojans",
-      "away_raw": "Northwestern St Demons",
-      "home_rank": 34,
-      "away_rank": 312,
-      "home_conf": "SEC",
-      "away_conf": "Slnd",
-      "neutral": false,
-      "book_spread": -9.5,
-      "books": {
-        "DK": -9.5,
-        "ESPN": -10.5,
-        "BR": -9.5,
-        "FD": -9.5,
-        "MGM": -9.5
-      },
-      "proj_spread": -26.4,
-      "proj_score": "Northwestern St. 61, Arkansas 87",
-      "poss": 69.2,
-      "diff": 16.9,
-      "pick": "Arkansas",
-      "best_line": {
-        "point": -9.5,
-        "price": -110,
-        "book": "DK"
-      },
-      "kp_home_wp": 0.992,
-      "mkt_home_wp": 0.793,
-      "home_luck": 0.032,
-      "away_luck": -0.014,
-      "proj_total": 147.8,
-      "book_total": 143.5,
-      "totals_books": {
-        "DK": 143.5,
-        "ESPN": 142.5,
-        "BR": 143.5,
-        "FD": 143.5,
-        "MGM": 142.5
-      },
-      "tot_diff": 4.3,
-      "ou_pick": "Over",
-      "ou_best": {
-        "point": 142.5,
-        "price": -110,
-        "book": "ESPN"
-      },
-      "ml_home": -500,
-      "ml_away": 360,
-      "ml_edge": 0.199
-    },
     {
       "id": "87495030c89d6ccf9cc9edc6abc8ff34",
       "tip": "1:00 PM",
@@ -322,15 +267,15 @@
         "ESPN": 143.5,
         "DK": 143.5,
         "BR": 144.5,
-        "FD": 143.5,
+        "FD": 142.5,
         "MGM": 143.5
       },
       "tot_diff": 3.0,
       "ou_pick": "Over",
       "ou_best": {
-        "point": 143.5,
-        "price": -110,
-        "book": "ESPN"
+        "point": 142.5,
+        "price": -115,
+        "book": "FD"
       },
       "ml_home": -15000.0,
       "ml_away": 3400.0,
@@ -353,7 +298,7 @@
       "books": {
         "FD": -11.5,
         "DK": -10.5,
-        "ESPN": -11.5,
+        "ESPN": -10.5,
         "MGM": -10.5,
         "BR": -9.5
       },
@@ -368,7 +313,7 @@
         "book": "FD"
       },
       "kp_home_wp": 0.718,
-      "mkt_home_wp": 0.829,
+      "mkt_home_wp": 0.827,
       "home_luck": -0.076,
       "away_luck": -0.198,
       "proj_total": 150.8,
@@ -387,9 +332,9 @@
         "price": -110,
         "book": "FD"
       },
-      "ml_home": -675,
-      "ml_away": 490,
-      "ml_edge": 0.111
+      "ml_home": -650,
+      "ml_away": 470,
+      "ml_edge": 0.109
     },
     {
       "id": "07df49d2214375c44c9336962971cf6e",
@@ -410,7 +355,7 @@
         "DK": -31.5,
         "ESPN": -31.5,
         "MGM": -31.5,
-        "BR": -31.5
+        "BR": -32.5
       },
       "proj_spread": -27.4,
       "proj_score": "Louisiana Monroe 68, Grand Canyon 96",
@@ -418,24 +363,24 @@
       "diff": -4.1,
       "pick": "Louisiana Monroe",
       "best_line": {
-        "point": 31.5,
-        "price": -104,
-        "book": "FD"
+        "point": 32.5,
+        "price": -109,
+        "book": "BR"
       },
       "kp_home_wp": 0.994,
       "mkt_home_wp": 0.971,
       "home_luck": 0.0,
       "away_luck": -0.111,
       "proj_total": 164.4,
-      "book_total": 163.5,
+      "book_total": 162.5,
       "totals_books": {
         "FD": 163.5,
         "DK": 162.5,
         "ESPN": 162.5,
-        "MGM": 163.5,
+        "MGM": 162.5,
         "BR": 164.5
       },
-      "tot_diff": 0.9,
+      "tot_diff": 1.9,
       "ou_pick": "Over",
       "ou_best": {
         "point": 162.5,
@@ -642,7 +587,7 @@
         "book": "ESPN"
       },
       "kp_home_wp": 0.562,
-      "mkt_home_wp": 0.461,
+      "mkt_home_wp": 0.462,
       "home_luck": -0.094,
       "away_luck": 0.009,
       "proj_total": 152.9,
@@ -650,7 +595,7 @@
       "totals_books": {
         "ESPN": 148.5,
         "DK": 149.5,
-        "BR": 150.5,
+        "BR": 149.5,
         "FD": 150.5,
         "MGM": 149.5
       },
@@ -663,7 +608,7 @@
       },
       "ml_home": 105.5,
       "ml_away": -129.0,
-      "ml_edge": 0.101
+      "ml_edge": 0.1
     },
     {
       "id": "32e34c35ae4bcafb47d5b848e7d0cea1",
@@ -1027,7 +972,7 @@
         "book": "FD"
       },
       "kp_home_wp": 0.505,
-      "mkt_home_wp": 0.43,
+      "mkt_home_wp": 0.432,
       "home_luck": -0.214,
       "away_luck": 0.097,
       "proj_total": 151.1,
@@ -1048,7 +993,7 @@
       },
       "ml_home": 123,
       "ml_away": -148,
-      "ml_edge": 0.075
+      "ml_edge": 0.073
     },
     {
       "id": "d5cbf37f2b89719fb252a764888448e5",
@@ -1867,6 +1812,61 @@
       "ml_home": -175,
       "ml_away": 145,
       "ml_edge": 0.059
+    },
+    {
+      "id": "6978a95112246801ef38d2a89b486d51",
+      "tip": "8:00 PM",
+      "tip_iso": "2026-11-15T01:00:00+00:00",
+      "home": "Little Rock",
+      "away": "Northwestern St.",
+      "home_raw": "Arkansas-Little Rock Trojans",
+      "away_raw": "Northwestern St Demons",
+      "home_rank": 227,
+      "away_rank": 312,
+      "home_conf": "UAC",
+      "away_conf": "Slnd",
+      "neutral": false,
+      "book_spread": -9.5,
+      "books": {
+        "DK": -9.5,
+        "ESPN": -10.5,
+        "BR": -9.5,
+        "FD": -9.5,
+        "MGM": -9.5
+      },
+      "proj_spread": -8.2,
+      "proj_score": "Northwestern St. 68, Little Rock 76",
+      "poss": 68.3,
+      "diff": -1.3,
+      "pick": "Northwestern St.",
+      "best_line": {
+        "point": 10.5,
+        "price": -115,
+        "book": "ESPN"
+      },
+      "kp_home_wp": 0.772,
+      "mkt_home_wp": 0.793,
+      "home_luck": -0.111,
+      "away_luck": -0.014,
+      "proj_total": 144.6,
+      "book_total": 143.5,
+      "totals_books": {
+        "DK": 143.5,
+        "ESPN": 142.5,
+        "BR": 143.5,
+        "FD": 143.5,
+        "MGM": 142.5
+      },
+      "tot_diff": 1.1,
+      "ou_pick": "Over",
+      "ou_best": {
+        "point": 142.5,
+        "price": -110,
+        "book": "ESPN"
+      },
+      "ml_home": -500,
+      "ml_away": 360,
+      "ml_edge": 0.021
     },
     {
       "id": "c46da6a53c1f49f293220108329947f0",
@@ -3036,7 +3036,7 @@
       "book_spread": 6.5,
       "books": {
         "DK": 5.5,
-        "ESPN": 6.5,
+        "ESPN": 5.5,
         "BR": 6.5,
         "FD": 6.5,
         "MGM": 6.5
@@ -3048,11 +3048,11 @@
       "pick": "Army",
       "best_line": {
         "point": 6.5,
-        "price": -115,
-        "book": "ESPN"
+        "price": -108,
+        "book": "BR"
       },
       "kp_home_wp": 0.28,
-      "mkt_home_wp": 0.29,
+      "mkt_home_wp": 0.293,
       "home_luck": -0.11,
       "away_luck": -0.008,
       "proj_total": 147.2,
@@ -3072,8 +3072,8 @@
         "book": "DK"
       },
       "ml_home": 230,
-      "ml_away": -285,
-      "ml_edge": -0.009
+      "ml_away": -280,
+      "ml_edge": -0.012
     },
     {
       "id": "4795fce89a5352eb65405f4db2742b33",
