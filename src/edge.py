@@ -132,24 +132,57 @@ def norm(s: str) -> str:
 
 
 class Matcher:
-    def __init__(self, kp_names):
+    """Map Odds API names ("<School> <Mascot>") to KenPom names.
+
+    Built once over every name in the odds feed so collisions can be caught:
+    "South Carolina Upstate Spartans" must not land on "South Carolina".
+    If two feed names map to the same KenPom team, only the closest one keeps it
+    (alias > fewest leftover words); the rest are reported as unmatched.
+    """
+    MAX_MASCOT_WORDS = 3
+
+    def __init__(self, kp_names, feed_names):
         self.aliases = json.loads(ALIASES_FILE.read_text()) if ALIASES_FILE.exists() else {}
         self.by_norm = {norm(n): n for n in kp_names}
-        self.unmatched = set()
+        self.map, self.unmatched, self.collisions = {}, set(), {}
+        cands = {}
+        for name in set(feed_names):
+            hit = self._raw(name)
+            if hit:
+                cands[name] = hit
+            else:
+                self.unmatched.add(name)
+        claimed = {}
+        for name, (kp, left) in cands.items():
+            claimed.setdefault(kp, []).append((left, name))
+        for kp, lst in claimed.items():
+            lst.sort()
+            if len(lst) > 1 and lst[0][0] == lst[1][0]:
+                for _, n in lst:      # tie: can't tell which is right, drop all
+                    self.unmatched.add(n)
+                self.collisions[kp] = [n for _, n in lst]
+                continue
+            self.map[lst[0][1]] = kp
+            for _, n in lst[1:]:
+                self.unmatched.add(n)
+            if len(lst) > 1:
+                self.collisions[kp] = [n for _, n in lst]
 
-    def __call__(self, odds_name: str):
+    def _raw(self, odds_name):
         if odds_name in self.aliases:
             target = self.by_norm.get(norm(self.aliases[odds_name]))
             if target:
-                return target
+                return target, -1
         words = norm(odds_name).split()
-        # Odds API = "<School> <Mascot>". Take the longest prefix that is a KenPom team.
         for i in range(len(words), 0, -1):
             cand = " ".join(words[:i])
             if cand in self.by_norm:
-                return self.by_norm[cand]
-        self.unmatched.add(odds_name)
+                left = len(words) - i
+                return (self.by_norm[cand], left) if left <= self.MAX_MASCOT_WORDS else None
         return None
+
+    def __call__(self, odds_name):
+        return self.map.get(odds_name)
 
 
 # ------------------------------------------------------------ Projection ---
@@ -169,14 +202,16 @@ def build(kp: dict, odds: list, now: datetime) -> dict:
     avg_o = statistics.mean(t["adj_o"] for t in kp.values())
     avg_t = statistics.mean(t["adj_t"] for t in kp.values())
     neutral_ids = set(json.loads(NEUTRAL_FILE.read_text())) if NEUTRAL_FILE.exists() else set()
-    match = Matcher(kp.keys())
+    match = Matcher(kp.keys(), [n for ev in odds for n in (ev["home_team"], ev["away_team"])])
     today = now.astimezone(TZ).date()
     games = []
+    today_names = set()
     for ev in odds:
         start = datetime.fromisoformat(ev["commence_time"].replace("Z", "+00:00"))
         if start.astimezone(TZ).date() != today:
             continue
         h_name, a_name = ev["home_team"], ev["away_team"]
+        today_names.update((h_name, a_name))
         h_kp, a_kp = match(h_name), match(a_name)
         if not h_kp or not a_kp:
             continue
@@ -222,7 +257,7 @@ def build(kp: dict, odds: list, now: datetime) -> dict:
             "id": ev["id"],
             "tip": start.astimezone(TZ).strftime("%-I:%M %p"),
             "tip_iso": start.isoformat(),
-            "home": h_kp, "away": a_kp,
+            "home": h_kp, "away": a_kp, "home_raw": h_name, "away_raw": a_name,
             "home_rank": kp[h_kp]["rank"], "away_rank": kp[a_kp]["rank"],
             "home_conf": kp[h_kp]["conf"], "away_conf": kp[a_kp]["conf"],
             "neutral": neutral,
@@ -252,7 +287,13 @@ def build(kp: dict, odds: list, now: datetime) -> dict:
                 (wp - mkt_wp) if pick_home else ((1 - wp) - (1 - mkt_wp)), 3),
         })
     games.sort(key=lambda g: abs(g["diff"]), reverse=True)
-    return {"games": games, "unmatched": sorted(match.unmatched), "avg_o": round(avg_o, 1),
+    (DOCS / "data").mkdir(parents=True, exist_ok=True)
+    (DOCS / "data" / "name_map.json").write_text(json.dumps(
+        {"matched": dict(sorted(match.map.items())), "unmatched": sorted(match.unmatched),
+         "collisions": match.collisions}, indent=1))
+    if match.collisions:
+        print(f"Name collisions (closest kept, others unmatched): {match.collisions}")
+    return {"games": games, "unmatched": sorted(n for n in match.unmatched if n in today_names), "avg_o": round(avg_o, 1),
             "avg_t": round(avg_t, 1)}
 
 
