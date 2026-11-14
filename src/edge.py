@@ -139,7 +139,7 @@ class Matcher:
     If two feed names map to the same KenPom team, only the closest one keeps it
     (alias > fewest leftover words); the rest are reported as unmatched.
     """
-    MAX_MASCOT_WORDS = 3
+    MAX_MASCOT_WORDS = 2
 
     def __init__(self, kp_names, feed_names):
         self.aliases = json.loads(ALIASES_FILE.read_text()) if ALIASES_FILE.exists() else {}
