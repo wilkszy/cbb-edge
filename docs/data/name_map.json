@@ -59,6 +59,7 @@
   "Rhode Island Rams": "Rhode Island",
   "Saint Louis Billikens": "Saint Louis",
   "San Diego St Aztecs": "San Diego St.",
+  "San Jos\u00e9 St Spartans": "San Jose St.",
   "Seattle Redhawks": "Seattle",
   "South Carolina St Bulldogs": "South Carolina St.",
   "Southern Indiana Screaming Eagles": "Southern Indiana",
@@ -76,8 +77,6 @@
   "William & Mary Tribe": "William & Mary",
   "Wisconsin Badgers": "Wisconsin"
  },
- "unmatched": [
-  "San Jos\u00e9 St Spartans"
- ],
+ "unmatched": [],
  "collisions": {}
 }
