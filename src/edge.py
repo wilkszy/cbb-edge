@@ -124,6 +124,8 @@ def implied(american: float) -> float:
 
 # --------------------------------------------------------- Name matching ---
 def norm(s: str) -> str:
+    import unicodedata
+    s = "".join(c for c in unicodedata.normalize("NFKD", s) if not unicodedata.combining(c))
     s = s.lower().replace("&", "and").replace("'", "").replace(".", "")
     s = re.sub(r"\bstate\b", "st", s)
     s = re.sub(r"\bsaint\b", "st", s)
