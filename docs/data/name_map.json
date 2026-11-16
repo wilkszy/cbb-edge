@@ -29,6 +29,7 @@
   "Portland St Vikings": "Portland St.",
   "Prairie View Panthers": "Prairie View A&M",
   "Richmond Spiders": "Richmond",
+  "SE Louisiana Lions": "Southeastern Louisiana",
   "Saint Mary's Gaels": "Saint Mary's",
   "St. Thomas (MN) Tommies": "St. Thomas",
   "Tarleton State Texans": "Tarleton St.",
@@ -44,9 +45,7 @@
   "Western Illinois Leathernecks": "Western Illinois",
   "Western Kentucky Hilltoppers": "Western Kentucky"
  },
- "unmatched": [
-  "SE Louisiana Lions"
- ],
+ "unmatched": [],
  "collisions": {},
  "espn_unmatched": [
   "Calumet St. Joseph Crimson Wave",
@@ -56,7 +55,6 @@
   "Ferrum Panthers",
   "Fisk Bulldogs",
   "Mayville State Comets",
-  "Midway Eagles",
-  "SE Louisiana Lions"
+  "Midway Eagles"
  ]
 }

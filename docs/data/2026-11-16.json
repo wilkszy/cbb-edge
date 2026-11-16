@@ -1,6 +1,6 @@
 {
   "slate_date": "2026-11-16",
-  "generated": "Nov 16, 2026 10:40 AM ET",
+  "generated": "Nov 16, 2026 10:41 AM ET",
   "kenpom_through": "Sunday, November 15",
   "hca": 3.2,
   "margin_sd": 13.0,
@@ -297,6 +297,64 @@
       "ml_edge": 0.041
     },
     {
+      "id": "8b79439c67e6943734636c89503e8b92",
+      "tip": "8:30 PM",
+      "tip_iso": "2026-11-17T01:30:00+00:00",
+      "home": "Texas A&M",
+      "away": "Southeastern Louisiana",
+      "home_raw": "Texas A&M Aggies",
+      "away_raw": "SE Louisiana Lions",
+      "home_rank": 19,
+      "away_rank": 270,
+      "home_conf": "SEC",
+      "away_conf": "Slnd",
+      "neutral": false,
+      "book_spread": -34.5,
+      "books": {
+        "DK": -34.5,
+        "MGM": -34.5,
+        "ESPN": -34.5,
+        "BR": -33.5,
+        "FD": -34.5
+      },
+      "proj_spread": -28.4,
+      "proj_score": "Southeastern Louisiana 66, Texas A&M 95",
+      "poss": 74.7,
+      "diff": -6.1,
+      "pick": "Southeastern Louisiana",
+      "best_line": {
+        "point": 34.5,
+        "price": -112,
+        "book": "DK"
+      },
+      "kp_home_wp": 0.986,
+      "mkt_home_wp": null,
+      "model_home_wp": 0.986,
+      "ml_min_edge": 0.03,
+      "neutral_src": null,
+      "home_luck": 0.0,
+      "away_luck": 0.164,
+      "proj_total": 161.4,
+      "book_total": 160.5,
+      "totals_books": {
+        "DK": 160.5,
+        "MGM": 160.5,
+        "ESPN": 160.5,
+        "BR": 157.5,
+        "FD": 160.5
+      },
+      "tot_diff": 0.9,
+      "ou_pick": "Over",
+      "ou_best": {
+        "point": 157.5,
+        "price": -125,
+        "book": "BR"
+      },
+      "ml_home": null,
+      "ml_away": null,
+      "ml_edge": null
+    },
+    {
       "id": "33d4f6ff93e31ed41af6ed33a1dececb",
       "tip": "7:00 PM",
       "tip_iso": "2026-11-17T00:00:00+00:00",
@@ -337,9 +395,9 @@
       "proj_total": 149.1,
       "book_total": 153.5,
       "totals_books": {
-        "ESPN": 152.5,
+        "ESPN": 153.5,
         "DK": 153.5,
-        "MGM": 152.5,
+        "MGM": 153.5,
         "BR": 153.5,
         "FD": 153.5
       },
@@ -347,12 +405,12 @@
       "ou_pick": "Under",
       "ou_best": {
         "point": 153.5,
-        "price": -112,
-        "book": "DK"
+        "price": -110,
+        "book": "ESPN"
       },
       "ml_home": -9000.0,
       "ml_away": 2100.0,
-      "ml_edge": 0.028
+      "ml_edge": 0.027
     },
     {
       "id": "7822ea7db8607455907e63e54831b177",
@@ -894,7 +952,7 @@
         "DK": 1.5,
         "MGM": -1.5,
         "ESPN": 1.5,
-        "BR": 0.5,
+        "BR": 1.5,
         "FD": 1.5
       },
       "proj_spread": 1.0,
@@ -908,8 +966,8 @@
         "book": "DK"
       },
       "kp_home_wp": 0.469,
-      "mkt_home_wp": 0.501,
-      "model_home_wp": 0.485,
+      "mkt_home_wp": 0.493,
+      "model_home_wp": 0.481,
       "ml_min_edge": 0.03,
       "neutral_src": null,
       "home_luck": -0.024,
@@ -931,8 +989,8 @@
         "book": "DK"
       },
       "ml_home": -108,
-      "ml_away": -111,
-      "ml_edge": -0.016
+      "ml_away": -112,
+      "ml_edge": -0.012
     },
     {
       "id": "a77c2fc5d2de369bc3134d3721347a6c",
@@ -1223,14 +1281,12 @@
       "ml_edge": 0.006
     }
   ],
-  "unmatched": [
-    "SE Louisiana Lions"
-  ],
+  "unmatched": [],
   "avg_o": 106.2,
   "avg_t": 70.2,
   "track": {
     "started": "2026-11-13",
-    "pending": 24,
+    "pending": 25,
     "no_result": 0,
     "overall": {
       "n": 147,
