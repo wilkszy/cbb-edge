@@ -20,7 +20,7 @@ LOCK_FIELDS = ["home", "away", "home_conf", "away_conf", "tip", "tip_iso", "neut
                "book_spread", "proj_spread", "diff", "pick", "kp_home_wp", "mkt_home_wp",
                "ml_home", "ml_away", "ml_edge", "best_line",
                "book_total", "proj_total", "tot_diff", "ou_pick", "model_home_wp", "ml_min_edge",
-               "proj_home_pts", "proj_away_pts", "imp_home", "imp_away"]
+               "proj_home_pts", "proj_away_pts", "imp_home", "imp_away", "top_play"]
 BUCKETS = [("Under 2", 0, 2), ("2 to 3", 2, 3), ("3 to 5", 3, 5), ("5+", 5, 999)]
 
 
@@ -126,6 +126,22 @@ def grade(e: dict) -> dict:
                     "res": "P" if hit == 0 else ("W" if hit == want else "L")})
     if tts:
         g["tt"] = tts
+    tp = e.get("top_play")
+    if tp:
+        hs, as_ = e["home_score"], e["away_score"]
+        if tp["type"] == "Spread":
+            res = g["ats"]
+        elif tp["type"] == "Total":
+            res = g["tot"]["res"] if "tot" in g else None
+        elif tp["type"] == "Team total":
+            pts = hs if tp["team"] == e["home"] else as_
+            hit = (pts > tp["line"]) - (pts < tp["line"]); want = 1 if tp["lean"] == "Over" else -1
+            res = "P" if hit == 0 else ("W" if hit == want else "L")
+        else:
+            won = (hs > as_) == (tp["side"] == e["home"])
+            res = "W" if won else "L"
+        if res:
+            g["play"] = {"type": tp["type"], "res": res, "prob": tp["prob"], "price": tp.get("price")}
     mkt = e.get("mkt_home_wp")
     if mkt is not None and e.get("ml_edge") is not None:
         mkt_pick = mkt if pick_home else 1 - mkt
@@ -169,6 +185,23 @@ def _tt(rows):
             "over": rec([x for x in t if x["lean"] == "Over"]), "under": rec([x for x in t if x["lean"] == "Under"])}
 
 
+def _plays(rows):
+    ps = [r["play"] for r in rows if "play" in r]
+    if not ps:
+        return None
+    def rec(xs):
+        w = sum(x["res"] == "W" for x in xs); l = sum(x["res"] == "L" for x in xs); p = sum(x["res"] == "P" for x in xs)
+        return {"w": w, "l": l, "p": p, "pct": round(w / (w + l), 3) if w + l else None}
+    def units(x):
+        if x["res"] == "P": return 0.0
+        pr = x["price"] if x["price"] is not None else -110
+        return (pr / 100 if pr > 0 else 100 / -pr) if x["res"] == "W" else -1.0
+    types = sorted({x["type"] for x in ps})
+    return {"rec": rec(ps), "exp": round(sum(x["prob"] for x in ps) / len(ps), 3),
+            "units": round(sum(units(x) for x in ps), 2),
+            "by_type": {t: rec([x for x in ps if x["type"] == t]) for t in types}}
+
+
 def _summ(rows):
     if not rows:
         return None
@@ -190,6 +223,7 @@ def _summ(rows):
             [r for r in rows if r["big"]]),
         "tot": _tot(rows),
         "tt": _tt(rows),
+        "plays": _plays(rows),
         "ml": {"n": len(ml), "w": sum(m["won"] for m in ml),
                "units": round(sum(m["units"] for m in ml), 2),
                "exp": round(sum(m["mkt"] for m in ml) / len(ml), 3) if ml else None},

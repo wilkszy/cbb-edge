@@ -42,6 +42,11 @@ HCA = float(os.getenv("HCA", "3.2"))
 MARGIN_SD = float(os.getenv("MARGIN_SD", "13.0"))
 WP_BLEND = float(os.getenv("WP_BLEND", "0.5"))
 ML_MIN_EDGE = float(os.getenv("ML_MIN_EDGE", "0.03"))
+# Top plays: outcome spread around the projection, measured on graded games (Nov 13-15)
+SD_MARGIN, SD_TOTAL, SD_TEAM = 12.0, 16.6, 10.2
+SHRINK = 0.5        # pull model probabilities halfway toward the market's 50/50
+ML_MAX_FAV = -300   # skip moneylines shorter than this
+TOP_N = 5
 LUCK_FLAG = float(os.getenv("LUCK_FLAG", "0.15"))
 TZ = ZoneInfo(os.getenv("TZ_NAME", "America/New_York"))
 BOOKS = ["draftkings", "fanduel", "betmgm", "williamhill_us", "espnbet", "betrivers", "fanatics"]
@@ -236,6 +241,72 @@ def espn_neutral(kp_names, day) -> dict:
     return out
 
 
+# ------------------------------------------------------------ Top plays ---
+def _cdf(z):
+    return 0.5 * (1 + math.erf(z / math.sqrt(2)))
+
+
+def _breakeven(price):
+    if price is None:
+        price = -110
+    return -price / (-price + 100) if price < 0 else 100 / (price + 100)
+
+
+def candidate_plays(g):
+    """Every bet on this game the model rates above break-even, with a shrunk win probability."""
+    out = []
+    shrink = lambda p: 0.5 + SHRINK * (p - 0.5)
+    m = -g["proj_spread"]                     # projected home margin
+    pick_home = g["pick"] == g["home"]
+    bl = g.get("best_line")
+    if bl:
+        edge = (m + bl["point"]) if pick_home else (-m + bl["point"])
+        p = shrink(_cdf(edge / SD_MARGIN))
+        out.append({"type": "Spread", "side": g["pick"], "line": bl["point"], "price": bl["price"],
+                    "book": bl["book"], "prob": p, "be": _breakeven(bl["price"]),
+                    "why": f"KenPom {(g['proj_spread'] if pick_home else -g['proj_spread']):+.1f} vs. line {bl['point']:+g}"})
+    ob = g.get("ou_best")
+    if ob and g.get("book_total") is not None:
+        d = (g["proj_total"] - ob["point"]) * (1 if g["ou_pick"] == "Over" else -1)
+        out.append({"type": "Total", "side": g["ou_pick"], "line": ob["point"], "price": ob["price"],
+                    "book": ob["book"], "prob": shrink(_cdf(d / SD_TOTAL)), "be": _breakeven(ob["price"]),
+                    "why": f"KenPom total {g['proj_total']:.1f} vs. {ob['point']:g}"})
+    for side in ("home", "away"):
+        imp, proj = g.get(f"imp_{side}"), g.get(f"proj_{side}_pts")
+        if imp is None or proj is None:
+            continue
+        lean = "Over" if proj > imp else "Under"
+        out.append({"type": "Team total", "side": f"{g[side]} {lean}", "line": imp, "price": None,
+                    "book": "implied", "prob": shrink(_cdf(abs(proj - imp) / SD_TEAM)), "be": _breakeven(-110),
+                    "why": f"KenPom {proj:.1f} vs. implied {imp:g}", "team": g[side], "lean": lean})
+    if g.get("mkt_home_wp") is not None and g.get("model_home_wp") is not None:
+        for side, wp, price in (("home", g["model_home_wp"], g.get("ml_home")), ("away", 1 - g["model_home_wp"], g.get("ml_away"))):
+            if price is None or price < ML_MAX_FAV:
+                continue
+            out.append({"type": "Moneyline", "side": g[side], "line": None, "price": price, "book": "median",
+                        "prob": wp, "be": _breakeven(price),
+                        "why": f"Model {wp:.0%} vs. market {(g['mkt_home_wp'] if side == 'home' else 1 - g['mkt_home_wp']):.0%}"})
+    return [dict(c, game=g["id"], prob=round(c["prob"], 3), be=round(c["be"], 3)) for c in out if c["prob"] > c["be"]]
+
+
+def top_plays(games):
+    """Most likely plays of the day: highest win probability, one play per game."""
+    cands = sorted((c for g in games for c in candidate_plays(g)), key=lambda c: -c["prob"])
+    chosen, used = [], set()
+    for c in cands:
+        if c["game"] in used:
+            continue
+        chosen.append(c); used.add(c["game"])
+        if len(chosen) == TOP_N:
+            break
+    by_id = {g["id"]: g for g in games}
+    for c in chosen:
+        g = by_id[c["game"]]
+        c.update({"matchup": f"{g['away']} @ {g['home']}", "tip": g["tip"], "neutral": g["neutral"]})
+        g["top_play"] = c
+    return chosen
+
+
 # ------------------------------------------------------------ Projection ---
 def project(home: dict, away: dict, avg_o: float, avg_t: float, neutral: bool):
     poss = home["adj_t"] * away["adj_t"] / avg_t
@@ -347,13 +418,15 @@ def build(kp: dict, odds: list, now: datetime) -> dict:
                 (model_wp - mkt_wp) if pick_home else (mkt_wp - model_wp), 3),
         })
     games.sort(key=lambda g: abs(g["diff"]), reverse=True)
+    upcoming = [g for g in games if datetime.fromisoformat(g["tip_iso"]) > now]
+    top5 = top_plays(upcoming)
     (DOCS / "data").mkdir(parents=True, exist_ok=True)
     (DOCS / "data" / "name_map.json").write_text(json.dumps(
         {"matched": dict(sorted(match.map.items())), "unmatched": sorted(match.unmatched),
          "collisions": match.collisions, "espn_unmatched": ESPN_MISSED}, indent=1))
     if match.collisions:
         print(f"Name collisions (closest kept, others unmatched): {match.collisions}")
-    return {"games": games, "unmatched": sorted(n for n in match.unmatched if n in today_names), "avg_o": round(avg_o, 1),
+    return {"games": games, "top5": top5, "unmatched": sorted(n for n in match.unmatched if n in today_names), "avg_o": round(avg_o, 1),
             "avg_t": round(avg_t, 1)}
 
 

@@ -90,6 +90,9 @@
   </div>
 
   <section class="view on" id="v-value">
+    <h2>Top 5 plays: most likely to hit</h2>
+    <p class="hint">The five bets with the highest win probability today, across spreads, totals, team totals and moneylines, one per game. Probabilities come from the KenPom projection, pulled halfway toward the market's 50/50 (moneylines use the 50/50 model/market blend). A play only qualifies if its probability beats the break-even rate for its price. Moneylines shorter than −300 are skipped.</p>
+    <div class="cards" id="top5Cards"></div>
     <h2>Spread value: competitive games</h2>
     <p class="hint">Spreads of 20 or less where the KenPom projection and the book differ by 3+ points. Biggest gaps first.</p>
     <div class="cards" id="spreadCards"></div>
@@ -162,6 +165,9 @@
     <h2>By month</h2>
     <p class="hint">Avg miss = average gap between the predicted margin and the final margin. ATS = record of the value side against the locked book spread. Competitive and big-spread picks are the two Best value lists (gap 3+, spreads 20 or less vs. over 20). "All spreads over 20" counts every big-spread game regardless of gap. You need about 52.4% ATS to break even at standard -110 pricing.</p>
     <div style="overflow-x:auto"><table id="monthTbl"></table></div>
+    <h2>Top 5 plays</h2>
+    <p class="hint">Record of the daily Top 5 by bet type. "Expected" is the average win probability the dashboard gave them; if hits run well below it, the probabilities are too optimistic.</p>
+    <div style="overflow-x:auto"><table id="playsTbl"></table></div>
     <h2>By size of gap</h2>
     <p class="hint">Does a bigger gap between the book and the projection mean the value side covers more often?</p>
     <div style="overflow-x:auto"><table id="bucketTbl"></table></div>
@@ -320,7 +326,7 @@ function renderTrack(){
   const head = document.getElementById("trackHead");
   if(!T || !T.overall){
     head.textContent = T ? `Tracking since ${T.started}. ${T.pending} games have locked lines and are waiting on final scores, which are pulled at the next refresh after games finish.` : "Tracking starts with the next refresh.";
-    ["monthTbl","bucketTbl","totTbl","ttTbl","recentTbl"].forEach(id => document.getElementById(id).innerHTML = '<tr><td class="empty">No graded games yet.</td></tr>');
+    ["monthTbl","bucketTbl","playsTbl","totTbl","ttTbl","recentTbl"].forEach(id => document.getElementById(id).innerHTML = '<tr><td class="empty">No graded games yet.</td></tr>');
     return;
   }
   const O = T.overall;
@@ -328,6 +334,7 @@ function renderTrack(){
     (T.no_result ? ` ${T.no_result} game(s) never got a final score and are excluded.` : "");
   document.getElementById("trackTiles").innerHTML = [
     ["Projection avg miss", O.proj_mae.toFixed(1), `vs. book ${O.book_mae.toFixed(1)} pts · closer in ${pp(O.proj_closer)} of games`],
+    ["Top 5 plays", O.plays ? rec(O.plays.rec) : "–", O.plays ? `${rp(O.plays.rec).trim()} · expected ${pp(O.plays.exp)} · ${units(O.plays.units)}` : "graded from Nov 16 on"],
     ["Competitive picks ATS", rec(O.ats_value), `gap 3+, spread ≤20${rp(O.ats_value)}`],
     ["Big-spread picks ATS", rec(O.ats_big_value), `gap 3+, spread >20${rp(O.ats_big_value)}`],
     ["All spreads over 20", rec(O.ats_big), O.ats_big && O.ats_big.w + O.ats_big.l ? `value side${rp(O.ats_big)}${O.big_book_bias != null ? ` · favorites ${O.big_book_bias > 0 ? "beat" : "fell short of"} the book by ${Math.abs(O.big_book_bias).toFixed(1)} pts avg` : ""}` : "no graded games yet"],
@@ -351,6 +358,11 @@ function renderTrack(){
     [...T.months.map(m => [new Date(m.month + "-15").toLocaleString("en-US", {month: "long", year: "numeric"}), m.tot]), ["All", O.tot]].map(([lab, t]) =>
       t ? `<tr${lab === "All" ? ' style="font-weight:700"' : ""}><td>${lab}</td><td class="num">${t.n}</td><td class="num">${t.proj_mae.toFixed(1)}</td><td class="num">${t.book_mae.toFixed(1)}</td><td class="num">${rec(t.rec)}${rp(t.rec)}</td><td class="num">${rec(t.rec4)}${rp(t.rec4)}</td></tr>`
         : `<tr><td>${lab}</td><td colspan="5" class="books">No totals graded yet</td></tr>`).join("") + "</tbody>";
+  document.getElementById("playsTbl").innerHTML = O.plays
+    ? `<thead><tr><th>Bet type</th><th class="num">Record</th></tr></thead><tbody>` +
+      Object.entries(O.plays.by_type).map(([t, r]) => `<tr><td>${esc(t)}</td><td class="num">${rec(r)}${rp(r)}</td></tr>`).join("") +
+      `<tr style="font-weight:700"><td>All (expected ${pp(O.plays.exp)})</td><td class="num">${rec(O.plays.rec)}${rp(O.plays.rec)} · ${units(O.plays.units)}</td></tr></tbody>`
+    : '<tr><td class="empty">No Top 5 plays graded yet. Tracking starts with today’s slate.</td></tr>';
   document.getElementById("ttTbl").innerHTML =
     `<thead><tr><th>Month</th><th class="num">Teams</th><th class="num">Proj avg miss</th><th class="num">Implied avg miss</th><th class="num">Lean record</th><th class="num">Gap 3+</th><th class="num">Over leans</th><th class="num">Under leans</th></tr></thead><tbody>` +
     [...T.months.map(m => [new Date(m.month + "-15").toLocaleString("en-US", {month: "long", year: "numeric"}), m.tt]), ["All", O.tt]].map(([lab, t]) =>
@@ -428,9 +440,24 @@ function renderTT(){
     <td class="pick">${r.gap > 0 ? "Over" : "Under"}</td></tr>`).join("") || '<tr><td colspan="7" class="empty">No totals posted yet.</td></tr>';
 }
 
+
+function renderTop5(){
+  const T = DATA.top5 || [];
+  const priceTxt = p => p == null ? "assume -110" : (p > 0 ? "+" : "") + p;
+  document.getElementById("top5Cards").innerHTML = T.length ? T.map((c, i) => `<div class="card">
+    <div class="rank">#${i + 1} · ${esc(c.tip)} · <span class="tag" style="margin-left:0">${esc(c.type)}</span></div>
+    <div class="big">${(c.prob * 100).toFixed(0)}%<small>to hit · break-even ${(c.be * 100).toFixed(0)}%</small></div>
+    <div class="side">${esc(c.side)}${c.line != null ? (c.type === "Spread" ? " " + fmt(c.line) : " " + c.line) : ""} <span style="font-weight:500;color:var(--ink2)">(${priceTxt(c.price)}${c.book && c.book !== "median" && c.book !== "implied" ? " " + esc(c.book) : ""})</span></div>
+    <div class="line">${esc(c.why)}</div>
+    ${c.type === "Team total" ? '<div class="line">Line is implied from the spread and total; check your book’s team total.</div>' : ""}
+    ${c.neutral ? '<div><span class="tag neutral" style="margin-left:0">Neutral site</span></div>' : ""}
+    <div class="vs">${esc(c.matchup)}</div>
+  </div>`).join("") : '<div class="empty">No plays clear break-even right now (games may have already tipped).</div>';
+}
+
 function init(){
   if(!DATA){ document.querySelector(".wrap").insertAdjacentHTML("beforeend", '<div class="empty">No data yet. The first daily run will fill this in.</div>'); return; }
-  prep(); header(); renderValue(); renderAll(); renderConf(); renderOU(); renderTT(); renderTrack();
+  prep(); header(); renderTop5(); renderValue(); renderAll(); renderConf(); renderOU(); renderTT(); renderTrack();
   document.getElementById("note").innerHTML =
     `How it works: projections use public KenPom ratings (AdjO, AdjD, AdjT) with the standard tempo-adjusted formula and ` +
     `${DATA.hca} pts home-court advantage. They are not KenPom's official game predictions. Book line is the median home spread across listed books. ` +
