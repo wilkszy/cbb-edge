@@ -151,6 +151,9 @@ def _summ(rows):
         "book_win": round(sum(br) / len(br), 3) if br else None,
         "ats": _ats(rows),
         "ats_value": _ats([r for r in rows if r["gap"] >= 3 and not r["big"]]),
+        "ats_big": _ats([r for r in rows if r["big"]]),
+        "big_book_bias": (lambda b: round(sum(abs(r["actual"]) - abs(r["book_spread"]) for r in b) / len(b), 1) if b else None)(
+            [r for r in rows if r["big"]]),
         "tot": _tot(rows),
         "ml": {"n": len(ml), "w": sum(m["won"] for m in ml),
                "units": round(sum(m["units"] for m in ml), 2),
@@ -165,7 +168,10 @@ def update_track(games: list, now: datetime, path: Path) -> dict:
     path.parent.mkdir(parents=True, exist_ok=True)
     path.write_text(json.dumps(ledger, indent=1, sort_keys=True))
     print(f"Ledger: {locked} lines locked/updated, {scored} games scored, {len(ledger)} total.")
+    return summarize(ledger)
 
+
+def summarize(ledger: dict) -> dict:
     graded = []
     for gid, e in ledger.items():
         if e.get("final"):
@@ -180,7 +186,8 @@ def update_track(games: list, now: datetime, path: Path) -> dict:
         "overall": _summ(graded),
         "months": [{"month": m, **_summ([r for r in graded if r["date"][:7] == m])} for m in months],
         "buckets": [{"label": lab, "all": _ats([r for r in graded if lo <= r["gap"] < hi]),
-                     "comp": _ats([r for r in graded if lo <= r["gap"] < hi and not r["big"]])}
+                     "comp": _ats([r for r in graded if lo <= r["gap"] < hi and not r["big"]]),
+                     "big": _ats([r for r in graded if lo <= r["gap"] < hi and r["big"]])}
                     for lab, lo, hi in BUCKETS],
         "recent": [{k: r.get(k) for k in ("date", "tip", "away", "home", "away_score", "home_score",
                                            "book_spread", "proj_spread", "pick", "ats", "proj_err",

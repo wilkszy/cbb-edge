@@ -150,7 +150,7 @@
     <p class="hint" id="trackHead"></p>
     <div class="tiles" id="trackTiles"></div>
     <h2>By month</h2>
-    <p class="hint">Avg miss = average gap between the predicted margin and the final margin. ATS = record of the value side against the locked book spread. You need about 52.4% ATS to break even at standard -110 pricing.</p>
+    <p class="hint">Avg miss = average gap between the predicted margin and the final margin. ATS = record of the value side against the locked book spread. "Spreads over 20" is the value side in games with a book spread above 20, almost always the underdog. You need about 52.4% ATS to break even at standard -110 pricing.</p>
     <div style="overflow-x:auto"><table id="monthTbl"></table></div>
     <h2>By size of gap</h2>
     <p class="hint">Does a bigger gap between the book and the projection mean the value side covers more often?</p>
@@ -311,19 +311,21 @@ function renderTrack(){
     ["Projection avg miss", O.proj_mae.toFixed(1), `vs. book ${O.book_mae.toFixed(1)} pts`],
     ["Projection closer", pp(O.proj_closer), "share of games closer than the book"],
     ["Best-value ATS", rec(O.ats_value), `gap 3+, spread ≤20${rp(O.ats_value)}`],
+    ["Spreads over 20 ATS", rec(O.ats_big), O.ats_big && O.ats_big.w + O.ats_big.l ? `value side${rp(O.ats_big)}${O.big_book_bias != null ? ` · favorites ${O.big_book_bias > 0 ? "beat" : "fell short of"} the book by ${Math.abs(O.big_book_bias).toFixed(1)} pts avg` : ""}` : "no graded games yet"],
     ["ML value picks", O.ml.n ? `${O.ml.w}-${O.ml.n - O.ml.w}` : "–", O.ml.n ? `${units(O.ml.units)} · market expected ${pp(O.ml.exp)}` : "no qualifying picks yet"],
   ].map(([k,v,d]) => `<div class="tile"><div class="k">${k}</div><div class="v">${v}</div><div class="d">${d}</div></div>`).join("");
 
   document.getElementById("monthTbl").innerHTML =
-    `<thead><tr><th>Month</th><th class="num">Games</th><th class="num">Proj avg miss</th><th class="num">Book avg miss</th><th class="num">Proj closer</th><th class="num">Winners: proj / book</th><th class="num">ATS all</th><th class="num">ATS best value</th><th class="num">ML picks</th></tr></thead><tbody>` +
+    `<thead><tr><th>Month</th><th class="num">Games</th><th class="num">Proj avg miss</th><th class="num">Book avg miss</th><th class="num">Proj closer</th><th class="num">Winners: proj / book</th><th class="num">ATS all</th><th class="num">ATS best value</th><th class="num">ATS spreads over 20</th><th class="num">ML picks</th></tr></thead><tbody>` +
     [...T.months.map(m => [new Date(m.month + "-15").toLocaleString("en-US", {month: "long", year: "numeric"}), m]), ["All", O]].map(([lab, m]) =>
       `<tr${lab === "All" ? ' style="font-weight:700"' : ""}><td>${lab}</td><td class="num">${m.n}</td><td class="num">${m.proj_mae.toFixed(1)}</td><td class="num">${m.book_mae.toFixed(1)}</td><td class="num">${pp(m.proj_closer)}</td>
        <td class="num">${pp(m.proj_win)} / ${pp(m.book_win)}</td><td class="num">${rec(m.ats)}${rp(m.ats)}</td><td class="num">${rec(m.ats_value)}${rp(m.ats_value)}</td>
+       <td class="num">${rec(m.ats_big)}${rp(m.ats_big)}</td>
        <td class="num">${m.ml.n ? `${m.ml.w}-${m.ml.n - m.ml.w}, ${units(m.ml.units)}` : "–"}</td></tr>`).join("") + "</tbody>";
 
   document.getElementById("bucketTbl").innerHTML =
-    `<thead><tr><th>Spread gap</th><th class="num">ATS, all games</th><th class="num">ATS, spreads 20 or less</th></tr></thead><tbody>` +
-    T.buckets.map(b => `<tr><td>${b.label} pts</td><td class="num">${rec(b.all)}${rp(b.all)}</td><td class="num">${rec(b.comp)}${rp(b.comp)}</td></tr>`).join("") + "</tbody>";
+    `<thead><tr><th>Spread gap</th><th class="num">ATS, all games</th><th class="num">ATS, spreads 20 or less</th><th class="num">ATS, spreads over 20</th></tr></thead><tbody>` +
+    T.buckets.map(b => `<tr><td>${b.label} pts</td><td class="num">${rec(b.all)}${rp(b.all)}</td><td class="num">${rec(b.comp)}${rp(b.comp)}</td><td class="num">${rec(b.big)}${rp(b.big)}</td></tr>`).join("") + "</tbody>";
 
   document.getElementById("totTbl").innerHTML =
     `<thead><tr><th>Month</th><th class="num">Games</th><th class="num">Proj avg miss</th><th class="num">Book avg miss</th><th class="num">O/U lean record</th><th class="num">Gap 4+ record</th></tr></thead><tbody>` +
