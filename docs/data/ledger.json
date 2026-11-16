@@ -68,7 +68,6 @@
   "proj_total": 139.1,
   "tip": "8:00 PM",
   "tip_iso": "2026-11-17T01:00:00+00:00",
-  "top_play": null,
   "tot_diff": -1.4
  },
  "05f71288bf4061ab1b84b383ca03fbc6": {
@@ -1026,20 +1025,40 @@
   "proj_total": 156.2,
   "tip": "6:00 PM",
   "tip_iso": "2026-11-16T23:00:00+00:00",
-  "top_play": {
-   "be": 0.548,
-   "book": "BR",
-   "game": "310f03765b18b61b06efddde81161621",
-   "line": 36.5,
-   "matchup": "Alcorn St. @ Maryland",
-   "neutral": false,
-   "price": -121,
-   "prob": 0.67,
-   "side": "Alcorn St.",
-   "tip": "6:00 PM",
-   "type": "Spread",
-   "why": "KenPom +24.6 vs. line +36.5"
-  },
+  "top_plays": [
+   {
+    "be": 0.548,
+    "book": "BR",
+    "game": "310f03765b18b61b06efddde81161621",
+    "line": 36.5,
+    "matchup": "Alcorn St. @ Maryland",
+    "neutral": false,
+    "price": -121,
+    "prob": 0.67,
+    "same_game": true,
+    "side": "Alcorn St.",
+    "tip": "6:00 PM",
+    "type": "Spread",
+    "why": "KenPom +24.6 vs. line +36.5"
+   },
+   {
+    "be": 0.524,
+    "book": "implied",
+    "game": "310f03765b18b61b06efddde81161621",
+    "lean": "Over",
+    "line": 59.5,
+    "matchup": "Alcorn St. @ Maryland",
+    "neutral": false,
+    "price": null,
+    "prob": 0.616,
+    "same_game": true,
+    "side": "Alcorn St. Over",
+    "team": "Alcorn St.",
+    "tip": "6:00 PM",
+    "type": "Team total",
+    "why": "KenPom 65.8 vs. implied 59.5"
+   }
+  ],
   "tot_diff": 1.7
  },
  "315f611a3a841f575260db9d7138f5e1": {
@@ -1145,20 +1164,23 @@
   "proj_total": 145.4,
   "tip": "10:00 PM",
   "tip_iso": "2026-11-17T03:00:00+00:00",
-  "top_play": {
-   "be": 0.535,
-   "book": "ESPN",
-   "game": "3180dabd245219f81ad4e9e46f08c970",
-   "line": 33.5,
-   "matchup": "Long Beach St. @ UCLA",
-   "neutral": false,
-   "price": -115,
-   "prob": 0.638,
-   "side": "Long Beach St.",
-   "tip": "10:00 PM",
-   "type": "Spread",
-   "why": "KenPom +24.4 vs. line +33.5"
-  },
+  "top_plays": [
+   {
+    "be": 0.535,
+    "book": "ESPN",
+    "game": "3180dabd245219f81ad4e9e46f08c970",
+    "line": 33.5,
+    "matchup": "Long Beach St. @ UCLA",
+    "neutral": false,
+    "price": -115,
+    "prob": 0.638,
+    "same_game": false,
+    "side": "Long Beach St.",
+    "tip": "10:00 PM",
+    "type": "Spread",
+    "why": "KenPom +24.4 vs. line +33.5"
+   }
+  ],
   "tot_diff": -0.1
  },
  "32d3dd215b1b902bfaa2f9aa451b3c7f": {
@@ -1196,7 +1218,6 @@
   "proj_total": 153.5,
   "tip": "8:00 PM",
   "tip_iso": "2026-11-17T01:00:00+00:00",
-  "top_play": null,
   "tot_diff": 0.0
  },
  "32e34c35ae4bcafb47d5b848e7d0cea1": {
@@ -1268,7 +1289,6 @@
   "proj_total": 148.4,
   "tip": "7:00 PM",
   "tip_iso": "2026-11-17T00:00:00+00:00",
-  "top_play": null,
   "tot_diff": 1.9
  },
  "33d4f6ff93e31ed41af6ed33a1dececb": {
@@ -1306,7 +1326,6 @@
   "proj_total": 149.1,
   "tip": "7:00 PM",
   "tip_iso": "2026-11-17T00:00:00+00:00",
-  "top_play": null,
   "tot_diff": -4.4
  },
  "34ef63b5d05083472f9c48c62ad3b7cf": {
@@ -1344,7 +1363,6 @@
   "proj_total": 145.6,
   "tip": "8:00 PM",
   "tip_iso": "2026-11-17T01:00:00+00:00",
-  "top_play": null,
   "tot_diff": 4.1
  },
  "357a70575c2cb9185f1773634d7f1624": {
@@ -1654,7 +1672,6 @@
   "proj_total": 161.5,
   "tip": "7:00 PM",
   "tip_iso": "2026-11-17T00:00:00+00:00",
-  "top_play": null,
   "tot_diff": 4.0
  },
  "40017882fb78a09d0c9b2cb83b2d0780": {
@@ -1726,7 +1743,6 @@
   "proj_total": 154.4,
   "tip": "10:00 PM",
   "tip_iso": "2026-11-17T03:00:00+00:00",
-  "top_play": null,
   "tot_diff": -2.1
  },
  "434e3816a0d976cb0b270d5b09b24286": {
@@ -2002,7 +2018,6 @@
   "proj_total": 156.2,
   "tip": "7:00 PM",
   "tip_iso": "2026-11-17T00:00:00+00:00",
-  "top_play": null,
   "tot_diff": -5.3
  },
  "4a565d712c98d4ab9ac161d8541e8f8e": {
@@ -2210,7 +2225,6 @@
   "proj_total": 156.7,
   "tip": "8:00 PM",
   "tip_iso": "2026-11-17T01:00:00+00:00",
-  "top_play": null,
   "tot_diff": -4.8
  },
  "4f85131b4b86a5241b2228638fb6fffb": {
@@ -2517,20 +2531,6 @@
   "proj_total": 143.0,
   "tip": "2:00 PM",
   "tip_iso": "2026-11-16T19:00:00+00:00",
-  "top_play": {
-   "be": 0.545,
-   "book": "BR",
-   "game": "59707f15a9e28eda5e24ec2ed98664c7",
-   "line": 20.5,
-   "matchup": "Florida A&M @ UTEP",
-   "neutral": false,
-   "price": -120,
-   "prob": 0.599,
-   "side": "Florida A&M",
-   "tip": "2:00 PM",
-   "type": "Spread",
-   "why": "KenPom +14.3 vs. line +20.5"
-  },
   "tot_diff": 0.5
  },
  "5e9a86d0318da189714546a553ac469d": {
@@ -2636,7 +2636,6 @@
   "proj_total": 152.1,
   "tip": "9:30 PM",
   "tip_iso": "2026-11-17T02:30:00+00:00",
-  "top_play": null,
   "tot_diff": -2.4
  },
  "619bf4e7c16d9baf970b9fb253a6a02c": {
@@ -3118,20 +3117,23 @@
   "proj_total": 158.8,
   "tip": "7:00 PM",
   "tip_iso": "2026-11-17T00:00:00+00:00",
-  "top_play": {
-   "be": 0.535,
-   "book": "BR",
-   "game": "6e8521bae38316636711f883260823c9",
-   "line": 29.5,
-   "matchup": "Grambling St. @ Kentucky",
-   "neutral": false,
-   "price": -115,
-   "prob": 0.6,
-   "side": "Grambling St.",
-   "tip": "7:00 PM",
-   "type": "Spread",
-   "why": "KenPom +23.2 vs. line +29.5"
-  },
+  "top_plays": [
+   {
+    "be": 0.535,
+    "book": "BR",
+    "game": "6e8521bae38316636711f883260823c9",
+    "line": 29.5,
+    "matchup": "Grambling St. @ Kentucky",
+    "neutral": false,
+    "price": -115,
+    "prob": 0.6,
+    "same_game": false,
+    "side": "Grambling St.",
+    "tip": "7:00 PM",
+    "type": "Spread",
+    "why": "KenPom +23.2 vs. line +29.5"
+   }
+  ],
   "tot_diff": 5.3
  },
  "70562f10018e40b9221cf498847b0031": {
@@ -3237,7 +3239,6 @@
   "proj_total": 144.8,
   "tip": "7:00 PM",
   "tip_iso": "2026-11-17T00:00:00+00:00",
-  "top_play": null,
   "tot_diff": 3.3
  },
  "7bd8e4044302f52d0233d1a4f9b0cc19": {
@@ -3751,7 +3752,6 @@
   "proj_total": 161.4,
   "tip": "8:30 PM",
   "tip_iso": "2026-11-17T01:30:00+00:00",
-  "top_play": null,
   "tot_diff": 0.9
  },
  "8cccff6700d899b19e557f4243965f3c": {
@@ -3823,20 +3823,23 @@
   "proj_total": 153.4,
   "tip": "6:30 PM",
   "tip_iso": "2026-11-16T23:30:00+00:00",
-  "top_play": {
-   "be": 0.545,
-   "book": "ESPN",
-   "game": "8ebaad54ff349cdb9448bc3d6587f13a",
-   "line": 33.5,
-   "matchup": "Prairie View A&M @ Ohio St.",
-   "neutral": false,
-   "price": -120,
-   "prob": 0.611,
-   "side": "Prairie View A&M",
-   "tip": "6:30 PM",
-   "type": "Spread",
-   "why": "KenPom +26.4 vs. line +33.5"
-  },
+  "top_plays": [
+   {
+    "be": 0.545,
+    "book": "ESPN",
+    "game": "8ebaad54ff349cdb9448bc3d6587f13a",
+    "line": 33.5,
+    "matchup": "Prairie View A&M @ Ohio St.",
+    "neutral": false,
+    "price": -120,
+    "prob": 0.611,
+    "same_game": false,
+    "side": "Prairie View A&M",
+    "tip": "6:30 PM",
+    "type": "Spread",
+    "why": "KenPom +26.4 vs. line +33.5"
+   }
+  ],
   "tot_diff": -1.1
  },
  "926bdb2c44827732d441da9d6ec59a3f": {
@@ -4010,7 +4013,6 @@
   "proj_total": 147.3,
   "tip": "7:30 PM",
   "tip_iso": "2026-11-17T00:30:00+00:00",
-  "top_play": null,
   "tot_diff": 0.8
  },
  "a1b8e614479a42dfc7fc085e7cfc5434": {
@@ -4184,7 +4186,6 @@
   "proj_total": 154.6,
   "tip": "7:00 PM",
   "tip_iso": "2026-11-17T00:00:00+00:00",
-  "top_play": null,
   "tot_diff": 2.1
  },
  "aa6958669267e89ebd0199aafe08ecc1": {
@@ -4528,7 +4529,6 @@
   "proj_total": 150.4,
   "tip": "10:00 PM",
   "tip_iso": "2026-11-17T03:00:00+00:00",
-  "top_play": null,
   "tot_diff": -0.1
  },
  "c3c58341c48b659af034931964de5495": {
@@ -5008,7 +5008,6 @@
   "proj_total": 138.9,
   "tip": "8:00 PM",
   "tip_iso": "2026-11-17T01:00:00+00:00",
-  "top_play": null,
   "tot_diff": 2.4
  },
  "d8e48d0d9cf53ab989bf5685d4ba102d": {
@@ -5213,7 +5212,6 @@
   "proj_total": 145.3,
   "tip": "6:00 PM",
   "tip_iso": "2026-11-16T23:00:00+00:00",
-  "top_play": null,
   "tot_diff": 1.3
  },
  "e2baa1761bf490b07c8b58ebff39cbfd": {

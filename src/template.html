@@ -91,7 +91,7 @@
 
   <section class="view on" id="v-value">
     <h2>Top 5 plays: most likely to hit</h2>
-    <p class="hint">The five bets with the highest win probability today, across spreads, totals, team totals and moneylines, one per game. Probabilities come from the KenPom projection, pulled halfway toward the market's 50/50 (moneylines use the 50/50 model/market blend). A play only qualifies if its probability beats the break-even rate for its price. Moneylines shorter than −300 are skipped.</p>
+    <p class="hint">The five bets with the highest win probability today, across spreads, totals, team totals and moneylines, any game. Plays from the same game are tagged, since they tend to win or lose together. Probabilities come from the KenPom projection, pulled halfway toward the market's 50/50 (moneylines use the 50/50 model/market blend). A play only qualifies if its probability beats the break-even rate for its price. Moneylines shorter than −300 are skipped.</p>
     <div class="cards" id="top5Cards"></div>
     <h2>Spread value: competitive games</h2>
     <p class="hint">Spreads of 20 or less where the KenPom projection and the book differ by 3+ points. Biggest gaps first.</p>
@@ -450,7 +450,7 @@ function renderTop5(){
     <div class="side">${esc(c.side)}${c.line != null ? (c.type === "Spread" ? " " + fmt(c.line) : " " + c.line) : ""} <span style="font-weight:500;color:var(--ink2)">(${priceTxt(c.price)}${c.book && c.book !== "median" && c.book !== "implied" ? " " + esc(c.book) : ""})</span></div>
     <div class="line">${esc(c.why)}</div>
     ${c.type === "Team total" ? '<div class="line">Line is implied from the spread and total; check your book’s team total.</div>' : ""}
-    ${c.neutral ? '<div><span class="tag neutral" style="margin-left:0">Neutral site</span></div>' : ""}
+    ${c.same_game || c.neutral ? `<div>${c.same_game ? '<span class="tag luck" style="margin-left:0" title="Another Top 5 play is from this game; results are linked">Same game</span>' : ""}${c.neutral ? '<span class="tag neutral">Neutral site</span>' : ""}</div>` : ""}
     <div class="vs">${esc(c.matchup)}</div>
   </div>`).join("") : '<div class="empty">No plays clear break-even right now (games may have already tipped).</div>';
 }

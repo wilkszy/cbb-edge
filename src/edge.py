@@ -290,20 +290,18 @@ def candidate_plays(g):
 
 
 def top_plays(games):
-    """Most likely plays of the day: highest win probability, one play per game."""
-    cands = sorted((c for g in games for c in candidate_plays(g)), key=lambda c: -c["prob"])
-    chosen, used = [], set()
-    for c in cands:
-        if c["game"] in used:
-            continue
-        chosen.append(c); used.add(c["game"])
-        if len(chosen) == TOP_N:
-            break
+    """Most likely plays of the day: highest win probability, any bet type, any game.
+    Plays from the same game are allowed and tagged, since their results are linked."""
+    chosen = sorted((c for g in games for c in candidate_plays(g)), key=lambda c: -c["prob"])[:TOP_N]
     by_id = {g["id"]: g for g in games}
+    counts = {}
+    for c in chosen:
+        counts[c["game"]] = counts.get(c["game"], 0) + 1
     for c in chosen:
         g = by_id[c["game"]]
-        c.update({"matchup": f"{g['away']} @ {g['home']}", "tip": g["tip"], "neutral": g["neutral"]})
-        g["top_play"] = c
+        c.update({"matchup": f"{g['away']} @ {g['home']}", "tip": g["tip"], "neutral": g["neutral"],
+                  "same_game": counts[c["game"]] > 1})
+        g.setdefault("top_plays", []).append(c)
     return chosen
 
 

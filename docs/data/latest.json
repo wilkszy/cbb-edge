@@ -69,20 +69,40 @@
       "ml_home": null,
       "ml_away": null,
       "ml_edge": null,
-      "top_play": {
-        "type": "Spread",
-        "side": "Alcorn St.",
-        "line": 36.5,
-        "price": -121,
-        "book": "BR",
-        "prob": 0.67,
-        "be": 0.548,
-        "why": "KenPom +24.6 vs. line +36.5",
-        "game": "310f03765b18b61b06efddde81161621",
-        "matchup": "Alcorn St. @ Maryland",
-        "tip": "6:00 PM",
-        "neutral": false
-      }
+      "top_plays": [
+        {
+          "type": "Spread",
+          "side": "Alcorn St.",
+          "line": 36.5,
+          "price": -121,
+          "book": "BR",
+          "prob": 0.67,
+          "be": 0.548,
+          "why": "KenPom +24.6 vs. line +36.5",
+          "game": "310f03765b18b61b06efddde81161621",
+          "matchup": "Alcorn St. @ Maryland",
+          "tip": "6:00 PM",
+          "neutral": false,
+          "same_game": true
+        },
+        {
+          "type": "Team total",
+          "side": "Alcorn St. Over",
+          "line": 59.5,
+          "price": null,
+          "book": "implied",
+          "prob": 0.616,
+          "be": 0.524,
+          "why": "KenPom 65.8 vs. implied 59.5",
+          "team": "Alcorn St.",
+          "lean": "Over",
+          "game": "310f03765b18b61b06efddde81161621",
+          "matchup": "Alcorn St. @ Maryland",
+          "tip": "6:00 PM",
+          "neutral": false,
+          "same_game": true
+        }
+      ]
     },
     {
       "id": "3180dabd245219f81ad4e9e46f08c970",
@@ -145,20 +165,23 @@
       "ml_home": null,
       "ml_away": null,
       "ml_edge": null,
-      "top_play": {
-        "type": "Spread",
-        "side": "Long Beach St.",
-        "line": 33.5,
-        "price": -115,
-        "book": "ESPN",
-        "prob": 0.638,
-        "be": 0.535,
-        "why": "KenPom +24.4 vs. line +33.5",
-        "game": "3180dabd245219f81ad4e9e46f08c970",
-        "matchup": "Long Beach St. @ UCLA",
-        "tip": "10:00 PM",
-        "neutral": false
-      }
+      "top_plays": [
+        {
+          "type": "Spread",
+          "side": "Long Beach St.",
+          "line": 33.5,
+          "price": -115,
+          "book": "ESPN",
+          "prob": 0.638,
+          "be": 0.535,
+          "why": "KenPom +24.4 vs. line +33.5",
+          "game": "3180dabd245219f81ad4e9e46f08c970",
+          "matchup": "Long Beach St. @ UCLA",
+          "tip": "10:00 PM",
+          "neutral": false,
+          "same_game": false
+        }
+      ]
     },
     {
       "id": "8ebaad54ff349cdb9448bc3d6587f13a",
@@ -220,20 +243,23 @@
       "ml_home": null,
       "ml_away": null,
       "ml_edge": null,
-      "top_play": {
-        "type": "Spread",
-        "side": "Prairie View A&M",
-        "line": 33.5,
-        "price": -120,
-        "book": "ESPN",
-        "prob": 0.611,
-        "be": 0.545,
-        "why": "KenPom +26.4 vs. line +33.5",
-        "game": "8ebaad54ff349cdb9448bc3d6587f13a",
-        "matchup": "Prairie View A&M @ Ohio St.",
-        "tip": "6:30 PM",
-        "neutral": false
-      }
+      "top_plays": [
+        {
+          "type": "Spread",
+          "side": "Prairie View A&M",
+          "line": 33.5,
+          "price": -120,
+          "book": "ESPN",
+          "prob": 0.611,
+          "be": 0.545,
+          "why": "KenPom +26.4 vs. line +33.5",
+          "game": "8ebaad54ff349cdb9448bc3d6587f13a",
+          "matchup": "Prairie View A&M @ Ohio St.",
+          "tip": "6:30 PM",
+          "neutral": false,
+          "same_game": false
+        }
+      ]
     },
     {
       "id": "59707f15a9e28eda5e24ec2ed98664c7",
@@ -294,21 +320,7 @@
       },
       "ml_home": -4750.0,
       "ml_away": 1600.0,
-      "ml_edge": 0.041,
-      "top_play": {
-        "type": "Spread",
-        "side": "Florida A&M",
-        "line": 20.5,
-        "price": -120,
-        "book": "BR",
-        "prob": 0.599,
-        "be": 0.545,
-        "why": "KenPom +14.3 vs. line +20.5",
-        "game": "59707f15a9e28eda5e24ec2ed98664c7",
-        "matchup": "Florida A&M @ UTEP",
-        "tip": "2:00 PM",
-        "neutral": false
-      }
+      "ml_edge": 0.041
     },
     {
       "id": "8b79439c67e6943734636c89503e8b92",
@@ -495,20 +507,23 @@
       "ml_home": -50000,
       "ml_away": 4000,
       "ml_edge": 0.007,
-      "top_play": {
-        "type": "Spread",
-        "side": "Grambling St.",
-        "line": 29.5,
-        "price": -115,
-        "book": "BR",
-        "prob": 0.6,
-        "be": 0.535,
-        "why": "KenPom +23.2 vs. line +29.5",
-        "game": "6e8521bae38316636711f883260823c9",
-        "matchup": "Grambling St. @ Kentucky",
-        "tip": "7:00 PM",
-        "neutral": false
-      }
+      "top_plays": [
+        {
+          "type": "Spread",
+          "side": "Grambling St.",
+          "line": 29.5,
+          "price": -115,
+          "book": "BR",
+          "prob": 0.6,
+          "be": 0.535,
+          "why": "KenPom +23.2 vs. line +29.5",
+          "game": "6e8521bae38316636711f883260823c9",
+          "matchup": "Grambling St. @ Kentucky",
+          "tip": "7:00 PM",
+          "neutral": false,
+          "same_game": false
+        }
+      ]
     },
     {
       "id": "33d4f6ff93e31ed41af6ed33a1dececb",
@@ -1451,7 +1466,8 @@
       "game": "310f03765b18b61b06efddde81161621",
       "matchup": "Alcorn St. @ Maryland",
       "tip": "6:00 PM",
-      "neutral": false
+      "neutral": false,
+      "same_game": true
     },
     {
       "type": "Spread",
@@ -1465,7 +1481,25 @@
       "game": "3180dabd245219f81ad4e9e46f08c970",
       "matchup": "Long Beach St. @ UCLA",
       "tip": "10:00 PM",
-      "neutral": false
+      "neutral": false,
+      "same_game": false
+    },
+    {
+      "type": "Team total",
+      "side": "Alcorn St. Over",
+      "line": 59.5,
+      "price": null,
+      "book": "implied",
+      "prob": 0.616,
+      "be": 0.524,
+      "why": "KenPom 65.8 vs. implied 59.5",
+      "team": "Alcorn St.",
+      "lean": "Over",
+      "game": "310f03765b18b61b06efddde81161621",
+      "matchup": "Alcorn St. @ Maryland",
+      "tip": "6:00 PM",
+      "neutral": false,
+      "same_game": true
     },
     {
       "type": "Spread",
@@ -1479,7 +1513,8 @@
       "game": "8ebaad54ff349cdb9448bc3d6587f13a",
       "matchup": "Prairie View A&M @ Ohio St.",
       "tip": "6:30 PM",
-      "neutral": false
+      "neutral": false,
+      "same_game": false
     },
     {
       "type": "Spread",
@@ -1493,21 +1528,8 @@
       "game": "6e8521bae38316636711f883260823c9",
       "matchup": "Grambling St. @ Kentucky",
       "tip": "7:00 PM",
-      "neutral": false
-    },
-    {
-      "type": "Spread",
-      "side": "Florida A&M",
-      "line": 20.5,
-      "price": -120,
-      "book": "BR",
-      "prob": 0.599,
-      "be": 0.545,
-      "why": "KenPom +14.3 vs. line +20.5",
-      "game": "59707f15a9e28eda5e24ec2ed98664c7",
-      "matchup": "Florida A&M @ UTEP",
-      "tip": "2:00 PM",
-      "neutral": false
+      "neutral": false,
+      "same_game": false
     }
   ],
   "unmatched": [],
