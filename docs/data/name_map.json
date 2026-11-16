@@ -1,12 +1,9 @@
 {
  "matched": {
   "Abilene Christian Wildcats": "Abilene Christian",
-  "Alabama St Hornets": "Alabama St.",
   "Alcorn St Braves": "Alcorn St.",
-  "Arkansas-Pine Bluff Golden Lions": "Arkansas Pine Bluff",
   "Central Arkansas Bears": "Central Arkansas",
   "Clemson Tigers": "Clemson",
-  "Coastal Carolina Chanticleers": "Coastal Carolina",
   "Columbia Lions": "Columbia",
   "Drake Bulldogs": "Drake",
   "East Texas A&M Lions": "East Texas A&M",
@@ -25,7 +22,6 @@
   "Minnesota Golden Gophers": "Minnesota",
   "Missouri St Bears": "Missouri St.",
   "Montana Grizzlies": "Montana",
-  "North Dakota Fighting Hawks": "North Dakota",
   "Northwestern Wildcats": "Northwestern",
   "Ohio State Buckeyes": "Ohio St.",
   "Oklahoma St Cowboys": "Oklahoma St.",
@@ -33,40 +29,34 @@
   "Portland St Vikings": "Portland St.",
   "Prairie View Panthers": "Prairie View A&M",
   "Richmond Spiders": "Richmond",
-  "SIU-Edwardsville Cougars": "SIUE",
   "Saint Mary's Gaels": "Saint Mary's",
-  "San Jos\u00e9 St Spartans": "San Jose St.",
-  "St. John's Red Storm": "St. John's",
   "St. Thomas (MN) Tommies": "St. Thomas",
-  "Syracuse Orange": "Syracuse",
   "Tarleton State Texans": "Tarleton St.",
   "Texas A&M Aggies": "Texas A&M",
   "Texas Southern Tigers": "Texas Southern",
-  "Texas State Bobcats": "Texas St.",
   "The Citadel Bulldogs": "The Citadel",
   "Tulsa Golden Hurricane": "Tulsa",
   "UC San Diego Tritons": "UC San Diego",
   "UCLA Bruins": "UCLA",
   "UMBC Retrievers": "UMBC",
-  "USC Trojans": "USC",
   "UTEP Miners": "UTEP",
-  "UTSA Roadrunners": "UTSA",
   "Virginia Tech Hokies": "Virginia Tech",
   "Western Illinois Leathernecks": "Western Illinois",
-  "Western Kentucky Hilltoppers": "Western Kentucky",
-  "Wisconsin Badgers": "Wisconsin"
+  "Western Kentucky Hilltoppers": "Western Kentucky"
  },
  "unmatched": [
   "SE Louisiana Lions"
  ],
  "collisions": {},
  "espn_unmatched": [
-  "Abraham Baldwin Agricultural Stallions",
-  "Capital Crusaders",
-  "Doane Tigers",
-  "Ecclesia Royals",
-  "Emmanuel (MA) Lions",
-  "Paine Lions",
-  "UC Merced Bobcats"
+  "Calumet St. Joseph Crimson Wave",
+  "Colorado Colorado Springs Mountain Lions",
+  "Dallas Christian Crusaders",
+  "DeSales Bulldogs",
+  "Ferrum Panthers",
+  "Fisk Bulldogs",
+  "Mayville State Comets",
+  "Midway Eagles",
+  "SE Louisiana Lions"
  ]
 }
