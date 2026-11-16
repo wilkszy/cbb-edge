@@ -67,6 +67,7 @@
   .conf table{border:none;border-radius:0;border-top:1px solid var(--line);table-layout:fixed}
   .conf col.c1{width:90px}.conf col.c3,.conf col.c4{width:120px}.conf col.c5{width:150px}.conf col.c6{width:190px}.conf col.c7{width:90px}
   .note{color:var(--muted);font-size:12px;margin-top:22px;max-width:900px}
+  .neutral{border-color:#3b3b55;color:#b8b8ff}
   .luck{border-color:#5a4a1f;color:#e8c46a}.unluck{border-color:#2c4a5e;color:#8cc4e8}
   .res-W{color:var(--accent);font-weight:700}.res-L{color:#e5484d;font-weight:700}.res-P{color:var(--ink2);font-weight:700}
   .empty{padding:32px;text-align:center;color:var(--ink2)}
@@ -93,7 +94,7 @@
     <p class="hint">Biggest gaps between the book and the KenPom projection, in games with spreads of 20 or less. Huge spreads are left out because projections run consistently smaller than the book there.</p>
     <div class="cards" id="spreadCards"></div>
     <h2>Best moneyline value</h2>
-    <p class="hint">KenPom win probability minus the market's no-vig probability, for sides the market gives a 15% to 85% chance.</p>
+    <p class="hint" id="mlHint">Model win probability (KenPom blended 50/50 with the market) minus the market's no-vig probability. Shown when the edge is at least 3 points and the market gives the side a 15% to 85% chance.</p>
     <div class="cards" id="mlCards"></div>
     <h2>Spread and moneyline agree</h2>
     <p class="hint">Games where both the spread gap (2+ pts) and the moneyline edge point to the same side.</p>
@@ -171,6 +172,7 @@ const pct = n => (n > 0 ? "+" : "") + (n * 100).toFixed(1) + "%";
 const p0 = n => (n * 100).toFixed(0) + "%";
 const esc = s => String(s).replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
 const BIG = 20;
+const MLMIN = (DATA && DATA.ml_min_edge) || 0.0001;
 
 let sortKey = "absdiff", sortDir = -1, games = [], maxAbs = 4;
 
@@ -179,7 +181,7 @@ function prep(){
     const pickHome = g.pick === g.home;
     return {...g, absdiff: Math.abs(g.diff), abstot: g.tot_diff == null ? null : Math.abs(g.tot_diff), best: g.best_line ? g.best_line.point : 0,
       pickHome, confGame: g.home_conf === g.away_conf,
-      kpPick: pickHome ? g.kp_home_wp : 1 - g.kp_home_wp,
+      kpPick: (() => { const w = g.model_home_wp ?? g.kp_home_wp; return pickHome ? w : 1 - w; })(),
       mktPick: g.mkt_home_wp == null ? null : (pickHome ? g.mkt_home_wp : 1 - g.mkt_home_wp),
       pickSpread: pickHome ? g.book_spread : -g.book_spread};
   });
@@ -192,7 +194,7 @@ const luckTag = v => {
   return v > 0 ? `<span class="tag luck" title="KenPom luck: won more than their game-by-game efficiency predicts">Lucky ${n}</span>`
                : `<span class="tag unluck" title="KenPom luck: won less than their game-by-game efficiency predicts">Unlucky ${n}</span>`;
 };
-const matchup = g => `<span class="t">${esc(g.away)}</span><span class="r">#${g.away_rank}</span>${luckTag(g.away_luck)} @ <span class="t">${esc(g.home)}</span><span class="r">#${g.home_rank}</span>${luckTag(g.home_luck)}${g.neutral ? '<span class="tag">Neutral</span>' : ""}`;
+const matchup = g => `<span class="t">${esc(g.away)}</span><span class="r">#${g.away_rank}</span>${luckTag(g.away_luck)} @ <span class="t">${esc(g.home)}</span><span class="r">#${g.home_rank}</span>${luckTag(g.home_luck)}${g.neutral ? '<span class="tag neutral">Neutral</span>' : ""}`;
 const bestLine = g => g.best_line ? `${fmt(g.best_line.point)} (${g.best_line.price > 0 ? "+" : ""}${g.best_line.price}) ${esc(g.best_line.book)}` : "–";
 const edgeCell = g => `<div class="edge"><div class="bar"><span style="width:${(g.absdiff / maxAbs * 100).toFixed(0)}%"></span></div><b>${g.absdiff.toFixed(1)}</b></div>`;
 
@@ -201,19 +203,19 @@ function header(){
     `Slate for ${DATA.slate_date}. Updated ${DATA.generated}. KenPom data through ${DATA.kenpom_through || "latest"}.`;
   const comp = games.filter(g => Math.abs(g.book_spread) <= BIG);
   const top = [...comp].sort((a,b) => b.absdiff - a.absdiff)[0];
-  const ml = games.filter(g => g.mktPick != null && g.mktPick >= .15 && g.mktPick <= .85).sort((a,b) => b.ml_edge - a.ml_edge)[0];
+  const ml = games.filter(g => g.mktPick != null && g.mktPick >= .15 && g.mktPick <= .85 && g.ml_edge >= MLMIN).sort((a,b) => b.ml_edge - a.ml_edge)[0];
   document.getElementById("tiles").innerHTML = [
     ["Games on the board", games.length, `across ${new Set(games.flatMap(g => [g.home_conf, g.away_conf])).size} conferences`],
     ["Gaps of 3+ points", games.filter(g => g.absdiff >= 3 && Math.abs(g.book_spread) <= BIG).length, `in games with spreads of ${BIG} or less`],
     ["Best spread value", top ? top.absdiff.toFixed(1) : "–", top ? `${esc(top.pick)} ${fmt(top.pickSpread)}` : ""],
-    ["Best ML value", ml ? pct(ml.ml_edge) : "–", ml ? `${esc(ml.pick)} (KenPom ${p0(ml.kpPick)} vs. market ${p0(ml.mktPick)})` : ""],
+    ["Best ML value", ml ? pct(ml.ml_edge) : "–", ml ? `${esc(ml.pick)} (model ${p0(ml.kpPick)} vs. market ${p0(ml.mktPick)})` : ""],
   ].map(([k,v,d]) => `<div class="tile"><div class="k">${k}</div><div class="v">${v}</div><div class="d">${d}</div></div>`).join("");
 }
 
 function card(g, i, mode){
   const big = mode === "ml" ? `${pct(g.ml_edge)}<small>win prob edge</small>` : `${g.absdiff.toFixed(1)}<small>pt gap</small>`;
   const detail = mode === "ml"
-    ? `KenPom ${p0(g.kpPick)} vs. market ${p0(g.mktPick)} · spread gap ${g.absdiff.toFixed(1)}`
+    ? `Model ${p0(g.kpPick)} vs. market ${p0(g.mktPick)} · spread gap ${g.absdiff.toFixed(1)}`
     : `Book ${fmt(g.pickSpread)} · KenPom ${fmt(g.pickHome ? g.proj_spread : -g.proj_spread)}` + (g.ml_edge != null ? ` · ML edge ${pct(g.ml_edge)}` : "");
   return `<div class="card">
     <div class="rank">#${i + 1} · ${esc(g.tip)}</div>
@@ -221,6 +223,7 @@ function card(g, i, mode){
     <div class="side">${esc(g.pick)} ${fmt(g.pickSpread)}</div>
     <div class="line">${detail}</div>
     <div class="line">Best line: ${bestLine(g)}</div>
+    ${g.neutral ? '<div><span class="tag neutral" style="margin-left:0">Neutral site · no home-court edge</span></div>' : ""}
     <div class="vs">${esc(g.away)}${luckTag(g.away_luck)} @ ${esc(g.home)}${luckTag(g.home_luck)}${g.confGame ? ` · ${esc(g.home_conf)}` : ` · ${esc(g.away_conf)} vs. ${esc(g.home_conf)}`}</div>
   </div>`;
 }
@@ -230,9 +233,9 @@ const fill = (id, list, mode) => document.getElementById(id).innerHTML =
 function renderValue(){
   const comp = games.filter(g => Math.abs(g.book_spread) <= BIG);
   fill("spreadCards", [...comp].sort((a,b) => b.absdiff - a.absdiff).slice(0, 6), "spread");
-  fill("mlCards", games.filter(g => g.mktPick != null && g.mktPick >= .15 && g.mktPick <= .85 && g.ml_edge > 0)
+  fill("mlCards", games.filter(g => g.mktPick != null && g.mktPick >= .15 && g.mktPick <= .85 && g.ml_edge >= MLMIN)
     .sort((a,b) => b.ml_edge - a.ml_edge).slice(0, 6), "ml");
-  fill("agreeCards", comp.filter(g => g.absdiff >= 2 && g.ml_edge > 0 && g.mktPick >= .15 && g.mktPick <= .85)
+  fill("agreeCards", comp.filter(g => g.absdiff >= 2 && g.ml_edge >= MLMIN && g.mktPick >= .15 && g.mktPick <= .85)
     .sort((a,b) => b.absdiff - a.absdiff).slice(0, 6), "spread");
 }
 
@@ -375,8 +378,8 @@ function init(){
   document.getElementById("note").innerHTML =
     `How it works: projections use public KenPom ratings (AdjO, AdjD, AdjT) with the standard tempo-adjusted formula and ` +
     `${DATA.hca} pts home-court advantage. They are not KenPom's official game predictions. Book line is the median home spread across listed books. ` +
-    `Spread gap = projected margin minus book margin. ML edge = projected win probability minus the market's no-vig probability for the value side ` +
-    `(win prob assumes a ${DATA.margin_sd}-pt margin std. dev.). Neutral-site games are only flagged when listed in neutral_sites.json. No injury or lineup news is included. ` +
+    `Spread gap = projected margin minus book margin. ML edge = model win probability minus the market's no-vig probability for the value side. ` +
+    `Model win probability blends KenPom (${DATA.margin_sd}-pt margin std. dev.) ${Math.round((DATA.wp_blend ?? 1) * 100)}/${Math.round((1 - (DATA.wp_blend ?? 1)) * 100)} with the market. Neutral-site games come from ESPN's scoreboard and get no home-court advantage. No injury or lineup news is included. ` +
     `Luck flags mark teams whose KenPom luck is ${DATA.luck_flag ? "±" + DATA.luck_flag.toFixed(2).replace(/^0/, "") : "large"} or beyond: their record is better (Lucky) or worse (Unlucky) than their game-by-game efficiency suggests. Luck isn't part of the ratings, so it doesn't change the projection, but records can make lucky teams look stronger than they are. Over/Under projections use the same ratings, with no adjustment for pace in close games or end-of-game fouling.` +
     (DATA.unmatched.length ? `<details class="unm"><summary>${DATA.unmatched.length} team name(s) not matched to KenPom (games skipped)</summary>${DATA.unmatched.map(esc).join(", ")}</details>` : "");
 }

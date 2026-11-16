@@ -10,7 +10,10 @@ CBB Edge: daily college basketball spread discrepancies vs. KenPom ratings.
 Env vars:
   ODDS_API_KEY     required (free key at the-odds-api.com)
   HCA              home-court advantage in points (default 3.2)
-  MARGIN_SD        std dev of game margin for win prob (default 11.0)
+  MARGIN_SD        std dev of game margin for win prob (default 13.0)
+  WP_BLEND         weight on the KenPom win prob when blending with the market (default 0.5)
+  ML_MIN_EDGE      minimum blended edge for a moneyline value pick (default 0.03)
+  ESPN_JSON        optional path to a saved ESPN scoreboard response (skips fetch)
   TZ_NAME          slate timezone (default America/New_York)
   KENPOM_HTML      optional path to a saved kenpom.com page (skips fetch)
   ODDS_JSON        optional path to a saved odds response (skips fetch)
@@ -36,7 +39,9 @@ ALIASES_FILE = ROOT / "src" / "aliases.json"
 NEUTRAL_FILE = ROOT / "src" / "neutral_sites.json"
 
 HCA = float(os.getenv("HCA", "3.2"))
-MARGIN_SD = float(os.getenv("MARGIN_SD", "11.0"))
+MARGIN_SD = float(os.getenv("MARGIN_SD", "13.0"))
+WP_BLEND = float(os.getenv("WP_BLEND", "0.5"))
+ML_MIN_EDGE = float(os.getenv("ML_MIN_EDGE", "0.03"))
 LUCK_FLAG = float(os.getenv("LUCK_FLAG", "0.15"))
 TZ = ZoneInfo(os.getenv("TZ_NAME", "America/New_York"))
 BOOKS = ["draftkings", "fanduel", "betmgm", "williamhill_us", "espnbet", "betrivers", "fanatics"]
@@ -187,6 +192,45 @@ class Matcher:
         return self.map.get(odds_name)
 
 
+# ------------------------------------------------------------ Neutral sites ---
+def fetch_espn(day) -> list:
+    if os.getenv("ESPN_JSON"):
+        return json.loads(Path(os.environ["ESPN_JSON"]).read_text()).get("events", [])
+    r = requests.get("https://site.api.espn.com/apis/site/v2/sports/basketball/mens-college-basketball/scoreboard",
+                     params={"dates": day.strftime("%Y%m%d"), "groups": 50, "limit": 500},
+                     headers={"User-Agent": UA}, timeout=30)
+    r.raise_for_status()
+    return r.json().get("events", [])
+
+
+def espn_neutral(kp_names, day) -> dict:
+    """{frozenset({kp_team_a, kp_team_b}): neutral_bool} for the day's D-I games on ESPN."""
+    try:
+        events = fetch_espn(day)
+    except Exception as e:
+        print(f"ESPN scoreboard fetch failed ({e}); neutral sites only from neutral_sites.json")
+        return {}
+    by_norm = {norm(n): n for n in kp_names}
+    teams = []
+    for ev in events:
+        for comp in ev.get("competitions", [])[:1]:
+            names = []
+            for c in comp.get("competitors", []):
+                t = c.get("team", {})
+                names.append((t.get("location", ""), t.get("displayName", "")))
+            teams.append((names, bool(comp.get("neutralSite"))))
+    m = Matcher(kp_names, [d for names, _ in teams for _, d in names])
+    out, miss = {}, 0
+    for names, neutral in teams:
+        kps = [by_norm.get(norm(loc)) or m(disp) for loc, disp in names]
+        if len(kps) == 2 and all(kps):
+            out[frozenset(kps)] = neutral
+        else:
+            miss += 1
+    print(f"ESPN: {len(events)} games, {sum(out.values())} neutral-site, {miss} not matched to KenPom")
+    return out
+
+
 # ------------------------------------------------------------ Projection ---
 def project(home: dict, away: dict, avg_o: float, avg_t: float, neutral: bool):
     poss = home["adj_t"] * away["adj_t"] / avg_t
@@ -204,6 +248,7 @@ def build(kp: dict, odds: list, now: datetime) -> dict:
     avg_o = statistics.mean(t["adj_o"] for t in kp.values())
     avg_t = statistics.mean(t["adj_t"] for t in kp.values())
     neutral_ids = set(json.loads(NEUTRAL_FILE.read_text())) if NEUTRAL_FILE.exists() else set()
+    espn = espn_neutral(list(kp.keys()), now.astimezone(TZ).date())
     match = Matcher(kp.keys(), [n for ev in odds for n in (ev["home_team"], ev["away_team"])])
     today = now.astimezone(TZ).date()
     games = []
@@ -247,13 +292,15 @@ def build(kp: dict, odds: list, now: datetime) -> dict:
                     ml_prices_h.append(outs[h_name]["price"]); ml_prices_a.append(outs[a_name]["price"])
         if not home_spreads:
             continue
-        neutral = ev["id"] in neutral_ids
+        espn_flag = espn.get(frozenset((h_kp, a_kp)))
+        neutral = ev["id"] in neutral_ids or bool(espn_flag)
         pts_h, pts_a, margin, poss, wp = project(kp[h_kp], kp[a_kp], avg_o, avg_t, neutral)
         book_spread = statistics.median(home_spreads.values())  # home line, e.g. -6.5
         book_margin = -book_spread                               # book's implied home margin
         diff = round(margin - book_margin, 1)                    # + = value on home
         pick_home = diff > 0
         mkt_wp = statistics.mean(ml_home_p) if ml_home_p else None
+        model_wp = wp if mkt_wp is None else WP_BLEND * wp + (1 - WP_BLEND) * mkt_wp
         best = best_home if pick_home else best_away
         games.append({
             "id": ev["id"],
@@ -274,6 +321,9 @@ def build(kp: dict, odds: list, now: datetime) -> dict:
                 {"point": best[0], "price": best[1], "book": BOOK_LABELS.get(best[2], best[2])},
             "kp_home_wp": round(wp, 3),
             "mkt_home_wp": None if mkt_wp is None else round(mkt_wp, 3),
+            "model_home_wp": round(model_wp, 3),
+            "ml_min_edge": ML_MIN_EDGE,
+            "neutral_src": "espn" if espn_flag else ("manual" if ev["id"] in neutral_ids else None),
             "home_luck": kp[h_kp].get("luck"), "away_luck": kp[a_kp].get("luck"),
             "proj_total": round(pts_h + pts_a, 1),
             "book_total": statistics.median(totals.values()) if totals else None,
@@ -286,7 +336,7 @@ def build(kp: dict, odds: list, now: datetime) -> dict:
             "ml_home": statistics.median(ml_prices_h) if ml_prices_h else None,
             "ml_away": statistics.median(ml_prices_a) if ml_prices_a else None,
             "ml_edge": None if mkt_wp is None else round(
-                (wp - mkt_wp) if pick_home else ((1 - wp) - (1 - mkt_wp)), 3),
+                (model_wp - mkt_wp) if pick_home else (mkt_wp - model_wp), 3),
         })
     games.sort(key=lambda g: abs(g["diff"]), reverse=True)
     (DOCS / "data").mkdir(parents=True, exist_ok=True)
@@ -319,7 +369,8 @@ def main():
         "slate_date": now.astimezone(TZ).strftime("%Y-%m-%d"),
         "generated": now.astimezone(TZ).strftime("%b %-d, %Y %-I:%M %p ET"),
         "kenpom_through": through,
-        "hca": HCA, "margin_sd": MARGIN_SD, "luck_flag": LUCK_FLAG, **result,
+        "hca": HCA, "margin_sd": MARGIN_SD, "luck_flag": LUCK_FLAG,
+        "wp_blend": WP_BLEND, "ml_min_edge": ML_MIN_EDGE, **result,
     }
     (DOCS / "data").mkdir(parents=True, exist_ok=True)
     from track import update_track

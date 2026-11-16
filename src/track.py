@@ -19,7 +19,7 @@ TZ = ZoneInfo(os.getenv("TZ_NAME", "America/New_York"))
 LOCK_FIELDS = ["home", "away", "home_conf", "away_conf", "tip", "tip_iso", "neutral",
                "book_spread", "proj_spread", "diff", "pick", "kp_home_wp", "mkt_home_wp",
                "ml_home", "ml_away", "ml_edge", "best_line",
-               "book_total", "proj_total", "tot_diff", "ou_pick"]
+               "book_total", "proj_total", "tot_diff", "ou_pick", "model_home_wp", "ml_min_edge"]
 BUCKETS = [("Under 2", 0, 2), ("2 to 3", 2, 3), ("3 to 5", 3, 5), ("5+", 5, 999)]
 
 
@@ -110,7 +110,7 @@ def grade(e: dict) -> dict:
     if mkt is not None and e.get("ml_edge") is not None:
         mkt_pick = mkt if pick_home else 1 - mkt
         price = e.get("ml_home") if pick_home else e.get("ml_away")
-        if e["ml_edge"] > 0 and 0.15 <= mkt_pick <= 0.85 and price:
+        if e["ml_edge"] >= max(e.get("ml_min_edge") or 0, 1e-9) and 0.15 <= mkt_pick <= 0.85 and price:
             won = (actual > 0) == pick_home and actual != 0
             g["ml"] = {"won": won, "price": price, "mkt": mkt_pick,
                        "units": (price / 100 if price > 0 else 100 / -price) if won else -1.0}
