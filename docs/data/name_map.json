@@ -4,9 +4,6 @@
   "Alabama St Hornets": "Alabama St.",
   "Alcorn St Braves": "Alcorn St.",
   "Arkansas-Pine Bluff Golden Lions": "Arkansas Pine Bluff",
-  "Buffalo Bulls": "Buffalo",
-  "Cal Poly Mustangs": "Cal Poly",
-  "Canisius Golden Griffins": "Canisius",
   "Central Arkansas Bears": "Central Arkansas",
   "Clemson Tigers": "Clemson",
   "Coastal Carolina Chanticleers": "Coastal Carolina",
@@ -28,7 +25,6 @@
   "Minnesota Golden Gophers": "Minnesota",
   "Missouri St Bears": "Missouri St.",
   "Montana Grizzlies": "Montana",
-  "Montana St Bobcats": "Montana St.",
   "North Dakota Fighting Hawks": "North Dakota",
   "Northwestern Wildcats": "Northwestern",
   "Ohio State Buckeyes": "Ohio St.",
@@ -63,5 +59,14 @@
  "unmatched": [
   "SE Louisiana Lions"
  ],
- "collisions": {}
+ "collisions": {},
+ "espn_unmatched": [
+  "Abraham Baldwin Agricultural Stallions",
+  "Capital Crusaders",
+  "Doane Tigers",
+  "Ecclesia Royals",
+  "Emmanuel (MA) Lions",
+  "Paine Lions",
+  "UC Merced Bobcats"
+ ]
 }
