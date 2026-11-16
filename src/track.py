@@ -185,6 +185,7 @@ def _summ(rows):
         "ats": _ats(rows),
         "ats_value": _ats([r for r in rows if r["gap"] >= 3 and not r["big"]]),
         "ats_big": _ats([r for r in rows if r["big"]]),
+        "ats_big_value": _ats([r for r in rows if r["big"] and r["gap"] >= 3]),
         "big_book_bias": (lambda b: round(sum(abs(r["actual"]) - abs(r["book_spread"]) for r in b) / len(b), 1) if b else None)(
             [r for r in rows if r["big"]]),
         "tot": _tot(rows),
