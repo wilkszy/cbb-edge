@@ -144,6 +144,13 @@
       </tr></thead>
       <tbody id="ouRows"></tbody>
     </table></div>
+    <h2>Team totals</h2>
+    <p class="hint">Each team's projected points vs. its implied total from the book (game total and spread combined, e.g. 150 total with home −6 → home 78, away 72). Actual team-total lines can differ by a point or so.</p>
+    <div class="cards" id="ttCards"></div>
+    <div style="overflow-x:auto;margin-top:12px"><table>
+      <thead><tr><th>Tip</th><th>Team</th><th>Opponent</th><th class="num">Implied</th><th class="num">KenPom proj</th><th class="num">Gap</th><th>Lean</th></tr></thead>
+      <tbody id="ttRows"></tbody>
+    </table></div>
   </section>
 
   <section class="view" id="v-track">
@@ -158,6 +165,9 @@
     <h2>Totals</h2>
     <p class="hint">Over/under lean vs. the locked book total. "Gap 4+" counts only games where the projection and the book differed by 4 or more points.</p>
     <div style="overflow-x:auto"><table id="totTbl"></table></div>
+    <h2>Team totals</h2>
+    <p class="hint">Each team's lean vs. its implied total. "Gap 3+" counts only teams where the projection and implied total differed by 3 or more points.</p>
+    <div style="overflow-x:auto"><table id="ttTbl"></table></div>
     <h2>Recent results</h2>
     <div style="overflow-x:auto"><table id="recentTbl"></table></div>
   </section>
@@ -177,6 +187,10 @@ const MLMIN = (DATA && DATA.ml_min_edge) || 0.0001;
 let sortKey = "absdiff", sortDir = -1, games = [], maxAbs = 4;
 
 function prep(){
+  DATA.games.forEach(g => {
+    if (g.imp_home == null && g.book_total != null) { g.imp_home = +((g.book_total - g.book_spread) / 2).toFixed(1); g.imp_away = +((g.book_total + g.book_spread) / 2).toFixed(1); }
+    if (g.proj_home_pts == null && g.proj_total != null) { g.proj_home_pts = (g.proj_total - g.proj_spread) / 2; g.proj_away_pts = (g.proj_total + g.proj_spread) / 2; }
+  });
   games = DATA.games.map(g => {
     const pickHome = g.pick === g.home;
     return {...g, absdiff: Math.abs(g.diff), abstot: g.tot_diff == null ? null : Math.abs(g.tot_diff), best: g.best_line ? g.best_line.point : 0,
@@ -301,7 +315,7 @@ function renderTrack(){
   const head = document.getElementById("trackHead");
   if(!T || !T.overall){
     head.textContent = T ? `Tracking since ${T.started}. ${T.pending} games have locked lines and are waiting on final scores, which are pulled at the next refresh after games finish.` : "Tracking starts with the next refresh.";
-    ["monthTbl","bucketTbl","totTbl","recentTbl"].forEach(id => document.getElementById(id).innerHTML = '<tr><td class="empty">No graded games yet.</td></tr>');
+    ["monthTbl","bucketTbl","totTbl","ttTbl","recentTbl"].forEach(id => document.getElementById(id).innerHTML = '<tr><td class="empty">No graded games yet.</td></tr>');
     return;
   }
   const O = T.overall;
@@ -332,6 +346,11 @@ function renderTrack(){
     [...T.months.map(m => [new Date(m.month + "-15").toLocaleString("en-US", {month: "long", year: "numeric"}), m.tot]), ["All", O.tot]].map(([lab, t]) =>
       t ? `<tr${lab === "All" ? ' style="font-weight:700"' : ""}><td>${lab}</td><td class="num">${t.n}</td><td class="num">${t.proj_mae.toFixed(1)}</td><td class="num">${t.book_mae.toFixed(1)}</td><td class="num">${rec(t.rec)}${rp(t.rec)}</td><td class="num">${rec(t.rec4)}${rp(t.rec4)}</td></tr>`
         : `<tr><td>${lab}</td><td colspan="5" class="books">No totals graded yet</td></tr>`).join("") + "</tbody>";
+  document.getElementById("ttTbl").innerHTML =
+    `<thead><tr><th>Month</th><th class="num">Teams</th><th class="num">Proj avg miss</th><th class="num">Implied avg miss</th><th class="num">Lean record</th><th class="num">Gap 3+</th><th class="num">Over leans</th><th class="num">Under leans</th></tr></thead><tbody>` +
+    [...T.months.map(m => [new Date(m.month + "-15").toLocaleString("en-US", {month: "long", year: "numeric"}), m.tt]), ["All", O.tt]].map(([lab, t]) =>
+      t ? `<tr${lab === "All" ? ' style="font-weight:700"' : ""}><td>${lab}</td><td class="num">${t.n}</td><td class="num">${t.proj_mae.toFixed(1)}</td><td class="num">${t.book_mae.toFixed(1)}</td><td class="num">${rec(t.rec)}${rp(t.rec)}</td><td class="num">${rec(t.rec3)}${rp(t.rec3)}</td><td class="num">${rec(t.over)}${rp(t.over)}</td><td class="num">${rec(t.under)}${rp(t.under)}</td></tr>`
+        : `<tr><td>${lab}</td><td colspan="7" class="books">No team totals graded yet</td></tr>`).join("") + "</tbody>";
   document.getElementById("recentTbl").innerHTML =
     `<thead><tr><th>Date</th><th>Final</th><th class="num">Book (home)</th><th class="num">Proj (home)</th><th>Value side</th><th class="num">Gap</th><th>ATS</th><th class="num">Miss: proj / book</th><th class="num hide-sm">ML</th><th class="num hide-sm">O/U</th></tr></thead><tbody>` +
     T.recent.map(r => `<tr><td class="tip">${r.date.slice(5)}</td>
@@ -374,9 +393,39 @@ function renderOU(){
   </tr>`).join("") : '<tr><td colspan="8" class="empty">No games match.</td></tr>';
 }
 
+
+function teamRows(){
+  const out = [];
+  games.forEach(g => {
+    if (g.imp_home == null) return;
+    [["home","away"],["away","home"]].forEach(([s,o]) => {
+      const imp = g["imp_" + s], proj = g["proj_" + s + "_pts"];
+      out.push({g, team: g[s], opp: g[o], at: s === "home" ? "vs." : "@", imp, proj, gap: proj - imp, luck: g[s + "_luck"]});
+    });
+  });
+  return out.sort((a,b) => Math.abs(b.gap) - Math.abs(a.gap));
+}
+function renderTT(){
+  const rows = teamRows();
+  document.getElementById("ttCards").innerHTML = rows.length ? rows.slice(0, 6).map((r, i) => `<div class="card">
+    <div class="rank">#${i + 1} · ${esc(r.g.tip)}</div>
+    <div class="big">${Math.abs(r.gap).toFixed(1)}<small>pt gap</small></div>
+    <div class="side">${esc(r.team)} ${r.gap > 0 ? "Over" : "Under"} ${r.imp}</div>
+    <div class="line">Implied ${r.imp} · KenPom ${r.proj.toFixed(1)}</div>
+    ${r.g.neutral ? '<div><span class="tag neutral" style="margin-left:0">Neutral site</span></div>' : ""}
+    <div class="vs">${esc(r.team)}${luckTag(r.luck)} ${r.at} ${esc(r.opp)}</div>
+  </div>`).join("") : '<div class="empty">No totals posted yet.</div>';
+  const maxG = Math.max(3, ...rows.map(r => Math.abs(r.gap)));
+  document.getElementById("ttRows").innerHTML = rows.map(r => `<tr>
+    <td class="tip">${esc(r.g.tip)}</td><td class="match"><span class="t">${esc(r.team)}</span>${luckTag(r.luck)}</td><td>${r.at} ${esc(r.opp)}</td>
+    <td class="num">${r.imp}</td><td class="num">${r.proj.toFixed(1)}</td>
+    <td class="num"><div class="edge"><div class="bar"><span style="width:${(Math.abs(r.gap) / maxG * 100).toFixed(0)}%"></span></div><b>${Math.abs(r.gap).toFixed(1)}</b></div></td>
+    <td class="pick">${r.gap > 0 ? "Over" : "Under"}</td></tr>`).join("") || '<tr><td colspan="7" class="empty">No totals posted yet.</td></tr>';
+}
+
 function init(){
   if(!DATA){ document.querySelector(".wrap").insertAdjacentHTML("beforeend", '<div class="empty">No data yet. The first daily run will fill this in.</div>'); return; }
-  prep(); header(); renderValue(); renderAll(); renderConf(); renderOU(); renderTrack();
+  prep(); header(); renderValue(); renderAll(); renderConf(); renderOU(); renderTT(); renderTrack();
   document.getElementById("note").innerHTML =
     `How it works: projections use public KenPom ratings (AdjO, AdjD, AdjT) with the standard tempo-adjusted formula and ` +
     `${DATA.hca} pts home-court advantage. They are not KenPom's official game predictions. Book line is the median home spread across listed books. ` +

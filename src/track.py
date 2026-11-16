@@ -19,7 +19,8 @@ TZ = ZoneInfo(os.getenv("TZ_NAME", "America/New_York"))
 LOCK_FIELDS = ["home", "away", "home_conf", "away_conf", "tip", "tip_iso", "neutral",
                "book_spread", "proj_spread", "diff", "pick", "kp_home_wp", "mkt_home_wp",
                "ml_home", "ml_away", "ml_edge", "best_line",
-               "book_total", "proj_total", "tot_diff", "ou_pick", "model_home_wp", "ml_min_edge"]
+               "book_total", "proj_total", "tot_diff", "ou_pick", "model_home_wp", "ml_min_edge",
+               "proj_home_pts", "proj_away_pts", "imp_home", "imp_away"]
 BUCKETS = [("Under 2", 0, 2), ("2 to 3", 2, 3), ("3 to 5", 3, 5), ("5+", 5, 999)]
 
 
@@ -106,6 +107,25 @@ def grade(e: dict) -> dict:
         g["tot"] = {"actual": tot, "proj_err": abs(e["proj_total"] - tot),
                     "book_err": abs(e["book_total"] - tot), "gap": abs(e["tot_diff"]),
                     "res": "P" if side == 0 else ("W" if side == want else "L")}
+    tts = []
+    for side in ("home", "away"):
+        imp, proj = e.get(f"imp_{side}"), e.get(f"proj_{side}_pts")
+        sign = -1 if side == "home" else 1   # home pts = (T - S)/2, away = (T + S)/2, S = home spread
+        if imp is None and e.get("book_total") is not None:
+            imp = round((e["book_total"] + sign * e["book_spread"]) / 2, 1)
+        if proj is None and e.get("proj_total") is not None:
+            proj = round((e["proj_total"] + sign * e["proj_spread"]) / 2, 1)
+        if imp is None or proj is None:
+            continue
+        act = e[f"{side}_score"]
+        want = 1 if proj > imp else -1
+        hit = (act > imp) - (act < imp)
+        tts.append({"team": e[side], "imp": imp, "proj": proj, "actual": act, "gap": abs(proj - imp),
+                    "lean": "Over" if want > 0 else "Under",
+                    "proj_err": abs(proj - act), "book_err": abs(imp - act),
+                    "res": "P" if hit == 0 else ("W" if hit == want else "L")})
+    if tts:
+        g["tt"] = tts
     mkt = e.get("mkt_home_wp")
     if mkt is not None and e.get("ml_edge") is not None:
         mkt_pick = mkt if pick_home else 1 - mkt
@@ -136,6 +156,19 @@ def _tot(rows):
             "rec4": {"w": bw, "l": bl, "p": 0, "pct": round(bw / (bw + bl), 3) if bw + bl else None}}
 
 
+def _tt(rows):
+    t = [x for r in rows for x in r.get("tt", [])]
+    if not t:
+        return None
+    def rec(xs):
+        w = sum(x["res"] == "W" for x in xs); l = sum(x["res"] == "L" for x in xs); p = sum(x["res"] == "P" for x in xs)
+        return {"w": w, "l": l, "p": p, "pct": round(w / (w + l), 3) if w + l else None}
+    return {"n": len(t), "proj_mae": round(sum(x["proj_err"] for x in t) / len(t), 2),
+            "book_mae": round(sum(x["book_err"] for x in t) / len(t), 2),
+            "rec": rec(t), "rec3": rec([x for x in t if x["gap"] >= 3]),
+            "over": rec([x for x in t if x["lean"] == "Over"]), "under": rec([x for x in t if x["lean"] == "Under"])}
+
+
 def _summ(rows):
     if not rows:
         return None
@@ -155,6 +188,7 @@ def _summ(rows):
         "big_book_bias": (lambda b: round(sum(abs(r["actual"]) - abs(r["book_spread"]) for r in b) / len(b), 1) if b else None)(
             [r for r in rows if r["big"]]),
         "tot": _tot(rows),
+        "tt": _tt(rows),
         "ml": {"n": len(ml), "w": sum(m["won"] for m in ml),
                "units": round(sum(m["units"] for m in ml), 2),
                "exp": round(sum(m["mkt"] for m in ml) / len(ml), 3) if ml else None},
