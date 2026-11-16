@@ -193,6 +193,9 @@ class Matcher:
 
 
 # ------------------------------------------------------------ Neutral sites ---
+ESPN_MISSED: list = []
+
+
 def fetch_espn(day) -> list:
     if os.getenv("ESPN_JSON"):
         return json.loads(Path(os.environ["ESPN_JSON"]).read_text()).get("events", [])
@@ -220,13 +223,15 @@ def espn_neutral(kp_names, day) -> dict:
                 names.append((t.get("location", ""), t.get("displayName", "")))
             teams.append((names, bool(comp.get("neutralSite"))))
     m = Matcher(kp_names, [d for names, _ in teams for _, d in names])
-    out, miss = {}, 0
+    out, miss, missed = {}, 0, []
     for names, neutral in teams:
         kps = [by_norm.get(norm(loc)) or m(disp) for loc, disp in names]
         if len(kps) == 2 and all(kps):
             out[frozenset(kps)] = neutral
         else:
             miss += 1
+            missed += [disp for (loc, disp), k in zip(names, kps) if not k]
+    ESPN_MISSED[:] = sorted(set(missed))
     print(f"ESPN: {len(events)} games, {sum(out.values())} neutral-site, {miss} not matched to KenPom")
     return out
 
@@ -342,7 +347,7 @@ def build(kp: dict, odds: list, now: datetime) -> dict:
     (DOCS / "data").mkdir(parents=True, exist_ok=True)
     (DOCS / "data" / "name_map.json").write_text(json.dumps(
         {"matched": dict(sorted(match.map.items())), "unmatched": sorted(match.unmatched),
-         "collisions": match.collisions}, indent=1))
+         "collisions": match.collisions, "espn_unmatched": ESPN_MISSED}, indent=1))
     if match.collisions:
         print(f"Name collisions (closest kept, others unmatched): {match.collisions}")
     return {"games": games, "unmatched": sorted(n for n in match.unmatched if n in today_names), "avg_o": round(avg_o, 1),
