@@ -253,7 +253,9 @@ def team_trends(graded: list) -> list:
             t = T.setdefault(r[side], {"team": r[side], "g": 0, "w": 0, "l": 0, "kp_w": 0, "kp_l": 0, "upsets": 0,
                                        "upset_losses": 0, "beat": 0, "short": 0, "margin_vs": 0.0, "pts_over": 0,
                                        "pts_under": 0, "pts_vs": 0.0, "pts_n": 0, "tot_over": 0, "tot_under": 0,
-                                       "ats_w": 0, "ats_l": 0, "last": None, "games": []})
+                                       "ats_w": 0, "ats_l": 0, "last": None, "games": [],
+                                       "tot_vs": 0.0, "tot_n": 0, "tb_over": 0, "tb_under": 0, "tb_vs": 0.0, "tb_n": 0,
+                                       "imp_over": 0, "imp_under": 0, "imp_vs": 0.0, "imp_n": 0})
             margin = (hs - as_) * sign
             proj_margin = -r["proj_spread"] * sign
             book_line = r["book_spread"] * sign          # this team's spread
@@ -268,6 +270,14 @@ def team_trends(graded: list) -> list:
                 t["pts_over"] += pts > proj_pts; t["pts_under"] += pts < proj_pts
                 tot = hs + as_
                 t["tot_over"] += tot > r["proj_total"]; t["tot_under"] += tot < r["proj_total"]
+                t["tot_vs"] += tot - r["proj_total"]; t["tot_n"] += 1
+            if r.get("book_total") is not None:
+                tot = hs + as_
+                t["tb_over"] += tot > r["book_total"]; t["tb_under"] += tot < r["book_total"]
+                t["tb_vs"] += tot - r["book_total"]; t["tb_n"] += 1
+                imp = (r["book_total"] - sign * r["book_spread"]) / 2
+                t["imp_over"] += pts > imp; t["imp_under"] += pts < imp
+                t["imp_vs"] += pts - imp; t["imp_n"] += 1
             c = margin + book_line
             t["ats_w"] += c > 0; t["ats_l"] += c < 0
             t["last"] = max(t["last"] or r["date"], r["date"])
@@ -278,6 +288,9 @@ def team_trends(graded: list) -> list:
     for t in T.values():
         t["margin_vs"] = round(t["margin_vs"] / t["g"], 1)
         t["pts_vs"] = round(t["pts_vs"] / t["pts_n"], 1) if t["pts_n"] else None
+        t["tot_vs"] = round(t["tot_vs"] / t["tot_n"], 1) if t["tot_n"] else None
+        t["tb_vs"] = round(t["tb_vs"] / t["tb_n"], 1) if t["tb_n"] else None
+        t["imp_vs"] = round(t["imp_vs"] / t["imp_n"], 1) if t["imp_n"] else None
         t["games"].sort(key=lambda x: x["date"], reverse=True)
         out.append(t)
     return sorted(out, key=lambda t: -t["margin_vs"])

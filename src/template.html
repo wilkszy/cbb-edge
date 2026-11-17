@@ -274,15 +274,30 @@ const redFlag = (backed, faded) => {
   if (faded && trendDir(faded) > 0) msgs.push(`${esc(faded)} has been beating its KenPom projection`);
   return msgs.length ? `<div class="line" style="color:#ff8a8f">⚠ Red flag: ${msgs.join("; ")}</div>` : "";
 };
-const kpRecord = (name) => {
+const sg1 = v => v == null ? "–" : (v > 0 ? "+" : v < 0 ? "−" : "") + Math.abs(v).toFixed(1);
+// Record that matches the bet: spread | ml | total | tt
+const kpRecord = (name, mode = "spread") => {
   const t = TREND[name];
   if (!t) return `${esc(name)}: no graded games`;
-  const v = (t.margin_vs > 0 ? "+" : t.margin_vs < 0 ? "−" : "") + Math.abs(t.margin_vs).toFixed(1);
+  const n = `${t.g}g`;
+  if (mode === "ml")
+    return `${esc(name)} <b>${t.w}-${t.l}</b> SU (${n}) · KenPom picked ${t.kp_w}-${t.kp_l}${t.upsets ? ` · ${t.upsets} upset win${t.upsets > 1 ? "s" : ""}` : ""}${t.upset_losses ? ` · ${t.upset_losses} upset loss${t.upset_losses > 1 ? "es" : ""}` : ""}`;
+  if (mode === "total")
+    return `${esc(name)} games: <b>${sg1(t.tot_vs)}</b> vs. KenPom total (O ${t.tot_over}-U ${t.tot_under}) · vs. book O ${t.tb_over}-U ${t.tb_under} (${sg1(t.tb_vs)}) · ${n}`;
+  if (mode === "tt")
+    return `${esc(name)} scoring: <b>${sg1(t.pts_vs)}</b> vs. KenPom (O ${t.pts_over}-U ${t.pts_under}) · vs. implied O ${t.imp_over}-U ${t.imp_under} (${sg1(t.imp_vs)}) · ${n}`;
   const dir = trendDir(name);
   const col = dir > 0 ? "#6fe3a5" : dir < 0 ? "#ff8a8f" : "var(--ink2)";
-  return `${esc(name)} <b style="color:${col}">${v}</b> (${t.g}g, beat ${t.beat}-${t.short}, ${t.w}-${t.l} SU)`;
+  return `${esc(name)} <b style="color:${col}">${sg1(t.margin_vs)}</b> vs. KenPom margin (${n}, beat ${t.beat}-${t.short}) · ${t.ats_w}-${t.ats_l} ATS`;
 };
-const kpLine = g => `<div class="line" style="font-size:12px">vs. KenPom: ${kpRecord(g.away)} · ${kpRecord(g.home)}</div>`;
+const kpLine = (g, mode = "spread") => `<div class="line" style="font-size:12px">History: ${kpRecord(g.away, mode)} · ${kpRecord(g.home, mode)}</div>`;
+const kpLineTeam = (team, mode) => `<div class="line" style="font-size:12px">History: ${kpRecord(team, mode)}</div>`;
+// Totals badge for O/U tables
+const totTag = name => {
+  const t = TREND[name];
+  if (!t || !t.tb_n) return "";
+  return `<span class="tag kp-soft" title="${esc(name)} games vs. the book total: ${t.tb_over} over, ${t.tb_under} under, avg ${sg1(t.tb_vs)} pts (${t.tb_n} graded)">O/U ${t.tb_over}-${t.tb_under}</span>`;
+};
 const flags = (name, luck) => luckTag(luck) + trendTag(name);
 const cardFlags = (name, luck) => luckTag(luck) + trendTag(name, false);
 const matchup = g => `<span class="t">${esc(g.away)}</span><span class="r">#${g.away_rank}</span>${flags(g.away, g.away_luck)} @ <span class="t">${esc(g.home)}</span><span class="r">#${g.home_rank}</span>${flags(g.home, g.home_luck)}${g.neutral ? '<span class="tag neutral">Neutral</span>' : ""}`;
@@ -317,7 +332,7 @@ function card(g, i, mode){
     <div class="line">${detail}</div>
     <div class="line">Best line: ${bestLine(g)}</div>
     ${redFlag(g.pick, g.pick === g.home ? g.away : g.home)}
-    ${kpLine(g)}
+    ${kpLine(g, mode === "ml" ? "ml" : "spread")}
     ${g.neutral ? '<div><span class="tag neutral" style="margin-left:0">Neutral site · no home-court edge</span></div>' : ""}
     <div class="vs">${esc(g.away)}${cardFlags(g.away, g.away_luck)} @ ${esc(g.home)}${cardFlags(g.home, g.home_luck)}${g.confGame ? ` · ${esc(g.home_conf)}` : ` · ${esc(g.away_conf)} vs. ${esc(g.home_conf)}`}</div>
   </div>`;
@@ -461,7 +476,7 @@ function renderOU(){
     <div class="side">${g.ou_pick} ${g.book_total}</div>
     <div class="line">Book ${g.book_total} · KenPom ${g.proj_total} · ${g.poss} poss</div>
     <div class="line">Best line: ${ouLine(g)}</div>
-    ${kpLine(g)}
+    ${kpLine(g, "total")}
     <div class="vs">${esc(g.away)}${cardFlags(g.away, g.away_luck)} @ ${esc(g.home)}${cardFlags(g.home, g.home_luck)}</div>
   </div>`).join("") : '<div class="empty">No totals posted yet.</div>';
   const min = +document.getElementById("minTot").value;
@@ -473,7 +488,7 @@ function renderOU(){
   const maxT = Math.max(4, ...withT.map(g => g.abstot));
   document.getElementById("ouRows").innerHTML = rows.length ? rows.map(g => `<tr>
     <td class="tip">${esc(g.tip)}</td>
-    <td class="match"><div>${matchup(g)}</div><div class="meta">Proj: ${esc(g.proj_score)}</div></td>
+    <td class="match"><div><span class="t">${esc(g.away)}</span><span class="r">#${g.away_rank}</span>${luckTag(g.away_luck)}${totTag(g.away)} @ <span class="t">${esc(g.home)}</span><span class="r">#${g.home_rank}</span>${luckTag(g.home_luck)}${totTag(g.home)}${g.neutral ? '<span class="tag neutral">Neutral</span>' : ""}</div><div class="meta">Proj: ${esc(g.proj_score)}</div></td>
     <td class="num">${g.book_total}<div class="books">${Object.entries(g.totals_books || {}).map(([b,v]) => `${b} ${v}`).join(" · ")}</div></td>
     <td class="num">${g.proj_total.toFixed(1)}</td>
     <td class="num"><div class="edge"><div class="bar"><span style="width:${(g.abstot / maxT * 100).toFixed(0)}%"></span></div><b>${g.abstot.toFixed(1)}</b></div></td>
@@ -500,13 +515,13 @@ function renderTT(){
     <div class="big">${Math.abs(r.gap).toFixed(1)}<small>pt gap</small></div>
     <div class="side">${esc(r.team)} ${r.gap > 0 ? "Over" : "Under"} ${r.imp}</div>
     <div class="line">Implied ${r.imp} · KenPom ${r.proj.toFixed(1)}</div>
-    ${kpLine(r.g)}
+    ${kpLineTeam(r.team, "tt")}
     ${r.g.neutral ? '<div><span class="tag neutral" style="margin-left:0">Neutral site</span></div>' : ""}
     <div class="vs">${esc(r.team)}${cardFlags(r.team, r.luck)} ${r.at} ${esc(r.opp)}${trendTag(r.opp, false)}</div>
   </div>`).join("") : '<div class="empty">No totals posted yet.</div>';
   const maxG = Math.max(3, ...rows.map(r => Math.abs(r.gap)));
   document.getElementById("ttRows").innerHTML = rows.map(r => `<tr>
-    <td class="tip">${esc(r.g.tip)}</td><td class="match"><span class="t">${esc(r.team)}</span>${flags(r.team, r.luck)}</td><td>${r.at} ${esc(r.opp)}${trendTag(r.opp)}</td>
+    <td class="tip">${esc(r.g.tip)}</td><td class="match"><span class="t">${esc(r.team)}</span>${luckTag(r.luck)}${(t => t && t.imp_n ? `<span class="tag kp-soft" title="${esc(r.team)} points vs. implied team total: ${t.imp_over} over, ${t.imp_under} under, avg ${sg1(t.imp_vs)}">TT ${t.imp_over}-${t.imp_under}</span>` : "")(TREND[r.team])}</td><td>${r.at} ${esc(r.opp)}</td>
     <td class="num">${r.imp}</td><td class="num">${r.proj.toFixed(1)}</td>
     <td class="num"><div class="edge"><div class="bar"><span style="width:${(Math.abs(r.gap) / maxG * 100).toFixed(0)}%"></span></div><b>${Math.abs(r.gap).toFixed(1)}</b></div></td>
     <td class="pick">${r.gap > 0 ? "Over" : "Under"}</td></tr>`).join("") || '<tr><td colspan="7" class="empty">No totals posted yet.</td></tr>';
@@ -527,7 +542,7 @@ function renderTop5(){
       if (c.type === "Team total") { const opp = c.team === g.home ? g.away : g.home; return c.lean === "Over" ? redFlag(c.team, null) : redFlag(null, c.team); }
       return "";
     })(games.find(x => x.id === c.game))}
-    ${(g => g ? kpLine(g) : "")(games.find(x => x.id === c.game))}
+    ${(g => !g ? "" : c.type === "Team total" ? kpLineTeam(c.team, "tt") : kpLine(g, {Spread: "spread", Moneyline: "ml", Total: "total"}[c.type]))(games.find(x => x.id === c.game))}
     ${c.type === "Team total" ? '<div class="line">Line is implied from the spread and total; check your book’s team total.</div>' : ""}
     ${c.same_game || c.neutral ? `<div>${c.same_game ? '<span class="tag luck" style="margin-left:0" title="Another Top 5 play is from this game; results are linked">Same game</span>' : ""}${c.neutral ? '<span class="tag neutral">Neutral site</span>' : ""}</div>` : ""}
     <div class="vs">${(g => g ? `${esc(g.away)}${cardFlags(g.away, g.away_luck)} @ ${esc(g.home)}${cardFlags(g.home, g.home_luck)}` : esc(c.matchup))(games.find(x => x.id === c.game))}</div>
