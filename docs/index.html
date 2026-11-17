@@ -69,6 +69,7 @@
   .conf col.c1{width:90px}.conf col.c3,.conf col.c4{width:120px}.conf col.c5{width:150px}.conf col.c6{width:190px}.conf col.c7{width:90px}
   .note{color:var(--muted);font-size:12px;margin-top:22px;max-width:900px}
   .neutral{border-color:#3b3b55;color:#b8b8ff}
+  .trend-up{border-color:#1f5c3a;color:#6fe3a5}.trend-down{border-color:#6b2427;color:#ff8a8f}
   .luck{border-color:#5a4a1f;color:#e8c46a}.unluck{border-color:#2c4a5e;color:#8cc4e8}
   .res-W{color:var(--accent);font-weight:700}.res-L{color:#e5484d;font-weight:700}.res-P{color:var(--ink2);font-weight:700}
   .empty{padding:32px;text-align:center;color:var(--ink2)}
@@ -226,6 +227,7 @@ const MLMIN = (DATA && DATA.ml_min_edge) || 0.0001;
 let sortKey = "absdiff", sortDir = -1, games = [], maxAbs = 4;
 
 function prep(){
+  TREND = Object.fromEntries(((DATA.track && DATA.track.teams) || []).map(t => [t.team, t]));
   DATA.games.forEach(g => {
     if (g.imp_home == null && g.book_total != null) { g.imp_home = +((g.book_total - g.book_spread) / 2).toFixed(1); g.imp_away = +((g.book_total + g.book_spread) / 2).toFixed(1); }
     if (g.proj_home_pts == null && g.proj_total != null) { g.proj_home_pts = (g.proj_total - g.proj_spread) / 2; g.proj_away_pts = (g.proj_total + g.proj_spread) / 2; }
@@ -247,7 +249,28 @@ const luckTag = v => {
   return v > 0 ? `<span class="tag luck" title="KenPom luck: won more than their game-by-game efficiency predicts">Lucky ${n}</span>`
                : `<span class="tag unluck" title="KenPom luck: won less than their game-by-game efficiency predicts">Unlucky ${n}</span>`;
 };
-const matchup = g => `<span class="t">${esc(g.away)}</span><span class="r">#${g.away_rank}</span>${luckTag(g.away_luck)} @ <span class="t">${esc(g.home)}</span><span class="r">#${g.home_rank}</span>${luckTag(g.home_luck)}${g.neutral ? '<span class="tag neutral">Neutral</span>' : ""}`;
+let TREND = {};
+const trendTag = name => {
+  const t = TREND[name];
+  if (!t || t.g < 2) return "";
+  const bar = 12 / Math.sqrt(t.g);
+  if (Math.abs(t.margin_vs) < bar) return "";
+  const v = (t.margin_vs > 0 ? "+" : "−") + Math.abs(t.margin_vs).toFixed(1);
+  const tip = `Over ${t.g} graded games, ${esc(name)} has finished ${Math.abs(t.margin_vs).toFixed(1)} pts/game ${t.margin_vs > 0 ? "better" : "worse"} than its KenPom projection (beat it ${t.beat} of ${t.g}). Flag threshold at ${t.g} games: ${bar.toFixed(1)} pts.`;
+  return t.margin_vs > 0
+    ? `<span class="tag trend-up" title="${tip}">Beats KP ${v} (${t.g}g)</span>`
+    : `<span class="tag trend-down" title="${tip}">Trails KP ${v} (${t.g}g)</span>`;
+};
+const trendDir = name => { const t = TREND[name]; return (!t || t.g < 2 || Math.abs(t.margin_vs) < 12 / Math.sqrt(t.g)) ? 0 : Math.sign(t.margin_vs); };
+// Warning when the play backs a team the model has been overrating, or fades one it has been underrating
+const redFlag = (backed, faded) => {
+  const msgs = [];
+  if (backed && trendDir(backed) < 0) msgs.push(`${esc(backed)} has been trailing its KenPom projection`);
+  if (faded && trendDir(faded) > 0) msgs.push(`${esc(faded)} has been beating its KenPom projection`);
+  return msgs.length ? `<div class="line" style="color:#ff8a8f">⚠ Red flag: ${msgs.join("; ")}</div>` : "";
+};
+const flags = (name, luck) => luckTag(luck) + trendTag(name);
+const matchup = g => `<span class="t">${esc(g.away)}</span><span class="r">#${g.away_rank}</span>${flags(g.away, g.away_luck)} @ <span class="t">${esc(g.home)}</span><span class="r">#${g.home_rank}</span>${flags(g.home, g.home_luck)}${g.neutral ? '<span class="tag neutral">Neutral</span>' : ""}`;
 const bestLine = g => g.best_line ? `${fmt(g.best_line.point)} (${g.best_line.price > 0 ? "+" : ""}${g.best_line.price}) ${esc(g.best_line.book)}` : "–";
 const edgeCell = g => `<div class="edge"><div class="bar"><span style="width:${(g.absdiff / maxAbs * 100).toFixed(0)}%"></span></div><b>${g.absdiff.toFixed(1)}</b></div>`;
 
@@ -278,8 +301,9 @@ function card(g, i, mode){
     <div class="side">${esc(g.pick)} ${fmt(g.pickSpread)}</div>
     <div class="line">${detail}</div>
     <div class="line">Best line: ${bestLine(g)}</div>
+    ${redFlag(g.pick, g.pick === g.home ? g.away : g.home)}
     ${g.neutral ? '<div><span class="tag neutral" style="margin-left:0">Neutral site · no home-court edge</span></div>' : ""}
-    <div class="vs">${esc(g.away)}${luckTag(g.away_luck)} @ ${esc(g.home)}${luckTag(g.home_luck)}${g.confGame ? ` · ${esc(g.home_conf)}` : ` · ${esc(g.away_conf)} vs. ${esc(g.home_conf)}`}</div>
+    <div class="vs">${esc(g.away)}${flags(g.away, g.away_luck)} @ ${esc(g.home)}${flags(g.home, g.home_luck)}${g.confGame ? ` · ${esc(g.home_conf)}` : ` · ${esc(g.away_conf)} vs. ${esc(g.home_conf)}`}</div>
   </div>`;
 }
 const fill = (id, list, mode) => document.getElementById(id).innerHTML =
@@ -421,7 +445,7 @@ function renderOU(){
     <div class="side">${g.ou_pick} ${g.book_total}</div>
     <div class="line">Book ${g.book_total} · KenPom ${g.proj_total} · ${g.poss} poss</div>
     <div class="line">Best line: ${ouLine(g)}</div>
-    <div class="vs">${esc(g.away)}${luckTag(g.away_luck)} @ ${esc(g.home)}${luckTag(g.home_luck)}</div>
+    <div class="vs">${esc(g.away)}${flags(g.away, g.away_luck)} @ ${esc(g.home)}${flags(g.home, g.home_luck)}</div>
   </div>`).join("") : '<div class="empty">No totals posted yet.</div>';
   const min = +document.getElementById("minTot").value;
   const rows = withT.filter(g => g.abstot >= min).sort((a,b) => {
@@ -460,11 +484,11 @@ function renderTT(){
     <div class="side">${esc(r.team)} ${r.gap > 0 ? "Over" : "Under"} ${r.imp}</div>
     <div class="line">Implied ${r.imp} · KenPom ${r.proj.toFixed(1)}</div>
     ${r.g.neutral ? '<div><span class="tag neutral" style="margin-left:0">Neutral site</span></div>' : ""}
-    <div class="vs">${esc(r.team)}${luckTag(r.luck)} ${r.at} ${esc(r.opp)}</div>
+    <div class="vs">${esc(r.team)}${flags(r.team, r.luck)} ${r.at} ${esc(r.opp)}${trendTag(r.opp)}</div>
   </div>`).join("") : '<div class="empty">No totals posted yet.</div>';
   const maxG = Math.max(3, ...rows.map(r => Math.abs(r.gap)));
   document.getElementById("ttRows").innerHTML = rows.map(r => `<tr>
-    <td class="tip">${esc(r.g.tip)}</td><td class="match"><span class="t">${esc(r.team)}</span>${luckTag(r.luck)}</td><td>${r.at} ${esc(r.opp)}</td>
+    <td class="tip">${esc(r.g.tip)}</td><td class="match"><span class="t">${esc(r.team)}</span>${flags(r.team, r.luck)}</td><td>${r.at} ${esc(r.opp)}${trendTag(r.opp)}</td>
     <td class="num">${r.imp}</td><td class="num">${r.proj.toFixed(1)}</td>
     <td class="num"><div class="edge"><div class="bar"><span style="width:${(Math.abs(r.gap) / maxG * 100).toFixed(0)}%"></span></div><b>${Math.abs(r.gap).toFixed(1)}</b></div></td>
     <td class="pick">${r.gap > 0 ? "Over" : "Under"}</td></tr>`).join("") || '<tr><td colspan="7" class="empty">No totals posted yet.</td></tr>';
@@ -479,9 +503,15 @@ function renderTop5(){
     <div class="big">${(c.prob * 100).toFixed(0)}%<small>to hit · break-even ${(c.be * 100).toFixed(0)}%</small></div>
     <div class="side">${esc(c.side)}${c.line != null ? (c.type === "Spread" ? " " + fmt(c.line) : " " + c.line) : ""} <span style="font-weight:500;color:var(--ink2)">(${priceTxt(c.price)}${c.book && c.book !== "median" && c.book !== "implied" ? " " + esc(c.book) : ""})</span></div>
     <div class="line">${esc(c.why)}</div>
+    ${(g => {
+      if (!g) return "";
+      if (c.type === "Spread" || c.type === "Moneyline") return redFlag(c.side, c.side === g.home ? g.away : g.home);
+      if (c.type === "Team total") { const opp = c.team === g.home ? g.away : g.home; return c.lean === "Over" ? redFlag(c.team, null) : redFlag(null, c.team); }
+      return "";
+    })(games.find(x => x.id === c.game))}
     ${c.type === "Team total" ? '<div class="line">Line is implied from the spread and total; check your book’s team total.</div>' : ""}
     ${c.same_game || c.neutral ? `<div>${c.same_game ? '<span class="tag luck" style="margin-left:0" title="Another Top 5 play is from this game; results are linked">Same game</span>' : ""}${c.neutral ? '<span class="tag neutral">Neutral site</span>' : ""}</div>` : ""}
-    <div class="vs">${esc(c.matchup)}</div>
+    <div class="vs">${(g => g ? `${esc(g.away)}${flags(g.away, g.away_luck)} @ ${esc(g.home)}${flags(g.home, g.home_luck)}` : esc(c.matchup))(games.find(x => x.id === c.game))}</div>
   </div>`).join("") : '<div class="empty">No plays clear break-even right now (games may have already tipped).</div>';
 }
 
@@ -537,7 +567,7 @@ function init(){
     `${DATA.hca} pts home-court advantage. They are not KenPom's official game predictions. Book line is the median home spread across listed books. ` +
     `Spread gap = projected margin minus book margin. ML edge = model win probability minus the market's no-vig probability for the value side. ` +
     `Model win probability blends KenPom (${DATA.margin_sd}-pt margin std. dev.) ${Math.round((DATA.wp_blend ?? 1) * 100)}/${Math.round((1 - (DATA.wp_blend ?? 1)) * 100)} with the market. Neutral-site games come from ESPN's scoreboard and get no home-court advantage. No injury or lineup news is included. ` +
-    `Luck flags mark teams whose KenPom luck is ${DATA.luck_flag ? "±" + DATA.luck_flag.toFixed(2).replace(/^0/, "") : "large"} or beyond: their record is better (Lucky) or worse (Unlucky) than their game-by-game efficiency suggests. Luck isn't part of the ratings, so it doesn't change the projection, but records can make lucky teams look stronger than they are. Over/Under projections use the same ratings, with no adjustment for pace in close games or end-of-game fouling.` +
+    `"Beats KP" / "Trails KP" flags mark teams whose results have consistently beaten or trailed their KenPom projection, in graded games; the bar is 12 ÷ √games (8.5 pts at 2 games, 5.4 at 5, 3.8 at 10). Luck flags mark teams whose KenPom luck is ${DATA.luck_flag ? "±" + DATA.luck_flag.toFixed(2).replace(/^0/, "") : "large"} or beyond: their record is better (Lucky) or worse (Unlucky) than their game-by-game efficiency suggests. Luck isn't part of the ratings, so it doesn't change the projection, but records can make lucky teams look stronger than they are. Over/Under projections use the same ratings, with no adjustment for pace in close games or end-of-game fouling.` +
     (DATA.unmatched.length ? `<details class="unm"><summary>${DATA.unmatched.length} team name(s) not matched to KenPom (games skipped)</summary>${DATA.unmatched.map(esc).join(", ")}</details>` : "");
 }
 
