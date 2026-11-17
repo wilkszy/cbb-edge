@@ -42,7 +42,8 @@
   tbody tr:hover{background:var(--panel2)}
   .match{min-width:220px}
   .match .t{font-weight:600}
-  .match .r{color:var(--muted);font-size:12px;margin-left:4px}
+  .match .r,.side .r{color:var(--muted);font-size:12px;margin-left:4px;font-weight:500}
+  .big.neg{color:#e5484d}
   .match .meta{color:var(--muted);font-size:12px}
   .pick{font-weight:700;color:var(--accent)}
   .edge{display:flex;align-items:center;gap:8px;justify-content:flex-end}
@@ -86,6 +87,7 @@
     <button data-v="all">All games</button>
     <button data-v="conf">By conference</button>
     <button data-v="ou">Over/Under</button>
+    <button data-v="teams">Team trends</button>
     <button data-v="track">Track record</button>
   </div>
 
@@ -156,6 +158,35 @@
     <div style="overflow-x:auto;margin-top:12px"><table>
       <thead><tr><th>Tip</th><th>Team</th><th>Opponent</th><th class="num">Implied</th><th class="num">KenPom proj</th><th class="num">Gap</th><th>Lean</th></tr></thead>
       <tbody id="ttRows"></tbody>
+    </table></div>
+  </section>
+
+  <section class="view" id="v-teams">
+    <p class="hint" id="teamsHead"></p>
+    <div class="controls">
+      <label>Min games <input type="range" id="minG" min="1" max="10" step="1" value="2"> <b id="minGV">2</b></label>
+      <input type="search" id="tq" placeholder="Find a team or conference">
+    </div>
+    <h2>Beating KenPom</h2>
+    <p class="hint">Teams finishing furthest above their KenPom projected margin, on average. The ones analytics keep underrating.</p>
+    <div class="cards" id="teamsUp"></div>
+    <h2>Falling short of KenPom</h2>
+    <p class="hint">Teams finishing furthest below their projection. The ones analytics keep overrating.</p>
+    <div class="cards" id="teamsDown"></div>
+    <h2>All teams</h2>
+    <div style="overflow-x:auto"><table>
+      <thead><tr>
+        <th data-tm="team">Team</th><th class="num" data-tm="g">G</th><th class="num" data-tm="w">W-L</th>
+        <th class="num" data-tm="kp_w" title="How many of these games KenPom projected them to win">KenPom picked</th>
+        <th class="num" data-tm="upsets" title="Won when KenPom projected a loss">Upset wins</th>
+        <th class="num" data-tm="beat" title="Games where the final margin beat the projected margin">Beat projection</th>
+        <th class="num" data-tm="margin_vs">Avg vs. proj</th>
+        <th class="num" data-tm="pts_vs" title="Average points scored vs. KenPom projected points">Points vs. proj</th>
+        <th class="num" data-tm="tot_over" title="Game total over/under the KenPom projected total">Game total vs. proj</th>
+        <th class="num" data-tm="ats_w" title="Record against the book spread">ATS vs. book</th>
+        <th class="hide-sm">Last games</th>
+      </tr></thead>
+      <tbody id="teamRows"></tbody>
     </table></div>
   </section>
 
@@ -455,9 +486,53 @@ function renderTop5(){
   </div>`).join("") : '<div class="empty">No plays clear break-even right now (games may have already tipped).</div>';
 }
 
+
+let tmKey = "margin_vs", tmDir = -1;
+const sgn = v => v == null ? "–" : (v > 0 ? "+" : "") + v.toFixed(1);
+function teamLabel(t){
+  const i = (DATA.team_info || {})[t.team] || {};
+  return `<span class="t">${esc(t.team)}</span>${i.rank ? `<span class="r">#${i.rank}</span>` : ""}${luckTag(i.luck)}`;
+}
+function teamGames(t, n){
+  return t.games.slice(0, n).map(x => `${x.date.slice(5)} ${x.won ? "W" : "L"} ${x.score} ${x.at} ${esc(x.opp)} (KP ${x.proj > 0 ? "+" : ""}${x.proj})`).join("<br>");
+}
+function teamCard(t, i){
+  const i2 = (DATA.team_info || {})[t.team] || {};
+  return `<div class="card">
+    <div class="rank">#${i + 1} · ${t.g} game${t.g > 1 ? "s" : ""}${i2.conf ? " · " + esc(i2.conf) : ""}</div>
+    <div class="big${t.margin_vs < 0 ? " neg" : ""}">${sgn(t.margin_vs)}<small>pts/game vs. KenPom</small></div>
+    <div class="side">${teamLabel(t)}</div>
+    <div class="line">${t.w}-${t.l} straight up · KenPom picked them ${t.kp_w}-${t.kp_l}${t.upsets ? ` · ${t.upsets} upset win${t.upsets > 1 ? "s" : ""}` : ""}</div>
+    <div class="line">Beat projection ${t.beat}-${t.short} · ${t.ats_w}-${t.ats_l} ATS vs. book</div>
+    <div class="vs">${teamGames(t, 3)}</div>
+  </div>`;
+}
+function renderTeams(){
+  const all = (DATA.track && DATA.track.teams) || [];
+  const min = +document.getElementById("minG").value;
+  const q = document.getElementById("tq").value.trim().toLowerCase();
+  const info = DATA.team_info || {};
+  const pool = all.filter(t => t.g >= min);
+  document.getElementById("teamsHead").textContent = all.length
+    ? `Every graded game since ${DATA.track.started}, from each team's side: final margin vs. the KenPom projected margin at lock. ${all.length} teams tracked, ${pool.length} with ${min}+ games. Samples are small early in the season, so treat one-game swings as noise.`
+    : "No graded games yet.";
+  const cards = (id, list) => document.getElementById(id).innerHTML = list.length ? list.map(teamCard).join("") : `<div class="empty">No teams with ${min}+ graded games yet.</div>`;
+  cards("teamsUp", pool.filter(t => t.margin_vs > 0).slice(0, 6));
+  cards("teamsDown", [...pool].filter(t => t.margin_vs < 0).sort((a,b) => a.margin_vs - b.margin_vs).slice(0, 6));
+  const rows = pool.filter(t => !q || (t.team + " " + ((info[t.team] || {}).conf || "")).toLowerCase().includes(q))
+    .sort((a,b) => { const x = a[tmKey] ?? -999, y = b[tmKey] ?? -999; return tmDir * (typeof x === "string" ? x.localeCompare(y) : x - y); });
+  document.getElementById("teamRows").innerHTML = rows.length ? rows.map(t => `<tr>
+    <td class="match">${teamLabel(t)}</td><td class="num">${t.g}</td><td class="num">${t.w}-${t.l}</td>
+    <td class="num">${t.kp_w}-${t.kp_l}</td><td class="num">${t.upsets || "–"}</td>
+    <td class="num">${t.beat}-${t.short}</td><td class="num ${t.margin_vs > 0 ? "res-W" : t.margin_vs < 0 ? "res-L" : ""}">${sgn(t.margin_vs)}</td>
+    <td class="num">${sgn(t.pts_vs)}</td><td class="num">O ${t.tot_over} · U ${t.tot_under}</td>
+    <td class="num">${t.ats_w}-${t.ats_l}</td><td class="hide-sm books" style="max-width:none;margin:0">${teamGames(t, 2)}</td>
+  </tr>`).join("") : `<tr><td colspan="11" class="empty">No teams match.</td></tr>`;
+}
+
 function init(){
   if(!DATA){ document.querySelector(".wrap").insertAdjacentHTML("beforeend", '<div class="empty">No data yet. The first daily run will fill this in.</div>'); return; }
-  prep(); header(); renderTop5(); renderValue(); renderAll(); renderConf(); renderOU(); renderTT(); renderTrack();
+  prep(); header(); renderTop5(); renderValue(); renderAll(); renderConf(); renderOU(); renderTT(); renderTeams(); renderTrack();
   document.getElementById("note").innerHTML =
     `How it works: projections use public KenPom ratings (AdjO, AdjD, AdjT) with the standard tempo-adjusted formula and ` +
     `${DATA.hca} pts home-court advantage. They are not KenPom's official game predictions. Book line is the median home spread across listed books. ` +
@@ -476,6 +551,11 @@ document.querySelectorAll("th[data-k]").forEach(th => th.addEventListener("click
 }));
 document.getElementById("minDiff").addEventListener("input", e => { document.getElementById("minDiffV").textContent = (+e.target.value).toFixed(1); renderAll(); });
 document.getElementById("hideBig").addEventListener("change", renderAll);
+document.getElementById("minG").addEventListener("input", e => { document.getElementById("minGV").textContent = e.target.value; renderTeams(); });
+document.getElementById("tq").addEventListener("input", renderTeams);
+document.querySelectorAll("th[data-tm]").forEach(th => th.addEventListener("click", () => {
+  const k = th.dataset.tm; tmDir = (tmKey === k) ? -tmDir : (k === "team" ? 1 : -1); tmKey = k; renderTeams();
+}));
 document.getElementById("minTot").addEventListener("input", e => { document.getElementById("minTotV").textContent = (+e.target.value).toFixed(1); renderOU(); });
 document.querySelectorAll("th[data-t]").forEach(th => th.addEventListener("click", () => {
   const k = th.dataset.t; tSortDir = (tSortKey === k) ? -tSortDir : -1; tSortKey = k; renderOU();

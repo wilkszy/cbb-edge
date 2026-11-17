@@ -454,6 +454,8 @@ def main():
     (DOCS / "data").mkdir(parents=True, exist_ok=True)
     from track import update_track
     payload["track"] = update_track(payload["games"], now, DOCS / "data" / "ledger.json")
+    payload["team_info"] = {n: {"rank": v["rank"], "luck": v.get("luck"), "record": v.get("record"),
+                                "conf": v.get("conf"), "adj_em": v.get("adj_em")} for n, v in kp.items()}
     (DOCS / "data" / f"{payload['slate_date']}.json").write_text(json.dumps(payload, indent=2))
     (DOCS / "data" / "latest.json").write_text(json.dumps(payload, indent=2))
     tpl = (ROOT / "src" / "template.html").read_text()

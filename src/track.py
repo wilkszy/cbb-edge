@@ -242,6 +242,47 @@ def update_track(games: list, now: datetime, path: Path) -> dict:
     return summarize(ledger)
 
 
+def team_trends(graded: list) -> list:
+    """Each team's record against its KenPom projection, across every graded game."""
+    T = {}
+    for r in graded:
+        hs, as_ = r["home_score"], r["away_score"]
+        ph = (r["proj_total"] - r["proj_spread"]) / 2 if r.get("proj_total") is not None else None
+        pa = (r["proj_total"] + r["proj_spread"]) / 2 if r.get("proj_total") is not None else None
+        for side, opp, pts, opts, proj_pts, sign in (("home", "away", hs, as_, ph, 1), ("away", "home", as_, hs, pa, -1)):
+            t = T.setdefault(r[side], {"team": r[side], "g": 0, "w": 0, "l": 0, "kp_w": 0, "kp_l": 0, "upsets": 0,
+                                       "upset_losses": 0, "beat": 0, "short": 0, "margin_vs": 0.0, "pts_over": 0,
+                                       "pts_under": 0, "pts_vs": 0.0, "pts_n": 0, "tot_over": 0, "tot_under": 0,
+                                       "ats_w": 0, "ats_l": 0, "last": None, "games": []})
+            margin = (hs - as_) * sign
+            proj_margin = -r["proj_spread"] * sign
+            book_line = r["book_spread"] * sign          # this team's spread
+            won, kp_fav = margin > 0, proj_margin > 0
+            t["g"] += 1; t["w"] += won; t["l"] += not won
+            t["kp_w"] += kp_fav; t["kp_l"] += not kp_fav
+            t["upsets"] += won and not kp_fav; t["upset_losses"] += (not won) and kp_fav
+            d = margin - proj_margin
+            t["margin_vs"] += d; t["beat"] += d > 0; t["short"] += d < 0
+            if proj_pts is not None:
+                t["pts_vs"] += pts - proj_pts; t["pts_n"] += 1
+                t["pts_over"] += pts > proj_pts; t["pts_under"] += pts < proj_pts
+                tot = hs + as_
+                t["tot_over"] += tot > r["proj_total"]; t["tot_under"] += tot < r["proj_total"]
+            c = margin + book_line
+            t["ats_w"] += c > 0; t["ats_l"] += c < 0
+            t["last"] = max(t["last"] or r["date"], r["date"])
+            t["games"].append({"date": r["date"], "opp": r[opp], "at": "vs." if side == "home" else "@",
+                               "score": f"{pts}-{opts}", "won": won, "proj": round(proj_margin, 1),
+                               "margin": margin, "line": book_line})
+    out = []
+    for t in T.values():
+        t["margin_vs"] = round(t["margin_vs"] / t["g"], 1)
+        t["pts_vs"] = round(t["pts_vs"] / t["pts_n"], 1) if t["pts_n"] else None
+        t["games"].sort(key=lambda x: x["date"], reverse=True)
+        out.append(t)
+    return sorted(out, key=lambda t: -t["margin_vs"])
+
+
 def summarize(ledger: dict) -> dict:
     graded = []
     for gid, e in ledger.items():
@@ -260,6 +301,7 @@ def summarize(ledger: dict) -> dict:
                      "comp": _ats([r for r in graded if lo <= r["gap"] < hi and not r["big"]]),
                      "big": _ats([r for r in graded if lo <= r["gap"] < hi and r["big"]])}
                     for lab, lo, hi in BUCKETS],
+        "teams": team_trends(graded),
         "recent": [{k: r.get(k) for k in ("date", "tip", "away", "home", "away_score", "home_score",
                                            "book_spread", "proj_spread", "pick", "ats", "proj_err",
                                            "book_err", "gap", "big", "book_total", "ou_pick")}
