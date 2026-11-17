@@ -1,7 +1,7 @@
 {
-  "slate_date": "2026-11-16",
-  "generated": "Nov 16, 2026 10:58 PM ET",
-  "kenpom_through": "Sunday, November 15",
+  "slate_date": "2026-11-17",
+  "generated": "Nov 17, 2026 12:41 PM ET",
+  "kenpom_through": "Monday, November 16",
   "hca": 3.2,
   "margin_sd": 13.0,
   "luck_flag": 0.15,
@@ -9,273 +9,3531 @@
   "ml_min_edge": 0.03,
   "games": [
     {
-      "id": "3180dabd245219f81ad4e9e46f08c970",
-      "tip": "10:00 PM",
-      "tip_iso": "2026-11-17T03:00:00+00:00",
-      "home": "UCLA",
-      "away": "Long Beach St.",
-      "home_raw": "UCLA Bruins",
-      "away_raw": "Long Beach St 49ers",
-      "home_rank": 14,
-      "away_rank": 218,
-      "home_conf": "B10",
-      "away_conf": "BW",
+      "id": "bb8c42e426203795cd7101dc04c32184",
+      "tip": "7:00 PM",
+      "tip_iso": "2026-11-18T00:00:00+00:00",
+      "home": "Miami FL",
+      "away": "Rider",
+      "home_raw": "Miami Hurricanes",
+      "away_raw": "Rider Broncs",
+      "home_rank": 20,
+      "away_rank": 359,
+      "home_conf": "ACC",
+      "away_conf": "MC",
       "neutral": false,
-      "book_spread": -42.5,
+      "book_spread": -41.5,
       "books": {
-        "ESPN": -42.5,
-        "DK": -43.5,
-        "FD": -41.5,
-        "MGM": -42.5,
-        "BR": -42.5
+        "ESPN": -41.5,
+        "DK": -41.5,
+        "BR": -41.5,
+        "FD": -41.5
       },
-      "proj_spread": -24.4,
-      "proj_score": "Long Beach St. 60, UCLA 85",
-      "poss": 69.1,
-      "diff": -18.1,
-      "pick": "Long Beach St.",
+      "proj_spread": -34.4,
+      "proj_score": "Rider 57, Miami FL 92",
+      "poss": 71.3,
+      "diff": -7.1,
+      "pick": "Rider",
       "best_line": {
-        "point": 43.5,
-        "price": -120,
-        "book": "DK"
+        "point": 41.5,
+        "price": -110,
+        "book": "ESPN"
       },
-      "kp_home_wp": 0.97,
-      "mkt_home_wp": 0.971,
-      "model_home_wp": 0.97,
+      "kp_home_wp": 0.996,
+      "mkt_home_wp": null,
+      "model_home_wp": 0.996,
       "ml_min_edge": 0.03,
       "neutral_src": null,
-      "home_luck": 0.082,
-      "away_luck": 0.039,
-      "proj_total": 145.4,
-      "proj_home_pts": 84.9,
-      "proj_away_pts": 60.5,
-      "imp_home": 96.0,
+      "home_luck": -0.092,
+      "away_luck": -0.032,
+      "proj_total": 149.0,
+      "proj_home_pts": 91.7,
+      "proj_away_pts": 57.3,
+      "imp_home": 95.0,
       "imp_away": 53.5,
-      "book_total": 149.5,
+      "book_total": 148.5,
       "totals_books": {
-        "ESPN": 149.5,
-        "DK": 151.5,
-        "FD": 150.5,
-        "MGM": 149.5,
-        "BR": 149.5
+        "ESPN": 147.5,
+        "DK": 148.5,
+        "BR": 149.5,
+        "MGM": 148.5,
+        "FD": 148.5
       },
-      "tot_diff": -4.1,
+      "tot_diff": 0.5,
+      "ou_pick": "Over",
+      "ou_best": {
+        "point": 147.5,
+        "price": -120,
+        "book": "ESPN"
+      },
+      "ml_home": null,
+      "ml_away": null,
+      "ml_edge": null,
+      "top_plays": [
+        {
+          "type": "Spread",
+          "side": "Rider",
+          "line": 41.5,
+          "price": -110,
+          "book": "ESPN",
+          "prob": 0.611,
+          "be": 0.524,
+          "why": "KenPom +34.4 vs. line +41.5",
+          "game": "bb8c42e426203795cd7101dc04c32184",
+          "matchup": "Rider @ Miami FL",
+          "tip": "7:00 PM",
+          "neutral": false,
+          "same_game": false
+        }
+      ]
+    },
+    {
+      "id": "7a85a1ae1355a8d9ca51c417db95f5ff",
+      "tip": "7:00 PM",
+      "tip_iso": "2026-11-18T00:00:00+00:00",
+      "home": "Florida St.",
+      "away": "Ball St.",
+      "home_raw": "Florida St Seminoles",
+      "away_raw": "Ball State Cardinals",
+      "home_rank": 53,
+      "away_rank": 244,
+      "home_conf": "ACC",
+      "away_conf": "MAC",
+      "neutral": false,
+      "book_spread": -26.5,
+      "books": {
+        "ESPN": -27.5,
+        "DK": -26.5,
+        "MGM": -26.5,
+        "BR": -27.5,
+        "FD": -26.5
+      },
+      "proj_spread": -19.8,
+      "proj_score": "Ball St. 64, Florida St. 84",
+      "poss": 71.0,
+      "diff": -6.7,
+      "pick": "Ball St.",
+      "best_line": {
+        "point": 27.5,
+        "price": -115,
+        "book": "ESPN"
+      },
+      "kp_home_wp": 0.936,
+      "mkt_home_wp": 0.973,
+      "model_home_wp": 0.954,
+      "ml_min_edge": 0.03,
+      "neutral_src": null,
+      "home_luck": -0.08,
+      "away_luck": -0.114,
+      "proj_total": 148.5,
+      "proj_home_pts": 84.1,
+      "proj_away_pts": 64.4,
+      "imp_home": 88.5,
+      "imp_away": 62.0,
+      "book_total": 150.5,
+      "totals_books": {
+        "ESPN": 151.5,
+        "DK": 151.5,
+        "MGM": 150.5,
+        "BR": 150.5,
+        "FD": 150.5
+      },
+      "tot_diff": -2.0,
       "ou_pick": "Under",
       "ou_best": {
         "point": 151.5,
+        "price": -120,
+        "book": "ESPN"
+      },
+      "ml_home": -20000,
+      "ml_away": 3500,
+      "ml_edge": 0.018,
+      "top_plays": [
+        {
+          "type": "Spread",
+          "side": "Ball St.",
+          "line": 27.5,
+          "price": -115,
+          "book": "ESPN",
+          "prob": 0.62,
+          "be": 0.535,
+          "why": "KenPom +19.8 vs. line +27.5",
+          "game": "7a85a1ae1355a8d9ca51c417db95f5ff",
+          "matchup": "Ball St. @ Florida St.",
+          "tip": "7:00 PM",
+          "neutral": false,
+          "same_game": false
+        }
+      ]
+    },
+    {
+      "id": "7baca68d6b97b29d21efc5ccd35ee124",
+      "tip": "12:00 PM",
+      "tip_iso": "2026-11-17T17:00:00+00:00",
+      "home": "Murray St.",
+      "away": "Hofstra",
+      "home_raw": "Murray St Racers",
+      "away_raw": "Hofstra Pride",
+      "home_rank": 84,
+      "away_rank": 160,
+      "home_conf": "MVC",
+      "away_conf": "CAA",
+      "neutral": true,
+      "book_spread": -14.5,
+      "books": {
+        "FD": -15.5,
+        "BR": -14.5,
+        "ESPN": -14.5,
+        "DK": -14.5,
+        "MGM": -15.5
+      },
+      "proj_spread": -8.4,
+      "proj_score": "Hofstra 70, Murray St. 78",
+      "poss": 71.0,
+      "diff": -6.1,
+      "pick": "Hofstra",
+      "best_line": {
+        "point": 15.5,
+        "price": -114,
+        "book": "FD"
+      },
+      "kp_home_wp": 0.741,
+      "mkt_home_wp": 0.908,
+      "model_home_wp": 0.825,
+      "ml_min_edge": 0.03,
+      "neutral_src": "espn",
+      "home_luck": 0.0,
+      "away_luck": 0.037,
+      "proj_total": 147.8,
+      "proj_home_pts": 78.1,
+      "proj_away_pts": 69.7,
+      "imp_home": 81.0,
+      "imp_away": 66.5,
+      "book_total": 147.5,
+      "totals_books": {
+        "FD": 147.5,
+        "BR": 150.5,
+        "ESPN": 147.5,
+        "DK": 148.5,
+        "MGM": 147.5
+      },
+      "tot_diff": 0.3,
+      "ou_pick": "Over",
+      "ou_best": {
+        "point": 147.5,
+        "price": -114,
+        "book": "FD"
+      },
+      "ml_home": -3000,
+      "ml_away": 950,
+      "ml_edge": 0.084
+    },
+    {
+      "id": "107600e44a78d55aaf007aa1f18e20c7",
+      "tip": "11:00 PM",
+      "tip_iso": "2026-11-18T04:00:00+00:00",
+      "home": "Gonzaga",
+      "away": "Montana St.",
+      "home_raw": "Gonzaga Bulldogs",
+      "away_raw": "Montana St Bobcats",
+      "home_rank": 14,
+      "away_rank": 113,
+      "home_conf": "P12",
+      "away_conf": "BSky",
+      "neutral": false,
+      "book_spread": -22.5,
+      "books": {
+        "FD": -22.5,
+        "DK": -22.5,
+        "ESPN": -22.5,
+        "BR": -22.5,
+        "MGM": -22.5
+      },
+      "proj_spread": -17.5,
+      "proj_score": "Montana St. 67, Gonzaga 85",
+      "poss": 69.5,
+      "diff": -5.0,
+      "pick": "Montana St.",
+      "best_line": {
+        "point": 22.5,
+        "price": -110,
+        "book": "FD"
+      },
+      "kp_home_wp": 0.91,
+      "mkt_home_wp": 0.955,
+      "model_home_wp": 0.933,
+      "ml_min_edge": 0.03,
+      "neutral_src": null,
+      "home_luck": -0.086,
+      "away_luck": -0.079,
+      "proj_total": 151.7,
+      "proj_home_pts": 84.6,
+      "proj_away_pts": 67.1,
+      "imp_home": 87.5,
+      "imp_away": 65.0,
+      "book_total": 152.5,
+      "totals_books": {
+        "FD": 152.5,
+        "DK": 152.5,
+        "ESPN": 152.5,
+        "BR": 152.5,
+        "MGM": 152.5
+      },
+      "tot_diff": -0.8,
+      "ou_pick": "Under",
+      "ou_best": {
+        "point": 152.5,
+        "price": -110,
+        "book": "FD"
+      },
+      "ml_home": -7500.0,
+      "ml_away": 2100.0,
+      "ml_edge": 0.022
+    },
+    {
+      "id": "436fbef33dd351b0ea0e838c6bfe2b96",
+      "tip": "8:00 PM",
+      "tip_iso": "2026-11-18T01:00:00+00:00",
+      "home": "Nebraska Omaha",
+      "away": "Lamar",
+      "home_raw": "Omaha Mavericks",
+      "away_raw": "Lamar Cardinals",
+      "home_rank": 279,
+      "away_rank": 265,
+      "home_conf": "Sum",
+      "away_conf": "Slnd",
+      "neutral": false,
+      "book_spread": 2.5,
+      "books": {
+        "FD": 2.5,
+        "BR": 1.5,
+        "DK": 2.5,
+        "MGM": 1.5,
+        "ESPN": 2.5
+      },
+      "proj_spread": -2.3,
+      "proj_score": "Lamar 72, Nebraska Omaha 74",
+      "poss": 70.0,
+      "diff": 4.8,
+      "pick": "Nebraska Omaha",
+      "best_line": {
+        "point": 2.5,
+        "price": -120,
+        "book": "FD"
+      },
+      "kp_home_wp": 0.57,
+      "mkt_home_wp": 0.446,
+      "model_home_wp": 0.508,
+      "ml_min_edge": 0.03,
+      "neutral_src": null,
+      "home_luck": 0.103,
+      "away_luck": 0.0,
+      "proj_total": 145.3,
+      "proj_home_pts": 73.8,
+      "proj_away_pts": 71.5,
+      "imp_home": 78.0,
+      "imp_away": 80.5,
+      "book_total": 158.5,
+      "totals_books": {
+        "FD": 159.5,
+        "BR": 158.5,
+        "DK": 158.5,
+        "MGM": 159.5,
+        "ESPN": 158.5
+      },
+      "tot_diff": -13.2,
+      "ou_pick": "Under",
+      "ou_best": {
+        "point": 159.5,
+        "price": -110,
+        "book": "FD"
+      },
+      "ml_home": 114,
+      "ml_away": -140,
+      "ml_edge": 0.062,
+      "top_plays": [
+        {
+          "type": "Team total",
+          "side": "Lamar Under",
+          "line": 80.5,
+          "price": null,
+          "book": "implied",
+          "prob": 0.656,
+          "be": 0.524,
+          "why": "KenPom 71.5 vs. implied 80.5",
+          "team": "Lamar",
+          "lean": "Under",
+          "game": "436fbef33dd351b0ea0e838c6bfe2b96",
+          "matchup": "Lamar @ Nebraska Omaha",
+          "tip": "8:00 PM",
+          "neutral": false,
+          "same_game": true
+        },
+        {
+          "type": "Total",
+          "side": "Under",
+          "line": 159.5,
+          "price": -110,
+          "book": "FD",
+          "prob": 0.652,
+          "be": 0.524,
+          "why": "KenPom total 145.3 vs. 159.5",
+          "game": "436fbef33dd351b0ea0e838c6bfe2b96",
+          "matchup": "Lamar @ Nebraska Omaha",
+          "tip": "8:00 PM",
+          "neutral": false,
+          "same_game": true
+        }
+      ]
+    },
+    {
+      "id": "b041e7809fd4d00f42cea09d7973ff0f",
+      "tip": "9:00 PM",
+      "tip_iso": "2026-11-18T02:00:00+00:00",
+      "home": "Virginia",
+      "away": "Old Dominion",
+      "home_raw": "Virginia Cavaliers",
+      "away_raw": "Old Dominion Monarchs",
+      "home_rank": 12,
+      "away_rank": 148,
+      "home_conf": "ACC",
+      "away_conf": "SB",
+      "neutral": false,
+      "book_spread": -26.5,
+      "books": {
+        "FD": -26.5,
+        "DK": -26.5,
+        "ESPN": -26.5,
+        "MGM": -26.5,
+        "BR": -26.5
+      },
+      "proj_spread": -22.0,
+      "proj_score": "Old Dominion 63, Virginia 85",
+      "poss": 69.0,
+      "diff": -4.5,
+      "pick": "Old Dominion",
+      "best_line": {
+        "point": 26.5,
+        "price": -110,
+        "book": "FD"
+      },
+      "kp_home_wp": 0.954,
+      "mkt_home_wp": 0.968,
+      "model_home_wp": 0.961,
+      "ml_min_edge": 0.03,
+      "neutral_src": null,
+      "home_luck": 0.029,
+      "away_luck": 0.02,
+      "proj_total": 147.4,
+      "proj_home_pts": 84.7,
+      "proj_away_pts": 62.7,
+      "imp_home": 85.5,
+      "imp_away": 59.0,
+      "book_total": 144.5,
+      "totals_books": {
+        "FD": 144.5,
+        "DK": 145.5,
+        "ESPN": 145.5,
+        "MGM": 144.5,
+        "BR": 144.5
+      },
+      "tot_diff": 2.9,
+      "ou_pick": "Over",
+      "ou_best": {
+        "point": 144.5,
         "price": -115,
+        "book": "FD"
+      },
+      "ml_home": -20000,
+      "ml_away": 3000,
+      "ml_edge": 0.007
+    },
+    {
+      "id": "919bc2e81b79f536852f7e3aa2ec7754",
+      "tip": "8:00 PM",
+      "tip_iso": "2026-11-18T01:00:00+00:00",
+      "home": "DePaul",
+      "away": "Maryland Eastern Shore",
+      "home_raw": "DePaul Blue Demons",
+      "away_raw": "Maryland-Eastern Shore Hawks",
+      "home_rank": 50,
+      "away_rank": 358,
+      "home_conf": "BE",
+      "away_conf": "MEAC",
+      "neutral": false,
+      "book_spread": -30.5,
+      "books": {
+        "FD": -30.5,
+        "ESPN": -30.5,
+        "DK": -30.5,
+        "BR": -30.5,
+        "MGM": -31.5
+      },
+      "proj_spread": -26.5,
+      "proj_score": "Maryland Eastern Shore 52, DePaul 78",
+      "poss": 65.0,
+      "diff": -4.0,
+      "pick": "Maryland Eastern Shore",
+      "best_line": {
+        "point": 31.5,
+        "price": -118,
+        "book": "MGM"
+      },
+      "kp_home_wp": 0.979,
+      "mkt_home_wp": null,
+      "model_home_wp": 0.979,
+      "ml_min_edge": 0.03,
+      "neutral_src": null,
+      "home_luck": 0.091,
+      "away_luck": -0.001,
+      "proj_total": 129.5,
+      "proj_home_pts": 78.0,
+      "proj_away_pts": 51.5,
+      "imp_home": 78.0,
+      "imp_away": 47.5,
+      "book_total": 125.5,
+      "totals_books": {
+        "FD": 125.5,
+        "ESPN": 125.5,
+        "DK": 125.5,
+        "BR": 126.5,
+        "MGM": 125.5
+      },
+      "tot_diff": 4.0,
+      "ou_pick": "Over",
+      "ou_best": {
+        "point": 125.5,
+        "price": -115,
+        "book": "FD"
+      },
+      "ml_home": null,
+      "ml_away": null,
+      "ml_edge": null
+    },
+    {
+      "id": "c05c24a9aaf1a719055cd45cebb655c6",
+      "tip": "7:00 PM",
+      "tip_iso": "2026-11-18T00:00:00+00:00",
+      "home": "Xavier",
+      "away": "Cleveland St.",
+      "home_raw": "Xavier Musketeers",
+      "away_raw": "Cleveland St Vikings",
+      "home_rank": 27,
+      "away_rank": 311,
+      "home_conf": "BE",
+      "away_conf": "Horz",
+      "neutral": false,
+      "book_spread": -32.5,
+      "books": {
+        "FD": -32.5,
+        "ESPN": -32.5,
+        "DK": -32.5,
+        "BR": -33.5
+      },
+      "proj_spread": -28.7,
+      "proj_score": "Cleveland St. 65, Xavier 94",
+      "poss": 73.7,
+      "diff": -3.8,
+      "pick": "Cleveland St.",
+      "best_line": {
+        "point": 33.5,
+        "price": -112,
+        "book": "BR"
+      },
+      "kp_home_wp": 0.986,
+      "mkt_home_wp": null,
+      "model_home_wp": 0.986,
+      "ml_min_edge": 0.03,
+      "neutral_src": null,
+      "home_luck": 0.005,
+      "away_luck": 0.239,
+      "proj_total": 158.5,
+      "proj_home_pts": 93.6,
+      "proj_away_pts": 64.9,
+      "imp_home": 95.0,
+      "imp_away": 62.5,
+      "book_total": 157.5,
+      "totals_books": {
+        "FD": 158.5,
+        "ESPN": 157.5,
+        "DK": 157.5,
+        "MGM": 158.5,
+        "BR": 157.5
+      },
+      "tot_diff": 1.0,
+      "ou_pick": "Over",
+      "ou_best": {
+        "point": 157.5,
+        "price": -105,
+        "book": "ESPN"
+      },
+      "ml_home": null,
+      "ml_away": null,
+      "ml_edge": null
+    },
+    {
+      "id": "c7d62536b790073cd6d3119dc561e3a0",
+      "tip": "7:00 PM",
+      "tip_iso": "2026-11-18T00:00:00+00:00",
+      "home": "Providence",
+      "away": "Sacred Heart",
+      "home_raw": "Providence Friars",
+      "away_raw": "Sacred Heart Pioneers",
+      "home_rank": 47,
+      "away_rank": 317,
+      "home_conf": "BE",
+      "away_conf": "MC",
+      "neutral": false,
+      "book_spread": -29.5,
+      "books": {
+        "FD": -29.5,
+        "ESPN": -30.5,
+        "DK": -29.5,
+        "MGM": -29.5,
+        "BR": -30.5
+      },
+      "proj_spread": -25.7,
+      "proj_score": "Sacred Heart 63, Providence 89",
+      "poss": 72.1,
+      "diff": -3.8,
+      "pick": "Sacred Heart",
+      "best_line": {
+        "point": 30.5,
+        "price": -115,
+        "book": "ESPN"
+      },
+      "kp_home_wp": 0.976,
+      "mkt_home_wp": 0.976,
+      "model_home_wp": 0.976,
+      "ml_min_edge": 0.03,
+      "neutral_src": null,
+      "home_luck": -0.052,
+      "away_luck": -0.106,
+      "proj_total": 152.1,
+      "proj_home_pts": 88.9,
+      "proj_away_pts": 63.2,
+      "imp_home": 92.0,
+      "imp_away": 62.5,
+      "book_total": 154.5,
+      "totals_books": {
+        "FD": 154.5,
+        "ESPN": 154.5,
+        "DK": 154.5,
+        "MGM": 154.5,
+        "BR": 154.5
+      },
+      "tot_diff": -2.4,
+      "ou_pick": "Under",
+      "ou_best": {
+        "point": 154.5,
+        "price": -115,
+        "book": "FD"
+      },
+      "ml_home": -50000,
+      "ml_away": 4000,
+      "ml_edge": 0.0
+    },
+    {
+      "id": "51812abb23ba8ac9eeb6568fe25132a9",
+      "tip": "7:00 PM",
+      "tip_iso": "2026-11-18T00:00:00+00:00",
+      "home": "Dayton",
+      "away": "Central Michigan",
+      "home_raw": "Dayton Flyers",
+      "away_raw": "Central Michigan Chippewas",
+      "home_rank": 124,
+      "away_rank": 208,
+      "home_conf": "A10",
+      "away_conf": "MAC",
+      "neutral": false,
+      "book_spread": -12.5,
+      "books": {
+        "FD": -11.5,
+        "ESPN": -12.5,
+        "DK": -12.5,
+        "MGM": -12.5,
+        "BR": -12.5
+      },
+      "proj_spread": -8.8,
+      "proj_score": "Central Michigan 70, Dayton 79",
+      "poss": 68.8,
+      "diff": -3.7,
+      "pick": "Central Michigan",
+      "best_line": {
+        "point": 12.5,
+        "price": -105,
+        "book": "ESPN"
+      },
+      "kp_home_wp": 0.751,
+      "mkt_home_wp": 0.858,
+      "model_home_wp": 0.805,
+      "ml_min_edge": 0.03,
+      "neutral_src": null,
+      "home_luck": -0.228,
+      "away_luck": 0.011,
+      "proj_total": 148.9,
+      "proj_home_pts": 78.9,
+      "proj_away_pts": 70.0,
+      "imp_home": 78.5,
+      "imp_away": 66.0,
+      "book_total": 144.5,
+      "totals_books": {
+        "FD": 144.5,
+        "ESPN": 144.5,
+        "DK": 145.5,
+        "MGM": 144.5,
+        "BR": 145.5
+      },
+      "tot_diff": 4.4,
+      "ou_pick": "Over",
+      "ou_best": {
+        "point": 144.5,
+        "price": -114,
+        "book": "FD"
+      },
+      "ml_home": -880,
+      "ml_away": 550,
+      "ml_edge": 0.053
+    },
+    {
+      "id": "ddb1e091501449395eb13e294efdc595",
+      "tip": "8:30 PM",
+      "tip_iso": "2026-11-18T01:30:00+00:00",
+      "home": "Mississippi",
+      "away": "Nicholls",
+      "home_raw": "Ole Miss Rebels",
+      "away_raw": "Nicholls St Colonels",
+      "home_rank": 29,
+      "away_rank": 283,
+      "home_conf": "SEC",
+      "away_conf": "Slnd",
+      "neutral": false,
+      "book_spread": -28.5,
+      "books": {
+        "FD": -28.5,
+        "DK": -28.5,
+        "ESPN": -28.5,
+        "BR": -28.5,
+        "MGM": -28.5
+      },
+      "proj_spread": -25.0,
+      "proj_score": "Nicholls 59, Mississippi 84",
+      "poss": 70.6,
+      "diff": -3.5,
+      "pick": "Nicholls",
+      "best_line": {
+        "point": 28.5,
+        "price": -110,
+        "book": "FD"
+      },
+      "kp_home_wp": 0.973,
+      "mkt_home_wp": 0.973,
+      "model_home_wp": 0.973,
+      "ml_min_edge": 0.03,
+      "neutral_src": null,
+      "home_luck": 0.0,
+      "away_luck": 0.092,
+      "proj_total": 143.4,
+      "proj_home_pts": 84.2,
+      "proj_away_pts": 59.2,
+      "imp_home": 85.5,
+      "imp_away": 57.0,
+      "book_total": 142.5,
+      "totals_books": {
+        "FD": 142.5,
+        "DK": 142.5,
+        "ESPN": 142.5,
+        "BR": 143.5,
+        "MGM": 142.5
+      },
+      "tot_diff": 0.9,
+      "ou_pick": "Over",
+      "ou_best": {
+        "point": 142.5,
+        "price": -115,
+        "book": "FD"
+      },
+      "ml_home": -20000,
+      "ml_away": 3500,
+      "ml_edge": 0.0
+    },
+    {
+      "id": "8a2eee51a0ee3244eb3467808fac1778",
+      "tip": "7:30 PM",
+      "tip_iso": "2026-11-18T00:30:00+00:00",
+      "home": "Louisiana Tech",
+      "away": "Jacksonville St.",
+      "home_raw": "Louisiana Tech Bulldogs",
+      "away_raw": "Jacksonville St Gamecocks",
+      "home_rank": 268,
+      "away_rank": 181,
+      "home_conf": "SB",
+      "away_conf": "CUSA",
+      "neutral": false,
+      "book_spread": -2.5,
+      "books": {
+        "ESPN": -2.5,
+        "DK": -2.5,
+        "MGM": -2.5,
+        "BR": -1.5,
+        "FD": -2.5
+      },
+      "proj_spread": 0.9,
+      "proj_score": "Jacksonville St. 70, Louisiana Tech 69",
+      "poss": 66.5,
+      "diff": -3.4,
+      "pick": "Jacksonville St.",
+      "best_line": {
+        "point": 2.5,
+        "price": -115,
+        "book": "ESPN"
+      },
+      "kp_home_wp": 0.472,
+      "mkt_home_wp": 0.553,
+      "model_home_wp": 0.513,
+      "ml_min_edge": 0.03,
+      "neutral_src": null,
+      "home_luck": -0.008,
+      "away_luck": 0.048,
+      "proj_total": 138.7,
+      "proj_home_pts": 68.9,
+      "proj_away_pts": 69.8,
+      "imp_home": 66.5,
+      "imp_away": 64.0,
+      "book_total": 130.5,
+      "totals_books": {
+        "ESPN": 130.5,
+        "DK": 130.5,
+        "MGM": 130.5,
+        "BR": 131.5,
+        "FD": 130.5
+      },
+      "tot_diff": 8.2,
+      "ou_pick": "Over",
+      "ou_best": {
+        "point": 130.5,
+        "price": -110,
+        "book": "ESPN"
+      },
+      "ml_home": -137,
+      "ml_away": 115,
+      "ml_edge": 0.04
+    },
+    {
+      "id": "7cf2cadb51955c4f64f21b41af66e583",
+      "tip": "7:30 PM",
+      "tip_iso": "2026-11-18T00:30:03+00:00",
+      "home": "Arkansas",
+      "away": "Indiana",
+      "home_raw": "Arkansas Razorbacks",
+      "away_raw": "Indiana Hoosiers",
+      "home_rank": 33,
+      "away_rank": 45,
+      "home_conf": "SEC",
+      "away_conf": "B10",
+      "neutral": true,
+      "book_spread": 1.5,
+      "books": {
+        "FD": 1.5,
+        "BR": 1.5,
+        "DK": 1.5,
+        "ESPN": 1.5,
+        "MGM": 1.5
+      },
+      "proj_spread": -1.8,
+      "proj_score": "Indiana 76, Arkansas 78",
+      "poss": 70.3,
+      "diff": 3.3,
+      "pick": "Arkansas",
+      "best_line": {
+        "point": 1.5,
+        "price": -110,
+        "book": "FD"
+      },
+      "kp_home_wp": 0.556,
+      "mkt_home_wp": 0.477,
+      "model_home_wp": 0.516,
+      "ml_min_edge": 0.03,
+      "neutral_src": "espn",
+      "home_luck": 0.032,
+      "away_luck": 0.053,
+      "proj_total": 154.7,
+      "proj_home_pts": 78.3,
+      "proj_away_pts": 76.4,
+      "imp_home": 76.0,
+      "imp_away": 77.5,
+      "book_total": 153.5,
+      "totals_books": {
+        "FD": 153.5,
+        "BR": 154.5,
+        "DK": 153.5,
+        "ESPN": 153.5,
+        "MGM": 153.5
+      },
+      "tot_diff": 1.2,
+      "ou_pick": "Over",
+      "ou_best": {
+        "point": 153.5,
+        "price": -110,
+        "book": "FD"
+      },
+      "ml_home": 100,
+      "ml_away": -121,
+      "ml_edge": 0.04
+    },
+    {
+      "id": "dfdac74c91ebae110f1291f05093ead7",
+      "tip": "8:00 PM",
+      "tip_iso": "2026-11-18T01:00:00+00:00",
+      "home": "Illinois St.",
+      "away": "Bellarmine",
+      "home_raw": "Illinois St Redbirds",
+      "away_raw": "Bellarmine Knights",
+      "home_rank": 122,
+      "away_rank": 309,
+      "home_conf": "MVC",
+      "away_conf": "ASun",
+      "neutral": false,
+      "book_spread": -17.5,
+      "books": {
+        "ESPN": -17.5,
+        "DK": -18.5,
+        "BR": -17.5,
+        "FD": -17.5,
+        "MGM": -17.5
+      },
+      "proj_spread": -14.2,
+      "proj_score": "Bellarmine 66, Illinois St. 80",
+      "poss": 64.1,
+      "diff": -3.3,
+      "pick": "Bellarmine",
+      "best_line": {
+        "point": 18.5,
+        "price": -118,
         "book": "DK"
+      },
+      "kp_home_wp": 0.863,
+      "mkt_home_wp": 0.931,
+      "model_home_wp": 0.897,
+      "ml_min_edge": 0.03,
+      "neutral_src": null,
+      "home_luck": -0.199,
+      "away_luck": -0.113,
+      "proj_total": 145.6,
+      "proj_home_pts": 79.9,
+      "proj_away_pts": 65.7,
+      "imp_home": 80.0,
+      "imp_away": 62.5,
+      "book_total": 142.5,
+      "totals_books": {
+        "ESPN": 142.5,
+        "DK": 142.5,
+        "BR": 142.5,
+        "FD": 142.5,
+        "MGM": 142.5
+      },
+      "tot_diff": 3.1,
+      "ou_pick": "Over",
+      "ou_best": {
+        "point": 142.5,
+        "price": -110,
+        "book": "ESPN"
+      },
+      "ml_home": -3335,
+      "ml_away": 1300,
+      "ml_edge": 0.034
+    },
+    {
+      "id": "60b029abf5f77ce43eeef93342df5ccc",
+      "tip": "6:30 PM",
+      "tip_iso": "2026-11-17T23:30:00+00:00",
+      "home": "Purdue",
+      "away": "Lipscomb",
+      "home_raw": "Purdue Boilermakers",
+      "away_raw": "Lipscomb Bisons",
+      "home_rank": 37,
+      "away_rank": 175,
+      "home_conf": "B10",
+      "away_conf": "ASun",
+      "neutral": false,
+      "book_spread": -21.5,
+      "books": {
+        "FD": -21.5,
+        "ESPN": -21.5,
+        "BR": -22.5,
+        "DK": -21.5,
+        "MGM": -22.5
+      },
+      "proj_spread": -18.3,
+      "proj_score": "Lipscomb 64, Purdue 82",
+      "poss": 67.0,
+      "diff": -3.2,
+      "pick": "Lipscomb",
+      "best_line": {
+        "point": 22.5,
+        "price": -108,
+        "book": "BR"
+      },
+      "kp_home_wp": 0.921,
+      "mkt_home_wp": 0.951,
+      "model_home_wp": 0.936,
+      "ml_min_edge": 0.03,
+      "neutral_src": null,
+      "home_luck": -0.208,
+      "away_luck": 0.149,
+      "proj_total": 146.6,
+      "proj_home_pts": 82.5,
+      "proj_away_pts": 64.1,
+      "imp_home": 85.0,
+      "imp_away": 63.5,
+      "book_total": 148.5,
+      "totals_books": {
+        "FD": 148.5,
+        "ESPN": 148.5,
+        "BR": 147.5,
+        "DK": 148.5,
+        "MGM": 148.5
+      },
+      "tot_diff": -1.9,
+      "ou_pick": "Under",
+      "ou_best": {
+        "point": 148.5,
+        "price": -110,
+        "book": "FD"
+      },
+      "ml_home": -7750.0,
+      "ml_away": 1925.0,
+      "ml_edge": 0.015
+    },
+    {
+      "id": "74bf07fd39674f9e5603de85bf3bb8ff",
+      "tip": "7:00 PM",
+      "tip_iso": "2026-11-18T00:00:00+00:00",
+      "home": "UCF",
+      "away": "Mississippi St.",
+      "home_raw": "UCF Knights",
+      "away_raw": "Mississippi St Bulldogs",
+      "home_rank": 79,
+      "away_rank": 69,
+      "home_conf": "B12",
+      "away_conf": "SEC",
+      "neutral": false,
+      "book_spread": 1.5,
+      "books": {
+        "ESPN": 1.5,
+        "FD": 1.5,
+        "DK": 1.5,
+        "MGM": -1.5,
+        "BR": 0.5
+      },
+      "proj_spread": -1.7,
+      "proj_score": "Mississippi St. 76, UCF 78",
+      "poss": 71.0,
+      "diff": 3.2,
+      "pick": "UCF",
+      "best_line": {
+        "point": 1.5,
+        "price": -120,
+        "book": "ESPN"
+      },
+      "kp_home_wp": 0.551,
+      "mkt_home_wp": 0.493,
+      "model_home_wp": 0.522,
+      "ml_min_edge": 0.03,
+      "neutral_src": null,
+      "home_luck": 0.063,
+      "away_luck": -0.025,
+      "proj_total": 154.1,
+      "proj_home_pts": 77.9,
+      "proj_away_pts": 76.2,
+      "imp_home": 76.5,
+      "imp_away": 78.0,
+      "book_total": 154.5,
+      "totals_books": {
+        "ESPN": 154.5,
+        "FD": 153.5,
+        "DK": 154.5,
+        "MGM": 154.5,
+        "BR": 153.5
+      },
+      "tot_diff": -0.4,
+      "ou_pick": "Under",
+      "ou_best": {
+        "point": 154.5,
+        "price": -115,
+        "book": "ESPN"
+      },
+      "ml_home": -107,
+      "ml_away": -113,
+      "ml_edge": 0.029
+    },
+    {
+      "id": "21b5086e60cae515922e9a8de32ffd84",
+      "tip": "8:00 PM",
+      "tip_iso": "2026-11-18T01:00:00+00:00",
+      "home": "Evansville",
+      "away": "Le Moyne",
+      "home_raw": "Evansville Purple Aces",
+      "away_raw": "Le Moyne Dolphins",
+      "home_rank": 273,
+      "away_rank": 296,
+      "home_conf": "MVC",
+      "away_conf": "NEC",
+      "neutral": false,
+      "book_spread": -7.5,
+      "books": {
+        "ESPN": -7.5,
+        "DK": -7.5,
+        "BR": -8.5,
+        "FD": -7.5,
+        "MGM": -7.5
+      },
+      "proj_spread": -4.5,
+      "proj_score": "Le Moyne 70, Evansville 75",
+      "poss": 70.9,
+      "diff": -3.0,
+      "pick": "Le Moyne",
+      "best_line": {
+        "point": 8.5,
+        "price": -117,
+        "book": "BR"
+      },
+      "kp_home_wp": 0.636,
+      "mkt_home_wp": 0.748,
+      "model_home_wp": 0.692,
+      "ml_min_edge": 0.03,
+      "neutral_src": null,
+      "home_luck": 0.1,
+      "away_luck": 0.07,
+      "proj_total": 145.6,
+      "proj_home_pts": 75.1,
+      "proj_away_pts": 70.5,
+      "imp_home": 77.5,
+      "imp_away": 70.0,
+      "book_total": 147.5,
+      "totals_books": {
+        "ESPN": 147.5,
+        "DK": 146.5,
+        "BR": 147.5,
+        "FD": 147.5,
+        "MGM": 146.5
+      },
+      "tot_diff": -1.9,
+      "ou_pick": "Under",
+      "ou_best": {
+        "point": 147.5,
+        "price": -115,
+        "book": "ESPN"
+      },
+      "ml_home": -350,
+      "ml_away": 275,
+      "ml_edge": 0.056
+    },
+    {
+      "id": "39bce9119f7631dfd8656e4e8d388192",
+      "tip": "7:00 PM",
+      "tip_iso": "2026-11-18T00:00:00+00:00",
+      "home": "Pittsburgh",
+      "away": "Villanova",
+      "home_raw": "Pittsburgh Panthers",
+      "away_raw": "Villanova Wildcats",
+      "home_rank": 55,
+      "away_rank": 42,
+      "home_conf": "ACC",
+      "away_conf": "BE",
+      "neutral": false,
+      "book_spread": 1.5,
+      "books": {
+        "DK": 1.5,
+        "FD": 1.5,
+        "ESPN": 1.5,
+        "BR": 1.5,
+        "MGM": 1.5
+      },
+      "proj_spread": -1.3,
+      "proj_score": "Villanova 72, Pittsburgh 73",
+      "poss": 69.0,
+      "diff": 2.8,
+      "pick": "Pittsburgh",
+      "best_line": {
+        "point": 1.5,
+        "price": -108,
+        "book": "DK"
+      },
+      "kp_home_wp": 0.54,
+      "mkt_home_wp": 0.47,
+      "model_home_wp": 0.505,
+      "ml_min_edge": 0.03,
+      "neutral_src": null,
+      "home_luck": 0.083,
+      "away_luck": -0.154,
+      "proj_total": 145.3,
+      "proj_home_pts": 73.3,
+      "proj_away_pts": 72.0,
+      "imp_home": 73.5,
+      "imp_away": 75.0,
+      "book_total": 148.5,
+      "totals_books": {
+        "DK": 148.5,
+        "FD": 148.5,
+        "ESPN": 148.5,
+        "BR": 148.5,
+        "MGM": 148.5
+      },
+      "tot_diff": -3.2,
+      "ou_pick": "Under",
+      "ou_best": {
+        "point": 148.5,
+        "price": -110,
+        "book": "DK"
+      },
+      "ml_home": 105,
+      "ml_away": -125,
+      "ml_edge": 0.035
+    },
+    {
+      "id": "27053ab77b65c239990d626417fbeaea",
+      "tip": "8:00 PM",
+      "tip_iso": "2026-11-18T01:00:00+00:00",
+      "home": "SMU",
+      "away": "Oral Roberts",
+      "home_raw": "SMU Mustangs",
+      "away_raw": "Oral Roberts Golden Eagles",
+      "home_rank": 67,
+      "away_rank": 294,
+      "home_conf": "ACC",
+      "away_conf": "Sum",
+      "neutral": false,
+      "book_spread": -24.5,
+      "books": {
+        "FD": -24.5,
+        "DK": -24.5,
+        "ESPN": -25.5,
+        "MGM": -24.5,
+        "BR": -25.5
+      },
+      "proj_spread": -21.8,
+      "proj_score": "Oral Roberts 68, SMU 90",
+      "poss": 73.0,
+      "diff": -2.7,
+      "pick": "Oral Roberts",
+      "best_line": {
+        "point": 25.5,
+        "price": -115,
+        "book": "ESPN"
+      },
+      "kp_home_wp": 0.954,
+      "mkt_home_wp": 0.965,
+      "model_home_wp": 0.959,
+      "ml_min_edge": 0.03,
+      "neutral_src": null,
+      "home_luck": 0.003,
+      "away_luck": -0.087,
+      "proj_total": 158.5,
+      "proj_home_pts": 90.2,
+      "proj_away_pts": 68.3,
+      "imp_home": 90.5,
+      "imp_away": 66.0,
+      "book_total": 156.5,
+      "totals_books": {
+        "FD": 155.5,
+        "DK": 156.5,
+        "ESPN": 155.5,
+        "MGM": 156.5,
+        "BR": 156.5
+      },
+      "tot_diff": 2.0,
+      "ou_pick": "Over",
+      "ou_best": {
+        "point": 155.5,
+        "price": -115,
+        "book": "FD"
+      },
+      "ml_home": -10000,
+      "ml_away": 3000,
+      "ml_edge": 0.006
+    },
+    {
+      "id": "ea9b9bf9131650d8502e7f35600230f1",
+      "tip": "8:30 PM",
+      "tip_iso": "2026-11-18T01:30:00+00:00",
+      "home": "Utah",
+      "away": "Eastern Washington",
+      "home_raw": "Utah Utes",
+      "away_raw": "Eastern Washington Eagles",
+      "home_rank": 95,
+      "away_rank": 157,
+      "home_conf": "B12",
+      "away_conf": "BSky",
+      "neutral": false,
+      "book_spread": -12.5,
+      "books": {
+        "FD": -12.5,
+        "DK": -12.5,
+        "ESPN": -12.5,
+        "BR": -12.5,
+        "MGM": -13.5
+      },
+      "proj_spread": -9.8,
+      "proj_score": "Eastern Washington 68, Utah 78",
+      "poss": 68.4,
+      "diff": -2.7,
+      "pick": "Eastern Washington",
+      "best_line": {
+        "point": 13.5,
+        "price": -118,
+        "book": "MGM"
+      },
+      "kp_home_wp": 0.775,
+      "mkt_home_wp": 0.866,
+      "model_home_wp": 0.821,
+      "ml_min_edge": 0.03,
+      "neutral_src": null,
+      "home_luck": 0.104,
+      "away_luck": -0.055,
+      "proj_total": 145.8,
+      "proj_home_pts": 77.8,
+      "proj_away_pts": 68.0,
+      "imp_home": 79.0,
+      "imp_away": 66.5,
+      "book_total": 145.5,
+      "totals_books": {
+        "FD": 145.5,
+        "DK": 145.5,
+        "ESPN": 145.5,
+        "BR": 145.5,
+        "MGM": 145.5
+      },
+      "tot_diff": 0.3,
+      "ou_pick": "Over",
+      "ou_best": {
+        "point": 145.5,
+        "price": -110,
+        "book": "FD"
+      },
+      "ml_home": -1000,
+      "ml_away": 600,
+      "ml_edge": 0.046
+    },
+    {
+      "id": "7f148211ccbd4dd6890aae95ab35cb92",
+      "tip": "2:00 PM",
+      "tip_iso": "2026-11-17T19:00:00+00:00",
+      "home": "Rutgers",
+      "away": "Houston",
+      "home_raw": "Rutgers Scarlet Knights",
+      "away_raw": "Houston Cougars",
+      "home_rank": 75,
+      "away_rank": 3,
+      "home_conf": "B10",
+      "away_conf": "B12",
+      "neutral": true,
+      "book_spread": 16.5,
+      "books": {
+        "DK": 16.5,
+        "FD": 16.5,
+        "ESPN": 16.5,
+        "BR": 16.5,
+        "MGM": 16.5
+      },
+      "proj_spread": 14.4,
+      "proj_score": "Houston 79, Rutgers 64",
+      "poss": 67.9,
+      "diff": 2.1,
+      "pick": "Rutgers",
+      "best_line": {
+        "point": 16.5,
+        "price": -108,
+        "book": "DK"
+      },
+      "kp_home_wp": 0.134,
+      "mkt_home_wp": 0.077,
+      "model_home_wp": 0.105,
+      "ml_min_edge": 0.03,
+      "neutral_src": "espn",
+      "home_luck": 0.0,
+      "away_luck": 0.013,
+      "proj_total": 143.0,
+      "proj_home_pts": 64.3,
+      "proj_away_pts": 78.7,
+      "imp_home": 63.5,
+      "imp_away": 80.0,
+      "book_total": 143.5,
+      "totals_books": {
+        "DK": 143.5,
+        "FD": 142.5,
+        "ESPN": 144.5,
+        "BR": 143.5,
+        "MGM": 143.5
+      },
+      "tot_diff": -0.5,
+      "ou_pick": "Under",
+      "ou_best": {
+        "point": 144.5,
+        "price": -105,
+        "book": "ESPN"
+      },
+      "ml_home": 1100,
+      "ml_away": -2500,
+      "ml_edge": 0.029
+    },
+    {
+      "id": "0cd770ea3dc3281082424e2a0e950f0b",
+      "tip": "10:00 PM",
+      "tip_iso": "2026-11-18T03:00:00+00:00",
+      "home": "Cal Baptist",
+      "away": "Seattle",
+      "home_raw": "Cal Baptist Lancers",
+      "away_raw": "Seattle Redhawks",
+      "home_rank": 328,
+      "away_rank": 144,
+      "home_conf": "BW",
+      "away_conf": "WCC",
+      "neutral": false,
+      "book_spread": 8.5,
+      "books": {
+        "FD": 8.5,
+        "DK": 8.5,
+        "ESPN": 8.5,
+        "MGM": 8.5,
+        "BR": 8.5
+      },
+      "proj_spread": 6.4,
+      "proj_score": "Seattle 71, Cal Baptist 65",
+      "poss": 66.4,
+      "diff": 2.1,
+      "pick": "Cal Baptist",
+      "best_line": {
+        "point": 8.5,
+        "price": -110,
+        "book": "FD"
+      },
+      "kp_home_wp": 0.311,
+      "mkt_home_wp": 0.229,
+      "model_home_wp": 0.27,
+      "ml_min_edge": 0.03,
+      "neutral_src": null,
+      "home_luck": -0.041,
+      "away_luck": 0.002,
+      "proj_total": 136.2,
+      "proj_home_pts": 64.9,
+      "proj_away_pts": 71.3,
+      "imp_home": 62.5,
+      "imp_away": 71.0,
+      "book_total": 133.5,
+      "totals_books": {
+        "FD": 133.5,
+        "DK": 133.5,
+        "ESPN": 133.5,
+        "MGM": 133.5,
+        "BR": 134.5
+      },
+      "tot_diff": 2.7,
+      "ou_pick": "Over",
+      "ou_best": {
+        "point": 133.5,
+        "price": -110,
+        "book": "FD"
+      },
+      "ml_home": 315.0,
+      "ml_away": -405.0,
+      "ml_edge": 0.041
+    },
+    {
+      "id": "4739482816cbaec0b724e890a4609efb",
+      "tip": "7:30 PM",
+      "tip_iso": "2026-11-18T00:30:00+00:00",
+      "home": "Massachusetts",
+      "away": "Bryant",
+      "home_raw": "Massachusetts Minutemen",
+      "away_raw": "Bryant Bulldogs",
+      "home_rank": 162,
+      "away_rank": 318,
+      "home_conf": "MAC",
+      "away_conf": "AE",
+      "neutral": false,
+      "book_spread": -9.5,
+      "books": {
+        "ESPN": -9.5,
+        "DK": -9.5,
+        "BR": -11.5,
+        "FD": -9.5,
+        "MGM": -9.5
+      },
+      "proj_spread": -11.5,
+      "proj_score": "Bryant 62, Massachusetts 74",
+      "poss": 69.1,
+      "diff": 2.0,
+      "pick": "Massachusetts",
+      "best_line": {
+        "point": -9.5,
+        "price": -115,
+        "book": "ESPN"
+      },
+      "kp_home_wp": 0.812,
+      "mkt_home_wp": 0.813,
+      "model_home_wp": 0.813,
+      "ml_min_edge": 0.03,
+      "neutral_src": null,
+      "home_luck": 0.158,
+      "away_luck": 0.056,
+      "proj_total": 135.6,
+      "proj_home_pts": 73.6,
+      "proj_away_pts": 62.0,
+      "imp_home": 75.5,
+      "imp_away": 66.0,
+      "book_total": 141.5,
+      "totals_books": {
+        "ESPN": 141.5,
+        "DK": 141.5,
+        "BR": 139.5,
+        "FD": 141.5,
+        "MGM": 141.5
+      },
+      "tot_diff": -5.9,
+      "ou_pick": "Under",
+      "ou_best": {
+        "point": 141.5,
+        "price": -110,
+        "book": "ESPN"
+      },
+      "ml_home": -575,
+      "ml_away": 400,
+      "ml_edge": -0.001
+    },
+    {
+      "id": "c5ae6b5a2626835722e8c6cd84904f01",
+      "tip": "8:00 PM",
+      "tip_iso": "2026-11-18T01:00:00+00:00",
+      "home": "Vanderbilt",
+      "away": "Eastern Illinois",
+      "home_raw": "Vanderbilt Commodores",
+      "away_raw": "Eastern Illinois Panthers",
+      "home_rank": 7,
+      "away_rank": 364,
+      "home_conf": "SEC",
+      "away_conf": "OVC",
+      "neutral": false,
+      "book_spread": -41.5,
+      "books": {
+        "FD": -41.5,
+        "DK": -41.5,
+        "ESPN": -41.5,
+        "BR": -41.5,
+        "MGM": -41.5
+      },
+      "proj_spread": -39.5,
+      "proj_score": "Eastern Illinois 55, Vanderbilt 95",
+      "poss": 69.4,
+      "diff": -2.0,
+      "pick": "Eastern Illinois",
+      "best_line": {
+        "point": 41.5,
+        "price": -104,
+        "book": "FD"
+      },
+      "kp_home_wp": 0.999,
+      "mkt_home_wp": 0.971,
+      "model_home_wp": 0.985,
+      "ml_min_edge": 0.03,
+      "neutral_src": null,
+      "home_luck": 0.003,
+      "away_luck": -0.025,
+      "proj_total": 150.3,
+      "proj_home_pts": 94.9,
+      "proj_away_pts": 55.4,
+      "imp_home": 94.0,
+      "imp_away": 52.5,
+      "book_total": 146.5,
+      "totals_books": {
+        "FD": 146.5,
+        "DK": 146.5,
+        "ESPN": 146.5,
+        "BR": 145.5,
+        "MGM": 146.5
+      },
+      "tot_diff": 3.8,
+      "ou_pick": "Over",
+      "ou_best": {
+        "point": 145.5,
+        "price": -115,
+        "book": "BR"
       },
       "ml_home": -10000,
       "ml_away": 3300,
+      "ml_edge": -0.014
+    },
+    {
+      "id": "dd2fa1ecb90b4902086fa19865091651",
+      "tip": "9:00 PM",
+      "tip_iso": "2026-11-18T02:00:00+00:00",
+      "home": "Tennessee",
+      "away": "Michigan St.",
+      "home_raw": "Tennessee Volunteers",
+      "away_raw": "Michigan St Spartans",
+      "home_rank": 36,
+      "away_rank": 5,
+      "home_conf": "SEC",
+      "away_conf": "B10",
+      "neutral": false,
+      "book_spread": 2.5,
+      "books": {
+        "FD": 2.5,
+        "DK": 2.5,
+        "ESPN": 2.5,
+        "MGM": 2.5
+      },
+      "proj_spread": 4.5,
+      "proj_score": "Michigan St. 76, Tennessee 71",
+      "poss": 70.3,
+      "diff": -2.0,
+      "pick": "Michigan St.",
+      "best_line": {
+        "point": -2.5,
+        "price": -110,
+        "book": "FD"
+      },
+      "kp_home_wp": 0.364,
+      "mkt_home_wp": 0.423,
+      "model_home_wp": 0.394,
+      "ml_min_edge": 0.03,
+      "neutral_src": null,
+      "home_luck": 0.073,
+      "away_luck": 0.029,
+      "proj_total": 146.7,
+      "proj_home_pts": 71.1,
+      "proj_away_pts": 75.6,
+      "imp_home": 73.5,
+      "imp_away": 76.0,
+      "book_total": 149.5,
+      "totals_books": {
+        "FD": 149.5,
+        "DK": 149.5,
+        "ESPN": 149.5,
+        "MGM": 149.5
+      },
+      "tot_diff": -2.8,
+      "ou_pick": "Under",
+      "ou_best": {
+        "point": 149.5,
+        "price": -110,
+        "book": "FD"
+      },
+      "ml_home": 127.5,
+      "ml_away": -152.5,
+      "ml_edge": 0.03
+    },
+    {
+      "id": "af7d4f2070d23339d85022a5cf26f93c",
+      "tip": "7:30 PM",
+      "tip_iso": "2026-11-18T00:30:00+00:00",
+      "home": "Alabama",
+      "away": "Kennesaw St.",
+      "home_raw": "Alabama Crimson Tide",
+      "away_raw": "Kennesaw St Owls",
+      "home_rank": 18,
+      "away_rank": 163,
+      "home_conf": "SEC",
+      "away_conf": "CUSA",
+      "neutral": false,
+      "book_spread": -25.5,
+      "books": {
+        "ESPN": -25.5,
+        "DK": -25.5,
+        "MGM": -25.5,
+        "BR": -25.5,
+        "FD": -25.5
+      },
+      "proj_spread": -23.6,
+      "proj_score": "Kennesaw St. 74, Alabama 98",
+      "poss": 80.2,
+      "diff": -1.9,
+      "pick": "Kennesaw St.",
+      "best_line": {
+        "point": 25.5,
+        "price": -115,
+        "book": "ESPN"
+      },
+      "kp_home_wp": 0.965,
+      "mkt_home_wp": 0.967,
+      "model_home_wp": 0.966,
+      "ml_min_edge": 0.03,
+      "neutral_src": null,
+      "home_luck": 0.099,
+      "away_luck": 0.123,
+      "proj_total": 172.2,
+      "proj_home_pts": 97.9,
+      "proj_away_pts": 74.3,
+      "imp_home": 101.5,
+      "imp_away": 76.0,
+      "book_total": 177.5,
+      "totals_books": {
+        "ESPN": 177.5,
+        "DK": 176.5,
+        "MGM": 176.5,
+        "BR": 177.5,
+        "FD": 177.5
+      },
+      "tot_diff": -5.3,
+      "ou_pick": "Under",
+      "ou_best": {
+        "point": 177.5,
+        "price": -110,
+        "book": "ESPN"
+      },
+      "ml_home": -20000,
+      "ml_away": 3500,
       "ml_edge": 0.001
     },
     {
-      "id": "60166d19a0d1043c0eb0495e3b04bdf1",
-      "tip": "9:30 PM",
-      "tip_iso": "2026-11-17T02:30:00+00:00",
-      "home": "Oregon St.",
-      "away": "East Texas A&M",
-      "home_raw": "Oregon St Beavers",
-      "away_raw": "East Texas A&M Lions",
-      "home_rank": 95,
-      "away_rank": 228,
-      "home_conf": "P12",
-      "away_conf": "Slnd",
+      "id": "44a2054c3d6bc226d39ae83a89cd4356",
+      "tip": "8:30 PM",
+      "tip_iso": "2026-11-18T01:30:00+00:00",
+      "home": "Wyoming",
+      "away": "Sam Houston St.",
+      "home_raw": "Wyoming Cowboys",
+      "away_raw": "Sam Houston St Bearkats",
+      "home_rank": 97,
+      "away_rank": 153,
+      "home_conf": "MWC",
+      "away_conf": "CUSA",
       "neutral": false,
-      "book_spread": -27.5,
+      "book_spread": -11.5,
       "books": {
-        "DK": -28.5,
-        "MGM": -26.5,
-        "ESPN": -28.5,
-        "BR": -24.5,
-        "FD": -27.5
-      },
-      "proj_spread": -13.5,
-      "proj_score": "East Texas A&M 69, Oregon St. 83",
-      "poss": 70.8,
-      "diff": -14.0,
-      "pick": "East Texas A&M",
-      "best_line": {
-        "point": 28.5,
-        "price": -120,
-        "book": "DK"
-      },
-      "kp_home_wp": 0.85,
-      "mkt_home_wp": 0.971,
-      "model_home_wp": 0.911,
-      "ml_min_edge": 0.03,
-      "neutral_src": null,
-      "home_luck": 0.036,
-      "away_luck": 0.099,
-      "proj_total": 152.1,
-      "proj_home_pts": 82.8,
-      "proj_away_pts": 69.3,
-      "imp_home": 104.5,
-      "imp_away": 77.0,
-      "book_total": 181.5,
-      "totals_books": {
-        "DK": 180.5,
-        "MGM": 182.5,
-        "ESPN": 180.5,
-        "BR": 181.5,
-        "FD": 181.5
-      },
-      "tot_diff": -29.4,
-      "ou_pick": "Under",
-      "ou_best": {
-        "point": 182.5,
-        "price": -125,
-        "book": "MGM"
-      },
-      "ml_home": -10000,
-      "ml_away": 3300,
-      "ml_edge": 0.06
-    },
-    {
-      "id": "4043a36241f122e728a2cb1abab6c500",
-      "tip": "10:00 PM",
-      "tip_iso": "2026-11-17T03:00:00+00:00",
-      "home": "UC San Diego",
-      "away": "Texas Southern",
-      "home_raw": "UC San Diego Tritons",
-      "away_raw": "Texas Southern Tigers",
-      "home_rank": 101,
-      "away_rank": 324,
-      "home_conf": "BW",
-      "away_conf": "SWAC",
-      "neutral": false,
-      "book_spread": -13.5,
-      "books": {
-        "DK": -13.5,
-        "MGM": -12.5,
-        "ESPN": -13.5,
-        "BR": -13.5,
+        "ESPN": -11.5,
+        "DK": -11.5,
+        "MGM": -11.5,
+        "BR": -11.5,
         "FD": -12.5
       },
-      "proj_spread": -19.2,
-      "proj_score": "Texas Southern 68, UC San Diego 87",
-      "poss": 73.3,
-      "diff": 5.7,
-      "pick": "UC San Diego",
+      "proj_spread": -9.6,
+      "proj_score": "Sam Houston St. 71, Wyoming 80",
+      "poss": 69.9,
+      "diff": -1.9,
+      "pick": "Sam Houston St.",
       "best_line": {
-        "point": -12.5,
-        "price": -110,
-        "book": "MGM"
+        "point": 12.5,
+        "price": -115,
+        "book": "FD"
       },
-      "kp_home_wp": 0.93,
-      "mkt_home_wp": 0.914,
-      "model_home_wp": 0.922,
+      "kp_home_wp": 0.769,
+      "mkt_home_wp": 0.856,
+      "model_home_wp": 0.812,
       "ml_min_edge": 0.03,
       "neutral_src": null,
-      "home_luck": 0.095,
-      "away_luck": -0.01,
-      "proj_total": 154.4,
-      "proj_home_pts": 86.8,
-      "proj_away_pts": 67.6,
-      "imp_home": 99.5,
-      "imp_away": 86.0,
-      "book_total": 185.5,
+      "home_luck": -0.055,
+      "away_luck": 0.076,
+      "proj_total": 151.1,
+      "proj_home_pts": 80.3,
+      "proj_away_pts": 70.8,
+      "imp_home": 81.0,
+      "imp_away": 69.5,
+      "book_total": 150.5,
       "totals_books": {
-        "DK": 185.5,
-        "MGM": 185.5,
-        "ESPN": 185.5,
-        "BR": 184.5,
-        "FD": 185.5
+        "ESPN": 150.5,
+        "DK": 150.5,
+        "MGM": 150.5,
+        "BR": 149.5,
+        "FD": 149.5
       },
-      "tot_diff": -31.1,
-      "ou_pick": "Under",
+      "tot_diff": 0.6,
+      "ou_pick": "Over",
       "ou_best": {
-        "point": 185.5,
-        "price": -110,
-        "book": "DK"
+        "point": 149.5,
+        "price": -108,
+        "book": "BR"
       },
-      "ml_home": -4500,
-      "ml_away": 1100,
-      "ml_edge": 0.008
+      "ml_home": -900,
+      "ml_away": 575,
+      "ml_edge": 0.044
     },
     {
-      "id": "c289d28831e5ae3f18297a49654270d7",
-      "tip": "10:01 PM",
-      "tip_iso": "2026-11-17T03:01:54+00:00",
-      "home": "Saint Mary's",
-      "away": "Portland St.",
-      "home_raw": "Saint Mary's Gaels",
-      "away_raw": "Portland St Vikings",
-      "home_rank": 58,
-      "away_rank": 206,
-      "home_conf": "WCC",
-      "away_conf": "BSky",
+      "id": "0b3ad953b639616096e56f8bc779d1cf",
+      "tip": "7:00 PM",
+      "tip_iso": "2026-11-18T00:00:00+00:00",
+      "home": "Georgia Tech",
+      "away": "Norfolk St.",
+      "home_raw": "Georgia Tech Yellow Jackets",
+      "away_raw": "Norfolk St Spartans",
+      "home_rank": 115,
+      "away_rank": 343,
+      "home_conf": "ACC",
+      "away_conf": "MEAC",
+      "neutral": false,
+      "book_spread": -20.5,
+      "books": {
+        "FD": -20.5,
+        "DK": -20.5,
+        "ESPN": -21.5,
+        "MGM": -21.5,
+        "BR": -20.5
+      },
+      "proj_spread": -18.7,
+      "proj_score": "Norfolk St. 65, Georgia Tech 84",
+      "poss": 70.1,
+      "diff": -1.8,
+      "pick": "Norfolk St.",
+      "best_line": {
+        "point": 21.5,
+        "price": -115,
+        "book": "ESPN"
+      },
+      "kp_home_wp": 0.925,
+      "mkt_home_wp": 0.954,
+      "model_home_wp": 0.939,
+      "ml_min_edge": 0.03,
+      "neutral_src": null,
+      "home_luck": 0.068,
+      "away_luck": -0.01,
+      "proj_total": 149.3,
+      "proj_home_pts": 84.0,
+      "proj_away_pts": 65.3,
+      "imp_home": 85.5,
+      "imp_away": 65.0,
+      "book_total": 150.5,
+      "totals_books": {
+        "FD": 151.5,
+        "DK": 150.5,
+        "ESPN": 150.5,
+        "MGM": 150.5,
+        "BR": 150.5
+      },
+      "tot_diff": -1.2,
+      "ou_pick": "Under",
+      "ou_best": {
+        "point": 151.5,
+        "price": -110,
+        "book": "FD"
+      },
+      "ml_home": -6750.0,
+      "ml_away": 2000.0,
+      "ml_edge": 0.014
+    },
+    {
+      "id": "b047fe0349f684bcc45735751c6b1a81",
+      "tip": "7:30 PM",
+      "tip_iso": "2026-11-18T00:30:00+00:00",
+      "home": "UAB",
+      "away": "FIU",
+      "home_raw": "UAB Blazers",
+      "away_raw": "Florida Int'l Golden Panthers",
+      "home_rank": 143,
+      "away_rank": 179,
+      "home_conf": "Amer",
+      "away_conf": "CUSA",
+      "neutral": false,
+      "book_spread": -3.5,
+      "books": {
+        "FD": -3.5,
+        "DK": -3.5,
+        "ESPN": -3.5,
+        "MGM": -4.5,
+        "BR": -3.5
+      },
+      "proj_spread": -5.3,
+      "proj_score": "FIU 77, UAB 83",
+      "poss": 74.0,
+      "diff": 1.8,
+      "pick": "UAB",
+      "best_line": {
+        "point": -3.5,
+        "price": -120,
+        "book": "FD"
+      },
+      "kp_home_wp": 0.659,
+      "mkt_home_wp": 0.613,
+      "model_home_wp": 0.636,
+      "ml_min_edge": 0.03,
+      "neutral_src": null,
+      "home_luck": -0.047,
+      "away_luck": 0.0,
+      "proj_total": 159.9,
+      "proj_home_pts": 82.6,
+      "proj_away_pts": 77.3,
+      "imp_home": 86.0,
+      "imp_away": 82.5,
+      "book_total": 168.5,
+      "totals_books": {
+        "FD": 169.5,
+        "DK": 169.5,
+        "ESPN": 168.5,
+        "MGM": 168.5,
+        "BR": 168.5
+      },
+      "tot_diff": -8.6,
+      "ou_pick": "Under",
+      "ou_best": {
+        "point": 169.5,
+        "price": -112,
+        "book": "FD"
+      },
+      "ml_home": -180,
+      "ml_away": 145,
+      "ml_edge": 0.023,
+      "top_plays": [
+        {
+          "type": "Total",
+          "side": "Under",
+          "line": 169.5,
+          "price": -112,
+          "book": "FD",
+          "prob": 0.609,
+          "be": 0.528,
+          "why": "KenPom total 159.9 vs. 169.5",
+          "game": "b047fe0349f684bcc45735751c6b1a81",
+          "matchup": "FIU @ UAB",
+          "tip": "7:30 PM",
+          "neutral": false,
+          "same_game": false
+        }
+      ]
+    },
+    {
+      "id": "41c79876d3c7f7f356c4b1a19332478f",
+      "tip": "9:00 PM",
+      "tip_iso": "2026-11-18T02:00:00+00:00",
+      "home": "UC Davis",
+      "away": "Alabama St.",
+      "home_raw": "UC Davis Aggies",
+      "away_raw": "Alabama St Hornets",
+      "home_rank": 168,
+      "away_rank": 293,
+      "home_conf": "MWC",
+      "away_conf": "SWAC",
+      "neutral": false,
+      "book_spread": -11.5,
+      "books": {
+        "FD": -11.5,
+        "ESPN": -11.5,
+        "DK": -11.5,
+        "MGM": -11.5,
+        "BR": -11.5
+      },
+      "proj_spread": -9.7,
+      "proj_score": "Alabama St. 70, UC Davis 80",
+      "poss": 72.5,
+      "diff": -1.8,
+      "pick": "Alabama St.",
+      "best_line": {
+        "point": 11.5,
+        "price": -110,
+        "book": "FD"
+      },
+      "kp_home_wp": 0.771,
+      "mkt_home_wp": 0.85,
+      "model_home_wp": 0.811,
+      "ml_min_edge": 0.03,
+      "neutral_src": null,
+      "home_luck": -0.111,
+      "away_luck": -0.008,
+      "proj_total": 150.6,
+      "proj_home_pts": 80.1,
+      "proj_away_pts": 70.5,
+      "imp_home": 77.0,
+      "imp_away": 65.5,
+      "book_total": 142.5,
+      "totals_books": {
+        "FD": 142.5,
+        "ESPN": 142.5,
+        "DK": 142.5,
+        "MGM": 142.5,
+        "BR": 142.5
+      },
+      "tot_diff": 8.1,
+      "ou_pick": "Over",
+      "ou_best": {
+        "point": 142.5,
+        "price": -110,
+        "book": "FD"
+      },
+      "ml_home": -800,
+      "ml_away": 540,
+      "ml_edge": 0.04
+    },
+    {
+      "id": "150dfe147806ddeef1e5e91d62bbc6a4",
+      "tip": "4:30 PM",
+      "tip_iso": "2026-11-17T21:30:13+00:00",
+      "home": "Florida",
+      "away": "Notre Dame",
+      "home_raw": "Florida Gators",
+      "away_raw": "Notre Dame Fighting Irish",
+      "home_rank": 1,
+      "away_rank": 68,
+      "home_conf": "SEC",
+      "away_conf": "ACC",
+      "neutral": true,
+      "book_spread": -15.5,
+      "books": {
+        "FD": -15.5,
+        "BR": -15.5,
+        "DK": -15.5,
+        "ESPN": -15.5,
+        "MGM": -15.5
+      },
+      "proj_spread": -13.8,
+      "proj_score": "Notre Dame 68, Florida 82",
+      "poss": 69.8,
+      "diff": -1.7,
+      "pick": "Notre Dame",
+      "best_line": {
+        "point": 15.5,
+        "price": -110,
+        "book": "FD"
+      },
+      "kp_home_wp": 0.856,
+      "mkt_home_wp": 0.914,
+      "model_home_wp": 0.885,
+      "ml_min_edge": 0.03,
+      "neutral_src": "espn",
+      "home_luck": 0.06,
+      "away_luck": 0.064,
+      "proj_total": 149.2,
+      "proj_home_pts": 81.5,
+      "proj_away_pts": 67.7,
+      "imp_home": 83.0,
+      "imp_away": 67.5,
+      "book_total": 150.5,
+      "totals_books": {
+        "FD": 150.5,
+        "BR": 150.5,
+        "DK": 150.5,
+        "ESPN": 150.5,
+        "MGM": 150.5
+      },
+      "tot_diff": -1.3,
+      "ou_pick": "Under",
+      "ou_best": {
+        "point": 150.5,
+        "price": -110,
+        "book": "FD"
+      },
+      "ml_home": -2100,
+      "ml_away": 1000,
+      "ml_edge": 0.029
+    },
+    {
+      "id": "5819a23622486bd00ba1853a161f898a",
+      "tip": "7:00 PM",
+      "tip_iso": "2026-11-18T00:00:00+00:00",
+      "home": "Davidson",
+      "away": "Charlotte",
+      "home_raw": "Davidson Wildcats",
+      "away_raw": "Charlotte 49ers",
+      "home_rank": 110,
+      "away_rank": 127,
+      "home_conf": "A10",
+      "away_conf": "Amer",
+      "neutral": false,
+      "book_spread": -3.5,
+      "books": {
+        "ESPN": -3.5,
+        "FD": -3.5,
+        "DK": -3.5,
+        "MGM": -4.5,
+        "BR": -3.5
+      },
+      "proj_spread": -5.1,
+      "proj_score": "Charlotte 65, Davidson 70",
+      "poss": 64.6,
+      "diff": 1.6,
+      "pick": "Davidson",
+      "best_line": {
+        "point": -3.5,
+        "price": -115,
+        "book": "ESPN"
+      },
+      "kp_home_wp": 0.651,
+      "mkt_home_wp": 0.609,
+      "model_home_wp": 0.63,
+      "ml_min_edge": 0.03,
+      "neutral_src": null,
+      "home_luck": -0.06,
+      "away_luck": -0.063,
+      "proj_total": 135.8,
+      "proj_home_pts": 70.4,
+      "proj_away_pts": 65.4,
+      "imp_home": 68.0,
+      "imp_away": 64.5,
+      "book_total": 132.5,
+      "totals_books": {
+        "ESPN": 132.5,
+        "FD": 132.5,
+        "DK": 132.5,
+        "MGM": 132.5,
+        "BR": 132.5
+      },
+      "tot_diff": 3.3,
+      "ou_pick": "Over",
+      "ou_best": {
+        "point": 132.5,
+        "price": -110,
+        "book": "ESPN"
+      },
+      "ml_home": -175,
+      "ml_away": 145,
+      "ml_edge": 0.021
+    },
+    {
+      "id": "e53746f0d6118f523272cb956b7d0133",
+      "tip": "7:00 PM",
+      "tip_iso": "2026-11-18T00:00:00+00:00",
+      "home": "Duke",
+      "away": "Illinois",
+      "home_raw": "Duke Blue Devils",
+      "away_raw": "Illinois Fighting Illini",
+      "home_rank": 2,
+      "away_rank": 6,
+      "home_conf": "ACC",
+      "away_conf": "B10",
+      "neutral": false,
+      "book_spread": -8.5,
+      "books": {
+        "FD": -8.5,
+        "DK": -8.5,
+        "BR": -7.5,
+        "ESPN": -8.5,
+        "MGM": -8.5
+      },
+      "proj_spread": -7.1,
+      "proj_score": "Illinois 78, Duke 85",
+      "poss": 74.7,
+      "diff": -1.4,
+      "pick": "Illinois",
+      "best_line": {
+        "point": 8.5,
+        "price": -114,
+        "book": "FD"
+      },
+      "kp_home_wp": 0.707,
+      "mkt_home_wp": 0.756,
+      "model_home_wp": 0.731,
+      "ml_min_edge": 0.03,
+      "neutral_src": null,
+      "home_luck": -0.135,
+      "away_luck": -0.075,
+      "proj_total": 163.1,
+      "proj_home_pts": 85.1,
+      "proj_away_pts": 78.0,
+      "imp_home": 87.5,
+      "imp_away": 79.0,
+      "book_total": 166.5,
+      "totals_books": {
+        "FD": 166.5,
+        "DK": 166.5,
+        "BR": 166.5,
+        "ESPN": 167.5,
+        "MGM": 167.5
+      },
+      "tot_diff": -3.4,
+      "ou_pick": "Under",
+      "ou_best": {
+        "point": 167.5,
+        "price": -105,
+        "book": "ESPN"
+      },
+      "ml_home": -375,
+      "ml_away": 290,
+      "ml_edge": 0.025
+    },
+    {
+      "id": "cc8bda41e5ca0051fa27efd930cd1ba2",
+      "tip": "6:00 PM",
+      "tip_iso": "2026-11-17T23:00:00+00:00",
+      "home": "UMass Lowell",
+      "away": "Saint Peter's",
+      "home_raw": "UMass Lowell River Hawks",
+      "away_raw": "Saint Peter's Peacocks",
+      "home_rank": 277,
+      "away_rank": 339,
+      "home_conf": "AE",
+      "away_conf": "MC",
+      "neutral": false,
+      "book_spread": -6.5,
+      "books": {
+        "ESPN": -6.5,
+        "DK": -6.5,
+        "BR": -5.5,
+        "FD": -6.5,
+        "MGM": -6.5
+      },
+      "proj_spread": -7.7,
+      "proj_score": "Saint Peter's 61, UMass Lowell 69",
+      "poss": 66.3,
+      "diff": 1.2,
+      "pick": "UMass Lowell",
+      "best_line": {
+        "point": -5.5,
+        "price": -125,
+        "book": "BR"
+      },
+      "kp_home_wp": 0.724,
+      "mkt_home_wp": 0.704,
+      "model_home_wp": 0.714,
+      "ml_min_edge": 0.03,
+      "neutral_src": null,
+      "home_luck": 0.12,
+      "away_luck": -0.159,
+      "proj_total": 130.3,
+      "proj_home_pts": 69.0,
+      "proj_away_pts": 61.3,
+      "imp_home": 67.5,
+      "imp_away": 61.0,
+      "book_total": 128.5,
+      "totals_books": {
+        "ESPN": 128.5,
+        "DK": 128.5,
+        "BR": 131.5,
+        "FD": 129.5,
+        "MGM": 128.5
+      },
+      "tot_diff": 1.8,
+      "ou_pick": "Over",
+      "ou_best": {
+        "point": 128.5,
+        "price": -115,
+        "book": "ESPN"
+      },
+      "ml_home": -275,
+      "ml_away": 220,
+      "ml_edge": 0.01
+    },
+    {
+      "id": "a80c8cd90f57a1445908c3a17489fd4a",
+      "tip": "8:00 PM",
+      "tip_iso": "2026-11-18T01:00:00+00:00",
+      "home": "Southern Miss",
+      "away": "UT Arlington",
+      "home_raw": "Southern Miss Golden Eagles",
+      "away_raw": "UT-Arlington Mavericks",
+      "home_rank": 247,
+      "away_rank": 211,
+      "home_conf": "SB",
+      "away_conf": "UAC",
+      "neutral": false,
+      "book_spread": -2.5,
+      "books": {
+        "ESPN": -2.5,
+        "DK": -1.5,
+        "MGM": -2.5,
+        "BR": -2.5,
+        "FD": -1.5
+      },
+      "proj_spread": -1.3,
+      "proj_score": "UT Arlington 75, Southern Miss 76",
+      "poss": 74.2,
+      "diff": -1.2,
+      "pick": "UT Arlington",
+      "best_line": {
+        "point": 2.5,
+        "price": -115,
+        "book": "ESPN"
+      },
+      "kp_home_wp": 0.54,
+      "mkt_home_wp": 0.552,
+      "model_home_wp": 0.546,
+      "ml_min_edge": 0.03,
+      "neutral_src": null,
+      "home_luck": 0.148,
+      "away_luck": 0.128,
+      "proj_total": 151.5,
+      "proj_home_pts": 76.4,
+      "proj_away_pts": 75.1,
+      "imp_home": 76.0,
+      "imp_away": 73.5,
+      "book_total": 149.5,
+      "totals_books": {
+        "ESPN": 149.5,
+        "DK": 149.5,
+        "MGM": 148.5,
+        "BR": 148.5,
+        "FD": 149.5
+      },
+      "tot_diff": 2.0,
+      "ou_pick": "Over",
+      "ou_best": {
+        "point": 148.5,
+        "price": -115,
+        "book": "MGM"
+      },
+      "ml_home": -135,
+      "ml_away": 110,
+      "ml_edge": 0.006
+    },
+    {
+      "id": "ffb5a6ab57400f7a34aa9891b5c1ca9f",
+      "tip": "6:00 PM",
+      "tip_iso": "2026-11-17T23:00:00+00:00",
+      "home": "Southern Illinois",
+      "away": "Liberty",
+      "home_raw": "Southern Illinois Salukis",
+      "away_raw": "Liberty Flames",
+      "home_rank": 147,
+      "away_rank": 154,
+      "home_conf": "MVC",
+      "away_conf": "CUSA",
+      "neutral": true,
+      "book_spread": -1.5,
+      "books": {
+        "FD": -2.5,
+        "BR": -1.5,
+        "ESPN": -2.5,
+        "DK": -1.5,
+        "MGM": -1.5
+      },
+      "proj_spread": -0.4,
+      "proj_score": "Liberty 74, Southern Illinois 74",
+      "poss": 68.1,
+      "diff": -1.1,
+      "pick": "Liberty",
+      "best_line": {
+        "point": 2.5,
+        "price": -120,
+        "book": "FD"
+      },
+      "kp_home_wp": 0.513,
+      "mkt_home_wp": 0.547,
+      "model_home_wp": 0.53,
+      "ml_min_edge": 0.03,
+      "neutral_src": "espn",
+      "home_luck": -0.056,
+      "away_luck": 0.073,
+      "proj_total": 148.2,
+      "proj_home_pts": 74.3,
+      "proj_away_pts": 73.9,
+      "imp_home": 73.0,
+      "imp_away": 71.5,
+      "book_total": 144.5,
+      "totals_books": {
+        "FD": 144.5,
+        "BR": 144.5,
+        "ESPN": 145.5,
+        "DK": 144.5,
+        "MGM": 144.5
+      },
+      "tot_diff": 3.7,
+      "ou_pick": "Over",
+      "ou_best": {
+        "point": 144.5,
+        "price": -110,
+        "book": "FD"
+      },
+      "ml_home": -135,
+      "ml_away": 110,
+      "ml_edge": 0.017
+    },
+    {
+      "id": "b84cb1c5cde0ceb1ba7bba70f8db0a81",
+      "tip": "7:00 PM",
+      "tip_iso": "2026-11-18T00:00:00+00:00",
+      "home": "Marshall",
+      "away": "East Tennessee St.",
+      "home_raw": "Marshall Thundering Herd",
+      "away_raw": "East Tennessee St Buccaneers",
+      "home_rank": 166,
+      "away_rank": 150,
+      "home_conf": "SB",
+      "away_conf": "SC",
+      "neutral": false,
+      "book_spread": -1.5,
+      "books": {
+        "ESPN": -1.5,
+        "DK": -1.5,
+        "BR": -1.5,
+        "FD": -1.5
+      },
+      "proj_spread": -2.5,
+      "proj_score": "East Tennessee St. 71, Marshall 74",
+      "poss": 69.3,
+      "diff": 1.0,
+      "pick": "Marshall",
+      "best_line": {
+        "point": -1.5,
+        "price": -110,
+        "book": "ESPN"
+      },
+      "kp_home_wp": 0.576,
+      "mkt_home_wp": 0.533,
+      "model_home_wp": 0.554,
+      "ml_min_edge": 0.03,
+      "neutral_src": null,
+      "home_luck": -0.304,
+      "away_luck": -0.098,
+      "proj_total": 145.1,
+      "proj_home_pts": 73.8,
+      "proj_away_pts": 71.3,
+      "imp_home": 73.5,
+      "imp_away": 72.0,
+      "book_total": 145.5,
+      "totals_books": {
+        "ESPN": 145.5,
+        "DK": 146.5,
+        "MGM": 145.5,
+        "BR": 146.5,
+        "FD": 145.5
+      },
+      "tot_diff": -0.4,
+      "ou_pick": "Under",
+      "ou_best": {
+        "point": 146.5,
+        "price": -115,
+        "book": "DK"
+      },
+      "ml_home": -125,
+      "ml_away": 105,
+      "ml_edge": 0.022
+    },
+    {
+      "id": "f9f1502d94854c74546bf0584a048c43",
+      "tip": "7:00 PM",
+      "tip_iso": "2026-11-18T00:00:00+00:00",
+      "home": "Mount St. Mary's",
+      "away": "Lehigh",
+      "home_raw": "Mt. St. Mary's Mountaineers",
+      "away_raw": "Lehigh Mountain Hawks",
+      "home_rank": 289,
+      "away_rank": 278,
+      "home_conf": "MC",
+      "away_conf": "PL",
+      "neutral": false,
+      "book_spread": -1.5,
+      "books": {
+        "ESPN": -1.5,
+        "DK": -1.5,
+        "BR": -1.5,
+        "FD": -1.5
+      },
+      "proj_spread": -2.5,
+      "proj_score": "Lehigh 66, Mount St. Mary's 69",
+      "poss": 68.8,
+      "diff": 1.0,
+      "pick": "Mount St. Mary's",
+      "best_line": {
+        "point": -1.5,
+        "price": -110,
+        "book": "ESPN"
+      },
+      "kp_home_wp": 0.578,
+      "mkt_home_wp": 0.533,
+      "model_home_wp": 0.556,
+      "ml_min_edge": 0.03,
+      "neutral_src": null,
+      "home_luck": 0.068,
+      "away_luck": 0.147,
+      "proj_total": 135.0,
+      "proj_home_pts": 68.8,
+      "proj_away_pts": 66.2,
+      "imp_home": 69.5,
+      "imp_away": 68.0,
+      "book_total": 137.5,
+      "totals_books": {
+        "ESPN": 137.5,
+        "DK": 137.5,
+        "BR": 137.5,
+        "FD": 137.5,
+        "MGM": 137.5
+      },
+      "tot_diff": -2.5,
+      "ou_pick": "Under",
+      "ou_best": {
+        "point": 137.5,
+        "price": -115,
+        "book": "ESPN"
+      },
+      "ml_home": -125,
+      "ml_away": 105,
+      "ml_edge": 0.022
+    },
+    {
+      "id": "33f00f4f6cbb6af0870e39e68ad3c430",
+      "tip": "7:00 PM",
+      "tip_iso": "2026-11-18T00:00:00+00:00",
+      "home": "Wake Forest",
+      "away": "Monmouth",
+      "home_raw": "Wake Forest Demon Deacons",
+      "away_raw": "Monmouth Hawks",
+      "home_rank": 82,
+      "away_rank": 198,
+      "home_conf": "ACC",
+      "away_conf": "CAA",
       "neutral": false,
       "book_spread": -14.5,
       "books": {
-        "ESPN": -15.5,
+        "ESPN": -14.5,
         "DK": -14.5,
-        "FD": -14.5,
-        "BR": -14.5
+        "BR": -15.5,
+        "MGM": -14.5,
+        "FD": -14.5
       },
-      "proj_spread": -17.2,
-      "proj_score": "Portland St. 67, Saint Mary's 84",
-      "poss": 70.8,
-      "diff": 2.7,
-      "pick": "Saint Mary's",
+      "proj_spread": -13.6,
+      "proj_score": "Monmouth 64, Wake Forest 78",
+      "poss": 69.4,
+      "diff": -0.9,
+      "pick": "Monmouth",
       "best_line": {
-        "point": -14.5,
-        "price": -125,
-        "book": "DK"
+        "point": 15.5,
+        "price": -117,
+        "book": "BR"
       },
-      "kp_home_wp": 0.907,
-      "mkt_home_wp": 0.932,
-      "model_home_wp": 0.92,
+      "kp_home_wp": 0.853,
+      "mkt_home_wp": 0.904,
+      "model_home_wp": 0.878,
       "ml_min_edge": 0.03,
       "neutral_src": null,
-      "home_luck": -0.064,
-      "away_luck": -0.035,
-      "proj_total": 150.4,
-      "proj_home_pts": 83.8,
-      "proj_away_pts": 66.6,
-      "imp_home": 88.5,
-      "imp_away": 74.0,
-      "book_total": 162.5,
+      "home_luck": 0.057,
+      "away_luck": 0.12,
+      "proj_total": 142.7,
+      "proj_home_pts": 78.2,
+      "proj_away_pts": 64.5,
+      "imp_home": 79.5,
+      "imp_away": 65.0,
+      "book_total": 144.5,
       "totals_books": {
-        "ESPN": 163.5,
-        "DK": 163.5,
-        "FD": 161.5,
-        "MGM": 162.5,
-        "BR": 162.5
+        "ESPN": 144.5,
+        "DK": 143.5,
+        "BR": 143.5,
+        "MGM": 144.5,
+        "FD": 144.5
       },
-      "tot_diff": -12.1,
+      "tot_diff": -1.8,
       "ou_pick": "Under",
       "ou_best": {
-        "point": 163.5,
-        "price": -130,
+        "point": 144.5,
+        "price": -110,
         "book": "ESPN"
       },
-      "ml_home": -5100.0,
-      "ml_away": 1400.0,
-      "ml_edge": -0.013
+      "ml_home": -1800,
+      "ml_away": 900,
+      "ml_edge": 0.026
+    },
+    {
+      "id": "f4e891141ac704877ac85d87e2055eb7",
+      "tip": "8:00 PM",
+      "tip_iso": "2026-11-18T01:00:00+00:00",
+      "home": "Rice",
+      "away": "Texas A&M Corpus Chris",
+      "home_raw": "Rice Owls",
+      "away_raw": "Texas A&M-CC Islanders",
+      "home_rank": 224,
+      "away_rank": 202,
+      "home_conf": "Amer",
+      "away_conf": "Slnd",
+      "neutral": false,
+      "book_spread": -1.5,
+      "books": {
+        "ESPN": -2.5,
+        "DK": -1.5,
+        "BR": -1.5,
+        "FD": -1.5,
+        "MGM": -1.5
+      },
+      "proj_spread": -2.4,
+      "proj_score": "Texas A&M Corpus Chris 69, Rice 71",
+      "poss": 68.5,
+      "diff": 0.9,
+      "pick": "Rice",
+      "best_line": {
+        "point": -1.5,
+        "price": -115,
+        "book": "DK"
+      },
+      "kp_home_wp": 0.572,
+      "mkt_home_wp": 0.542,
+      "model_home_wp": 0.557,
+      "ml_min_edge": 0.03,
+      "neutral_src": null,
+      "home_luck": 0.018,
+      "away_luck": 0.066,
+      "proj_total": 139.7,
+      "proj_home_pts": 71.0,
+      "proj_away_pts": 68.7,
+      "imp_home": 71.5,
+      "imp_away": 70.0,
+      "book_total": 141.5,
+      "totals_books": {
+        "ESPN": 141.5,
+        "DK": 141.5,
+        "BR": 141.5,
+        "FD": 141.5,
+        "MGM": 141.5
+      },
+      "tot_diff": -1.8,
+      "ou_pick": "Under",
+      "ou_best": {
+        "point": 141.5,
+        "price": -115,
+        "book": "ESPN"
+      },
+      "ml_home": -130,
+      "ml_away": 108,
+      "ml_edge": 0.015
+    },
+    {
+      "id": "34cc1630b26debe487cc005f53751fe3",
+      "tip": "7:00 PM",
+      "tip_iso": "2026-11-18T00:00:00+00:00",
+      "home": "Bucknell",
+      "away": "Akron",
+      "home_raw": "Bucknell Bison",
+      "away_raw": "Akron Zips",
+      "home_rank": 350,
+      "away_rank": 102,
+      "home_conf": "PL",
+      "away_conf": "MAC",
+      "neutral": false,
+      "book_spread": 14.5,
+      "books": {
+        "ESPN": 14.5,
+        "DK": 14.5,
+        "BR": 14.5,
+        "FD": 14.5,
+        "MGM": 14.5
+      },
+      "proj_spread": 13.7,
+      "proj_score": "Akron 79, Bucknell 65",
+      "poss": 69.0,
+      "diff": 0.8,
+      "pick": "Bucknell",
+      "best_line": {
+        "point": 14.5,
+        "price": -105,
+        "book": "ESPN"
+      },
+      "kp_home_wp": 0.146,
+      "mkt_home_wp": 0.104,
+      "model_home_wp": 0.125,
+      "ml_min_edge": 0.03,
+      "neutral_src": null,
+      "home_luck": -0.0,
+      "away_luck": 0.173,
+      "proj_total": 144.5,
+      "proj_home_pts": 65.4,
+      "proj_away_pts": 79.1,
+      "imp_home": 66.0,
+      "imp_away": 80.5,
+      "book_total": 146.5,
+      "totals_books": {
+        "ESPN": 147.5,
+        "DK": 146.5,
+        "BR": 146.5,
+        "FD": 146.5,
+        "MGM": 146.5
+      },
+      "tot_diff": -2.0,
+      "ou_pick": "Under",
+      "ou_best": {
+        "point": 147.5,
+        "price": -115,
+        "book": "ESPN"
+      },
+      "ml_home": 800,
+      "ml_away": -1600,
+      "ml_edge": 0.021
+    },
+    {
+      "id": "53e1f9b0793855a7036d7c480c5c5aa3",
+      "tip": "8:00 PM",
+      "tip_iso": "2026-11-18T01:00:00+00:00",
+      "home": "Georgia Southern",
+      "away": "Middle Tennessee",
+      "home_raw": "Georgia Southern Eagles",
+      "away_raw": "Middle Tennessee Blue Raiders",
+      "home_rank": 260,
+      "away_rank": 183,
+      "home_conf": "SB",
+      "away_conf": "CUSA",
+      "neutral": false,
+      "book_spread": 1.5,
+      "books": {
+        "ESPN": 1.5,
+        "DK": 2.5,
+        "MGM": 1.5,
+        "BR": 1.5,
+        "FD": 2.5
+      },
+      "proj_spread": 0.8,
+      "proj_score": "Middle Tennessee 77, Georgia Southern 76",
+      "poss": 71.5,
+      "diff": 0.7,
+      "pick": "Georgia Southern",
+      "best_line": {
+        "point": 2.5,
+        "price": -118,
+        "book": "DK"
+      },
+      "kp_home_wp": 0.474,
+      "mkt_home_wp": 0.456,
+      "model_home_wp": 0.465,
+      "ml_min_edge": 0.03,
+      "neutral_src": null,
+      "home_luck": -0.104,
+      "away_luck": 0.277,
+      "proj_total": 152.3,
+      "proj_home_pts": 75.7,
+      "proj_away_pts": 76.6,
+      "imp_home": 76.5,
+      "imp_away": 78.0,
+      "book_total": 154.5,
+      "totals_books": {
+        "ESPN": 154.5,
+        "DK": 154.5,
+        "MGM": 154.5,
+        "BR": 153.5,
+        "FD": 154.5
+      },
+      "tot_diff": -2.2,
+      "ou_pick": "Under",
+      "ou_best": {
+        "point": 154.5,
+        "price": -110,
+        "book": "ESPN"
+      },
+      "ml_home": 110,
+      "ml_away": -130,
+      "ml_edge": 0.009
+    },
+    {
+      "id": "6f09da9790643161b42ae87d69133782",
+      "tip": "8:00 PM",
+      "tip_iso": "2026-11-18T01:00:00+00:00",
+      "home": "North Dakota",
+      "away": "SIUE",
+      "home_raw": "North Dakota Fighting Hawks",
+      "away_raw": "SIU-Edwardsville Cougars",
+      "home_rank": 321,
+      "away_rank": 298,
+      "home_conf": "Sum",
+      "away_conf": "OVC",
+      "neutral": false,
+      "book_spread": -2.5,
+      "books": {
+        "MGM": -2.5,
+        "ESPN": -2.5,
+        "BR": -1.5,
+        "DK": -2.5,
+        "FD": -1.5
+      },
+      "proj_spread": -1.9,
+      "proj_score": "SIUE 73, North Dakota 75",
+      "poss": 68.6,
+      "diff": -0.6,
+      "pick": "SIUE",
+      "best_line": {
+        "point": 2.5,
+        "price": -115,
+        "book": "MGM"
+      },
+      "kp_home_wp": 0.557,
+      "mkt_home_wp": 0.546,
+      "model_home_wp": 0.551,
+      "ml_min_edge": 0.03,
+      "neutral_src": null,
+      "home_luck": 0.065,
+      "away_luck": -0.116,
+      "proj_total": 148.6,
+      "proj_home_pts": 75.2,
+      "proj_away_pts": 73.4,
+      "imp_home": 74.0,
+      "imp_away": 71.5,
+      "book_total": 145.5,
+      "totals_books": {
+        "MGM": 145.5,
+        "ESPN": 144.5,
+        "BR": 143.5,
+        "DK": 145.5,
+        "FD": 145.5
+      },
+      "tot_diff": 3.1,
+      "ou_pick": "Over",
+      "ou_best": {
+        "point": 143.5,
+        "price": -117,
+        "book": "BR"
+      },
+      "ml_home": -132,
+      "ml_away": 110,
+      "ml_edge": -0.006
+    },
+    {
+      "id": "ce6dd46cd4c337c1959bb8995b009209",
+      "tip": "7:00 PM",
+      "tip_iso": "2026-11-18T00:00:00+00:00",
+      "home": "William & Mary",
+      "away": "Bowling Green",
+      "home_raw": "William & Mary Tribe",
+      "away_raw": "Bowling Green Falcons",
+      "home_rank": 185,
+      "away_rank": 170,
+      "home_conf": "CAA",
+      "away_conf": "MAC",
+      "neutral": false,
+      "book_spread": -2.5,
+      "books": {
+        "ESPN": -2.5,
+        "DK": -2.5,
+        "MGM": -2.5,
+        "BR": -2.5,
+        "FD": -2.5
+      },
+      "proj_spread": -2.0,
+      "proj_score": "Bowling Green 86, William & Mary 88",
+      "poss": 76.0,
+      "diff": -0.5,
+      "pick": "Bowling Green",
+      "best_line": {
+        "point": 2.5,
+        "price": -110,
+        "book": "ESPN"
+      },
+      "kp_home_wp": 0.561,
+      "mkt_home_wp": 0.563,
+      "model_home_wp": 0.562,
+      "ml_min_edge": 0.03,
+      "neutral_src": null,
+      "home_luck": -0.131,
+      "away_luck": 0.073,
+      "proj_total": 173.6,
+      "proj_home_pts": 87.8,
+      "proj_away_pts": 85.8,
+      "imp_home": 86.0,
+      "imp_away": 83.5,
+      "book_total": 169.5,
+      "totals_books": {
+        "ESPN": 169.5,
+        "DK": 169.5,
+        "MGM": 169.5,
+        "BR": 169.5,
+        "FD": 169.5
+      },
+      "tot_diff": 4.1,
+      "ou_pick": "Over",
+      "ou_best": {
+        "point": 169.5,
+        "price": -105,
+        "book": "ESPN"
+      },
+      "ml_home": -142,
+      "ml_away": 120,
+      "ml_edge": 0.001
+    },
+    {
+      "id": "081780ac2ad6014e346d974168a14e8d",
+      "tip": "7:00 PM",
+      "tip_iso": "2026-11-18T00:00:00+00:00",
+      "home": "Saint Joseph's",
+      "away": "Wagner",
+      "home_raw": "Saint Joseph's Hawks",
+      "away_raw": "Wagner Seahawks",
+      "home_rank": 125,
+      "away_rank": 334,
+      "home_conf": "A10",
+      "away_conf": "NEC",
+      "neutral": false,
+      "book_spread": -16.5,
+      "books": {
+        "ESPN": -16.5,
+        "DK": -16.5,
+        "BR": -16.5,
+        "FD": -16.5,
+        "MGM": -16.5
+      },
+      "proj_spread": -16.1,
+      "proj_score": "Wagner 61, Saint Joseph's 77",
+      "poss": 70.7,
+      "diff": -0.4,
+      "pick": "Wagner",
+      "best_line": {
+        "point": 16.5,
+        "price": -115,
+        "book": "ESPN"
+      },
+      "kp_home_wp": 0.892,
+      "mkt_home_wp": 0.928,
+      "model_home_wp": 0.91,
+      "ml_min_edge": 0.03,
+      "neutral_src": null,
+      "home_luck": 0.011,
+      "away_luck": -0.002,
+      "proj_total": 138.7,
+      "proj_home_pts": 77.4,
+      "proj_away_pts": 61.3,
+      "imp_home": 77.0,
+      "imp_away": 60.5,
+      "book_total": 137.5,
+      "totals_books": {
+        "ESPN": 137.5,
+        "DK": 137.5,
+        "BR": 139.5,
+        "FD": 137.5,
+        "MGM": 137.5
+      },
+      "tot_diff": 1.2,
+      "ou_pick": "Over",
+      "ou_best": {
+        "point": 137.5,
+        "price": -115,
+        "book": "ESPN"
+      },
+      "ml_home": -3000,
+      "ml_away": 1200,
+      "ml_edge": 0.018
+    },
+    {
+      "id": "2ddc8451d53d2f18e2fd39e81a0f93c4",
+      "tip": "9:30 PM",
+      "tip_iso": "2026-11-18T02:30:00+00:00",
+      "home": "Kansas",
+      "away": "UNLV",
+      "home_raw": "Kansas Jayhawks",
+      "away_raw": "UNLV Rebels",
+      "home_rank": 4,
+      "away_rank": 93,
+      "home_conf": "B12",
+      "away_conf": "MWC",
+      "neutral": true,
+      "book_spread": -16.5,
+      "books": {
+        "DK": -16.5,
+        "FD": -16.5,
+        "ESPN": -16.5,
+        "BR": -16.5,
+        "MGM": -16.5
+      },
+      "proj_spread": -16.9,
+      "proj_score": "UNLV 68, Kansas 85",
+      "poss": 74.1,
+      "diff": 0.4,
+      "pick": "Kansas",
+      "best_line": {
+        "point": -16.5,
+        "price": -115,
+        "book": "DK"
+      },
+      "kp_home_wp": 0.903,
+      "mkt_home_wp": 0.92,
+      "model_home_wp": 0.912,
+      "ml_min_edge": 0.03,
+      "neutral_src": "espn",
+      "home_luck": 0.011,
+      "away_luck": 0.0,
+      "proj_total": 153.7,
+      "proj_home_pts": 85.3,
+      "proj_away_pts": 68.4,
+      "imp_home": 87.5,
+      "imp_away": 71.0,
+      "book_total": 158.5,
+      "totals_books": {
+        "DK": 157.5,
+        "FD": 158.5,
+        "ESPN": 158.5,
+        "BR": 157.5,
+        "MGM": 158.5
+      },
+      "tot_diff": -4.8,
+      "ou_pick": "Under",
+      "ou_best": {
+        "point": 158.5,
+        "price": -110,
+        "book": "FD"
+      },
+      "ml_home": -2500,
+      "ml_away": 1100,
+      "ml_edge": -0.008
+    },
+    {
+      "id": "adedd94d034d2092e66251afaae53807",
+      "tip": "7:00 PM",
+      "tip_iso": "2026-11-18T00:00:00+00:00",
+      "home": "Manhattan",
+      "away": "Fordham",
+      "home_raw": "Manhattan Jaspers",
+      "away_raw": "Fordham Rams",
+      "home_rank": 330,
+      "away_rank": 106,
+      "home_conf": "MC",
+      "away_conf": "A10",
+      "neutral": false,
+      "book_spread": 11.5,
+      "books": {
+        "ESPN": 11.5,
+        "DK": 11.5,
+        "BR": 11.5,
+        "MGM": 11.5,
+        "FD": 11.5
+      },
+      "proj_spread": 11.2,
+      "proj_score": "Fordham 77, Manhattan 66",
+      "poss": 68.4,
+      "diff": 0.3,
+      "pick": "Manhattan",
+      "best_line": {
+        "point": 11.5,
+        "price": -115,
+        "book": "ESPN"
+      },
+      "kp_home_wp": 0.195,
+      "mkt_home_wp": 0.158,
+      "model_home_wp": 0.177,
+      "ml_min_edge": 0.03,
+      "neutral_src": null,
+      "home_luck": 0.002,
+      "away_luck": 0.16,
+      "proj_total": 143.4,
+      "proj_home_pts": 66.1,
+      "proj_away_pts": 77.3,
+      "imp_home": 66.5,
+      "imp_away": 78.0,
+      "book_total": 144.5,
+      "totals_books": {
+        "ESPN": 145.5,
+        "DK": 144.5,
+        "BR": 144.5,
+        "MGM": 144.5,
+        "FD": 144.5
+      },
+      "tot_diff": -1.1,
+      "ou_pick": "Under",
+      "ou_best": {
+        "point": 145.5,
+        "price": -110,
+        "book": "ESPN"
+      },
+      "ml_home": 500,
+      "ml_away": -750,
+      "ml_edge": 0.018
+    },
+    {
+      "id": "f2f76ded2b49c859cfcdb18510fc4461",
+      "tip": "7:00 PM",
+      "tip_iso": "2026-11-18T00:00:00+00:00",
+      "home": "Butler",
+      "away": "Western Carolina",
+      "home_raw": "Butler Bulldogs",
+      "away_raw": "Western Carolina Catamounts",
+      "home_rank": 98,
+      "away_rank": 188,
+      "home_conf": "BE",
+      "away_conf": "SC",
+      "neutral": false,
+      "book_spread": -11.5,
+      "books": {
+        "ESPN": -11.5,
+        "FD": -11.5,
+        "BR": -11.5,
+        "DK": -11.5,
+        "MGM": -11.5
+      },
+      "proj_spread": -11.7,
+      "proj_score": "Western Carolina 73, Butler 85",
+      "poss": 72.6,
+      "diff": 0.2,
+      "pick": "Butler",
+      "best_line": {
+        "point": -11.5,
+        "price": -115,
+        "book": "ESPN"
+      },
+      "kp_home_wp": 0.816,
+      "mkt_home_wp": 0.847,
+      "model_home_wp": 0.832,
+      "ml_min_edge": 0.03,
+      "neutral_src": null,
+      "home_luck": -0.14,
+      "away_luck": -0.068,
+      "proj_total": 157.5,
+      "proj_home_pts": 84.6,
+      "proj_away_pts": 72.9,
+      "imp_home": 86.0,
+      "imp_away": 74.5,
+      "book_total": 160.5,
+      "totals_books": {
+        "ESPN": 160.5,
+        "FD": 160.5,
+        "BR": 160.5,
+        "DK": 160.5,
+        "MGM": 160.5
+      },
+      "tot_diff": -3.0,
+      "ou_pick": "Under",
+      "ou_best": {
+        "point": 160.5,
+        "price": -110,
+        "book": "ESPN"
+      },
+      "ml_home": -770,
+      "ml_away": 525,
+      "ml_edge": -0.016
+    },
+    {
+      "id": "988091cc2c64949c28e2aa6a677ef63f",
+      "tip": "7:00 PM",
+      "tip_iso": "2026-11-18T00:00:00+00:00",
+      "home": "Troy",
+      "away": "CSUN",
+      "home_raw": "Troy Trojans",
+      "away_raw": "CSU Northridge Matadors",
+      "home_rank": 197,
+      "away_rank": 161,
+      "home_conf": "SB",
+      "away_conf": "BW",
+      "neutral": false,
+      "book_spread": -1.5,
+      "books": {
+        "ESPN": -1.5,
+        "FD": -1.5,
+        "DK": -1.5,
+        "MGM": -1.5,
+        "BR": -1.5
+      },
+      "proj_spread": -1.3,
+      "proj_score": "CSUN 74, Troy 75",
+      "poss": 71.9,
+      "diff": -0.2,
+      "pick": "CSUN",
+      "best_line": {
+        "point": 1.5,
+        "price": -105,
+        "book": "ESPN"
+      },
+      "kp_home_wp": 0.54,
+      "mkt_home_wp": 0.537,
+      "model_home_wp": 0.539,
+      "ml_min_edge": 0.03,
+      "neutral_src": null,
+      "home_luck": 0.088,
+      "away_luck": -0.0,
+      "proj_total": 149.5,
+      "proj_home_pts": 75.4,
+      "proj_away_pts": 74.1,
+      "imp_home": 76.5,
+      "imp_away": 75.0,
+      "book_total": 151.5,
+      "totals_books": {
+        "ESPN": 151.5,
+        "FD": 151.5,
+        "DK": 151.5,
+        "MGM": 151.5,
+        "BR": 151.5
+      },
+      "tot_diff": -2.0,
+      "ou_pick": "Under",
+      "ou_best": {
+        "point": 151.5,
+        "price": -110,
+        "book": "ESPN"
+      },
+      "ml_home": -130,
+      "ml_away": 105,
+      "ml_edge": -0.001
+    },
+    {
+      "id": "bbe54785b59f4fe1e6949ea309e9a554",
+      "tip": "7:00 PM",
+      "tip_iso": "2026-11-18T00:00:00+00:00",
+      "home": "West Florida",
+      "away": "Green Bay",
+      "home_raw": "West Florida Argonauts",
+      "away_raw": "Green Bay Phoenix",
+      "home_rank": 346,
+      "away_rank": 206,
+      "home_conf": "ASun",
+      "away_conf": "Horz",
+      "neutral": false,
+      "book_spread": 5.5,
+      "books": {
+        "ESPN": 5.5,
+        "DK": 5.5,
+        "BR": 5.5,
+        "FD": 5.5,
+        "MGM": 5.5
+      },
+      "proj_spread": 5.7,
+      "proj_score": "Green Bay 76, West Florida 70",
+      "poss": 67.1,
+      "diff": -0.2,
+      "pick": "Green Bay",
+      "best_line": {
+        "point": -5.5,
+        "price": -110,
+        "book": "ESPN"
+      },
+      "kp_home_wp": 0.33,
+      "mkt_home_wp": 0.319,
+      "model_home_wp": 0.325,
+      "ml_min_edge": 0.03,
+      "neutral_src": null,
+      "home_luck": -0.143,
+      "away_luck": 0.026,
+      "proj_total": 146.5,
+      "proj_home_pts": 70.4,
+      "proj_away_pts": 76.1,
+      "imp_home": 70.0,
+      "imp_away": 75.5,
+      "book_total": 145.5,
+      "totals_books": {
+        "ESPN": 145.5,
+        "DK": 145.5,
+        "BR": 146.5,
+        "FD": 145.5,
+        "MGM": 145.5
+      },
+      "tot_diff": 1.0,
+      "ou_pick": "Over",
+      "ou_best": {
+        "point": 145.5,
+        "price": -110,
+        "book": "ESPN"
+      },
+      "ml_home": 198,
+      "ml_away": -240,
+      "ml_edge": -0.005
+    },
+    {
+      "id": "b7ec520482df7b2c5286ab241222384d",
+      "tip": "7:00 PM",
+      "tip_iso": "2026-11-18T00:00:00+00:00",
+      "home": "South Florida",
+      "away": "Tennessee St.",
+      "home_raw": "South Florida Bulls",
+      "away_raw": "Tennessee St Tigers",
+      "home_rank": 99,
+      "away_rank": 196,
+      "home_conf": "Amer",
+      "away_conf": "OVC",
+      "neutral": false,
+      "book_spread": -11.5,
+      "books": {
+        "ESPN": -11.5,
+        "DK": -11.5,
+        "BR": -11.5,
+        "MGM": -11.5,
+        "FD": -11.5
+      },
+      "proj_spread": -11.7,
+      "proj_score": "Tennessee St. 75, South Florida 87",
+      "poss": 74.9,
+      "diff": 0.2,
+      "pick": "South Florida",
+      "best_line": {
+        "point": -11.5,
+        "price": -110,
+        "book": "ESPN"
+      },
+      "kp_home_wp": 0.816,
+      "mkt_home_wp": 0.846,
+      "model_home_wp": 0.831,
+      "ml_min_edge": 0.03,
+      "neutral_src": null,
+      "home_luck": -0.221,
+      "away_luck": -0.152,
+      "proj_total": 161.5,
+      "proj_home_pts": 86.6,
+      "proj_away_pts": 74.9,
+      "imp_home": 88.5,
+      "imp_away": 77.0,
+      "book_total": 165.5,
+      "totals_books": {
+        "ESPN": 166.5,
+        "DK": 165.5,
+        "BR": 165.5,
+        "MGM": 165.5,
+        "FD": 165.5
+      },
+      "tot_diff": -4.0,
+      "ou_pick": "Under",
+      "ou_best": {
+        "point": 166.5,
+        "price": -115,
+        "book": "ESPN"
+      },
+      "ml_home": -750,
+      "ml_away": 525,
+      "ml_edge": -0.015
+    },
+    {
+      "id": "f1b87f5055c345501b45a893f6866c00",
+      "tip": "8:00 PM",
+      "tip_iso": "2026-11-18T01:00:00+00:00",
+      "home": "Northern Iowa",
+      "away": "Lindenwood",
+      "home_raw": "Northern Iowa Panthers",
+      "away_raw": "Lindenwood Lions",
+      "home_rank": 165,
+      "away_rank": 319,
+      "home_conf": "MVC",
+      "away_conf": "OVC",
+      "neutral": false,
+      "book_spread": -12.5,
+      "books": {
+        "ESPN": -12.5,
+        "DK": -12.5,
+        "MGM": -12.5,
+        "BR": -12.5,
+        "FD": -12.5
+      },
+      "proj_spread": -12.6,
+      "proj_score": "Lindenwood 70, Northern Iowa 83",
+      "poss": 71.9,
+      "diff": 0.1,
+      "pick": "Northern Iowa",
+      "best_line": {
+        "point": -12.5,
+        "price": -115,
+        "book": "ESPN"
+      },
+      "kp_home_wp": 0.835,
+      "mkt_home_wp": 0.869,
+      "model_home_wp": 0.852,
+      "ml_min_edge": 0.03,
+      "neutral_src": null,
+      "home_luck": -0.066,
+      "away_luck": -0.023,
+      "proj_total": 153.5,
+      "proj_home_pts": 83.1,
+      "proj_away_pts": 70.4,
+      "imp_home": 83.0,
+      "imp_away": 70.5,
+      "book_total": 153.5,
+      "totals_books": {
+        "ESPN": 153.5,
+        "DK": 153.5,
+        "MGM": 153.5,
+        "BR": 154.5,
+        "FD": 154.5
+      },
+      "tot_diff": 0.0,
+      "ou_pick": "Under",
+      "ou_best": {
+        "point": 154.5,
+        "price": -114,
+        "book": "BR"
+      },
+      "ml_home": -1000,
+      "ml_away": 625,
+      "ml_edge": -0.017
+    },
+    {
+      "id": "350bca9508ce4bee01779286b2a119c4",
+      "tip": "6:00 PM",
+      "tip_iso": "2026-11-17T23:00:00+00:00",
+      "home": "Army",
+      "away": "Marist",
+      "home_raw": "Army Knights",
+      "away_raw": "Marist Red Foxes",
+      "home_rank": 332,
+      "away_rank": 300,
+      "home_conf": "PL",
+      "away_conf": "MC",
+      "neutral": false,
+      "book_spread": -1.5,
+      "books": {
+        "ESPN": -1.5,
+        "FD": -1.5,
+        "BR": -1.5,
+        "DK": -1.5,
+        "MGM": -1.5
+      },
+      "proj_spread": -1.5,
+      "proj_score": "Marist 66, Army 68",
+      "poss": 65.1,
+      "diff": 0.0,
+      "pick": "Marist",
+      "best_line": {
+        "point": 1.5,
+        "price": -105,
+        "book": "ESPN"
+      },
+      "kp_home_wp": 0.547,
+      "mkt_home_wp": 0.53,
+      "model_home_wp": 0.538,
+      "ml_min_edge": 0.03,
+      "neutral_src": null,
+      "home_luck": 0.1,
+      "away_luck": -0.13,
+      "proj_total": 133.6,
+      "proj_home_pts": 67.6,
+      "proj_away_pts": 66.0,
+      "imp_home": 66.5,
+      "imp_away": 65.0,
+      "book_total": 131.5,
+      "totals_books": {
+        "ESPN": 131.5,
+        "FD": 131.5,
+        "BR": 132.5,
+        "DK": 131.5,
+        "MGM": 131.5
+      },
+      "tot_diff": 2.1,
+      "ou_pick": "Over",
+      "ou_best": {
+        "point": 131.5,
+        "price": -110,
+        "book": "ESPN"
+      },
+      "ml_home": -125,
+      "ml_away": 105,
+      "ml_edge": -0.008
+    },
+    {
+      "id": "e6fc3d1d4dfbd6b227ae2a4d1cbf6351",
+      "tip": "10:00 PM",
+      "tip_iso": "2026-11-18T03:00:00+00:00",
+      "home": "Stanford",
+      "away": "UC Irvine",
+      "home_raw": "Stanford Cardinal",
+      "away_raw": "UC Irvine Anteaters",
+      "home_rank": 83,
+      "away_rank": 105,
+      "home_conf": "ACC",
+      "away_conf": "BW",
+      "neutral": false,
+      "book_spread": -6.5,
+      "books": {
+        "FD": -6.5,
+        "DK": -6.5,
+        "ESPN": -6.5,
+        "BR": -6.5,
+        "MGM": -6.5
+      },
+      "proj_spread": -6.5,
+      "proj_score": "UC Irvine 69, Stanford 75",
+      "poss": 70.8,
+      "diff": 0.0,
+      "pick": "UC Irvine",
+      "best_line": {
+        "point": 6.5,
+        "price": -110,
+        "book": "FD"
+      },
+      "kp_home_wp": 0.693,
+      "mkt_home_wp": 0.715,
+      "model_home_wp": 0.704,
+      "ml_min_edge": 0.03,
+      "neutral_src": null,
+      "home_luck": -0.024,
+      "away_luck": 0.0,
+      "proj_total": 143.9,
+      "proj_home_pts": 75.2,
+      "proj_away_pts": 68.7,
+      "imp_home": 75.0,
+      "imp_away": 68.5,
+      "book_total": 143.5,
+      "totals_books": {
+        "FD": 143.5,
+        "DK": 143.5,
+        "ESPN": 143.5,
+        "BR": 144.5,
+        "MGM": 143.5
+      },
+      "tot_diff": 0.4,
+      "ou_pick": "Over",
+      "ou_best": {
+        "point": 143.5,
+        "price": -115,
+        "book": "FD"
+      },
+      "ml_home": -291.5,
+      "ml_away": 235.0,
+      "ml_edge": 0.011
     }
   ],
-  "top5": [],
+  "top5": [
+    {
+      "type": "Team total",
+      "side": "Lamar Under",
+      "line": 80.5,
+      "price": null,
+      "book": "implied",
+      "prob": 0.656,
+      "be": 0.524,
+      "why": "KenPom 71.5 vs. implied 80.5",
+      "team": "Lamar",
+      "lean": "Under",
+      "game": "436fbef33dd351b0ea0e838c6bfe2b96",
+      "matchup": "Lamar @ Nebraska Omaha",
+      "tip": "8:00 PM",
+      "neutral": false,
+      "same_game": true
+    },
+    {
+      "type": "Total",
+      "side": "Under",
+      "line": 159.5,
+      "price": -110,
+      "book": "FD",
+      "prob": 0.652,
+      "be": 0.524,
+      "why": "KenPom total 145.3 vs. 159.5",
+      "game": "436fbef33dd351b0ea0e838c6bfe2b96",
+      "matchup": "Lamar @ Nebraska Omaha",
+      "tip": "8:00 PM",
+      "neutral": false,
+      "same_game": true
+    },
+    {
+      "type": "Spread",
+      "side": "Ball St.",
+      "line": 27.5,
+      "price": -115,
+      "book": "ESPN",
+      "prob": 0.62,
+      "be": 0.535,
+      "why": "KenPom +19.8 vs. line +27.5",
+      "game": "7a85a1ae1355a8d9ca51c417db95f5ff",
+      "matchup": "Ball St. @ Florida St.",
+      "tip": "7:00 PM",
+      "neutral": false,
+      "same_game": false
+    },
+    {
+      "type": "Spread",
+      "side": "Rider",
+      "line": 41.5,
+      "price": -110,
+      "book": "ESPN",
+      "prob": 0.611,
+      "be": 0.524,
+      "why": "KenPom +34.4 vs. line +41.5",
+      "game": "bb8c42e426203795cd7101dc04c32184",
+      "matchup": "Rider @ Miami FL",
+      "tip": "7:00 PM",
+      "neutral": false,
+      "same_game": false
+    },
+    {
+      "type": "Total",
+      "side": "Under",
+      "line": 169.5,
+      "price": -112,
+      "book": "FD",
+      "prob": 0.609,
+      "be": 0.528,
+      "why": "KenPom total 159.9 vs. 169.5",
+      "game": "b047fe0349f684bcc45735751c6b1a81",
+      "matchup": "FIU @ UAB",
+      "tip": "7:30 PM",
+      "neutral": false,
+      "same_game": false
+    }
+  ],
   "unmatched": [],
   "avg_o": 106.2,
-  "avg_t": 70.2,
+  "avg_t": 69.9,
   "track": {
     "started": "2026-11-13",
-    "pending": 7,
+    "pending": 56,
     "no_result": 0,
     "overall": {
-      "n": 165,
-      "proj_mae": 10.35,
-      "book_mae": 10.01,
+      "n": 169,
+      "proj_mae": 10.42,
+      "book_mae": 10.04,
       "proj_closer": 0.479,
-      "proj_win": 0.762,
-      "book_win": 0.752,
+      "proj_win": 0.768,
+      "book_win": 0.757,
       "ats": {
-        "w": 89,
-        "l": 76,
+        "w": 91,
+        "l": 78,
         "p": 0,
-        "pct": 0.539
+        "pct": 0.538
       },
       "ats_value": {
         "w": 12,
@@ -285,26 +3543,26 @@
       },
       "ats_big": {
         "w": 23,
-        "l": 16,
+        "l": 17,
         "p": 0,
-        "pct": 0.59
+        "pct": 0.575
       },
       "ats_big_value": {
         "w": 19,
-        "l": 15,
+        "l": 16,
         "p": 0,
-        "pct": 0.559
+        "pct": 0.543
       },
-      "big_book_bias": -2.3,
+      "big_book_bias": -2.1,
       "tot": {
-        "n": 165,
-        "proj_mae": 13.45,
-        "book_mae": 13.38,
+        "n": 169,
+        "proj_mae": 13.78,
+        "book_mae": 13.69,
         "rec": {
           "w": 96,
-          "l": 69,
+          "l": 73,
           "p": 0,
-          "pct": 0.582
+          "pct": 0.568
         },
         "rec4": {
           "w": 19,
@@ -314,49 +3572,49 @@
         }
       },
       "tt": {
-        "n": 330,
-        "proj_mae": 8.2,
-        "book_mae": 8.04,
+        "n": 338,
+        "proj_mae": 8.33,
+        "book_mae": 8.16,
         "rec": {
-          "w": 168,
-          "l": 158,
+          "w": 170,
+          "l": 164,
           "p": 4,
-          "pct": 0.515
+          "pct": 0.509
         },
         "rec3": {
-          "w": 33,
-          "l": 36,
+          "w": 34,
+          "l": 37,
           "p": 1,
-          "pct": 0.478
+          "pct": 0.479
         },
         "over": {
-          "w": 72,
+          "w": 74,
           "l": 93,
           "p": 2,
-          "pct": 0.436
+          "pct": 0.443
         },
         "under": {
           "w": 96,
-          "l": 65,
+          "l": 71,
           "p": 2,
-          "pct": 0.596
+          "pct": 0.575
         }
       },
       "plays": {
         "rec": {
           "w": 1,
-          "l": 3,
+          "l": 4,
           "p": 0,
-          "pct": 0.25
+          "pct": 0.2
         },
-        "exp": 0.624,
-        "units": -2.17,
+        "exp": 0.627,
+        "units": -3.17,
         "by_type": {
           "Spread": {
             "w": 1,
-            "l": 2,
+            "l": 3,
             "p": 0,
-            "pct": 0.333
+            "pct": 0.25
           },
           "Team total": {
             "w": 0,
@@ -376,17 +3634,17 @@
     "months": [
       {
         "month": "2026-11",
-        "n": 165,
-        "proj_mae": 10.35,
-        "book_mae": 10.01,
+        "n": 169,
+        "proj_mae": 10.42,
+        "book_mae": 10.04,
         "proj_closer": 0.479,
-        "proj_win": 0.762,
-        "book_win": 0.752,
+        "proj_win": 0.768,
+        "book_win": 0.757,
         "ats": {
-          "w": 89,
-          "l": 76,
+          "w": 91,
+          "l": 78,
           "p": 0,
-          "pct": 0.539
+          "pct": 0.538
         },
         "ats_value": {
           "w": 12,
@@ -396,26 +3654,26 @@
         },
         "ats_big": {
           "w": 23,
-          "l": 16,
+          "l": 17,
           "p": 0,
-          "pct": 0.59
+          "pct": 0.575
         },
         "ats_big_value": {
           "w": 19,
-          "l": 15,
+          "l": 16,
           "p": 0,
-          "pct": 0.559
+          "pct": 0.543
         },
-        "big_book_bias": -2.3,
+        "big_book_bias": -2.1,
         "tot": {
-          "n": 165,
-          "proj_mae": 13.45,
-          "book_mae": 13.38,
+          "n": 169,
+          "proj_mae": 13.78,
+          "book_mae": 13.69,
           "rec": {
             "w": 96,
-            "l": 69,
+            "l": 73,
             "p": 0,
-            "pct": 0.582
+            "pct": 0.568
           },
           "rec4": {
             "w": 19,
@@ -425,49 +3683,49 @@
           }
         },
         "tt": {
-          "n": 330,
-          "proj_mae": 8.2,
-          "book_mae": 8.04,
+          "n": 338,
+          "proj_mae": 8.33,
+          "book_mae": 8.16,
           "rec": {
-            "w": 168,
-            "l": 158,
+            "w": 170,
+            "l": 164,
             "p": 4,
-            "pct": 0.515
+            "pct": 0.509
           },
           "rec3": {
-            "w": 33,
-            "l": 36,
+            "w": 34,
+            "l": 37,
             "p": 1,
-            "pct": 0.478
+            "pct": 0.479
           },
           "over": {
-            "w": 72,
+            "w": 74,
             "l": 93,
             "p": 2,
-            "pct": 0.436
+            "pct": 0.443
           },
           "under": {
             "w": 96,
-            "l": 65,
+            "l": 71,
             "p": 2,
-            "pct": 0.596
+            "pct": 0.575
           }
         },
         "plays": {
           "rec": {
             "w": 1,
-            "l": 3,
+            "l": 4,
             "p": 0,
-            "pct": 0.25
+            "pct": 0.2
           },
-          "exp": 0.624,
-          "units": -2.17,
+          "exp": 0.627,
+          "units": -3.17,
           "by_type": {
             "Spread": {
               "w": 1,
-              "l": 2,
+              "l": 3,
               "p": 0,
-              "pct": 0.333
+              "pct": 0.25
             },
             "Team total": {
               "w": 0,
@@ -489,16 +3747,16 @@
       {
         "label": "Under 2",
         "all": {
+          "w": 46,
+          "l": 30,
+          "p": 0,
+          "pct": 0.605
+        },
+        "comp": {
           "w": 44,
           "l": 30,
           "p": 0,
           "pct": 0.595
-        },
-        "comp": {
-          "w": 42,
-          "l": 30,
-          "p": 0,
-          "pct": 0.583
         },
         "big": {
           "w": 2,
@@ -511,15 +3769,15 @@
         "label": "2 to 3",
         "all": {
           "w": 14,
-          "l": 18,
+          "l": 19,
           "p": 0,
-          "pct": 0.438
+          "pct": 0.424
         },
         "comp": {
           "w": 12,
-          "l": 17,
+          "l": 18,
           "p": 0,
-          "pct": 0.414
+          "pct": 0.4
         },
         "big": {
           "w": 2,
@@ -553,9 +3811,9 @@
         "label": "5+",
         "all": {
           "w": 17,
-          "l": 12,
+          "l": 13,
           "p": 0,
-          "pct": 0.586
+          "pct": 0.567
         },
         "comp": {
           "w": 2,
@@ -565,9 +3823,9 @@
         },
         "big": {
           "w": 15,
-          "l": 10,
+          "l": 11,
           "p": 0,
-          "pct": 0.6
+          "pct": 0.577
         }
       }
     ],
@@ -909,40 +4167,6 @@
             "proj": -25.2,
             "margin": -1,
             "line": 30.5
-          }
-        ]
-      },
-      {
-        "team": "Portland St.",
-        "g": 1,
-        "w": 1,
-        "l": 0,
-        "kp_w": 0,
-        "kp_l": 1,
-        "upsets": 1,
-        "upset_losses": 0,
-        "beat": 1,
-        "short": 0,
-        "margin_vs": 24.1,
-        "pts_over": 1,
-        "pts_under": 0,
-        "pts_vs": 17.0,
-        "pts_n": 1,
-        "tot_over": 1,
-        "tot_under": 0,
-        "ats_w": 1,
-        "ats_l": 0,
-        "last": "2026-11-14",
-        "games": [
-          {
-            "date": "2026-11-14",
-            "opp": "San Francisco",
-            "at": "@",
-            "score": "84-68",
-            "won": true,
-            "proj": -8.1,
-            "margin": 16,
-            "line": 10.5
           }
         ]
       },
@@ -1895,40 +5119,6 @@
         ]
       },
       {
-        "team": "Saint Mary's",
-        "g": 1,
-        "w": 1,
-        "l": 0,
-        "kp_w": 1,
-        "kp_l": 0,
-        "upsets": 0,
-        "upset_losses": 0,
-        "beat": 1,
-        "short": 0,
-        "margin_vs": 15.2,
-        "pts_over": 1,
-        "pts_under": 0,
-        "pts_vs": 5.1,
-        "pts_n": 1,
-        "tot_over": 0,
-        "tot_under": 1,
-        "ats_w": 1,
-        "ats_l": 0,
-        "last": "2026-11-13",
-        "games": [
-          {
-            "date": "2026-11-13",
-            "opp": "Illinois Chicago",
-            "at": "vs.",
-            "score": "84-61",
-            "won": true,
-            "proj": 7.8,
-            "margin": 23,
-            "line": -6.5
-          }
-        ]
-      },
-      {
         "team": "Temple",
         "g": 1,
         "w": 1,
@@ -1959,6 +5149,40 @@
             "proj": -2.1,
             "margin": 13,
             "line": 1.5
+          }
+        ]
+      },
+      {
+        "team": "UCLA",
+        "g": 1,
+        "w": 1,
+        "l": 0,
+        "kp_w": 1,
+        "kp_l": 0,
+        "upsets": 0,
+        "upset_losses": 0,
+        "beat": 1,
+        "short": 0,
+        "margin_vs": 14.6,
+        "pts_over": 1,
+        "pts_under": 0,
+        "pts_vs": 20.1,
+        "pts_n": 1,
+        "tot_over": 1,
+        "tot_under": 0,
+        "ats_w": 1,
+        "ats_l": 0,
+        "last": "2026-11-16",
+        "games": [
+          {
+            "date": "2026-11-16",
+            "opp": "Long Beach St.",
+            "at": "vs.",
+            "score": "105-66",
+            "won": true,
+            "proj": 24.4,
+            "margin": 39,
+            "line": -32.5
           }
         ]
       },
@@ -2065,40 +5289,6 @@
         ]
       },
       {
-        "team": "East Texas A&M",
-        "g": 1,
-        "w": 1,
-        "l": 0,
-        "kp_w": 0,
-        "kp_l": 1,
-        "upsets": 1,
-        "upset_losses": 0,
-        "beat": 1,
-        "short": 0,
-        "margin_vs": 13.5,
-        "pts_over": 1,
-        "pts_under": 0,
-        "pts_vs": 23.4,
-        "pts_n": 1,
-        "tot_over": 1,
-        "tot_under": 0,
-        "ats_w": 1,
-        "ats_l": 0,
-        "last": "2026-11-13",
-        "games": [
-          {
-            "date": "2026-11-13",
-            "opp": "Portland",
-            "at": "@",
-            "score": "94-88",
-            "won": true,
-            "proj": -7.5,
-            "margin": 6,
-            "line": 7.5
-          }
-        ]
-      },
-      {
         "team": "Coastal Carolina",
         "g": 1,
         "w": 0,
@@ -2197,6 +5387,50 @@
             "proj": -12.3,
             "margin": 1,
             "line": 12.5
+          }
+        ]
+      },
+      {
+        "team": "Portland St.",
+        "g": 2,
+        "w": 1,
+        "l": 1,
+        "kp_w": 0,
+        "kp_l": 2,
+        "upsets": 1,
+        "upset_losses": 0,
+        "beat": 2,
+        "short": 0,
+        "margin_vs": 12.7,
+        "pts_over": 2,
+        "pts_under": 0,
+        "pts_vs": 14.2,
+        "pts_n": 2,
+        "tot_over": 2,
+        "tot_under": 0,
+        "ats_w": 2,
+        "ats_l": 0,
+        "last": "2026-11-16",
+        "games": [
+          {
+            "date": "2026-11-16",
+            "opp": "Saint Mary's",
+            "at": "@",
+            "score": "78-94",
+            "won": false,
+            "proj": -17.2,
+            "margin": -16,
+            "line": 18.0
+          },
+          {
+            "date": "2026-11-14",
+            "opp": "San Francisco",
+            "at": "@",
+            "score": "84-68",
+            "won": true,
+            "proj": -8.1,
+            "margin": 16,
+            "line": 10.5
           }
         ]
       },
@@ -3333,6 +6567,50 @@
         ]
       },
       {
+        "team": "Texas Southern",
+        "g": 2,
+        "w": 0,
+        "l": 2,
+        "kp_w": 0,
+        "kp_l": 2,
+        "upsets": 0,
+        "upset_losses": 0,
+        "beat": 2,
+        "short": 0,
+        "margin_vs": 7.8,
+        "pts_over": 2,
+        "pts_under": 0,
+        "pts_vs": 17.3,
+        "pts_n": 2,
+        "tot_over": 2,
+        "tot_under": 0,
+        "ats_w": 2,
+        "ats_l": 0,
+        "last": "2026-11-16",
+        "games": [
+          {
+            "date": "2026-11-16",
+            "opp": "UC San Diego",
+            "at": "@",
+            "score": "92-97",
+            "won": false,
+            "proj": -19.2,
+            "margin": -5,
+            "line": 19.5
+          },
+          {
+            "date": "2026-11-13",
+            "opp": "Murray St.",
+            "at": "@",
+            "score": "78-99",
+            "won": false,
+            "proj": -22.5,
+            "margin": -21,
+            "line": 29.5
+          }
+        ]
+      },
+      {
         "team": "SMU",
         "g": 1,
         "w": 1,
@@ -3707,6 +6985,50 @@
         ]
       },
       {
+        "team": "Saint Mary's",
+        "g": 2,
+        "w": 2,
+        "l": 0,
+        "kp_w": 2,
+        "kp_l": 0,
+        "upsets": 0,
+        "upset_losses": 0,
+        "beat": 1,
+        "short": 1,
+        "margin_vs": 7.0,
+        "pts_over": 2,
+        "pts_under": 0,
+        "pts_vs": 7.6,
+        "pts_n": 2,
+        "tot_over": 1,
+        "tot_under": 1,
+        "ats_w": 1,
+        "ats_l": 1,
+        "last": "2026-11-16",
+        "games": [
+          {
+            "date": "2026-11-16",
+            "opp": "Portland St.",
+            "at": "vs.",
+            "score": "94-78",
+            "won": true,
+            "proj": 17.2,
+            "margin": 16,
+            "line": -18.0
+          },
+          {
+            "date": "2026-11-13",
+            "opp": "Illinois Chicago",
+            "at": "vs.",
+            "score": "84-61",
+            "won": true,
+            "proj": 7.8,
+            "margin": 23,
+            "line": -6.5
+          }
+        ]
+      },
+      {
         "team": "New Hampshire",
         "g": 1,
         "w": 0,
@@ -3975,6 +7297,50 @@
             "proj": -23.3,
             "margin": -17,
             "line": 27.5
+          }
+        ]
+      },
+      {
+        "team": "Oregon St.",
+        "g": 2,
+        "w": 2,
+        "l": 0,
+        "kp_w": 2,
+        "kp_l": 0,
+        "upsets": 0,
+        "upset_losses": 0,
+        "beat": 1,
+        "short": 1,
+        "margin_vs": 6.2,
+        "pts_over": 1,
+        "pts_under": 1,
+        "pts_vs": 8.1,
+        "pts_n": 2,
+        "tot_over": 1,
+        "tot_under": 1,
+        "ats_w": 1,
+        "ats_l": 1,
+        "last": "2026-11-16",
+        "games": [
+          {
+            "date": "2026-11-16",
+            "opp": "East Texas A&M",
+            "at": "vs.",
+            "score": "109-71",
+            "won": true,
+            "proj": 13.5,
+            "margin": 38,
+            "line": -15.5
+          },
+          {
+            "date": "2026-11-13",
+            "opp": "Mississippi Valley St.",
+            "at": "vs.",
+            "score": "81-65",
+            "won": true,
+            "proj": 28.0,
+            "margin": 16,
+            "line": -34.5
           }
         ]
       },
@@ -5195,40 +8561,6 @@
             "proj": 10.4,
             "margin": 12,
             "line": -13.5
-          }
-        ]
-      },
-      {
-        "team": "Texas Southern",
-        "g": 1,
-        "w": 0,
-        "l": 1,
-        "kp_w": 0,
-        "kp_l": 1,
-        "upsets": 0,
-        "upset_losses": 0,
-        "beat": 1,
-        "short": 0,
-        "margin_vs": 1.5,
-        "pts_over": 1,
-        "pts_under": 0,
-        "pts_vs": 10.3,
-        "pts_n": 1,
-        "tot_over": 1,
-        "tot_under": 0,
-        "ats_w": 1,
-        "ats_l": 0,
-        "last": "2026-11-13",
-        "games": [
-          {
-            "date": "2026-11-13",
-            "opp": "Murray St.",
-            "at": "@",
-            "score": "78-99",
-            "won": false,
-            "proj": -22.5,
-            "margin": -21,
-            "line": 29.5
           }
         ]
       },
@@ -7359,6 +10691,50 @@
             "proj": 10.4,
             "margin": 5,
             "line": -5.5
+          }
+        ]
+      },
+      {
+        "team": "East Texas A&M",
+        "g": 2,
+        "w": 1,
+        "l": 1,
+        "kp_w": 0,
+        "kp_l": 2,
+        "upsets": 1,
+        "upset_losses": 0,
+        "beat": 1,
+        "short": 1,
+        "margin_vs": -5.5,
+        "pts_over": 2,
+        "pts_under": 0,
+        "pts_vs": 12.6,
+        "pts_n": 2,
+        "tot_over": 2,
+        "tot_under": 0,
+        "ats_w": 1,
+        "ats_l": 1,
+        "last": "2026-11-16",
+        "games": [
+          {
+            "date": "2026-11-16",
+            "opp": "Oregon St.",
+            "at": "@",
+            "score": "71-109",
+            "won": false,
+            "proj": -13.5,
+            "margin": -38,
+            "line": 15.5
+          },
+          {
+            "date": "2026-11-13",
+            "opp": "Portland",
+            "at": "@",
+            "score": "94-88",
+            "won": true,
+            "proj": -7.5,
+            "margin": 6,
+            "line": 7.5
           }
         ]
       },
@@ -9585,40 +12961,6 @@
         ]
       },
       {
-        "team": "Oregon St.",
-        "g": 1,
-        "w": 1,
-        "l": 0,
-        "kp_w": 1,
-        "kp_l": 0,
-        "upsets": 0,
-        "upset_losses": 0,
-        "beat": 0,
-        "short": 1,
-        "margin_vs": -12.0,
-        "pts_over": 0,
-        "pts_under": 1,
-        "pts_vs": -10.0,
-        "pts_n": 1,
-        "tot_over": 0,
-        "tot_under": 1,
-        "ats_w": 0,
-        "ats_l": 1,
-        "last": "2026-11-13",
-        "games": [
-          {
-            "date": "2026-11-13",
-            "opp": "Mississippi Valley St.",
-            "at": "vs.",
-            "score": "81-65",
-            "won": true,
-            "proj": 28.0,
-            "margin": 16,
-            "line": -34.5
-          }
-        ]
-      },
-      {
         "team": "Wisconsin",
         "g": 1,
         "w": 1,
@@ -9931,6 +13273,40 @@
             "proj": -10.6,
             "margin": -4,
             "line": 15.5
+          }
+        ]
+      },
+      {
+        "team": "Long Beach St.",
+        "g": 1,
+        "w": 0,
+        "l": 1,
+        "kp_w": 0,
+        "kp_l": 1,
+        "upsets": 0,
+        "upset_losses": 0,
+        "beat": 0,
+        "short": 1,
+        "margin_vs": -14.6,
+        "pts_over": 1,
+        "pts_under": 0,
+        "pts_vs": 5.5,
+        "pts_n": 1,
+        "tot_over": 1,
+        "tot_under": 0,
+        "ats_w": 0,
+        "ats_l": 1,
+        "last": "2026-11-16",
+        "games": [
+          {
+            "date": "2026-11-16",
+            "opp": "UCLA",
+            "at": "@",
+            "score": "66-105",
+            "won": false,
+            "proj": -24.4,
+            "margin": -39,
+            "line": 32.5
           }
         ]
       },
@@ -10727,6 +14103,50 @@
         ]
       },
       {
+        "team": "UC San Diego",
+        "g": 2,
+        "w": 1,
+        "l": 1,
+        "kp_w": 1,
+        "kp_l": 1,
+        "upsets": 0,
+        "upset_losses": 0,
+        "beat": 0,
+        "short": 2,
+        "margin_vs": -21.4,
+        "pts_over": 2,
+        "pts_under": 0,
+        "pts_vs": 10.4,
+        "pts_n": 2,
+        "tot_over": 2,
+        "tot_under": 0,
+        "ats_w": 0,
+        "ats_l": 2,
+        "last": "2026-11-16",
+        "games": [
+          {
+            "date": "2026-11-16",
+            "opp": "Texas Southern",
+            "at": "vs.",
+            "score": "97-92",
+            "won": true,
+            "proj": 19.2,
+            "margin": 5,
+            "line": -19.5
+          },
+          {
+            "date": "2026-11-13",
+            "opp": "Utah St.",
+            "at": "@",
+            "score": "82-120",
+            "won": false,
+            "proj": -9.4,
+            "margin": -38,
+            "line": 12.5
+          }
+        ]
+      },
+      {
         "team": "Southern Utah",
         "g": 1,
         "w": 0,
@@ -11085,43 +14505,89 @@
             "line": 21.5
           }
         ]
-      },
-      {
-        "team": "UC San Diego",
-        "g": 1,
-        "w": 0,
-        "l": 1,
-        "kp_w": 0,
-        "kp_l": 1,
-        "upsets": 0,
-        "upset_losses": 0,
-        "beat": 0,
-        "short": 1,
-        "margin_vs": -28.6,
-        "pts_over": 1,
-        "pts_under": 0,
-        "pts_vs": 10.6,
-        "pts_n": 1,
-        "tot_over": 1,
-        "tot_under": 0,
-        "ats_w": 0,
-        "ats_l": 1,
-        "last": "2026-11-13",
-        "games": [
-          {
-            "date": "2026-11-13",
-            "opp": "Utah St.",
-            "at": "@",
-            "score": "82-120",
-            "won": false,
-            "proj": -9.4,
-            "margin": -38,
-            "line": 12.5
-          }
-        ]
       }
     ],
     "recent": [
+      {
+        "date": "2026-11-16",
+        "tip": "10:00 PM",
+        "away": "Long Beach St.",
+        "home": "UCLA",
+        "away_score": 66,
+        "home_score": 105,
+        "book_spread": -32.5,
+        "proj_spread": -24.4,
+        "pick": "Long Beach St.",
+        "ats": "L",
+        "proj_err": 14.600000000000001,
+        "book_err": 6.5,
+        "gap": 8.1,
+        "big": true,
+        "book_total": 145.5,
+        "ou_pick": "Under",
+        "tot_res": "L",
+        "tot_actual": 171
+      },
+      {
+        "date": "2026-11-16",
+        "tip": "10:00 PM",
+        "away": "Texas Southern",
+        "home": "UC San Diego",
+        "away_score": 92,
+        "home_score": 97,
+        "book_spread": -19.5,
+        "proj_spread": -19.2,
+        "pick": "Texas Southern",
+        "ats": "W",
+        "proj_err": 14.2,
+        "book_err": 14.5,
+        "gap": 0.3,
+        "big": false,
+        "book_total": 156.5,
+        "ou_pick": "Under",
+        "tot_res": "L",
+        "tot_actual": 189
+      },
+      {
+        "date": "2026-11-16",
+        "tip": "10:00 PM",
+        "away": "Portland St.",
+        "home": "Saint Mary's",
+        "away_score": 78,
+        "home_score": 94,
+        "book_spread": -18.0,
+        "proj_spread": -17.2,
+        "pick": "Portland St.",
+        "ats": "W",
+        "proj_err": 1.1999999999999993,
+        "book_err": 2.0,
+        "gap": 0.8,
+        "big": false,
+        "book_total": 150.5,
+        "ou_pick": "Under",
+        "tot_res": "L",
+        "tot_actual": 172
+      },
+      {
+        "date": "2026-11-16",
+        "tip": "9:30 PM",
+        "away": "East Texas A&M",
+        "home": "Oregon St.",
+        "away_score": 71,
+        "home_score": 109,
+        "book_spread": -15.5,
+        "proj_spread": -13.5,
+        "pick": "East Texas A&M",
+        "ats": "L",
+        "proj_err": 24.5,
+        "book_err": 22.5,
+        "gap": 2.0,
+        "big": false,
+        "book_total": 154.5,
+        "ou_pick": "Under",
+        "tot_res": "L",
+        "tot_actual": 180
+      },
       {
         "date": "2026-11-16",
         "tip": "8:30 PM",
@@ -12287,90 +15753,6 @@
         "ou_pick": "Over",
         "tot_res": "W",
         "tot_actual": 151
-      },
-      {
-        "date": "2026-11-14",
-        "tip": "8:30 PM",
-        "away": "Furman",
-        "home": "Belmont",
-        "away_score": 62,
-        "home_score": 72,
-        "book_spread": -2.5,
-        "proj_spread": -0.8,
-        "pick": "Furman",
-        "ats": "L",
-        "proj_err": 9.2,
-        "book_err": 7.5,
-        "gap": 1.7,
-        "big": false,
-        "book_total": 155.5,
-        "ou_pick": "Under",
-        "tot_res": "W",
-        "tot_actual": 134,
-        "ml_won": false,
-        "ml_price": 124
-      },
-      {
-        "date": "2026-11-14",
-        "tip": "8:10 PM",
-        "away": "Northwestern St.",
-        "home": "Little Rock",
-        "away_score": 83,
-        "home_score": 84,
-        "book_spread": -8.5,
-        "proj_spread": -8.2,
-        "pick": "Northwestern St.",
-        "ats": "W",
-        "proj_err": 7.199999999999999,
-        "book_err": 7.5,
-        "gap": 0.3,
-        "big": false,
-        "book_total": 143.5,
-        "ou_pick": "Over",
-        "tot_res": "W",
-        "tot_actual": 167
-      },
-      {
-        "date": "2026-11-14",
-        "tip": "8:00 PM",
-        "away": "Louisiana Monroe",
-        "home": "Grand Canyon",
-        "away_score": 52,
-        "home_score": 88,
-        "book_spread": -31.5,
-        "proj_spread": -27.4,
-        "pick": "Louisiana Monroe",
-        "ats": "L",
-        "proj_err": 8.600000000000001,
-        "book_err": 4.5,
-        "gap": 4.1,
-        "big": true,
-        "book_total": 162.5,
-        "ou_pick": "Over",
-        "tot_res": "L",
-        "tot_actual": 140
-      },
-      {
-        "date": "2026-11-14",
-        "tip": "8:00 PM",
-        "away": "UC Davis",
-        "home": "Sacramento St.",
-        "away_score": 75,
-        "home_score": 56,
-        "book_spread": -2.5,
-        "proj_spread": -5.3,
-        "pick": "Sacramento St.",
-        "ats": "L",
-        "proj_err": 24.3,
-        "book_err": 21.5,
-        "gap": 2.8,
-        "big": false,
-        "book_total": 161.5,
-        "ou_pick": "Under",
-        "tot_res": "W",
-        "tot_actual": 131,
-        "ml_won": false,
-        "ml_price": -155
       }
     ]
   },
@@ -12380,14 +15762,14 @@
       "luck": 0.06,
       "record": "4-0",
       "conf": "SEC",
-      "adj_em": 34.08
+      "adj_em": 33.97
     },
     "Duke": {
       "rank": 2,
       "luck": -0.135,
       "record": "3-1",
       "conf": "ACC",
-      "adj_em": 33.57
+      "adj_em": 33.58
     },
     "Houston": {
       "rank": 3,
@@ -12401,7 +15783,7 @@
       "luck": 0.011,
       "record": "3-0",
       "conf": "B12",
-      "adj_em": 32.07
+      "adj_em": 32.08
     },
     "Michigan St.": {
       "rank": 5,
@@ -12422,14 +15804,14 @@
       "luck": 0.003,
       "record": "4-0",
       "conf": "SEC",
-      "adj_em": 29.52
+      "adj_em": 29.5
     },
     "Connecticut": {
       "rank": 8,
       "luck": 0.066,
       "record": "4-0",
       "conf": "BE",
-      "adj_em": 28.96
+      "adj_em": 28.97
     },
     "Nebraska": {
       "rank": 9,
@@ -12443,42 +15825,42 @@
       "luck": -0.026,
       "record": "3-1",
       "conf": "B12",
-      "adj_em": 27.89
+      "adj_em": 27.99
     },
     "Texas": {
       "rank": 11,
       "luck": 0.065,
       "record": "4-0",
       "conf": "SEC",
-      "adj_em": 27.54
+      "adj_em": 27.53
     },
     "Virginia": {
       "rank": 12,
       "luck": 0.029,
       "record": "5-0",
       "conf": "ACC",
-      "adj_em": 27.26
+      "adj_em": 27.39
+    },
+    "UCLA": {
+      "rank": 13,
+      "luck": 0.045,
+      "record": "4-0",
+      "conf": "B10",
+      "adj_em": 26.66
     },
     "Gonzaga": {
-      "rank": 13,
+      "rank": 14,
       "luck": -0.086,
       "record": "2-1",
       "conf": "P12",
-      "adj_em": 25.99
-    },
-    "UCLA": {
-      "rank": 14,
-      "luck": 0.082,
-      "record": "3-0",
-      "conf": "B10",
-      "adj_em": 25.75
+      "adj_em": 26.01
     },
     "Texas Tech": {
       "rank": 15,
       "luck": 0.079,
       "record": "4-0",
       "conf": "B12",
-      "adj_em": 25.38
+      "adj_em": 25.4
     },
     "Iowa St.": {
       "rank": 16,
@@ -12487,33 +15869,33 @@
       "conf": "B12",
       "adj_em": 25.21
     },
-    "Alabama": {
+    "Texas A&M": {
       "rank": 17,
+      "luck": 0.0,
+      "record": "5-0",
+      "conf": "SEC",
+      "adj_em": 24.97
+    },
+    "Alabama": {
+      "rank": 18,
       "luck": 0.099,
       "record": "4-0",
       "conf": "SEC",
-      "adj_em": 24.64
+      "adj_em": 24.63
     },
     "St. John's": {
-      "rank": 18,
+      "rank": 19,
       "luck": 0.019,
       "record": "4-0",
       "conf": "BE",
-      "adj_em": 24.49
-    },
-    "Texas A&M": {
-      "rank": 19,
-      "luck": 0.0,
-      "record": "4-0",
-      "conf": "SEC",
-      "adj_em": 24.33
+      "adj_em": 24.38
     },
     "Miami FL": {
       "rank": 20,
       "luck": -0.092,
       "record": "3-1",
       "conf": "ACC",
-      "adj_em": 23.72
+      "adj_em": 23.7
     },
     "Michigan": {
       "rank": 21,
@@ -12534,14 +15916,14 @@
       "luck": 0.06,
       "record": "4-0",
       "conf": "SEC",
-      "adj_em": 22.89
+      "adj_em": 22.95
     },
     "BYU": {
       "rank": 24,
       "luck": 0.067,
       "record": "4-0",
       "conf": "B12",
-      "adj_em": 22.06
+      "adj_em": 22.07
     },
     "USC": {
       "rank": 25,
@@ -12555,7 +15937,7 @@
       "luck": -0.15,
       "record": "3-1",
       "conf": "B12",
-      "adj_em": 21.55
+      "adj_em": 21.61
     },
     "Xavier": {
       "rank": 27,
@@ -12564,19 +15946,19 @@
       "conf": "BE",
       "adj_em": 21.49
     },
-    "Mississippi": {
-      "rank": 28,
-      "luck": 0.0,
-      "record": "3-0",
-      "conf": "SEC",
-      "adj_em": 21.46
-    },
     "Auburn": {
-      "rank": 29,
+      "rank": 28,
       "luck": -0.083,
       "record": "2-1",
       "conf": "SEC",
-      "adj_em": 21.4
+      "adj_em": 21.39
+    },
+    "Mississippi": {
+      "rank": 29,
+      "luck": 0.0,
+      "record": "3-0",
+      "conf": "SEC",
+      "adj_em": 21.27
     },
     "Baylor": {
       "rank": 30,
@@ -12585,26 +15967,26 @@
       "conf": "B12",
       "adj_em": 21.19
     },
-    "Utah St.": {
+    "Minnesota": {
       "rank": 31,
+      "luck": 0.056,
+      "record": "5-0",
+      "conf": "B10",
+      "adj_em": 21.0
+    },
+    "Utah St.": {
+      "rank": 32,
       "luck": 0.0,
       "record": "4-0",
       "conf": "P12",
-      "adj_em": 21.17
-    },
-    "Minnesota": {
-      "rank": 32,
-      "luck": 0.085,
-      "record": "4-0",
-      "conf": "B10",
-      "adj_em": 20.59
+      "adj_em": 20.95
     },
     "Arkansas": {
       "rank": 33,
       "luck": 0.032,
       "record": "3-1",
       "conf": "SEC",
-      "adj_em": 20.49
+      "adj_em": 20.41
     },
     "Marquette": {
       "rank": 34,
@@ -12618,7 +16000,7 @@
       "luck": 0.001,
       "record": "2-1",
       "conf": "ACC",
-      "adj_em": 20.07
+      "adj_em": 20.08
     },
     "Tennessee": {
       "rank": 36,
@@ -12639,49 +16021,49 @@
       "luck": 0.02,
       "record": "3-0",
       "conf": "B12",
-      "adj_em": 19.52
+      "adj_em": 19.54
     },
     "Ohio St.": {
       "rank": 39,
-      "luck": -0.024,
-      "record": "2-2",
+      "luck": -0.029,
+      "record": "3-2",
       "conf": "B10",
-      "adj_em": 19.4
+      "adj_em": 19.49
     },
-    "Villanova": {
+    "Oklahoma St.": {
       "rank": 40,
-      "luck": -0.154,
+      "luck": -0.04,
       "record": "3-1",
-      "conf": "BE",
-      "adj_em": 19.29
+      "conf": "B12",
+      "adj_em": 19.45
     },
     "Virginia Tech": {
       "rank": 41,
-      "luck": 0.041,
-      "record": "4-0",
+      "luck": 0.029,
+      "record": "5-0",
       "conf": "ACC",
-      "adj_em": 18.76
+      "adj_em": 19.39
+    },
+    "Villanova": {
+      "rank": 42,
+      "luck": -0.154,
+      "record": "3-1",
+      "conf": "BE",
+      "adj_em": 19.28
     },
     "Grand Canyon": {
-      "rank": 42,
+      "rank": 43,
       "luck": 0.006,
       "record": "4-0",
       "conf": "MWC",
-      "adj_em": 18.76
-    },
-    "Oklahoma St.": {
-      "rank": 43,
-      "luck": -0.051,
-      "record": "2-1",
-      "conf": "B12",
-      "adj_em": 18.11
+      "adj_em": 18.86
     },
     "Iowa": {
       "rank": 44,
       "luck": -0.247,
       "record": "2-2",
       "conf": "B10",
-      "adj_em": 18.0
+      "adj_em": 18.1
     },
     "Indiana": {
       "rank": 45,
@@ -12690,159 +16072,159 @@
       "conf": "B10",
       "adj_em": 17.91
     },
-    "Providence": {
+    "Georgia": {
       "rank": 46,
+      "luck": 0.118,
+      "record": "5-0",
+      "conf": "SEC",
+      "adj_em": 17.7
+    },
+    "Providence": {
+      "rank": 47,
       "luck": -0.052,
       "record": "3-1",
       "conf": "BE",
-      "adj_em": 17.38
-    },
-    "DePaul": {
-      "rank": 47,
-      "luck": 0.091,
-      "record": "4-0",
-      "conf": "BE",
-      "adj_em": 17.25
+      "adj_em": 17.37
     },
     "Saint Louis": {
       "rank": 48,
       "luck": 0.003,
       "record": "3-1",
       "conf": "A10",
-      "adj_em": 17.1
+      "adj_em": 17.11
     },
     "Creighton": {
       "rank": 49,
       "luck": 0.019,
       "record": "3-1",
       "conf": "BE",
-      "adj_em": 16.42
+      "adj_em": 16.66
     },
-    "Florida St.": {
+    "DePaul": {
       "rank": 50,
-      "luck": -0.08,
-      "record": "3-1",
-      "conf": "ACC",
-      "adj_em": 16.38
-    },
-    "High Point": {
-      "rank": 51,
-      "luck": 0.006,
-      "record": "5-0",
-      "conf": "BSth",
-      "adj_em": 16.38
+      "luck": 0.091,
+      "record": "4-0",
+      "conf": "BE",
+      "adj_em": 16.64
     },
     "North Carolina": {
-      "rank": 52,
+      "rank": 51,
       "luck": -0.006,
       "record": "3-1",
       "conf": "ACC",
-      "adj_em": 16.34
+      "adj_em": 16.55
+    },
+    "High Point": {
+      "rank": 52,
+      "luck": 0.006,
+      "record": "5-0",
+      "conf": "BSth",
+      "adj_em": 16.39
+    },
+    "Florida St.": {
+      "rank": 53,
+      "luck": -0.08,
+      "record": "3-1",
+      "conf": "ACC",
+      "adj_em": 16.26
+    },
+    "Kentucky": {
+      "rank": 54,
+      "luck": 0.109,
+      "record": "4-1",
+      "conf": "SEC",
+      "adj_em": 16.25
     },
     "Pittsburgh": {
-      "rank": 53,
+      "rank": 55,
       "luck": 0.083,
       "record": "4-0",
       "conf": "ACC",
       "adj_em": 16.04
     },
-    "Kentucky": {
-      "rank": 54,
-      "luck": 0.141,
-      "record": "3-1",
-      "conf": "SEC",
-      "adj_em": 16.03
-    },
     "Wisconsin": {
-      "rank": 55,
+      "rank": 56,
       "luck": 0.179,
       "record": "4-0",
       "conf": "B10",
       "adj_em": 15.97
-    },
-    "Georgia": {
-      "rank": 56,
-      "luck": 0.003,
-      "record": "4-0",
-      "conf": "SEC",
-      "adj_em": 15.89
     },
     "VCU": {
       "rank": 57,
       "luck": -0.113,
       "record": "2-1",
       "conf": "A10",
-      "adj_em": 15.76
+      "adj_em": 15.75
     },
-    "Saint Mary's": {
+    "Maryland": {
       "rank": 58,
-      "luck": -0.064,
-      "record": "3-1",
-      "conf": "WCC",
-      "adj_em": 15.41
+      "luck": -0.208,
+      "record": "2-2",
+      "conf": "B10",
+      "adj_em": 15.65
     },
     "N.C. State": {
       "rank": 59,
       "luck": 0.002,
       "record": "4-0",
       "conf": "ACC",
-      "adj_em": 15.4
+      "adj_em": 15.43
+    },
+    "Saint Mary's": {
+      "rank": 60,
+      "luck": -0.042,
+      "record": "4-1",
+      "conf": "WCC",
+      "adj_em": 15.37
     },
     "Memphis": {
-      "rank": 60,
+      "rank": 61,
       "luck": 0.245,
       "record": "3-1",
       "conf": "Amer",
       "adj_em": 15.22
     },
     "Arizona St.": {
-      "rank": 61,
+      "rank": 62,
       "luck": 0.003,
       "record": "4-0",
       "conf": "B12",
-      "adj_em": 15.16
-    },
-    "Oregon": {
-      "rank": 62,
-      "luck": 0.001,
-      "record": "3-0",
-      "conf": "B10",
-      "adj_em": 15.03
+      "adj_em": 15.15
     },
     "TCU": {
       "rank": 63,
       "luck": 0.106,
       "record": "4-0",
       "conf": "B12",
-      "adj_em": 14.89
+      "adj_em": 14.88
+    },
+    "Oregon": {
+      "rank": 64,
+      "luck": 0.001,
+      "record": "3-0",
+      "conf": "B10",
+      "adj_em": 14.86
     },
     "Boise St.": {
-      "rank": 64,
+      "rank": 65,
       "luck": 0.061,
       "record": "3-1",
       "conf": "P12",
       "adj_em": 14.73
     },
     "New Mexico": {
-      "rank": 65,
+      "rank": 66,
       "luck": -0.134,
       "record": "3-1",
       "conf": "MWC",
-      "adj_em": 14.64
-    },
-    "Maryland": {
-      "rank": 66,
-      "luck": -0.243,
-      "record": "1-2",
-      "conf": "B10",
-      "adj_em": 14.53
+      "adj_em": 14.63
     },
     "SMU": {
       "rank": 67,
       "luck": 0.003,
       "record": "4-0",
       "conf": "ACC",
-      "adj_em": 14.12
+      "adj_em": 14.09
     },
     "Notre Dame": {
       "rank": 68,
@@ -12856,14 +16238,14 @@
       "luck": -0.025,
       "record": "3-1",
       "conf": "SEC",
-      "adj_em": 13.83
+      "adj_em": 13.84
     },
     "San Diego St.": {
       "rank": 70,
       "luck": 0.001,
       "record": "4-0",
       "conf": "P12",
-      "adj_em": 13.44
+      "adj_em": 13.45
     },
     "Santa Clara": {
       "rank": 71,
@@ -12877,315 +16259,315 @@
       "luck": -0.077,
       "record": "3-1",
       "conf": "SEC",
-      "adj_em": 13.13
-    },
-    "Seton Hall": {
-      "rank": 73,
-      "luck": 0.011,
-      "record": "3-1",
-      "conf": "BE",
-      "adj_em": 12.47
+      "adj_em": 12.94
     },
     "Syracuse": {
-      "rank": 74,
+      "rank": 73,
       "luck": -0.169,
       "record": "2-2",
       "conf": "ACC",
-      "adj_em": 12.45
+      "adj_em": 12.44
+    },
+    "Seton Hall": {
+      "rank": 74,
+      "luck": 0.011,
+      "record": "3-1",
+      "conf": "BE",
+      "adj_em": 12.37
     },
     "Rutgers": {
       "rank": 75,
       "luck": 0.0,
       "record": "3-0",
       "conf": "B10",
-      "adj_em": 12.37
-    },
-    "Wichita St.": {
-      "rank": 76,
-      "luck": -0.058,
-      "record": "3-1",
-      "conf": "Amer",
-      "adj_em": 12.03
+      "adj_em": 12.36
     },
     "Georgetown": {
-      "rank": 77,
+      "rank": 76,
       "luck": 0.061,
       "record": "4-0",
       "conf": "BE",
-      "adj_em": 12.01
+      "adj_em": 12.26
+    },
+    "Wichita St.": {
+      "rank": 77,
+      "luck": -0.058,
+      "record": "3-1",
+      "conf": "Amer",
+      "adj_em": 12.06
     },
     "George Washington": {
       "rank": 78,
       "luck": 0.036,
-      "record": "4-0",
+      "record": "5-0",
       "conf": "A10",
-      "adj_em": 11.91
+      "adj_em": 11.96
     },
     "UCF": {
       "rank": 79,
       "luck": 0.063,
       "record": "4-0",
       "conf": "B12",
-      "adj_em": 11.81
+      "adj_em": 11.83
+    },
+    "Clemson": {
+      "rank": 80,
+      "luck": -0.003,
+      "record": "4-1",
+      "conf": "ACC",
+      "adj_em": 11.82
     },
     "UC Santa Barbara": {
-      "rank": 80,
+      "rank": 81,
       "luck": 0.01,
       "record": "4-0",
       "conf": "BW",
       "adj_em": 11.42
     },
     "Wake Forest": {
-      "rank": 81,
+      "rank": 82,
       "luck": 0.057,
       "record": "3-1",
       "conf": "ACC",
       "adj_em": 11.29
     },
     "Stanford": {
-      "rank": 82,
+      "rank": 83,
       "luck": -0.024,
       "record": "3-1",
       "conf": "ACC",
       "adj_em": 11.25
     },
     "Murray St.": {
-      "rank": 83,
+      "rank": 84,
       "luck": 0.0,
       "record": "4-0",
       "conf": "MVC",
-      "adj_em": 10.86
+      "adj_em": 10.92
     },
     "Nevada": {
-      "rank": 84,
+      "rank": 85,
       "luck": -0.105,
       "record": "2-2",
       "conf": "MWC",
       "adj_em": 10.81
     },
-    "Clemson": {
-      "rank": 85,
-      "luck": -0.013,
-      "record": "3-1",
-      "conf": "ACC",
-      "adj_em": 10.78
+    "Oregon St.": {
+      "rank": 86,
+      "luck": 0.022,
+      "record": "5-0",
+      "conf": "P12",
+      "adj_em": 10.35
     },
     "South Carolina": {
-      "rank": 86,
+      "rank": 87,
       "luck": 0.029,
       "record": "4-0",
       "conf": "SEC",
       "adj_em": 10.33
     },
     "Washington": {
-      "rank": 87,
+      "rank": 88,
       "luck": 0.0,
       "record": "2-0",
       "conf": "B10",
-      "adj_em": 10.19
+      "adj_em": 10.2
+    },
+    "Kansas St.": {
+      "rank": 89,
+      "luck": -0.034,
+      "record": "3-1",
+      "conf": "B12",
+      "adj_em": 10.01
     },
     "Texas St.": {
-      "rank": 88,
+      "rank": 90,
       "luck": 0.003,
       "record": "5-0",
       "conf": "P12",
       "adj_em": 9.75
     },
     "Colorado": {
-      "rank": 89,
+      "rank": 91,
       "luck": -0.083,
       "record": "2-2",
       "conf": "B12",
-      "adj_em": 9.32
+      "adj_em": 9.25
     },
     "Penn St.": {
-      "rank": 90,
+      "rank": 92,
       "luck": -0.019,
       "record": "4-1",
       "conf": "B10",
-      "adj_em": 9.14
+      "adj_em": 9.15
     },
     "UNLV": {
-      "rank": 91,
+      "rank": 93,
       "luck": 0.0,
       "record": "3-0",
       "conf": "MWC",
       "adj_em": 9.09
     },
     "Wright St.": {
-      "rank": 92,
+      "rank": 94,
       "luck": 0.01,
       "record": "4-0",
       "conf": "Horz",
-      "adj_em": 8.83
+      "adj_em": 8.82
     },
     "Utah": {
-      "rank": 93,
+      "rank": 95,
       "luck": 0.104,
       "record": "3-0",
       "conf": "B12",
-      "adj_em": 8.61
+      "adj_em": 8.57
     },
     "Boston College": {
-      "rank": 94,
+      "rank": 96,
       "luck": 0.003,
       "record": "4-0",
       "conf": "ACC",
       "adj_em": 8.47
     },
-    "Oregon St.": {
-      "rank": 95,
-      "luck": 0.036,
-      "record": "4-0",
-      "conf": "P12",
-      "adj_em": 8.35
-    },
     "Wyoming": {
-      "rank": 96,
+      "rank": 97,
       "luck": -0.055,
       "record": "3-1",
       "conf": "MWC",
-      "adj_em": 8.32
+      "adj_em": 8.34
     },
     "Butler": {
-      "rank": 97,
+      "rank": 98,
       "luck": -0.14,
       "record": "2-2",
       "conf": "BE",
-      "adj_em": 8.2
-    },
-    "Kansas St.": {
-      "rank": 98,
-      "luck": -0.108,
-      "record": "2-1",
-      "conf": "B12",
-      "adj_em": 7.66
+      "adj_em": 8.18
     },
     "South Florida": {
       "rank": 99,
       "luck": -0.221,
       "record": "2-2",
       "conf": "Amer",
-      "adj_em": 7.66
-    },
-    "UNC Wilmington": {
-      "rank": 100,
-      "luck": 0.171,
-      "record": "4-0",
-      "conf": "CAA",
-      "adj_em": 7.44
-    },
-    "UC San Diego": {
-      "rank": 101,
-      "luck": 0.095,
-      "record": "2-1",
-      "conf": "BW",
-      "adj_em": 7.28
-    },
-    "Northwestern": {
-      "rank": 102,
-      "luck": 0.078,
-      "record": "3-1",
-      "conf": "B10",
-      "adj_em": 7.19
+      "adj_em": 7.6
     },
     "Colorado St.": {
-      "rank": 103,
+      "rank": 100,
       "luck": 0.091,
       "record": "3-1",
       "conf": "P12",
-      "adj_em": 7.17
+      "adj_em": 7.16
+    },
+    "UNC Wilmington": {
+      "rank": 101,
+      "luck": 0.171,
+      "record": "4-0",
+      "conf": "CAA",
+      "adj_em": 6.98
     },
     "Akron": {
-      "rank": 104,
+      "rank": 102,
       "luck": 0.173,
       "record": "3-0",
       "conf": "MAC",
       "adj_em": 6.89
     },
     "McNeese": {
-      "rank": 105,
+      "rank": 103,
       "luck": -0.09,
       "record": "2-1",
       "conf": "Slnd",
-      "adj_em": 6.67
+      "adj_em": 6.65
     },
     "Utah Valley": {
-      "rank": 106,
+      "rank": 104,
       "luck": 0.107,
       "record": "3-0",
       "conf": "BW",
-      "adj_em": 6.25
-    },
-    "Fordham": {
-      "rank": 107,
-      "luck": 0.16,
-      "record": "3-1",
-      "conf": "A10",
-      "adj_em": 6.22
-    },
-    "Richmond": {
-      "rank": 108,
-      "luck": -0.071,
-      "record": "3-1",
-      "conf": "A10",
-      "adj_em": 6.13
+      "adj_em": 6.28
     },
     "UC Irvine": {
-      "rank": 109,
+      "rank": 105,
       "luck": 0.0,
       "record": "3-0",
       "conf": "BW",
       "adj_em": 6.07
     },
+    "Fordham": {
+      "rank": 106,
+      "luck": 0.16,
+      "record": "3-1",
+      "conf": "A10",
+      "adj_em": 6.01
+    },
     "Charleston": {
-      "rank": 110,
+      "rank": 107,
       "luck": 0.042,
       "record": "4-0",
       "conf": "CAA",
       "adj_em": 5.81
     },
+    "George Mason": {
+      "rank": 108,
+      "luck": -0.109,
+      "record": "3-1",
+      "conf": "A10",
+      "adj_em": 5.8
+    },
     "California": {
-      "rank": 111,
+      "rank": 109,
       "luck": 0.069,
       "record": "3-2",
       "conf": "ACC",
       "adj_em": 5.73
     },
     "Davidson": {
-      "rank": 112,
+      "rank": 110,
       "luck": -0.06,
       "record": "3-1",
       "conf": "A10",
       "adj_em": 5.73
     },
-    "George Mason": {
-      "rank": 113,
-      "luck": -0.109,
-      "record": "3-1",
+    "Richmond": {
+      "rank": 111,
+      "luck": -0.092,
+      "record": "3-2",
       "conf": "A10",
-      "adj_em": 5.71
+      "adj_em": 5.69
+    },
+    "UC San Diego": {
+      "rank": 112,
+      "luck": 0.231,
+      "record": "3-1",
+      "conf": "BW",
+      "adj_em": 5.56
     },
     "Montana St.": {
-      "rank": 114,
+      "rank": 113,
       "luck": -0.079,
       "record": "2-2",
       "conf": "BSky",
-      "adj_em": 5.35
-    },
-    "Tulsa": {
-      "rank": 115,
-      "luck": 0.023,
-      "record": "3-0",
-      "conf": "Amer",
-      "adj_em": 5.28
+      "adj_em": 5.3
     },
     "Illinois Chicago": {
-      "rank": 116,
+      "rank": 114,
       "luck": 0.115,
       "record": "3-1",
       "conf": "MVC",
       "adj_em": 5.07
+    },
+    "Georgia Tech": {
+      "rank": 115,
+      "luck": 0.068,
+      "record": "4-0",
+      "conf": "ACC",
+      "adj_em": 5.07
+    },
+    "Tulsa": {
+      "rank": 116,
+      "luck": 0.105,
+      "record": "4-0",
+      "conf": "Amer",
+      "adj_em": 5.0
     },
     "North Texas": {
       "rank": 117,
@@ -13199,119 +16581,119 @@
       "luck": 0.095,
       "record": "5-0",
       "conf": "A10",
-      "adj_em": 4.94
-    },
-    "Georgia Tech": {
-      "rank": 119,
-      "luck": 0.068,
-      "record": "4-0",
-      "conf": "ACC",
-      "adj_em": 4.68
+      "adj_em": 4.93
     },
     "Loyola Chicago": {
-      "rank": 120,
+      "rank": 119,
       "luck": -0.027,
       "record": "3-1",
       "conf": "A10",
-      "adj_em": 4.46
+      "adj_em": 4.34
     },
     "Miami OH": {
-      "rank": 121,
+      "rank": 120,
       "luck": 0.0,
       "record": "3-0",
       "conf": "MAC",
       "adj_em": 4.13
     },
     "Pacific": {
-      "rank": 122,
+      "rank": 121,
       "luck": -0.125,
       "record": "3-1",
       "conf": "WCC",
-      "adj_em": 4.08
+      "adj_em": 4.01
     },
     "Illinois St.": {
-      "rank": 123,
+      "rank": 122,
       "luck": -0.199,
       "record": "1-3",
       "conf": "MVC",
       "adj_em": 3.97
+    },
+    "Western Kentucky": {
+      "rank": 123,
+      "luck": -0.327,
+      "record": "3-2",
+      "conf": "CUSA",
+      "adj_em": 3.71
     },
     "Dayton": {
       "rank": 124,
       "luck": -0.228,
       "record": "1-3",
       "conf": "A10",
-      "adj_em": 3.57
-    },
-    "Western Kentucky": {
-      "rank": 125,
-      "luck": -0.22,
-      "record": "3-1",
-      "conf": "CUSA",
-      "adj_em": 3.44
+      "adj_em": 3.56
     },
     "Saint Joseph's": {
-      "rank": 126,
+      "rank": 125,
       "luck": 0.011,
       "record": "4-0",
       "conf": "A10",
       "adj_em": 3.42
     },
     "Valparaiso": {
-      "rank": 127,
+      "rank": 126,
       "luck": 0.074,
-      "record": "2-1",
+      "record": "3-1",
       "conf": "MVC",
-      "adj_em": 3.09
+      "adj_em": 3.1
     },
     "Charlotte": {
-      "rank": 128,
+      "rank": 127,
       "luck": -0.063,
       "record": "2-2",
       "conf": "Amer",
-      "adj_em": 2.85
+      "adj_em": 2.84
+    },
+    "Northwestern": {
+      "rank": 128,
+      "luck": 0.048,
+      "record": "3-2",
+      "conf": "B10",
+      "adj_em": 2.61
     },
     "Washington St.": {
       "rank": 129,
       "luck": -0.1,
       "record": "1-3",
       "conf": "P12",
-      "adj_em": 2.56
+      "adj_em": 2.55
     },
     "Duquesne": {
       "rank": 130,
       "luck": 0.132,
       "record": "4-0",
       "conf": "A10",
-      "adj_em": 2.26
+      "adj_em": 2.22
     },
     "Towson": {
       "rank": 131,
       "luck": -0.071,
       "record": "3-2",
       "conf": "CAA",
-      "adj_em": 1.84
+      "adj_em": 1.89
+    },
+    "South Dakota St.": {
+      "rank": 132,
+      "luck": 0.129,
+      "record": "5-0",
+      "conf": "Sum",
+      "adj_em": 1.65
     },
     "St. Bonaventure": {
-      "rank": 132,
+      "rank": 133,
       "luck": -0.09,
       "record": "3-1",
       "conf": "A10",
-      "adj_em": 1.62
+      "adj_em": 1.63
     },
     "Toledo": {
-      "rank": 133,
+      "rank": 134,
       "luck": -0.001,
       "record": "2-3",
       "conf": "MAC",
       "adj_em": 1.45
-    },
-    "South Dakota St.": {
-      "rank": 134,
-      "luck": 0.129,
-      "record": "4-0",
-      "conf": "Sum",
-      "adj_em": 1.38
     },
     "Ohio": {
       "rank": 135,
@@ -13332,19 +16714,19 @@
       "luck": -0.004,
       "record": "4-1",
       "conf": "MAC",
-      "adj_em": 1.15
+      "adj_em": 1.16
     },
     "Florida Atlantic": {
       "rank": 138,
       "luck": 0.22,
       "record": "3-1",
       "conf": "Amer",
-      "adj_em": 1.11
+      "adj_em": 1.02
     },
     "Penn": {
       "rank": 139,
       "luck": -0.085,
-      "record": "1-3",
+      "record": "2-3",
       "conf": "Ivy",
       "adj_em": 0.94
     },
@@ -13360,63 +16742,63 @@
       "luck": -0.019,
       "record": "2-2",
       "conf": "SB",
-      "adj_em": 0.5
-    },
-    "UAB": {
-      "rank": 142,
-      "luck": -0.047,
-      "record": "2-2",
-      "conf": "Amer",
-      "adj_em": 0.35
+      "adj_em": 0.52
     },
     "New Mexico St.": {
-      "rank": 143,
+      "rank": 142,
       "luck": -0.177,
       "record": "1-3",
       "conf": "CUSA",
-      "adj_em": 0.18
+      "adj_em": 0.37
+    },
+    "UAB": {
+      "rank": 143,
+      "luck": -0.047,
+      "record": "2-2",
+      "conf": "Amer",
+      "adj_em": 0.19
     },
     "Seattle": {
       "rank": 144,
       "luck": 0.002,
       "record": "2-2",
       "conf": "WCC",
-      "adj_em": 0.15
+      "adj_em": 0.16
+    },
+    "Columbia": {
+      "rank": 145,
+      "luck": -0.013,
+      "record": "4-1",
+      "conf": "Ivy",
+      "adj_em": 0.07
     },
     "Temple": {
-      "rank": 145,
+      "rank": 146,
       "luck": 0.052,
       "record": "2-2",
       "conf": "Amer",
-      "adj_em": 0.14
+      "adj_em": 0.06
     },
     "Southern Illinois": {
-      "rank": 146,
+      "rank": 147,
       "luck": -0.056,
       "record": "2-1",
       "conf": "MVC",
-      "adj_em": -0.04
+      "adj_em": -0.14
     },
     "Old Dominion": {
-      "rank": 147,
+      "rank": 148,
       "luck": 0.02,
       "record": "5-0",
       "conf": "SB",
-      "adj_em": -0.21
+      "adj_em": -0.14
     },
     "Loyola Marymount": {
-      "rank": 148,
+      "rank": 149,
       "luck": -0.365,
       "record": "2-3",
       "conf": "WCC",
-      "adj_em": -0.24
-    },
-    "Central Arkansas": {
-      "rank": 149,
-      "luck": -0.105,
-      "record": "2-2",
-      "conf": "UAC",
-      "adj_em": -0.25
+      "adj_em": -0.23
     },
     "East Tennessee St.": {
       "rank": 150,
@@ -13437,28 +16819,28 @@
       "luck": 0.132,
       "record": "3-1",
       "conf": "MWC",
-      "adj_em": -0.49
-    },
-    "Drake": {
-      "rank": 153,
-      "luck": 0.0,
-      "record": "3-0",
-      "conf": "MVC",
-      "adj_em": -0.56
+      "adj_em": -0.51
     },
     "Sam Houston St.": {
-      "rank": 154,
+      "rank": 153,
       "luck": 0.076,
       "record": "2-2",
       "conf": "CUSA",
       "adj_em": -0.67
     },
     "Liberty": {
-      "rank": 155,
+      "rank": 154,
       "luck": 0.073,
       "record": "2-1",
       "conf": "CUSA",
-      "adj_em": -0.71
+      "adj_em": -0.7
+    },
+    "San Diego": {
+      "rank": 155,
+      "luck": -0.004,
+      "record": "3-1",
+      "conf": "WCC",
+      "adj_em": -0.72
     },
     "Tulane": {
       "rank": 156,
@@ -13467,40 +16849,40 @@
       "conf": "Amer",
       "adj_em": -0.81
     },
-    "San Diego": {
+    "Eastern Washington": {
       "rank": 157,
-      "luck": -0.004,
-      "record": "3-1",
-      "conf": "WCC",
+      "luck": -0.055,
+      "record": "1-3",
+      "conf": "BSky",
       "adj_em": -0.88
     },
-    "Hofstra": {
+    "UTEP": {
       "rank": 158,
-      "luck": 0.037,
-      "record": "2-2",
-      "conf": "CAA",
-      "adj_em": -1.02
+      "luck": 0.005,
+      "record": "3-1",
+      "conf": "MWC",
+      "adj_em": -1.01
     },
     "Yale": {
       "rank": 159,
       "luck": -0.006,
       "record": "2-3",
       "conf": "Ivy",
-      "adj_em": -1.03
+      "adj_em": -1.04
     },
-    "Eastern Washington": {
+    "Hofstra": {
       "rank": 160,
-      "luck": -0.055,
-      "record": "1-3",
-      "conf": "BSky",
-      "adj_em": -1.06
+      "luck": 0.037,
+      "record": "2-2",
+      "conf": "CAA",
+      "adj_em": -1.2
     },
-    "Kent St.": {
+    "CSUN": {
       "rank": 161,
-      "luck": -0.005,
+      "luck": -0.0,
       "record": "1-2",
-      "conf": "MAC",
-      "adj_em": -1.15
+      "conf": "BW",
+      "adj_em": -1.3
     },
     "Massachusetts": {
       "rank": 162,
@@ -13516,131 +16898,131 @@
       "conf": "CUSA",
       "adj_em": -1.39
     },
-    "Northern Iowa": {
+    "Central Arkansas": {
       "rank": 164,
+      "luck": -0.094,
+      "record": "2-3",
+      "conf": "UAC",
+      "adj_em": -1.41
+    },
+    "Northern Iowa": {
+      "rank": 165,
       "luck": -0.066,
       "record": "2-3",
       "conf": "MVC",
-      "adj_em": -1.43
-    },
-    "Stephen F. Austin": {
-      "rank": 165,
-      "luck": -0.091,
-      "record": "3-1",
-      "conf": "Slnd",
-      "adj_em": -1.43
+      "adj_em": -1.41
     },
     "Marshall": {
       "rank": 166,
       "luck": -0.304,
       "record": "1-3",
       "conf": "SB",
-      "adj_em": -1.44
+      "adj_em": -1.43
     },
-    "CSUN": {
+    "Stephen F. Austin": {
       "rank": 167,
-      "luck": -0.0,
-      "record": "1-2",
-      "conf": "BW",
-      "adj_em": -1.57
-    },
-    "Howard": {
-      "rank": 168,
-      "luck": 0.045,
-      "record": "3-2",
-      "conf": "MEAC",
-      "adj_em": -1.7
-    },
-    "East Carolina": {
-      "rank": 169,
-      "luck": -0.047,
+      "luck": -0.091,
       "record": "3-1",
-      "conf": "Amer",
-      "adj_em": -1.79
+      "conf": "Slnd",
+      "adj_em": -1.55
     },
     "UC Davis": {
-      "rank": 170,
+      "rank": 168,
       "luck": -0.111,
       "record": "3-1",
       "conf": "MWC",
-      "adj_em": -1.8
+      "adj_em": -1.78
+    },
+    "Howard": {
+      "rank": 169,
+      "luck": 0.045,
+      "record": "3-2",
+      "conf": "MEAC",
+      "adj_em": -1.79
     },
     "Bowling Green": {
-      "rank": 171,
+      "rank": 170,
       "luck": 0.073,
       "record": "3-0",
       "conf": "MAC",
       "adj_em": -1.8
+    },
+    "East Carolina": {
+      "rank": 171,
+      "luck": -0.047,
+      "record": "3-1",
+      "conf": "Amer",
+      "adj_em": -1.83
     },
     "Princeton": {
       "rank": 172,
       "luck": 0.066,
       "record": "3-2",
       "conf": "Ivy",
-      "adj_em": -2.09
+      "adj_em": -2.16
+    },
+    "Drake": {
+      "rank": 173,
+      "luck": -0.061,
+      "record": "3-1",
+      "conf": "MVC",
+      "adj_em": -2.23
+    },
+    "American": {
+      "rank": 174,
+      "luck": 0.168,
+      "record": "2-2",
+      "conf": "PL",
+      "adj_em": -2.48
     },
     "Lipscomb": {
-      "rank": 173,
+      "rank": 175,
       "luck": 0.149,
       "record": "3-2",
       "conf": "ASun",
-      "adj_em": -2.5
+      "adj_em": -2.49
     },
     "Appalachian St.": {
-      "rank": 174,
+      "rank": 176,
       "luck": 0.172,
       "record": "3-1",
       "conf": "SB",
       "adj_em": -2.51
     },
     "Pepperdine": {
-      "rank": 175,
+      "rank": 177,
       "luck": -0.184,
       "record": "2-2",
       "conf": "WCC",
       "adj_em": -2.52
     },
     "Cal Poly": {
-      "rank": 176,
+      "rank": 178,
       "luck": 0.072,
       "record": "2-3",
       "conf": "BW",
-      "adj_em": -2.55
-    },
-    "American": {
-      "rank": 177,
-      "luck": 0.168,
-      "record": "2-2",
-      "conf": "PL",
-      "adj_em": -2.58
+      "adj_em": -2.54
     },
     "FIU": {
-      "rank": 178,
+      "rank": 179,
       "luck": 0.0,
       "record": "3-0",
       "conf": "CUSA",
-      "adj_em": -2.61
+      "adj_em": -2.59
     },
     "Harvard": {
-      "rank": 179,
+      "rank": 180,
       "luck": -0.178,
       "record": "2-3",
       "conf": "Ivy",
-      "adj_em": -2.64
-    },
-    "UTEP": {
-      "rank": 180,
-      "luck": 0.029,
-      "record": "2-1",
-      "conf": "MWC",
-      "adj_em": -2.65
+      "adj_em": -2.63
     },
     "Jacksonville St.": {
       "rank": 181,
       "luck": 0.048,
       "record": "2-2",
       "conf": "CUSA",
-      "adj_em": -2.67
+      "adj_em": -2.69
     },
     "Eastern Michigan": {
       "rank": 182,
@@ -13649,145 +17031,145 @@
       "conf": "MAC",
       "adj_em": -2.77
     },
-    "Fresno St.": {
-      "rank": 183,
-      "luck": 0.228,
-      "record": "3-1",
-      "conf": "P12",
-      "adj_em": -2.79
-    },
     "Middle Tennessee": {
-      "rank": 184,
+      "rank": 183,
       "luck": 0.277,
       "record": "3-1",
       "conf": "CUSA",
       "adj_em": -2.84
     },
-    "Vermont": {
-      "rank": 185,
-      "luck": -0.289,
-      "record": "2-2",
-      "conf": "AE",
-      "adj_em": -3.11
+    "Fresno St.": {
+      "rank": 184,
+      "luck": 0.228,
+      "record": "3-1",
+      "conf": "P12",
+      "adj_em": -2.98
     },
     "William & Mary": {
-      "rank": 186,
+      "rank": 185,
       "luck": -0.131,
       "record": "2-2",
       "conf": "CAA",
-      "adj_em": -3.2
+      "adj_em": -3.21
     },
-    "Portland": {
-      "rank": 187,
-      "luck": -0.15,
-      "record": "3-2",
-      "conf": "WCC",
-      "adj_em": -3.3
+    "Vermont": {
+      "rank": 186,
+      "luck": -0.289,
+      "record": "2-2",
+      "conf": "AE",
+      "adj_em": -3.28
     },
     "South Alabama": {
-      "rank": 188,
+      "rank": 187,
       "luck": -0.017,
       "record": "2-3",
       "conf": "SB",
       "adj_em": -3.36
     },
     "Western Carolina": {
-      "rank": 189,
+      "rank": 188,
       "luck": -0.068,
       "record": "2-2",
       "conf": "SC",
-      "adj_em": -3.38
-    },
-    "San Francisco": {
-      "rank": 190,
-      "luck": 0.151,
-      "record": "3-1",
-      "conf": "WCC",
-      "adj_em": -3.54
+      "adj_em": -3.36
     },
     "Queens": {
-      "rank": 191,
+      "rank": 189,
       "luck": 0.279,
       "record": "3-2",
       "conf": "ASun",
-      "adj_em": -3.57
+      "adj_em": -3.46
+    },
+    "St. Thomas": {
+      "rank": 190,
+      "luck": -0.036,
+      "record": "3-3",
+      "conf": "Sum",
+      "adj_em": -3.47
+    },
+    "Portland": {
+      "rank": 191,
+      "luck": -0.15,
+      "record": "3-2",
+      "conf": "WCC",
+      "adj_em": -3.48
     },
     "Georgia St.": {
       "rank": 192,
       "luck": -0.324,
       "record": "2-3",
       "conf": "SB",
-      "adj_em": -3.6
+      "adj_em": -3.62
     },
-    "Jacksonville": {
+    "San Francisco": {
       "rank": 193,
-      "luck": 0.077,
-      "record": "2-1",
-      "conf": "ASun",
-      "adj_em": -3.67
-    },
-    "UC Riverside": {
-      "rank": 194,
-      "luck": 0.152,
+      "luck": 0.151,
       "record": "3-1",
-      "conf": "BW",
+      "conf": "WCC",
       "adj_em": -3.76
     },
     "Bethune Cookman": {
-      "rank": 195,
+      "rank": 194,
       "luck": -0.0,
       "record": "1-4",
       "conf": "SWAC",
-      "adj_em": -3.79
+      "adj_em": -3.78
+    },
+    "UC Riverside": {
+      "rank": 195,
+      "luck": 0.152,
+      "record": "3-1",
+      "conf": "BW",
+      "adj_em": -3.78
     },
     "Tennessee St.": {
       "rank": 196,
       "luck": -0.152,
       "record": "2-2",
       "conf": "OVC",
-      "adj_em": -3.8
+      "adj_em": -3.79
     },
     "Troy": {
       "rank": 197,
       "luck": 0.088,
       "record": "1-3",
       "conf": "SB",
-      "adj_em": -3.95
+      "adj_em": -3.96
     },
     "Monmouth": {
       "rank": 198,
       "luck": 0.12,
       "record": "1-2",
       "conf": "CAA",
-      "adj_em": -4.03
+      "adj_em": -4.04
     },
-    "Iona": {
+    "Elon": {
       "rank": 199,
-      "luck": -0.023,
-      "record": "2-3",
-      "conf": "MC",
-      "adj_em": -4.18
+      "luck": 0.025,
+      "record": "2-2",
+      "conf": "CAA",
+      "adj_em": -4.07
     },
     "Austin Peay": {
       "rank": 200,
       "luck": -0.184,
       "record": "2-2",
       "conf": "UAC",
-      "adj_em": -4.23
-    },
-    "Texas A&M Corpus Chris": {
-      "rank": 201,
-      "luck": 0.066,
-      "record": "2-2",
-      "conf": "Slnd",
-      "adj_em": -4.31
+      "adj_em": -4.22
     },
     "Chattanooga": {
-      "rank": 202,
+      "rank": 201,
       "luck": -0.042,
       "record": "2-2",
       "conf": "SC",
-      "adj_em": -4.34
+      "adj_em": -4.28
+    },
+    "Texas A&M Corpus Chris": {
+      "rank": 202,
+      "luck": 0.066,
+      "record": "2-2",
+      "conf": "Slnd",
+      "adj_em": -4.32
     },
     "Buffalo": {
       "rank": 203,
@@ -13796,194 +17178,194 @@
       "conf": "MAC",
       "adj_em": -4.38
     },
-    "Mercer": {
+    "Portland St.": {
       "rank": 204,
+      "luck": -0.048,
+      "record": "2-3",
+      "conf": "BSky",
+      "adj_em": -4.39
+    },
+    "Mercer": {
+      "rank": 205,
       "luck": 0.076,
       "record": "2-3",
       "conf": "SC",
-      "adj_em": -4.47
+      "adj_em": -4.42
     },
-    "St. Thomas": {
-      "rank": 205,
-      "luck": -0.084,
-      "record": "2-3",
-      "conf": "Sum",
-      "adj_em": -4.47
-    },
-    "Portland St.": {
+    "Green Bay": {
       "rank": 206,
-      "luck": -0.035,
-      "record": "2-2",
-      "conf": "BSky",
-      "adj_em": -4.51
+      "luck": 0.026,
+      "record": "3-2",
+      "conf": "Horz",
+      "adj_em": -4.48
     },
     "Tennessee Tech": {
       "rank": 207,
       "luck": 0.157,
       "record": "3-2",
       "conf": "SC",
-      "adj_em": -4.55
-    },
-    "Cal St. Fullerton": {
-      "rank": 208,
-      "luck": 0.226,
-      "record": "2-1",
-      "conf": "BW",
-      "adj_em": -4.56
+      "adj_em": -4.51
     },
     "Central Michigan": {
-      "rank": 209,
+      "rank": 208,
       "luck": 0.011,
       "record": "4-0",
       "conf": "MAC",
-      "adj_em": -4.57
+      "adj_em": -4.55
     },
-    "Elon": {
-      "rank": 210,
-      "luck": 0.025,
-      "record": "2-2",
-      "conf": "CAA",
+    "Cal St. Fullerton": {
+      "rank": 209,
+      "luck": 0.226,
+      "record": "2-1",
+      "conf": "BW",
       "adj_em": -4.58
     },
-    "Green Bay": {
-      "rank": 211,
-      "luck": 0.026,
-      "record": "3-2",
-      "conf": "Horz",
-      "adj_em": -4.6
-    },
     "Youngstown St.": {
-      "rank": 212,
+      "rank": 210,
       "luck": 0.17,
       "record": "2-2",
       "conf": "Horz",
-      "adj_em": -4.71
-    },
-    "Columbia": {
-      "rank": 213,
-      "luck": -0.009,
-      "record": "3-1",
-      "conf": "Ivy",
-      "adj_em": -4.79
+      "adj_em": -4.69
     },
     "UT Arlington": {
-      "rank": 214,
+      "rank": 211,
       "luck": 0.128,
       "record": "4-1",
       "conf": "UAC",
-      "adj_em": -4.85
+      "adj_em": -4.88
     },
     "Houston Christian": {
-      "rank": 215,
+      "rank": 212,
       "luck": 0.001,
       "record": "4-0",
       "conf": "Slnd",
-      "adj_em": -4.97
+      "adj_em": -5.02
+    },
+    "Kent St.": {
+      "rank": 213,
+      "luck": -0.0,
+      "record": "1-3",
+      "conf": "MAC",
+      "adj_em": -5.03
     },
     "Sacramento St.": {
-      "rank": 216,
+      "rank": 214,
       "luck": -0.093,
       "record": "1-2",
       "conf": "BW",
-      "adj_em": -5.18
+      "adj_em": -5.17
+    },
+    "Tarleton St.": {
+      "rank": 215,
+      "luck": 0.108,
+      "record": "4-1",
+      "conf": "UAC",
+      "adj_em": -5.2
     },
     "Longwood": {
-      "rank": 217,
+      "rank": 216,
       "luck": 0.009,
       "record": "3-2",
       "conf": "BSth",
-      "adj_em": -5.23
-    },
-    "Long Beach St.": {
-      "rank": 218,
-      "luck": 0.039,
-      "record": "1-2",
-      "conf": "BW",
-      "adj_em": -5.27
+      "adj_em": -5.22
     },
     "Northeastern": {
-      "rank": 219,
+      "rank": 217,
       "luck": 0.096,
       "record": "2-2",
       "conf": "CAA",
-      "adj_em": -5.37
+      "adj_em": -5.41
     },
     "Bradley": {
-      "rank": 220,
+      "rank": 218,
       "luck": 0.248,
       "record": "3-2",
       "conf": "MVC",
-      "adj_em": -5.51
+      "adj_em": -5.5
     },
     "Siena": {
-      "rank": 221,
+      "rank": 219,
       "luck": -0.026,
       "record": "3-1",
       "conf": "MC",
-      "adj_em": -5.62
-    },
-    "Rice": {
-      "rank": 222,
-      "luck": 0.018,
-      "record": "2-2",
-      "conf": "Amer",
       "adj_em": -5.64
     },
+    "Jacksonville": {
+      "rank": 220,
+      "luck": 0.053,
+      "record": "2-2",
+      "conf": "ASun",
+      "adj_em": -5.66
+    },
+    "Iona": {
+      "rank": 221,
+      "luck": -0.071,
+      "record": "2-4",
+      "conf": "MC",
+      "adj_em": -5.7
+    },
     "Arkansas St.": {
-      "rank": 223,
+      "rank": 222,
       "luck": 0.18,
       "record": "2-2",
       "conf": "SB",
-      "adj_em": -5.72
+      "adj_em": -5.71
     },
     "Milwaukee": {
-      "rank": 224,
+      "rank": 223,
       "luck": 0.04,
       "record": "2-3",
       "conf": "Horz",
       "adj_em": -5.75
     },
-    "La Salle": {
-      "rank": 225,
-      "luck": 0.058,
-      "record": "1-3",
-      "conf": "A10",
-      "adj_em": -5.82
+    "Rice": {
+      "rank": 224,
+      "luck": 0.018,
+      "record": "2-2",
+      "conf": "Amer",
+      "adj_em": -5.84
     },
     "Cal St. Bakersfield": {
-      "rank": 226,
+      "rank": 225,
       "luck": 0.015,
       "record": "4-0",
       "conf": "BW",
-      "adj_em": -5.85
+      "adj_em": -5.89
+    },
+    "Long Beach St.": {
+      "rank": 226,
+      "luck": 0.013,
+      "record": "1-3",
+      "conf": "BW",
+      "adj_em": -5.89
+    },
+    "La Salle": {
+      "rank": 227,
+      "luck": 0.058,
+      "record": "1-3",
+      "conf": "A10",
+      "adj_em": -5.94
     },
     "UTSA": {
-      "rank": 227,
+      "rank": 228,
       "luck": 0.054,
       "record": "2-2",
       "conf": "Amer",
       "adj_em": -5.99
     },
-    "East Texas A&M": {
-      "rank": 228,
-      "luck": 0.099,
-      "record": "3-1",
-      "conf": "Slnd",
-      "adj_em": -6.12
-    },
-    "Montana": {
+    "Eastern Kentucky": {
       "rank": 229,
-      "luck": -0.024,
-      "record": "2-2",
-      "conf": "BSky",
-      "adj_em": -6.14
+      "luck": -0.042,
+      "record": "4-1",
+      "conf": "UAC",
+      "adj_em": -6.03
     },
     "Florida Gulf Coast": {
       "rank": 230,
       "luck": -0.087,
       "record": "2-3",
       "conf": "ASun",
-      "adj_em": -6.25
+      "adj_em": -6.09
     },
     "Oakland": {
       "rank": 231,
@@ -14020,12 +17402,12 @@
       "conf": "SC",
       "adj_em": -6.68
     },
-    "Tarleton St.": {
+    "Missouri St.": {
       "rank": 236,
-      "luck": 0.041,
-      "record": "3-1",
-      "conf": "UAC",
-      "adj_em": -6.69
+      "luck": 0.0,
+      "record": "4-0",
+      "conf": "CUSA",
+      "adj_em": -6.71
     },
     "Robert Morris": {
       "rank": 237,
@@ -14034,25 +17416,25 @@
       "conf": "Horz",
       "adj_em": -6.8
     },
-    "Utah Tech": {
-      "rank": 238,
-      "luck": -0.066,
-      "record": "1-3",
-      "conf": "BSky",
-      "adj_em": -6.94
-    },
     "Colgate": {
-      "rank": 239,
+      "rank": 238,
       "luck": -0.131,
       "record": "0-4",
       "conf": "PL",
       "adj_em": -6.95
     },
-    "Stony Brook": {
+    "Utah Tech": {
+      "rank": 239,
+      "luck": -0.066,
+      "record": "1-3",
+      "conf": "BSky",
+      "adj_em": -6.95
+    },
+    "Northern Kentucky": {
       "rank": 240,
-      "luck": -0.0,
-      "record": "1-2",
-      "conf": "CAA",
+      "luck": 0.135,
+      "record": "2-3",
+      "conf": "Horz",
       "adj_em": -7.05
     },
     "Cornell": {
@@ -14069,33 +17451,33 @@
       "conf": "OVC",
       "adj_em": -7.19
     },
-    "Northern Kentucky": {
-      "rank": 243,
-      "luck": 0.135,
-      "record": "2-3",
-      "conf": "Horz",
-      "adj_em": -7.23
-    },
     "Little Rock": {
-      "rank": 244,
+      "rank": 243,
       "luck": 0.053,
       "record": "1-3",
       "conf": "UAC",
-      "adj_em": -7.24
+      "adj_em": -7.28
     },
     "Ball St.": {
-      "rank": 245,
+      "rank": 244,
       "luck": -0.114,
       "record": "1-3",
       "conf": "MAC",
-      "adj_em": -7.35
+      "adj_em": -7.34
     },
     "Denver": {
-      "rank": 246,
+      "rank": 245,
       "luck": -0.151,
-      "record": "0-3",
+      "record": "1-3",
       "conf": "WCC",
       "adj_em": -7.52
+    },
+    "Northern Colorado": {
+      "rank": 246,
+      "luck": 0.0,
+      "record": "2-2",
+      "conf": "BSky",
+      "adj_em": -7.54
     },
     "Southern Miss": {
       "rank": 247,
@@ -14104,523 +17486,523 @@
       "conf": "SB",
       "adj_em": -7.54
     },
-    "Northern Colorado": {
+    "Stony Brook": {
       "rank": 248,
-      "luck": 0.0,
-      "record": "2-2",
-      "conf": "BSky",
-      "adj_em": -7.57
+      "luck": -0.0,
+      "record": "1-2",
+      "conf": "CAA",
+      "adj_em": -7.55
     },
     "Drexel": {
       "rank": 249,
       "luck": 0.167,
       "record": "2-2",
       "conf": "CAA",
-      "adj_em": -7.6
-    },
-    "Kansas City": {
-      "rank": 250,
-      "luck": -0.035,
-      "record": "2-3",
-      "conf": "Sum",
-      "adj_em": -7.62
-    },
-    "Northern Illinois": {
-      "rank": 251,
-      "luck": 0.057,
-      "record": "3-2",
-      "conf": "Horz",
-      "adj_em": -7.65
-    },
-    "Missouri St.": {
-      "rank": 252,
-      "luck": 0.0,
-      "record": "3-0",
-      "conf": "CUSA",
-      "adj_em": -7.68
+      "adj_em": -7.58
     },
     "Louisiana": {
-      "rank": 253,
+      "rank": 250,
       "luck": -0.014,
       "record": "1-2",
       "conf": "SB",
       "adj_em": -7.68
     },
     "North Dakota St.": {
-      "rank": 254,
+      "rank": 251,
       "luck": -0.019,
       "record": "2-4",
       "conf": "Sum",
-      "adj_em": -7.69
+      "adj_em": -7.71
     },
-    "UT Rio Grande Valley": {
-      "rank": 255,
-      "luck": 0.006,
-      "record": "2-2",
+    "Northern Illinois": {
+      "rank": 252,
+      "luck": 0.057,
+      "record": "3-2",
+      "conf": "Horz",
+      "adj_em": -7.72
+    },
+    "East Texas A&M": {
+      "rank": 253,
+      "luck": 0.237,
+      "record": "3-2",
       "conf": "Slnd",
       "adj_em": -7.77
     },
-    "Abilene Christian": {
-      "rank": 256,
-      "luck": 0.079,
-      "record": "1-2",
-      "conf": "UAC",
+    "UT Rio Grande Valley": {
+      "rank": 254,
+      "luck": 0.006,
+      "record": "2-2",
+      "conf": "Slnd",
       "adj_em": -7.79
     },
+    "Presbyterian": {
+      "rank": 255,
+      "luck": -0.068,
+      "record": "0-3",
+      "conf": "BSth",
+      "adj_em": -7.87
+    },
     "Merrimack": {
-      "rank": 257,
+      "rank": 256,
       "luck": -0.029,
       "record": "1-3",
       "conf": "MC",
       "adj_em": -7.93
+    },
+    "Kansas City": {
+      "rank": 257,
+      "luck": -0.035,
+      "record": "2-3",
+      "conf": "Sum",
+      "adj_em": -8.02
     },
     "Northern Arizona": {
       "rank": 258,
       "luck": -0.104,
       "record": "0-4",
       "conf": "BSky",
-      "adj_em": -8.07
-    },
-    "Presbyterian": {
-      "rank": 259,
-      "luck": -0.068,
-      "record": "0-3",
-      "conf": "BSth",
-      "adj_em": -8.14
+      "adj_em": -8.04
     },
     "Hampton": {
-      "rank": 260,
+      "rank": 259,
       "luck": -0.078,
       "record": "1-3",
       "conf": "CAA",
-      "adj_em": -8.14
+      "adj_em": -8.1
     },
     "Georgia Southern": {
-      "rank": 261,
+      "rank": 260,
       "luck": -0.104,
       "record": "1-3",
       "conf": "SB",
-      "adj_em": -8.4
+      "adj_em": -8.36
     },
-    "Louisiana Tech": {
+    "Montana": {
+      "rank": 261,
+      "luck": -0.006,
+      "record": "2-3",
+      "conf": "BSky",
+      "adj_em": -8.44
+    },
+    "Abilene Christian": {
       "rank": 262,
-      "luck": -0.008,
-      "record": "2-2",
-      "conf": "SB",
-      "adj_em": -8.5
+      "luck": 0.022,
+      "record": "1-3",
+      "conf": "UAC",
+      "adj_em": -8.64
     },
-    "Lamar": {
+    "Southeast Missouri": {
       "rank": 263,
-      "luck": 0.0,
-      "record": "2-1",
-      "conf": "Slnd",
-      "adj_em": -8.59
+      "luck": 0.036,
+      "record": "3-2",
+      "conf": "OVC",
+      "adj_em": -8.65
     },
     "Quinnipiac": {
       "rank": 264,
       "luck": 0.039,
       "record": "2-3",
       "conf": "MC",
-      "adj_em": -8.64
+      "adj_em": -8.65
     },
-    "Southeast Missouri": {
+    "Lamar": {
       "rank": 265,
-      "luck": 0.036,
-      "record": "2-2",
-      "conf": "OVC",
-      "adj_em": -8.66
-    },
-    "Boston University": {
-      "rank": 266,
-      "luck": 0.182,
-      "record": "4-1",
-      "conf": "PL",
-      "adj_em": -8.77
+      "luck": 0.0,
+      "record": "2-1",
+      "conf": "Slnd",
+      "adj_em": -8.7
     },
     "Winthrop": {
-      "rank": 267,
+      "rank": 266,
       "luck": -0.014,
       "record": "0-4",
       "conf": "BSth",
       "adj_em": -8.84
     },
     "Idaho": {
-      "rank": 268,
+      "rank": 267,
       "luck": -0.0,
       "record": "2-2",
       "conf": "BSky",
       "adj_em": -8.87
+    },
+    "Louisiana Tech": {
+      "rank": 268,
+      "luck": -0.008,
+      "record": "2-2",
+      "conf": "SB",
+      "adj_em": -8.96
     },
     "Air Force": {
       "rank": 269,
       "luck": 0.164,
       "record": "3-2",
       "conf": "MWC",
-      "adj_em": -9.13
+      "adj_em": -9.15
     },
-    "Southeastern Louisiana": {
+    "Boston University": {
       "rank": 270,
-      "luck": 0.164,
-      "record": "1-2",
-      "conf": "Slnd",
-      "adj_em": -9.26
+      "luck": 0.182,
+      "record": "4-1",
+      "conf": "PL",
+      "adj_em": -9.2
     },
     "Radford": {
       "rank": 271,
       "luck": -0.0,
       "record": "1-3",
       "conf": "BSth",
-      "adj_em": -9.43
+      "adj_em": -9.46
+    },
+    "UNC Greensboro": {
+      "rank": 272,
+      "luck": -0.0,
+      "record": "2-2",
+      "conf": "SC",
+      "adj_em": -9.56
     },
     "Evansville": {
-      "rank": 272,
+      "rank": 273,
       "luck": 0.1,
       "record": "2-2",
       "conf": "MVC",
       "adj_em": -9.56
     },
-    "Brown": {
-      "rank": 273,
-      "luck": -0.198,
-      "record": "1-4",
-      "conf": "Ivy",
-      "adj_em": -9.61
-    },
     "North Alabama": {
       "rank": 274,
       "luck": 0.086,
-      "record": "2-2",
+      "record": "3-2",
       "conf": "UAC",
-      "adj_em": -9.61
+      "adj_em": -9.63
     },
-    "UNC Greensboro": {
+    "Southeastern Louisiana": {
       "rank": 275,
-      "luck": -0.0,
-      "record": "2-2",
-      "conf": "SC",
-      "adj_em": -9.62
+      "luck": 0.146,
+      "record": "1-3",
+      "conf": "Slnd",
+      "adj_em": -9.64
+    },
+    "Brown": {
+      "rank": 276,
+      "luck": -0.198,
+      "record": "1-4",
+      "conf": "Ivy",
+      "adj_em": -9.65
     },
     "UMass Lowell": {
-      "rank": 276,
+      "rank": 277,
       "luck": 0.12,
       "record": "3-1",
       "conf": "AE",
-      "adj_em": -9.75
+      "adj_em": -9.74
     },
     "Lehigh": {
-      "rank": 277,
+      "rank": 278,
       "luck": 0.147,
       "record": "2-2",
       "conf": "PL",
-      "adj_em": -9.89
-    },
-    "LIU": {
-      "rank": 278,
-      "luck": -0.024,
-      "record": "0-5",
-      "conf": "NEC",
-      "adj_em": -9.94
+      "adj_em": -9.87
     },
     "Nebraska Omaha": {
       "rank": 279,
       "luck": 0.103,
       "record": "3-2",
       "conf": "Sum",
-      "adj_em": -9.96
-    },
-    "Fairfield": {
-      "rank": 280,
-      "luck": 0.182,
-      "record": "2-2",
-      "conf": "MC",
-      "adj_em": -10.17
-    },
-    "Eastern Kentucky": {
-      "rank": 281,
-      "luck": 0.0,
-      "record": "3-1",
-      "conf": "UAC",
-      "adj_em": -10.18
+      "adj_em": -9.97
     },
     "Southern Utah": {
-      "rank": 282,
+      "rank": 280,
       "luck": -0.0,
       "record": "3-2",
       "conf": "BSky",
       "adj_em": -10.18
     },
+    "Fairfield": {
+      "rank": 281,
+      "luck": 0.182,
+      "record": "2-2",
+      "conf": "MC",
+      "adj_em": -10.21
+    },
     "Campbell": {
-      "rank": 283,
+      "rank": 282,
       "luck": -0.041,
       "record": "1-3",
       "conf": "CAA",
       "adj_em": -10.26
     },
     "Nicholls": {
-      "rank": 284,
+      "rank": 283,
       "luck": 0.092,
       "record": "2-2",
       "conf": "Slnd",
-      "adj_em": -10.3
+      "adj_em": -10.36
     },
     "Purdue Fort Wayne": {
-      "rank": 285,
+      "rank": 284,
       "luck": -0.045,
       "record": "2-2",
       "conf": "Horz",
       "adj_em": -10.38
     },
     "Navy": {
-      "rank": 286,
+      "rank": 285,
       "luck": 0.383,
       "record": "4-1",
       "conf": "PL",
-      "adj_em": -10.4
+      "adj_em": -10.39
     },
     "LSU New Orleans": {
-      "rank": 287,
+      "rank": 286,
       "luck": 0.0,
       "record": "2-1",
       "conf": "Slnd",
-      "adj_em": -10.56
+      "adj_em": -10.55
     },
     "Charleston Southern": {
-      "rank": 288,
+      "rank": 287,
       "luck": -0.048,
       "record": "2-2",
       "conf": "BSth",
-      "adj_em": -10.62
+      "adj_em": -10.63
     },
     "UNC Asheville": {
-      "rank": 289,
+      "rank": 288,
       "luck": -0.009,
       "record": "2-3",
       "conf": "BSth",
       "adj_em": -10.82
     },
-    "Southern": {
-      "rank": 290,
-      "luck": -0.063,
-      "record": "0-5",
-      "conf": "SWAC",
-      "adj_em": -10.84
-    },
     "Mount St. Mary's": {
-      "rank": 291,
+      "rank": 289,
       "luck": 0.068,
       "record": "1-2",
       "conf": "MC",
-      "adj_em": -10.88
+      "adj_em": -10.83
     },
     "Jackson St.": {
-      "rank": 292,
+      "rank": 290,
       "luck": 0.154,
       "record": "2-3",
       "conf": "SWAC",
       "adj_em": -10.88
     },
-    "Oral Roberts": {
-      "rank": 293,
-      "luck": -0.087,
-      "record": "2-2",
-      "conf": "Sum",
-      "adj_em": -11.01
+    "LIU": {
+      "rank": 291,
+      "luck": -0.024,
+      "record": "0-6",
+      "conf": "NEC",
+      "adj_em": -10.94
+    },
+    "Southern": {
+      "rank": 292,
+      "luck": -0.063,
+      "record": "0-5",
+      "conf": "SWAC",
+      "adj_em": -10.99
     },
     "Alabama St.": {
-      "rank": 294,
+      "rank": 293,
       "luck": -0.008,
       "record": "1-3",
       "conf": "SWAC",
-      "adj_em": -11.12
+      "adj_em": -11.09
+    },
+    "Oral Roberts": {
+      "rank": 294,
+      "luck": -0.087,
+      "record": "2-2",
+      "conf": "Sum",
+      "adj_em": -11.2
     },
     "North Carolina A&T": {
       "rank": 295,
       "luck": -0.023,
       "record": "2-2",
       "conf": "CAA",
-      "adj_em": -11.25
+      "adj_em": -11.26
     },
     "Le Moyne": {
       "rank": 296,
       "luck": 0.07,
       "record": "2-2",
       "conf": "NEC",
-      "adj_em": -11.34
+      "adj_em": -11.32
+    },
+    "UMBC": {
+      "rank": 297,
+      "luck": 0.064,
+      "record": "3-3",
+      "conf": "AE",
+      "adj_em": -11.43
     },
     "SIUE": {
-      "rank": 297,
+      "rank": 298,
       "luck": -0.116,
       "record": "2-3",
       "conf": "OVC",
       "adj_em": -11.47
-    },
-    "South Dakota": {
-      "rank": 298,
-      "luck": -0.034,
-      "record": "2-4",
-      "conf": "Sum",
-      "adj_em": -11.53
     },
     "Wofford": {
       "rank": 299,
       "luck": -0.073,
       "record": "2-3",
       "conf": "SC",
-      "adj_em": -11.55
-    },
-    "Grambling St.": {
-      "rank": 300,
-      "luck": 0.231,
-      "record": "1-1",
-      "conf": "SWAC",
-      "adj_em": -11.68
+      "adj_em": -11.52
     },
     "Marist": {
-      "rank": 301,
+      "rank": 300,
       "luck": -0.13,
       "record": "1-3",
       "conf": "MC",
-      "adj_em": -11.81
+      "adj_em": -11.65
+    },
+    "South Dakota": {
+      "rank": 301,
+      "luck": -0.034,
+      "record": "2-4",
+      "conf": "Sum",
+      "adj_em": -11.67
+    },
+    "Weber St.": {
+      "rank": 302,
+      "luck": -0.066,
+      "record": "1-3",
+      "conf": "BSky",
+      "adj_em": -11.88
     },
     "Stetson": {
-      "rank": 302,
+      "rank": 303,
       "luck": -0.031,
-      "record": "0-4",
+      "record": "1-4",
       "conf": "ASun",
-      "adj_em": -12.0
+      "adj_em": -11.93
     },
     "Northwestern St.": {
-      "rank": 303,
+      "rank": 304,
       "luck": -0.107,
       "record": "1-4",
       "conf": "Slnd",
       "adj_em": -12.03
-    },
-    "Weber St.": {
-      "rank": 304,
-      "luck": -0.066,
-      "record": "1-3",
-      "conf": "BSky",
-      "adj_em": -12.07
     },
     "VMI": {
       "rank": 305,
       "luck": -0.105,
       "record": "3-2",
       "conf": "SC",
-      "adj_em": -12.07
+      "adj_em": -12.05
+    },
+    "Grambling St.": {
+      "rank": 306,
+      "luck": 0.184,
+      "record": "1-2",
+      "conf": "SWAC",
+      "adj_em": -12.1
     },
     "Mercyhurst": {
-      "rank": 306,
+      "rank": 307,
       "luck": -0.036,
       "record": "1-4",
       "conf": "NEC",
       "adj_em": -12.33
     },
-    "Dartmouth": {
-      "rank": 307,
-      "luck": 0.05,
-      "record": "3-2",
-      "conf": "Ivy",
+    "Texas Southern": {
+      "rank": 308,
+      "luck": -0.071,
+      "record": "1-4",
+      "conf": "SWAC",
       "adj_em": -12.7
     },
     "Bellarmine": {
-      "rank": 308,
+      "rank": 309,
       "luck": -0.113,
       "record": "1-4",
       "conf": "ASun",
       "adj_em": -12.72
     },
+    "Dartmouth": {
+      "rank": 310,
+      "luck": 0.05,
+      "record": "3-2",
+      "conf": "Ivy",
+      "adj_em": -12.73
+    },
     "Cleveland St.": {
-      "rank": 309,
+      "rank": 311,
       "luck": 0.239,
       "record": "3-2",
       "conf": "Horz",
       "adj_em": -12.75
     },
-    "UMBC": {
-      "rank": 310,
-      "luck": -0.02,
-      "record": "2-3",
-      "conf": "AE",
-      "adj_em": -12.9
-    },
     "IU Indy": {
-      "rank": 311,
+      "rank": 312,
       "luck": 0.147,
       "record": "3-1",
       "conf": "Horz",
-      "adj_em": -12.95
-    },
-    "The Citadel": {
-      "rank": 312,
-      "luck": 0.217,
-      "record": "3-1",
-      "conf": "SC",
-      "adj_em": -13.06
-    },
-    "Prairie View A&M": {
-      "rank": 313,
-      "luck": -0.064,
-      "record": "2-3",
-      "conf": "SWAC",
-      "adj_em": -13.2
+      "adj_em": -12.94
     },
     "North Florida": {
-      "rank": 314,
+      "rank": 313,
       "luck": 0.023,
       "record": "1-3",
       "conf": "ASun",
-      "adj_em": -13.21
+      "adj_em": -13.3
     },
     "Central Connecticut": {
-      "rank": 315,
+      "rank": 314,
       "luck": 0.25,
       "record": "3-2",
       "conf": "NEC",
-      "adj_em": -13.38
+      "adj_em": -13.39
+    },
+    "Prairie View A&M": {
+      "rank": 315,
+      "luck": -0.027,
+      "record": "2-4",
+      "conf": "SWAC",
+      "adj_em": -13.42
     },
     "Louisiana Monroe": {
       "rank": 316,
       "luck": -0.077,
-      "record": "1-5",
+      "record": "2-5",
       "conf": "SB",
-      "adj_em": -13.79
-    },
-    "Bryant": {
-      "rank": 317,
-      "luck": 0.056,
-      "record": "1-4",
-      "conf": "AE",
-      "adj_em": -13.8
+      "adj_em": -13.76
     },
     "Sacred Heart": {
-      "rank": 318,
+      "rank": 317,
       "luck": -0.106,
       "record": "2-2",
       "conf": "MC",
       "adj_em": -13.8
     },
-    "North Dakota": {
-      "rank": 319,
-      "luck": 0.065,
-      "record": "1-3",
-      "conf": "Sum",
-      "adj_em": -13.84
+    "Bryant": {
+      "rank": 318,
+      "luck": 0.056,
+      "record": "1-4",
+      "conf": "AE",
+      "adj_em": -13.81
     },
     "Lindenwood": {
-      "rank": 320,
+      "rank": 319,
       "luck": -0.023,
       "record": "2-3",
       "conf": "OVC",
       "adj_em": -13.85
     },
     "New Hampshire": {
-      "rank": 321,
+      "rank": 320,
       "luck": 0.018,
       "record": "3-2",
       "conf": "AE",
-      "adj_em": -13.97
+      "adj_em": -13.98
+    },
+    "North Dakota": {
+      "rank": 321,
+      "luck": 0.065,
+      "record": "1-3",
+      "conf": "Sum",
+      "adj_em": -14.02
     },
     "Detroit Mercy": {
       "rank": 322,
@@ -14629,19 +18011,19 @@
       "conf": "Horz",
       "adj_em": -14.03
     },
-    "Fairleigh Dickinson": {
+    "The Citadel": {
       "rank": 323,
+      "luck": 0.172,
+      "record": "3-2",
+      "conf": "SC",
+      "adj_em": -14.34
+    },
+    "Fairleigh Dickinson": {
+      "rank": 324,
       "luck": 0.08,
       "record": "2-3",
       "conf": "NEC",
-      "adj_em": -14.26
-    },
-    "Texas Southern": {
-      "rank": 324,
-      "luck": -0.01,
-      "record": "1-3",
-      "conf": "SWAC",
-      "adj_em": -14.56
+      "adj_em": -14.46
     },
     "Idaho St.": {
       "rank": 325,
@@ -14662,91 +18044,91 @@
       "luck": -0.107,
       "record": "0-4",
       "conf": "MC",
-      "adj_em": -14.75
+      "adj_em": -14.73
+    },
+    "Cal Baptist": {
+      "rank": 328,
+      "luck": -0.041,
+      "record": "1-3",
+      "conf": "BW",
+      "adj_em": -14.96
     },
     "Alabama A&M": {
-      "rank": 328,
+      "rank": 329,
       "luck": 0.044,
       "record": "3-2",
       "conf": "SWAC",
-      "adj_em": -14.96
-    },
-    "Southern Indiana": {
-      "rank": 329,
-      "luck": -0.126,
-      "record": "1-4",
-      "conf": "OVC",
-      "adj_em": -15.06
+      "adj_em": -15.0
     },
     "Manhattan": {
       "rank": 330,
       "luck": 0.002,
       "record": "1-3",
       "conf": "MC",
-      "adj_em": -15.07
+      "adj_em": -15.06
     },
-    "Alcorn St.": {
+    "Southern Indiana": {
       "rank": 331,
-      "luck": -0.1,
-      "record": "0-4",
-      "conf": "SWAC",
-      "adj_em": -15.09
-    },
-    "Cal Baptist": {
-      "rank": 332,
-      "luck": -0.041,
-      "record": "1-3",
-      "conf": "BW",
-      "adj_em": -15.1
-    },
-    "Binghamton": {
-      "rank": 333,
-      "luck": 0.134,
-      "record": "3-2",
-      "conf": "AE",
-      "adj_em": -15.16
+      "luck": -0.126,
+      "record": "1-4",
+      "conf": "OVC",
+      "adj_em": -15.06
     },
     "Army": {
-      "rank": 334,
+      "rank": 332,
       "luck": 0.1,
       "record": "2-2",
       "conf": "PL",
-      "adj_em": -15.21
+      "adj_em": -15.09
+    },
+    "Incarnate Word": {
+      "rank": 333,
+      "luck": -0.018,
+      "record": "0-4",
+      "conf": "Slnd",
+      "adj_em": -15.42
     },
     "Wagner": {
-      "rank": 335,
+      "rank": 334,
       "luck": -0.002,
       "record": "1-3",
       "conf": "NEC",
       "adj_em": -15.49
     },
-    "Incarnate Word": {
-      "rank": 336,
-      "luck": -0.018,
-      "record": "0-4",
-      "conf": "Slnd",
-      "adj_em": -15.65
+    "Binghamton": {
+      "rank": 335,
+      "luck": 0.134,
+      "record": "3-2",
+      "conf": "AE",
+      "adj_em": -15.57
     },
     "Morehead St.": {
-      "rank": 337,
+      "rank": 336,
       "luck": 0.142,
-      "record": "2-2",
+      "record": "3-2",
       "conf": "OVC",
-      "adj_em": -15.7
+      "adj_em": -15.67
     },
     "South Carolina St.": {
-      "rank": 338,
+      "rank": 337,
       "luck": 0.151,
       "record": "3-2",
       "conf": "MEAC",
       "adj_em": -16.04
+    },
+    "Alcorn St.": {
+      "rank": 338,
+      "luck": -0.089,
+      "record": "0-5",
+      "conf": "SWAC",
+      "adj_em": -16.06
     },
     "Saint Peter's": {
       "rank": 339,
       "luck": -0.159,
       "record": "0-4",
       "conf": "MC",
-      "adj_em": -16.14
+      "adj_em": -16.21
     },
     "Lafayette": {
       "rank": 340,
@@ -14760,49 +18142,49 @@
       "luck": 0.045,
       "record": "2-4",
       "conf": "NEC",
-      "adj_em": -16.65
+      "adj_em": -16.59
     },
     "West Georgia": {
       "rank": 342,
       "luck": -0.042,
       "record": "0-4",
       "conf": "UAC",
-      "adj_em": -16.74
+      "adj_em": -16.78
     },
     "Norfolk St.": {
       "rank": 343,
       "luck": -0.01,
       "record": "2-3",
       "conf": "MEAC",
-      "adj_em": -17.03
+      "adj_em": -17.02
     },
     "Morgan St.": {
       "rank": 344,
       "luck": 0.248,
       "record": "4-1",
       "conf": "MEAC",
-      "adj_em": -17.38
+      "adj_em": -17.2
+    },
+    "North Carolina Central": {
+      "rank": 345,
+      "luck": -0.013,
+      "record": "1-4",
+      "conf": "MEAC",
+      "adj_em": -17.34
     },
     "West Florida": {
-      "rank": 345,
+      "rank": 346,
       "luck": -0.143,
       "record": "2-3",
       "conf": "ASun",
       "adj_em": -17.42
-    },
-    "North Carolina Central": {
-      "rank": 346,
-      "luck": -0.013,
-      "record": "0-4",
-      "conf": "MEAC",
-      "adj_em": -17.45
     },
     "Coppin St.": {
       "rank": 347,
       "luck": -0.111,
       "record": "1-4",
       "conf": "MEAC",
-      "adj_em": -17.62
+      "adj_em": -17.58
     },
     "Gardner Webb": {
       "rank": 348,
@@ -14816,56 +18198,56 @@
       "luck": 0.19,
       "record": "3-2",
       "conf": "AE",
-      "adj_em": -17.8
-    },
-    "New Haven": {
-      "rank": 350,
-      "luck": 0.073,
-      "record": "1-3",
-      "conf": "NEC",
-      "adj_em": -18.07
-    },
-    "USC Upstate": {
-      "rank": 351,
-      "luck": -0.002,
-      "record": "1-4",
-      "conf": "BSth",
-      "adj_em": -18.21
+      "adj_em": -17.81
     },
     "Bucknell": {
-      "rank": 352,
+      "rank": 350,
       "luck": -0.0,
       "record": "0-4",
       "conf": "PL",
-      "adj_em": -18.46
+      "adj_em": -17.81
     },
-    "Florida A&M": {
-      "rank": 353,
-      "luck": -0.001,
-      "record": "0-4",
-      "conf": "SWAC",
-      "adj_em": -18.73
+    "New Haven": {
+      "rank": 351,
+      "luck": 0.073,
+      "record": "1-3",
+      "conf": "NEC",
+      "adj_em": -18.06
+    },
+    "USC Upstate": {
+      "rank": 352,
+      "luck": -0.002,
+      "record": "1-4",
+      "conf": "BSth",
+      "adj_em": -18.22
     },
     "Stonehill": {
-      "rank": 354,
+      "rank": 353,
       "luck": -0.031,
       "record": "1-3",
       "conf": "NEC",
-      "adj_em": -18.97
+      "adj_em": -18.45
     },
     "NJIT": {
-      "rank": 355,
+      "rank": 354,
       "luck": 0.062,
       "record": "1-5",
       "conf": "AE",
-      "adj_em": -19.67
+      "adj_em": -19.82
     },
     "Delaware St.": {
-      "rank": 356,
+      "rank": 355,
       "luck": -0.147,
       "record": "1-3",
       "conf": "MEAC",
-      "adj_em": -20.05
+      "adj_em": -20.03
+    },
+    "Loyola MD": {
+      "rank": 356,
+      "luck": -0.093,
+      "record": "1-4",
+      "conf": "PL",
+      "adj_em": -20.1
     },
     "Canisius": {
       "rank": 357,
@@ -14874,26 +18256,26 @@
       "conf": "MC",
       "adj_em": -20.14
     },
-    "Loyola MD": {
-      "rank": 358,
-      "luck": -0.093,
-      "record": "1-4",
-      "conf": "PL",
-      "adj_em": -20.15
-    },
     "Maryland Eastern Shore": {
-      "rank": 359,
+      "rank": 358,
       "luck": -0.001,
       "record": "1-4",
       "conf": "MEAC",
       "adj_em": -20.47
     },
     "Rider": {
-      "rank": 360,
+      "rank": 359,
       "luck": -0.032,
       "record": "1-4",
       "conf": "MC",
-      "adj_em": -20.49
+      "adj_em": -20.54
+    },
+    "Florida A&M": {
+      "rank": 360,
+      "luck": -0.0,
+      "record": "0-5",
+      "conf": "SWAC",
+      "adj_em": -20.65
     },
     "Holy Cross": {
       "rank": 361,
@@ -14902,33 +18284,33 @@
       "conf": "PL",
       "adj_em": -21.63
     },
-    "Western Illinois": {
-      "rank": 362,
-      "luck": -0.081,
-      "record": "1-3",
-      "conf": "OVC",
-      "adj_em": -22.17
-    },
     "Arkansas Pine Bluff": {
-      "rank": 363,
+      "rank": 362,
       "luck": -0.013,
       "record": "0-5",
       "conf": "SWAC",
-      "adj_em": -22.46
+      "adj_em": -22.41
+    },
+    "Western Illinois": {
+      "rank": 363,
+      "luck": -0.105,
+      "record": "1-4",
+      "conf": "OVC",
+      "adj_em": -22.44
     },
     "Eastern Illinois": {
       "rank": 364,
       "luck": -0.025,
       "record": "1-4",
       "conf": "OVC",
-      "adj_em": -22.76
+      "adj_em": -22.75
     },
     "Mississippi Valley St.": {
       "rank": 365,
       "luck": -0.014,
       "record": "0-4",
       "conf": "SWAC",
-      "adj_em": -23.53
+      "adj_em": -23.42
     }
   }
 }
