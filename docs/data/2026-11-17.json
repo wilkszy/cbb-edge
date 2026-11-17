@@ -1,6 +1,6 @@
 {
   "slate_date": "2026-11-17",
-  "generated": "Nov 17, 2026 12:41 PM ET",
+  "generated": "Nov 17, 2026 12:43 PM ET",
   "kenpom_through": "Monday, November 16",
   "hca": 3.2,
   "margin_sd": 13.0,
@@ -8,6 +8,68 @@
   "wp_blend": 0.5,
   "ml_min_edge": 0.03,
   "games": [
+    {
+      "id": "7baca68d6b97b29d21efc5ccd35ee124",
+      "tip": "12:00 PM",
+      "tip_iso": "2026-11-17T17:00:00+00:00",
+      "home": "Murray St.",
+      "away": "Hofstra",
+      "home_raw": "Murray St Racers",
+      "away_raw": "Hofstra Pride",
+      "home_rank": 84,
+      "away_rank": 160,
+      "home_conf": "MVC",
+      "away_conf": "CAA",
+      "neutral": true,
+      "book_spread": -16.5,
+      "books": {
+        "FD": -16.5,
+        "BR": -16.5,
+        "ESPN": -16.5,
+        "DK": -15.5,
+        "MGM": -17.5
+      },
+      "proj_spread": -8.4,
+      "proj_score": "Hofstra 70, Murray St. 78",
+      "poss": 71.0,
+      "diff": -8.1,
+      "pick": "Hofstra",
+      "best_line": {
+        "point": 17.5,
+        "price": -110,
+        "book": "MGM"
+      },
+      "kp_home_wp": 0.741,
+      "mkt_home_wp": 0.929,
+      "model_home_wp": 0.835,
+      "ml_min_edge": 0.03,
+      "neutral_src": "espn",
+      "home_luck": 0.0,
+      "away_luck": 0.037,
+      "proj_total": 147.8,
+      "proj_home_pts": 78.1,
+      "proj_away_pts": 69.7,
+      "imp_home": 83.0,
+      "imp_away": 66.5,
+      "book_total": 149.5,
+      "totals_books": {
+        "FD": 149.5,
+        "BR": 152.5,
+        "ESPN": 148.5,
+        "DK": 148.5,
+        "MGM": 151.5
+      },
+      "tot_diff": -1.7,
+      "ou_pick": "Under",
+      "ou_best": {
+        "point": 152.5,
+        "price": -121,
+        "book": "BR"
+      },
+      "ml_home": -4500.0,
+      "ml_away": 1250.0,
+      "ml_edge": 0.094
+    },
     {
       "id": "bb8c42e426203795cd7101dc04c32184",
       "tip": "7:00 PM",
@@ -164,68 +226,6 @@
           "same_game": false
         }
       ]
-    },
-    {
-      "id": "7baca68d6b97b29d21efc5ccd35ee124",
-      "tip": "12:00 PM",
-      "tip_iso": "2026-11-17T17:00:00+00:00",
-      "home": "Murray St.",
-      "away": "Hofstra",
-      "home_raw": "Murray St Racers",
-      "away_raw": "Hofstra Pride",
-      "home_rank": 84,
-      "away_rank": 160,
-      "home_conf": "MVC",
-      "away_conf": "CAA",
-      "neutral": true,
-      "book_spread": -14.5,
-      "books": {
-        "FD": -15.5,
-        "BR": -14.5,
-        "ESPN": -14.5,
-        "DK": -14.5,
-        "MGM": -15.5
-      },
-      "proj_spread": -8.4,
-      "proj_score": "Hofstra 70, Murray St. 78",
-      "poss": 71.0,
-      "diff": -6.1,
-      "pick": "Hofstra",
-      "best_line": {
-        "point": 15.5,
-        "price": -114,
-        "book": "FD"
-      },
-      "kp_home_wp": 0.741,
-      "mkt_home_wp": 0.908,
-      "model_home_wp": 0.825,
-      "ml_min_edge": 0.03,
-      "neutral_src": "espn",
-      "home_luck": 0.0,
-      "away_luck": 0.037,
-      "proj_total": 147.8,
-      "proj_home_pts": 78.1,
-      "proj_away_pts": 69.7,
-      "imp_home": 81.0,
-      "imp_away": 66.5,
-      "book_total": 147.5,
-      "totals_books": {
-        "FD": 147.5,
-        "BR": 150.5,
-        "ESPN": 147.5,
-        "DK": 148.5,
-        "MGM": 147.5
-      },
-      "tot_diff": 0.3,
-      "ou_pick": "Over",
-      "ou_best": {
-        "point": 147.5,
-        "price": -114,
-        "book": "FD"
-      },
-      "ml_home": -3000,
-      "ml_away": 950,
-      "ml_edge": 0.084
     },
     {
       "id": "107600e44a78d55aaf007aa1f18e20c7",
@@ -432,7 +432,7 @@
       "totals_books": {
         "FD": 144.5,
         "DK": 145.5,
-        "ESPN": 145.5,
+        "ESPN": 144.5,
         "MGM": 144.5,
         "BR": 144.5
       },
@@ -899,7 +899,7 @@
         "DK": -18.5,
         "BR": -17.5,
         "FD": -17.5,
-        "MGM": -17.5
+        "MGM": -18.5
       },
       "proj_spread": -14.2,
       "proj_score": "Bellarmine 66, Illinois St. 80",
@@ -1059,7 +1059,7 @@
       "ou_pick": "Under",
       "ou_best": {
         "point": 154.5,
-        "price": -115,
+        "price": -110,
         "book": "ESPN"
       },
       "ml_home": -107,
@@ -1466,7 +1466,7 @@
       "pick": "Massachusetts",
       "best_line": {
         "point": -9.5,
-        "price": -115,
+        "price": -120,
         "book": "ESPN"
       },
       "kp_home_wp": 0.812,
@@ -2151,7 +2151,7 @@
       "book_spread": -6.5,
       "books": {
         "ESPN": -6.5,
-        "DK": -6.5,
+        "DK": -5.5,
         "BR": -5.5,
         "FD": -6.5,
         "MGM": -6.5
@@ -2163,8 +2163,8 @@
       "pick": "UMass Lowell",
       "best_line": {
         "point": -5.5,
-        "price": -125,
-        "book": "BR"
+        "price": -115,
+        "book": "DK"
       },
       "kp_home_wp": 0.724,
       "mkt_home_wp": 0.704,
@@ -2196,68 +2196,6 @@
       "ml_home": -275,
       "ml_away": 220,
       "ml_edge": 0.01
-    },
-    {
-      "id": "a80c8cd90f57a1445908c3a17489fd4a",
-      "tip": "8:00 PM",
-      "tip_iso": "2026-11-18T01:00:00+00:00",
-      "home": "Southern Miss",
-      "away": "UT Arlington",
-      "home_raw": "Southern Miss Golden Eagles",
-      "away_raw": "UT-Arlington Mavericks",
-      "home_rank": 247,
-      "away_rank": 211,
-      "home_conf": "SB",
-      "away_conf": "UAC",
-      "neutral": false,
-      "book_spread": -2.5,
-      "books": {
-        "ESPN": -2.5,
-        "DK": -1.5,
-        "MGM": -2.5,
-        "BR": -2.5,
-        "FD": -1.5
-      },
-      "proj_spread": -1.3,
-      "proj_score": "UT Arlington 75, Southern Miss 76",
-      "poss": 74.2,
-      "diff": -1.2,
-      "pick": "UT Arlington",
-      "best_line": {
-        "point": 2.5,
-        "price": -115,
-        "book": "ESPN"
-      },
-      "kp_home_wp": 0.54,
-      "mkt_home_wp": 0.552,
-      "model_home_wp": 0.546,
-      "ml_min_edge": 0.03,
-      "neutral_src": null,
-      "home_luck": 0.148,
-      "away_luck": 0.128,
-      "proj_total": 151.5,
-      "proj_home_pts": 76.4,
-      "proj_away_pts": 75.1,
-      "imp_home": 76.0,
-      "imp_away": 73.5,
-      "book_total": 149.5,
-      "totals_books": {
-        "ESPN": 149.5,
-        "DK": 149.5,
-        "MGM": 148.5,
-        "BR": 148.5,
-        "FD": 149.5
-      },
-      "tot_diff": 2.0,
-      "ou_pick": "Over",
-      "ou_best": {
-        "point": 148.5,
-        "price": -115,
-        "book": "MGM"
-      },
-      "ml_home": -135,
-      "ml_away": 110,
-      "ml_edge": 0.006
     },
     {
       "id": "ffb5a6ab57400f7a34aa9891b5c1ca9f",
@@ -3250,6 +3188,68 @@
       "ml_edge": -0.015
     },
     {
+      "id": "a80c8cd90f57a1445908c3a17489fd4a",
+      "tip": "8:00 PM",
+      "tip_iso": "2026-11-18T01:00:00+00:00",
+      "home": "Southern Miss",
+      "away": "UT Arlington",
+      "home_raw": "Southern Miss Golden Eagles",
+      "away_raw": "UT-Arlington Mavericks",
+      "home_rank": 247,
+      "away_rank": 211,
+      "home_conf": "SB",
+      "away_conf": "UAC",
+      "neutral": false,
+      "book_spread": -1.5,
+      "books": {
+        "ESPN": -2.5,
+        "DK": -1.5,
+        "MGM": -1.5,
+        "BR": -2.5,
+        "FD": -1.5
+      },
+      "proj_spread": -1.3,
+      "proj_score": "UT Arlington 75, Southern Miss 76",
+      "poss": 74.2,
+      "diff": -0.2,
+      "pick": "UT Arlington",
+      "best_line": {
+        "point": 2.5,
+        "price": -115,
+        "book": "ESPN"
+      },
+      "kp_home_wp": 0.54,
+      "mkt_home_wp": 0.552,
+      "model_home_wp": 0.546,
+      "ml_min_edge": 0.03,
+      "neutral_src": null,
+      "home_luck": 0.148,
+      "away_luck": 0.128,
+      "proj_total": 151.5,
+      "proj_home_pts": 76.4,
+      "proj_away_pts": 75.1,
+      "imp_home": 75.5,
+      "imp_away": 74.0,
+      "book_total": 149.5,
+      "totals_books": {
+        "ESPN": 149.5,
+        "DK": 149.5,
+        "MGM": 148.5,
+        "BR": 148.5,
+        "FD": 149.5
+      },
+      "tot_diff": 2.0,
+      "ou_pick": "Over",
+      "ou_best": {
+        "point": 148.5,
+        "price": -115,
+        "book": "MGM"
+      },
+      "ml_home": -135,
+      "ml_away": 110,
+      "ml_edge": 0.006
+    },
+    {
       "id": "f1b87f5055c345501b45a893f6866c00",
       "tip": "8:00 PM",
       "tip_iso": "2026-11-18T01:00:00+00:00",
@@ -3267,7 +3267,7 @@
         "ESPN": -12.5,
         "DK": -12.5,
         "MGM": -12.5,
-        "BR": -12.5,
+        "BR": -13.5,
         "FD": -12.5
       },
       "proj_spread": -12.6,
@@ -3281,8 +3281,8 @@
         "book": "ESPN"
       },
       "kp_home_wp": 0.835,
-      "mkt_home_wp": 0.869,
-      "model_home_wp": 0.852,
+      "mkt_home_wp": 0.873,
+      "model_home_wp": 0.854,
       "ml_min_edge": 0.03,
       "neutral_src": null,
       "home_luck": -0.066,
@@ -3307,9 +3307,9 @@
         "price": -114,
         "book": "BR"
       },
-      "ml_home": -1000,
-      "ml_away": 625,
-      "ml_edge": -0.017
+      "ml_home": -1050,
+      "ml_away": 660,
+      "ml_edge": -0.019
     },
     {
       "id": "350bca9508ce4bee01779286b2a119c4",
