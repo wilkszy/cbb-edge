@@ -184,7 +184,6 @@
         <th class="num" data-tm="pts_vs" title="Average points scored vs. KenPom projected points">Points vs. proj</th>
         <th class="num" data-tm="tot_over" title="Game total over/under the KenPom projected total">Game total vs. proj</th>
         <th class="num" data-tm="ats_w" title="Record against the book spread">ATS vs. book</th>
-        <th class="hide-sm">Last games</th>
       </tr></thead>
       <tbody id="teamRows"></tbody>
     </table></div>
@@ -522,12 +521,12 @@ function renderTeams(){
   const rows = pool.filter(t => !q || (t.team + " " + ((info[t.team] || {}).conf || "")).toLowerCase().includes(q))
     .sort((a,b) => { const x = a[tmKey] ?? -999, y = b[tmKey] ?? -999; return tmDir * (typeof x === "string" ? x.localeCompare(y) : x - y); });
   document.getElementById("teamRows").innerHTML = rows.length ? rows.map(t => `<tr>
-    <td class="match">${teamLabel(t)}</td><td class="num">${t.g}</td><td class="num">${t.w}-${t.l}</td>
+    <td class="match" style="min-width:260px"><div>${teamLabel(t)}</div><div class="meta">${teamGames(t, 2)}</div></td><td class="num">${t.g}</td><td class="num">${t.w}-${t.l}</td>
     <td class="num">${t.kp_w}-${t.kp_l}</td><td class="num">${t.upsets || "–"}</td>
     <td class="num">${t.beat}-${t.short}</td><td class="num ${t.margin_vs > 0 ? "res-W" : t.margin_vs < 0 ? "res-L" : ""}">${sgn(t.margin_vs)}</td>
     <td class="num">${sgn(t.pts_vs)}</td><td class="num">O ${t.tot_over} · U ${t.tot_under}</td>
-    <td class="num">${t.ats_w}-${t.ats_l}</td><td class="hide-sm books" style="max-width:none;margin:0">${teamGames(t, 2)}</td>
-  </tr>`).join("") : `<tr><td colspan="11" class="empty">No teams match.</td></tr>`;
+    <td class="num">${t.ats_w}-${t.ats_l}</td>
+  </tr>`).join("") : `<tr><td colspan="10" class="empty">No teams match.</td></tr>`;
 }
 
 function init(){
