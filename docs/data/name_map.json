@@ -70,6 +70,7 @@
   "Nebraska Cornhuskers": "Nebraska",
   "Nevada Wolf Pack": "Nevada",
   "New Hampshire Wildcats": "New Hampshire",
+  "New Orleans Privateers": "LSU New Orleans",
   "North Carolina A&T Aggies": "North Carolina A&T",
   "North Carolina Central Eagles": "North Carolina Central",
   "North Dakota St Bison": "North Dakota St.",
@@ -122,9 +123,7 @@
   "Yale Bulldogs": "Yale",
   "Youngstown St Penguins": "Youngstown St."
  },
- "unmatched": [
-  "New Orleans Privateers"
- ],
+ "unmatched": [],
  "collisions": {},
  "espn_unmatched": [
   "College of Biblical Studies Ambassadors",

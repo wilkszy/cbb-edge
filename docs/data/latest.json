@@ -1,6 +1,6 @@
 {
   "slate_date": "2026-11-18",
-  "generated": "Nov 18, 2026 9:15 AM ET",
+  "generated": "Nov 18, 2026 9:17 AM ET",
   "kenpom_through": "Tuesday, November 17",
   "hca": 3.2,
   "margin_sd": 13.0,
@@ -136,8 +136,8 @@
         "book": "MGM"
       },
       "kp_home_wp": 0.891,
-      "mkt_home_wp": 0.97,
-      "model_home_wp": 0.931,
+      "mkt_home_wp": 0.969,
+      "model_home_wp": 0.93,
       "ml_min_edge": 0.03,
       "neutral_src": null,
       "home_luck": 0.18,
@@ -159,7 +159,7 @@
       "ou_pick": "Under",
       "ou_best": {
         "point": 161.5,
-        "price": -110,
+        "price": -105,
         "book": "MGM"
       },
       "ml_home": -10000,
@@ -401,8 +401,8 @@
         "book": "DK"
       },
       "kp_home_wp": 0.916,
-      "mkt_home_wp": 0.966,
-      "model_home_wp": 0.941,
+      "mkt_home_wp": 0.964,
+      "model_home_wp": 0.94,
       "ml_min_edge": 0.03,
       "neutral_src": null,
       "home_luck": 0.003,
@@ -417,19 +417,79 @@
         "ESPN": 148.5,
         "DK": 148.5,
         "MGM": 148.5,
-        "FD": 147.5,
+        "FD": 148.5,
         "BR": 148.5
       },
       "tot_diff": 1.8,
       "ou_pick": "Over",
       "ou_best": {
-        "point": 147.5,
-        "price": -114,
-        "book": "FD"
+        "point": 148.5,
+        "price": -115,
+        "book": "ESPN"
       },
       "ml_home": -10000.0,
       "ml_away": 2750.0,
-      "ml_edge": 0.025
+      "ml_edge": 0.024
+    },
+    {
+      "id": "777b5470c240c35ca5ca5f73695acc16",
+      "tip": "7:30 PM",
+      "tip_iso": "2026-11-19T00:30:00+00:00",
+      "home": "Texas Tech",
+      "away": "LSU New Orleans",
+      "home_raw": "Texas Tech Red Raiders",
+      "away_raw": "New Orleans Privateers",
+      "home_rank": 14,
+      "away_rank": 287,
+      "home_conf": "B12",
+      "away_conf": "Slnd",
+      "neutral": false,
+      "book_spread": -35.5,
+      "books": {
+        "DK": -35.5,
+        "ESPN": -35.5,
+        "BR": -35.5,
+        "FD": -35.5
+      },
+      "proj_spread": -29.4,
+      "proj_score": "LSU New Orleans 63, Texas Tech 93",
+      "poss": 71.6,
+      "diff": -6.1,
+      "pick": "LSU New Orleans",
+      "best_line": {
+        "point": 35.5,
+        "price": -110,
+        "book": "DK"
+      },
+      "kp_home_wp": 0.988,
+      "mkt_home_wp": null,
+      "model_home_wp": 0.988,
+      "ml_min_edge": 0.03,
+      "neutral_src": null,
+      "home_luck": 0.079,
+      "away_luck": 0.0,
+      "proj_total": 155.8,
+      "proj_home_pts": 92.6,
+      "proj_away_pts": 63.2,
+      "imp_home": 96.5,
+      "imp_away": 61.0,
+      "book_total": 157.5,
+      "totals_books": {
+        "DK": 157.5,
+        "ESPN": 158.5,
+        "BR": 157.5,
+        "FD": 157.5
+      },
+      "tot_diff": -1.7,
+      "ou_pick": "Under",
+      "ou_best": {
+        "point": 158.5,
+        "price": -110,
+        "book": "ESPN"
+      },
+      "ml_home": null,
+      "ml_away": null,
+      "ml_edge": null
     },
     {
       "id": "03c1c51ea60287cbe17ce32bef17cc5f",
@@ -596,22 +656,22 @@
       "proj_total": 153.4,
       "proj_home_pts": 85.6,
       "proj_away_pts": 67.8,
-      "imp_home": 87.5,
-      "imp_away": 64.0,
-      "book_total": 151.5,
+      "imp_home": 88.0,
+      "imp_away": 64.5,
+      "book_total": 152.5,
       "totals_books": {
-        "MGM": 151.5,
+        "MGM": 152.5,
         "DK": 152.5,
         "ESPN": 152.5,
         "BR": 151.5,
         "FD": 151.5
       },
-      "tot_diff": 1.9,
+      "tot_diff": 0.9,
       "ou_pick": "Over",
       "ou_best": {
         "point": 151.5,
-        "price": -115,
-        "book": "MGM"
+        "price": -113,
+        "book": "BR"
       },
       "ml_home": -10000.0,
       "ml_away": 2350.0,
@@ -828,7 +888,7 @@
       "pick": "Texas Southern",
       "best_line": {
         "point": 27.5,
-        "price": -110,
+        "price": -115,
         "book": "MGM"
       },
       "kp_home_wp": 0.959,
@@ -987,68 +1047,6 @@
       "ml_edge": 0.021
     },
     {
-      "id": "775c3580dd1c3bee5cf5d488c6b7d09f",
-      "tip": "8:00 PM",
-      "tip_iso": "2026-11-19T01:00:00+00:00",
-      "home": "Syracuse",
-      "away": "Cornell",
-      "home_raw": "Syracuse Orange",
-      "away_raw": "Cornell Big Red",
-      "home_rank": 73,
-      "away_rank": 236,
-      "home_conf": "ACC",
-      "away_conf": "Ivy",
-      "neutral": false,
-      "book_spread": -21.5,
-      "books": {
-        "ESPN": -21.5,
-        "DK": -20.5,
-        "MGM": -21.5,
-        "BR": -21.5,
-        "FD": -20.5
-      },
-      "proj_spread": -17.2,
-      "proj_score": "Cornell 69, Syracuse 86",
-      "poss": 72.7,
-      "diff": -4.3,
-      "pick": "Cornell",
-      "best_line": {
-        "point": 21.5,
-        "price": -115,
-        "book": "ESPN"
-      },
-      "kp_home_wp": 0.907,
-      "mkt_home_wp": 0.95,
-      "model_home_wp": 0.929,
-      "ml_min_edge": 0.03,
-      "neutral_src": null,
-      "home_luck": -0.169,
-      "away_luck": 0.117,
-      "proj_total": 155.8,
-      "proj_home_pts": 86.5,
-      "proj_away_pts": 69.3,
-      "imp_home": 89.5,
-      "imp_away": 68.0,
-      "book_total": 157.5,
-      "totals_books": {
-        "ESPN": 158.5,
-        "DK": 158.5,
-        "MGM": 157.5,
-        "BR": 157.5,
-        "FD": 157.5
-      },
-      "tot_diff": -1.7,
-      "ou_pick": "Under",
-      "ou_best": {
-        "point": 158.5,
-        "price": -115,
-        "book": "ESPN"
-      },
-      "ml_home": -6000.0,
-      "ml_away": 1900.0,
-      "ml_edge": 0.022
-    },
-    {
       "id": "4464e03ee9677e6c8c25743754e3848c",
       "tip": "7:00 PM",
       "tip_iso": "2026-11-19T00:00:00+00:00",
@@ -1080,8 +1078,8 @@
         "book": "ESPN"
       },
       "kp_home_wp": 0.742,
-      "mkt_home_wp": 0.657,
-      "model_home_wp": 0.699,
+      "mkt_home_wp": 0.66,
+      "model_home_wp": 0.701,
       "ml_min_edge": 0.03,
       "neutral_src": null,
       "home_luck": 0.22,
@@ -1106,18 +1104,18 @@
         "price": -115,
         "book": "ESPN"
       },
-      "ml_home": -219.0,
-      "ml_away": 180.0,
-      "ml_edge": 0.043,
+      "ml_home": -225.0,
+      "ml_away": 184.5,
+      "ml_edge": 0.041,
       "top_plays": [
         {
           "type": "Moneyline",
           "side": "Florida Atlantic",
           "line": null,
-          "price": -219.0,
+          "price": -225.0,
           "book": "median",
-          "prob": 0.699,
-          "be": 0.687,
+          "prob": 0.701,
+          "be": 0.692,
           "why": "Model 70% vs. market 66%",
           "game": "4464e03ee9677e6c8c25743754e3848c",
           "matchup": "Florida Gulf Coast @ Florida Atlantic",
@@ -1370,17 +1368,17 @@
       "proj_total": 166.8,
       "proj_home_pts": 97.4,
       "proj_away_pts": 69.4,
-      "imp_home": 100.5,
-      "imp_away": 69.0,
-      "book_total": 169.5,
+      "imp_home": 101.0,
+      "imp_away": 69.5,
+      "book_total": 170.5,
       "totals_books": {
         "ESPN": 170.5,
         "DK": 170.5,
-        "MGM": 169.5,
+        "MGM": 170.5,
         "FD": 169.5,
         "BR": 169.5
       },
-      "tot_diff": -2.7,
+      "tot_diff": -3.7,
       "ou_pick": "Under",
       "ou_best": {
         "point": 170.5,
@@ -1531,7 +1529,7 @@
       "book_spread": -21.5,
       "books": {
         "ESPN": -21.5,
-        "MGM": -22.5,
+        "MGM": -21.5,
         "DK": -21.5,
         "BR": -22.5,
         "FD": -21.5
@@ -1543,12 +1541,12 @@
       "pick": "Navy",
       "best_line": {
         "point": 22.5,
-        "price": -118,
-        "book": "MGM"
+        "price": -115,
+        "book": "BR"
       },
       "kp_home_wp": 0.919,
-      "mkt_home_wp": 0.958,
-      "model_home_wp": 0.939,
+      "mkt_home_wp": 0.957,
+      "model_home_wp": 0.938,
       "ml_min_edge": 0.03,
       "neutral_src": null,
       "home_luck": 0.061,
@@ -1576,6 +1574,68 @@
       "ml_home": -10000.0,
       "ml_away": 2300.0,
       "ml_edge": 0.019
+    },
+    {
+      "id": "775c3580dd1c3bee5cf5d488c6b7d09f",
+      "tip": "8:00 PM",
+      "tip_iso": "2026-11-19T01:00:00+00:00",
+      "home": "Syracuse",
+      "away": "Cornell",
+      "home_raw": "Syracuse Orange",
+      "away_raw": "Cornell Big Red",
+      "home_rank": 73,
+      "away_rank": 236,
+      "home_conf": "ACC",
+      "away_conf": "Ivy",
+      "neutral": false,
+      "book_spread": -20.5,
+      "books": {
+        "ESPN": -21.5,
+        "DK": -20.5,
+        "MGM": -20.5,
+        "BR": -21.5,
+        "FD": -20.5
+      },
+      "proj_spread": -17.2,
+      "proj_score": "Cornell 69, Syracuse 86",
+      "poss": 72.7,
+      "diff": -3.3,
+      "pick": "Cornell",
+      "best_line": {
+        "point": 21.5,
+        "price": -115,
+        "book": "ESPN"
+      },
+      "kp_home_wp": 0.907,
+      "mkt_home_wp": 0.95,
+      "model_home_wp": 0.929,
+      "ml_min_edge": 0.03,
+      "neutral_src": null,
+      "home_luck": -0.169,
+      "away_luck": 0.117,
+      "proj_total": 155.8,
+      "proj_home_pts": 86.5,
+      "proj_away_pts": 69.3,
+      "imp_home": 89.0,
+      "imp_away": 68.5,
+      "book_total": 157.5,
+      "totals_books": {
+        "ESPN": 158.5,
+        "DK": 158.5,
+        "MGM": 157.5,
+        "BR": 157.5,
+        "FD": 157.5
+      },
+      "tot_diff": -1.7,
+      "ou_pick": "Under",
+      "ou_best": {
+        "point": 158.5,
+        "price": -115,
+        "book": "ESPN"
+      },
+      "ml_home": -6000.0,
+      "ml_away": 1900.0,
+      "ml_edge": 0.022
     },
     {
       "id": "3abdedf3ec3fe962c23a7e586bd447dc",
@@ -1733,8 +1793,8 @@
         "book": "DK"
       },
       "kp_home_wp": 0.489,
-      "mkt_home_wp": 0.557,
-      "model_home_wp": 0.523,
+      "mkt_home_wp": 0.555,
+      "model_home_wp": 0.522,
       "ml_min_edge": 0.03,
       "neutral_src": "espn",
       "home_luck": 0.078,
@@ -1759,9 +1819,9 @@
         "price": -115,
         "book": "DK"
       },
-      "ml_home": -140,
-      "ml_away": 115,
-      "ml_edge": 0.034
+      "ml_home": -137,
+      "ml_away": 114,
+      "ml_edge": 0.033
     },
     {
       "id": "09148a74a9c2472e622e8d8f70578b20",
@@ -1781,7 +1841,7 @@
         "ESPN": -17.5,
         "DK": -17.5,
         "MGM": -17.5,
-        "BR": -17.5,
+        "BR": -18.5,
         "FD": -17.5
       },
       "proj_spread": -20.3,
@@ -1795,8 +1855,8 @@
         "book": "ESPN"
       },
       "kp_home_wp": 0.941,
-      "mkt_home_wp": 0.915,
-      "model_home_wp": 0.928,
+      "mkt_home_wp": 0.918,
+      "model_home_wp": 0.93,
       "ml_min_edge": 0.03,
       "neutral_src": null,
       "home_luck": -0.019,
@@ -1821,9 +1881,9 @@
         "price": -115,
         "book": "MGM"
       },
-      "ml_home": -2000.0,
-      "ml_away": 1000.0,
-      "ml_edge": 0.013
+      "ml_home": -2667.5,
+      "ml_away": 1025.0,
+      "ml_edge": 0.011
     },
     {
       "id": "55b01ce41701e52247455a3c3a456275",
@@ -1841,7 +1901,7 @@
       "book_spread": -17.5,
       "books": {
         "MGM": -17.5,
-        "DK": -16.5,
+        "DK": -17.5,
         "ESPN": -17.5,
         "BR": -17.5,
         "FD": -16.5
@@ -1853,12 +1913,12 @@
       "pick": "Texas St.",
       "best_line": {
         "point": -16.5,
-        "price": -115,
-        "book": "DK"
+        "price": -120,
+        "book": "FD"
       },
       "kp_home_wp": 0.941,
       "mkt_home_wp": 0.926,
-      "model_home_wp": 0.933,
+      "model_home_wp": 0.934,
       "ml_min_edge": 0.03,
       "neutral_src": null,
       "home_luck": 0.003,
@@ -1885,7 +1945,7 @@
       },
       "ml_home": -2800,
       "ml_away": 1200,
-      "ml_edge": 0.008
+      "ml_edge": 0.007
     },
     {
       "id": "2d82f6779bd0ff45a95caa0215ae9be7",
@@ -2662,8 +2722,8 @@
         "book": "MGM"
       },
       "kp_home_wp": 0.34,
-      "mkt_home_wp": 0.301,
-      "model_home_wp": 0.32,
+      "mkt_home_wp": 0.299,
+      "model_home_wp": 0.319,
       "ml_min_edge": 0.03,
       "neutral_src": null,
       "home_luck": -0.117,
@@ -2690,7 +2750,7 @@
       },
       "ml_home": 220,
       "ml_away": -275,
-      "ml_edge": 0.02
+      "ml_edge": 0.021
     },
     {
       "id": "fd4d53d6aab2a2562f89bda0add41f92",
@@ -3154,12 +3214,12 @@
       "pick": "Binghamton",
       "best_line": {
         "point": 3.5,
-        "price": -115,
+        "price": -110,
         "book": "MGM"
       },
       "kp_home_wp": 0.568,
-      "mkt_home_wp": 0.571,
-      "model_home_wp": 0.57,
+      "mkt_home_wp": 0.575,
+      "model_home_wp": 0.571,
       "ml_min_edge": 0.03,
       "neutral_src": null,
       "home_luck": -0.035,
@@ -3184,9 +3244,9 @@
         "price": -115,
         "book": "ESPN"
       },
-      "ml_home": -150,
+      "ml_home": -152,
       "ml_away": 125,
-      "ml_edge": 0.002
+      "ml_edge": 0.003
     },
     {
       "id": "8b7bc1bd7533ac97afd5c1ec251581a0",
@@ -3468,8 +3528,8 @@
         "book": "ESPN"
       },
       "kp_home_wp": 0.23,
-      "mkt_home_wp": 0.187,
-      "model_home_wp": 0.209,
+      "mkt_home_wp": 0.189,
+      "model_home_wp": 0.21,
       "ml_min_edge": 0.03,
       "neutral_src": null,
       "home_luck": -0.024,
@@ -3494,7 +3554,7 @@
         "price": -115,
         "book": "ESPN"
       },
-      "ml_home": 410,
+      "ml_home": 400,
       "ml_away": -550,
       "ml_edge": -0.021
     },
@@ -3812,10 +3872,10 @@
       "type": "Moneyline",
       "side": "Florida Atlantic",
       "line": null,
-      "price": -219.0,
+      "price": -225.0,
       "book": "median",
-      "prob": 0.699,
-      "be": 0.687,
+      "prob": 0.701,
+      "be": 0.692,
       "why": "Model 70% vs. market 66%",
       "game": "4464e03ee9677e6c8c25743754e3848c",
       "matchup": "Florida Gulf Coast @ Florida Atlantic",
@@ -3886,14 +3946,12 @@
       "same_game": true
     }
   ],
-  "unmatched": [
-    "New Orleans Privateers"
-  ],
+  "unmatched": [],
   "avg_o": 106.6,
   "avg_t": 69.9,
   "track": {
     "started": "2026-11-13",
-    "pending": 62,
+    "pending": 63,
     "no_result": 1,
     "overall": {
       "n": 222,
