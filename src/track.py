@@ -20,7 +20,7 @@ LOCK_FIELDS = ["home", "away", "home_conf", "away_conf", "tip", "tip_iso", "neut
                "book_spread", "proj_spread", "diff", "pick", "kp_home_wp", "mkt_home_wp",
                "ml_home", "ml_away", "ml_edge", "best_line",
                "book_total", "proj_total", "tot_diff", "ou_pick", "model_home_wp", "ml_min_edge",
-               "proj_home_pts", "proj_away_pts", "imp_home", "imp_away", "top_play", "top_plays"]
+               "proj_home_pts", "proj_away_pts", "imp_home", "imp_away", "top_play", "top_plays", "top5_dropped"]
 BUCKETS = [("Under 2", 0, 2), ("2 to 3", 2, 3), ("3 to 5", 3, 5), ("5+", 5, 999)]
 
 
@@ -126,9 +126,9 @@ def grade(e: dict) -> dict:
                     "res": "P" if hit == 0 else ("W" if hit == want else "L")})
     if tts:
         g["tt"] = tts
-    plays = e.get("top_plays") or ([e["top_play"]] if e.get("top_play") else [])
-    graded_plays = []
-    for tp in plays:
+    def grade_plays(plays):
+      out = []
+      for tp in plays:
         hs, as_ = e["home_score"], e["away_score"]
         if tp["type"] == "Spread":
             res = g["ats"]
@@ -141,9 +141,14 @@ def grade(e: dict) -> dict:
         else:
             res = "W" if (hs > as_) == (tp["side"] == e["home"]) else "L"
         if res:
-            graded_plays.append({"type": tp["type"], "res": res, "prob": tp["prob"], "price": tp.get("price")})
-    if graded_plays:
-        g["plays"] = graded_plays
+            out.append({"type": tp["type"], "res": res, "prob": tp["prob"], "price": tp.get("price")})
+      return out
+    gp = grade_plays(e.get("top_plays") or ([e["top_play"]] if e.get("top_play") else []))
+    if gp:
+        g["plays"] = gp
+    gd = grade_plays(e.get("top5_dropped") or [])
+    if gd:
+        g["dropped_plays"] = gd
     mkt = e.get("mkt_home_wp")
     if mkt is not None and e.get("ml_edge") is not None:
         mkt_pick = mkt if pick_home else 1 - mkt
@@ -187,8 +192,8 @@ def _tt(rows):
             "over": rec([x for x in t if x["lean"] == "Over"]), "under": rec([x for x in t if x["lean"] == "Under"])}
 
 
-def _plays(rows):
-    ps = [p for r in rows for p in r.get("plays", [])]
+def _plays(rows, key="plays"):
+    ps = [p for r in rows for p in r.get(key, [])]
     if not ps:
         return None
     def rec(xs):
@@ -226,6 +231,7 @@ def _summ(rows):
         "tot": _tot(rows),
         "tt": _tt(rows),
         "plays": _plays(rows),
+        "dropped_plays": _plays(rows, "dropped_plays"),
         "ml": {"n": len(ml), "w": sum(m["won"] for m in ml),
                "units": round(sum(m["units"] for m in ml), 2),
                "exp": round(sum(m["mkt"] for m in ml) / len(ml), 3) if ml else None},

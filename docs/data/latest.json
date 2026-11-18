@@ -69,7 +69,7 @@
       "ml_home": null,
       "ml_away": null,
       "ml_edge": null,
-      "top_plays": [
+      "top5_dropped": [
         {
           "type": "Spread",
           "side": "Alcorn St.",
@@ -80,10 +80,12 @@
           "be": 0.535,
           "why": "KenPom +31.3 vs. line +45.5",
           "game": "49eba9f976604d9b6da10df45921b2cc",
+          "red_flag": "Alcorn St. has been trailing its KenPom projection",
+          "would_rank": 2,
           "matchup": "Alcorn St. @ Missouri",
           "tip": "9:00 PM",
           "neutral": false,
-          "same_game": true
+          "same_game": false
         },
         {
           "type": "Team total",
@@ -97,10 +99,12 @@
           "team": "Alcorn St.",
           "lean": "Over",
           "game": "49eba9f976604d9b6da10df45921b2cc",
+          "red_flag": "Alcorn St. has been trailing its KenPom projection",
+          "would_rank": 5,
           "matchup": "Alcorn St. @ Missouri",
           "tip": "9:00 PM",
           "neutral": false,
-          "same_game": true
+          "same_game": false
         }
       ]
     },
@@ -165,7 +169,7 @@
       "ml_home": -10000,
       "ml_away": 3000,
       "ml_edge": 0.039,
-      "top_plays": [
+      "top5_dropped": [
         {
           "type": "Spread",
           "side": "Arkansas Pine Bluff",
@@ -176,6 +180,8 @@
           "be": 0.512,
           "why": "KenPom +16.0 vs. line +26.5",
           "game": "458aa313a32c840ac6c8496378003502",
+          "red_flag": "Arkansas Pine Bluff has been trailing its KenPom projection",
+          "would_rank": 3,
           "matchup": "Arkansas Pine Bluff @ Arkansas St.",
           "tip": "8:00 PM",
           "neutral": false,
@@ -243,7 +249,24 @@
       },
       "ml_home": -20000,
       "ml_away": 3500,
-      "ml_edge": 0.03
+      "ml_edge": 0.03,
+      "top_plays": [
+        {
+          "type": "Spread",
+          "side": "North Carolina Central",
+          "line": 26.5,
+          "price": -110,
+          "book": "MGM",
+          "prob": 0.634,
+          "be": 0.524,
+          "why": "KenPom +17.7 vs. line +26.5",
+          "game": "6152e11ee0f51c9e31b75aeecad708c3",
+          "matchup": "North Carolina Central @ George Mason",
+          "tip": "7:00 PM",
+          "neutral": false,
+          "same_game": false
+        }
+      ]
     },
     {
       "id": "50f9c229b6b49a7512f7511e6d825cd4",
@@ -305,7 +328,41 @@
       },
       "ml_home": null,
       "ml_away": null,
-      "ml_edge": null
+      "ml_edge": null,
+      "top_plays": [
+        {
+          "type": "Team total",
+          "side": "UCLA Under",
+          "line": 100.0,
+          "price": null,
+          "book": "implied",
+          "prob": 0.627,
+          "be": 0.524,
+          "why": "KenPom 93.0 vs. implied 100",
+          "team": "UCLA",
+          "lean": "Under",
+          "game": "50f9c229b6b49a7512f7511e6d825cd4",
+          "matchup": "Cal St. Fullerton @ UCLA",
+          "tip": "10:30 PM",
+          "neutral": false,
+          "same_game": true
+        },
+        {
+          "type": "Spread",
+          "side": "Cal St. Fullerton",
+          "line": 34.5,
+          "price": -105,
+          "book": "ESPN",
+          "prob": 0.625,
+          "be": 0.512,
+          "why": "KenPom +26.4 vs. line +34.5",
+          "game": "50f9c229b6b49a7512f7511e6d825cd4",
+          "matchup": "Cal St. Fullerton @ UCLA",
+          "tip": "10:30 PM",
+          "neutral": false,
+          "same_game": true
+        }
+      ]
     },
     {
       "id": "b9ceae88b150b85cac57b2c1a4f3d29c",
@@ -3884,36 +3941,6 @@
       "same_game": false
     },
     {
-      "type": "Spread",
-      "side": "Alcorn St.",
-      "line": 45.5,
-      "price": -115,
-      "book": "ESPN",
-      "prob": 0.691,
-      "be": 0.535,
-      "why": "KenPom +31.3 vs. line +45.5",
-      "game": "49eba9f976604d9b6da10df45921b2cc",
-      "matchup": "Alcorn St. @ Missouri",
-      "tip": "9:00 PM",
-      "neutral": false,
-      "same_game": true
-    },
-    {
-      "type": "Spread",
-      "side": "Arkansas Pine Bluff",
-      "line": 26.5,
-      "price": -105,
-      "book": "MGM",
-      "prob": 0.655,
-      "be": 0.512,
-      "why": "KenPom +16.0 vs. line +26.5",
-      "game": "458aa313a32c840ac6c8496378003502",
-      "matchup": "Arkansas Pine Bluff @ Arkansas St.",
-      "tip": "8:00 PM",
-      "neutral": false,
-      "same_game": false
-    },
-    {
       "type": "Moneyline",
       "side": "Fairleigh Dickinson",
       "line": null,
@@ -3929,19 +3956,49 @@
       "same_game": false
     },
     {
+      "type": "Spread",
+      "side": "North Carolina Central",
+      "line": 26.5,
+      "price": -110,
+      "book": "MGM",
+      "prob": 0.634,
+      "be": 0.524,
+      "why": "KenPom +17.7 vs. line +26.5",
+      "game": "6152e11ee0f51c9e31b75aeecad708c3",
+      "matchup": "North Carolina Central @ George Mason",
+      "tip": "7:00 PM",
+      "neutral": false,
+      "same_game": false
+    },
+    {
       "type": "Team total",
-      "side": "Alcorn St. Over",
-      "line": 54.5,
+      "side": "UCLA Under",
+      "line": 100.0,
       "price": null,
       "book": "implied",
-      "prob": 0.649,
+      "prob": 0.627,
       "be": 0.524,
-      "why": "KenPom 63.0 vs. implied 54.5",
-      "team": "Alcorn St.",
-      "lean": "Over",
-      "game": "49eba9f976604d9b6da10df45921b2cc",
-      "matchup": "Alcorn St. @ Missouri",
-      "tip": "9:00 PM",
+      "why": "KenPom 93.0 vs. implied 100",
+      "team": "UCLA",
+      "lean": "Under",
+      "game": "50f9c229b6b49a7512f7511e6d825cd4",
+      "matchup": "Cal St. Fullerton @ UCLA",
+      "tip": "10:30 PM",
+      "neutral": false,
+      "same_game": true
+    },
+    {
+      "type": "Spread",
+      "side": "Cal St. Fullerton",
+      "line": 34.5,
+      "price": -105,
+      "book": "ESPN",
+      "prob": 0.625,
+      "be": 0.512,
+      "why": "KenPom +26.4 vs. line +34.5",
+      "game": "50f9c229b6b49a7512f7511e6d825cd4",
+      "matchup": "Cal St. Fullerton @ UCLA",
+      "tip": "10:30 PM",
       "neutral": false,
       "same_game": true
     }
@@ -4061,6 +4118,7 @@
           }
         }
       },
+      "dropped_plays": null,
       "ml": {
         "n": 88,
         "w": 39,
@@ -4178,6 +4236,7 @@
             }
           }
         },
+        "dropped_plays": null,
         "ml": {
           "n": 88,
           "w": 39,
@@ -23607,5 +23666,60 @@
       "conf": "SWAC",
       "adj_em": -23.4
     }
-  }
+  },
+  "top5_dropped": [
+    {
+      "type": "Spread",
+      "side": "Alcorn St.",
+      "line": 45.5,
+      "price": -115,
+      "book": "ESPN",
+      "prob": 0.691,
+      "be": 0.535,
+      "why": "KenPom +31.3 vs. line +45.5",
+      "game": "49eba9f976604d9b6da10df45921b2cc",
+      "red_flag": "Alcorn St. has been trailing its KenPom projection",
+      "would_rank": 2,
+      "matchup": "Alcorn St. @ Missouri",
+      "tip": "9:00 PM",
+      "neutral": false,
+      "same_game": false
+    },
+    {
+      "type": "Spread",
+      "side": "Arkansas Pine Bluff",
+      "line": 26.5,
+      "price": -105,
+      "book": "MGM",
+      "prob": 0.655,
+      "be": 0.512,
+      "why": "KenPom +16.0 vs. line +26.5",
+      "game": "458aa313a32c840ac6c8496378003502",
+      "red_flag": "Arkansas Pine Bluff has been trailing its KenPom projection",
+      "would_rank": 3,
+      "matchup": "Arkansas Pine Bluff @ Arkansas St.",
+      "tip": "8:00 PM",
+      "neutral": false,
+      "same_game": false
+    },
+    {
+      "type": "Team total",
+      "side": "Alcorn St. Over",
+      "line": 54.5,
+      "price": null,
+      "book": "implied",
+      "prob": 0.649,
+      "be": 0.524,
+      "why": "KenPom 63.0 vs. implied 54.5",
+      "team": "Alcorn St.",
+      "lean": "Over",
+      "game": "49eba9f976604d9b6da10df45921b2cc",
+      "red_flag": "Alcorn St. has been trailing its KenPom projection",
+      "would_rank": 5,
+      "matchup": "Alcorn St. @ Missouri",
+      "tip": "9:00 PM",
+      "neutral": false,
+      "same_game": false
+    }
+  ]
 }

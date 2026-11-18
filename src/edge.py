@@ -289,20 +289,56 @@ def candidate_plays(g):
     return [dict(c, game=g["id"], prob=round(c["prob"], 3), be=round(c["be"], 3)) for c in out if c["prob"] > c["be"]]
 
 
-def top_plays(games):
+def trend_dir(trend, name):
+    t = trend.get(name)
+    if not t or t["g"] < 2 or abs(t["margin_vs"]) < 12 / math.sqrt(t["g"]):
+        return 0
+    return 1 if t["margin_vs"] > 0 else -1
+
+
+def red_flag(c, g, trend):
+    """Same rule as the dashboard: backing a team the model has been overrating,
+    or fading one it has been underrating."""
+    if c["type"] in ("Spread", "Moneyline"):
+        backed = c["side"]; faded = g["away"] if backed == g["home"] else g["home"]
+        reasons = []
+        if trend_dir(trend, backed) < 0: reasons.append(f"{backed} has been trailing its KenPom projection")
+        if trend_dir(trend, faded) > 0: reasons.append(f"{faded} has been beating its KenPom projection")
+        return "; ".join(reasons)
+    if c["type"] == "Team total":
+        d = trend_dir(trend, c["team"])
+        if c["lean"] == "Over" and d < 0: return f"{c['team']} has been trailing its KenPom projection"
+        if c["lean"] == "Under" and d > 0: return f"{c['team']} has been beating its KenPom projection"
+    return ""
+
+
+def top_plays(games, trend=None):
     """Most likely plays of the day: highest win probability, any bet type, any game.
-    Plays from the same game are allowed and tagged, since their results are linked."""
-    chosen = sorted((c for g in games for c in candidate_plays(g)), key=lambda c: -c["prob"])[:TOP_N]
+    Red-flagged plays are dropped; plays from the same game are allowed and tagged."""
+    trend = trend or {}
     by_id = {g["id"]: g for g in games}
+    ranked = sorted((c for g in games for c in candidate_plays(g)), key=lambda c: -c["prob"])
+    chosen, dropped = [], []
+    for i, c in enumerate(ranked):
+        if len(chosen) == TOP_N:
+            break
+        flag = red_flag(c, by_id[c["game"]], trend)
+        if flag:
+            dropped.append(dict(c, red_flag=flag, would_rank=i + 1))
+        else:
+            chosen.append(c)
     counts = {}
     for c in chosen:
         counts[c["game"]] = counts.get(c["game"], 0) + 1
-    for c in chosen:
+    for c in chosen + dropped:
         g = by_id[c["game"]]
         c.update({"matchup": f"{g['away']} @ {g['home']}", "tip": g["tip"], "neutral": g["neutral"],
-                  "same_game": counts[c["game"]] > 1})
-        g.setdefault("top_plays", []).append(c)
-    return chosen
+                  "same_game": counts.get(c["game"], 0) > 1})
+    for c in chosen:
+        by_id[c["game"]].setdefault("top_plays", []).append(c)
+    for c in dropped:
+        by_id[c["game"]].setdefault("top5_dropped", []).append(c)
+    return chosen, dropped
 
 
 # ------------------------------------------------------------ Projection ---
@@ -417,14 +453,14 @@ def build(kp: dict, odds: list, now: datetime) -> dict:
         })
     games.sort(key=lambda g: abs(g["diff"]), reverse=True)
     upcoming = [g for g in games if datetime.fromisoformat(g["tip_iso"]) > now]
-    top5 = top_plays(upcoming)
+    top5, dropped = top_plays(upcoming, TREND)
     (DOCS / "data").mkdir(parents=True, exist_ok=True)
     (DOCS / "data" / "name_map.json").write_text(json.dumps(
         {"matched": dict(sorted(match.map.items())), "unmatched": sorted(match.unmatched),
          "collisions": match.collisions, "espn_unmatched": ESPN_MISSED}, indent=1))
     if match.collisions:
         print(f"Name collisions (closest kept, others unmatched): {match.collisions}")
-    return {"games": games, "top5": top5, "unmatched": sorted(n for n in match.unmatched if n in today_names), "avg_o": round(avg_o, 1),
+    return {"games": games, "top5": top5, "top5_dropped": dropped, "unmatched": sorted(n for n in match.unmatched if n in today_names), "avg_o": round(avg_o, 1),
             "avg_t": round(avg_t, 1)}
 
 
@@ -440,8 +476,15 @@ def load_kenpom():
     return snap["teams"], snap["through"]
 
 
+TREND: dict = {}
+
+
 def main():
     now = datetime.now(timezone.utc)
+    led = DOCS / "data" / "ledger.json"
+    if led.exists():
+        from track import summarize
+        TREND.update({t["team"]: t for t in summarize(json.loads(led.read_text()))["teams"]})
     kp, through = load_kenpom()
     result = build(kp, fetch_odds(), now)
     payload = {

@@ -95,8 +95,9 @@
 
   <section class="view on" id="v-value">
     <h2>Top 5 plays: most likely to hit</h2>
-    <p class="hint">The five bets with the highest win probability today, across spreads, totals, team totals and moneylines, any game. Plays from the same game are tagged, since they tend to win or lose together. Probabilities come from the KenPom projection, pulled halfway toward the market's 50/50 (moneylines use the 50/50 model/market blend). A play only qualifies if its probability beats the break-even rate for its price. Moneylines shorter than −300 are skipped.</p>
+    <p class="hint">The five bets with the highest win probability today, across spreads, totals, team totals and moneylines, any game. Plays from the same game are tagged, since they tend to win or lose together. Probabilities come from the KenPom projection, pulled halfway toward the market's 50/50 (moneylines use the 50/50 model/market blend). A play only qualifies if its probability beats the break-even rate for its price. Moneylines shorter than −300 are skipped. Red-flagged plays (backing a team the model has been overrating, or fading one it has been underrating) are dropped and listed below.</p>
     <div class="cards" id="top5Cards"></div>
+    <div id="top5Dropped"></div>
     <h2>Spread value: competitive games</h2>
     <p class="hint">Spreads of 20 or less where the KenPom projection and the book differ by 3+ points. Biggest gaps first.</p>
     <div class="cards" id="spreadCards"></div>
@@ -332,6 +333,7 @@ function card(g, i, mode){
     <div class="line">${detail}</div>
     <div class="line">Best line: ${bestLine(g)}</div>
     ${redFlag(g.pick, g.pick === g.home ? g.away : g.home)}
+    ${droppedNote(g, mode === "ml" ? "Moneyline" : "Spread")}
     ${kpLine(g, mode === "ml" ? "ml" : "spread")}
     ${g.neutral ? '<div><span class="tag neutral" style="margin-left:0">Neutral site · no home-court edge</span></div>' : ""}
     <div class="vs">${esc(g.away)}${cardFlags(g.away, g.away_luck)} @ ${esc(g.home)}${cardFlags(g.home, g.home_luck)}${g.confGame ? ` · ${esc(g.home_conf)}` : ` · ${esc(g.away_conf)} vs. ${esc(g.home_conf)}`}</div>
@@ -446,7 +448,8 @@ function renderTrack(){
   document.getElementById("playsTbl").innerHTML = O.plays
     ? `<thead><tr><th>Bet type</th><th class="num">Record</th></tr></thead><tbody>` +
       Object.entries(O.plays.by_type).map(([t, r]) => `<tr><td>${esc(t)}</td><td class="num">${rec(r)}${rp(r)}</td></tr>`).join("") +
-      `<tr style="font-weight:700"><td>All (expected ${pp(O.plays.exp)})</td><td class="num">${rec(O.plays.rec)}${rp(O.plays.rec)} · ${units(O.plays.units)}</td></tr></tbody>`
+      `<tr style="font-weight:700"><td>All (expected ${pp(O.plays.exp)})</td><td class="num">${rec(O.plays.rec)}${rp(O.plays.rec)} · ${units(O.plays.units)}</td></tr>` +
+      `<tr><td>Dropped for red flag (not in Top 5)${O.dropped_plays ? ` (expected ${pp(O.dropped_plays.exp)})` : ""}</td><td class="num">${O.dropped_plays ? `${rec(O.dropped_plays.rec)}${rp(O.dropped_plays.rec)} · ${units(O.dropped_plays.units)}` : "none graded yet"}</td></tr></tbody>`
     : '<tr><td class="empty">No Top 5 plays graded yet. Tracking starts with today’s slate.</td></tr>';
   document.getElementById("ttTbl").innerHTML =
     `<thead><tr><th>Month</th><th class="num">Teams</th><th class="num">Proj avg miss</th><th class="num">Implied avg miss</th><th class="num">Lean record</th><th class="num">Gap 3+</th><th class="num">Over leans</th><th class="num">Under leans</th></tr></thead><tbody>` +
@@ -528,6 +531,24 @@ function renderTT(){
 }
 
 
+
+// Where else does this play still appear on the Best value tab?
+function stillIn(c, g){
+  if (!g) return "";
+  if (c.type === "Spread") {
+    if (Math.abs(g.diff) < 3) return "Not in the spread value lists (gap under 3)";
+    return Math.abs(g.book_spread) > BIG ? "Still listed in Spread value: big spreads" : "Still listed in Spread value: competitive games";
+  }
+  if (c.type === "Moneyline") return (g.pick === c.side && g.ml_edge >= MLMIN) ? "Still listed in Best moneyline value" : "Not in other Best value lists";
+  return "Not in other Best value lists (see Over/Under tab)";
+}
+function droppedNote(g, type){
+  const d = (g.top5_dropped || []).find(x => x.type === type);
+  if (d) return `<div class="line" style="color:#ff8a8f;font-size:12px">Dropped from Top 5 (would have been #${d.would_rank} at ${(d.prob * 100).toFixed(0)}%) because of the red flag. Still listed here.</div>`;
+  return redFlagged(g) ? `<div class="line" style="color:#ff8a8f;font-size:12px">Red-flagged, so not eligible for the Top 5. Still listed here.</div>` : "";
+}
+const redFlagged = g => { const opp = g.pick === g.home ? g.away : g.home; return trendDir(g.pick) < 0 || trendDir(opp) > 0; };
+
 function renderTop5(){
   const T = DATA.top5 || [];
   const priceTxt = p => p == null ? "assume -110" : (p > 0 ? "+" : "") + p;
@@ -547,6 +568,12 @@ function renderTop5(){
     ${c.same_game || c.neutral ? `<div>${c.same_game ? '<span class="tag luck" style="margin-left:0" title="Another Top 5 play is from this game; results are linked">Same game</span>' : ""}${c.neutral ? '<span class="tag neutral">Neutral site</span>' : ""}</div>` : ""}
     <div class="vs">${(g => g ? `${esc(g.away)}${cardFlags(g.away, g.away_luck)} @ ${esc(g.home)}${cardFlags(g.home, g.home_luck)}` : esc(c.matchup))(games.find(x => x.id === c.game))}</div>
   </div>`).join("") : '<div class="empty">No plays clear break-even right now (games may have already tipped).</div>';
+  const D = DATA.top5_dropped || [];
+  document.getElementById("top5Dropped").innerHTML = D.length ? `<h3 style="margin:18px 0 8px">Dropped from the Top 5 for red flags</h3>
+    <div style="overflow-x:auto"><table><thead><tr><th>Would-be rank</th><th>Play</th><th class="num">Chance to hit</th><th>Red flag</th><th>Elsewhere on Best value</th></tr></thead><tbody>` +
+    D.map(c => { const g = games.find(x => x.id === c.game); return `<tr><td>#${c.would_rank}</td>
+      <td class="match"><span class="t">${esc(c.side)}${c.line != null ? (c.type === "Spread" ? " " + fmt(c.line) : " " + c.line) : ""}</span> <span class="tag" style="margin-left:4px">${esc(c.type)}</span><div class="meta">${esc(c.matchup)} · ${esc(c.tip)}</div></td>
+      <td class="num">${(c.prob * 100).toFixed(0)}%</td><td style="color:#ff8a8f">${esc(c.red_flag)}</td><td>${stillIn(c, g)}</td></tr>`; }).join("") + "</tbody></table></div>" : "";
 }
 
 
