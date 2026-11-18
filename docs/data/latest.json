@@ -19891,6 +19891,234 @@
         "imp_n": 1
       }
     ],
+    "categories": [
+      {
+        "key": "small_gap",
+        "label": "Gap under 2 pts",
+        "kind": "spread",
+        "all": {
+          "w": 64,
+          "l": 41,
+          "pct": 0.61
+        },
+        "recent": {
+          "w": 38,
+          "l": 22,
+          "pct": 0.633
+        },
+        "status": "green"
+      },
+      {
+        "key": "mid_gap",
+        "label": "Gap 2 to 5 pts",
+        "kind": "spread",
+        "all": {
+          "w": 37,
+          "l": 47,
+          "pct": 0.44
+        },
+        "recent": {
+          "w": 14,
+          "l": 22,
+          "pct": 0.389
+        },
+        "status": "red"
+      },
+      {
+        "key": "comp_pick",
+        "label": "Competitive picks",
+        "kind": "spread",
+        "all": {
+          "w": 13,
+          "l": 19,
+          "pct": 0.406
+        },
+        "recent": {
+          "w": 4,
+          "l": 7,
+          "pct": 0.364
+        },
+        "status": "red"
+      },
+      {
+        "key": "big_pick",
+        "label": "Big-spread picks",
+        "kind": "spread",
+        "all": {
+          "w": 25,
+          "l": 19,
+          "pct": 0.568
+        },
+        "recent": {
+          "w": 10,
+          "l": 13,
+          "pct": 0.435
+        },
+        "status": "yellow"
+      },
+      {
+        "key": "road",
+        "label": "Road team",
+        "kind": "spread",
+        "all": {
+          "w": 84,
+          "l": 63,
+          "pct": 0.571
+        },
+        "recent": {
+          "w": 40,
+          "l": 37,
+          "pct": 0.519
+        },
+        "status": "yellow"
+      },
+      {
+        "key": "home",
+        "label": "Home team",
+        "kind": "spread",
+        "all": {
+          "w": 36,
+          "l": 39,
+          "pct": 0.48
+        },
+        "recent": {
+          "w": 18,
+          "l": 15,
+          "pct": 0.545
+        },
+        "status": "yellow"
+      },
+      {
+        "key": "dog",
+        "label": "Underdog",
+        "kind": "spread",
+        "all": {
+          "w": 93,
+          "l": 72,
+          "pct": 0.564
+        },
+        "recent": {
+          "w": 44,
+          "l": 41,
+          "pct": 0.518
+        },
+        "status": "yellow"
+      },
+      {
+        "key": "fav",
+        "label": "Favorite",
+        "kind": "spread",
+        "all": {
+          "w": 27,
+          "l": 30,
+          "pct": 0.474
+        },
+        "recent": {
+          "w": 14,
+          "l": 11,
+          "pct": 0.56
+        },
+        "status": "yellow"
+      },
+      {
+        "key": "mid_spread",
+        "label": "Spread 10 to 20",
+        "kind": "spread",
+        "all": {
+          "w": 36,
+          "l": 23,
+          "pct": 0.61
+        },
+        "recent": {
+          "w": 19,
+          "l": 14,
+          "pct": 0.576
+        },
+        "status": "green"
+      },
+      {
+        "key": "under",
+        "label": "Under lean",
+        "kind": "total",
+        "all": {
+          "w": 66,
+          "l": 47,
+          "pct": 0.584
+        },
+        "recent": {
+          "w": 21,
+          "l": 30,
+          "pct": 0.412
+        },
+        "status": "yellow"
+      },
+      {
+        "key": "over",
+        "label": "Over lean",
+        "kind": "total",
+        "all": {
+          "w": 53,
+          "l": 56,
+          "pct": 0.486
+        },
+        "recent": {
+          "w": 30,
+          "l": 29,
+          "pct": 0.508
+        },
+        "status": "red"
+      },
+      {
+        "key": "tot_small",
+        "label": "Total gap under 4",
+        "kind": "total",
+        "all": {
+          "w": 97,
+          "l": 76,
+          "pct": 0.561
+        },
+        "recent": {
+          "w": 43,
+          "l": 40,
+          "pct": 0.518
+        },
+        "status": "yellow"
+      },
+      {
+        "key": "tot_big",
+        "label": "Total gap 4+",
+        "kind": "total",
+        "all": {
+          "w": 22,
+          "l": 27,
+          "pct": 0.449
+        },
+        "recent": {
+          "w": 8,
+          "l": 19,
+          "pct": 0.296
+        },
+        "status": "red"
+      },
+      {
+        "key": "ml",
+        "label": "Moneyline value",
+        "kind": "ml",
+        "all": {
+          "w": 39,
+          "l": 49,
+          "pct": 0.443
+        },
+        "recent": {
+          "w": 14,
+          "l": 15,
+          "pct": 0.483
+        },
+        "status": "green",
+        "units_all": 2.25,
+        "units_recent": 6.66
+      }
+    ],
     "recent": [
       {
         "date": "2026-11-17",

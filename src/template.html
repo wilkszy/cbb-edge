@@ -69,9 +69,10 @@
   .conf col.c1{width:90px}.conf col.c3,.conf col.c4{width:120px}.conf col.c5{width:150px}.conf col.c6{width:190px}.conf col.c7{width:90px}
   .note{color:var(--muted);font-size:12px;margin-top:22px;max-width:900px}
   .neutral{border-color:#3b3b55;color:#b8b8ff}
+  .card-y{border-color:#6b5a1f;color:#f0d36b}
   .kp-soft{border-color:var(--line);color:var(--muted)}
   .trend-up{border-color:#1f5c3a;color:#6fe3a5}.trend-down{border-color:#6b2427;color:#ff8a8f}
-  .luck{border-color:#5a4a1f;color:#e8c46a}.unluck{border-color:#2c4a5e;color:#8cc4e8}
+  .luck{border-color:#5e2f4e;color:#f0a0d0}.unluck{border-color:#2c4a5e;color:#8cc4e8}
   .res-W{color:var(--accent);font-weight:700}.res-L{color:#e5484d;font-weight:700}.res-P{color:var(--ink2);font-weight:700}
   .empty{padding:32px;text-align:center;color:var(--ink2)}
   details.unm{margin-top:10px;color:var(--muted);font-size:12px}
@@ -94,8 +95,9 @@
   </div>
 
   <section class="view on" id="v-value">
+    <div id="catStrip"></div>
     <h2>Top 5 plays: most likely to hit</h2>
-    <p class="hint">The five bets with the highest win probability today, across spreads, totals, team totals and moneylines, any game. Plays from the same game are tagged, since they tend to win or lose together. Probabilities come from the KenPom projection, pulled halfway toward the market's 50/50 (moneylines use the 50/50 model/market blend). A play only qualifies if its probability beats the break-even rate for its price. Moneylines shorter than −300 are skipped. Red-flagged plays (backing a team the model has been overrating, or fading one it has been underrating) are dropped and listed below.</p>
+    <p class="hint">The five bets with the highest win probability today, across spreads, totals, team totals and moneylines, any game. Plays from the same game are tagged, since they tend to win or lose together. Probabilities come from the KenPom projection, pulled halfway toward the market's 50/50 (moneylines use the 50/50 model/market blend). A play only qualifies if its probability beats the break-even rate for its price. Moneylines shorter than −300 are skipped. Red-card plays (backing a team the model has been overrating, or fading one it has been underrating) are dropped and listed below. Yellow cards (trend flipping) stay eligible but are marked.</p>
     <div class="cards" id="top5Cards"></div>
     <div id="top5Dropped"></div>
     <h2>Spread value: competitive games</h2>
@@ -195,6 +197,8 @@
   <section class="view" id="v-track">
     <p class="hint" id="trackHead"></p>
     <div class="tiles" id="trackTiles"></div>
+    <h2>Category cards</h2>
+    <div style="overflow-x:auto"><table id="catTbl"></table></div>
     <h2>By month</h2>
     <p class="hint">Avg miss = average gap between the predicted margin and the final margin. ATS = record of the value side against the locked book spread. Competitive and big-spread picks are the two Best value lists (gap 3+, spreads 20 or less vs. over 20). "All spreads over 20" counts every big-spread game regardless of gap. You need about 52.4% ATS to break even at standard -110 pricing.</p>
     <div style="overflow-x:auto"><table id="monthTbl"></table></div>
@@ -262,18 +266,33 @@ const trendTag = (name, soft = true) => {
     return `<span class="tag kp-soft" title="${esc(name)} vs. its KenPom projection: ${v0} pts/game over ${t.g} graded game${t.g > 1 ? "s" : ""} (beat it ${t.beat} of ${t.g}). Not enough evidence for a flag yet.">KP ${v0} (${t.g}g)</span>`;
   }
   const v = (t.margin_vs > 0 ? "+" : "−") + Math.abs(t.margin_vs).toFixed(1);
+  if (teamStatus(name) === "yellow") {
+    const tipY = `${esc(name)} is ${v} pts/game vs. its KenPom projection over ${t.g} games, but its latest game went the other way. Trend may be flipping.`;
+    return `<span class="tag card-y" title="${tipY}">🟡 ${t.margin_vs > 0 ? "Beats" : "Trails"} KP ${v} · last game flipped</span>`;
+  }
   const tip = `Over ${t.g} graded games, ${esc(name)} has finished ${Math.abs(t.margin_vs).toFixed(1)} pts/game ${t.margin_vs > 0 ? "better" : "worse"} than its KenPom projection (beat it ${t.beat} of ${t.g}). Flag threshold at ${t.g} games: ${bar.toFixed(1)} pts.`;
   return t.margin_vs > 0
-    ? `<span class="tag trend-up" title="${tip}">Beats KP ${v} (${t.g}g)</span>`
-    : `<span class="tag trend-down" title="${tip}">Trails KP ${v} (${t.g}g)</span>`;
+    ? `<span class="tag trend-up" title="${tip}">🟢 Beats KP ${v} (${t.g}g)</span>`
+    : `<span class="tag trend-down" title="${tip}">🔴 Trails KP ${v} (${t.g}g)</span>`;
 };
-const trendDir = name => { const t = TREND[name]; return (!t || t.g < 2 || Math.abs(t.margin_vs) < 12 / Math.sqrt(t.g)) ? 0 : Math.sign(t.margin_vs); };
+const teamStatus = name => {
+  const t = TREND[name];
+  if (!t || t.g < 2 || Math.abs(t.margin_vs) < 12 / Math.sqrt(t.g)) return null;
+  const sign = Math.sign(t.margin_vs), last = (t.games || [])[0];
+  if (last && (last.margin - last.proj) * sign < 0) return "yellow";
+  return sign > 0 ? "green" : "red";
+};
+const trendDir = name => { const st = teamStatus(name); return st === "green" ? 1 : st === "red" ? -1 : 0; };
 // Warning when the play backs a team the model has been overrating, or fades one it has been underrating
 const redFlag = (backed, faded) => {
   const msgs = [];
   if (backed && trendDir(backed) < 0) msgs.push(`${esc(backed)} has been trailing its KenPom projection`);
   if (faded && trendDir(faded) > 0) msgs.push(`${esc(faded)} has been beating its KenPom projection`);
-  return msgs.length ? `<div class="line" style="color:#ff8a8f">⚠ Red flag: ${msgs.join("; ")}</div>` : "";
+  const ys = [];
+  if (backed && teamStatus(backed) === "yellow" && TREND[backed].margin_vs < 0) ys.push(`${esc(backed)} has trailed its projection but beat it last game`);
+  if (faded && teamStatus(faded) === "yellow" && TREND[faded].margin_vs > 0) ys.push(`${esc(faded)} has beaten its projection but fell short last game`);
+  return (msgs.length ? `<div class="line" style="color:#ff8a8f">🔴 Red card: ${msgs.join("; ")}</div>` : "") +
+         (ys.length ? `<div class="line" style="color:#f0d36b">🟡 Yellow card: ${ys.join("; ")}</div>` : "");
 };
 const sg1 = v => v == null ? "–" : (v > 0 ? "+" : v < 0 ? "−" : "") + Math.abs(v).toFixed(1);
 // Record that matches the bet: spread | ml | total | tt
@@ -334,6 +353,7 @@ function card(g, i, mode){
     <div class="line">Best line: ${bestLine(g)}</div>
     ${redFlag(g.pick, g.pick === g.home ? g.away : g.home)}
     ${droppedNote(g, mode === "ml" ? "Moneyline" : "Spread")}
+    ${catChips(g, mode === "ml" ? "ml" : "spread")}
     ${kpLine(g, mode === "ml" ? "ml" : "spread")}
     ${g.neutral ? '<div><span class="tag neutral" style="margin-left:0">Neutral site · no home-court edge</span></div>' : ""}
     <div class="vs">${esc(g.away)}${cardFlags(g.away, g.away_luck)} @ ${esc(g.home)}${cardFlags(g.home, g.home_luck)}${g.confGame ? ` · ${esc(g.home_conf)}` : ` · ${esc(g.away_conf)} vs. ${esc(g.home_conf)}`}</div>
@@ -479,6 +499,7 @@ function renderOU(){
     <div class="side">${g.ou_pick} ${g.book_total}</div>
     <div class="line">Book ${g.book_total} · KenPom ${g.proj_total} · ${g.poss} poss</div>
     <div class="line">Best line: ${ouLine(g)}</div>
+    ${catChips(g, "total")}
     ${kpLine(g, "total")}
     <div class="vs">${esc(g.away)}${cardFlags(g.away, g.away_luck)} @ ${esc(g.home)}${cardFlags(g.home, g.home_luck)}</div>
   </div>`).join("") : '<div class="empty">No totals posted yet.</div>';
@@ -544,10 +565,53 @@ function stillIn(c, g){
 }
 function droppedNote(g, type){
   const d = (g.top5_dropped || []).find(x => x.type === type);
-  if (d) return `<div class="line" style="color:#ff8a8f;font-size:12px">Dropped from Top 5 (would have been #${d.would_rank} at ${(d.prob * 100).toFixed(0)}%) because of the red flag. Still listed here.</div>`;
-  return redFlagged(g) ? `<div class="line" style="color:#ff8a8f;font-size:12px">Red-flagged, so not eligible for the Top 5. Still listed here.</div>` : "";
+  if (d) return `<div class="line" style="color:#ff8a8f;font-size:12px">Dropped from Top 5 (would have been #${d.would_rank} at ${(d.prob * 100).toFixed(0)}%) because of the red card. Still listed here.</div>`;
+  return redFlagged(g) ? `<div class="line" style="color:#ff8a8f;font-size:12px">Red card, so not eligible for the Top 5. Still listed here.</div>` : "";
 }
 const redFlagged = g => { const opp = g.pick === g.home ? g.away : g.home; return trendDir(g.pick) < 0 || trendDir(opp) > 0; };
+
+
+const CATS = () => Object.fromEntries(((DATA.track && DATA.track.categories) || []).map(c => [c.key, c]));
+function memberCats(g, kind){
+  if (kind === "ml") return ["ml"];
+  if (kind === "total") {
+    const out = [g.ou_pick === "Under" ? "under" : "over"];
+    if (g.tot_diff != null) out.push(Math.abs(g.tot_diff) < 4 ? "tot_small" : "tot_big");
+    return out;
+  }
+  const gap = Math.abs(g.diff), big = Math.abs(g.book_spread) > BIG, ph = g.pick === g.home;
+  const out = [];
+  if (gap < 2) out.push("small_gap"); else if (gap < 5) out.push("mid_gap");
+  if (gap >= 3) out.push(big ? "big_pick" : "comp_pick");
+  out.push(ph ? "home" : "road");
+  out.push(ph === (g.book_spread > 0) ? "dog" : "fav");
+  if (Math.abs(g.book_spread) >= 10 && Math.abs(g.book_spread) <= 20) out.push("mid_spread");
+  return out;
+}
+const catText = c => c.kind === "ml"
+  ? `${c.all.w}-${c.all.l}, ${c.units_all > 0 ? "+" : ""}${c.units_all}u · last 3 days ${c.units_recent > 0 ? "+" : ""}${c.units_recent}u`
+  : `${c.all.w}-${c.all.l} (${(c.all.pct * 100).toFixed(0)}%) · last 3 days ${c.recent.w}-${c.recent.l}`;
+function catChip(c){
+  const icon = {green: "🟢", yellow: "🟡", red: "🔴"}[c.status];
+  const cls = {green: "trend-up", yellow: "card-y", red: "trend-down"}[c.status];
+  return `<span class="tag ${cls}" style="margin:2px 4px 2px 0" title="${esc(c.label)}: ${catText(c)}">${icon} ${esc(c.label)}</span>`;
+}
+function catChips(g, kind){
+  const C = CATS();
+  const chips = memberCats(g, kind).map(k => C[k]).filter(c => c && c.status).map(catChip).join("");
+  return chips ? `<div style="margin-top:2px">${chips}</div>` : "";
+}
+function renderCatStrip(){
+  const C = (DATA.track && DATA.track.categories) || [];
+  const row = st => C.filter(c => c.status === st).map(c => `${catChip(c)}<span class="books" style="display:inline;margin-right:12px">${catText(c)}</span>`).join("");
+  const html = ["green","yellow","red"].map(st => row(st) ? `<div style="margin:4px 0">${row(st)}</div>` : "").join("");
+  document.getElementById("catStrip").innerHTML = html ? `<h2>Category cards</h2><p class="hint">🟢 trending: season 54%+ and last 3 days at or above break-even (52.4%). 🟡 flipping: one above break-even, one below. 🔴 losing: both below. Moneylines use units. Each pick card shows the cards for the categories it belongs to.</p>${html}` : "";
+  const T = document.getElementById("catTbl");
+  if (T) T.innerHTML = C.length ? `<thead><tr><th>Category</th><th>Card</th><th class="num">Season</th><th class="num">Last 3 days</th></tr></thead><tbody>` +
+    C.map(c => `<tr><td>${esc(c.label)}</td><td>${c.status ? catChip(c) : '<span class="books">not enough games / neutral</span>'}</td>
+      <td class="num">${c.kind === "ml" ? `${c.all.w}-${c.all.l}, ${c.units_all}u` : `${c.all.w}-${c.all.l}${c.all.pct != null ? ` (${(c.all.pct*100).toFixed(1)}%)` : ""}`}</td>
+      <td class="num">${c.kind === "ml" ? `${c.recent.w}-${c.recent.l}, ${c.units_recent}u` : `${c.recent.w}-${c.recent.l}${c.recent.pct != null ? ` (${(c.recent.pct*100).toFixed(1)}%)` : ""}`}</td></tr>`).join("") + "</tbody>" : "";
+}
 
 function renderTop5(){
   const T = DATA.top5 || [];
@@ -563,14 +627,15 @@ function renderTop5(){
       if (c.type === "Team total") { const opp = c.team === g.home ? g.away : g.home; return c.lean === "Over" ? redFlag(c.team, null) : redFlag(null, c.team); }
       return "";
     })(games.find(x => x.id === c.game))}
+    ${(g => !g || c.type === "Team total" ? "" : catChips(g, {Spread: "spread", Moneyline: "ml", Total: "total"}[c.type]))(games.find(x => x.id === c.game))}
     ${(g => !g ? "" : c.type === "Team total" ? kpLineTeam(c.team, "tt") : kpLine(g, {Spread: "spread", Moneyline: "ml", Total: "total"}[c.type]))(games.find(x => x.id === c.game))}
     ${c.type === "Team total" ? '<div class="line">Line is implied from the spread and total; check your book’s team total.</div>' : ""}
     ${c.same_game || c.neutral ? `<div>${c.same_game ? '<span class="tag luck" style="margin-left:0" title="Another Top 5 play is from this game; results are linked">Same game</span>' : ""}${c.neutral ? '<span class="tag neutral">Neutral site</span>' : ""}</div>` : ""}
     <div class="vs">${(g => g ? `${esc(g.away)}${cardFlags(g.away, g.away_luck)} @ ${esc(g.home)}${cardFlags(g.home, g.home_luck)}` : esc(c.matchup))(games.find(x => x.id === c.game))}</div>
   </div>`).join("") : '<div class="empty">No plays clear break-even right now (games may have already tipped).</div>';
   const D = DATA.top5_dropped || [];
-  document.getElementById("top5Dropped").innerHTML = D.length ? `<h3 style="margin:18px 0 8px">Dropped from the Top 5 for red flags</h3>
-    <div style="overflow-x:auto"><table><thead><tr><th>Would-be rank</th><th>Play</th><th class="num">Chance to hit</th><th>Red flag</th><th>Elsewhere on Best value</th></tr></thead><tbody>` +
+  document.getElementById("top5Dropped").innerHTML = D.length ? `<h3 style="margin:18px 0 8px">Dropped from the Top 5 for red cards</h3>
+    <div style="overflow-x:auto"><table><thead><tr><th>Would-be rank</th><th>Play</th><th class="num">Chance to hit</th><th>Red card</th><th>Elsewhere on Best value</th></tr></thead><tbody>` +
     D.map(c => { const g = games.find(x => x.id === c.game); return `<tr><td>#${c.would_rank}</td>
       <td class="match"><span class="t">${esc(c.side)}${c.line != null ? (c.type === "Spread" ? " " + fmt(c.line) : " " + c.line) : ""}</span> <span class="tag" style="margin-left:4px">${esc(c.type)}</span><div class="meta">${esc(c.matchup)} · ${esc(c.tip)}</div></td>
       <td class="num">${(c.prob * 100).toFixed(0)}%</td><td style="color:#ff8a8f">${esc(c.red_flag)}</td><td>${stillIn(c, g)}</td></tr>`; }).join("") + "</tbody></table></div>" : "";
@@ -622,7 +687,7 @@ function renderTeams(){
 
 function init(){
   if(!DATA){ document.querySelector(".wrap").insertAdjacentHTML("beforeend", '<div class="empty">No data yet. The first daily run will fill this in.</div>'); return; }
-  prep(); header(); renderTop5(); renderValue(); renderAll(); renderConf(); renderOU(); renderTT(); renderTeams(); renderTrack();
+  prep(); header(); renderCatStrip(); renderTop5(); renderValue(); renderAll(); renderConf(); renderOU(); renderTT(); renderTeams(); renderTrack();
   document.getElementById("note").innerHTML =
     `How it works: projections use public KenPom ratings (AdjO, AdjD, AdjT) with the standard tempo-adjusted formula and ` +
     `${DATA.hca} pts home-court advantage. They are not KenPom's official game predictions. Book line is the median home spread across listed books. ` +

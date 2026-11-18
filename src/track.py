@@ -302,6 +302,68 @@ def team_trends(graded: list) -> list:
     return sorted(out, key=lambda t: -t["margin_vs"])
 
 
+BE = 0.524
+CATS = [
+    # key, label, bet kind, membership on a graded row
+    ("small_gap", "Gap under 2 pts", "spread", lambda r: r["gap"] < 2),
+    ("mid_gap", "Gap 2 to 5 pts", "spread", lambda r: 2 <= r["gap"] < 5),
+    ("comp_pick", "Competitive picks", "spread", lambda r: r["gap"] >= 3 and not r["big"]),
+    ("big_pick", "Big-spread picks", "spread", lambda r: r["gap"] >= 3 and r["big"]),
+    ("road", "Road team", "spread", lambda r: r["pick"] == r["away"]),
+    ("home", "Home team", "spread", lambda r: r["pick"] == r["home"]),
+    ("dog", "Underdog", "spread", lambda r: (r["pick"] == r["home"]) == (r["book_spread"] > 0)),
+    ("fav", "Favorite", "spread", lambda r: (r["pick"] == r["home"]) != (r["book_spread"] > 0)),
+    ("mid_spread", "Spread 10 to 20", "spread", lambda r: 10 <= abs(r["book_spread"]) <= 20),
+    ("under", "Under lean", "total", lambda r: r.get("ou_pick") == "Under"),
+    ("over", "Over lean", "total", lambda r: r.get("ou_pick") == "Over"),
+    ("tot_small", "Total gap under 4", "total", lambda r: "tot" in r and r["tot"]["gap"] < 4),
+    ("tot_big", "Total gap 4+", "total", lambda r: "tot" in r and r["tot"]["gap"] >= 4),
+    ("ml", "Moneyline value", "ml", lambda r: "ml" in r),
+]
+
+
+def _status(all_pct, rec_pct):
+    if all_pct is None or rec_pct is None:
+        return None
+    if all_pct >= 0.54 and rec_pct >= BE:
+        return "green"
+    if all_pct < BE and rec_pct < BE:
+        return "red"
+    if (all_pct >= BE) != (rec_pct >= BE):
+        return "yellow"
+    return None
+
+
+def category_trends(graded: list, recent_days: int = 3) -> list:
+    days = sorted({r["date"] for r in graded})
+    recent = set(days[-recent_days:])
+    out = []
+    for key, label, kind, f in CATS:
+        rows = [r for r in graded if f(r)]
+        if kind == "ml":
+            res = lambda r: "W" if r["ml"]["won"] else "L"
+        elif kind == "total":
+            rows = [r for r in rows if "tot" in r]
+            res = lambda r: r["tot"]["res"]
+        else:
+            res = lambda r: r["ats"]
+        def rec(xs):
+            w = sum(res(r) == "W" for r in xs); l = sum(res(r) == "L" for r in xs)
+            return {"w": w, "l": l, "pct": round(w / (w + l), 3) if w + l else None}
+        a, rc = rec(rows), rec([r for r in rows if r["date"] in recent])
+        entry = {"key": key, "label": label, "kind": kind, "all": a, "recent": rc, "status": None}
+        if kind == "ml":
+            u_all = round(sum(r["ml"]["units"] for r in rows), 2)
+            u_rec = round(sum(r["ml"]["units"] for r in rows if r["date"] in recent), 2)
+            entry.update(units_all=u_all, units_recent=u_rec)
+            if len(rows) >= 20:
+                entry["status"] = ("green" if u_all > 0 and u_rec > 0 else "red" if u_all < 0 and u_rec < 0 else "yellow")
+        elif a["w"] + a["l"] >= 20 and rc["w"] + rc["l"] >= 5:
+            entry["status"] = _status(a["pct"], rc["pct"])
+        out.append(entry)
+    return out
+
+
 def summarize(ledger: dict) -> dict:
     graded = []
     for gid, e in ledger.items():
@@ -321,6 +383,7 @@ def summarize(ledger: dict) -> dict:
                      "big": _ats([r for r in graded if lo <= r["gap"] < hi and r["big"]])}
                     for lab, lo, hi in BUCKETS],
         "teams": team_trends(graded),
+        "categories": category_trends(graded),
         "recent": [{k: r.get(k) for k in ("date", "tip", "away", "home", "away_score", "home_score",
                                            "book_spread", "proj_spread", "pick", "ats", "proj_err",
                                            "book_err", "gap", "big", "book_total", "ou_pick")}

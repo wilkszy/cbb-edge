@@ -289,11 +289,23 @@ def candidate_plays(g):
     return [dict(c, game=g["id"], prob=round(c["prob"], 3), be=round(c["be"], 3)) for c in out if c["prob"] > c["be"]]
 
 
-def trend_dir(trend, name):
+def trend_status(trend, name):
+    """green / red when the team's trend holds and its latest game agreed; yellow when the latest game flipped."""
     t = trend.get(name)
     if not t or t["g"] < 2 or abs(t["margin_vs"]) < 12 / math.sqrt(t["g"]):
-        return 0
-    return 1 if t["margin_vs"] > 0 else -1
+        return None
+    sign = 1 if t["margin_vs"] > 0 else -1
+    last = t["games"][0] if t.get("games") else None
+    if last is not None:
+        d = last["margin"] - last["proj"]
+        if d * sign < 0:
+            return "yellow"
+    return "green" if sign > 0 else "red"
+
+
+def trend_dir(trend, name):
+    st = trend_status(trend, name)
+    return 1 if st == "green" else -1 if st == "red" else 0
 
 
 def red_flag(c, g, trend):
