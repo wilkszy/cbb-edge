@@ -353,6 +353,68 @@ def top_plays(games, trend=None):
     return chosen, dropped
 
 
+# ------------------------------------------------------------ Green cards ---
+CAT_STATUS: dict = {}
+
+
+def member_cats(g, kind):
+    """Same category rules as track.CATS, applied to today's game (mirrors the page)."""
+    if kind == "ml":
+        return ["ml"]
+    if kind == "total":
+        out = ["under" if g.get("ou_pick") == "Under" else "over"]
+        if g.get("tot_diff") is not None:
+            out.append("tot_small" if abs(g["tot_diff"]) < 4 else "tot_big")
+        return out
+    gap, big, ph = abs(g["diff"]), abs(g["book_spread"]) > 20, g["pick"] == g["home"]
+    out = []
+    if gap < 2: out.append("small_gap")
+    elif gap < 5: out.append("mid_gap")
+    if gap >= 3: out.append("big_pick" if big else "comp_pick")
+    out.append("home" if ph else "road")
+    out.append("dog" if ph == (g["book_spread"] > 0) else "fav")
+    if 10 <= abs(g["book_spread"]) <= 20: out.append("mid_spread")
+    return out
+
+
+def green_plays(games, trend):
+    """Today's picks in at least one green category, with no red category and no red team card."""
+    out = []
+    for g in games:
+        opts = [("Spread", "spread", g["pick"], g.get("best_line"))]
+        mkt = g.get("mkt_home_wp")
+        if mkt is not None and g.get("ml_edge") is not None and g["ml_edge"] >= ML_MIN_EDGE:
+            mp = mkt if g["pick"] == g["home"] else 1 - mkt
+            if 0.15 <= mp <= 0.85:
+                opts.append(("Moneyline", "ml", g["pick"], None))
+        if g.get("book_total") is not None and g.get("ou_pick"):
+            opts.append(("Total", "total", g["ou_pick"], g.get("ou_best")))
+        for typ, kind, side, line in opts:
+            cats = member_cats(g, kind)
+            st = {c: CAT_STATUS.get(c) for c in cats}
+            greens = [c for c, v in st.items() if v == "green"]
+            if not greens or "red" in st.values():
+                continue
+            if typ in ("Spread", "Moneyline"):
+                faded = g["away"] if side == g["home"] else g["home"]
+                if trend_status(trend, side) == "red" or trend_status(trend, faded) == "green":
+                    continue
+            play = {"type": typ, "side": side, "game": g["id"], "greens": greens,
+                    "yellows": [c for c, v in st.items() if v == "yellow"],
+                    "matchup": f"{g['away']} @ {g['home']}", "tip": g["tip"], "tip_iso": g["tip_iso"]}
+            if typ == "Spread" and line:
+                play.update(line=line["point"], price=line["price"], book=line["book"])
+            elif typ == "Moneyline":
+                play.update(price=g["ml_home"] if side == g["home"] else g["ml_away"])
+            elif typ == "Total" and line:
+                play.update(line=line["point"], price=line["price"], book=line["book"])
+            play["prob"] = 0.5
+            out.append(play)
+            g.setdefault("green_plays", []).append(play)
+    out.sort(key=lambda p: (-len(p["greens"]), len(p["yellows"]), p["tip_iso"]))
+    return out
+
+
 # ------------------------------------------------------------ Projection ---
 def project(home: dict, away: dict, avg_o: float, avg_t: float, neutral: bool):
     poss = home["adj_t"] * away["adj_t"] / avg_t
@@ -466,13 +528,14 @@ def build(kp: dict, odds: list, now: datetime) -> dict:
     games.sort(key=lambda g: abs(g["diff"]), reverse=True)
     upcoming = [g for g in games if datetime.fromisoformat(g["tip_iso"]) > now]
     top5, dropped = top_plays(upcoming, TREND)
+    greens = green_plays(upcoming, TREND)
     (DOCS / "data").mkdir(parents=True, exist_ok=True)
     (DOCS / "data" / "name_map.json").write_text(json.dumps(
         {"matched": dict(sorted(match.map.items())), "unmatched": sorted(match.unmatched),
          "collisions": match.collisions, "espn_unmatched": ESPN_MISSED}, indent=1))
     if match.collisions:
         print(f"Name collisions (closest kept, others unmatched): {match.collisions}")
-    return {"games": games, "top5": top5, "top5_dropped": dropped, "unmatched": sorted(n for n in match.unmatched if n in today_names), "avg_o": round(avg_o, 1),
+    return {"games": games, "top5": top5, "top5_dropped": dropped, "green_plays": greens, "unmatched": sorted(n for n in match.unmatched if n in today_names), "avg_o": round(avg_o, 1),
             "avg_t": round(avg_t, 1)}
 
 
@@ -496,7 +559,9 @@ def main():
     led = DOCS / "data" / "ledger.json"
     if led.exists():
         from track import summarize
-        TREND.update({t["team"]: t for t in summarize(json.loads(led.read_text()))["teams"]})
+        _s = summarize(json.loads(led.read_text()))
+        TREND.update({t["team"]: t for t in _s["teams"]})
+        CAT_STATUS.update({c["key"]: c["status"] for c in _s.get("categories", [])})
     kp, through = load_kenpom()
     result = build(kp, fetch_odds(), now)
     payload = {

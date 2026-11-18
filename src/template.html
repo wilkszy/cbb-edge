@@ -90,6 +90,7 @@
     <button data-v="all">All games</button>
     <button data-v="conf">By conference</button>
     <button data-v="ou">Over/Under</button>
+    <button data-v="green">Green cards</button>
     <button data-v="teams">Team trends</button>
     <button data-v="track">Track record</button>
   </div>
@@ -166,6 +167,18 @@
     </table></div>
   </section>
 
+  <section class="view" id="v-green">
+    <p class="hint">Today's picks that sit in at least one 🟢 trending category, with no 🔴 category and no 🔴 team card (backing a red-card team or fading a green-card one). Yellow categories are shown so you can see what's cooling. Category cards refresh with every update, so this list changes as trends do.</p>
+    <div id="greenStrip"></div>
+    <h2>Double green: 2+ trending categories</h2>
+    <div class="cards" id="greenDouble"></div>
+    <h2>Single green</h2>
+    <div style="overflow-x:auto"><table id="greenSingle"></table></div>
+    <h2>Green-card teams on today's slate</h2>
+    <p class="hint">Teams that have kept beating their KenPom projection, with their latest game agreeing. The model has been underrating them.</p>
+    <div class="cards" id="greenTeams"></div>
+  </section>
+
   <section class="view" id="v-teams">
     <p class="hint" id="teamsHead"></p>
     <div class="controls">
@@ -202,8 +215,8 @@
     <h2>By month</h2>
     <p class="hint">Avg miss = average gap between the predicted margin and the final margin. ATS = record of the value side against the locked book spread. Competitive and big-spread picks are the two Best value lists (gap 3+, spreads 20 or less vs. over 20). "All spreads over 20" counts every big-spread game regardless of gap. You need about 52.4% ATS to break even at standard -110 pricing.</p>
     <div style="overflow-x:auto"><table id="monthTbl"></table></div>
-    <h2>Top 5 plays</h2>
-    <p class="hint">Record of the daily Top 5 by bet type. "Expected" is the average win probability the dashboard gave them; if hits run well below it, the probabilities are too optimistic.</p>
+    <h2>Top 5 and Green cards</h2>
+    <p class="hint">Record of the daily Top 5 by bet type, plus the Green cards tab picks. "Expected" is the average win probability the dashboard gave them; if hits run well below it, the probabilities are too optimistic.</p>
     <div style="overflow-x:auto"><table id="playsTbl"></table></div>
     <h2>By size of gap</h2>
     <p class="hint">Does a bigger gap between the book and the projection mean the value side covers more often?</p>
@@ -469,8 +482,9 @@ function renderTrack(){
     ? `<thead><tr><th>Bet type</th><th class="num">Record</th></tr></thead><tbody>` +
       Object.entries(O.plays.by_type).map(([t, r]) => `<tr><td>${esc(t)}</td><td class="num">${rec(r)}${rp(r)}</td></tr>`).join("") +
       `<tr style="font-weight:700"><td>All (expected ${pp(O.plays.exp)})</td><td class="num">${rec(O.plays.rec)}${rp(O.plays.rec)} · ${units(O.plays.units)}</td></tr>` +
+      `<tr><td>Green cards tab picks${O.green ? "" : ""}</td><td class="num">${O.green ? `${rec(O.green.rec)}${rp(O.green.rec)} · ${units(O.green.units)}` : "none graded yet"}</td></tr>` +
       `<tr><td>Dropped for red flag (not in Top 5)${O.dropped_plays ? ` (expected ${pp(O.dropped_plays.exp)})` : ""}</td><td class="num">${O.dropped_plays ? `${rec(O.dropped_plays.rec)}${rp(O.dropped_plays.rec)} · ${units(O.dropped_plays.units)}` : "none graded yet"}</td></tr></tbody>`
-    : '<tr><td class="empty">No Top 5 plays graded yet. Tracking starts with today’s slate.</td></tr>';
+    : `<tr><td class="empty">No Top 5 plays graded yet.</td></tr>`;
   document.getElementById("ttTbl").innerHTML =
     `<thead><tr><th>Month</th><th class="num">Teams</th><th class="num">Proj avg miss</th><th class="num">Implied avg miss</th><th class="num">Lean record</th><th class="num">Gap 3+</th><th class="num">Over leans</th><th class="num">Under leans</th></tr></thead><tbody>` +
     [...T.months.map(m => [new Date(m.month + "-15").toLocaleString("en-US", {month: "long", year: "numeric"}), m.tt]), ["All", O.tt]].map(([lab, t]) =>
@@ -685,9 +699,40 @@ function renderTeams(){
   </tr>`).join("") : `<tr><td colspan="10" class="empty">No teams match.</td></tr>`;
 }
 
+
+function renderGreen(){
+  const P = DATA.green_plays || [];
+  const C = CATS();
+  const chips = keys => keys.map(k => C[k]).filter(Boolean).map(catChip).join("");
+  document.getElementById("greenStrip").innerHTML = `<div style="margin-bottom:6px">${((DATA.track && DATA.track.categories) || []).filter(c => c.status === "green").map(c => `${catChip(c)}<span class="books" style="display:inline;margin-right:12px">${catText(c)}</span>`).join("") || '<span class="books">No categories are green right now.</span>'}</div>`;
+  const playTxt = p => `${esc(p.side)}${p.type === "Spread" && p.line != null ? " " + fmt(p.line) : p.type === "Total" && p.line != null ? " " + p.line : p.type === "Moneyline" ? " ML" : ""}${p.price != null ? ` <span style="font-weight:500;color:var(--ink2)">(${p.price > 0 ? "+" : ""}${p.price}${p.book ? " " + esc(p.book) : ""})</span>` : ""}`;
+  const dbl = P.filter(p => p.greens.length >= 2), sgl = P.filter(p => p.greens.length < 2);
+  document.getElementById("greenDouble").innerHTML = dbl.length ? dbl.map((p, i) => {
+    const g = games.find(x => x.id === p.game);
+    return `<div class="card">
+      <div class="rank">#${i + 1} · ${esc(p.tip)} · <span class="tag" style="margin-left:0">${esc(p.type)}</span></div>
+      <div class="side" style="font-size:18px">${playTxt(p)}</div>
+      ${g ? `<div class="line">Book ${fmt(p.side === g.home ? g.book_spread : -g.book_spread)} · KenPom ${fmt(p.side === g.home ? g.proj_spread : -g.proj_spread)} · gap ${Math.abs(g.diff).toFixed(1)}</div>` : ""}
+      <div>${chips(p.greens)}${chips(p.yellows)}</div>
+      ${g ? redFlag(p.side, p.side === g.home ? g.away : g.home) : ""}
+      ${g ? kpLine(g, p.type === "Moneyline" ? "ml" : p.type === "Total" ? "total" : "spread") : ""}
+      ${g && g.neutral ? '<div><span class="tag neutral" style="margin-left:0">Neutral site</span></div>' : ""}
+      <div class="vs">${g ? `${esc(g.away)}${cardFlags(g.away, g.away_luck)} @ ${esc(g.home)}${cardFlags(g.home, g.home_luck)}` : esc(p.matchup)}</div>
+    </div>`; }).join("") : '<div class="empty">No picks sit in two trending categories today.</div>';
+  document.getElementById("greenSingle").innerHTML = sgl.length ? `<thead><tr><th>Tip</th><th>Play</th><th>Type</th><th>Cards</th><th>Matchup</th></tr></thead><tbody>` +
+    sgl.map(p => { const g = games.find(x => x.id === p.game); return `<tr><td class="tip">${esc(p.tip)}</td><td class="match"><span class="t">${playTxt(p)}</span></td><td>${esc(p.type)}</td>
+      <td>${chips(p.greens)}${chips(p.yellows)}</td><td class="books" style="max-width:none;margin:0">${g ? `${esc(g.away)}${cardFlags(g.away, g.away_luck)} @ ${esc(g.home)}${cardFlags(g.home, g.home_luck)}` : esc(p.matchup)}</td></tr>`; }).join("") + "</tbody>"
+    : '<tr><td class="empty">No single-green picks today.</td></tr>';
+  const today = [...new Set(games.flatMap(g => [g.away, g.home]))].filter(n => teamStatus(n) === "green").map(n => TREND[n]);
+  document.getElementById("greenTeams").innerHTML = today.length ? today.map((t, i) => {
+    const g = games.find(x => x.away === t.team || x.home === t.team);
+    return teamCard(t, i).replace('<div class="vs">', `<div class="line">Today: ${esc(g.away)} @ ${esc(g.home)} · ${esc(g.tip)} · dashboard pick: ${esc(g.pick)} ${fmt(g.pick === g.home ? g.book_spread : -g.book_spread)}</div><div class="vs">`);
+  }).join("") : '<div class="empty">No green-card teams play today.</div>';
+}
+
 function init(){
   if(!DATA){ document.querySelector(".wrap").insertAdjacentHTML("beforeend", '<div class="empty">No data yet. The first daily run will fill this in.</div>'); return; }
-  prep(); header(); renderCatStrip(); renderTop5(); renderValue(); renderAll(); renderConf(); renderOU(); renderTT(); renderTeams(); renderTrack();
+  prep(); header(); renderCatStrip(); renderTop5(); renderValue(); renderAll(); renderConf(); renderOU(); renderTT(); renderTeams(); renderGreen(); renderTrack();
   document.getElementById("note").innerHTML =
     `How it works: projections use public KenPom ratings (AdjO, AdjD, AdjT) with the standard tempo-adjusted formula and ` +
     `${DATA.hca} pts home-court advantage. They are not KenPom's official game predictions. Book line is the median home spread across listed books. ` +

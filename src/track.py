@@ -20,7 +20,7 @@ LOCK_FIELDS = ["home", "away", "home_conf", "away_conf", "tip", "tip_iso", "neut
                "book_spread", "proj_spread", "diff", "pick", "kp_home_wp", "mkt_home_wp",
                "ml_home", "ml_away", "ml_edge", "best_line",
                "book_total", "proj_total", "tot_diff", "ou_pick", "model_home_wp", "ml_min_edge",
-               "proj_home_pts", "proj_away_pts", "imp_home", "imp_away", "top_play", "top_plays", "top5_dropped"]
+               "proj_home_pts", "proj_away_pts", "imp_home", "imp_away", "top_play", "top_plays", "top5_dropped", "green_plays"]
 BUCKETS = [("Under 2", 0, 2), ("2 to 3", 2, 3), ("3 to 5", 3, 5), ("5+", 5, 999)]
 
 
@@ -149,6 +149,9 @@ def grade(e: dict) -> dict:
     gd = grade_plays(e.get("top5_dropped") or [])
     if gd:
         g["dropped_plays"] = gd
+    gg = grade_plays(e.get("green_plays") or [])
+    if gg:
+        g["green_graded"] = gg
     mkt = e.get("mkt_home_wp")
     if mkt is not None and e.get("ml_edge") is not None:
         mkt_pick = mkt if pick_home else 1 - mkt
@@ -232,6 +235,7 @@ def _summ(rows):
         "tt": _tt(rows),
         "plays": _plays(rows),
         "dropped_plays": _plays(rows, "dropped_plays"),
+        "green": _plays(rows, "green_graded"),
         "ml": {"n": len(ml), "w": sum(m["won"] for m in ml),
                "units": round(sum(m["units"] for m in ml), 2),
                "exp": round(sum(m["mkt"] for m in ml) / len(ml), 3) if ml else None},
