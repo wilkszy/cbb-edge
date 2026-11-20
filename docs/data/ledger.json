@@ -154,9 +154,6 @@
   "proj_total": 157.7,
   "tip": "9:00 PM",
   "tip_iso": "2026-11-20T02:00:00+00:00",
-  "top5_dropped": null,
-  "top_play": null,
-  "top_plays": null,
   "tot_diff": 2.2
  },
  "037d59d2f185430c4ee7b3ec96f4e39e": {
@@ -287,7 +284,6 @@
   "date": "2026-11-19",
   "diff": -3.8,
   "final": true,
-  "green_plays": null,
   "home": "Pepperdine",
   "home_conf": "WCC",
   "home_score": 80,
@@ -312,8 +308,6 @@
   "proj_total": 150.5,
   "tip": "9:00 PM",
   "tip_iso": "2026-11-20T02:00:00+00:00",
-  "top5_dropped": null,
-  "top_play": null,
   "top_plays": [
    {
     "be": 0.574,
@@ -487,8 +481,6 @@
   "proj_total": 138.7,
   "tip": "7:00 PM",
   "tip_iso": "2026-11-18T00:00:00+00:00",
-  "top_play": null,
-  "top_plays": null,
   "tot_diff": 1.2
  },
  "09148a74a9c2472e622e8d8f70578b20": {
@@ -637,8 +629,6 @@
   "proj_total": 149.3,
   "tip": "7:00 PM",
   "tip_iso": "2026-11-18T00:00:00+00:00",
-  "top_play": null,
-  "top_plays": null,
   "tot_diff": -1.2
  },
  "0bc84da1a3e9aff13e6946b3b29cf21a": {
@@ -754,56 +744,6 @@
   "proj_total": 136.2,
   "tip": "10:00 PM",
   "tip_iso": "2026-11-18T03:00:00+00:00",
-  "top_play": null,
-  "top_plays": [
-   {
-    "be": 0.545,
-    "book": "BR",
-    "game": "0cd770ea3dc3281082424e2a0e950f0b",
-    "line": 9.5,
-    "matchup": "Seattle @ Cal Baptist",
-    "neutral": false,
-    "price": -120,
-    "prob": 0.551,
-    "same_game": true,
-    "side": "Cal Baptist",
-    "tip": "10:00 PM",
-    "type": "Spread",
-    "why": "KenPom +6.4 vs. line +9.5"
-   },
-   {
-    "be": 0.524,
-    "book": "implied",
-    "game": "0cd770ea3dc3281082424e2a0e950f0b",
-    "lean": "Over",
-    "line": 62.5,
-    "matchup": "Seattle @ Cal Baptist",
-    "neutral": false,
-    "price": null,
-    "prob": 0.547,
-    "same_game": true,
-    "side": "Cal Baptist Over",
-    "team": "Cal Baptist",
-    "tip": "10:00 PM",
-    "type": "Team total",
-    "why": "KenPom 64.9 vs. implied 62.5"
-   },
-   {
-    "be": 0.528,
-    "book": "BR",
-    "game": "0cd770ea3dc3281082424e2a0e950f0b",
-    "line": 132.5,
-    "matchup": "Seattle @ Cal Baptist",
-    "neutral": false,
-    "price": -112,
-    "prob": 0.544,
-    "same_game": true,
-    "side": "Over",
-    "tip": "10:00 PM",
-    "type": "Total",
-    "why": "KenPom total 136.2 vs. 132.5"
-   }
-  ],
   "tot_diff": 2.7
  },
  "0d1a14ace2c3c175c03a9ab173daabd0": {
@@ -989,41 +929,6 @@
   "proj_total": 151.7,
   "tip": "11:00 PM",
   "tip_iso": "2026-11-18T04:00:00+00:00",
-  "top_play": null,
-  "top_plays": [
-   {
-    "be": 0.535,
-    "book": "DK",
-    "game": "107600e44a78d55aaf007aa1f18e20c7",
-    "line": 23.5,
-    "matchup": "Montana St. @ Gonzaga",
-    "neutral": false,
-    "price": -115,
-    "prob": 0.596,
-    "same_game": true,
-    "side": "Montana St.",
-    "tip": "11:00 PM",
-    "type": "Spread",
-    "why": "KenPom +17.5 vs. line +23.5"
-   },
-   {
-    "be": 0.524,
-    "book": "implied",
-    "game": "107600e44a78d55aaf007aa1f18e20c7",
-    "lean": "Under",
-    "line": 87.5,
-    "matchup": "Montana St. @ Gonzaga",
-    "neutral": false,
-    "price": null,
-    "prob": 0.556,
-    "same_game": true,
-    "side": "Gonzaga Under",
-    "team": "Gonzaga",
-    "tip": "11:00 PM",
-    "type": "Team total",
-    "why": "KenPom 84.6 vs. implied 87.5"
-   }
-  ],
   "tot_diff": -0.8
  },
  "112a3e561a6b673b4ca74bb0e0605c2c": {
@@ -1040,7 +945,6 @@
   "date": "2026-11-19",
   "diff": 2.1,
   "final": true,
-  "green_plays": null,
   "home": "Oregon",
   "home_conf": "B10",
   "home_score": 71,
@@ -1065,9 +969,6 @@
   "proj_total": 163.8,
   "tip": "9:00 PM",
   "tip_iso": "2026-11-20T02:00:00+00:00",
-  "top5_dropped": null,
-  "top_play": null,
-  "top_plays": null,
   "tot_diff": 3.3
  },
  "12dc8b35d66981d6ff559ed3761c6fed": {
@@ -1129,9 +1030,6 @@
   "proj_total": 137.8,
   "tip": "7:00 PM",
   "tip_iso": "2026-11-20T00:00:00+00:00",
-  "top5_dropped": null,
-  "top_play": null,
-  "top_plays": null,
   "tot_diff": 4.3
  },
  "12dd3befa793d2e2ca193838dfac645e": {
@@ -1296,8 +1194,6 @@
   "proj_total": 149.2,
   "tip": "4:30 PM",
   "tip_iso": "2026-11-17T21:30:13+00:00",
-  "top_play": null,
-  "top_plays": null,
   "tot_diff": -1.3
  },
  "157cfd64408324d452e85361c707dbec": {
@@ -1587,7 +1483,6 @@
   "date": "2026-11-19",
   "diff": -10.8,
   "final": true,
-  "green_plays": null,
   "home": "Louisville",
   "home_conf": "ACC",
   "home_score": 83,
@@ -1612,8 +1507,6 @@
   "proj_total": 152.3,
   "tip": "8:00 PM",
   "tip_iso": "2026-11-20T01:00:00+00:00",
-  "top5_dropped": null,
-  "top_play": null,
   "top_plays": [
    {
     "be": 0.535,
@@ -1698,7 +1591,6 @@
   "date": "2026-11-19",
   "diff": 2.3,
   "final": true,
-  "green_plays": null,
   "home": "Toledo",
   "home_conf": "MAC",
   "home_score": 83,
@@ -1723,9 +1615,6 @@
   "proj_total": 144.0,
   "tip": "7:00 PM",
   "tip_iso": "2026-11-20T00:00:00+00:00",
-  "top5_dropped": null,
-  "top_play": null,
-  "top_plays": null,
   "tot_diff": -0.5
  },
  "1abd536d04cbe6e862858c6bff1e52f9": {
@@ -1902,8 +1791,6 @@
   "proj_total": 145.6,
   "tip": "8:00 PM",
   "tip_iso": "2026-11-18T01:00:00+00:00",
-  "top_play": null,
-  "top_plays": null,
   "tot_diff": -1.9
  },
  "22ff98eb6eb495dff14bfcd9f97b8397": {
@@ -2046,8 +1933,6 @@
   "proj_total": 158.5,
   "tip": "8:00 PM",
   "tip_iso": "2026-11-18T01:00:00+00:00",
-  "top_play": null,
-  "top_plays": null,
   "tot_diff": 2.0
  },
  "27a3b33d3bcab6f669914f49fa654ee0": {
@@ -2596,8 +2481,6 @@
   "proj_total": 153.7,
   "tip": "9:30 PM",
   "tip_iso": "2026-11-18T02:30:00+00:00",
-  "top_play": null,
-  "top_plays": null,
   "tot_diff": -4.8
  },
  "2f94aaacef24591bb8cd0254b3c90b97": {
@@ -2937,7 +2820,6 @@
   "date": "2026-11-19",
   "diff": 2.7,
   "final": true,
-  "green_plays": null,
   "home": "New Mexico St.",
   "home_conf": "CUSA",
   "home_score": 69,
@@ -2962,9 +2844,6 @@
   "proj_total": 132.8,
   "tip": "9:00 PM",
   "tip_iso": "2026-11-20T02:00:00+00:00",
-  "top5_dropped": null,
-  "top_play": null,
-  "top_plays": null,
   "tot_diff": 0.3
  },
  "3290d93b2078b71d318a773cb4252d89": {
@@ -3200,8 +3079,6 @@
   "proj_total": 142.7,
   "tip": "7:00 PM",
   "tip_iso": "2026-11-18T00:00:00+00:00",
-  "top_play": null,
-  "top_plays": null,
   "tot_diff": -1.8
  },
  "34adecee185d2196638cd55c5f1e9c27": {
@@ -3303,8 +3180,6 @@
   "proj_total": 144.5,
   "tip": "7:00 PM",
   "tip_iso": "2026-11-18T00:00:00+00:00",
-  "top_play": null,
-  "top_plays": null,
   "tot_diff": -2.0
  },
  "34ef63b5d05083472f9c48c62ad3b7cf": {
@@ -3385,8 +3260,6 @@
   "proj_total": 133.6,
   "tip": "6:00 PM",
   "tip_iso": "2026-11-17T23:00:00+00:00",
-  "top_play": null,
-  "top_plays": null,
   "tot_diff": 2.1
  },
  "357a70575c2cb9185f1773634d7f1624": {
@@ -3603,8 +3476,6 @@
   "proj_total": 145.3,
   "tip": "7:00 PM",
   "tip_iso": "2026-11-18T00:00:00+00:00",
-  "top_play": null,
-  "top_plays": null,
   "tot_diff": -3.2
  },
  "3a65626e5928c391a7057a839cd00d5b": {
@@ -3770,7 +3641,7 @@
      "ml"
     ],
     "matchup": "Hawaii @ Washington St.",
-    "price": -105,
+    "price": 104.5,
     "prob": 0.5,
     "side": "Washington St.",
     "tip": "10:00 PM",
@@ -3803,42 +3674,6 @@
   "proj_total": 146.3,
   "tip": "10:00 PM",
   "tip_iso": "2026-11-19T03:00:00+00:00",
-  "top5_dropped": null,
-  "top_play": null,
-  "top_plays": [
-   {
-    "be": 0.524,
-    "book": "implied",
-    "game": "3abdedf3ec3fe962c23a7e586bd447dc",
-    "lean": "Over",
-    "line": 68.0,
-    "matchup": "Hawaii @ Washington St.",
-    "neutral": true,
-    "price": null,
-    "prob": 0.611,
-    "same_game": true,
-    "side": "Washington St. Over",
-    "team": "Washington St.",
-    "tip": "10:00 PM",
-    "type": "Team total",
-    "why": "KenPom 74.0 vs. implied 68"
-   },
-   {
-    "be": 0.535,
-    "book": "DK",
-    "game": "3abdedf3ec3fe962c23a7e586bd447dc",
-    "line": 137.5,
-    "matchup": "Hawaii @ Washington St.",
-    "neutral": true,
-    "price": -115,
-    "prob": 0.601,
-    "same_game": true,
-    "side": "Over",
-    "tip": "10:00 PM",
-    "type": "Total",
-    "why": "KenPom total 146.3 vs. 137.5"
-   }
-  ],
   "tot_diff": 8.8
  },
  "3cc69eabd4a202f9480fe71743088275": {
@@ -4027,8 +3862,6 @@
   "proj_total": 150.6,
   "tip": "9:00 PM",
   "tip_iso": "2026-11-18T02:00:00+00:00",
-  "top_play": null,
-  "top_plays": null,
   "tot_diff": 8.1
  },
  "4285774fee0e485544f82fe4fc9261be": {
@@ -4108,14 +3941,14 @@
   "final": true,
   "green_plays": [
    {
-    "book": "MGM",
+    "book": "DK",
     "game": "42a35684e7ff6f13af5834f9a5004df6",
     "greens": [
      "small_gap"
     ],
     "line": 2.5,
     "matchup": "VCU @ Santa Clara",
-    "price": -115,
+    "price": -112,
     "prob": 0.5,
     "side": "VCU",
     "tip": "10:30 PM",
@@ -4151,9 +3984,6 @@
   "proj_total": 164.0,
   "tip": "10:30 PM",
   "tip_iso": "2026-11-20T03:30:00+00:00",
-  "top5_dropped": null,
-  "top_play": null,
-  "top_plays": null,
   "tot_diff": -0.5
  },
  "434e3816a0d976cb0b270d5b09b24286": {
@@ -4228,7 +4058,6 @@
   "proj_total": 145.3,
   "tip": "8:00 PM",
   "tip_iso": "2026-11-18T01:00:00+00:00",
-  "top_play": null,
   "top_plays": [
    {
     "be": 0.524,
@@ -4313,7 +4142,6 @@
   "date": "2026-11-19",
   "diff": 2.9,
   "final": true,
-  "green_plays": null,
   "home": "Grambling St.",
   "home_conf": "SWAC",
   "home_score": 100,
@@ -4338,9 +4166,6 @@
   "proj_total": 152.0,
   "tip": "9:00 PM",
   "tip_iso": "2026-11-20T02:00:00+00:00",
-  "top5_dropped": null,
-  "top_play": null,
-  "top_plays": null,
   "tot_diff": 5.5
  },
  "443d61b7df05e76dcbc456941062d24a": {
@@ -4515,8 +4340,6 @@
   "proj_total": 151.1,
   "tip": "8:30 PM",
   "tip_iso": "2026-11-18T01:30:00+00:00",
-  "top_play": null,
-  "top_plays": null,
   "tot_diff": 0.6
  },
  "44e8d7381bb98c1babf99790a86ec2a0": {
@@ -4684,8 +4507,6 @@
   "proj_total": 135.6,
   "tip": "7:30 PM",
   "tip_iso": "2026-11-18T00:30:00+00:00",
-  "top_play": null,
-  "top_plays": null,
   "tot_diff": -5.9
  },
  "4748317ad843609d564fb880e52b2e23": {
@@ -4702,27 +4523,6 @@
   "date": "2026-11-18",
   "diff": -1.9,
   "final": true,
-  "green_plays": [
-   {
-    "book": "MGM",
-    "game": "4748317ad843609d564fb880e52b2e23",
-    "greens": [
-     "small_gap"
-    ],
-    "line": 25.5,
-    "matchup": "Texas Southern @ San Diego St.",
-    "price": -115,
-    "prob": 0.5,
-    "side": "Texas Southern",
-    "tip": "10:00 PM",
-    "tip_iso": "2026-11-19T03:00:00+00:00",
-    "type": "Spread",
-    "yellows": [
-     "road",
-     "dog"
-    ]
-   }
-  ],
   "home": "San Diego St.",
   "home_conf": "P12",
   "home_score": 97,
@@ -4747,9 +4547,6 @@
   "proj_total": 157.8,
   "tip": "10:00 PM",
   "tip_iso": "2026-11-19T03:00:00+00:00",
-  "top5_dropped": null,
-  "top_play": null,
-  "top_plays": null,
   "tot_diff": 0.3
  },
  "4795fce89a5352eb65405f4db2742b33": {
@@ -5387,7 +5184,6 @@
   "date": "2026-11-18",
   "diff": -5.1,
   "final": true,
-  "green_plays": null,
   "home": "UCLA",
   "home_conf": "B10",
   "home_score": 75,
@@ -5412,55 +5208,38 @@
   "proj_total": 159.6,
   "tip": "10:30 PM",
   "tip_iso": "2026-11-19T03:30:00+00:00",
-  "top5_dropped": null,
-  "top_play": null,
   "top_plays": [
    {
     "be": 0.524,
     "book": "implied",
     "game": "50f9c229b6b49a7512f7511e6d825cd4",
     "lean": "Under",
-    "line": 99.0,
+    "line": 100.0,
     "matchup": "Cal St. Fullerton @ UCLA",
     "neutral": false,
     "price": null,
-    "prob": 0.611,
+    "prob": 0.627,
     "same_game": true,
     "side": "UCLA Under",
     "team": "UCLA",
     "tip": "10:30 PM",
     "type": "Team total",
-    "why": "KenPom 93.0 vs. implied 99"
+    "why": "KenPom 93.0 vs. implied 100"
    },
    {
-    "be": 0.535,
-    "book": "DK",
+    "be": 0.512,
+    "book": "ESPN",
     "game": "50f9c229b6b49a7512f7511e6d825cd4",
-    "line": 31.5,
+    "line": 34.5,
     "matchup": "Cal St. Fullerton @ UCLA",
     "neutral": false,
-    "price": -115,
-    "prob": 0.582,
+    "price": -105,
+    "prob": 0.625,
     "same_game": true,
     "side": "Cal St. Fullerton",
     "tip": "10:30 PM",
     "type": "Spread",
-    "why": "KenPom +26.4 vs. line +31.5"
-   },
-   {
-    "be": 0.524,
-    "book": "ESPN",
-    "game": "50f9c229b6b49a7512f7511e6d825cd4",
-    "line": 166.5,
-    "matchup": "Cal St. Fullerton @ UCLA",
-    "neutral": false,
-    "price": -110,
-    "prob": 0.581,
-    "same_game": true,
-    "side": "Under",
-    "tip": "10:30 PM",
-    "type": "Total",
-    "why": "KenPom total 159.6 vs. 166.5"
+    "why": "KenPom +26.4 vs. line +34.5"
    }
   ],
   "tot_diff": -6.9
@@ -5503,8 +5282,6 @@
   "proj_total": 148.9,
   "tip": "7:00 PM",
   "tip_iso": "2026-11-18T00:00:00+00:00",
-  "top_play": null,
-  "top_plays": null,
   "tot_diff": 4.4
  },
  "51f9ec7bdcf8d8941d395ace6f54d2fe": {
@@ -5555,7 +5332,6 @@
   "date": "2026-11-19",
   "diff": 1.4,
   "final": true,
-  "green_plays": null,
   "home": "West Virginia",
   "home_conf": "B12",
   "home_score": 85,
@@ -5580,9 +5356,6 @@
   "proj_total": 145.5,
   "tip": "2:30 PM",
   "tip_iso": "2026-11-19T19:30:00+00:00",
-  "top5_dropped": null,
-  "top_play": null,
-  "top_plays": null,
   "tot_diff": -2.0
  },
  "53e1f9b0793855a7036d7c480c5c5aa3": {
@@ -5623,8 +5396,6 @@
   "proj_total": 152.3,
   "tip": "8:00 PM",
   "tip_iso": "2026-11-18T01:00:00+00:00",
-  "top_play": null,
-  "top_plays": null,
   "tot_diff": -2.2
  },
  "53f1d7d718a5681b4061402ea95b2cec": {
@@ -5842,7 +5613,6 @@
   "date": "2026-11-19",
   "diff": -0.9,
   "final": true,
-  "green_plays": null,
   "home": "Notre Dame",
   "home_conf": "ACC",
   "home_score": 78,
@@ -5867,9 +5637,6 @@
   "proj_total": 153.1,
   "tip": "5:00 PM",
   "tip_iso": "2026-11-19T22:00:00+00:00",
-  "top5_dropped": null,
-  "top_play": null,
-  "top_plays": null,
   "tot_diff": 1.6
  },
  "5813be1c92a2dee46230a272c9e5859c": {
@@ -5942,8 +5709,6 @@
   "proj_total": 135.8,
   "tip": "7:00 PM",
   "tip_iso": "2026-11-18T00:00:00+00:00",
-  "top_play": null,
-  "top_plays": null,
   "tot_diff": 3.3
  },
  "582afe6b3fd7ef51b57ac7c6fc777820": {
@@ -6028,7 +5793,6 @@
   "date": "2026-11-19",
   "diff": 0.8,
   "final": true,
-  "green_plays": null,
   "home": "Murray St.",
   "home_conf": "MVC",
   "home_score": 93,
@@ -6053,9 +5817,6 @@
   "proj_total": 162.1,
   "tip": "6:00 PM",
   "tip_iso": "2026-11-19T23:00:00+00:00",
-  "top5_dropped": null,
-  "top_play": null,
-  "top_plays": null,
   "tot_diff": -2.4
  },
  "58fd00286fe702703270602ff058da8b": {
@@ -6402,8 +6163,6 @@
   "proj_total": 146.6,
   "tip": "6:30 PM",
   "tip_iso": "2026-11-17T23:30:00+00:00",
-  "top_play": null,
-  "top_plays": null,
   "tot_diff": -1.9
  },
  "60dd6652c2f1e4af18cc3ce565e8dd1d": {
@@ -7262,7 +7021,6 @@
   "date": "2026-11-19",
   "diff": 2.2,
   "final": true,
-  "green_plays": null,
   "home": "Kansas",
   "home_conf": "B12",
   "home_score": 92,
@@ -7287,9 +7045,6 @@
   "proj_total": 150.9,
   "tip": "11:00 PM",
   "tip_iso": "2026-11-20T04:00:00+00:00",
-  "top5_dropped": null,
-  "top_play": null,
-  "top_plays": null,
   "tot_diff": -0.6
  },
  "6e7b60ce8a7b43c70fd1d56fe26c9a28": {
@@ -7421,8 +7176,6 @@
   "proj_total": 148.6,
   "tip": "8:00 PM",
   "tip_iso": "2026-11-18T01:00:00+00:00",
-  "top_play": null,
-  "top_plays": null,
   "tot_diff": 3.1
  },
  "6f7d62819eb67c6156b4b4bb8d6eec35": {
@@ -7784,8 +7537,6 @@
   "proj_total": 154.1,
   "tip": "7:00 PM",
   "tip_iso": "2026-11-18T00:00:00+00:00",
-  "top_play": null,
-  "top_plays": null,
   "tot_diff": -0.4
  },
  "75dbb2a9b9e7a17415777572d1623ad8": {
@@ -7843,7 +7594,6 @@
   "date": "2026-11-19",
   "diff": 0.5,
   "final": true,
-  "green_plays": null,
   "home": "Rutgers",
   "home_conf": "B10",
   "home_score": 89,
@@ -7868,9 +7618,6 @@
   "proj_total": 160.6,
   "tip": "8:30 PM",
   "tip_iso": "2026-11-20T01:30:00+00:00",
-  "top5_dropped": null,
-  "top_play": null,
-  "top_plays": null,
   "tot_diff": 3.1
  },
  "76fcb84461ad12196d08770d0d8bebc8": {
@@ -8190,7 +7937,6 @@
   "proj_total": 148.5,
   "tip": "7:00 PM",
   "tip_iso": "2026-11-18T00:00:00+00:00",
-  "top_play": null,
   "top_plays": [
    {
     "be": 0.535,
@@ -8292,7 +8038,6 @@
   "date": "2026-11-19",
   "diff": -4.3,
   "final": true,
-  "green_plays": null,
   "home": "St. Bonaventure",
   "home_conf": "A10",
   "home_score": 78,
@@ -8317,9 +8062,6 @@
   "proj_total": 143.6,
   "tip": "7:00 PM",
   "tip_iso": "2026-11-20T00:00:00+00:00",
-  "top5_dropped": null,
-  "top_play": null,
-  "top_plays": null,
   "tot_diff": -2.9
  },
  "7cf2cadb51955c4f64f21b41af66e583": {
@@ -8360,8 +8102,6 @@
   "proj_total": 154.7,
   "tip": "7:30 PM",
   "tip_iso": "2026-11-18T00:30:03+00:00",
-  "top_play": null,
-  "top_plays": null,
   "tot_diff": 1.2
  },
  "7dca3ce414b200c5bf9e73a01896e0a0": {
@@ -8477,8 +8217,6 @@
   "proj_total": 143.0,
   "tip": "2:00 PM",
   "tip_iso": "2026-11-17T19:00:00+00:00",
-  "top_play": null,
-  "top_plays": null,
   "tot_diff": -0.5
  },
  "7f7fd17bc583d3d43cdde63affb31764": {
@@ -8495,7 +8233,6 @@
   "date": "2026-11-19",
   "diff": 3.5,
   "final": true,
-  "green_plays": null,
   "home": "Seton Hall",
   "home_conf": "BE",
   "home_score": 74,
@@ -8520,9 +8257,6 @@
   "proj_total": 140.9,
   "tip": "8:30 PM",
   "tip_iso": "2026-11-20T01:30:00+00:00",
-  "top5_dropped": null,
-  "top_play": null,
-  "top_plays": null,
   "tot_diff": 2.4
  },
  "800cf2e12ab8e83a5f1c8d234a963dfe": {
@@ -9163,8 +8897,6 @@
   "proj_total": 138.7,
   "tip": "7:30 PM",
   "tip_iso": "2026-11-18T00:30:00+00:00",
-  "top_play": null,
-  "top_plays": null,
   "tot_diff": 8.2
  },
  "8a917d60990d18e2b64e3a3f99fbe14a": {
@@ -9316,7 +9048,6 @@
   "date": "2026-11-19",
   "diff": -3.2,
   "final": true,
-  "green_plays": null,
   "home": "Louisiana Tech",
   "home_conf": "SB",
   "home_score": 74,
@@ -9341,9 +9072,6 @@
   "proj_total": 147.9,
   "tip": "7:30 PM",
   "tip_iso": "2026-11-20T00:30:00+00:00",
-  "top5_dropped": null,
-  "top_play": null,
-  "top_plays": null,
   "tot_diff": 4.4
  },
  "8c80c405ee0dd1df68d714b6d8e13ec9": {
@@ -9617,8 +9345,6 @@
   "proj_total": 129.5,
   "tip": "8:00 PM",
   "tip_iso": "2026-11-18T01:00:00+00:00",
-  "top_play": null,
-  "top_plays": null,
   "tot_diff": 4.0
  },
  "926bdb2c44827732d441da9d6ec59a3f": {
@@ -9731,7 +9457,6 @@
   "date": "2026-11-19",
   "diff": 2.5,
   "final": true,
-  "green_plays": null,
   "home": "Jacksonville",
   "home_conf": "ASun",
   "home_score": 72,
@@ -9756,9 +9481,6 @@
   "proj_total": 146.4,
   "tip": "7:00 PM",
   "tip_iso": "2026-11-20T00:00:00+00:00",
-  "top5_dropped": null,
-  "top_play": null,
-  "top_plays": null,
   "tot_diff": 1.9
  },
  "959b0c06d319a076c7268c6093c09d08": {
@@ -9873,8 +9595,6 @@
   "proj_total": 149.5,
   "tip": "7:00 PM",
   "tip_iso": "2026-11-18T00:00:00+00:00",
-  "top_play": null,
-  "top_plays": null,
   "tot_diff": -2.0
  },
  "9953076d1a99f171f14ffe7ea369f012": {
@@ -9966,7 +9686,6 @@
   "date": "2026-11-19",
   "diff": -5.3,
   "final": true,
-  "green_plays": null,
   "home": "USC",
   "home_conf": "B10",
   "home_score": 96,
@@ -9991,59 +9710,6 @@
   "proj_total": 159.0,
   "tip": "11:00 PM",
   "tip_iso": "2026-11-20T04:00:00+00:00",
-  "top5_dropped": null,
-  "top_play": null,
-  "top_plays": [
-   {
-    "be": 0.519,
-    "book": "DK",
-    "game": "9b9dda4d07eb93b5e16e9fc62ff01ca3",
-    "line": 28.5,
-    "matchup": "Tarleton St. @ USC",
-    "neutral": false,
-    "price": -108,
-    "prob": 0.585,
-    "same_game": true,
-    "side": "Tarleton St.",
-    "tip": "11:00 PM",
-    "type": "Spread",
-    "why": "KenPom +23.2 vs. line +28.5"
-   },
-   {
-    "be": 0.524,
-    "book": "implied",
-    "game": "9b9dda4d07eb93b5e16e9fc62ff01ca3",
-    "lean": "Over",
-    "line": 65.0,
-    "matchup": "Tarleton St. @ USC",
-    "neutral": false,
-    "price": null,
-    "prob": 0.556,
-    "same_game": true,
-    "side": "Tarleton St. Over",
-    "team": "Tarleton St.",
-    "tip": "11:00 PM",
-    "type": "Team total",
-    "why": "KenPom 67.9 vs. implied 65"
-   },
-   {
-    "be": 0.524,
-    "book": "implied",
-    "game": "9b9dda4d07eb93b5e16e9fc62ff01ca3",
-    "lean": "Under",
-    "line": 93.5,
-    "matchup": "Tarleton St. @ USC",
-    "neutral": false,
-    "price": null,
-    "prob": 0.547,
-    "same_game": true,
-    "side": "USC Under",
-    "team": "USC",
-    "tip": "11:00 PM",
-    "type": "Team total",
-    "why": "KenPom 91.1 vs. implied 93.5"
-   }
-  ],
   "tot_diff": 0.5
  },
  "9c21bbabccdd9d32f5b61b32dbdc8bbf": {
@@ -10175,7 +9841,6 @@
   "date": "2026-11-19",
   "diff": -4.0,
   "final": true,
-  "green_plays": null,
   "home": "Drake",
   "home_conf": "MVC",
   "home_score": 86,
@@ -10200,9 +9865,6 @@
   "proj_total": 155.7,
   "tip": "7:30 PM",
   "tip_iso": "2026-11-20T00:30:00+00:00",
-  "top5_dropped": null,
-  "top_play": null,
-  "top_plays": null,
   "tot_diff": -2.8
  },
  "a1b8e614479a42dfc7fc085e7cfc5434": {
@@ -10287,7 +9949,6 @@
   "date": "2026-11-19",
   "diff": -4.6,
   "final": true,
-  "green_plays": null,
   "home": "TCU",
   "home_conf": "B12",
   "home_score": 92,
@@ -10312,9 +9973,6 @@
   "proj_total": 162.9,
   "tip": "8:00 PM",
   "tip_iso": "2026-11-20T01:00:00+00:00",
-  "top5_dropped": null,
-  "top_play": null,
-  "top_plays": null,
   "tot_diff": 0.4
  },
  "a25d06bbc2209ccc30f89edcbb8efb8e": {
@@ -10331,7 +9989,6 @@
   "date": "2026-11-19",
   "diff": -6.1,
   "final": true,
-  "green_plays": null,
   "home": "Texas",
   "home_conf": "SEC",
   "home_score": 92,
@@ -10356,8 +10013,6 @@
   "proj_total": 155.6,
   "tip": "8:00 PM",
   "tip_iso": "2026-11-20T01:00:00+00:00",
-  "top5_dropped": null,
-  "top_play": null,
   "top_plays": [
    {
     "be": 0.541,
@@ -10666,8 +10321,6 @@
   "proj_total": 151.5,
   "tip": "8:00 PM",
   "tip_iso": "2026-11-18T01:00:00+00:00",
-  "top_play": null,
-  "top_plays": null,
   "tot_diff": 2.0
  },
  "a873493a7ad136458cf98553f9c8a216": {
@@ -10836,8 +10489,6 @@
   "proj_total": 143.4,
   "tip": "7:00 PM",
   "tip_iso": "2026-11-18T00:00:00+00:00",
-  "top_play": null,
-  "top_plays": null,
   "tot_diff": -1.1
  },
  "ae80c6358b3f2b6e9d3338adccd0b177": {
@@ -10918,8 +10569,6 @@
   "proj_total": 172.2,
   "tip": "7:30 PM",
   "tip_iso": "2026-11-18T00:30:00+00:00",
-  "top_play": null,
-  "top_plays": null,
   "tot_diff": -5.3
  },
  "afa8c37fcc6dbdb66ab22576fbf84849": {
@@ -10994,8 +10643,6 @@
   "proj_total": 147.4,
   "tip": "9:00 PM",
   "tip_iso": "2026-11-18T02:00:00+00:00",
-  "top_play": null,
-  "top_plays": null,
   "tot_diff": 2.9
  },
  "b047fe0349f684bcc45735751c6b1a81": {
@@ -11036,7 +10683,6 @@
   "proj_total": 159.9,
   "tip": "7:30 PM",
   "tip_iso": "2026-11-18T00:30:00+00:00",
-  "top_play": null,
   "top_plays": [
    {
     "be": 0.528,
@@ -11258,9 +10904,6 @@
   "proj_total": 152.8,
   "tip": "8:00 PM",
   "tip_iso": "2026-11-20T01:00:00+00:00",
-  "top5_dropped": null,
-  "top_play": null,
-  "top_plays": null,
   "tot_diff": 3.3
  },
  "b735ae64835ee718f69f88fed8a8f79d": {
@@ -11362,8 +11005,6 @@
   "proj_total": 161.5,
   "tip": "7:00 PM",
   "tip_iso": "2026-11-18T00:00:00+00:00",
-  "top_play": null,
-  "top_plays": null,
   "tot_diff": -4.0
  },
  "b84cb1c5cde0ceb1ba7bba70f8db0a81": {
@@ -11404,8 +11045,6 @@
   "proj_total": 145.1,
   "tip": "7:00 PM",
   "tip_iso": "2026-11-18T00:00:00+00:00",
-  "top_play": null,
-  "top_plays": null,
   "tot_diff": -0.4
  },
  "b86b1b8191df58c5dd3bbec4dde733e5": {
@@ -11458,22 +11097,22 @@
   "final": true,
   "green_plays": [
    {
-    "book": "DK",
+    "book": "ESPN",
     "game": "b86b3fdea018ce4da96e2f720e3a5842",
     "greens": [
      "small_gap"
     ],
-    "line": 9.5,
+    "line": -7.5,
     "matchup": "UNLV @ Auburn",
-    "price": -112,
+    "price": -120,
     "prob": 0.5,
-    "side": "UNLV",
+    "side": "Auburn",
     "tip": "10:00 PM",
     "tip_iso": "2026-11-19T03:00:00+00:00",
     "type": "Spread",
     "yellows": [
-     "road",
-     "dog"
+     "home",
+     "fav"
     ]
    }
   ],
@@ -11501,9 +11140,6 @@
   "proj_total": 156.2,
   "tip": "10:00 PM",
   "tip_iso": "2026-11-19T03:00:00+00:00",
-  "top5_dropped": null,
-  "top_play": null,
-  "top_plays": null,
   "tot_diff": -1.3
  },
  "b8d0687ed4d60c2e52e4152725667c70": {
@@ -11714,7 +11350,6 @@
   "proj_total": 149.0,
   "tip": "7:00 PM",
   "tip_iso": "2026-11-18T00:00:00+00:00",
-  "top_play": null,
   "top_plays": [
    {
     "be": 0.524,
@@ -11772,8 +11407,6 @@
   "proj_total": 146.5,
   "tip": "7:00 PM",
   "tip_iso": "2026-11-18T00:00:00+00:00",
-  "top_play": null,
-  "top_plays": null,
   "tot_diff": 1.0
  },
  "bd1799e8815981f90f74e705e6660de8": {
@@ -11836,9 +11469,6 @@
   "proj_total": 139.8,
   "tip": "7:00 PM",
   "tip_iso": "2026-11-20T00:00:00+00:00",
-  "top5_dropped": null,
-  "top_play": null,
-  "top_plays": null,
   "tot_diff": -4.7
  },
  "c05c24a9aaf1a719055cd45cebb655c6": {
@@ -11879,8 +11509,6 @@
   "proj_total": 158.5,
   "tip": "7:00 PM",
   "tip_iso": "2026-11-18T00:00:00+00:00",
-  "top_play": null,
-  "top_plays": null,
   "tot_diff": 1.0
  },
  "c08f7d2a57b7050d9effea514daa7bab": {
@@ -12184,8 +11812,6 @@
   "proj_total": 150.3,
   "tip": "8:00 PM",
   "tip_iso": "2026-11-18T01:00:00+00:00",
-  "top_play": null,
-  "top_plays": null,
   "tot_diff": 3.8
  },
  "c7d62536b790073cd6d3119dc561e3a0": {
@@ -12226,8 +11852,6 @@
   "proj_total": 152.1,
   "tip": "7:00 PM",
   "tip_iso": "2026-11-18T00:00:00+00:00",
-  "top_play": null,
-  "top_plays": null,
   "tot_diff": -2.4
  },
  "c9d6c86cc70b0ff1c34ab46d27686e4c": {
@@ -12438,8 +12062,6 @@
   "proj_total": 130.3,
   "tip": "6:00 PM",
   "tip_iso": "2026-11-17T23:00:00+00:00",
-  "top_play": null,
-  "top_plays": null,
   "tot_diff": 1.8
  },
  "ccd4397771cec2458b64efaca3c2c783": {
@@ -12515,7 +12137,28 @@
   "date": "2026-11-19",
   "diff": -2.3,
   "final": true,
-  "green_plays": null,
+  "green_plays": [
+   {
+    "book": "MGM",
+    "game": "cd5851d9377b5aa32b67f9c534385a0c",
+    "greens": [
+     "small_gap",
+     "mid_spread"
+    ],
+    "line": 13.5,
+    "matchup": "East Texas A&M @ California",
+    "price": -110,
+    "prob": 0.5,
+    "side": "East Texas A&M",
+    "tip": "10:00 PM",
+    "tip_iso": "2026-11-20T03:00:00+00:00",
+    "type": "Spread",
+    "yellows": [
+     "road",
+     "dog"
+    ]
+   }
+  ],
   "home": "California",
   "home_conf": "ACC",
   "home_score": 86,
@@ -12540,9 +12183,6 @@
   "proj_total": 145.1,
   "tip": "10:00 PM",
   "tip_iso": "2026-11-20T03:00:00+00:00",
-  "top5_dropped": null,
-  "top_play": null,
-  "top_plays": null,
   "tot_diff": -1.4
  },
  "cd962be2d33dbd38b2b7d21dcd5fe124": {
@@ -12736,8 +12376,6 @@
   "proj_total": 173.6,
   "tip": "7:00 PM",
   "tip_iso": "2026-11-18T00:00:00+00:00",
-  "top_play": null,
-  "top_plays": null,
   "tot_diff": 4.1
  },
  "cee986e39a59f8a4fbc4ca2d0fc1c828": {
@@ -13390,7 +13028,6 @@
   "date": "2026-11-19",
   "diff": -3.6,
   "final": true,
-  "green_plays": null,
   "home": "Ohio St.",
   "home_conf": "B10",
   "home_score": 101,
@@ -13415,9 +13052,6 @@
   "proj_total": 157.7,
   "tip": "7:00 PM",
   "tip_iso": "2026-11-20T00:00:00+00:00",
-  "top5_dropped": null,
-  "top_play": null,
-  "top_plays": null,
   "tot_diff": 1.7
  },
  "d7a912b4db90df3d2c89b5a01a257e63": {
@@ -13586,7 +13220,7 @@
     ],
     "line": 18.5,
     "matchup": "Idaho @ Nevada",
-    "price": -110,
+    "price": -115,
     "prob": 0.5,
     "side": "Idaho",
     "tip": "10:00 PM",
@@ -13622,9 +13256,6 @@
   "proj_total": 144.7,
   "tip": "10:00 PM",
   "tip_iso": "2026-11-19T03:00:00+00:00",
-  "top5_dropped": null,
-  "top_play": null,
-  "top_plays": null,
   "tot_diff": -1.8
  },
  "daeb1516248941803c043ccbd01dd18c": {
@@ -13687,9 +13318,6 @@
   "proj_total": 162.8,
   "tip": "7:00 PM",
   "tip_iso": "2026-11-20T00:00:00+00:00",
-  "top5_dropped": null,
-  "top_play": null,
-  "top_plays": null,
   "tot_diff": -1.7
  },
  "dbb1b55e5ce880c36dd40da9019cfc56": {
@@ -13706,7 +13334,6 @@
   "date": "2026-11-19",
   "diff": 2.6,
   "final": true,
-  "green_plays": null,
   "home": "Houston Christian",
   "home_conf": "Slnd",
   "home_score": 79,
@@ -13731,8 +13358,6 @@
   "proj_total": 149.3,
   "tip": "8:00 PM",
   "tip_iso": "2026-11-20T01:00:00+00:00",
-  "top5_dropped": null,
-  "top_play": null,
   "top_plays": [
    {
     "be": 0.609,
@@ -13773,7 +13398,7 @@
      "ml"
     ],
     "matchup": "Louisiana @ San Francisco",
-    "price": 450,
+    "price": 500,
     "prob": 0.5,
     "side": "Louisiana",
     "tip": "10:00 PM",
@@ -13806,9 +13431,6 @@
   "proj_total": 135.2,
   "tip": "10:00 PM",
   "tip_iso": "2026-11-19T03:00:00+00:00",
-  "top5_dropped": null,
-  "top_play": null,
-  "top_plays": null,
   "tot_diff": 0.7
  },
  "dd2fa1ecb90b4902086fa19865091651": {
@@ -13849,8 +13471,6 @@
   "proj_total": 146.7,
   "tip": "9:00 PM",
   "tip_iso": "2026-11-18T02:00:00+00:00",
-  "top_play": null,
-  "top_plays": null,
   "tot_diff": -2.8
  },
  "ddb1e091501449395eb13e294efdc595": {
@@ -13891,8 +13511,6 @@
   "proj_total": 143.4,
   "tip": "8:30 PM",
   "tip_iso": "2026-11-18T01:30:00+00:00",
-  "top_play": null,
-  "top_plays": null,
   "tot_diff": 0.9
  },
  "ddd030538562290c08a945c5ab7c2a20": {
@@ -13985,7 +13603,7 @@
     ],
     "line": 17.5,
     "matchup": "Sacramento St. @ Stanford",
-    "price": -120,
+    "price": -115,
     "prob": 0.5,
     "side": "Sacramento St.",
     "tip": "10:00 PM",
@@ -14021,42 +13639,6 @@
   "proj_total": 148.2,
   "tip": "10:00 PM",
   "tip_iso": "2026-11-20T03:00:00+00:00",
-  "top5_dropped": null,
-  "top_play": null,
-  "top_plays": [
-   {
-    "be": 0.524,
-    "book": "implied",
-    "game": "df2f770cd36480fbf467976988b1bd8b",
-    "lean": "Under",
-    "line": 85.0,
-    "matchup": "Sacramento St. @ Stanford",
-    "neutral": false,
-    "price": null,
-    "prob": 0.565,
-    "same_game": true,
-    "side": "Stanford Under",
-    "team": "Stanford",
-    "tip": "10:00 PM",
-    "type": "Team total",
-    "why": "KenPom 81.6 vs. implied 85"
-   },
-   {
-    "be": 0.524,
-    "book": "FD",
-    "game": "df2f770cd36480fbf467976988b1bd8b",
-    "line": 153.5,
-    "matchup": "Sacramento St. @ Stanford",
-    "neutral": false,
-    "price": -110,
-    "prob": 0.563,
-    "same_game": true,
-    "side": "Under",
-    "tip": "10:00 PM",
-    "type": "Total",
-    "why": "KenPom total 148.2 vs. 153.5"
-   }
-  ],
   "tot_diff": -5.3
  },
  "dfdac74c91ebae110f1291f05093ead7": {
@@ -14097,8 +13679,6 @@
   "proj_total": 145.6,
   "tip": "8:00 PM",
   "tip_iso": "2026-11-18T01:00:00+00:00",
-  "top_play": null,
-  "top_plays": null,
   "tot_diff": 3.1
  },
  "e0a864edd8896bd3eb30a0eb1cd518fb": {
@@ -14489,8 +14069,6 @@
   "proj_total": 163.1,
   "tip": "7:00 PM",
   "tip_iso": "2026-11-18T00:00:00+00:00",
-  "top_play": null,
-  "top_plays": null,
   "tot_diff": -3.4
  },
  "e67728580d608d1ac0d327750a3c7bd7": {
@@ -14599,8 +14177,6 @@
   "proj_total": 143.9,
   "tip": "10:00 PM",
   "tip_iso": "2026-11-18T03:00:00+00:00",
-  "top_play": null,
-  "top_plays": null,
   "tot_diff": 1.4
  },
  "e8f581fca659627171b85fcbe82784ca": {
@@ -14675,8 +14251,6 @@
   "proj_total": 145.8,
   "tip": "8:30 PM",
   "tip_iso": "2026-11-18T01:30:00+00:00",
-  "top_play": null,
-  "top_plays": null,
   "tot_diff": 0.3
  },
  "eaa7e563508f83b89da51b138fda7d0b": {
@@ -15062,8 +14636,6 @@
   "proj_total": 153.5,
   "tip": "8:00 PM",
   "tip_iso": "2026-11-18T01:00:00+00:00",
-  "top_play": null,
-  "top_plays": null,
   "tot_diff": 0.0
  },
  "f23f37ea3ecae62d09994228b460a5bb": {
@@ -15145,8 +14717,6 @@
   "proj_total": 157.5,
   "tip": "7:00 PM",
   "tip_iso": "2026-11-18T00:00:00+00:00",
-  "top_play": null,
-  "top_plays": null,
   "tot_diff": -3.0
  },
  "f4a33d417baae87562bd4511838d93b2": {
@@ -15358,8 +14928,6 @@
   "proj_total": 139.7,
   "tip": "8:00 PM",
   "tip_iso": "2026-11-18T01:00:00+00:00",
-  "top_play": null,
-  "top_plays": null,
   "tot_diff": -1.8
  },
  "f74a59473918b8b98feab33b4bf8b836": {
@@ -15596,8 +15164,6 @@
   "proj_total": 135.0,
   "tip": "7:00 PM",
   "tip_iso": "2026-11-18T00:00:00+00:00",
-  "top_play": null,
-  "top_plays": null,
   "tot_diff": -2.5
  },
  "fa1b98a7b5a89d610bb08d8a8f5afc50": {
@@ -15990,8 +15556,6 @@
   "proj_total": 148.2,
   "tip": "6:00 PM",
   "tip_iso": "2026-11-17T23:00:00+00:00",
-  "top_play": null,
-  "top_plays": null,
   "tot_diff": 3.7
  }
 }

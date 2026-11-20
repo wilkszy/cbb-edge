@@ -1,0 +1,481 @@
+{
+ "frozen_at": "Nov 20, 2026 9:34 AM ET",
+ "top5": [
+  {
+   "type": "Moneyline",
+   "side": "Utah Valley",
+   "line": null,
+   "price": -165,
+   "book": "median",
+   "prob": 0.635,
+   "be": 0.623,
+   "why": "Model 64% vs. market 60%",
+   "game": "7a7ea19f66aa175473014416c6d00417",
+   "matchup": "East Carolina @ Utah Valley",
+   "tip": "8:00 PM",
+   "neutral": true,
+   "same_game": false
+  },
+  {
+   "type": "Spread",
+   "side": "Mississippi Valley St.",
+   "line": 40.5,
+   "price": -114,
+   "book": "BR",
+   "prob": 0.618,
+   "be": 0.533,
+   "why": "KenPom +32.9 vs. line +40.5",
+   "game": "1979721bb34c2e7d265ac1601275c08e",
+   "matchup": "Mississippi Valley St. @ Arkansas",
+   "tip": "8:00 PM",
+   "neutral": false,
+   "same_game": false
+  },
+  {
+   "type": "Team total",
+   "side": "Tennessee Under",
+   "line": 88.0,
+   "price": null,
+   "book": "implied",
+   "prob": 0.611,
+   "be": 0.524,
+   "why": "KenPom 82.0 vs. implied 88",
+   "team": "Tennessee",
+   "lean": "Under",
+   "game": "cdf9ed66e5ad6a4af973a7c08740af15",
+   "matchup": "Coastal Carolina @ Tennessee",
+   "tip": "7:00 PM",
+   "neutral": false,
+   "same_game": true
+  },
+  {
+   "type": "Spread",
+   "side": "Loyola MD",
+   "line": 43.5,
+   "price": -117,
+   "book": "BR",
+   "prob": 0.609,
+   "be": 0.539,
+   "why": "KenPom +36.6 vs. line +43.5",
+   "game": "6490128d2a737c7c4b91289a0b40a5d0",
+   "matchup": "Loyola MD @ Virginia",
+   "tip": "7:00 PM",
+   "neutral": false,
+   "same_game": false
+  },
+  {
+   "type": "Spread",
+   "side": "Coastal Carolina",
+   "line": 29.5,
+   "price": -110,
+   "book": "FD",
+   "prob": 0.604,
+   "be": 0.524,
+   "why": "KenPom +22.9 vs. line +29.5",
+   "game": "cdf9ed66e5ad6a4af973a7c08740af15",
+   "matchup": "Coastal Carolina @ Tennessee",
+   "tip": "7:00 PM",
+   "neutral": false,
+   "same_game": true
+  }
+ ],
+ "top5_dropped": [
+  {
+   "type": "Spread",
+   "side": "Wagner",
+   "line": 35.5,
+   "price": -115,
+   "book": "DK",
+   "prob": 0.656,
+   "be": 0.535,
+   "why": "KenPom +24.9 vs. line +35.5",
+   "game": "660bc79d92165bc04fe6db1c51bfa80d",
+   "red_flag": "Maryland has been beating its KenPom projection",
+   "would_rank": 1,
+   "matchup": "Wagner @ Maryland",
+   "tip": "7:00 PM",
+   "neutral": false,
+   "same_game": false
+  },
+  {
+   "type": "Spread",
+   "side": "Manhattan",
+   "line": 38.5,
+   "price": -104,
+   "book": "FD",
+   "prob": 0.62,
+   "be": 0.51,
+   "why": "KenPom +30.8 vs. line +38.5",
+   "game": "86aad9e9d1093833464eac0c88635a2c",
+   "red_flag": "Manhattan has been trailing its KenPom projection; Miami FL has been beating its KenPom projection",
+   "would_rank": 3,
+   "matchup": "Manhattan @ Miami FL",
+   "tip": "5:00 PM",
+   "neutral": false,
+   "same_game": false
+  },
+  {
+   "type": "Spread",
+   "side": "Le Moyne",
+   "line": 36.5,
+   "price": -110,
+   "book": "ESPN",
+   "prob": 0.616,
+   "be": 0.524,
+   "why": "KenPom +29.1 vs. line +36.5",
+   "game": "5510f024997e32ccb84f6d5ad2b58e8d",
+   "red_flag": "Missouri has been beating its KenPom projection",
+   "would_rank": 5,
+   "matchup": "Le Moyne @ Missouri",
+   "tip": "8:00 PM",
+   "neutral": false,
+   "same_game": false
+  },
+  {
+   "type": "Spread",
+   "side": "Eastern Illinois",
+   "line": 51.5,
+   "price": -120,
+   "book": "BR",
+   "prob": 0.609,
+   "be": 0.545,
+   "why": "KenPom +44.6 vs. line +51.5",
+   "game": "ccd4397771cec2458b64efaca3c2c783",
+   "red_flag": "Illinois has been beating its KenPom projection",
+   "would_rank": 8,
+   "matchup": "Eastern Illinois @ Illinois",
+   "tip": "9:00 PM",
+   "neutral": false,
+   "same_game": false
+  },
+  {
+   "type": "Team total",
+   "side": "Miami FL Under",
+   "line": 94.5,
+   "price": null,
+   "book": "implied",
+   "prob": 0.606,
+   "be": 0.524,
+   "why": "KenPom 88.8 vs. implied 94.5",
+   "team": "Miami FL",
+   "lean": "Under",
+   "game": "86aad9e9d1093833464eac0c88635a2c",
+   "red_flag": "Miami FL has been beating its KenPom projection",
+   "would_rank": 9,
+   "matchup": "Manhattan @ Miami FL",
+   "tip": "5:00 PM",
+   "neutral": false,
+   "same_game": false
+  }
+ ],
+ "green_plays": [
+  {
+   "type": "Spread",
+   "side": "South Alabama",
+   "game": "fcabf1a2b0755f9cb7af39534aae66a2",
+   "greens": [
+    "small_gap",
+    "road",
+    "dog",
+    "mid_spread"
+   ],
+   "yellows": [],
+   "matchup": "South Alabama @ SMU",
+   "tip": "8:00 PM",
+   "tip_iso": "2026-11-21T01:00:00+00:00",
+   "line": 15.5,
+   "price": -110,
+   "book": "FD",
+   "prob": 0.5
+  },
+  {
+   "type": "Spread",
+   "side": "UCF",
+   "game": "d44e3c27019bbb61def8acdb1f51c22d",
+   "greens": [
+    "small_gap",
+    "road",
+    "dog",
+    "mid_spread"
+   ],
+   "yellows": [],
+   "matchup": "UCF @ Vanderbilt",
+   "tip": "8:00 PM",
+   "tip_iso": "2026-11-21T01:00:00+00:00",
+   "line": 17.5,
+   "price": -120,
+   "book": "ESPN",
+   "prob": 0.5
+  },
+  {
+   "type": "Spread",
+   "side": "UAB",
+   "game": "d6250787bbbfa6483fa5032b6f00a3ac",
+   "greens": [
+    "small_gap",
+    "road",
+    "dog"
+   ],
+   "yellows": [],
+   "matchup": "UAB @ George Washington",
+   "tip": "2:00 PM",
+   "tip_iso": "2026-11-20T19:00:00+00:00",
+   "line": 9.5,
+   "price": -110,
+   "book": "FD",
+   "prob": 0.5
+  },
+  {
+   "type": "Spread",
+   "side": "Indiana St.",
+   "game": "c42a6f010c505da91cae91ba184692fa",
+   "greens": [
+    "small_gap",
+    "road",
+    "dog"
+   ],
+   "yellows": [],
+   "matchup": "Indiana St. @ Stephen F. Austin",
+   "tip": "3:00 PM",
+   "tip_iso": "2026-11-20T20:00:00+00:00",
+   "line": 4.5,
+   "price": -105,
+   "book": "ESPN",
+   "prob": 0.5
+  },
+  {
+   "type": "Spread",
+   "side": "Dayton",
+   "game": "e1804fe8283327513088eada01a00c7e",
+   "greens": [
+    "small_gap",
+    "road",
+    "dog"
+   ],
+   "yellows": [],
+   "matchup": "Dayton @ Utah",
+   "tip": "5:30 PM",
+   "tip_iso": "2026-11-20T22:30:00+00:00",
+   "line": 1.5,
+   "price": -118,
+   "book": "FD",
+   "prob": 0.5
+  },
+  {
+   "type": "Spread",
+   "side": "Delaware",
+   "game": "eaa7e563508f83b89da51b138fda7d0b",
+   "greens": [
+    "small_gap",
+    "road",
+    "dog"
+   ],
+   "yellows": [],
+   "matchup": "Delaware @ CSUN",
+   "tip": "6:00 PM",
+   "tip_iso": "2026-11-20T23:00:00+00:00",
+   "line": 7.5,
+   "price": -110,
+   "book": "FD",
+   "prob": 0.5
+  },
+  {
+   "type": "Spread",
+   "side": "Coastal Carolina",
+   "game": "cdf9ed66e5ad6a4af973a7c08740af15",
+   "greens": [
+    "big_pick",
+    "road",
+    "dog"
+   ],
+   "yellows": [],
+   "matchup": "Coastal Carolina @ Tennessee",
+   "tip": "7:00 PM",
+   "tip_iso": "2026-11-21T00:00:00+00:00",
+   "line": 29.5,
+   "price": -110,
+   "book": "FD",
+   "prob": 0.5
+  },
+  {
+   "type": "Spread",
+   "side": "Loyola MD",
+   "game": "6490128d2a737c7c4b91289a0b40a5d0",
+   "greens": [
+    "big_pick",
+    "road",
+    "dog"
+   ],
+   "yellows": [],
+   "matchup": "Loyola MD @ Virginia",
+   "tip": "7:00 PM",
+   "tip_iso": "2026-11-21T00:00:00+00:00",
+   "line": 43.5,
+   "price": -117,
+   "book": "BR",
+   "prob": 0.5
+  },
+  {
+   "type": "Spread",
+   "side": "Murray St.",
+   "game": "f74a59473918b8b98feab33b4bf8b836",
+   "greens": [
+    "small_gap",
+    "road",
+    "dog"
+   ],
+   "yellows": [],
+   "matchup": "Murray St. @ Wisconsin",
+   "tip": "7:00 PM",
+   "tip_iso": "2026-11-21T00:00:00+00:00",
+   "line": 3.5,
+   "price": -104,
+   "book": "FD",
+   "prob": 0.5
+  },
+  {
+   "type": "Spread",
+   "side": "Western Kentucky",
+   "game": "a873493a7ad136458cf98553f9c8a216",
+   "greens": [
+    "small_gap",
+    "road",
+    "dog"
+   ],
+   "yellows": [],
+   "matchup": "Western Kentucky @ Richmond",
+   "tip": "7:00 PM",
+   "tip_iso": "2026-11-21T00:00:00+00:00",
+   "line": 1.5,
+   "price": -125,
+   "book": "ESPN",
+   "prob": 0.5
+  },
+  {
+   "type": "Spread",
+   "side": "Bellarmine",
+   "game": "4f71b0b4696cf2d3fa0688acb7fe896a",
+   "greens": [
+    "small_gap",
+    "road",
+    "dog"
+   ],
+   "yellows": [],
+   "matchup": "Bellarmine @ Eastern Kentucky",
+   "tip": "7:00 PM",
+   "tip_iso": "2026-11-21T00:00:00+00:00",
+   "line": 8.5,
+   "price": -112,
+   "book": "DK",
+   "prob": 0.5
+  },
+  {
+   "type": "Spread",
+   "side": "Monmouth",
+   "game": "d6bf1938b3e709f64957d9e071899659",
+   "greens": [
+    "small_gap",
+    "road",
+    "dog"
+   ],
+   "yellows": [],
+   "matchup": "Monmouth @ Princeton",
+   "tip": "7:00 PM",
+   "tip_iso": "2026-11-21T00:00:00+00:00",
+   "line": 3.5,
+   "price": -110,
+   "book": "FD",
+   "prob": 0.5
+  },
+  {
+   "type": "Spread",
+   "side": "Tulsa",
+   "game": "8c80c405ee0dd1df68d714b6d8e13ec9",
+   "greens": [
+    "small_gap",
+    "road",
+    "dog"
+   ],
+   "yellows": [],
+   "matchup": "Tulsa @ Mississippi St.",
+   "tip": "7:30 PM",
+   "tip_iso": "2026-11-21T00:30:00+00:00",
+   "line": 7.5,
+   "price": -110,
+   "book": "FD",
+   "prob": 0.5
+  },
+  {
+   "type": "Spread",
+   "side": "Mississippi Valley St.",
+   "game": "1979721bb34c2e7d265ac1601275c08e",
+   "greens": [
+    "big_pick",
+    "road",
+    "dog"
+   ],
+   "yellows": [],
+   "matchup": "Mississippi Valley St. @ Arkansas",
+   "tip": "8:00 PM",
+   "tip_iso": "2026-11-21T01:00:00+00:00",
+   "line": 40.5,
+   "price": -114,
+   "book": "BR",
+   "prob": 0.5
+  },
+  {
+   "type": "Spread",
+   "side": "Kentucky",
+   "game": "cd962be2d33dbd38b2b7d21dcd5fe124",
+   "greens": [
+    "small_gap",
+    "road",
+    "dog"
+   ],
+   "yellows": [],
+   "matchup": "Kentucky @ Indiana",
+   "tip": "8:00 PM",
+   "tip_iso": "2026-11-21T01:00:00+00:00",
+   "line": 3.5,
+   "price": -115,
+   "book": "FD",
+   "prob": 0.5
+  },
+  {
+   "type": "Spread",
+   "side": "Cal St. Bakersfield",
+   "game": "73becee99238228e81a7770cea1108c8",
+   "greens": [
+    "small_gap",
+    "road",
+    "dog"
+   ],
+   "yellows": [],
+   "matchup": "Cal St. Bakersfield @ Idaho",
+   "tip": "9:00 PM",
+   "tip_iso": "2026-11-21T02:00:00+00:00",
+   "line": 1.5,
+   "price": -110,
+   "book": "FD",
+   "prob": 0.5
+  },
+  {
+   "type": "Spread",
+   "side": "Saint Louis",
+   "game": "facfbe499809f5b11e275d41d8d5b49d",
+   "greens": [
+    "small_gap",
+    "road",
+    "dog"
+   ],
+   "yellows": [],
+   "matchup": "Saint Louis @ Saint Mary's",
+   "tip": "11:00 PM",
+   "tip_iso": "2026-11-21T04:00:00+00:00",
+   "line": 2.5,
+   "price": -120,
+   "book": "ESPN",
+   "prob": 0.5
+  }
+ ]
+}

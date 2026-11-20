@@ -1,0 +1,242 @@
+{
+ "frozen_at": "Nov 19, 2026 1:20 PM ET",
+ "top5": [
+  {
+   "type": "Spread",
+   "side": "Stetson",
+   "line": 37.5,
+   "price": -115,
+   "book": "MGM",
+   "prob": 0.669,
+   "be": 0.535,
+   "why": "KenPom +25.7 vs. line +37.5",
+   "game": "1a136a0253a5b66b6057918946a432df",
+   "matchup": "Stetson @ Louisville",
+   "tip": "8:00 PM",
+   "neutral": false,
+   "same_game": true
+  },
+  {
+   "type": "Moneyline",
+   "side": "Houston Christian",
+   "line": null,
+   "price": -156,
+   "book": "median",
+   "prob": 0.634,
+   "be": 0.609,
+   "why": "Model 63% vs. market 59%",
+   "game": "dbb1b55e5ce880c36dd40da9019cfc56",
+   "matchup": "Georgia Southern @ Houston Christian",
+   "tip": "8:00 PM",
+   "neutral": false,
+   "same_game": false
+  },
+  {
+   "type": "Moneyline",
+   "side": "UC Santa Barbara",
+   "line": null,
+   "price": -135,
+   "book": "median",
+   "prob": 0.62,
+   "be": 0.574,
+   "why": "Model 62% vs. market 55%",
+   "game": "06c795c1626c246ad89e38eb1a35dbfb",
+   "matchup": "UC Santa Barbara @ Pepperdine",
+   "tip": "9:00 PM",
+   "neutral": false,
+   "same_game": false
+  },
+  {
+   "type": "Team total",
+   "side": "Louisville Under",
+   "line": 95.5,
+   "price": null,
+   "book": "implied",
+   "prob": 0.619,
+   "be": 0.524,
+   "why": "KenPom 89.0 vs. implied 95.5",
+   "team": "Louisville",
+   "lean": "Under",
+   "game": "1a136a0253a5b66b6057918946a432df",
+   "matchup": "Stetson @ Louisville",
+   "tip": "8:00 PM",
+   "neutral": false,
+   "same_game": true
+  },
+  {
+   "type": "Spread",
+   "side": "Southern Utah",
+   "line": 37.5,
+   "price": -118,
+   "book": "MGM",
+   "prob": 0.611,
+   "be": 0.541,
+   "why": "KenPom +30.4 vs. line +37.5",
+   "game": "a25d06bbc2209ccc30f89edcbb8efb8e",
+   "matchup": "Southern Utah @ Texas",
+   "tip": "8:00 PM",
+   "neutral": false,
+   "same_game": false
+  }
+ ],
+ "top5_dropped": [],
+ "green_plays": [
+  {
+   "type": "Spread",
+   "side": "Montana St.",
+   "game": "bd1799e8815981f90f74e705e6660de8",
+   "greens": [
+    "small_gap",
+    "mid_spread"
+   ],
+   "yellows": [
+    "road",
+    "dog"
+   ],
+   "matchup": "Montana St. @ High Point",
+   "tip": "7:00 PM",
+   "tip_iso": "2026-11-20T00:00:00+00:00",
+   "line": 12.5,
+   "price": -105,
+   "book": "ESPN",
+   "prob": 0.5
+  },
+  {
+   "type": "Spread",
+   "side": "Northeastern",
+   "game": "daeb1516248941803c043ccbd01dd18c",
+   "greens": [
+    "small_gap",
+    "mid_spread"
+   ],
+   "yellows": [
+    "road",
+    "dog"
+   ],
+   "matchup": "Northeastern @ Butler",
+   "tip": "7:00 PM",
+   "tip_iso": "2026-11-20T00:00:00+00:00",
+   "line": 16.5,
+   "price": -118,
+   "book": "FD",
+   "prob": 0.5
+  },
+  {
+   "type": "Spread",
+   "side": "Utah Tech",
+   "game": "028a30dac6c59487da6c8a7d657875e0",
+   "greens": [
+    "small_gap",
+    "mid_spread"
+   ],
+   "yellows": [
+    "road",
+    "dog"
+   ],
+   "matchup": "Utah Tech @ Washington",
+   "tip": "9:00 PM",
+   "tip_iso": "2026-11-20T02:00:00+00:00",
+   "line": 17.5,
+   "price": -110,
+   "book": "FD",
+   "prob": 0.5
+  },
+  {
+   "type": "Spread",
+   "side": "Sacramento St.",
+   "game": "df2f770cd36480fbf467976988b1bd8b",
+   "greens": [
+    "small_gap",
+    "mid_spread"
+   ],
+   "yellows": [
+    "road",
+    "dog"
+   ],
+   "matchup": "Sacramento St. @ Stanford",
+   "tip": "10:00 PM",
+   "tip_iso": "2026-11-20T03:00:00+00:00",
+   "line": 17.5,
+   "price": -115,
+   "book": "BR",
+   "prob": 0.5
+  },
+  {
+   "type": "Spread",
+   "side": "East Texas A&M",
+   "game": "cd5851d9377b5aa32b67f9c534385a0c",
+   "greens": [
+    "small_gap",
+    "mid_spread"
+   ],
+   "yellows": [
+    "road",
+    "dog"
+   ],
+   "matchup": "East Texas A&M @ California",
+   "tip": "10:00 PM",
+   "tip_iso": "2026-11-20T03:00:00+00:00",
+   "line": 13.5,
+   "price": -110,
+   "book": "MGM",
+   "prob": 0.5
+  },
+  {
+   "type": "Spread",
+   "side": "Maine",
+   "game": "12dc8b35d66981d6ff559ed3761c6fed",
+   "greens": [
+    "small_gap"
+   ],
+   "yellows": [
+    "road",
+    "dog"
+   ],
+   "matchup": "Maine @ Quinnipiac",
+   "tip": "7:00 PM",
+   "tip_iso": "2026-11-20T00:00:00+00:00",
+   "line": 10.5,
+   "price": -121,
+   "book": "BR",
+   "prob": 0.5
+  },
+  {
+   "type": "Spread",
+   "side": "Southeast Missouri",
+   "game": "b5ff26a1800958caa39a89f0235999dc",
+   "greens": [
+    "small_gap"
+   ],
+   "yellows": [
+    "road",
+    "dog"
+   ],
+   "matchup": "Southeast Missouri @ St. Thomas",
+   "tip": "8:00 PM",
+   "tip_iso": "2026-11-20T01:00:00+00:00",
+   "line": 7.5,
+   "price": -118,
+   "book": "FD",
+   "prob": 0.5
+  },
+  {
+   "type": "Spread",
+   "side": "VCU",
+   "game": "42a35684e7ff6f13af5834f9a5004df6",
+   "greens": [
+    "small_gap"
+   ],
+   "yellows": [
+    "road",
+    "dog"
+   ],
+   "matchup": "VCU @ Santa Clara",
+   "tip": "10:30 PM",
+   "tip_iso": "2026-11-20T03:30:00+00:00",
+   "line": 2.5,
+   "price": -112,
+   "book": "DK",
+   "prob": 0.5
+  }
+ ]
+}

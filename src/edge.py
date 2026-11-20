@@ -554,6 +554,29 @@ def load_kenpom():
 TREND: dict = {}
 
 
+def freeze_picks(payload):
+    """Top 5, red-card drops and Green cards are picked once per day, at the first refresh.
+    Later refreshes reuse them, so the record matches what was shown that morning."""
+    path = DOCS / "data" / "picks" / f"{payload['slate_date']}.json"
+    keys = ("top5", "top5_dropped", "green_plays")
+    if path.exists():
+        frozen = json.loads(path.read_text())
+        for g in payload["games"]:
+            for f in ("top_plays", "top5_dropped", "green_plays"):
+                g.pop(f, None)
+        by_id = {g["id"]: g for g in payload["games"]}
+        for k, f in zip(keys, ("top_plays", "top5_dropped", "green_plays")):
+            payload[k] = frozen.get(k, [])
+            for p in payload[k]:
+                if p["game"] in by_id:
+                    by_id[p["game"]].setdefault(f, []).append(p)
+        print(f"Using picks frozen at {frozen['frozen_at']}")
+    else:
+        path.parent.mkdir(parents=True, exist_ok=True)
+        path.write_text(json.dumps({"frozen_at": payload["generated"], **{k: payload.get(k, []) for k in keys}}, indent=1))
+        print("Froze today's picks")
+
+
 def main():
     now = datetime.now(timezone.utc)
     led = DOCS / "data" / "ledger.json"
@@ -573,6 +596,7 @@ def main():
     }
     (DOCS / "data").mkdir(parents=True, exist_ok=True)
     from track import update_track
+    freeze_picks(payload)
     payload["track"] = update_track(payload["games"], now, DOCS / "data" / "ledger.json")
     payload["team_info"] = {n: {"rank": v["rank"], "luck": v.get("luck"), "record": v.get("record"),
                                 "conf": v.get("conf"), "adj_em": v.get("adj_em")} for n, v in kp.items()}
