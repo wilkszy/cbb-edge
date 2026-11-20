@@ -83,11 +83,13 @@
   "Southern Illinois Salukis": "Southern Illinois",
   "Stephen F. Austin Lumberjacks": "Stephen F. Austin",
   "Temple Owls": "Temple",
+  "Tenn-Martin Skyhawks": "Tennessee Martin",
   "Tennessee Volunteers": "Tennessee",
   "The Citadel Bulldogs": "The Citadel",
   "Tulsa Golden Hurricane": "Tulsa",
   "UAB Blazers": "UAB",
   "UCF Knights": "UCF",
+  "UMKC Kangaroos": "Kansas City",
   "UT-Arlington Mavericks": "UT Arlington",
   "Utah Utes": "Utah",
   "Utah Valley Wolverines": "Utah Valley",
@@ -101,10 +103,7 @@
   "Wisconsin Badgers": "Wisconsin",
   "Xavier Musketeers": "Xavier"
  },
- "unmatched": [
-  "Tenn-Martin Skyhawks",
-  "UMKC Kangaroos"
- ],
+ "unmatched": [],
  "collisions": {},
  "espn_unmatched": [
   "Averett Cougars",

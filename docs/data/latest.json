@@ -25,7 +25,7 @@
       "books": {
         "DK": -35.5,
         "ESPN": -35.5,
-        "MGM": -35.5,
+        "MGM": -34.5,
         "BR": -35.5,
         "FD": -35.5
       },
@@ -384,105 +384,6 @@
       ]
     },
     {
-      "id": "1979721bb34c2e7d265ac1601275c08e",
-      "tip": "8:00 PM",
-      "tip_iso": "2026-11-21T01:00:00+00:00",
-      "home": "Arkansas",
-      "away": "Mississippi Valley St.",
-      "home_raw": "Arkansas Razorbacks",
-      "away_raw": "Miss Valley St Delta Devils",
-      "home_rank": 37,
-      "away_rank": 364,
-      "home_conf": "SEC",
-      "away_conf": "SWAC",
-      "neutral": false,
-      "book_spread": -39.5,
-      "books": {
-        "ESPN": -39.5,
-        "DK": -38.5,
-        "BR": -40.5,
-        "MGM": -39.5,
-        "FD": -38.5
-      },
-      "proj_spread": -32.9,
-      "proj_score": "Mississippi Valley St. 59, Arkansas 92",
-      "poss": 69.0,
-      "diff": -6.6,
-      "pick": "Mississippi Valley St.",
-      "best_line": {
-        "point": 40.5,
-        "price": -114,
-        "book": "BR"
-      },
-      "kp_home_wp": 0.994,
-      "mkt_home_wp": null,
-      "model_home_wp": 0.994,
-      "ml_min_edge": 0.03,
-      "neutral_src": null,
-      "home_luck": -0.073,
-      "away_luck": -0.014,
-      "proj_total": 150.5,
-      "proj_home_pts": 91.7,
-      "proj_away_pts": 58.8,
-      "imp_home": 95.5,
-      "imp_away": 56.0,
-      "book_total": 151.5,
-      "totals_books": {
-        "ESPN": 151.5,
-        "DK": 151.5,
-        "BR": 151.5,
-        "MGM": 152.5,
-        "FD": 151.5
-      },
-      "tot_diff": -1.0,
-      "ou_pick": "Under",
-      "ou_best": {
-        "point": 152.5,
-        "price": -115,
-        "book": "MGM"
-      },
-      "ml_home": null,
-      "ml_away": null,
-      "ml_edge": null,
-      "top_plays": [
-        {
-          "type": "Spread",
-          "side": "Mississippi Valley St.",
-          "line": 40.5,
-          "price": -114,
-          "book": "BR",
-          "prob": 0.618,
-          "be": 0.533,
-          "why": "KenPom +32.9 vs. line +40.5",
-          "game": "1979721bb34c2e7d265ac1601275c08e",
-          "matchup": "Mississippi Valley St. @ Arkansas",
-          "tip": "8:00 PM",
-          "neutral": false,
-          "same_game": false
-        }
-      ],
-      "green_plays": [
-        {
-          "type": "Spread",
-          "side": "Mississippi Valley St.",
-          "game": "1979721bb34c2e7d265ac1601275c08e",
-          "greens": [
-            "big_pick",
-            "road",
-            "dog"
-          ],
-          "yellows": [],
-          "matchup": "Mississippi Valley St. @ Arkansas",
-          "tip": "8:00 PM",
-          "tip_iso": "2026-11-21T01:00:00+00:00",
-          "line": 40.5,
-          "price": -114,
-          "book": "BR",
-          "prob": 0.5
-        }
-      ]
-    },
-    {
       "id": "6490128d2a737c7c4b91289a0b40a5d0",
       "tip": "7:00 PM",
       "tip_iso": "2026-11-21T00:00:00+00:00",
@@ -523,17 +424,17 @@
       "proj_total": 149.1,
       "proj_home_pts": 92.8,
       "proj_away_pts": 56.3,
-      "imp_home": 97.0,
-      "imp_away": 54.5,
-      "book_total": 151.5,
+      "imp_home": 96.5,
+      "imp_away": 54.0,
+      "book_total": 150.5,
       "totals_books": {
         "ESPN": 151.5,
         "DK": 151.5,
-        "MGM": 151.5,
+        "MGM": 150.5,
         "BR": 150.5,
         "FD": 150.5
       },
-      "tot_diff": -2.4,
+      "tot_diff": -1.4,
       "ou_pick": "Under",
       "ou_best": {
         "point": 151.5,
@@ -576,6 +477,105 @@
           "tip_iso": "2026-11-21T00:00:00+00:00",
           "line": 43.5,
           "price": -117,
+          "book": "BR",
+          "prob": 0.5
+        }
+      ]
+    },
+    {
+      "id": "1979721bb34c2e7d265ac1601275c08e",
+      "tip": "8:00 PM",
+      "tip_iso": "2026-11-21T01:00:00+00:00",
+      "home": "Arkansas",
+      "away": "Mississippi Valley St.",
+      "home_raw": "Arkansas Razorbacks",
+      "away_raw": "Miss Valley St Delta Devils",
+      "home_rank": 37,
+      "away_rank": 364,
+      "home_conf": "SEC",
+      "away_conf": "SWAC",
+      "neutral": false,
+      "book_spread": -38.5,
+      "books": {
+        "ESPN": -39.5,
+        "DK": -38.5,
+        "BR": -40.5,
+        "MGM": -38.5,
+        "FD": -38.5
+      },
+      "proj_spread": -32.9,
+      "proj_score": "Mississippi Valley St. 59, Arkansas 92",
+      "poss": 69.0,
+      "diff": -5.6,
+      "pick": "Mississippi Valley St.",
+      "best_line": {
+        "point": 40.5,
+        "price": -114,
+        "book": "BR"
+      },
+      "kp_home_wp": 0.994,
+      "mkt_home_wp": null,
+      "model_home_wp": 0.994,
+      "ml_min_edge": 0.03,
+      "neutral_src": null,
+      "home_luck": -0.073,
+      "away_luck": -0.014,
+      "proj_total": 150.5,
+      "proj_home_pts": 91.7,
+      "proj_away_pts": 58.8,
+      "imp_home": 95.0,
+      "imp_away": 56.5,
+      "book_total": 151.5,
+      "totals_books": {
+        "ESPN": 151.5,
+        "DK": 151.5,
+        "BR": 151.5,
+        "MGM": 151.5,
+        "FD": 151.5
+      },
+      "tot_diff": -1.0,
+      "ou_pick": "Under",
+      "ou_best": {
+        "point": 151.5,
+        "price": -110,
+        "book": "ESPN"
+      },
+      "ml_home": null,
+      "ml_away": null,
+      "ml_edge": null,
+      "top_plays": [
+        {
+          "type": "Spread",
+          "side": "Mississippi Valley St.",
+          "line": 40.5,
+          "price": -114,
+          "book": "BR",
+          "prob": 0.618,
+          "be": 0.533,
+          "why": "KenPom +32.9 vs. line +40.5",
+          "game": "1979721bb34c2e7d265ac1601275c08e",
+          "matchup": "Mississippi Valley St. @ Arkansas",
+          "tip": "8:00 PM",
+          "neutral": false,
+          "same_game": false
+        }
+      ],
+      "green_plays": [
+        {
+          "type": "Spread",
+          "side": "Mississippi Valley St.",
+          "game": "1979721bb34c2e7d265ac1601275c08e",
+          "greens": [
+            "big_pick",
+            "road",
+            "dog"
+          ],
+          "yellows": [],
+          "matchup": "Mississippi Valley St. @ Arkansas",
+          "tip": "8:00 PM",
+          "tip_iso": "2026-11-21T01:00:00+00:00",
+          "line": 40.5,
+          "price": -114,
           "book": "BR",
           "prob": 0.5
         }
@@ -1033,6 +1033,68 @@
       "ml_home": -750,
       "ml_away": 525,
       "ml_edge": 0.008
+    },
+    {
+      "id": "18bce8d38273bd5b44a6768f1d5aa1d6",
+      "tip": "5:30 PM",
+      "tip_iso": "2026-11-20T22:30:00+00:00",
+      "home": "Southern Illinois",
+      "away": "Tennessee Martin",
+      "home_raw": "Southern Illinois Salukis",
+      "away_raw": "Tenn-Martin Skyhawks",
+      "home_rank": 163,
+      "away_rank": 246,
+      "home_conf": "MVC",
+      "away_conf": "OVC",
+      "neutral": true,
+      "book_spread": -1.5,
+      "books": {
+        "FD": -1.5,
+        "ESPN": -1.5,
+        "DK": -1.5,
+        "MGM": -1.5,
+        "BR": -1.5
+      },
+      "proj_spread": -4.0,
+      "proj_score": "Tennessee Martin 72, Southern Illinois 76",
+      "poss": 69.9,
+      "diff": 2.5,
+      "pick": "Southern Illinois",
+      "best_line": {
+        "point": -1.5,
+        "price": -110,
+        "book": "FD"
+      },
+      "kp_home_wp": 0.621,
+      "mkt_home_wp": 0.534,
+      "model_home_wp": 0.577,
+      "ml_min_edge": 0.03,
+      "neutral_src": "espn",
+      "home_luck": -0.095,
+      "away_luck": -0.34,
+      "proj_total": 149.0,
+      "proj_home_pts": 76.5,
+      "proj_away_pts": 72.5,
+      "imp_home": 75.0,
+      "imp_away": 73.5,
+      "book_total": 148.5,
+      "totals_books": {
+        "FD": 148.5,
+        "ESPN": 148.5,
+        "DK": 148.5,
+        "MGM": 148.5,
+        "BR": 149.5
+      },
+      "tot_diff": 0.5,
+      "ou_pick": "Over",
+      "ou_best": {
+        "point": 148.5,
+        "price": -115,
+        "book": "FD"
+      },
+      "ml_home": -125,
+      "ml_away": 105,
+      "ml_edge": 0.043
     },
     {
       "id": "60dd6652c2f1e4af18cc3ce565e8dd1d",
@@ -2636,17 +2698,17 @@
       "proj_total": 143.1,
       "proj_home_pts": 70.2,
       "proj_away_pts": 72.9,
-      "imp_home": 70.5,
-      "imp_away": 74.0,
-      "book_total": 144.5,
+      "imp_home": 71.0,
+      "imp_away": 74.5,
+      "book_total": 145.5,
       "totals_books": {
         "ESPN": 144.5,
         "DK": 144.5,
-        "MGM": 144.5,
+        "MGM": 145.5,
         "BR": 146.5,
         "FD": 145.5
       },
-      "tot_diff": -1.4,
+      "tot_diff": -2.4,
       "ou_pick": "Under",
       "ou_best": {
         "point": 146.5,
@@ -3229,17 +3291,17 @@
       "proj_total": 160.2,
       "proj_home_pts": 80.9,
       "proj_away_pts": 79.3,
-      "imp_home": 81.2,
-      "imp_away": 79.2,
-      "book_total": 160.5,
+      "imp_home": 81.8,
+      "imp_away": 79.8,
+      "book_total": 161.5,
       "totals_books": {
         "FD": 161.5,
         "ESPN": 160.5,
-        "BR": 159.5,
+        "BR": 161.5,
         "DK": 160.5,
         "MGM": 161.5
       },
-      "tot_diff": -0.3,
+      "tot_diff": -1.3,
       "ou_pick": "Under",
       "ou_best": {
         "point": 161.5,
@@ -3288,7 +3350,7 @@
         "ESPN": -16.5,
         "FD": -15.5,
         "DK": -16.5,
-        "MGM": -16.5,
+        "MGM": -15.5,
         "BR": -16.5
       },
       "proj_spread": -16.9,
@@ -3302,7 +3364,7 @@
         "book": "FD"
       },
       "kp_home_wp": 0.903,
-      "mkt_home_wp": 0.917,
+      "mkt_home_wp": 0.916,
       "model_home_wp": 0.91,
       "ml_min_edge": 0.03,
       "neutral_src": null,
@@ -3330,7 +3392,7 @@
       },
       "ml_home": -2000,
       "ml_away": 1000,
-      "ml_edge": -0.007
+      "ml_edge": -0.006
     },
     {
       "id": "2c61b23dd09630b92c98ca00c4e8dad1",
@@ -3475,6 +3537,68 @@
           "prob": 0.5
         }
       ]
+    },
+    {
+      "id": "f23f37ea3ecae62d09994228b460a5bb",
+      "tip": "7:00 PM",
+      "tip_iso": "2026-11-21T00:00:00+00:00",
+      "home": "Iona",
+      "away": "Kansas City",
+      "home_raw": "Iona Gaels",
+      "away_raw": "UMKC Kangaroos",
+      "home_rank": 225,
+      "away_rank": 260,
+      "home_conf": "MC",
+      "away_conf": "Sum",
+      "neutral": false,
+      "book_spread": -4.5,
+      "books": {
+        "FD": -4.5,
+        "ESPN": -4.5,
+        "DK": -4.5,
+        "MGM": -4.5,
+        "BR": -4.5
+      },
+      "proj_spread": -4.6,
+      "proj_score": "Kansas City 68, Iona 72",
+      "poss": 67.0,
+      "diff": 0.1,
+      "pick": "Iona",
+      "best_line": {
+        "point": -4.5,
+        "price": -110,
+        "book": "FD"
+      },
+      "kp_home_wp": 0.638,
+      "mkt_home_wp": 0.631,
+      "model_home_wp": 0.635,
+      "ml_min_edge": 0.03,
+      "neutral_src": null,
+      "home_luck": -0.071,
+      "away_luck": -0.035,
+      "proj_total": 140.4,
+      "proj_home_pts": 72.5,
+      "proj_away_pts": 67.9,
+      "imp_home": 72.5,
+      "imp_away": 68.0,
+      "book_total": 140.5,
+      "totals_books": {
+        "FD": 140.5,
+        "ESPN": 140.5,
+        "DK": 140.5,
+        "MGM": 140.5,
+        "BR": 139.5
+      },
+      "tot_diff": -0.1,
+      "ou_pick": "Under",
+      "ou_best": {
+        "point": 140.5,
+        "price": -105,
+        "book": "FD"
+      },
+      "ml_home": -190,
+      "ml_away": 160,
+      "ml_edge": 0.004
     },
     {
       "id": "d6bf1938b3e709f64957d9e071899659",
@@ -4037,15 +4161,12 @@
       "prob": 0.5
     }
   ],
-  "unmatched": [
-    "Tenn-Martin Skyhawks",
-    "UMKC Kangaroos"
-  ],
+  "unmatched": [],
   "avg_o": 106.9,
   "avg_t": 69.5,
   "track": {
     "started": "2026-11-13",
-    "pending": 49,
+    "pending": 51,
     "no_result": 3,
     "overall": {
       "n": 312,

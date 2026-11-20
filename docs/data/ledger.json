@@ -342,14 +342,14 @@
    "price": -115
   },
   "book_spread": 3.5,
-  "book_total": 144.5,
+  "book_total": 145.5,
   "date": "2026-11-20",
   "diff": 0.9,
   "green_plays": null,
   "home": "Northwestern St.",
   "home_conf": "Slnd",
-  "imp_away": 74.0,
-  "imp_home": 70.5,
+  "imp_away": 74.5,
+  "imp_home": 71.0,
   "kp_home_wp": 0.42,
   "locked_at": "2026-11-20 09:34",
   "mkt_home_wp": 0.4,
@@ -372,7 +372,7 @@
   "top5_dropped": null,
   "top_play": null,
   "top_plays": null,
-  "tot_diff": -1.4
+  "tot_diff": -2.4
  },
  "0744ae65a239d93ad6981bcca04ec1d1": {
   "away": "Central Michigan",
@@ -1395,6 +1395,47 @@
   "tip_iso": "2026-11-15T01:00:00+00:00",
   "tot_diff": -2.6
  },
+ "18bce8d38273bd5b44a6768f1d5aa1d6": {
+  "away": "Tennessee Martin",
+  "away_conf": "OVC",
+  "best_line": {
+   "book": "FD",
+   "point": -1.5,
+   "price": -110
+  },
+  "book_spread": -1.5,
+  "book_total": 148.5,
+  "date": "2026-11-20",
+  "diff": 2.5,
+  "green_plays": null,
+  "home": "Southern Illinois",
+  "home_conf": "MVC",
+  "imp_away": 73.5,
+  "imp_home": 75.0,
+  "kp_home_wp": 0.621,
+  "locked_at": "2026-11-20 09:34",
+  "mkt_home_wp": 0.534,
+  "ml_away": 105,
+  "ml_edge": 0.043,
+  "ml_home": -125,
+  "ml_min_edge": 0.03,
+  "model_home_wp": 0.577,
+  "neutral": true,
+  "opened_spread": -1.5,
+  "opened_total": 148.5,
+  "ou_pick": "Over",
+  "pick": "Southern Illinois",
+  "proj_away_pts": 72.5,
+  "proj_home_pts": 76.5,
+  "proj_spread": -4.0,
+  "proj_total": 149.0,
+  "tip": "5:30 PM",
+  "tip_iso": "2026-11-20T22:30:00+00:00",
+  "top5_dropped": null,
+  "top_play": null,
+  "top_plays": null,
+  "tot_diff": 0.5
+ },
  "1955d8fa175573a689d24209bcb4b6c0": {
   "away": "Tennessee Tech",
   "away_conf": "SC",
@@ -1464,10 +1505,10 @@
    "point": 40.5,
    "price": -114
   },
-  "book_spread": -39.5,
+  "book_spread": -38.5,
   "book_total": 151.5,
   "date": "2026-11-20",
-  "diff": -6.6,
+  "diff": -5.6,
   "green_plays": [
    {
     "book": "BR",
@@ -1490,8 +1531,8 @@
   ],
   "home": "Arkansas",
   "home_conf": "SEC",
-  "imp_away": 56.0,
-  "imp_home": 95.5,
+  "imp_away": 56.5,
+  "imp_home": 95.0,
   "kp_home_wp": 0.994,
   "locked_at": "2026-11-20 09:34",
   "mkt_home_wp": null,
@@ -6601,7 +6642,7 @@
    "price": -117
   },
   "book_spread": -42.5,
-  "book_total": 151.5,
+  "book_total": 150.5,
   "date": "2026-11-20",
   "diff": -5.9,
   "green_plays": [
@@ -6626,8 +6667,8 @@
   ],
   "home": "Virginia",
   "home_conf": "ACC",
-  "imp_away": 54.5,
-  "imp_home": 97.0,
+  "imp_away": 54.0,
+  "imp_home": 96.5,
   "kp_home_wp": 0.998,
   "locked_at": "2026-11-20 09:34",
   "mkt_home_wp": null,
@@ -6666,7 +6707,7 @@
     "why": "KenPom +36.6 vs. line +43.5"
    }
   ],
-  "tot_diff": -2.4
+  "tot_diff": -1.4
  },
  "64e199f7ea93a190062392e432d1f799": {
   "away": "Delaware St.",
@@ -8342,9 +8383,9 @@
   "imp_home": 85.5,
   "kp_home_wp": 0.903,
   "locked_at": "2026-11-20 09:34",
-  "mkt_home_wp": 0.917,
+  "mkt_home_wp": 0.916,
   "ml_away": 1000,
-  "ml_edge": -0.007,
+  "ml_edge": -0.006,
   "ml_home": -2000,
   "ml_min_edge": 0.03,
   "model_home_wp": 0.91,
@@ -15025,6 +15066,47 @@
   "top_plays": null,
   "tot_diff": 0.0
  },
+ "f23f37ea3ecae62d09994228b460a5bb": {
+  "away": "Kansas City",
+  "away_conf": "Sum",
+  "best_line": {
+   "book": "FD",
+   "point": -4.5,
+   "price": -110
+  },
+  "book_spread": -4.5,
+  "book_total": 140.5,
+  "date": "2026-11-20",
+  "diff": 0.1,
+  "green_plays": null,
+  "home": "Iona",
+  "home_conf": "MC",
+  "imp_away": 68.0,
+  "imp_home": 72.5,
+  "kp_home_wp": 0.638,
+  "locked_at": "2026-11-20 09:34",
+  "mkt_home_wp": 0.631,
+  "ml_away": 160,
+  "ml_edge": 0.004,
+  "ml_home": -190,
+  "ml_min_edge": 0.03,
+  "model_home_wp": 0.635,
+  "neutral": false,
+  "opened_spread": -4.5,
+  "opened_total": 140.5,
+  "ou_pick": "Under",
+  "pick": "Iona",
+  "proj_away_pts": 67.9,
+  "proj_home_pts": 72.5,
+  "proj_spread": -4.6,
+  "proj_total": 140.4,
+  "tip": "7:00 PM",
+  "tip_iso": "2026-11-21T00:00:00+00:00",
+  "top5_dropped": null,
+  "top_play": null,
+  "top_plays": null,
+  "tot_diff": -0.1
+ },
  "f2f76ded2b49c859cfcdb18510fc4461": {
   "away": "Western Carolina",
   "away_conf": "SC",
@@ -15561,7 +15643,7 @@
    "price": -120
   },
   "book_spread": -2.0,
-  "book_total": 160.5,
+  "book_total": 161.5,
   "date": "2026-11-20",
   "diff": -0.5,
   "green_plays": [
@@ -15586,8 +15668,8 @@
   ],
   "home": "Saint Mary's",
   "home_conf": "WCC",
-  "imp_away": 79.2,
-  "imp_home": 81.2,
+  "imp_away": 79.8,
+  "imp_home": 81.8,
   "kp_home_wp": 0.547,
   "locked_at": "2026-11-20 09:34",
   "mkt_home_wp": 0.545,
@@ -15610,7 +15692,7 @@
   "top5_dropped": null,
   "top_play": null,
   "top_plays": null,
-  "tot_diff": -0.3
+  "tot_diff": -1.3
  },
  "fb185c92b4800a8c22db26c4fc95a853": {
   "away": "Columbia",
