@@ -107,6 +107,10 @@ def parse_kenpom(html: str) -> tuple[dict, str]:
     m = re.search(r"Data through games of\s*(?:<a[^>]*>)?([^<\n]+)", html)
     if m:
         through = m.group(1).strip()
+    else:   # mid-update wording: "Data includes 58 of 59 games played on Friday, November 20"
+        m = re.search(r"Data includes (\d+) of (\d+) games played on\s*(?:<a[^>]*>)?([^<\n]+)", html)
+        if m:
+            through = f"{m.group(3).strip()} ({m.group(1)} of {m.group(2)} games)"
     return teams, through
 
 
