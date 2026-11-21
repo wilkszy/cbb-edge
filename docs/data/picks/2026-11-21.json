@@ -1,0 +1,259 @@
+{
+ "frozen_at": "Nov 21, 2026 11:57 AM ET",
+ "top5": [
+  {
+   "type": "Moneyline",
+   "side": "Vermont",
+   "line": null,
+   "price": -192,
+   "book": "median",
+   "prob": 0.667,
+   "be": 0.658,
+   "why": "Model 67% vs. market 64%",
+   "game": "509452e9c30d0b4edddf769f5d142f71",
+   "matchup": "Brown @ Vermont",
+   "tip": "7:00 PM",
+   "neutral": false,
+   "same_game": false
+  },
+  {
+   "type": "Total",
+   "side": "Over",
+   "line": 132.5,
+   "price": -115,
+   "book": "FD",
+   "prob": 0.647,
+   "be": 0.535,
+   "why": "KenPom total 146.1 vs. 132.5",
+   "game": "089763b58d06f84ae9546c2037e7d941",
+   "matchup": "UC Irvine @ San Diego",
+   "tip": "4:30 PM",
+   "neutral": true,
+   "same_game": true
+  },
+  {
+   "type": "Team total",
+   "side": "UC Irvine Over",
+   "line": 69.0,
+   "price": null,
+   "book": "implied",
+   "prob": 0.617,
+   "be": 0.524,
+   "why": "KenPom 75.4 vs. implied 69",
+   "team": "UC Irvine",
+   "lean": "Over",
+   "game": "089763b58d06f84ae9546c2037e7d941",
+   "matchup": "UC Irvine @ San Diego",
+   "tip": "4:30 PM",
+   "neutral": true,
+   "same_game": true
+  },
+  {
+   "type": "Team total",
+   "side": "San Diego Over",
+   "line": 64.5,
+   "price": null,
+   "book": "implied",
+   "prob": 0.614,
+   "be": 0.524,
+   "why": "KenPom 70.7 vs. implied 64.5",
+   "team": "San Diego",
+   "lean": "Over",
+   "game": "089763b58d06f84ae9546c2037e7d941",
+   "matchup": "UC Irvine @ San Diego",
+   "tip": "4:30 PM",
+   "neutral": true,
+   "same_game": true
+  },
+  {
+   "type": "Spread",
+   "side": "Washington St.",
+   "line": 25.5,
+   "price": -110,
+   "book": "FD",
+   "prob": 0.609,
+   "be": 0.524,
+   "why": "KenPom +18.6 vs. line +25.5",
+   "game": "9f7f8d885eb724ca669f64bacad9321c",
+   "matchup": "Washington St. @ Duke",
+   "tip": "11:00 PM",
+   "neutral": true,
+   "same_game": false
+  }
+ ],
+ "top5_dropped": [
+  {
+   "type": "Spread",
+   "side": "Coppin St.",
+   "line": 32.5,
+   "price": -121,
+   "book": "BR",
+   "prob": 0.62,
+   "be": 0.548,
+   "why": "KenPom +24.8 vs. line +32.5",
+   "game": "d4ff5572dfce3797f92425c0269392d5",
+   "red_flag": "Georgetown has been beating its KenPom projection",
+   "would_rank": 3,
+   "matchup": "Coppin St. @ Georgetown",
+   "tip": "6:00 PM",
+   "neutral": false,
+   "same_game": false
+  }
+ ],
+ "green_plays": [
+  {
+   "type": "Spread",
+   "side": "Washington St.",
+   "game": "9f7f8d885eb724ca669f64bacad9321c",
+   "greens": [
+    "big_pick",
+    "dog"
+   ],
+   "yellows": [
+    "road"
+   ],
+   "matchup": "Washington St. @ Duke",
+   "tip": "11:00 PM",
+   "tip_iso": "2026-11-22T04:00:00+00:00",
+   "line": 25.5,
+   "price": -110,
+   "book": "FD",
+   "prob": 0.5
+  },
+  {
+   "type": "Spread",
+   "side": "Maine",
+   "game": "a8d9f06e5e8a38eff46544b225f7b425",
+   "greens": [
+    "dog",
+    "mid_spread"
+   ],
+   "yellows": [
+    "small_gap",
+    "road"
+   ],
+   "matchup": "Maine @ Massachusetts",
+   "tip": "6:00 PM",
+   "tip_iso": "2026-11-21T23:00:00+00:00",
+   "line": 12.5,
+   "price": -118,
+   "book": "DK",
+   "prob": 0.5
+  },
+  {
+   "type": "Spread",
+   "side": "Morehead St.",
+   "game": "b2203e33d7aedad7f3ac39e1282c44d4",
+   "greens": [
+    "dog",
+    "mid_spread"
+   ],
+   "yellows": [
+    "small_gap",
+    "road"
+   ],
+   "matchup": "Morehead St. @ Elon",
+   "tip": "7:00 PM",
+   "tip_iso": "2026-11-22T00:00:00+00:00",
+   "line": 11.5,
+   "price": -105,
+   "book": "DK",
+   "prob": 0.5
+  },
+  {
+   "type": "Spread",
+   "side": "Nicholls",
+   "game": "6ed855b5052c6914a70d4c336653271e",
+   "greens": [
+    "dog"
+   ],
+   "yellows": [
+    "small_gap",
+    "road"
+   ],
+   "matchup": "Nicholls @ Southern Miss",
+   "tip": "5:00 PM",
+   "tip_iso": "2026-11-21T22:00:00+00:00",
+   "line": 2.5,
+   "price": -110,
+   "book": "MGM",
+   "prob": 0.5
+  },
+  {
+   "type": "Spread",
+   "side": "Northern Arizona",
+   "game": "ab342b5218a6e8b0cc7efa7c92bf8c01",
+   "greens": [
+    "dog"
+   ],
+   "yellows": [
+    "small_gap",
+    "road"
+   ],
+   "matchup": "Northern Arizona @ Cal Poly",
+   "tip": "7:00 PM",
+   "tip_iso": "2026-11-22T00:00:00+00:00",
+   "line": 8.5,
+   "price": -118,
+   "book": "FD",
+   "prob": 0.5
+  },
+  {
+   "type": "Spread",
+   "side": "Charleston Southern",
+   "game": "d2225a902743456bc09613327cb26bb5",
+   "greens": [
+    "dog"
+   ],
+   "yellows": [
+    "small_gap",
+    "road"
+   ],
+   "matchup": "Charleston Southern @ Mercer",
+   "tip": "7:00 PM",
+   "tip_iso": "2026-11-22T00:00:00+00:00",
+   "line": 9.5,
+   "price": -115,
+   "book": "MGM",
+   "prob": 0.5
+  },
+  {
+   "type": "Spread",
+   "side": "Presbyterian",
+   "game": "d579b046d1ffdb6960b62c6d4e8c46e5",
+   "greens": [
+    "dog"
+   ],
+   "yellows": [
+    "small_gap",
+    "road"
+   ],
+   "matchup": "Presbyterian @ Tennessee Tech",
+   "tip": "7:30 PM",
+   "tip_iso": "2026-11-22T00:30:00+00:00",
+   "line": 8.5,
+   "price": -120,
+   "book": "BR",
+   "prob": 0.5
+  },
+  {
+   "type": "Spread",
+   "side": "LSU New Orleans",
+   "game": "7be34d4b1b24a90daf0928088053bc5a",
+   "greens": [
+    "dog"
+   ],
+   "yellows": [
+    "small_gap",
+    "road"
+   ],
+   "matchup": "LSU New Orleans @ Texas Southern",
+   "tip": "8:30 PM",
+   "tip_iso": "2026-11-22T01:30:00+00:00",
+   "line": 1.5,
+   "price": -115,
+   "book": "DK",
+   "prob": 0.5
+  }
+ ]
+}
