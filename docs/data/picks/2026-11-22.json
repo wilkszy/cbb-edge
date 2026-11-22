@@ -1,0 +1,274 @@
+{
+ "frozen_at": "Nov 22, 2026 12:44 PM ET",
+ "top5": [
+  {
+   "type": "Moneyline",
+   "side": "Canisius",
+   "line": null,
+   "price": -175,
+   "book": "median",
+   "prob": 0.657,
+   "be": 0.636,
+   "why": "Model 66% vs. market 61%",
+   "game": "6720f59950e8e460d7daf76bc09897e6",
+   "matchup": "Western Illinois @ Canisius",
+   "tip": "1:00 PM",
+   "neutral": false,
+   "same_game": false
+  },
+  {
+   "type": "Spread",
+   "side": "Chicago St.",
+   "line": 35.5,
+   "price": -110,
+   "book": "MGM",
+   "prob": 0.639,
+   "be": 0.524,
+   "why": "KenPom +26.3 vs. line +35.5",
+   "game": "d3ff354cf7590632c2f875f2c49fa5e1",
+   "matchup": "Chicago St. @ Marquette",
+   "tip": "1:00 PM",
+   "neutral": false,
+   "same_game": false
+  },
+  {
+   "type": "Total",
+   "side": "Over",
+   "line": 152.5,
+   "price": -110,
+   "book": "ESPN",
+   "prob": 0.623,
+   "be": 0.524,
+   "why": "KenPom total 163.5 vs. 152.5",
+   "game": "20c6981840df47c0889d7ae41c56aa84",
+   "matchup": "Utah Tech @ South Dakota",
+   "tip": "2:00 PM",
+   "neutral": true,
+   "same_game": true
+  },
+  {
+   "type": "Team total",
+   "side": "Utah Tech Over",
+   "line": 77.0,
+   "price": null,
+   "book": "implied",
+   "prob": 0.617,
+   "be": 0.524,
+   "why": "KenPom 83.4 vs. implied 77",
+   "team": "Utah Tech",
+   "lean": "Over",
+   "game": "20c6981840df47c0889d7ae41c56aa84",
+   "matchup": "Utah Tech @ South Dakota",
+   "tip": "2:00 PM",
+   "neutral": true,
+   "same_game": true
+  },
+  {
+   "type": "Moneyline",
+   "side": "Texas St.",
+   "line": null,
+   "price": -132,
+   "book": "median",
+   "prob": 0.616,
+   "be": 0.569,
+   "why": "Model 62% vs. market 55%",
+   "game": "c22529a778dfb8b70f9e62a6ea96bb2e",
+   "matchup": "McNeese @ Texas St.",
+   "tip": "3:30 PM",
+   "neutral": false,
+   "same_game": false
+  }
+ ],
+ "top5_dropped": [
+  {
+   "type": "Moneyline",
+   "side": "South Alabama",
+   "line": null,
+   "price": -245,
+   "book": "median",
+   "prob": 0.713,
+   "be": 0.71,
+   "why": "Model 71% vs. market 68%",
+   "game": "7badad13b09c40df6ad6bed5dd5aa18f",
+   "red_flag": "South Alabama has been trailing its KenPom projection; West Florida has been beating its KenPom projection",
+   "would_rank": 1,
+   "matchup": "West Florida @ South Alabama",
+   "tip": "3:00 PM",
+   "neutral": false,
+   "same_game": false
+  }
+ ],
+ "green_plays": [
+  {
+   "type": "Spread",
+   "side": "Chicago St.",
+   "game": "d3ff354cf7590632c2f875f2c49fa5e1",
+   "greens": [
+    "big_pick",
+    "dog"
+   ],
+   "yellows": [
+    "road"
+   ],
+   "matchup": "Chicago St. @ Marquette",
+   "tip": "1:00 PM",
+   "tip_iso": "2026-11-22T18:00:00+00:00",
+   "line": 35.5,
+   "price": -110,
+   "book": "MGM",
+   "prob": 0.5
+  },
+  {
+   "type": "Spread",
+   "side": "Southern Indiana",
+   "game": "ce609d312c528c91d20e80577d8feee5",
+   "greens": [
+    "big_pick",
+    "dog"
+   ],
+   "yellows": [
+    "road"
+   ],
+   "matchup": "Southern Indiana @ Texas",
+   "tip": "3:00 PM",
+   "tip_iso": "2026-11-22T20:00:00+00:00",
+   "line": 38.5,
+   "price": -110,
+   "book": "ESPN",
+   "prob": 0.5
+  },
+  {
+   "type": "Spread",
+   "side": "Delaware",
+   "game": "44c35f271b07ee73f3cdeb6afb468ff6",
+   "greens": [
+    "big_pick",
+    "dog"
+   ],
+   "yellows": [
+    "road"
+   ],
+   "matchup": "Delaware @ UCLA",
+   "tip": "7:00 PM",
+   "tip_iso": "2026-11-23T00:00:00+00:00",
+   "line": 28.5,
+   "price": -105,
+   "book": "ESPN",
+   "prob": 0.5
+  },
+  {
+   "type": "Spread",
+   "side": "Duquesne",
+   "game": "9df92a4f1ca806fe512c3849b181da90",
+   "greens": [
+    "dog"
+   ],
+   "yellows": [
+    "small_gap",
+    "road"
+   ],
+   "matchup": "Duquesne @ Wyoming",
+   "tip": "2:00 PM",
+   "tip_iso": "2026-11-22T19:00:00+00:00",
+   "line": 4.5,
+   "price": -120,
+   "book": "ESPN",
+   "prob": 0.5
+  },
+  {
+   "type": "Spread",
+   "side": "Evansville",
+   "game": "ca02e6e3717e63798ba1db0542ee38ee",
+   "greens": [
+    "dog"
+   ],
+   "yellows": [
+    "small_gap",
+    "road"
+   ],
+   "matchup": "Evansville @ Memphis",
+   "tip": "2:00 PM",
+   "tip_iso": "2026-11-22T19:00:00+00:00",
+   "line": 20.5,
+   "price": -115,
+   "book": "ESPN",
+   "prob": 0.5
+  },
+  {
+   "type": "Spread",
+   "side": "Western Kentucky",
+   "game": "dce1dc11a16440e70de006d164780ac2",
+   "greens": [
+    "dog"
+   ],
+   "yellows": [
+    "small_gap",
+    "road"
+   ],
+   "matchup": "Western Kentucky @ George Washington",
+   "tip": "2:00 PM",
+   "tip_iso": "2026-11-22T19:00:00+00:00",
+   "line": 3.5,
+   "price": -115,
+   "book": "ESPN",
+   "prob": 0.5
+  },
+  {
+   "type": "Spread",
+   "side": "NJIT",
+   "game": "a156f22faa101eae5a832cfc5de4fbca",
+   "greens": [
+    "dog"
+   ],
+   "yellows": [
+    "small_gap",
+    "road"
+   ],
+   "matchup": "NJIT @ Boston College",
+   "tip": "5:00 PM",
+   "tip_iso": "2026-11-22T22:00:00+00:00",
+   "line": 23.5,
+   "price": -110,
+   "book": "MGM",
+   "prob": 0.5
+  },
+  {
+   "type": "Spread",
+   "side": "UAB",
+   "game": "1ee2fb83953abf7e64374cbf970ddd8f",
+   "greens": [
+    "dog"
+   ],
+   "yellows": [
+    "small_gap",
+    "road"
+   ],
+   "matchup": "UAB @ Rhode Island",
+   "tip": "7:00 PM",
+   "tip_iso": "2026-11-23T00:00:00+00:00",
+   "line": 2.5,
+   "price": -115,
+   "book": "ESPN",
+   "prob": 0.5
+  },
+  {
+   "type": "Spread",
+   "side": "San Jose St.",
+   "game": "e1df42277edc29d6e8f5fe465c9fb695",
+   "greens": [
+    "dog"
+   ],
+   "yellows": [
+    "small_gap",
+    "road"
+   ],
+   "matchup": "San Jose St. @ Loyola Chicago",
+   "tip": "11:59 PM",
+   "tip_iso": "2026-11-23T04:59:00+00:00",
+   "line": 4.5,
+   "price": -105,
+   "book": "ESPN",
+   "prob": 0.5
+  }
+ ]
+}
