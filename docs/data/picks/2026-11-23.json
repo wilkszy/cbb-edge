@@ -1,0 +1,333 @@
+{
+ "frozen_at": "Nov 23, 2026 9:50 AM ET",
+ "top5": [
+  {
+   "type": "Moneyline",
+   "side": "Mississippi",
+   "line": null,
+   "price": -230,
+   "book": "median",
+   "prob": 0.697,
+   "be": 0.697,
+   "why": "Model 70% vs. market 68%",
+   "game": "f6407650f13adaa2fc13d17570ef3327",
+   "matchup": "Mississippi @ Clemson",
+   "tip": "2:30 PM",
+   "neutral": true,
+   "same_game": false
+  },
+  {
+   "type": "Total",
+   "side": "Under",
+   "line": 154.5,
+   "price": -117,
+   "book": "BR",
+   "prob": 0.612,
+   "be": 0.539,
+   "why": "KenPom total 144.6 vs. 154.5",
+   "game": "bd51dcc9b4ceb556e17992c7f5fe7f75",
+   "matchup": "VCU @ Providence",
+   "tip": "9:00 PM",
+   "neutral": true,
+   "same_game": true
+  },
+  {
+   "type": "Team total",
+   "side": "Providence Under",
+   "line": 77.5,
+   "price": null,
+   "book": "implied",
+   "prob": 0.592,
+   "be": 0.524,
+   "why": "KenPom 72.6 vs. implied 77.5",
+   "team": "Providence",
+   "lean": "Under",
+   "game": "bd51dcc9b4ceb556e17992c7f5fe7f75",
+   "matchup": "VCU @ Providence",
+   "tip": "9:00 PM",
+   "neutral": true,
+   "same_game": true
+  },
+  {
+   "type": "Team total",
+   "side": "Alabama St. Over",
+   "line": 62.5,
+   "price": null,
+   "book": "implied",
+   "prob": 0.582,
+   "be": 0.524,
+   "why": "KenPom 66.8 vs. implied 62.5",
+   "team": "Alabama St.",
+   "lean": "Over",
+   "game": "b7a4f6e90eb128b0d569dacbfe487e80",
+   "matchup": "Alabama St. @ California",
+   "tip": "10:00 PM",
+   "neutral": false,
+   "same_game": false
+  },
+  {
+   "type": "Team total",
+   "side": "Iona Under",
+   "line": 73.5,
+   "price": null,
+   "book": "implied",
+   "prob": 0.576,
+   "be": 0.524,
+   "why": "KenPom 69.5 vs. implied 73.5",
+   "team": "Iona",
+   "lean": "Under",
+   "game": "c6b930f2b10901f7c145736cde09fd95",
+   "matchup": "Fairleigh Dickinson @ Iona",
+   "tip": "7:00 PM",
+   "neutral": false,
+   "same_game": false
+  }
+ ],
+ "top5_dropped": [
+  {
+   "type": "Moneyline",
+   "side": "William & Mary",
+   "line": null,
+   "price": -190,
+   "book": "median",
+   "prob": 0.665,
+   "be": 0.655,
+   "why": "Model 66% vs. market 63%",
+   "game": "aee64daab1ceefa09aaf0260ed750d53",
+   "red_flag": "IU Indy has been beating its KenPom projection",
+   "would_rank": 2,
+   "matchup": "William & Mary @ IU Indy",
+   "tip": "3:30 PM",
+   "neutral": true,
+   "same_game": false
+  }
+ ],
+ "green_plays": [
+  {
+   "type": "Moneyline",
+   "side": "Appalachian St.",
+   "game": "435ce8aaf2de67393a436fc9bf8c956e",
+   "greens": [
+    "ml"
+   ],
+   "yellows": [],
+   "matchup": "St. Bonaventure @ Appalachian St.",
+   "tip": "11:00 AM",
+   "tip_iso": "2026-11-23T16:00:00+00:00",
+   "price": 165,
+   "prob": 0.5
+  },
+  {
+   "type": "Moneyline",
+   "side": "Long Beach St.",
+   "game": "037aac2cff7aea7fec09fbb5a3dcf04b",
+   "greens": [
+    "ml"
+   ],
+   "yellows": [],
+   "matchup": "Long Beach St. @ FIU",
+   "tip": "1:00 PM",
+   "tip_iso": "2026-11-23T18:00:00+00:00",
+   "price": 310,
+   "prob": 0.5
+  },
+  {
+   "type": "Moneyline",
+   "side": "Southern Utah",
+   "game": "b1abd9ff77f5dc5c376c08041fae20ea",
+   "greens": [
+    "ml"
+   ],
+   "yellows": [],
+   "matchup": "Arkansas St. @ Southern Utah",
+   "tip": "3:30 PM",
+   "tip_iso": "2026-11-23T20:30:00+00:00",
+   "price": 240,
+   "prob": 0.5
+  },
+  {
+   "type": "Moneyline",
+   "side": "Tulane",
+   "game": "dd58df55a7af85441c65eee7310a71f5",
+   "greens": [
+    "ml"
+   ],
+   "yellows": [],
+   "matchup": "Tulane @ Georgia St.",
+   "tip": "4:00 PM",
+   "tip_iso": "2026-11-23T21:00:00+00:00",
+   "price": 105,
+   "prob": 0.5
+  },
+  {
+   "type": "Moneyline",
+   "side": "Washington",
+   "game": "fc86a54f6abd13932c62fa66b82a3e28",
+   "greens": [
+    "ml"
+   ],
+   "yellows": [],
+   "matchup": "Washington @ BYU",
+   "tip": "5:00 PM",
+   "tip_iso": "2026-11-23T22:00:00+00:00",
+   "price": 525,
+   "prob": 0.5
+  },
+  {
+   "type": "Moneyline",
+   "side": "North Florida",
+   "game": "1af3a5acedbb908ecc006767d288d16b",
+   "greens": [
+    "ml"
+   ],
+   "yellows": [],
+   "matchup": "Central Arkansas @ North Florida",
+   "tip": "7:00 PM",
+   "tip_iso": "2026-11-24T00:00:00+00:00",
+   "price": 370,
+   "prob": 0.5
+  },
+  {
+   "type": "Moneyline",
+   "side": "Fairleigh Dickinson",
+   "game": "c6b930f2b10901f7c145736cde09fd95",
+   "greens": [
+    "ml"
+   ],
+   "yellows": [],
+   "matchup": "Fairleigh Dickinson @ Iona",
+   "tip": "7:00 PM",
+   "tip_iso": "2026-11-24T00:00:00+00:00",
+   "price": 360,
+   "prob": 0.5
+  },
+  {
+   "type": "Moneyline",
+   "side": "UNC Greensboro",
+   "game": "69e165166aa1f48345e5bdd45029fb18",
+   "greens": [
+    "ml"
+   ],
+   "yellows": [],
+   "matchup": "UNC Greensboro @ Pepperdine",
+   "tip": "9:30 PM",
+   "tip_iso": "2026-11-24T02:30:00+00:00",
+   "price": 440,
+   "prob": 0.5
+  },
+  {
+   "type": "Spread",
+   "side": "Northern Iowa",
+   "game": "98a0b4549739cc028ffa9665d77d7ffd",
+   "greens": [
+    "dog"
+   ],
+   "yellows": [
+    "small_gap",
+    "road"
+   ],
+   "matchup": "Northern Iowa @ Davidson",
+   "tip": "11:00 AM",
+   "tip_iso": "2026-11-23T16:00:00+00:00",
+   "line": 5.5,
+   "price": -102,
+   "book": "FD",
+   "prob": 0.5
+  },
+  {
+   "type": "Spread",
+   "side": "Middle Tennessee",
+   "game": "f1dad846a15c864b10f3cf4914c7cbd5",
+   "greens": [
+    "dog"
+   ],
+   "yellows": [
+    "small_gap",
+    "road"
+   ],
+   "matchup": "Middle Tennessee @ Southern Illinois",
+   "tip": "3:00 PM",
+   "tip_iso": "2026-11-23T20:00:00+00:00",
+   "line": 2.5,
+   "price": -102,
+   "book": "MGM",
+   "prob": 0.5
+  },
+  {
+   "type": "Spread",
+   "side": "Yale",
+   "game": "c26aa1b5cbdc588ee415a259da2c6bf4",
+   "greens": [
+    "dog"
+   ],
+   "yellows": [
+    "small_gap",
+    "road"
+   ],
+   "matchup": "Yale @ Belmont",
+   "tip": "4:00 PM",
+   "tip_iso": "2026-11-23T21:00:00+00:00",
+   "line": 2.5,
+   "price": -110,
+   "book": "MGM",
+   "prob": 0.5
+  },
+  {
+   "type": "Spread",
+   "side": "Fairleigh Dickinson",
+   "game": "c6b930f2b10901f7c145736cde09fd95",
+   "greens": [
+    "dog"
+   ],
+   "yellows": [
+    "small_gap",
+    "road"
+   ],
+   "matchup": "Fairleigh Dickinson @ Iona",
+   "tip": "7:00 PM",
+   "tip_iso": "2026-11-24T00:00:00+00:00",
+   "line": 9.5,
+   "price": -110,
+   "book": "MGM",
+   "prob": 0.5
+  },
+  {
+   "type": "Spread",
+   "side": "VCU",
+   "game": "bd51dcc9b4ceb556e17992c7f5fe7f75",
+   "greens": [
+    "dog"
+   ],
+   "yellows": [
+    "small_gap",
+    "road"
+   ],
+   "matchup": "VCU @ Providence",
+   "tip": "9:00 PM",
+   "tip_iso": "2026-11-24T02:00:00+00:00",
+   "line": 1.5,
+   "price": -105,
+   "book": "DK",
+   "prob": 0.5
+  },
+  {
+   "type": "Spread",
+   "side": "Eastern Washington",
+   "game": "8236efa27962bd6d4b110bb43e861b07",
+   "greens": [
+    "dog"
+   ],
+   "yellows": [
+    "small_gap",
+    "road"
+   ],
+   "matchup": "Eastern Washington @ UNLV",
+   "tip": "10:00 PM",
+   "tip_iso": "2026-11-24T03:00:00+00:00",
+   "line": 7.5,
+   "price": -110,
+   "book": "FD",
+   "prob": 0.5
+  }
+ ]
+}
