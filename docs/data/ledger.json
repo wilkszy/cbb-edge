@@ -371,6 +371,7 @@
  "05c828d73504c939e026a844ffcabd3c": {
   "away": "Liberty",
   "away_conf": "CUSA",
+  "away_score": 92,
   "best_line": {
    "book": "FD",
    "point": 1.5,
@@ -380,9 +381,11 @@
   "book_total": 141.5,
   "date": "2026-11-22",
   "diff": 0.1,
+  "final": true,
   "green_plays": null,
   "home": "Richmond",
   "home_conf": "A10",
+  "home_score": 88,
   "imp_away": 70.0,
   "imp_home": 71.5,
   "kp_home_wp": 0.548,
@@ -1059,6 +1062,7 @@
  "0e691de1e271a81490db7c766b779288": {
   "away": "Towson",
   "away_conf": "CAA",
+  "away_score": 75,
   "best_line": {
    "book": "MGM",
    "point": -1.5,
@@ -1068,9 +1072,11 @@
   "book_total": 132.5,
   "date": "2026-11-22",
   "diff": 1.2,
+  "final": true,
   "green_plays": null,
   "home": "American",
   "home_conf": "PL",
+  "home_score": 86,
   "imp_away": 65.5,
   "imp_home": 67.0,
   "kp_home_wp": 0.582,
@@ -1659,27 +1665,27 @@
   "away": "Seattle",
   "away_conf": "WCC",
   "best_line": {
-   "book": "MGM",
+   "book": "ESPN",
    "point": 1.5,
-   "price": -118
+   "price": -135
   },
-  "book_spread": -1.5,
+  "book_spread": -0.5,
   "book_total": 148.5,
   "date": "2026-11-22",
-  "diff": 0.2,
+  "diff": 1.2,
   "green_plays": null,
   "home": "UC San Diego",
   "home_conf": "BW",
-  "imp_away": 73.5,
-  "imp_home": 75.0,
+  "imp_away": 74.0,
+  "imp_home": 74.5,
   "kp_home_wp": 0.552,
-  "locked_at": "2026-11-22 12:44",
-  "mkt_home_wp": 0.5,
-  "ml_away": -110,
-  "ml_edge": 0.026,
-  "ml_home": -110,
+  "locked_at": "2026-11-22 20:48",
+  "mkt_home_wp": 0.495,
+  "ml_away": -112,
+  "ml_edge": 0.028,
+  "ml_home": -108,
   "ml_min_edge": 0.03,
-  "model_home_wp": 0.526,
+  "model_home_wp": 0.523,
   "neutral": true,
   "opened_spread": -1.5,
   "opened_total": 148.5,
@@ -2194,6 +2200,7 @@
  "20c6981840df47c0889d7ae41c56aa84": {
   "away": "Utah Tech",
   "away_conf": "BSky",
+  "away_score": 74,
   "best_line": {
    "book": "ESPN",
    "point": -1.5,
@@ -2203,9 +2210,11 @@
   "book_total": 152.5,
   "date": "2026-11-22",
   "diff": -1.8,
+  "final": true,
   "green_plays": null,
   "home": "South Dakota",
   "home_conf": "Sum",
+  "home_score": 73,
   "imp_away": 77.0,
   "imp_home": 75.5,
   "kp_home_wp": 0.401,
@@ -2687,6 +2696,7 @@
  "27c34c0d38a26b69a06b6a3d3c374ab9": {
   "away": "Lamar",
   "away_conf": "Slnd",
+  "away_score": 85,
   "best_line": {
    "book": "MGM",
    "point": 2.5,
@@ -2696,9 +2706,11 @@
   "book_total": 163.5,
   "date": "2026-11-22",
   "diff": 2.0,
+  "final": true,
   "green_plays": null,
   "home": "Rice",
   "home_conf": "Amer",
+  "home_score": 81,
   "imp_away": 83.0,
   "imp_home": 80.5,
   "kp_home_wp": 0.486,
@@ -2864,6 +2876,7 @@
  "2a7854aaf3f39f696f8f72e8b4d719be": {
   "away": "Cal St. Fullerton",
   "away_conf": "BW",
+  "away_score": 92,
   "best_line": {
    "book": "ESPN",
    "point": 4.5,
@@ -2873,9 +2886,11 @@
   "book_total": 163.5,
   "date": "2026-11-22",
   "diff": -2.9,
+  "final": true,
   "green_plays": null,
   "home": "Portland St.",
   "home_conf": "BSky",
+  "home_score": 75,
   "imp_away": 79.5,
   "imp_home": 84.0,
   "kp_home_wp": 0.55,
@@ -5016,6 +5031,7 @@
  "42e47ef758f2c16dcf1cc64806373809": {
   "away": "UC Irvine",
   "away_conf": "BW",
+  "away_score": 68,
   "best_line": {
    "book": "ESPN",
    "point": -1.5,
@@ -5025,9 +5041,11 @@
   "book_total": 136.5,
   "date": "2026-11-22",
   "diff": -2.9,
+  "final": true,
   "green_plays": null,
   "home": "Loyola Marymount",
   "home_conf": "WCC",
+  "home_score": 72,
   "imp_away": 69.0,
   "imp_home": 67.5,
   "kp_home_wp": 0.367,
@@ -6151,6 +6169,7 @@
  "4ab6cb0c13c713f3c78fe051d94f32e5": {
   "away": "Maryland Eastern Shore",
   "away_conf": "MEAC",
+  "away_score": 61,
   "best_line": {
    "book": "MGM",
    "point": 10.5,
@@ -6160,9 +6179,11 @@
   "book_total": 140.5,
   "date": "2026-11-22",
   "diff": -3.3,
+  "final": true,
   "green_plays": null,
   "home": "IU Indy",
   "home_conf": "Horz",
+  "home_score": 81,
   "imp_away": 65.0,
   "imp_home": 75.5,
   "kp_home_wp": 0.711,
@@ -6270,6 +6291,7 @@
  "4d57a3b1bd68b12004210b45e6627108": {
   "away": "Temple",
   "away_conf": "Amer",
+  "away_score": 70,
   "best_line": {
    "book": "ESPN",
    "point": 2.5,
@@ -6279,9 +6301,11 @@
   "book_total": 144.5,
   "date": "2026-11-22",
   "diff": 1.6,
+  "final": true,
   "green_plays": null,
   "home": "Stephen F. Austin",
   "home_conf": "Slnd",
+  "home_score": 72,
   "imp_away": 73.5,
   "imp_home": 71.0,
   "kp_home_wp": 0.473,
@@ -6764,6 +6788,7 @@
  "5269b87b9d1db58e870998a3d05f42eb": {
   "away": "Robert Morris",
   "away_conf": "Horz",
+  "away_score": 79,
   "best_line": {
    "book": "ESPN",
    "point": -1.5,
@@ -6773,9 +6798,11 @@
   "book_total": 134.5,
   "date": "2026-11-22",
   "diff": 1.6,
+  "final": true,
   "green_plays": null,
   "home": "New Mexico St.",
   "home_conf": "CUSA",
+  "home_score": 84,
   "imp_away": 66.5,
   "imp_home": 68.0,
   "kp_home_wp": 0.594,
@@ -8247,6 +8274,7 @@
  "6720f59950e8e460d7daf76bc09897e6": {
   "away": "Western Illinois",
   "away_conf": "OVC",
+  "away_score": 66,
   "best_line": {
    "book": "MGM",
    "point": -3.5,
@@ -8256,9 +8284,11 @@
   "book_total": 139.5,
   "date": "2026-11-22",
   "diff": 3.4,
+  "final": true,
   "green_plays": null,
   "home": "Canisius",
   "home_conf": "MC",
+  "home_score": 46,
   "imp_away": 68.0,
   "imp_home": 71.5,
   "kp_home_wp": 0.702,
@@ -8304,6 +8334,7 @@
  "68135c1bcc1b47562304fe94b69c18ff": {
   "away": "UNC Asheville",
   "away_conf": "BSth",
+  "away_score": 77,
   "best_line": {
    "book": "MGM",
    "point": 10.5,
@@ -8313,9 +8344,11 @@
   "book_total": 155.5,
   "date": "2026-11-22",
   "diff": -2.5,
+  "final": true,
   "green_plays": null,
   "home": "Samford",
   "home_conf": "SC",
+  "home_score": 80,
   "imp_away": 72.5,
   "imp_home": 83.0,
   "kp_home_wp": 0.73,
@@ -9821,6 +9854,7 @@
  "7badad13b09c40df6ad6bed5dd5aa18f": {
   "away": "West Florida",
   "away_conf": "ASun",
+  "away_score": 66,
   "best_line": {
    "book": "MGM",
    "point": -5.5,
@@ -9830,9 +9864,11 @@
   "book_total": 138.5,
   "date": "2026-11-22",
   "diff": 3.0,
+  "final": true,
   "green_plays": null,
   "home": "South Alabama",
   "home_conf": "SB",
+  "home_score": 79,
   "imp_away": 66.5,
   "imp_home": 72.0,
   "kp_home_wp": 0.743,
@@ -10988,6 +11024,7 @@
  "8973c989f9e6975bd343485eade0a1dc": {
   "away": "UMass Lowell",
   "away_conf": "AE",
+  "away_score": 68,
   "best_line": {
    "book": "MGM",
    "point": 29.5,
@@ -10997,9 +11034,11 @@
   "book_total": 149.5,
   "date": "2026-11-22",
   "diff": -3.2,
+  "final": true,
   "green_plays": null,
   "home": "Cincinnati",
   "home_conf": "B12",
+  "home_score": 78,
   "imp_away": 60.5,
   "imp_home": 89.0,
   "kp_home_wp": 0.974,
@@ -12016,6 +12055,7 @@
  "9c6b98805955f109fb5038074601ddb3": {
   "away": "Mercyhurst",
   "away_conf": "NEC",
+  "away_score": 78,
   "best_line": {
    "book": "MGM",
    "point": -1.5,
@@ -12025,9 +12065,11 @@
   "book_total": 132.5,
   "date": "2026-11-22",
   "diff": -1.6,
+  "final": true,
   "green_plays": null,
   "home": "Albany",
   "home_conf": "AE",
+  "home_score": 75,
   "imp_away": 67.0,
   "imp_home": 65.5,
   "kp_home_wp": 0.407,
@@ -12097,6 +12139,7 @@
  "9d284f0191ee2d4d218bd46e7cb2ea12": {
   "away": "Valparaiso",
   "away_conf": "MVC",
+  "away_score": 99,
   "best_line": {
    "book": "FD",
    "point": 9.5,
@@ -12106,9 +12149,11 @@
   "book_total": 143.5,
   "date": "2026-11-22",
   "diff": 1.0,
+  "final": true,
   "green_plays": null,
   "home": "Southern Miss",
   "home_conf": "SB",
+  "home_score": 89,
   "imp_away": 76.0,
   "imp_home": 67.5,
   "kp_home_wp": 0.283,
@@ -12226,6 +12271,7 @@
  "9df92a4f1ca806fe512c3849b181da90": {
   "away": "Duquesne",
   "away_conf": "A10",
+  "away_score": 79,
   "best_line": {
    "book": "ESPN",
    "point": 4.5,
@@ -12235,6 +12281,7 @@
   "book_total": 136.5,
   "date": "2026-11-22",
   "diff": -1.1,
+  "final": true,
   "green_plays": [
    {
     "book": "ESPN",
@@ -12258,6 +12305,7 @@
   ],
   "home": "Wyoming",
   "home_conf": "MWC",
+  "home_score": 61,
   "imp_away": 66.0,
   "imp_home": 70.5,
   "kp_home_wp": 0.604,
@@ -12407,6 +12455,7 @@
  "a156f22faa101eae5a832cfc5de4fbca": {
   "away": "NJIT",
   "away_conf": "AE",
+  "away_score": 59,
   "best_line": {
    "book": "MGM",
    "point": 23.5,
@@ -12416,6 +12465,7 @@
   "book_total": 135.5,
   "date": "2026-11-22",
   "diff": -1.5,
+  "final": true,
   "green_plays": [
    {
     "book": "MGM",
@@ -12439,6 +12489,7 @@
   ],
   "home": "Boston College",
   "home_conf": "ACC",
+  "home_score": 79,
   "imp_away": 56.0,
   "imp_home": 79.5,
   "kp_home_wp": 0.955,
@@ -12739,6 +12790,7 @@
  "a43c29f68105ec56703e2c7c29568490": {
   "away": "Virginia Tech",
   "away_conf": "ACC",
+  "away_score": 106,
   "best_line": {
    "book": "FD",
    "point": -1.5,
@@ -12748,9 +12800,11 @@
   "book_total": 158.5,
   "date": "2026-11-22",
   "diff": -0.1,
+  "final": true,
   "green_plays": null,
   "home": "Oklahoma St.",
   "home_conf": "B12",
+  "home_score": 80,
   "imp_away": 80.0,
   "imp_home": 78.5,
   "kp_home_wp": 0.452,
@@ -12780,6 +12834,7 @@
  "a4479cbdb9666b13f2c1f33e93f6e281": {
   "away": "Dayton",
   "away_conf": "A10",
+  "away_score": 79,
   "best_line": {
    "book": "FD",
    "point": 3.5,
@@ -12789,9 +12844,11 @@
   "book_total": 135.5,
   "date": "2026-11-22",
   "diff": 0.1,
+  "final": true,
   "green_plays": null,
   "home": "Northwestern",
   "home_conf": "B10",
+  "home_score": 55,
   "imp_away": 69.5,
   "imp_home": 66.0,
   "kp_home_wp": 0.396,
@@ -13225,6 +13282,7 @@
  "a8fa96ce1e2424029c99737ae7278b45": {
   "away": "Nicholls",
   "away_conf": "Slnd",
+  "away_score": 78,
   "best_line": {
    "book": "MGM",
    "point": -5.5,
@@ -13234,9 +13292,11 @@
   "book_total": 135.5,
   "date": "2026-11-22",
   "diff": 0.4,
+  "final": true,
   "green_plays": null,
   "home": "Troy",
   "home_conf": "SB",
+  "home_score": 77,
   "imp_away": 65.0,
   "imp_home": 70.5,
   "kp_home_wp": 0.676,
@@ -14289,6 +14349,7 @@
  "b8b8c26c46c395035dbe4fd1d013d5ec": {
   "away": "Fairfield",
   "away_conf": "MC",
+  "away_score": 74,
   "best_line": {
    "book": "FD",
    "point": -2.5,
@@ -14298,9 +14359,11 @@
   "book_total": 143.5,
   "date": "2026-11-22",
   "diff": 0.5,
+  "final": true,
   "green_plays": null,
   "home": "LIU",
   "home_conf": "NEC",
+  "home_score": 71,
   "imp_away": 70.0,
   "imp_home": 73.5,
   "kp_home_wp": 0.619,
@@ -14777,6 +14840,7 @@
  "c176d337261bbb0fe334d3bf7f270ba6": {
   "away": "Utah",
   "away_conf": "B12",
+  "away_score": 62,
   "best_line": {
    "book": "FD",
    "point": -9.5,
@@ -14786,9 +14850,11 @@
   "book_total": 131.5,
   "date": "2026-11-22",
   "diff": 2.5,
+  "final": true,
   "green_plays": null,
   "home": "Minnesota",
   "home_conf": "B10",
+  "home_score": 77,
   "imp_away": 61.0,
   "imp_home": 70.5,
   "kp_home_wp": 0.823,
@@ -14818,6 +14884,7 @@
  "c22529a778dfb8b70f9e62a6ea96bb2e": {
   "away": "McNeese",
   "away_conf": "Slnd",
+  "away_score": 69,
   "best_line": {
    "book": "ESPN",
    "point": -1.5,
@@ -14827,9 +14894,11 @@
   "book_total": 142.5,
   "date": "2026-11-22",
   "diff": 3.6,
+  "final": true,
   "green_plays": null,
   "home": "Texas St.",
   "home_conf": "P12",
+  "home_score": 95,
   "imp_away": 70.0,
   "imp_home": 72.5,
   "kp_home_wp": 0.682,
@@ -15107,6 +15176,7 @@
  "c4fb85c9d4955609536990dc5dd565d9": {
   "away": "William & Mary",
   "away_conf": "CAA",
+  "away_score": 75,
   "best_line": {
    "book": "ESPN",
    "point": 2.5,
@@ -15116,9 +15186,11 @@
   "book_total": 163.5,
   "date": "2026-11-22",
   "diff": 4.1,
+  "final": true,
   "green_plays": null,
   "home": "Youngstown St.",
   "home_conf": "Horz",
+  "home_score": 63,
   "imp_away": 83.0,
   "imp_home": 80.5,
   "kp_home_wp": 0.549,
@@ -15324,6 +15396,7 @@
  "ca02e6e3717e63798ba1db0542ee38ee": {
   "away": "Evansville",
   "away_conf": "MVC",
+  "away_score": 62,
   "best_line": {
    "book": "ESPN",
    "point": 20.5,
@@ -15333,6 +15406,7 @@
   "book_total": 156.5,
   "date": "2026-11-22",
   "diff": -0.7,
+  "final": true,
   "green_plays": [
    {
     "book": "ESPN",
@@ -15356,6 +15430,7 @@
   ],
   "home": "Memphis",
   "home_conf": "Amer",
+  "home_score": 82,
   "imp_away": 68.0,
   "imp_home": 88.5,
   "kp_home_wp": 0.936,
@@ -15826,6 +15901,7 @@
  "ce609d312c528c91d20e80577d8feee5": {
   "away": "Southern Indiana",
   "away_conf": "OVC",
+  "away_score": 61,
   "best_line": {
    "book": "ESPN",
    "point": 38.5,
@@ -15835,6 +15911,7 @@
   "book_total": 150.5,
   "date": "2026-11-22",
   "diff": -6.7,
+  "final": true,
   "green_plays": [
    {
     "book": "ESPN",
@@ -15858,6 +15935,7 @@
   ],
   "home": "Texas",
   "home_conf": "SEC",
+  "home_score": 97,
   "imp_away": 56.0,
   "imp_home": 94.5,
   "kp_home_wp": 0.993,
@@ -16245,6 +16323,7 @@
  "d3ff354cf7590632c2f875f2c49fa5e1": {
   "away": "Chicago St.",
   "away_conf": "NEC",
+  "away_score": 62,
   "best_line": {
    "book": "MGM",
    "point": 35.5,
@@ -16254,6 +16333,7 @@
   "book_total": 138.5,
   "date": "2026-11-22",
   "diff": -9.2,
+  "final": true,
   "green_plays": [
    {
     "book": "MGM",
@@ -16277,6 +16357,7 @@
   ],
   "home": "Marquette",
   "home_conf": "BE",
+  "home_score": 106,
   "imp_away": 51.5,
   "imp_home": 87.0,
   "kp_home_wp": 0.978,
@@ -16993,6 +17074,7 @@
  "d9147d63fc7cb44ba58391e30c6d0806": {
   "away": "San Diego",
   "away_conf": "WCC",
+  "away_score": 80,
   "best_line": {
    "book": "ESPN",
    "point": -2.5,
@@ -17002,9 +17084,11 @@
   "book_total": 142.5,
   "date": "2026-11-22",
   "diff": 2.5,
+  "final": true,
   "green_plays": null,
   "home": "Fordham",
   "home_conf": "A10",
+  "home_score": 58,
   "imp_away": 70.0,
   "imp_home": 72.5,
   "kp_home_wp": 0.65,
@@ -17305,6 +17389,7 @@
  "dce1dc11a16440e70de006d164780ac2": {
   "away": "Western Kentucky",
   "away_conf": "CUSA",
+  "away_score": 78,
   "best_line": {
    "book": "ESPN",
    "point": 3.5,
@@ -17314,6 +17399,7 @@
   "book_total": 147.5,
   "date": "2026-11-22",
   "diff": -0.6,
+  "final": true,
   "green_plays": [
    {
     "book": "ESPN",
@@ -17337,6 +17423,7 @@
   ],
   "home": "George Washington",
   "home_conf": "A10",
+  "home_score": 86,
   "imp_away": 72.0,
   "imp_home": 75.5,
   "kp_home_wp": 0.588,
@@ -17842,7 +17929,7 @@
   "best_line": {
    "book": "ESPN",
    "point": 4.5,
-   "price": -105
+   "price": -115
   },
   "book_spread": -4.5,
   "book_total": 146.5,
@@ -17874,13 +17961,13 @@
   "imp_away": 71.0,
   "imp_home": 75.5,
   "kp_home_wp": 0.592,
-  "locked_at": "2026-11-22 12:44",
-  "mkt_home_wp": 0.637,
-  "ml_away": 164,
-  "ml_edge": 0.022,
-  "ml_home": -198,
+  "locked_at": "2026-11-22 20:48",
+  "mkt_home_wp": 0.63,
+  "ml_away": 155,
+  "ml_edge": 0.019,
+  "ml_home": -190,
   "ml_min_edge": 0.03,
-  "model_home_wp": 0.615,
+  "model_home_wp": 0.611,
   "neutral": true,
   "opened_spread": -4.5,
   "opened_total": 146.5,
