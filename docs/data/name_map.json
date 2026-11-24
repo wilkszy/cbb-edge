@@ -102,6 +102,7 @@
   "Oregon St Beavers": "Oregon St.",
   "Pennsylvania Quakers": "Penn",
   "Pittsburgh Panthers": "Pittsburgh",
+  "Providence Friars": "Providence",
   "Purdue Boilermakers": "Purdue",
   "Queens University Royals": "Queens",
   "Rice Owls": "Rice",
@@ -116,7 +117,6 @@
   "Samford Bulldogs": "Samford",
   "San Diego St Aztecs": "San Diego St.",
   "San Francisco Dons": "San Francisco",
-  "San Jos\u00e9 St Spartans": "San Jose St.",
   "Santa Clara Broncos": "Santa Clara",
   "Seton Hall Pirates": "Seton Hall",
   "Siena Saints": "Siena",
@@ -134,7 +134,6 @@
   "Tennessee Volunteers": "Tennessee",
   "Texas Tech Red Raiders": "Texas Tech",
   "Tulsa Golden Hurricane": "Tulsa",
-  "UC San Diego Tritons": "UC San Diego",
   "UC Santa Barbara Gauchos": "UC Santa Barbara",
   "UIC Flames": "Illinois Chicago",
   "UL Monroe Warhawks": "Louisiana Monroe",
@@ -144,6 +143,7 @@
   "UNC Greensboro Spartans": "UNC Greensboro",
   "UT-Arlington Mavericks": "UT Arlington",
   "UTEP Miners": "UTEP",
+  "VCU Rams": "VCU",
   "VMI Keydets": "VMI",
   "Vanderbilt Commodores": "Vanderbilt",
   "Vermont Catamounts": "Vermont",
@@ -167,7 +167,6 @@
   "Louisiana Christian Wildcats",
   "Penn State Berks Nittany Lions",
   "SUNY Fredonia Blue Devils",
-  "TBD",
   "Vermont State Randolph Knights"
  ]
 }
