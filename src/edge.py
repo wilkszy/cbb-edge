@@ -544,6 +544,7 @@ def build(kp: dict, odds: list, now: datetime) -> dict:
 
 
 KP_FILE = ROOT / "data" / "kenpom.json"
+KP_META: dict = {}
 
 
 def load_kenpom():
@@ -552,6 +553,7 @@ def load_kenpom():
         return parse_kenpom(fetch_kenpom_html())
     snap = json.loads(KP_FILE.read_text())
     print(f"Using KenPom snapshot pulled {snap['pulled_at']}")
+    KP_META["pulled_at"] = snap.get("pulled_at", "")
     return snap["teams"], snap["through"]
 
 
@@ -575,10 +577,19 @@ def freeze_picks(payload):
                 if p["game"] in by_id:
                     by_id[p["game"]].setdefault(f, []).append(p)
         print(f"Using picks frozen at {frozen['frozen_at']}")
-    else:
+    elif KP_META.get("pulled_at", "")[:10] == payload["slate_date"]:
         path.parent.mkdir(parents=True, exist_ok=True)
         path.write_text(json.dumps({"frozen_at": payload["generated"], **{k: payload.get(k, []) for k in keys}}, indent=1))
         print("Froze today's picks")
+    else:
+        # e.g. a delayed evening run that crosses midnight: it still uses yesterday's ratings,
+        # so don't lock in today's picks yet; show none until today's KenPom file arrives
+        for g in payload["games"]:
+            for f in ("top_plays", "top5_dropped", "green_plays"):
+                g.pop(f, None)
+        for k in keys:
+            payload[k] = []
+        print("Picks not frozen: KenPom snapshot is not from today")
 
 
 def main():
