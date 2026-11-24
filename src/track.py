@@ -318,6 +318,8 @@ CATS = [
     ("dog", "Underdog", "spread", lambda r: (r["pick"] == r["home"]) == (r["book_spread"] > 0)),
     ("fav", "Favorite", "spread", lambda r: (r["pick"] == r["home"]) != (r["book_spread"] > 0)),
     ("mid_spread", "Spread 10 to 20", "spread", lambda r: 10 <= abs(r["book_spread"]) <= 20),
+    ("short_fav", "Short favorite (<10)", "spread",
+     lambda r: (r["pick"] == r["home"]) != (r["book_spread"] > 0) and abs(r["book_spread"]) < 10),
     ("under", "Under lean", "total", lambda r: r.get("ou_pick") == "Under"),
     ("over", "Over lean", "total", lambda r: r.get("ou_pick") == "Over"),
     ("tot_small", "Total gap under 4", "total", lambda r: "tot" in r and r["tot"]["gap"] < 4),
@@ -368,6 +370,35 @@ def category_trends(graded: list, recent_days: int = 3) -> list:
     return out
 
 
+def _team_status(T, name):
+    t = T.get(name)
+    if not t or t["g"] < 2 or abs(t["margin_vs"]) < 12 / (t["g"] ** 0.5):
+        return None
+    sign = 1 if t["margin_vs"] > 0 else -1
+    last = t["games"][0]
+    if (last["margin"] - last["proj"]) * sign < 0:
+        return "yellow"
+    return "green" if sign > 0 else "red"
+
+
+def team_situations(graded: list) -> dict:
+    """Replay every graded game using only team cards that existed BEFORE that day (no hindsight).
+    Records the value side's ATS when it backs / fades a green or red team."""
+    out = {k: {"w": 0, "l": 0} for k in ("back_green", "back_red", "fade_green", "fade_red")}
+    for d in sorted({r["date"] for r in graded}):
+        T = {t["team"]: t for t in team_trends([r for r in graded if r["date"] < d])}
+        for r in (r for r in graded if r["date"] == d):
+            opp = r["away"] if r["pick"] == r["home"] else r["home"]
+            for who, team in (("back", r["pick"]), ("fade", opp)):
+                st = _team_status(T, team)
+                if st in ("green", "red"):
+                    k = f"{who}_{st}"
+                    out[k]["w"] += r["ats"] == "W"; out[k]["l"] += r["ats"] == "L"
+    for v in out.values():
+        v["pct"] = round(v["w"] / (v["w"] + v["l"]), 3) if v["w"] + v["l"] else None
+    return out
+
+
 def summarize(ledger: dict) -> dict:
     graded = []
     for gid, e in ledger.items():
@@ -388,6 +419,7 @@ def summarize(ledger: dict) -> dict:
                     for lab, lo, hi in BUCKETS],
         "teams": team_trends(graded),
         "categories": category_trends(graded),
+        "team_situations": team_situations(graded),
         "recent": [{k: r.get(k) for k in ("date", "tip", "away", "home", "away_score", "home_score",
                                            "book_spread", "proj_spread", "pick", "ats", "proj_err",
                                            "book_err", "gap", "big", "book_total", "ou_pick")}

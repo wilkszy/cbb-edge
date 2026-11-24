@@ -90,7 +90,6 @@
     <button data-v="all">All games</button>
     <button data-v="conf">By conference</button>
     <button data-v="ou">Over/Under</button>
-    <button data-v="green">Green cards</button>
     <button data-v="teams">Team trends</button>
     <button data-v="track">Track record</button>
   </div>
@@ -98,7 +97,7 @@
   <section class="view on" id="v-value">
     <div id="catStrip"></div>
     <h2>Top 5 plays: most likely to hit</h2>
-    <p class="hint">The five bets with the highest win probability today, across spreads, totals, team totals and moneylines, any game. Plays from the same game are tagged, since they tend to win or lose together. Probabilities come from the KenPom projection, pulled halfway toward the market's 50/50 (moneylines use the 50/50 model/market blend). A play only qualifies if its probability beats the break-even rate for its price. Moneylines shorter than −300 are skipped. Red-card plays (backing a team the model has been overrating, or fading one it has been underrating) are dropped and listed below. Yellow cards (trend flipping) stay eligible but are marked.</p>
+    <p class="hint">The five spread or moneyline bets with the highest win probability today, at most 2 per game (game and team totals stay on the Over/Under tab). Probabilities come from the KenPom projection, pulled halfway toward the market's 50/50 (moneylines use the 50/50 model/market blend). A play only qualifies if its probability beats the break-even rate for its price; moneylines shorter than −300 are skipped. Team-trend notes on each card show whether the play backs or fades a hot or cold team, with how those spots have done so far.</p>
     <div class="cards" id="top5Cards"></div>
     <div id="top5Dropped"></div>
     <h2>Spread value: competitive games</h2>
@@ -167,17 +166,6 @@
     </table></div>
   </section>
 
-  <section class="view" id="v-green">
-    <p class="hint">Today's picks that sit in at least one 🟢 trending category, with no 🔴 category and no 🔴 team card (backing a red-card team or fading a green-card one). Yellow categories are shown so you can see what's cooling. Category cards refresh with every update, so this list changes as trends do.</p>
-    <div id="greenStrip"></div>
-    <h2>Double green: 2+ trending categories</h2>
-    <div class="cards" id="greenDouble"></div>
-    <h2>Single green</h2>
-    <div style="overflow-x:auto"><table id="greenSingle"></table></div>
-    <h2>Green-card teams on today's slate</h2>
-    <p class="hint">Teams that have kept beating their KenPom projection, with their latest game agreeing. The model has been underrating them.</p>
-    <div class="cards" id="greenTeams"></div>
-  </section>
 
   <section class="view" id="v-teams">
     <p class="hint" id="teamsHead"></p>
@@ -212,6 +200,9 @@
     <div class="tiles" id="trackTiles"></div>
     <h2>Category cards</h2>
     <div style="overflow-x:auto"><table id="catTbl"></table></div>
+    <h2>Team-trend situations</h2>
+    <p class="hint">Value-side record when it backs or bets against a team with a 🟢 or 🔴 card. Replayed using only the cards that existed before each game, so no hindsight.</p>
+    <div style="overflow-x:auto"><table id="sitTbl"></table></div>
     <h2>By month</h2>
     <p class="hint">Avg miss = average gap between the predicted margin and the final margin. ATS = record of the value side against the locked book spread. Competitive and big-spread picks are the two Best value lists (gap 3+, spreads 20 or less vs. over 20). "All spreads over 20" counts every big-spread game regardless of gap. You need about 52.4% ATS to break even at standard -110 pricing.</p>
     <div style="overflow-x:auto"><table id="monthTbl"></table></div>
@@ -296,19 +287,22 @@ const teamStatus = name => {
   return sign > 0 ? "green" : "red";
 };
 const trendDir = name => { const st = teamStatus(name); return st === "green" ? 1 : st === "red" ? -1 : 0; };
-// Warning when the play backs a team the model has been overrating, or fades one it has been underrating
+// Team-trend situations: shown on cards, never drop a play. Records are a no-hindsight replay.
+const SIT = () => (DATA.track && DATA.track.team_situations) || {};
+const sitRec = k => { const r = SIT()[k]; return r && r.w + r.l ? ` (${r.w}-${r.l} so far)` : ""; };
 const redFlag = (backed, faded) => {
-  const msgs = [];
-  if (backed && trendDir(backed) < 0) msgs.push(`${esc(backed)} has been trailing its KenPom projection`);
-  if (faded && trendDir(faded) > 0) msgs.push(`${esc(faded)} has been beating its KenPom projection`);
+  const out = [];
+  if (backed && trendDir(backed) < 0) out.push(`<div class="line" style="color:#ff8a8f">🔴 Backing a cold team: ${esc(backed)} has been trailing its KenPom projection${sitRec("back_red")}</div>`);
+  if (faded && trendDir(faded) < 0) out.push(`<div class="line" style="color:#ff8a8f">🔴 Betting against a cold team: ${esc(faded)} has been trailing its projection, and cold teams have tended to bounce back${sitRec("fade_red")}</div>`);
+  if (faded && trendDir(faded) > 0) out.push(`<div class="line" style="color:#6fe3a5">🟢 Betting against a hot team: ${esc(faded)} has been beating its projection, and hot teams have tended to come back down${sitRec("fade_green")}</div>`);
+  if (backed && trendDir(backed) > 0) out.push(`<div class="line" style="color:var(--ink2)">Backing a hot team: ${esc(backed)} has been beating its projection${sitRec("back_green")}</div>`);
   const ys = [];
-  if (backed && teamStatus(backed) === "yellow" && TREND[backed].margin_vs < 0) ys.push(`${esc(backed)} has trailed its projection but beat it last game`);
-  if (faded && teamStatus(faded) === "yellow" && TREND[faded].margin_vs > 0) ys.push(`${esc(faded)} has beaten its projection but fell short last game`);
-  return (msgs.length ? `<div class="line" style="color:#ff8a8f">🔴 Red card: ${msgs.join("; ")}</div>` : "") +
-         (ys.length ? `<div class="line" style="color:#f0d36b">🟡 Yellow card: ${ys.join("; ")}</div>` : "");
+  if (backed && teamStatus(backed) === "yellow") ys.push(`${esc(backed)}'s trend flipped in its latest game`);
+  if (faded && teamStatus(faded) === "yellow") ys.push(`${esc(faded)}'s trend flipped in its latest game`);
+  if (ys.length) out.push(`<div class="line" style="color:#f0d36b">🟡 ${ys.join("; ")}</div>`);
+  return out.join("");
 };
 const sg1 = v => v == null ? "–" : (v > 0 ? "+" : v < 0 ? "−" : "") + Math.abs(v).toFixed(1);
-// Record that matches the bet: spread | ml | total | tt
 const kpRecord = (name, mode = "spread") => {
   const t = TREND[name];
   if (!t) return `${esc(name)}: no graded games`;
@@ -482,8 +476,8 @@ function renderTrack(){
     ? `<thead><tr><th>Bet type</th><th class="num">Record</th></tr></thead><tbody>` +
       Object.entries(O.plays.by_type).map(([t, r]) => `<tr><td>${esc(t)}</td><td class="num">${rec(r)}${rp(r)}</td></tr>`).join("") +
       `<tr style="font-weight:700"><td>All (expected ${pp(O.plays.exp)})</td><td class="num">${rec(O.plays.rec)}${rp(O.plays.rec)} · ${units(O.plays.units)}</td></tr>` +
-      `<tr><td>Green cards tab picks${O.green ? "" : ""}</td><td class="num">${O.green ? `${rec(O.green.rec)}${rp(O.green.rec)} · ${units(O.green.units)}` : "none graded yet"}</td></tr>` +
-      `<tr><td>Dropped for red flag (not in Top 5)${O.dropped_plays ? ` (expected ${pp(O.dropped_plays.exp)})` : ""}</td><td class="num">${O.dropped_plays ? `${rec(O.dropped_plays.rec)}${rp(O.dropped_plays.rec)} · ${units(O.dropped_plays.units)}` : "none graded yet"}</td></tr></tbody>`
+      `<tr><td>Green cards tab picks (retired Nov 24)</td><td class="num">${O.green ? `${rec(O.green.rec)}${rp(O.green.rec)} · ${units(O.green.units)}` : "none graded yet"}</td></tr>` +
+      `<tr><td>Dropped for red card (rule retired Nov 24)${O.dropped_plays ? ` (expected ${pp(O.dropped_plays.exp)})` : ""}</td><td class="num">${O.dropped_plays ? `${rec(O.dropped_plays.rec)}${rp(O.dropped_plays.rec)} · ${units(O.dropped_plays.units)}` : "none graded yet"}</td></tr></tbody>`
     : `<tr><td class="empty">No Top 5 plays graded yet.</td></tr>`;
   document.getElementById("ttTbl").innerHTML =
     `<thead><tr><th>Month</th><th class="num">Teams</th><th class="num">Proj avg miss</th><th class="num">Implied avg miss</th><th class="num">Lean record</th><th class="num">Gap 3+</th><th class="num">Over leans</th><th class="num">Under leans</th></tr></thead><tbody>` +
@@ -577,11 +571,7 @@ function stillIn(c, g){
   if (c.type === "Moneyline") return (g.pick === c.side && g.ml_edge >= MLMIN) ? "Still listed in Best moneyline value" : "Not in other Best value lists";
   return "Not in other Best value lists (see Over/Under tab)";
 }
-function droppedNote(g, type){
-  const d = (g.top5_dropped || []).find(x => x.type === type);
-  if (d) return `<div class="line" style="color:#ff8a8f;font-size:12px">Dropped from Top 5 (would have been #${d.would_rank} at ${(d.prob * 100).toFixed(0)}%) because of the red card. Still listed here.</div>`;
-  return redFlagged(g) ? `<div class="line" style="color:#ff8a8f;font-size:12px">Red card, so not eligible for the Top 5. Still listed here.</div>` : "";
-}
+function droppedNote(g, type){ return ""; }
 const redFlagged = g => { const opp = g.pick === g.home ? g.away : g.home; return trendDir(g.pick) < 0 || trendDir(opp) > 0; };
 
 
@@ -600,6 +590,7 @@ function memberCats(g, kind){
   out.push(ph ? "home" : "road");
   out.push(ph === (g.book_spread > 0) ? "dog" : "fav");
   if (Math.abs(g.book_spread) >= 10 && Math.abs(g.book_spread) <= 20) out.push("mid_spread");
+  if (ph !== (g.book_spread > 0) && Math.abs(g.book_spread) < 10) out.push("short_fav");
   return out;
 }
 const catText = c => c.kind === "ml"
@@ -620,6 +611,10 @@ function renderCatStrip(){
   const row = st => C.filter(c => c.status === st).map(c => `${catChip(c)}<span class="books" style="display:inline;margin-right:12px">${catText(c)}</span>`).join("");
   const html = ["green","yellow","red"].map(st => row(st) ? `<div style="margin:4px 0">${row(st)}</div>` : "").join("");
   document.getElementById("catStrip").innerHTML = html ? `<h2>Category cards</h2><p class="hint">🟢 trending: season 54%+ and last 3 days at or above break-even (52.4%). 🟡 flipping: one above break-even, one below. 🔴 losing: both below. Moneylines use units. Each pick card shows the cards for the categories it belongs to.</p>${html}` : "";
+  const ST = document.getElementById("sitTbl"), sv = SIT();
+  if (ST) ST.innerHTML = `<thead><tr><th>Situation</th><th class="num">Against the spread</th></tr></thead><tbody>` +
+    [["fade_green","Betting against a 🟢 hot team"],["back_green","Backing a 🟢 hot team"],["back_red","Backing a 🔴 cold team"],["fade_red","Betting against a 🔴 cold team"]]
+      .map(([k, lab]) => { const r = sv[k] || {w:0,l:0}; return `<tr><td>${lab}</td><td class="num">${r.w}-${r.l}${r.pct != null ? ` (${(r.pct*100).toFixed(1)}%)` : ""}</td></tr>`; }).join("") + "</tbody>";
   const T = document.getElementById("catTbl");
   if (T) T.innerHTML = C.length ? `<thead><tr><th>Category</th><th>Card</th><th class="num">Season</th><th class="num">Last 3 days</th></tr></thead><tbody>` +
     C.map(c => `<tr><td>${esc(c.label)}</td><td>${c.status ? catChip(c) : '<span class="books">not enough games / neutral</span>'}</td>
@@ -647,7 +642,7 @@ function renderTop5(){
     ${c.same_game || c.neutral ? `<div>${c.same_game ? '<span class="tag luck" style="margin-left:0" title="Another Top 5 play is from this game; results are linked">Same game</span>' : ""}${c.neutral ? '<span class="tag neutral">Neutral site</span>' : ""}</div>` : ""}
     <div class="vs">${(g => g ? `${esc(g.away)}${cardFlags(g.away, g.away_luck)} @ ${esc(g.home)}${cardFlags(g.home, g.home_luck)}` : esc(c.matchup))(games.find(x => x.id === c.game))}</div>
   </div>`).join("") : '<div class="empty">No plays clear break-even right now (games may have already tipped).</div>';
-  const D = DATA.top5_dropped || [];
+  const D = [];
   document.getElementById("top5Dropped").innerHTML = D.length ? `<h3 style="margin:18px 0 8px">Dropped from the Top 5 for red cards</h3>
     <div style="overflow-x:auto"><table><thead><tr><th>Would-be rank</th><th>Play</th><th class="num">Chance to hit</th><th>Red card</th><th>Elsewhere on Best value</th></tr></thead><tbody>` +
     D.map(c => { const g = games.find(x => x.id === c.game); return `<tr><td>#${c.would_rank}</td>
@@ -732,7 +727,7 @@ function renderGreen(){
 
 function init(){
   if(!DATA){ document.querySelector(".wrap").insertAdjacentHTML("beforeend", '<div class="empty">No data yet. The first daily run will fill this in.</div>'); return; }
-  prep(); header(); renderCatStrip(); renderTop5(); renderValue(); renderAll(); renderConf(); renderOU(); renderTT(); renderTeams(); renderGreen(); renderTrack();
+  prep(); header(); renderCatStrip(); renderTop5(); renderValue(); renderAll(); renderConf(); renderOU(); renderTT(); renderTeams(); renderTrack();
   document.getElementById("note").innerHTML =
     `How it works: projections use public KenPom ratings (AdjO, AdjD, AdjT) with the standard tempo-adjusted formula and ` +
     `${DATA.hca} pts home-court advantage. They are not KenPom's official game predictions. Book line is the median home spread across listed books. ` +

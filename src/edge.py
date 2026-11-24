@@ -47,6 +47,8 @@ SD_MARGIN, SD_TOTAL, SD_TEAM = 12.0, 16.6, 10.2
 SHRINK = 0.5        # pull model probabilities halfway toward the market's 50/50
 ML_MAX_FAV = -300   # skip moneylines shorter than this
 TOP_N = 5
+TOP_TYPES = ("Spread", "Moneyline")   # totals stay on the Over/Under tab (Top 5 totals were 6-10)
+MAX_PER_GAME = 2
 LUCK_FLAG = float(os.getenv("LUCK_FLAG", "0.15"))
 TZ = ZoneInfo(os.getenv("TZ_NAME", "America/New_York"))
 BOOKS = ["draftkings", "fanduel", "betmgm", "williamhill_us", "espnbet", "betrivers", "fanatics"]
@@ -329,32 +331,25 @@ def red_flag(c, g, trend):
 
 
 def top_plays(games, trend=None):
-    """Most likely plays of the day: highest win probability, any bet type, any game.
-    Red-flagged plays are dropped; plays from the same game are allowed and tagged."""
-    trend = trend or {}
+    """Most likely plays of the day: spreads and moneylines only, highest win probability,
+    at most 2 per game. Team-trend situations are shown on the cards but no longer drop plays
+    (replays showed hot teams revert, so 'fading a green team' was the best spot, not the worst)."""
     by_id = {g["id"]: g for g in games}
-    ranked = sorted((c for g in games for c in candidate_plays(g)), key=lambda c: -c["prob"])
-    chosen, dropped = [], []
-    for i, c in enumerate(ranked):
+    ranked = sorted((c for g in games for c in candidate_plays(g) if c["type"] in TOP_TYPES),
+                    key=lambda c: -c["prob"])
+    chosen, per_game = [], {}
+    for c in ranked:
+        if per_game.get(c["game"], 0) >= MAX_PER_GAME:
+            continue
+        chosen.append(c); per_game[c["game"]] = per_game.get(c["game"], 0) + 1
         if len(chosen) == TOP_N:
             break
-        flag = red_flag(c, by_id[c["game"]], trend)
-        if flag:
-            dropped.append(dict(c, red_flag=flag, would_rank=i + 1))
-        else:
-            chosen.append(c)
-    counts = {}
     for c in chosen:
-        counts[c["game"]] = counts.get(c["game"], 0) + 1
-    for c in chosen + dropped:
         g = by_id[c["game"]]
         c.update({"matchup": f"{g['away']} @ {g['home']}", "tip": g["tip"], "neutral": g["neutral"],
-                  "same_game": counts.get(c["game"], 0) > 1})
-    for c in chosen:
-        by_id[c["game"]].setdefault("top_plays", []).append(c)
-    for c in dropped:
-        by_id[c["game"]].setdefault("top5_dropped", []).append(c)
-    return chosen, dropped
+                  "same_game": per_game[c["game"]] > 1})
+        g.setdefault("top_plays", []).append(c)
+    return chosen, []
 
 
 # ------------------------------------------------------------ Green cards ---
@@ -532,7 +527,7 @@ def build(kp: dict, odds: list, now: datetime) -> dict:
     games.sort(key=lambda g: abs(g["diff"]), reverse=True)
     upcoming = [g for g in games if datetime.fromisoformat(g["tip_iso"]) > now]
     top5, dropped = top_plays(upcoming, TREND)
-    greens = green_plays(upcoming, TREND)
+    greens = []   # Green cards tab retired Nov 24 (41-51); history stays in Track record
     (DOCS / "data").mkdir(parents=True, exist_ok=True)
     (DOCS / "data" / "name_map.json").write_text(json.dumps(
         {"matched": dict(sorted(match.map.items())), "unmatched": sorted(match.unmatched),
