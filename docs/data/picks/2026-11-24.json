@@ -1,0 +1,538 @@
+{
+ "frozen_at": "Nov 24, 2026 10:45 AM ET",
+ "top5": [
+  {
+   "type": "Moneyline",
+   "side": "Tennessee",
+   "line": null,
+   "price": -173.5,
+   "book": "median",
+   "prob": 0.641,
+   "be": 0.634,
+   "why": "Model 64% vs. market 61%",
+   "game": "38c575bb916b4b6634ccbc1d442b53a2",
+   "matchup": "Tennessee @ Maryland",
+   "tip": "3:00 PM",
+   "neutral": true,
+   "same_game": false
+  },
+  {
+   "type": "Moneyline",
+   "side": "Texas Tech",
+   "line": null,
+   "price": -145,
+   "book": "median",
+   "prob": 0.619,
+   "be": 0.592,
+   "why": "Model 62% vs. market 56%",
+   "game": "712c581bb2dc9c3072e5280bd6ccecc4",
+   "matchup": "Texas Tech @ Louisville",
+   "tip": "8:00 PM",
+   "neutral": true,
+   "same_game": false
+  },
+  {
+   "type": "Spread",
+   "side": "Evansville",
+   "line": 31.5,
+   "price": -110,
+   "book": "ESPN",
+   "prob": 0.607,
+   "be": 0.524,
+   "why": "KenPom +24.7 vs. line +31.5",
+   "game": "4dc8cb6a7648e8a24132baf3563d8887",
+   "matchup": "Evansville @ Missouri",
+   "tip": "9:00 PM",
+   "neutral": false,
+   "same_game": false
+  },
+  {
+   "type": "Moneyline",
+   "side": "Pittsburgh",
+   "line": null,
+   "price": -135,
+   "book": "median",
+   "prob": 0.603,
+   "be": 0.574,
+   "why": "Model 60% vs. market 54%",
+   "game": "43a5ccec7f338df1651b828c9c8e8c5f",
+   "matchup": "Pittsburgh @ Oklahoma",
+   "tip": "1:30 PM",
+   "neutral": true,
+   "same_game": false
+  },
+  {
+   "type": "Total",
+   "side": "Over",
+   "line": 150.5,
+   "price": -112,
+   "book": "BR",
+   "prob": 0.598,
+   "be": 0.528,
+   "why": "KenPom total 159.0 vs. 150.5",
+   "game": "2643c9fdcf8ea923eba3adf7e2d63034",
+   "matchup": "North Dakota @ Detroit Mercy",
+   "tip": "3:00 PM",
+   "neutral": true,
+   "same_game": false
+  }
+ ],
+ "top5_dropped": [
+  {
+   "type": "Moneyline",
+   "side": "UT Arlington",
+   "line": null,
+   "price": -205,
+   "book": "median",
+   "prob": 0.673,
+   "be": 0.672,
+   "why": "Model 67% vs. market 64%",
+   "game": "f7d009960feda2b039e5f3a0ada2220f",
+   "red_flag": "Oral Roberts has been beating its KenPom projection",
+   "would_rank": 1,
+   "matchup": "Oral Roberts @ UT Arlington",
+   "tip": "8:00 PM",
+   "neutral": false,
+   "same_game": false
+  },
+  {
+   "type": "Moneyline",
+   "side": "Air Force",
+   "line": null,
+   "price": -170,
+   "book": "median",
+   "prob": 0.633,
+   "be": 0.63,
+   "why": "Model 63% vs. market 61%",
+   "game": "b96a1616ca40a186cf203b892683f222",
+   "red_flag": "Air Force has been trailing its KenPom projection; Army has been beating its KenPom projection",
+   "would_rank": 3,
+   "matchup": "Army @ Air Force",
+   "tip": "8:00 PM",
+   "neutral": true,
+   "same_game": false
+  },
+  {
+   "type": "Spread",
+   "side": "Alcorn St.",
+   "line": 16.5,
+   "price": -115,
+   "book": "MGM",
+   "prob": 0.609,
+   "be": 0.535,
+   "why": "KenPom +9.6 vs. line +16.5",
+   "game": "3a7a826d98d77fdc8fd9f0e0ee77af6c",
+   "red_flag": "Alcorn St. has been trailing its KenPom projection",
+   "would_rank": 5,
+   "matchup": "Alcorn St. @ Louisiana Tech",
+   "tip": "7:30 PM",
+   "neutral": false,
+   "same_game": false
+  }
+ ],
+ "green_plays": [
+  {
+   "type": "Spread",
+   "side": "Evansville",
+   "game": "4dc8cb6a7648e8a24132baf3563d8887",
+   "greens": [
+    "big_pick",
+    "road",
+    "dog"
+   ],
+   "yellows": [],
+   "matchup": "Evansville @ Missouri",
+   "tip": "9:00 PM",
+   "tip_iso": "2026-11-25T02:00:00+00:00",
+   "line": 31.5,
+   "price": -110,
+   "book": "ESPN",
+   "prob": 0.5
+  },
+  {
+   "type": "Spread",
+   "side": "UNC Asheville",
+   "game": "43f1834ce15a8fa15990477292bbd923",
+   "greens": [
+    "big_pick",
+    "road",
+    "dog"
+   ],
+   "yellows": [],
+   "matchup": "UNC Asheville @ Florida St.",
+   "tip": "9:00 PM",
+   "tip_iso": "2026-11-25T02:00:00+00:00",
+   "line": 29.5,
+   "price": -112,
+   "book": "DK",
+   "prob": 0.5
+  },
+  {
+   "type": "Spread",
+   "side": "Coppin St.",
+   "game": "cd53ee535b2696ad269d2a8411ee5e44",
+   "greens": [
+    "big_pick",
+    "road",
+    "dog"
+   ],
+   "yellows": [
+    "mid_gap"
+   ],
+   "matchup": "Coppin St. @ Villanova",
+   "tip": "7:00 PM",
+   "tip_iso": "2026-11-25T00:00:00+00:00",
+   "line": 32.5,
+   "price": -104,
+   "book": "FD",
+   "prob": 0.5
+  },
+  {
+   "type": "Spread",
+   "side": "Lipscomb",
+   "game": "8007f744856111cf162e4770b19628a9",
+   "greens": [
+    "big_pick",
+    "road",
+    "dog"
+   ],
+   "yellows": [
+    "mid_gap"
+   ],
+   "matchup": "Lipscomb @ Auburn",
+   "tip": "8:00 PM",
+   "tip_iso": "2026-11-25T01:00:00+00:00",
+   "line": 25.5,
+   "price": -115,
+   "book": "DK",
+   "prob": 0.5
+  },
+  {
+   "type": "Spread",
+   "side": "New Mexico St.",
+   "game": "c431e5cece6a42f0acf8f2898b29e83e",
+   "greens": [
+    "road",
+    "dog"
+   ],
+   "yellows": [
+    "small_gap"
+   ],
+   "matchup": "New Mexico St. @ Ohio",
+   "tip": "11:00 AM",
+   "tip_iso": "2026-11-24T16:00:00+00:00",
+   "line": 4.5,
+   "price": -105,
+   "book": "ESPN",
+   "prob": 0.5
+  },
+  {
+   "type": "Spread",
+   "side": "Belmont",
+   "game": "c027a1281dd4c9e8ac848bc06f0e29fb",
+   "greens": [
+    "road",
+    "dog"
+   ],
+   "yellows": [
+    "small_gap"
+   ],
+   "matchup": "Belmont @ Akron",
+   "tip": "12:30 PM",
+   "tip_iso": "2026-11-24T17:30:00+00:00",
+   "line": 2.5,
+   "price": -110,
+   "book": "ESPN",
+   "prob": 0.5
+  },
+  {
+   "type": "Spread",
+   "side": "Southern Utah",
+   "game": "25c249c5d826256a741704663708b66f",
+   "greens": [
+    "road",
+    "dog"
+   ],
+   "yellows": [
+    "small_gap"
+   ],
+   "matchup": "Southern Utah @ FIU",
+   "tip": "1:00 PM",
+   "tip_iso": "2026-11-24T18:00:00+00:00",
+   "line": 8.5,
+   "price": -120,
+   "book": "ESPN",
+   "prob": 0.5
+  },
+  {
+   "type": "Spread",
+   "side": "Illinois St.",
+   "game": "cebf116689f6c16151415bb0f130dc5b",
+   "greens": [
+    "road",
+    "dog"
+   ],
+   "yellows": [
+    "small_gap"
+   ],
+   "matchup": "Illinois St. @ Tulsa",
+   "tip": "4:30 PM",
+   "tip_iso": "2026-11-24T21:30:00+00:00",
+   "line": 1.5,
+   "price": -122,
+   "book": "FD",
+   "prob": 0.5
+  },
+  {
+   "type": "Spread",
+   "side": "Providence",
+   "game": "164c30fe9e3df9f785daa57c5053cf5d",
+   "greens": [
+    "road",
+    "dog"
+   ],
+   "yellows": [
+    "small_gap"
+   ],
+   "matchup": "Providence @ Arizona",
+   "tip": "5:00 PM",
+   "tip_iso": "2026-11-24T22:00:00+00:00",
+   "line": 7.5,
+   "price": -105,
+   "book": "DK",
+   "prob": 0.5
+  },
+  {
+   "type": "Spread",
+   "side": "Creighton",
+   "game": "7e24a7f74f41134d9a72a537af4cc663",
+   "greens": [
+    "road",
+    "dog"
+   ],
+   "yellows": [
+    "small_gap"
+   ],
+   "matchup": "Creighton @ Michigan",
+   "tip": "5:30 PM",
+   "tip_iso": "2026-11-24T22:30:00+00:00",
+   "line": 6.5,
+   "price": -113,
+   "book": "BR",
+   "prob": 0.5
+  },
+  {
+   "type": "Spread",
+   "side": "San Diego St.",
+   "game": "0dbbfc6c0ffe4c7d2c9b65eb8ab96cb3",
+   "greens": [
+    "road",
+    "dog"
+   ],
+   "yellows": [
+    "small_gap"
+   ],
+   "matchup": "San Diego St. @ Iowa St.",
+   "tip": "5:30 PM",
+   "tip_iso": "2026-11-24T22:30:00+00:00",
+   "line": 9.5,
+   "price": -118,
+   "book": "BR",
+   "prob": 0.5
+  },
+  {
+   "type": "Spread",
+   "side": "Elon",
+   "game": "1e3a2e8c68dcf6c024c3acd7340891d0",
+   "greens": [
+    "road",
+    "dog"
+   ],
+   "yellows": [
+    "small_gap"
+   ],
+   "matchup": "Elon @ Furman",
+   "tip": "6:30 PM",
+   "tip_iso": "2026-11-24T23:30:00+00:00",
+   "line": 7.5,
+   "price": -115,
+   "book": "ESPN",
+   "prob": 0.5
+  },
+  {
+   "type": "Spread",
+   "side": "Rider",
+   "game": "278837a5be17c7fb57ffd1da5eaf812b",
+   "greens": [
+    "road",
+    "dog"
+   ],
+   "yellows": [
+    "mid_gap"
+   ],
+   "matchup": "Rider @ Loyola MD",
+   "tip": "7:00 PM",
+   "tip_iso": "2026-11-25T00:00:00+00:00",
+   "line": 3.5,
+   "price": -110,
+   "book": "MGM",
+   "prob": 0.5
+  },
+  {
+   "type": "Spread",
+   "side": "Mount St. Mary's",
+   "game": "4372f4cc1a42725718b121950f7e4390",
+   "greens": [
+    "road",
+    "dog"
+   ],
+   "yellows": [
+    "small_gap"
+   ],
+   "matchup": "Mount St. Mary's @ Morgan St.",
+   "tip": "7:00 PM",
+   "tip_iso": "2026-11-25T00:00:00+00:00",
+   "line": 1.5,
+   "price": -120,
+   "book": "MGM",
+   "prob": 0.5
+  },
+  {
+   "type": "Spread",
+   "side": "New Hampshire",
+   "game": "72b630289253e0d84e7882c0f2106a48",
+   "greens": [
+    "road",
+    "dog"
+   ],
+   "yellows": [
+    "small_gap"
+   ],
+   "matchup": "New Hampshire @ Seton Hall",
+   "tip": "7:00 PM",
+   "tip_iso": "2026-11-25T00:00:00+00:00",
+   "line": 20.5,
+   "price": -104,
+   "book": "FD",
+   "prob": 0.5
+  },
+  {
+   "type": "Spread",
+   "side": "Purdue Fort Wayne",
+   "game": "1093df65c3f02a9b287b474ff6c464b6",
+   "greens": [
+    "road",
+    "dog"
+   ],
+   "yellows": [
+    "mid_gap"
+   ],
+   "matchup": "Purdue Fort Wayne @ Southeast Missouri",
+   "tip": "7:30 PM",
+   "tip_iso": "2026-11-25T00:30:00+00:00",
+   "line": 4.5,
+   "price": -115,
+   "book": "ESPN",
+   "prob": 0.5
+  },
+  {
+   "type": "Spread",
+   "side": "UTEP",
+   "game": "fe27496cb1eb4ae152d0598f1d70e8dc",
+   "greens": [
+    "road",
+    "dog"
+   ],
+   "yellows": [
+    "small_gap"
+   ],
+   "matchup": "UTEP @ Charleston",
+   "tip": "8:30 PM",
+   "tip_iso": "2026-11-25T01:30:00+00:00",
+   "line": 2.5,
+   "price": -110,
+   "book": "ESPN",
+   "prob": 0.5
+  },
+  {
+   "type": "Spread",
+   "side": "Stetson",
+   "game": "efbf615ae4d7d1ab262bb4158cada8db",
+   "greens": [
+    "road",
+    "dog"
+   ],
+   "yellows": [
+    "mid_gap",
+    "mid_spread"
+   ],
+   "matchup": "Stetson @ South Florida",
+   "tip": "7:00 PM",
+   "tip_iso": "2026-11-25T00:00:00+00:00",
+   "line": 18.5,
+   "price": -110,
+   "book": "MGM",
+   "prob": 0.5
+  },
+  {
+   "type": "Spread",
+   "side": "Delaware St.",
+   "game": "7b26240263d57054f865ed13eadc3fc3",
+   "greens": [
+    "road",
+    "dog"
+   ],
+   "yellows": [
+    "mid_gap",
+    "mid_spread"
+   ],
+   "matchup": "Delaware St. @ Chattanooga",
+   "tip": "7:00 PM",
+   "tip_iso": "2026-11-25T00:00:00+00:00",
+   "line": 17.5,
+   "price": -115,
+   "book": "ESPN",
+   "prob": 0.5
+  },
+  {
+   "type": "Spread",
+   "side": "Gardner Webb",
+   "game": "864548d14d1c51b9eb5c8124103739bd",
+   "greens": [
+    "road",
+    "dog"
+   ],
+   "yellows": [
+    "small_gap",
+    "mid_spread"
+   ],
+   "matchup": "Gardner Webb @ Bowling Green",
+   "tip": "7:00 PM",
+   "tip_iso": "2026-11-25T00:00:00+00:00",
+   "line": 12.5,
+   "price": -110,
+   "book": "ESPN",
+   "prob": 0.5
+  },
+  {
+   "type": "Spread",
+   "side": "UNC Greensboro",
+   "game": "427e125509d4fb46d23c30b52a010699",
+   "greens": [
+    "road",
+    "dog"
+   ],
+   "yellows": [
+    "small_gap",
+    "mid_spread"
+   ],
+   "matchup": "UNC Greensboro @ UC Santa Barbara",
+   "tip": "9:00 PM",
+   "tip_iso": "2026-11-25T02:00:00+00:00",
+   "line": 18.5,
+   "price": -110,
+   "book": "ESPN",
+   "prob": 0.5
+  }
+ ]
+}

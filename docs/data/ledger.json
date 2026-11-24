@@ -1174,12 +1174,33 @@
   "book_total": 142.5,
   "date": "2026-11-24",
   "diff": -0.7,
+  "green_plays": [
+   {
+    "book": "BR",
+    "game": "0dbbfc6c0ffe4c7d2c9b65eb8ab96cb3",
+    "greens": [
+     "road",
+     "dog"
+    ],
+    "line": 9.5,
+    "matchup": "San Diego St. @ Iowa St.",
+    "price": -118,
+    "prob": 0.5,
+    "side": "San Diego St.",
+    "tip": "5:30 PM",
+    "tip_iso": "2026-11-24T22:30:00+00:00",
+    "type": "Spread",
+    "yellows": [
+     "small_gap"
+    ]
+   }
+  ],
   "home": "Iowa St.",
   "home_conf": "B12",
   "imp_away": 67.0,
   "imp_home": 75.5,
   "kp_home_wp": 0.726,
-  "locked_at": "2026-11-24 10:44",
+  "locked_at": "2026-11-24 10:45",
   "mkt_home_wp": 0.772,
   "ml_away": 320,
   "ml_edge": 0.023,
@@ -1197,7 +1218,9 @@
   "proj_total": 141.4,
   "tip": "5:30 PM",
   "tip_iso": "2026-11-24T22:30:00+00:00",
+  "top5_dropped": null,
   "top_play": null,
+  "top_plays": null,
   "tot_diff": -1.1
  },
  "0e691de1e271a81490db7c766b779288": {
@@ -1410,12 +1433,33 @@
   "book_total": 149.5,
   "date": "2026-11-24",
   "diff": -2.5,
+  "green_plays": [
+   {
+    "book": "ESPN",
+    "game": "1093df65c3f02a9b287b474ff6c464b6",
+    "greens": [
+     "road",
+     "dog"
+    ],
+    "line": 4.5,
+    "matchup": "Purdue Fort Wayne @ Southeast Missouri",
+    "price": -115,
+    "prob": 0.5,
+    "side": "Purdue Fort Wayne",
+    "tip": "7:30 PM",
+    "tip_iso": "2026-11-25T00:30:00+00:00",
+    "type": "Spread",
+    "yellows": [
+     "mid_gap"
+    ]
+   }
+  ],
   "home": "Southeast Missouri",
   "home_conf": "OVC",
   "imp_away": 73.0,
   "imp_home": 76.5,
   "kp_home_wp": 0.532,
-  "locked_at": "2026-11-24 10:44",
+  "locked_at": "2026-11-24 10:45",
   "mkt_home_wp": 0.602,
   "ml_away": 140,
   "ml_edge": 0.035,
@@ -1433,7 +1477,9 @@
   "proj_total": 154.4,
   "tip": "7:30 PM",
   "tip_iso": "2026-11-25T00:30:00+00:00",
+  "top5_dropped": null,
   "top_play": null,
+  "top_plays": null,
   "tot_diff": 4.9
  },
  "112a3e561a6b673b4ca74bb0e0605c2c": {
@@ -1801,12 +1847,13 @@
   "book_total": 155.5,
   "date": "2026-11-24",
   "diff": 0.8,
+  "green_plays": null,
   "home": "James Madison",
   "home_conf": "SB",
   "imp_away": 71.5,
   "imp_home": 84.0,
   "kp_home_wp": 0.848,
-  "locked_at": "2026-11-24 10:44",
+  "locked_at": "2026-11-24 10:45",
   "mkt_home_wp": 0.876,
   "ml_away": 675,
   "ml_edge": -0.014,
@@ -1824,7 +1871,9 @@
   "proj_total": 151.4,
   "tip": "7:00 PM",
   "tip_iso": "2026-11-25T00:00:00+00:00",
+  "top5_dropped": null,
   "top_play": null,
+  "top_plays": null,
   "tot_diff": -4.1
  },
  "157cfd64408324d452e85361c707dbec": {
@@ -1931,15 +1980,36 @@
    "price": -105
   },
   "book_spread": -7.5,
-  "book_total": 157.0,
+  "book_total": 156.5,
   "date": "2026-11-24",
   "diff": -1.1,
+  "green_plays": [
+   {
+    "book": "DK",
+    "game": "164c30fe9e3df9f785daa57c5053cf5d",
+    "greens": [
+     "road",
+     "dog"
+    ],
+    "line": 7.5,
+    "matchup": "Providence @ Arizona",
+    "price": -105,
+    "prob": 0.5,
+    "side": "Providence",
+    "tip": "5:00 PM",
+    "tip_iso": "2026-11-24T22:00:00+00:00",
+    "type": "Spread",
+    "yellows": [
+     "small_gap"
+    ]
+   }
+  ],
   "home": "Arizona",
   "home_conf": "B12",
-  "imp_away": 74.8,
-  "imp_home": 82.2,
+  "imp_away": 74.5,
+  "imp_home": 82.0,
   "kp_home_wp": 0.688,
-  "locked_at": "2026-11-24 10:44",
+  "locked_at": "2026-11-24 10:45",
   "mkt_home_wp": 0.741,
   "ml_away": 267.5,
   "ml_edge": 0.026,
@@ -1957,8 +2027,10 @@
   "proj_total": 151.0,
   "tip": "5:00 PM",
   "tip_iso": "2026-11-24T22:00:00+00:00",
+  "top5_dropped": null,
   "top_play": null,
-  "tot_diff": -6.0
+  "top_plays": null,
+  "tot_diff": -5.5
  },
  "17a9a4ec4b37ec676576d40fd025472b": {
   "away": "Alabama A&M",
@@ -1972,12 +2044,13 @@
   "book_total": 142.5,
   "date": "2026-11-24",
   "diff": 1.8,
+  "green_plays": null,
   "home": "North Alabama",
   "home_conf": "UAC",
   "imp_away": 70.0,
   "imp_home": 72.5,
   "kp_home_wp": 0.63,
-  "locked_at": "2026-11-24 10:44",
+  "locked_at": "2026-11-24 10:45",
   "mkt_home_wp": 0.583,
   "ml_away": 126,
   "ml_edge": 0.023,
@@ -1995,7 +2068,9 @@
   "proj_total": 140.9,
   "tip": "8:00 PM",
   "tip_iso": "2026-11-25T01:00:00+00:00",
+  "top5_dropped": null,
   "top_play": null,
+  "top_plays": null,
   "tot_diff": -1.6
  },
  "18bce8d38273bd5b44a6768f1d5aa1d6": {
@@ -2420,12 +2495,13 @@
   "book_total": 142.5,
   "date": "2026-11-24",
   "diff": -3.3,
+  "green_plays": null,
   "home": "South Alabama",
   "home_conf": "SB",
   "imp_away": 62.5,
   "imp_home": 80.0,
   "kp_home_wp": 0.863,
-  "locked_at": "2026-11-24 10:44",
+  "locked_at": "2026-11-24 10:45",
   "mkt_home_wp": 0.928,
   "ml_away": 1280,
   "ml_edge": 0.032,
@@ -2443,7 +2519,9 @@
   "proj_total": 144.0,
   "tip": "8:00 PM",
   "tip_iso": "2026-11-25T01:00:00+00:00",
+  "top5_dropped": null,
   "top_play": null,
+  "top_plays": null,
   "tot_diff": 1.5
  },
  "1af3a5acedbb908ecc006767d288d16b": {
@@ -2551,12 +2629,13 @@
   "book_total": 129.5,
   "date": "2026-11-24",
   "diff": 1.5,
+  "green_plays": null,
   "home": "Old Dominion",
   "home_conf": "SB",
   "imp_away": 61.0,
   "imp_home": 68.5,
   "kp_home_wp": 0.755,
-  "locked_at": "2026-11-24 10:44",
+  "locked_at": "2026-11-24 10:45",
   "mkt_home_wp": 0.749,
   "ml_away": 280,
   "ml_edge": 0.003,
@@ -2574,7 +2653,9 @@
   "proj_total": 132.0,
   "tip": "7:00 PM",
   "tip_iso": "2026-11-25T00:00:00+00:00",
+  "top5_dropped": null,
   "top_play": null,
+  "top_plays": null,
   "tot_diff": 2.5
  },
  "1e244cf66149400c5e73025d7d4cfc60": {
@@ -2633,12 +2714,33 @@
   "book_total": 148.5,
   "date": "2026-11-24",
   "diff": -1.7,
+  "green_plays": [
+   {
+    "book": "ESPN",
+    "game": "1e3a2e8c68dcf6c024c3acd7340891d0",
+    "greens": [
+     "road",
+     "dog"
+    ],
+    "line": 7.5,
+    "matchup": "Elon @ Furman",
+    "price": -115,
+    "prob": 0.5,
+    "side": "Elon",
+    "tip": "6:30 PM",
+    "tip_iso": "2026-11-24T23:30:00+00:00",
+    "type": "Spread",
+    "yellows": [
+     "small_gap"
+    ]
+   }
+  ],
   "home": "Furman",
   "home_conf": "SC",
   "imp_away": 70.5,
   "imp_home": 78.0,
   "kp_home_wp": 0.672,
-  "locked_at": "2026-11-24 10:44",
+  "locked_at": "2026-11-24 10:45",
   "mkt_home_wp": 0.734,
   "ml_away": 260,
   "ml_edge": 0.031,
@@ -2656,7 +2758,9 @@
   "proj_total": 148.4,
   "tip": "6:30 PM",
   "tip_iso": "2026-11-24T23:30:00+00:00",
+  "top5_dropped": null,
   "top_play": null,
+  "top_plays": null,
   "tot_diff": -0.1
  },
  "1ee2fb83953abf7e64374cbf970ddd8f": {
@@ -2735,12 +2839,13 @@
   "book_total": 151.5,
   "date": "2026-11-24",
   "diff": 0.6,
+  "green_plays": null,
   "home": "Louisiana Monroe",
   "home_conf": "SB",
   "imp_away": 76.5,
   "imp_home": 75.0,
   "kp_home_wp": 0.472,
-  "locked_at": "2026-11-24 10:44",
+  "locked_at": "2026-11-24 10:45",
   "mkt_home_wp": 0.475,
   "ml_away": -122,
   "ml_edge": -0.001,
@@ -2758,7 +2863,9 @@
   "proj_total": 149.9,
   "tip": "7:30 PM",
   "tip_iso": "2026-11-25T00:30:00+00:00",
+  "top5_dropped": null,
   "top_play": null,
+  "top_plays": null,
   "tot_diff": -1.6
  },
  "203d425dc27ecafb35edfcc95e4d2c54": {
@@ -3026,12 +3133,13 @@
   "book_total": 174.5,
   "date": "2026-11-24",
   "diff": 0.3,
+  "green_plays": null,
   "home": "Alabama",
   "home_conf": "SEC",
   "imp_away": 86.5,
   "imp_home": 88.0,
   "kp_home_wp": 0.554,
-  "locked_at": "2026-11-24 10:44",
+  "locked_at": "2026-11-24 10:45",
   "mkt_home_wp": 0.533,
   "ml_away": 105,
   "ml_edge": 0.011,
@@ -3049,7 +3157,9 @@
   "proj_total": 173.0,
   "tip": "10:00 PM",
   "tip_iso": "2026-11-25T03:00:00+00:00",
+  "top5_dropped": null,
   "top_play": null,
+  "top_plays": null,
   "tot_diff": -1.5
  },
  "23caa88d308de07ac04fa745540ab35f": {
@@ -3108,12 +3218,33 @@
   "book_total": 167.5,
   "date": "2026-11-24",
   "diff": -0.8,
+  "green_plays": [
+   {
+    "book": "ESPN",
+    "game": "25c249c5d826256a741704663708b66f",
+    "greens": [
+     "road",
+     "dog"
+    ],
+    "line": 8.5,
+    "matchup": "Southern Utah @ FIU",
+    "price": -120,
+    "prob": 0.5,
+    "side": "Southern Utah",
+    "tip": "1:00 PM",
+    "tip_iso": "2026-11-24T18:00:00+00:00",
+    "type": "Spread",
+    "yellows": [
+     "small_gap"
+    ]
+   }
+  ],
   "home": "FIU",
   "home_conf": "CUSA",
   "imp_away": 79.5,
   "imp_home": 88.0,
   "kp_home_wp": 0.724,
-  "locked_at": "2026-11-24 10:44",
+  "locked_at": "2026-11-24 10:45",
   "mkt_home_wp": 0.759,
   "ml_away": 290,
   "ml_edge": 0.017,
@@ -3131,7 +3262,9 @@
   "proj_total": 166.1,
   "tip": "1:00 PM",
   "tip_iso": "2026-11-24T18:00:00+00:00",
+  "top5_dropped": null,
   "top_play": null,
+  "top_plays": null,
   "tot_diff": -1.4
  },
  "2643c9fdcf8ea923eba3adf7e2d63034": {
@@ -3146,12 +3279,13 @@
   "book_total": 151.5,
   "date": "2026-11-24",
   "diff": 2.5,
+  "green_plays": null,
   "home": "Detroit Mercy",
   "home_conf": "Horz",
   "imp_away": 78.0,
   "imp_home": 73.5,
   "kp_home_wp": 0.438,
-  "locked_at": "2026-11-24 10:44",
+  "locked_at": "2026-11-24 10:45",
   "mkt_home_wp": 0.369,
   "ml_away": -190,
   "ml_edge": 0.035,
@@ -3169,7 +3303,25 @@
   "proj_total": 159.0,
   "tip": "3:00 PM",
   "tip_iso": "2026-11-24T20:00:00+00:00",
+  "top5_dropped": null,
   "top_play": null,
+  "top_plays": [
+   {
+    "be": 0.528,
+    "book": "BR",
+    "game": "2643c9fdcf8ea923eba3adf7e2d63034",
+    "line": 150.5,
+    "matchup": "North Dakota @ Detroit Mercy",
+    "neutral": true,
+    "price": -112,
+    "prob": 0.598,
+    "same_game": false,
+    "side": "Over",
+    "tip": "3:00 PM",
+    "type": "Total",
+    "why": "KenPom total 159.0 vs. 150.5"
+   }
+  ],
   "tot_diff": 7.5
  },
  "264c7486fa86ec1cf972df7956696ac5": {
@@ -3390,12 +3542,33 @@
   "book_total": 138.5,
   "date": "2026-11-24",
   "diff": -2.0,
+  "green_plays": [
+   {
+    "book": "MGM",
+    "game": "278837a5be17c7fb57ffd1da5eaf812b",
+    "greens": [
+     "road",
+     "dog"
+    ],
+    "line": 3.5,
+    "matchup": "Rider @ Loyola MD",
+    "price": -110,
+    "prob": 0.5,
+    "side": "Rider",
+    "tip": "7:00 PM",
+    "tip_iso": "2026-11-25T00:00:00+00:00",
+    "type": "Spread",
+    "yellows": [
+     "mid_gap"
+    ]
+   }
+  ],
   "home": "Loyola MD",
   "home_conf": "PL",
   "imp_away": 67.5,
   "imp_home": 71.0,
   "kp_home_wp": 0.545,
-  "locked_at": "2026-11-24 10:44",
+  "locked_at": "2026-11-24 10:45",
   "mkt_home_wp": 0.598,
   "ml_away": 140,
   "ml_edge": 0.027,
@@ -3413,7 +3586,9 @@
   "proj_total": 137.8,
   "tip": "7:00 PM",
   "tip_iso": "2026-11-25T00:00:00+00:00",
+  "top5_dropped": null,
   "top_play": null,
+  "top_plays": null,
   "tot_diff": -0.7
  },
  "27a3b33d3bcab6f669914f49fa654ee0": {
@@ -3614,12 +3789,13 @@
   "book_total": 144.5,
   "date": "2026-11-24",
   "diff": -2.3,
+  "green_plays": null,
   "home": "Iowa",
   "home_conf": "B10",
   "imp_away": 58.2,
   "imp_home": 86.2,
   "kp_home_wp": 0.976,
-  "locked_at": "2026-11-24 10:44",
+  "locked_at": "2026-11-24 10:45",
   "mkt_home_wp": 0.977,
   "ml_away": 4250.0,
   "ml_edge": 0.0,
@@ -3637,7 +3813,9 @@
   "proj_total": 146.2,
   "tip": "7:00 PM",
   "tip_iso": "2026-11-25T00:00:00+00:00",
+  "top5_dropped": null,
   "top_play": null,
+  "top_plays": null,
   "tot_diff": 1.7
  },
  "2907ec9d768bcfc13aca0bca1d82c278": {
@@ -4970,12 +5148,13 @@
   "book_total": 132.5,
   "date": "2026-11-24",
   "diff": -2.5,
+  "green_plays": null,
   "home": "Purdue",
   "home_conf": "B10",
   "imp_away": 64.5,
   "imp_home": 68.0,
   "kp_home_wp": 0.53,
-  "locked_at": "2026-11-24 10:44",
+  "locked_at": "2026-11-24 10:45",
   "mkt_home_wp": 0.581,
   "ml_away": 128,
   "ml_edge": 0.026,
@@ -4993,7 +5172,9 @@
   "proj_total": 133.4,
   "tip": "6:00 PM",
   "tip_iso": "2026-11-24T23:00:00+00:00",
+  "top5_dropped": null,
   "top_play": null,
+  "top_plays": null,
   "tot_diff": 0.9
  },
  "34adecee185d2196638cd55c5f1e9c27": {
@@ -5257,12 +5438,13 @@
   "book_total": 158.5,
   "date": "2026-11-24",
   "diff": 1.3,
+  "green_plays": null,
   "home": "Santa Clara",
   "home_conf": "WCC",
   "imp_away": 80.0,
   "imp_home": 78.5,
   "kp_home_wp": 0.494,
-  "locked_at": "2026-11-24 10:44",
+  "locked_at": "2026-11-24 10:45",
   "mkt_home_wp": 0.496,
   "ml_away": -115,
   "ml_edge": -0.001,
@@ -5280,7 +5462,9 @@
   "proj_total": 160.6,
   "tip": "7:00 PM",
   "tip_iso": "2026-11-25T00:00:00+00:00",
+  "top5_dropped": null,
   "top_play": null,
+  "top_plays": null,
   "tot_diff": 2.1
  },
  "370fc3a3a15f89b2ab0ece7ff89965bc": {
@@ -5335,12 +5519,13 @@
   "book_total": 149.5,
   "date": "2026-11-24",
   "diff": -0.9,
+  "green_plays": null,
   "home": "Colorado St.",
   "home_conf": "P12",
   "imp_away": 77.5,
   "imp_home": 72.0,
   "kp_home_wp": 0.312,
-  "locked_at": "2026-11-24 10:44",
+  "locked_at": "2026-11-24 10:45",
   "mkt_home_wp": 0.335,
   "ml_away": -225.0,
   "ml_edge": 0.011,
@@ -5358,7 +5543,9 @@
   "proj_total": 145.8,
   "tip": "10:30 PM",
   "tip_iso": "2026-11-25T03:30:00+00:00",
+  "top5_dropped": null,
   "top_play": null,
+  "top_plays": null,
   "tot_diff": -3.7
  },
  "3875ce9226ab95bf60b281127edf36fc": {
@@ -5404,15 +5591,16 @@
    "price": -115
   },
   "book_spread": 3.5,
-  "book_total": 148.5,
+  "book_total": 148.0,
   "date": "2026-11-24",
   "diff": -2.4,
+  "green_plays": null,
   "home": "Maryland",
   "home_conf": "B10",
-  "imp_away": 76.0,
-  "imp_home": 72.5,
+  "imp_away": 75.8,
+  "imp_home": 72.2,
   "kp_home_wp": 0.326,
-  "locked_at": "2026-11-24 10:44",
+  "locked_at": "2026-11-24 10:45",
   "mkt_home_wp": 0.393,
   "ml_away": -173.5,
   "ml_edge": 0.033,
@@ -5430,8 +5618,26 @@
   "proj_total": 142.4,
   "tip": "3:00 PM",
   "tip_iso": "2026-11-24T20:00:00+00:00",
+  "top5_dropped": null,
   "top_play": null,
-  "tot_diff": -6.1
+  "top_plays": [
+   {
+    "be": 0.634,
+    "book": "median",
+    "game": "38c575bb916b4b6634ccbc1d442b53a2",
+    "line": null,
+    "matchup": "Tennessee @ Maryland",
+    "neutral": true,
+    "price": -173.5,
+    "prob": 0.641,
+    "same_game": false,
+    "side": "Tennessee",
+    "tip": "3:00 PM",
+    "type": "Moneyline",
+    "why": "Model 64% vs. market 61%"
+   }
+  ],
+  "tot_diff": -5.6
  },
  "3930c9baece5db0aff8cc39629b2457d": {
   "away": "Utah Tech",
@@ -5627,12 +5833,13 @@
   "book_total": 144.5,
   "date": "2026-11-24",
   "diff": -6.9,
+  "green_plays": null,
   "home": "Louisiana Tech",
   "home_conf": "SB",
   "imp_away": 64.0,
   "imp_home": 80.5,
   "kp_home_wp": 0.771,
-  "locked_at": "2026-11-24 10:44",
+  "locked_at": "2026-11-24 10:45",
   "mkt_home_wp": 0.912,
   "ml_away": 1000,
   "ml_edge": 0.071,
@@ -5650,7 +5857,27 @@
   "proj_total": 147.6,
   "tip": "7:30 PM",
   "tip_iso": "2026-11-25T00:30:00+00:00",
+  "top5_dropped": [
+   {
+    "be": 0.535,
+    "book": "MGM",
+    "game": "3a7a826d98d77fdc8fd9f0e0ee77af6c",
+    "line": 16.5,
+    "matchup": "Alcorn St. @ Louisiana Tech",
+    "neutral": false,
+    "price": -115,
+    "prob": 0.609,
+    "red_flag": "Alcorn St. has been trailing its KenPom projection",
+    "same_game": false,
+    "side": "Alcorn St.",
+    "tip": "7:30 PM",
+    "type": "Spread",
+    "why": "KenPom +9.6 vs. line +16.5",
+    "would_rank": 5
+   }
+  ],
   "top_play": null,
+  "top_plays": null,
   "tot_diff": 3.1
  },
  "3ab5a8599cd00fad06d1d7f8c1fd0fb2": {
@@ -5903,12 +6130,13 @@
   "book_total": 153.5,
   "date": "2026-11-24",
   "diff": -2.1,
+  "green_plays": null,
   "home": "TCU",
   "home_conf": "B12",
   "imp_away": 79.5,
   "imp_home": 74.0,
   "kp_home_wp": 0.281,
-  "locked_at": "2026-11-24 10:44",
+  "locked_at": "2026-11-24 10:45",
   "mkt_home_wp": 0.336,
   "ml_away": -230,
   "ml_edge": 0.028,
@@ -5926,7 +6154,9 @@
   "proj_total": 151.6,
   "tip": "3:00 PM",
   "tip_iso": "2026-11-24T20:00:00+00:00",
+  "top5_dropped": null,
   "top_play": null,
+  "top_plays": null,
   "tot_diff": -1.9
  },
  "41c79876d3c7f7f356c4b1a19332478f": {
@@ -5981,12 +6211,34 @@
   "book_total": 145.5,
   "date": "2026-11-24",
   "diff": -0.4,
+  "green_plays": [
+   {
+    "book": "ESPN",
+    "game": "427e125509d4fb46d23c30b52a010699",
+    "greens": [
+     "road",
+     "dog"
+    ],
+    "line": 18.5,
+    "matchup": "UNC Greensboro @ UC Santa Barbara",
+    "price": -110,
+    "prob": 0.5,
+    "side": "UNC Greensboro",
+    "tip": "9:00 PM",
+    "tip_iso": "2026-11-25T02:00:00+00:00",
+    "type": "Spread",
+    "yellows": [
+     "small_gap",
+     "mid_spread"
+    ]
+   }
+  ],
   "home": "UC Santa Barbara",
   "home_conf": "BW",
   "imp_away": 63.5,
   "imp_home": 82.0,
   "kp_home_wp": 0.918,
-  "locked_at": "2026-11-24 10:44",
+  "locked_at": "2026-11-24 10:45",
   "mkt_home_wp": 0.928,
   "ml_away": 1280,
   "ml_edge": 0.005,
@@ -6004,7 +6256,9 @@
   "proj_total": 150.1,
   "tip": "9:00 PM",
   "tip_iso": "2026-11-25T02:00:00+00:00",
+  "top5_dropped": null,
   "top_play": null,
+  "top_plays": null,
   "tot_diff": 4.6
  },
  "4285774fee0e485544f82fe4fc9261be": {
@@ -6352,12 +6606,33 @@
   "book_total": 146.5,
   "date": "2026-11-24",
   "diff": -1.2,
+  "green_plays": [
+   {
+    "book": "MGM",
+    "game": "4372f4cc1a42725718b121950f7e4390",
+    "greens": [
+     "road",
+     "dog"
+    ],
+    "line": 1.5,
+    "matchup": "Mount St. Mary's @ Morgan St.",
+    "price": -120,
+    "prob": 0.5,
+    "side": "Mount St. Mary's",
+    "tip": "7:00 PM",
+    "tip_iso": "2026-11-25T00:00:00+00:00",
+    "type": "Spread",
+    "yellows": [
+     "small_gap"
+    ]
+   }
+  ],
   "home": "Morgan St.",
   "home_conf": "MEAC",
   "imp_away": 72.5,
   "imp_home": 74.0,
   "kp_home_wp": 0.509,
-  "locked_at": "2026-11-24 10:44",
+  "locked_at": "2026-11-24 10:45",
   "mkt_home_wp": 0.505,
   "ml_away": -105,
   "ml_edge": -0.002,
@@ -6375,7 +6650,9 @@
   "proj_total": 145.1,
   "tip": "7:00 PM",
   "tip_iso": "2026-11-25T00:00:00+00:00",
+  "top5_dropped": null,
   "top_play": null,
+  "top_plays": null,
   "tot_diff": -1.4
  },
  "43a5ccec7f338df1651b828c9c8e8c5f": {
@@ -6390,12 +6667,13 @@
   "book_total": 149.5,
   "date": "2026-11-24",
   "diff": -3.9,
+  "green_plays": null,
   "home": "Oklahoma",
   "home_conf": "SEC",
   "imp_away": 75.5,
   "imp_home": 74.0,
   "kp_home_wp": 0.339,
-  "locked_at": "2026-11-24 10:44",
+  "locked_at": "2026-11-24 10:45",
   "mkt_home_wp": 0.455,
   "ml_away": -135,
   "ml_edge": 0.058,
@@ -6413,7 +6691,25 @@
   "proj_total": 146.6,
   "tip": "1:30 PM",
   "tip_iso": "2026-11-24T18:30:00+00:00",
+  "top5_dropped": null,
   "top_play": null,
+  "top_plays": [
+   {
+    "be": 0.574,
+    "book": "median",
+    "game": "43a5ccec7f338df1651b828c9c8e8c5f",
+    "line": null,
+    "matchup": "Pittsburgh @ Oklahoma",
+    "neutral": true,
+    "price": -135,
+    "prob": 0.603,
+    "same_game": false,
+    "side": "Pittsburgh",
+    "tip": "1:30 PM",
+    "type": "Moneyline",
+    "why": "Model 60% vs. market 54%"
+   }
+  ],
   "tot_diff": -2.9
  },
  "43c9888e11386fb7cd8000f3ffe347de": {
@@ -6462,12 +6758,32 @@
   "book_total": 159.5,
   "date": "2026-11-24",
   "diff": -5.6,
+  "green_plays": [
+   {
+    "book": "DK",
+    "game": "43f1834ce15a8fa15990477292bbd923",
+    "greens": [
+     "big_pick",
+     "road",
+     "dog"
+    ],
+    "line": 29.5,
+    "matchup": "UNC Asheville @ Florida St.",
+    "price": -112,
+    "prob": 0.5,
+    "side": "UNC Asheville",
+    "tip": "9:00 PM",
+    "tip_iso": "2026-11-25T02:00:00+00:00",
+    "type": "Spread",
+    "yellows": []
+   }
+  ],
   "home": "Florida St.",
   "home_conf": "ACC",
   "imp_away": 65.0,
   "imp_home": 94.5,
   "kp_home_wp": 0.967,
-  "locked_at": "2026-11-24 10:44",
+  "locked_at": "2026-11-24 10:45",
   "mkt_home_wp": 0.977,
   "ml_away": 4250.0,
   "ml_edge": 0.005,
@@ -6485,7 +6801,9 @@
   "proj_total": 158.6,
   "tip": "9:00 PM",
   "tip_iso": "2026-11-25T02:00:00+00:00",
+  "top5_dropped": null,
   "top_play": null,
+  "top_plays": null,
   "tot_diff": -0.9
  },
  "44061430be1aeb7eff6e79c0e48ecbb9": {
@@ -7505,12 +7823,13 @@
   "book_total": 154.5,
   "date": "2026-11-24",
   "diff": -1.6,
+  "green_plays": null,
   "home": "St. John's",
   "home_conf": "BE",
   "imp_away": 71.8,
   "imp_home": 82.8,
   "kp_home_wp": 0.764,
-  "locked_at": "2026-11-24 10:44",
+  "locked_at": "2026-11-24 10:45",
   "mkt_home_wp": 0.826,
   "ml_away": 450,
   "ml_edge": 0.031,
@@ -7528,7 +7847,9 @@
   "proj_total": 156.6,
   "tip": "10:30 PM",
   "tip_iso": "2026-11-25T03:30:00+00:00",
+  "top5_dropped": null,
   "top_play": null,
+  "top_plays": null,
   "tot_diff": 2.1
  },
  "4b25bcaf9f4a6dcfa8d36ebd39eb0c28": {
@@ -7699,12 +8020,32 @@
   "book_total": 149.5,
   "date": "2026-11-24",
   "diff": -6.8,
+  "green_plays": [
+   {
+    "book": "ESPN",
+    "game": "4dc8cb6a7648e8a24132baf3563d8887",
+    "greens": [
+     "big_pick",
+     "road",
+     "dog"
+    ],
+    "line": 31.5,
+    "matchup": "Evansville @ Missouri",
+    "price": -110,
+    "prob": 0.5,
+    "side": "Evansville",
+    "tip": "9:00 PM",
+    "tip_iso": "2026-11-25T02:00:00+00:00",
+    "type": "Spread",
+    "yellows": []
+   }
+  ],
   "home": "Missouri",
   "home_conf": "SEC",
   "imp_away": 59.0,
   "imp_home": 90.5,
   "kp_home_wp": 0.971,
-  "locked_at": "2026-11-24 10:44",
+  "locked_at": "2026-11-24 10:45",
   "mkt_home_wp": 0.973,
   "ml_away": 3500,
   "ml_edge": 0.001,
@@ -7722,7 +8063,25 @@
   "proj_total": 149.3,
   "tip": "9:00 PM",
   "tip_iso": "2026-11-25T02:00:00+00:00",
+  "top5_dropped": null,
   "top_play": null,
+  "top_plays": [
+   {
+    "be": 0.524,
+    "book": "ESPN",
+    "game": "4dc8cb6a7648e8a24132baf3563d8887",
+    "line": 31.5,
+    "matchup": "Evansville @ Missouri",
+    "neutral": false,
+    "price": -110,
+    "prob": 0.607,
+    "same_game": false,
+    "side": "Evansville",
+    "tip": "9:00 PM",
+    "type": "Spread",
+    "why": "KenPom +24.7 vs. line +31.5"
+   }
+  ],
   "tot_diff": -0.2
  },
  "4e0ceb792e0b56a12aa0feda82cd6a3b": {
@@ -8376,18 +8735,19 @@
   "book_total": 132.5,
   "date": "2026-11-24",
   "diff": 2.2,
+  "green_plays": null,
   "home": "Marist",
   "home_conf": "MC",
   "imp_away": 65.5,
   "imp_home": 67.0,
   "kp_home_wp": 0.612,
-  "locked_at": "2026-11-24 10:44",
-  "mkt_home_wp": 0.545,
+  "locked_at": "2026-11-24 10:45",
+  "mkt_home_wp": 0.541,
   "ml_away": 110,
-  "ml_edge": 0.033,
-  "ml_home": -135,
+  "ml_edge": 0.035,
+  "ml_home": -130,
   "ml_min_edge": 0.03,
-  "model_home_wp": 0.579,
+  "model_home_wp": 0.576,
   "neutral": false,
   "opened_spread": -4.5,
   "opened_total": 129.5,
@@ -8399,7 +8759,9 @@
   "proj_total": 130.1,
   "tip": "7:00 PM",
   "tip_iso": "2026-11-25T00:00:00+00:00",
+  "top5_dropped": null,
   "top_play": null,
+  "top_plays": null,
   "tot_diff": -2.4
  },
  "57ab6a3cf14dce84806a46770fa0bc59": {
@@ -8847,12 +9209,13 @@
   "book_total": 150.5,
   "date": "2026-11-24",
   "diff": 1.3,
+  "green_plays": null,
   "home": "Washington",
   "home_conf": "B10",
   "imp_away": 76.0,
   "imp_home": 74.5,
   "kp_home_wp": 0.495,
-  "locked_at": "2026-11-24 10:44",
+  "locked_at": "2026-11-24 10:45",
   "mkt_home_wp": 0.464,
   "ml_away": -125,
   "ml_edge": 0.015,
@@ -8870,7 +9233,9 @@
   "proj_total": 151.7,
   "tip": "8:00 PM",
   "tip_iso": "2026-11-25T01:00:18+00:00",
+  "top5_dropped": null,
   "top_play": null,
+  "top_plays": null,
   "tot_diff": 1.2
  },
  "5a237fcf6422f6a245d462ba2a6835dc": {
@@ -9019,12 +9384,13 @@
   "book_total": 165.5,
   "date": "2026-11-24",
   "diff": 1.2,
+  "green_plays": null,
   "home": "Grand Canyon",
   "home_conf": "MWC",
   "imp_away": 82.0,
   "imp_home": 83.5,
   "kp_home_wp": 0.583,
-  "locked_at": "2026-11-24 10:44",
+  "locked_at": "2026-11-24 10:45",
   "mkt_home_wp": 0.542,
   "ml_away": 110,
   "ml_edge": 0.021,
@@ -9042,7 +9408,9 @@
   "proj_total": 163.7,
   "tip": "9:30 PM",
   "tip_iso": "2026-11-25T02:30:00+00:00",
+  "top5_dropped": null,
   "top_play": null,
+  "top_plays": null,
   "tot_diff": -1.8
  },
  "5f2f53853b0d9aefa237d8c1959c4a9b": {
@@ -9445,12 +9813,13 @@
   "book_total": 151.5,
   "date": "2026-11-24",
   "diff": -0.8,
+  "green_plays": null,
   "home": "Notre Dame",
   "home_conf": "ACC",
   "imp_away": 65.5,
   "imp_home": 86.0,
   "kp_home_wp": 0.935,
-  "locked_at": "2026-11-24 10:44",
+  "locked_at": "2026-11-24 10:45",
   "mkt_home_wp": 0.945,
   "ml_away": 1600.0,
   "ml_edge": 0.005,
@@ -9468,7 +9837,9 @@
   "proj_total": 156.3,
   "tip": "8:00 PM",
   "tip_iso": "2026-11-25T01:00:00+00:00",
+  "top5_dropped": null,
   "top_play": null,
+  "top_plays": null,
   "tot_diff": 4.8
  },
  "6490128d2a737c7c4b91289a0b40a5d0": {
@@ -10103,12 +10474,13 @@
   "book_total": 152.5,
   "date": "2026-11-24",
   "diff": -1.5,
+  "green_plays": null,
   "home": "Florida",
   "home_conf": "SEC",
   "imp_away": 59.0,
   "imp_home": 93.5,
   "kp_home_wp": 0.994,
-  "locked_at": "2026-11-24 10:44",
+  "locked_at": "2026-11-24 10:45",
   "mkt_home_wp": null,
   "ml_away": null,
   "ml_edge": null,
@@ -10126,7 +10498,9 @@
   "proj_total": 158.6,
   "tip": "7:00 PM",
   "tip_iso": "2026-11-25T00:00:00+00:00",
+  "top5_dropped": null,
   "top_play": null,
+  "top_plays": null,
   "tot_diff": 6.1
  },
  "6a3539e00089c558aaee7d93f756c67b": {
@@ -10355,12 +10729,13 @@
   "book_total": 156.5,
   "date": "2026-11-24",
   "diff": -2.0,
+  "green_plays": null,
   "home": "Ohio St.",
   "home_conf": "B10",
   "imp_away": 79.0,
   "imp_home": 77.5,
   "kp_home_wp": 0.393,
-  "locked_at": "2026-11-24 10:44",
+  "locked_at": "2026-11-24 10:45",
   "mkt_home_wp": 0.456,
   "ml_away": -130,
   "ml_edge": 0.031,
@@ -10378,7 +10753,9 @@
   "proj_total": 152.7,
   "tip": "7:00 PM",
   "tip_iso": "2026-11-25T00:00:00+00:00",
+  "top5_dropped": null,
   "top_play": null,
+  "top_plays": null,
   "tot_diff": -3.8
  },
  "6d51497e3276256e5dd07220b624c37f": {
@@ -10588,18 +10965,19 @@
   "book_total": 171.5,
   "date": "2026-11-24",
   "diff": -3.3,
+  "green_plays": null,
   "home": "Wofford",
   "home_conf": "SC",
   "imp_away": 85.0,
   "imp_home": 86.5,
   "kp_home_wp": 0.445,
-  "locked_at": "2026-11-24 10:44",
-  "mkt_home_wp": 0.511,
-  "ml_away": -105,
+  "locked_at": "2026-11-24 10:45",
+  "mkt_home_wp": 0.512,
+  "ml_away": -102,
   "ml_edge": 0.033,
-  "ml_home": -115,
+  "ml_home": -118,
   "ml_min_edge": 0.03,
-  "model_home_wp": 0.478,
+  "model_home_wp": 0.479,
   "neutral": false,
   "opened_spread": -1.5,
   "opened_total": 172.5,
@@ -10611,7 +10989,9 @@
   "proj_total": 176.2,
   "tip": "6:00 PM",
   "tip_iso": "2026-11-24T23:00:00+00:00",
+  "top5_dropped": null,
   "top_play": null,
+  "top_plays": null,
   "tot_diff": 4.7
  },
  "6f09da9790643161b42ae87d69133782": {
@@ -10844,12 +11224,13 @@
   "book_total": 153.5,
   "date": "2026-11-24",
   "diff": -3.3,
+  "green_plays": null,
   "home": "Louisville",
   "home_conf": "ACC",
   "imp_away": 78.0,
   "imp_home": 75.5,
   "kp_home_wp": 0.328,
-  "locked_at": "2026-11-24 10:44",
+  "locked_at": "2026-11-24 10:45",
   "mkt_home_wp": 0.435,
   "ml_away": -145,
   "ml_edge": 0.053,
@@ -10867,7 +11248,25 @@
   "proj_total": 150.2,
   "tip": "8:00 PM",
   "tip_iso": "2026-11-25T01:00:00+00:00",
+  "top5_dropped": null,
   "top_play": null,
+  "top_plays": [
+   {
+    "be": 0.592,
+    "book": "median",
+    "game": "712c581bb2dc9c3072e5280bd6ccecc4",
+    "line": null,
+    "matchup": "Texas Tech @ Louisville",
+    "neutral": true,
+    "price": -145,
+    "prob": 0.619,
+    "same_game": false,
+    "side": "Texas Tech",
+    "tip": "8:00 PM",
+    "type": "Moneyline",
+    "why": "Model 62% vs. market 56%"
+   }
+  ],
   "tot_diff": -3.3
  },
  "71da7a3b35a159e0eda2605454c15805": {
@@ -10938,12 +11337,33 @@
   "book_total": 129.5,
   "date": "2026-11-24",
   "diff": -0.9,
+  "green_plays": [
+   {
+    "book": "FD",
+    "game": "72b630289253e0d84e7882c0f2106a48",
+    "greens": [
+     "road",
+     "dog"
+    ],
+    "line": 20.5,
+    "matchup": "New Hampshire @ Seton Hall",
+    "price": -104,
+    "prob": 0.5,
+    "side": "New Hampshire",
+    "tip": "7:00 PM",
+    "tip_iso": "2026-11-25T00:00:00+00:00",
+    "type": "Spread",
+    "yellows": [
+     "small_gap"
+    ]
+   }
+  ],
   "home": "Seton Hall",
   "home_conf": "BE",
   "imp_away": 54.5,
   "imp_home": 75.0,
   "kp_home_wp": 0.934,
-  "locked_at": "2026-11-24 10:44",
+  "locked_at": "2026-11-24 10:45",
   "mkt_home_wp": 0.951,
   "ml_away": 1825.0,
   "ml_edge": 0.009,
@@ -10961,7 +11381,9 @@
   "proj_total": 128.4,
   "tip": "7:00 PM",
   "tip_iso": "2026-11-25T00:00:00+00:00",
+  "top5_dropped": null,
   "top_play": null,
+  "top_plays": null,
   "tot_diff": -1.1
  },
  "73becee99238228e81a7770cea1108c8": {
@@ -11594,12 +12016,13 @@
   "book_total": 140.5,
   "date": "2026-11-24",
   "diff": -2.7,
+  "green_plays": null,
   "home": "Stanford",
   "home_conf": "ACC",
   "imp_away": 68.0,
   "imp_home": 72.5,
   "kp_home_wp": 0.554,
-  "locked_at": "2026-11-24 10:44",
+  "locked_at": "2026-11-24 10:45",
   "mkt_home_wp": 0.626,
   "ml_away": 154,
   "ml_edge": 0.036,
@@ -11617,7 +12040,9 @@
   "proj_total": 141.3,
   "tip": "11:59 PM",
   "tip_iso": "2026-11-25T04:59:00+00:00",
+  "top5_dropped": null,
   "top_play": null,
+  "top_plays": null,
   "tot_diff": 0.8
  },
  "7a7ea19f66aa175473014416c6d00417": {
@@ -11749,12 +12174,34 @@
   "book_total": 147.5,
   "date": "2026-11-24",
   "diff": -2.1,
+  "green_plays": [
+   {
+    "book": "ESPN",
+    "game": "7b26240263d57054f865ed13eadc3fc3",
+    "greens": [
+     "road",
+     "dog"
+    ],
+    "line": 17.5,
+    "matchup": "Delaware St. @ Chattanooga",
+    "price": -115,
+    "prob": 0.5,
+    "side": "Delaware St.",
+    "tip": "7:00 PM",
+    "tip_iso": "2026-11-25T00:00:00+00:00",
+    "type": "Spread",
+    "yellows": [
+     "mid_gap",
+     "mid_spread"
+    ]
+   }
+  ],
   "home": "Chattanooga",
   "home_conf": "SC",
   "imp_away": 65.5,
   "imp_home": 82.0,
   "kp_home_wp": 0.867,
-  "locked_at": "2026-11-24 10:44",
+  "locked_at": "2026-11-24 10:45",
   "mkt_home_wp": 0.919,
   "ml_away": 1100,
   "ml_edge": 0.026,
@@ -11772,7 +12219,9 @@
   "proj_total": 146.7,
   "tip": "7:00 PM",
   "tip_iso": "2026-11-25T00:00:00+00:00",
+  "top5_dropped": null,
   "top_play": null,
+  "top_plays": null,
   "tot_diff": -0.8
  },
  "7badad13b09c40df6ad6bed5dd5aa18f": {
@@ -12149,12 +12598,33 @@
   "book_total": 161.5,
   "date": "2026-11-24",
   "diff": -1.4,
+  "green_plays": [
+   {
+    "book": "BR",
+    "game": "7e24a7f74f41134d9a72a537af4cc663",
+    "greens": [
+     "road",
+     "dog"
+    ],
+    "line": 6.5,
+    "matchup": "Creighton @ Michigan",
+    "price": -113,
+    "prob": 0.5,
+    "side": "Creighton",
+    "tip": "5:30 PM",
+    "tip_iso": "2026-11-24T22:30:00+00:00",
+    "type": "Spread",
+    "yellows": [
+     "small_gap"
+    ]
+   }
+  ],
   "home": "Michigan",
   "home_conf": "B10",
   "imp_away": 78.0,
   "imp_home": 83.5,
   "kp_home_wp": 0.623,
-  "locked_at": "2026-11-24 10:44",
+  "locked_at": "2026-11-24 10:45",
   "mkt_home_wp": 0.682,
   "ml_away": 200,
   "ml_edge": 0.029,
@@ -12172,7 +12642,9 @@
   "proj_total": 160.1,
   "tip": "5:30 PM",
   "tip_iso": "2026-11-24T22:30:00+00:00",
+  "top5_dropped": null,
   "top_play": null,
+  "top_plays": null,
   "tot_diff": -1.4
  },
  "7ea8f401ad5b219d542a164aa94c023c": {
@@ -12301,12 +12773,34 @@
   "book_total": 157.5,
   "date": "2026-11-24",
   "diff": -3.3,
+  "green_plays": [
+   {
+    "book": "DK",
+    "game": "8007f744856111cf162e4770b19628a9",
+    "greens": [
+     "big_pick",
+     "road",
+     "dog"
+    ],
+    "line": 25.5,
+    "matchup": "Lipscomb @ Auburn",
+    "price": -115,
+    "prob": 0.5,
+    "side": "Lipscomb",
+    "tip": "8:00 PM",
+    "tip_iso": "2026-11-25T01:00:00+00:00",
+    "type": "Spread",
+    "yellows": [
+     "mid_gap"
+    ]
+   }
+  ],
   "home": "Auburn",
   "home_conf": "SEC",
   "imp_away": 66.5,
   "imp_home": 91.0,
   "kp_home_wp": 0.949,
-  "locked_at": "2026-11-24 10:44",
+  "locked_at": "2026-11-24 10:45",
   "mkt_home_wp": 0.967,
   "ml_away": 2900.0,
   "ml_edge": 0.009,
@@ -12324,7 +12818,9 @@
   "proj_total": 158.4,
   "tip": "8:00 PM",
   "tip_iso": "2026-11-25T01:00:00+00:00",
+  "top5_dropped": null,
   "top_play": null,
+  "top_plays": null,
   "tot_diff": 0.9
  },
  "800cf2e12ab8e83a5f1c8d234a963dfe": {
@@ -12411,24 +12907,25 @@
   "best_line": {
    "book": "ESPN",
    "point": -8.5,
-   "price": -120
+   "price": -110
   },
   "book_spread": 8.5,
-  "book_total": 148.5,
+  "book_total": 147.5,
   "date": "2026-11-24",
   "diff": -1.1,
+  "green_plays": null,
   "home": "San Francisco",
   "home_conf": "WCC",
-  "imp_away": 78.5,
-  "imp_home": 70.0,
+  "imp_away": 78.0,
+  "imp_home": 69.5,
   "kp_home_wp": 0.23,
-  "locked_at": "2026-11-24 10:44",
-  "mkt_home_wp": 0.218,
-  "ml_away": -455,
-  "ml_edge": -0.006,
-  "ml_home": 330,
+  "locked_at": "2026-11-24 10:45",
+  "mkt_home_wp": 0.225,
+  "ml_away": -430,
+  "ml_edge": -0.002,
+  "ml_home": 325,
   "ml_min_edge": 0.03,
-  "model_home_wp": 0.224,
+  "model_home_wp": 0.227,
   "neutral": true,
   "opened_spread": 9.0,
   "opened_total": 150.5,
@@ -12440,8 +12937,10 @@
   "proj_total": 151.1,
   "tip": "2:00 PM",
   "tip_iso": "2026-11-24T19:00:00+00:00",
+  "top5_dropped": null,
   "top_play": null,
-  "tot_diff": 2.6
+  "top_plays": null,
+  "tot_diff": 3.6
  },
  "81c7fbbb761806436869922f63aa1309": {
   "away": "UNC Asheville",
@@ -12990,12 +13489,34 @@
   "book_total": 144.5,
   "date": "2026-11-24",
   "diff": -0.1,
+  "green_plays": [
+   {
+    "book": "ESPN",
+    "game": "864548d14d1c51b9eb5c8124103739bd",
+    "greens": [
+     "road",
+     "dog"
+    ],
+    "line": 12.5,
+    "matchup": "Gardner Webb @ Bowling Green",
+    "price": -110,
+    "prob": 0.5,
+    "side": "Gardner Webb",
+    "tip": "7:00 PM",
+    "tip_iso": "2026-11-25T00:00:00+00:00",
+    "type": "Spread",
+    "yellows": [
+     "small_gap",
+     "mid_spread"
+    ]
+   }
+  ],
   "home": "Bowling Green",
   "home_conf": "MAC",
   "imp_away": 66.0,
   "imp_home": 78.5,
   "kp_home_wp": 0.83,
-  "locked_at": "2026-11-24 10:44",
+  "locked_at": "2026-11-24 10:45",
   "mkt_home_wp": 0.858,
   "ml_away": 575,
   "ml_edge": 0.014,
@@ -13013,7 +13534,9 @@
   "proj_total": 150.8,
   "tip": "7:00 PM",
   "tip_iso": "2026-11-25T00:00:00+00:00",
+  "top5_dropped": null,
   "top_play": null,
+  "top_plays": null,
   "tot_diff": 6.3
  },
  "86586898f0efe3edb5f5e176c8b12f3b": {
@@ -13261,12 +13784,13 @@
   "book_total": 135.5,
   "date": "2026-11-24",
   "diff": 0.9,
+  "green_plays": null,
   "home": "Harvard",
   "home_conf": "Ivy",
   "imp_away": 65.0,
   "imp_home": 70.5,
   "kp_home_wp": 0.688,
-  "locked_at": "2026-11-24 10:44",
+  "locked_at": "2026-11-24 10:45",
   "mkt_home_wp": 0.663,
   "ml_away": 185,
   "ml_edge": 0.012,
@@ -13284,7 +13808,9 @@
   "proj_total": 137.1,
   "tip": "7:00 PM",
   "tip_iso": "2026-11-25T00:00:00+00:00",
+  "top5_dropped": null,
   "top_play": null,
+  "top_plays": null,
   "tot_diff": 1.6
  },
  "8973c989f9e6975bd343485eade0a1dc": {
@@ -13343,12 +13869,13 @@
   "book_total": 142.5,
   "date": "2026-11-24",
   "diff": -0.2,
+  "green_plays": null,
   "home": "VMI",
   "home_conf": "SC",
   "imp_away": 68.5,
   "imp_home": 74.0,
   "kp_home_wp": 0.658,
-  "locked_at": "2026-11-24 10:44",
+  "locked_at": "2026-11-24 10:45",
   "mkt_home_wp": 0.659,
   "ml_away": 180,
   "ml_edge": 0.001,
@@ -13366,7 +13893,9 @@
   "proj_total": 143.1,
   "tip": "6:00 PM",
   "tip_iso": "2026-11-24T23:00:00+00:00",
+  "top5_dropped": null,
   "top_play": null,
+  "top_plays": null,
   "tot_diff": 0.6
  },
  "8a2eee51a0ee3244eb3467808fac1778": {
@@ -13781,12 +14310,13 @@
   "book_total": 147.5,
   "date": "2026-11-24",
   "diff": -2.8,
+  "green_plays": null,
   "home": "Kennesaw St.",
   "home_conf": "CUSA",
   "imp_away": 71.5,
   "imp_home": 76.0,
   "kp_home_wp": 0.551,
-  "locked_at": "2026-11-24 10:44",
+  "locked_at": "2026-11-24 10:45",
   "mkt_home_wp": 0.638,
   "ml_away": 165,
   "ml_edge": 0.043,
@@ -13804,7 +14334,9 @@
   "proj_total": 149.1,
   "tip": "6:00 PM",
   "tip_iso": "2026-11-24T23:00:00+00:00",
+  "top5_dropped": null,
   "top_play": null,
+  "top_plays": null,
   "tot_diff": 1.6
  },
  "8dac68fbecc816a6de76442cf1e28270": {
@@ -14008,12 +14540,13 @@
   "book_total": 163.5,
   "date": "2026-11-24",
   "diff": 1.2,
+  "green_plays": null,
   "home": "Boise St.",
   "home_conf": "P12",
   "imp_away": 72.5,
   "imp_home": 91.0,
   "kp_home_wp": 0.935,
-  "locked_at": "2026-11-24 10:44",
+  "locked_at": "2026-11-24 10:45",
   "mkt_home_wp": 0.931,
   "ml_away": 1300,
   "ml_edge": 0.002,
@@ -14031,7 +14564,9 @@
   "proj_total": 160.3,
   "tip": "9:00 PM",
   "tip_iso": "2026-11-25T02:00:00+00:00",
+  "top5_dropped": null,
   "top_play": null,
+  "top_plays": null,
   "tot_diff": -3.2
  },
  "919bc2e81b79f536852f7e3aa2ec7754": {
@@ -14222,12 +14757,13 @@
   "book_total": 154.5,
   "date": "2026-11-24",
   "diff": -1.1,
+  "green_plays": null,
   "home": "Bellarmine",
   "home_conf": "ASun",
   "imp_away": 78.0,
   "imp_home": 76.5,
   "kp_home_wp": 0.42,
-  "locked_at": "2026-11-24 10:44",
+  "locked_at": "2026-11-24 10:45",
   "mkt_home_wp": 0.464,
   "ml_away": -130,
   "ml_edge": 0.022,
@@ -14245,7 +14781,9 @@
   "proj_total": 152.7,
   "tip": "7:00 PM",
   "tip_iso": "2026-11-25T00:00:00+00:00",
+  "top5_dropped": null,
   "top_play": null,
+  "top_plays": null,
   "tot_diff": -1.8
  },
  "959b0c06d319a076c7268c6093c09d08": {
@@ -14334,12 +14872,13 @@
   "book_total": 135.5,
   "date": "2026-11-24",
   "diff": 1.1,
+  "green_plays": null,
   "home": "Yale",
   "home_conf": "Ivy",
   "imp_away": 68.5,
   "imp_home": 67.0,
   "kp_home_wp": 0.486,
-  "locked_at": "2026-11-24 10:44",
+  "locked_at": "2026-11-24 10:45",
   "mkt_home_wp": 0.502,
   "ml_away": -110,
   "ml_edge": -0.008,
@@ -14357,7 +14896,9 @@
   "proj_total": 133.6,
   "tip": "3:00 PM",
   "tip_iso": "2026-11-24T20:00:00+00:00",
+  "top5_dropped": null,
   "top_play": null,
+  "top_plays": null,
   "tot_diff": -1.9
  },
  "988091cc2c64949c28e2aa6a677ef63f": {
@@ -14409,21 +14950,22 @@
    "price": -105
   },
   "book_spread": 3.5,
-  "book_total": 156.5,
+  "book_total": 155.5,
   "date": "2026-11-24",
   "diff": 2.6,
+  "green_plays": null,
   "home": "Robert Morris",
   "home_conf": "Horz",
-  "imp_away": 80.0,
-  "imp_home": 76.5,
+  "imp_away": 79.5,
+  "imp_home": 76.0,
   "kp_home_wp": 0.473,
-  "locked_at": "2026-11-24 10:44",
-  "mkt_home_wp": 0.412,
-  "ml_away": -160,
-  "ml_edge": 0.03,
-  "ml_home": 135,
+  "locked_at": "2026-11-24 10:45",
+  "mkt_home_wp": 0.414,
+  "ml_away": -155,
+  "ml_edge": 0.029,
+  "ml_home": 130,
   "ml_min_edge": 0.03,
-  "model_home_wp": 0.442,
+  "model_home_wp": 0.443,
   "neutral": true,
   "opened_spread": 3.5,
   "opened_total": 157.5,
@@ -14435,8 +14977,10 @@
   "proj_total": 151.1,
   "tip": "6:30 PM",
   "tip_iso": "2026-11-24T23:30:00+00:00",
+  "top5_dropped": null,
   "top_play": null,
-  "tot_diff": -5.4
+  "top_plays": null,
+  "tot_diff": -4.4
  },
  "98a0b4549739cc028ffa9665d77d7ffd": {
   "away": "Northern Iowa",
@@ -14632,12 +15176,13 @@
   "book_total": 137.5,
   "date": "2026-11-24",
   "diff": 0.2,
+  "green_plays": null,
   "home": "Lehigh",
   "home_conf": "PL",
   "imp_away": 64.5,
   "imp_home": 73.0,
   "kp_home_wp": 0.748,
-  "locked_at": "2026-11-24 10:44",
+  "locked_at": "2026-11-24 10:45",
   "mkt_home_wp": 0.778,
   "ml_away": 325,
   "ml_edge": -0.015,
@@ -14655,7 +15200,9 @@
   "proj_total": 133.1,
   "tip": "7:00 PM",
   "tip_iso": "2026-11-25T00:00:00+00:00",
+  "top5_dropped": null,
   "top_play": null,
+  "top_plays": null,
   "tot_diff": -4.4
  },
  "9c21bbabccdd9d32f5b61b32dbdc8bbf": {
@@ -15889,12 +16436,13 @@
   "book_total": 163.5,
   "date": "2026-11-24",
   "diff": 1.6,
+  "green_plays": null,
   "home": "Tennessee Tech",
   "home_conf": "SC",
   "imp_away": 74.0,
   "imp_home": 89.5,
   "kp_home_wp": 0.905,
-  "locked_at": "2026-11-24 10:44",
+  "locked_at": "2026-11-24 10:45",
   "mkt_home_wp": 0.907,
   "ml_away": 920,
   "ml_edge": -0.001,
@@ -15912,7 +16460,9 @@
   "proj_total": 163.7,
   "tip": "7:30 PM",
   "tip_iso": "2026-11-25T00:30:00+00:00",
+  "top5_dropped": null,
   "top_play": null,
+  "top_plays": null,
   "tot_diff": 0.2
  },
  "a80c8cd90f57a1445908c3a17489fd4a": {
@@ -16139,12 +16689,13 @@
   "book_total": 158.5,
   "date": "2026-11-24",
   "diff": 3.0,
+  "green_plays": null,
   "home": "Long Beach St.",
   "home_conf": "BW",
   "imp_away": 81.5,
   "imp_home": 77.0,
   "kp_home_wp": 0.455,
-  "locked_at": "2026-11-24 10:44",
+  "locked_at": "2026-11-24 10:45",
   "mkt_home_wp": 0.351,
   "ml_away": -215,
   "ml_edge": 0.052,
@@ -16162,7 +16713,9 @@
   "proj_total": 157.6,
   "tip": "3:30 PM",
   "tip_iso": "2026-11-24T20:30:24+00:00",
+  "top5_dropped": null,
   "top_play": null,
+  "top_plays": null,
   "tot_diff": -0.9
  },
  "aa6958669267e89ebd0199aafe08ecc1": {
@@ -16211,12 +16764,13 @@
   "book_total": 158.5,
   "date": "2026-11-24",
   "diff": -1.1,
+  "green_plays": null,
   "home": "BYU",
   "home_conf": "B12",
   "imp_away": 80.0,
   "imp_home": 78.5,
   "kp_home_wp": 0.422,
-  "locked_at": "2026-11-24 10:44",
+  "locked_at": "2026-11-24 10:45",
   "mkt_home_wp": 0.493,
   "ml_away": -115,
   "ml_edge": 0.036,
@@ -16234,7 +16788,9 @@
   "proj_total": 156.2,
   "tip": "2:30 PM",
   "tip_iso": "2026-11-24T19:30:00+00:00",
+  "top5_dropped": null,
   "top_play": null,
+  "top_plays": null,
   "tot_diff": -2.3
  },
  "aabd4765f0dc05132c1761f94484513a": {
@@ -17116,12 +17672,13 @@
   "book_total": 133.5,
   "date": "2026-11-24",
   "diff": 0.9,
+  "green_plays": null,
   "home": "Lindenwood",
   "home_conf": "OVC",
   "imp_away": 66.0,
   "imp_home": 67.5,
   "kp_home_wp": 0.574,
-  "locked_at": "2026-11-24 10:44",
+  "locked_at": "2026-11-24 10:45",
   "mkt_home_wp": 0.541,
   "ml_away": 110,
   "ml_edge": 0.017,
@@ -17139,7 +17696,9 @@
   "proj_total": 129.3,
   "tip": "4:00 PM",
   "tip_iso": "2026-11-24T21:00:00+00:00",
+  "top5_dropped": null,
   "top_play": null,
+  "top_plays": null,
   "tot_diff": -4.2
  },
  "b4bbd44c8aa7ec31c09e5e719ad5f874": {
@@ -17681,12 +18240,13 @@
   "book_total": 155.5,
   "date": "2026-11-24",
   "diff": 1.8,
+  "green_plays": null,
   "home": "Air Force",
   "home_conf": "MWC",
   "imp_away": 76.0,
   "imp_home": 79.5,
   "kp_home_wp": 0.659,
-  "locked_at": "2026-11-24 10:44",
+  "locked_at": "2026-11-24 10:45",
   "mkt_home_wp": 0.606,
   "ml_away": 142,
   "ml_edge": 0.026,
@@ -17704,7 +18264,27 @@
   "proj_total": 153.4,
   "tip": "8:00 PM",
   "tip_iso": "2026-11-25T01:00:00+00:00",
+  "top5_dropped": [
+   {
+    "be": 0.63,
+    "book": "median",
+    "game": "b96a1616ca40a186cf203b892683f222",
+    "line": null,
+    "matchup": "Army @ Air Force",
+    "neutral": true,
+    "price": -170,
+    "prob": 0.633,
+    "red_flag": "Air Force has been trailing its KenPom projection; Army has been beating its KenPom projection",
+    "same_game": false,
+    "side": "Air Force",
+    "tip": "8:00 PM",
+    "type": "Moneyline",
+    "why": "Model 63% vs. market 61%",
+    "would_rank": 3
+   }
+  ],
   "top_play": null,
+  "top_plays": null,
   "tot_diff": -2.1
  },
  "b9ceae88b150b85cac57b2c1a4f3d29c": {
@@ -18099,12 +18679,13 @@
   "book_total": 142.5,
   "date": "2026-11-24",
   "diff": 2.7,
+  "green_plays": null,
   "home": "Rice",
   "home_conf": "Amer",
   "imp_away": 75.0,
   "imp_home": 67.5,
   "kp_home_wp": 0.356,
-  "locked_at": "2026-11-24 10:44",
+  "locked_at": "2026-11-24 10:45",
   "mkt_home_wp": 0.275,
   "ml_away": -310,
   "ml_edge": 0.04,
@@ -18122,7 +18703,9 @@
   "proj_total": 144.4,
   "tip": "1:30 PM",
   "tip_iso": "2026-11-24T18:30:00+00:00",
+  "top5_dropped": null,
   "top_play": null,
+  "top_plays": null,
   "tot_diff": 1.9
  },
  "c027a1281dd4c9e8ac848bc06f0e29fb": {
@@ -18137,12 +18720,33 @@
   "book_total": 141.5,
   "date": "2026-11-24",
   "diff": -1.0,
+  "green_plays": [
+   {
+    "book": "ESPN",
+    "game": "c027a1281dd4c9e8ac848bc06f0e29fb",
+    "greens": [
+     "road",
+     "dog"
+    ],
+    "line": 2.5,
+    "matchup": "Belmont @ Akron",
+    "price": -110,
+    "prob": 0.5,
+    "side": "Belmont",
+    "tip": "12:30 PM",
+    "tip_iso": "2026-11-24T17:30:00+00:00",
+    "type": "Spread",
+    "yellows": [
+     "small_gap"
+    ]
+   }
+  ],
   "home": "Akron",
   "home_conf": "MAC",
   "imp_away": 69.5,
   "imp_home": 72.0,
   "kp_home_wp": 0.545,
-  "locked_at": "2026-11-24 10:44",
+  "locked_at": "2026-11-24 10:45",
   "mkt_home_wp": 0.571,
   "ml_away": 125,
   "ml_edge": 0.013,
@@ -18160,7 +18764,9 @@
   "proj_total": 137.3,
   "tip": "12:30 PM",
   "tip_iso": "2026-11-24T17:30:00+00:00",
+  "top5_dropped": null,
   "top_play": null,
+  "top_plays": null,
   "tot_diff": -4.2
  },
  "c05c24a9aaf1a719055cd45cebb655c6": {
@@ -18293,12 +18899,13 @@
   "book_total": 159.5,
   "date": "2026-11-24",
   "diff": 0.4,
+  "green_plays": null,
   "home": "Florida Atlantic",
   "home_conf": "Amer",
   "imp_away": 76.0,
   "imp_home": 83.5,
   "kp_home_wp": 0.729,
-  "locked_at": "2026-11-24 10:44",
+  "locked_at": "2026-11-24 10:45",
   "mkt_home_wp": 0.718,
   "ml_away": 240,
   "ml_edge": 0.005,
@@ -18316,7 +18923,9 @@
   "proj_total": 160.5,
   "tip": "6:00 PM",
   "tip_iso": "2026-11-24T23:00:00+00:00",
+  "top5_dropped": null,
   "top_play": null,
+  "top_plays": null,
   "tot_diff": 1.0
  },
  "c22529a778dfb8b70f9e62a6ea96bb2e": {
@@ -18697,12 +19306,33 @@
   "book_total": 149.5,
   "date": "2026-11-24",
   "diff": -1.3,
+  "green_plays": [
+   {
+    "book": "ESPN",
+    "game": "c431e5cece6a42f0acf8f2898b29e83e",
+    "greens": [
+     "road",
+     "dog"
+    ],
+    "line": 4.5,
+    "matchup": "New Mexico St. @ Ohio",
+    "price": -105,
+    "prob": 0.5,
+    "side": "New Mexico St.",
+    "tip": "11:00 AM",
+    "tip_iso": "2026-11-24T16:00:00+00:00",
+    "type": "Spread",
+    "yellows": [
+     "small_gap"
+    ]
+   }
+  ],
   "home": "Ohio",
   "home_conf": "MAC",
   "imp_away": 72.5,
   "imp_home": 77.0,
   "kp_home_wp": 0.597,
-  "locked_at": "2026-11-24 10:44",
+  "locked_at": "2026-11-24 10:45",
   "mkt_home_wp": 0.653,
   "ml_away": 180,
   "ml_edge": 0.028,
@@ -18720,7 +19350,9 @@
   "proj_total": 153.0,
   "tip": "11:00 AM",
   "tip_iso": "2026-11-24T16:00:00+00:00",
+  "top5_dropped": null,
   "top_play": null,
+  "top_plays": null,
   "tot_diff": 3.5
  },
  "c46da6a53c1f49f293220108329947f0": {
@@ -18989,12 +19621,13 @@
   "book_total": 142.5,
   "date": "2026-11-24",
   "diff": 2.8,
+  "green_plays": null,
   "home": "Penn",
   "home_conf": "Ivy",
   "imp_away": 68.5,
   "imp_home": 74.0,
   "kp_home_wp": 0.738,
-  "locked_at": "2026-11-24 10:44",
+  "locked_at": "2026-11-24 10:45",
   "mkt_home_wp": 0.683,
   "ml_away": 200,
   "ml_edge": 0.028,
@@ -19012,7 +19645,9 @@
   "proj_total": 149.7,
   "tip": "8:00 PM",
   "tip_iso": "2026-11-25T01:00:00+00:00",
+  "top5_dropped": null,
   "top_play": null,
+  "top_plays": null,
   "tot_diff": 7.2
  },
  "c9d6c86cc70b0ff1c34ab46d27686e4c": {
@@ -19363,12 +19998,34 @@
   "book_total": 144.5,
   "date": "2026-11-24",
   "diff": -4.9,
+  "green_plays": [
+   {
+    "book": "FD",
+    "game": "cd53ee535b2696ad269d2a8411ee5e44",
+    "greens": [
+     "big_pick",
+     "road",
+     "dog"
+    ],
+    "line": 32.5,
+    "matchup": "Coppin St. @ Villanova",
+    "price": -104,
+    "prob": 0.5,
+    "side": "Coppin St.",
+    "tip": "7:00 PM",
+    "tip_iso": "2026-11-25T00:00:00+00:00",
+    "type": "Spread",
+    "yellows": [
+     "mid_gap"
+    ]
+   }
+  ],
   "home": "Villanova",
   "home_conf": "BE",
   "imp_away": 56.0,
   "imp_home": 88.5,
   "kp_home_wp": 0.983,
-  "locked_at": "2026-11-24 10:44",
+  "locked_at": "2026-11-24 10:45",
   "mkt_home_wp": null,
   "ml_away": null,
   "ml_edge": null,
@@ -19386,7 +20043,9 @@
   "proj_total": 139.8,
   "tip": "7:00 PM",
   "tip_iso": "2026-11-25T00:00:00+00:00",
+  "top5_dropped": null,
   "top_play": null,
+  "top_plays": null,
   "tot_diff": -4.7
  },
  "cd5851d9377b5aa32b67f9c534385a0c": {
@@ -19622,12 +20281,13 @@
   "book_total": 146.5,
   "date": "2026-11-24",
   "diff": -4.3,
+  "green_plays": null,
   "home": "Indiana",
   "home_conf": "B10",
   "imp_away": 59.5,
   "imp_home": 87.0,
   "kp_home_wp": 0.963,
-  "locked_at": "2026-11-24 10:44",
+  "locked_at": "2026-11-24 10:45",
   "mkt_home_wp": 0.975,
   "ml_away": 3750.0,
   "ml_edge": 0.006,
@@ -19645,7 +20305,9 @@
   "proj_total": 148.5,
   "tip": "7:00 PM",
   "tip_iso": "2026-11-25T00:00:00+00:00",
+  "top5_dropped": null,
   "top_play": null,
+  "top_plays": null,
   "tot_diff": 2.0
  },
  "ce18dbed2bcc407de6487a10df8f1771": {
@@ -19808,12 +20470,33 @@
   "book_total": 143.5,
   "date": "2026-11-24",
   "diff": -0.8,
+  "green_plays": [
+   {
+    "book": "FD",
+    "game": "cebf116689f6c16151415bb0f130dc5b",
+    "greens": [
+     "road",
+     "dog"
+    ],
+    "line": 1.5,
+    "matchup": "Illinois St. @ Tulsa",
+    "price": -122,
+    "prob": 0.5,
+    "side": "Illinois St.",
+    "tip": "4:30 PM",
+    "tip_iso": "2026-11-24T21:30:00+00:00",
+    "type": "Spread",
+    "yellows": [
+     "small_gap"
+    ]
+   }
+  ],
   "home": "Tulsa",
   "home_conf": "Amer",
   "imp_away": 71.0,
   "imp_home": 72.5,
   "kp_home_wp": 0.521,
-  "locked_at": "2026-11-24 10:44",
+  "locked_at": "2026-11-24 10:45",
   "mkt_home_wp": 0.515,
   "ml_away": -105,
   "ml_edge": -0.003,
@@ -19831,7 +20514,9 @@
   "proj_total": 146.4,
   "tip": "4:30 PM",
   "tip_iso": "2026-11-24T21:30:00+00:00",
+  "top5_dropped": null,
   "top_play": null,
+  "top_plays": null,
   "tot_diff": 2.9
  },
  "cee986e39a59f8a4fbc4ca2d0fc1c828": {
@@ -20626,12 +21311,13 @@
   "book_total": 140.5,
   "date": "2026-11-24",
   "diff": -1.2,
+  "green_plays": null,
   "home": "Duquesne",
   "home_conf": "A10",
   "imp_away": 75.0,
   "imp_home": 65.5,
   "kp_home_wp": 0.205,
-  "locked_at": "2026-11-24 10:44",
+  "locked_at": "2026-11-24 10:45",
   "mkt_home_wp": 0.194,
   "ml_away": -520,
   "ml_edge": -0.006,
@@ -20649,7 +21335,9 @@
   "proj_total": 142.5,
   "tip": "7:30 PM",
   "tip_iso": "2026-11-25T00:30:39+00:00",
+  "top5_dropped": null,
   "top_play": null,
+  "top_plays": null,
   "tot_diff": 2.0
  },
  "d6615873be75fcb42a72a8f14c93dd53": {
@@ -21031,12 +21719,13 @@
   "book_total": 159.5,
   "date": "2026-11-24",
   "diff": 0.6,
+  "green_plays": null,
   "home": "Rutgers",
   "home_conf": "B10",
   "imp_away": 68.5,
   "imp_home": 91.0,
   "kp_home_wp": 0.962,
-  "locked_at": "2026-11-24 10:44",
+  "locked_at": "2026-11-24 10:45",
   "mkt_home_wp": 0.955,
   "ml_away": 1900.0,
   "ml_edge": 0.004,
@@ -21054,7 +21743,9 @@
   "proj_total": 161.6,
   "tip": "6:00 PM",
   "tip_iso": "2026-11-24T23:00:00+00:00",
+  "top5_dropped": null,
   "top_play": null,
+  "top_plays": null,
   "tot_diff": 2.1
  },
  "da0659a81b6c52abe99dc5e07b1434a8": {
@@ -21966,12 +22657,13 @@
   "book_total": 159.5,
   "date": "2026-11-24",
   "diff": -3.5,
+  "green_plays": null,
   "home": "Siena",
   "home_conf": "MC",
   "imp_away": 77.5,
   "imp_home": 82.0,
   "kp_home_wp": 0.529,
-  "locked_at": "2026-11-24 10:44",
+  "locked_at": "2026-11-24 10:45",
   "mkt_home_wp": 0.632,
   "ml_away": 160,
   "ml_edge": 0.051,
@@ -21989,7 +22681,9 @@
   "proj_total": 156.8,
   "tip": "7:00 PM",
   "tip_iso": "2026-11-25T00:00:00+00:00",
+  "top5_dropped": null,
   "top_play": null,
+  "top_plays": null,
   "tot_diff": -2.7
  },
  "e230b04451f3fe3dbfd9cdf83dc15792": {
@@ -22004,12 +22698,13 @@
   "book_total": 154.5,
   "date": "2026-11-24",
   "diff": -3.3,
+  "green_plays": null,
   "home": "Weber St.",
   "home_conf": "BSky",
   "imp_away": 76.5,
   "imp_home": 78.0,
   "kp_home_wp": 0.444,
-  "locked_at": "2026-11-24 10:44",
+  "locked_at": "2026-11-24 10:45",
   "mkt_home_wp": 0.511,
   "ml_away": -105,
   "ml_edge": 0.033,
@@ -22027,7 +22722,9 @@
   "proj_total": 159.9,
   "tip": "7:00 PM",
   "tip_iso": "2026-11-25T00:00:00+00:00",
+  "top5_dropped": null,
   "top_play": null,
+  "top_plays": null,
   "tot_diff": 5.4
  },
  "e2baa1761bf490b07c8b58ebff39cbfd": {
@@ -22304,12 +23001,13 @@
   "book_total": 161.5,
   "date": "2026-11-24",
   "diff": 1.2,
+  "green_plays": null,
   "home": "Georgia Tech",
   "home_conf": "ACC",
   "imp_away": 75.5,
   "imp_home": 86.0,
   "kp_home_wp": 0.817,
-  "locked_at": "2026-11-24 10:44",
+  "locked_at": "2026-11-24 10:45",
   "mkt_home_wp": 0.817,
   "ml_away": 425,
   "ml_edge": -0.0,
@@ -22327,7 +23025,9 @@
   "proj_total": 161.5,
   "tip": "7:00 PM",
   "tip_iso": "2026-11-25T00:00:00+00:00",
+  "top5_dropped": null,
   "top_play": null,
+  "top_plays": null,
   "tot_diff": 0.0
  },
  "e67728580d608d1ac0d327750a3c7bd7": {
@@ -22831,12 +23531,13 @@
   "book_total": 143.5,
   "date": "2026-11-24",
   "diff": 1.3,
+  "green_plays": null,
   "home": "Wyoming",
   "home_conf": "MWC",
   "imp_away": 67.5,
   "imp_home": 76.0,
   "kp_home_wp": 0.775,
-  "locked_at": "2026-11-24 10:44",
+  "locked_at": "2026-11-24 10:45",
   "mkt_home_wp": 0.766,
   "ml_away": 305.0,
   "ml_edge": 0.005,
@@ -22854,7 +23555,9 @@
   "proj_total": 142.2,
   "tip": "5:30 PM",
   "tip_iso": "2026-11-24T22:30:00+00:00",
+  "top5_dropped": null,
   "top_play": null,
+  "top_plays": null,
   "tot_diff": -1.3
  },
  "ee1434c68caaef481b4433fdfb2c8164": {
@@ -22869,12 +23572,13 @@
   "book_total": 145.5,
   "date": "2026-11-24",
   "diff": 1.9,
+  "green_plays": null,
   "home": "Kansas City",
   "home_conf": "Sum",
   "imp_away": 72.0,
   "imp_home": 73.5,
   "kp_home_wp": 0.603,
-  "locked_at": "2026-11-24 10:44",
+  "locked_at": "2026-11-24 10:45",
   "mkt_home_wp": 0.513,
   "ml_away": -105,
   "ml_edge": 0.045,
@@ -22892,7 +23596,9 @@
   "proj_total": 147.4,
   "tip": "8:00 PM",
   "tip_iso": "2026-11-25T01:00:00+00:00",
+  "top5_dropped": null,
   "top_play": null,
+  "top_plays": null,
   "tot_diff": 1.9
  },
  "ee60227ebc2b7010926e7a40c97a6409": {
@@ -22941,12 +23647,34 @@
   "book_total": 152.5,
   "date": "2026-11-24",
   "diff": -2.3,
+  "green_plays": [
+   {
+    "book": "MGM",
+    "game": "efbf615ae4d7d1ab262bb4158cada8db",
+    "greens": [
+     "road",
+     "dog"
+    ],
+    "line": 18.5,
+    "matchup": "Stetson @ South Florida",
+    "price": -110,
+    "prob": 0.5,
+    "side": "Stetson",
+    "tip": "7:00 PM",
+    "tip_iso": "2026-11-25T00:00:00+00:00",
+    "type": "Spread",
+    "yellows": [
+     "mid_gap",
+     "mid_spread"
+    ]
+   }
+  ],
   "home": "South Florida",
   "home_conf": "Amer",
   "imp_away": 67.0,
   "imp_home": 85.5,
   "kp_home_wp": 0.893,
-  "locked_at": "2026-11-24 10:44",
+  "locked_at": "2026-11-24 10:45",
   "mkt_home_wp": 0.925,
   "ml_away": 1175.0,
   "ml_edge": 0.016,
@@ -22964,7 +23692,9 @@
   "proj_total": 153.4,
   "tip": "7:00 PM",
   "tip_iso": "2026-11-25T00:00:00+00:00",
+  "top5_dropped": null,
   "top_play": null,
+  "top_plays": null,
   "tot_diff": 0.9
  },
  "f01d24c5ed66f5adf7bb2e2a7760e9c8": {
@@ -23121,12 +23851,13 @@
   "book_total": 144.5,
   "date": "2026-11-24",
   "diff": -0.5,
+  "green_plays": null,
   "home": "Northern Colorado",
   "home_conf": "BSky",
   "imp_away": 71.0,
   "imp_home": 73.5,
   "kp_home_wp": 0.562,
-  "locked_at": "2026-11-24 10:44",
+  "locked_at": "2026-11-24 10:45",
   "mkt_home_wp": 0.583,
   "ml_away": 130,
   "ml_edge": 0.011,
@@ -23144,7 +23875,9 @@
   "proj_total": 148.6,
   "tip": "12:30 PM",
   "tip_iso": "2026-11-24T17:30:00+00:00",
+  "top5_dropped": null,
   "top_play": null,
+  "top_plays": null,
   "tot_diff": 4.1
  },
  "f1b87f5055c345501b45a893f6866c00": {
@@ -23602,12 +24335,13 @@
   "book_total": 154.5,
   "date": "2026-11-24",
   "diff": 0.8,
+  "green_plays": null,
   "home": "Cornell",
   "home_conf": "Ivy",
   "imp_away": 72.0,
   "imp_home": 82.5,
   "kp_home_wp": 0.808,
-  "locked_at": "2026-11-24 10:44",
+  "locked_at": "2026-11-24 10:45",
   "mkt_home_wp": 0.829,
   "ml_away": 450,
   "ml_edge": -0.01,
@@ -23625,7 +24359,9 @@
   "proj_total": 151.9,
   "tip": "8:00 PM",
   "tip_iso": "2026-11-25T01:00:00+00:00",
+  "top5_dropped": null,
   "top_play": null,
+  "top_plays": null,
   "tot_diff": -2.6
  },
  "f6407650f13adaa2fc13d17570ef3327": {
@@ -23763,12 +24499,13 @@
   "book_total": 148.5,
   "date": "2026-11-24",
   "diff": 0.7,
+  "green_plays": null,
   "home": "Coastal Carolina",
   "home_conf": "SB",
   "imp_away": 73.5,
   "imp_home": 75.0,
   "kp_home_wp": 0.567,
-  "locked_at": "2026-11-24 10:44",
+  "locked_at": "2026-11-24 10:45",
   "mkt_home_wp": 0.509,
   "ml_away": -105,
   "ml_edge": 0.029,
@@ -23786,7 +24523,9 @@
   "proj_total": 149.8,
   "tip": "7:00 PM",
   "tip_iso": "2026-11-25T00:00:00+00:00",
+  "top5_dropped": null,
   "top_play": null,
+  "top_plays": null,
   "tot_diff": 1.3
  },
  "f7bec1958c714efb98e1826c5496fb5c": {
@@ -23869,12 +24608,13 @@
   "book_total": 149.5,
   "date": "2026-11-24",
   "diff": 2.3,
+  "green_plays": null,
   "home": "UT Arlington",
   "home_conf": "UAC",
   "imp_away": 72.5,
   "imp_home": 77.0,
   "kp_home_wp": 0.701,
-  "locked_at": "2026-11-24 10:44",
+  "locked_at": "2026-11-24 10:45",
   "mkt_home_wp": 0.645,
   "ml_away": 170,
   "ml_edge": 0.028,
@@ -23892,7 +24632,27 @@
   "proj_total": 150.8,
   "tip": "8:00 PM",
   "tip_iso": "2026-11-25T01:00:00+00:00",
+  "top5_dropped": [
+   {
+    "be": 0.672,
+    "book": "median",
+    "game": "f7d009960feda2b039e5f3a0ada2220f",
+    "line": null,
+    "matchup": "Oral Roberts @ UT Arlington",
+    "neutral": false,
+    "price": -205,
+    "prob": 0.673,
+    "red_flag": "Oral Roberts has been beating its KenPom projection",
+    "same_game": false,
+    "side": "UT Arlington",
+    "tip": "8:00 PM",
+    "type": "Moneyline",
+    "why": "Model 67% vs. market 64%",
+    "would_rank": 1
+   }
+  ],
   "top_play": null,
+  "top_plays": null,
   "tot_diff": 1.3
  },
  "f8912bd0c3c303a795510b502cc81dfa": {
@@ -24435,12 +25195,13 @@
   "book_total": 155.5,
   "date": "2026-11-24",
   "diff": -1.5,
+  "green_plays": null,
   "home": "Washington St.",
   "home_conf": "P12",
   "imp_away": 75.0,
   "imp_home": 80.5,
   "kp_home_wp": 0.62,
-  "locked_at": "2026-11-24 10:44",
+  "locked_at": "2026-11-24 10:45",
   "mkt_home_wp": 0.662,
   "ml_away": 180,
   "ml_edge": 0.021,
@@ -24458,7 +25219,9 @@
   "proj_total": 155.8,
   "tip": "9:00 PM",
   "tip_iso": "2026-11-25T02:00:00+00:00",
+  "top5_dropped": null,
   "top_play": null,
+  "top_plays": null,
   "tot_diff": 0.3
  },
  "fd4d53d6aab2a2562f89bda0add41f92": {
@@ -24602,12 +25365,33 @@
   "book_total": 149.5,
   "date": "2026-11-24",
   "diff": -1.3,
+  "green_plays": [
+   {
+    "book": "ESPN",
+    "game": "fe27496cb1eb4ae152d0598f1d70e8dc",
+    "greens": [
+     "road",
+     "dog"
+    ],
+    "line": 2.5,
+    "matchup": "UTEP @ Charleston",
+    "price": -110,
+    "prob": 0.5,
+    "side": "UTEP",
+    "tip": "8:30 PM",
+    "tip_iso": "2026-11-25T01:30:00+00:00",
+    "type": "Spread",
+    "yellows": [
+     "small_gap"
+    ]
+   }
+  ],
   "home": "Charleston",
   "home_conf": "CAA",
   "imp_away": 73.5,
   "imp_home": 76.0,
   "kp_home_wp": 0.538,
-  "locked_at": "2026-11-24 10:44",
+  "locked_at": "2026-11-24 10:45",
   "mkt_home_wp": 0.555,
   "ml_away": 115,
   "ml_edge": 0.008,
@@ -24625,7 +25409,9 @@
   "proj_total": 148.0,
   "tip": "8:30 PM",
   "tip_iso": "2026-11-25T01:30:00+00:00",
+  "top5_dropped": null,
   "top_play": null,
+  "top_plays": null,
   "tot_diff": -1.5
  },
  "ffb5a6ab57400f7a34aa9891b5c1ca9f": {
