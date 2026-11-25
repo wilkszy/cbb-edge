@@ -318,6 +318,8 @@ CATS = [
     ("dog", "Underdog", "spread", lambda r: (r["pick"] == r["home"]) == (r["book_spread"] > 0)),
     ("fav", "Favorite", "spread", lambda r: (r["pick"] == r["home"]) != (r["book_spread"] > 0)),
     ("mid_spread", "Spread 10 to 20", "spread", lambda r: 10 <= abs(r["book_spread"]) <= 20),
+    ("neutral_dog", "Neutral-site underdog", "spread",
+     lambda r: bool(r.get("neutral")) and (r["pick"] == r["home"]) == (r["book_spread"] > 0)),
     ("short_fav", "Short favorite (<10)", "spread",
      lambda r: (r["pick"] == r["home"]) != (r["book_spread"] > 0) and abs(r["book_spread"]) < 10),
     ("under", "Under lean", "total", lambda r: r.get("ou_pick") == "Under"),

@@ -69,7 +69,7 @@
       "ml_home": null,
       "ml_away": null,
       "ml_edge": null,
-      "top_plays": [
+      "top5_dropped": [
         {
           "type": "Spread",
           "side": "Mississippi Valley St.",
@@ -80,6 +80,8 @@
           "be": 0.541,
           "why": "KenPom +27.9 vs. line +36.5",
           "game": "42b2cb705a43bbb8640e0c9b22eee512",
+          "red_flag": "Betting against a cold team: New Mexico has been trailing its KenPom projection",
+          "would_rank": 5,
           "matchup": "Mississippi Valley St. @ New Mexico",
           "tip": "9:00 PM",
           "neutral": false,
@@ -226,7 +228,26 @@
       },
       "ml_home": null,
       "ml_away": null,
-      "ml_edge": null
+      "ml_edge": null,
+      "top5_dropped": [
+        {
+          "type": "Spread",
+          "side": "Jackson St.",
+          "line": 35.5,
+          "price": -115,
+          "book": "MGM",
+          "prob": 0.624,
+          "be": 0.535,
+          "why": "KenPom +27.5 vs. line +35.5",
+          "game": "85499376173e989c80df07ac68e7ce5f",
+          "red_flag": "Betting against a cold team: Oklahoma St. has been trailing its KenPom projection",
+          "would_rank": 6,
+          "matchup": "Jackson St. @ Oklahoma St.",
+          "tip": "3:00 PM",
+          "neutral": false,
+          "same_game": false
+        }
+      ]
     },
     {
       "id": "96400c42956813a9fac6908794caa184",
@@ -288,7 +309,24 @@
       },
       "ml_home": null,
       "ml_away": null,
-      "ml_edge": null
+      "ml_edge": null,
+      "top_plays": [
+        {
+          "type": "Spread",
+          "side": "Southern",
+          "line": 35.5,
+          "price": -104,
+          "book": "FD",
+          "prob": 0.611,
+          "be": 0.51,
+          "why": "KenPom +28.4 vs. line +35.5",
+          "game": "96400c42956813a9fac6908794caa184",
+          "matchup": "Southern @ Nebraska",
+          "tip": "5:00 PM",
+          "neutral": false,
+          "same_game": false
+        }
+      ]
     },
     {
       "id": "47afd1035c7a612b40883776528fff6c",
@@ -926,7 +964,7 @@
       "ml_home": 170,
       "ml_away": -205,
       "ml_edge": 0.028,
-      "top_plays": [
+      "top5_dropped": [
         {
           "type": "Moneyline",
           "side": "Texas A&M",
@@ -937,6 +975,8 @@
           "be": 0.672,
           "why": "Model 68% vs. market 65%",
           "game": "121900856124ad773bef8181c1d657f8",
+          "red_flag": "Betting against a cold team: Xavier has been trailing its KenPom projection",
+          "would_rank": 1,
           "matchup": "Texas A&M @ Xavier",
           "tip": "2:30 PM",
           "neutral": true,
@@ -1579,7 +1619,24 @@
       },
       "ml_home": -150,
       "ml_away": 125,
-      "ml_edge": 0.029
+      "ml_edge": 0.029,
+      "top_plays": [
+        {
+          "type": "Moneyline",
+          "side": "UC Riverside",
+          "line": null,
+          "price": -150,
+          "book": "median",
+          "prob": 0.601,
+          "be": 0.6,
+          "why": "Model 60% vs. market 57%",
+          "game": "de0e429297ac691f955fcfe5e00bd8d6",
+          "matchup": "Portland St. @ UC Riverside",
+          "tip": "5:00 PM",
+          "neutral": false,
+          "same_game": false
+        }
+      ]
     },
     {
       "id": "9e899ca479a32439945504fc79ad4f15",
@@ -3489,21 +3546,6 @@
   "top5": [
     {
       "type": "Moneyline",
-      "side": "Texas A&M",
-      "line": null,
-      "price": -205,
-      "book": "median",
-      "prob": 0.678,
-      "be": 0.672,
-      "why": "Model 68% vs. market 65%",
-      "game": "121900856124ad773bef8181c1d657f8",
-      "matchup": "Texas A&M @ Xavier",
-      "tip": "2:30 PM",
-      "neutral": true,
-      "same_game": false
-    },
-    {
-      "type": "Moneyline",
       "side": "The Citadel",
       "line": null,
       "price": -170,
@@ -3549,6 +3591,55 @@
     },
     {
       "type": "Spread",
+      "side": "Southern",
+      "line": 35.5,
+      "price": -104,
+      "book": "FD",
+      "prob": 0.611,
+      "be": 0.51,
+      "why": "KenPom +28.4 vs. line +35.5",
+      "game": "96400c42956813a9fac6908794caa184",
+      "matchup": "Southern @ Nebraska",
+      "tip": "5:00 PM",
+      "neutral": false,
+      "same_game": false
+    },
+    {
+      "type": "Moneyline",
+      "side": "UC Riverside",
+      "line": null,
+      "price": -150,
+      "book": "median",
+      "prob": 0.601,
+      "be": 0.6,
+      "why": "Model 60% vs. market 57%",
+      "game": "de0e429297ac691f955fcfe5e00bd8d6",
+      "matchup": "Portland St. @ UC Riverside",
+      "tip": "5:00 PM",
+      "neutral": false,
+      "same_game": false
+    }
+  ],
+  "top5_dropped": [
+    {
+      "type": "Moneyline",
+      "side": "Texas A&M",
+      "line": null,
+      "price": -205,
+      "book": "median",
+      "prob": 0.678,
+      "be": 0.672,
+      "why": "Model 68% vs. market 65%",
+      "game": "121900856124ad773bef8181c1d657f8",
+      "red_flag": "Betting against a cold team: Xavier has been trailing its KenPom projection",
+      "would_rank": 1,
+      "matchup": "Texas A&M @ Xavier",
+      "tip": "2:30 PM",
+      "neutral": true,
+      "same_game": false
+    },
+    {
+      "type": "Spread",
       "side": "Mississippi Valley St.",
       "line": 36.5,
       "price": -118,
@@ -3557,13 +3648,31 @@
       "be": 0.541,
       "why": "KenPom +27.9 vs. line +36.5",
       "game": "42b2cb705a43bbb8640e0c9b22eee512",
+      "red_flag": "Betting against a cold team: New Mexico has been trailing its KenPom projection",
+      "would_rank": 5,
       "matchup": "Mississippi Valley St. @ New Mexico",
       "tip": "9:00 PM",
       "neutral": false,
       "same_game": false
+    },
+    {
+      "type": "Spread",
+      "side": "Jackson St.",
+      "line": 35.5,
+      "price": -115,
+      "book": "MGM",
+      "prob": 0.624,
+      "be": 0.535,
+      "why": "KenPom +27.5 vs. line +35.5",
+      "game": "85499376173e989c80df07ac68e7ce5f",
+      "red_flag": "Betting against a cold team: Oklahoma St. has been trailing its KenPom projection",
+      "would_rank": 6,
+      "matchup": "Jackson St. @ Oklahoma St.",
+      "tip": "3:00 PM",
+      "neutral": false,
+      "same_game": false
     }
   ],
-  "top5_dropped": [],
   "green_plays": [],
   "unmatched": [],
   "avg_o": 107.8,
@@ -27673,6 +27782,22 @@
           "pct": 0.368
         },
         "status": "yellow"
+      },
+      {
+        "key": "neutral_dog",
+        "label": "Neutral-site underdog",
+        "kind": "spread",
+        "all": {
+          "w": 40,
+          "l": 29,
+          "pct": 0.58
+        },
+        "recent": {
+          "w": 23,
+          "l": 17,
+          "pct": 0.575
+        },
+        "status": "green"
       },
       {
         "key": "short_fav",

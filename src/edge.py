@@ -334,22 +334,34 @@ def top_plays(games, trend=None):
     """Most likely plays of the day: spreads and moneylines only, highest win probability,
     at most 2 per game. Team-trend situations are shown on the cards but no longer drop plays
     (replays showed hot teams revert, so 'fading a green team' was the best spot, not the worst)."""
+    trend = trend or {}
     by_id = {g["id"]: g for g in games}
     ranked = sorted((c for g in games for c in candidate_plays(g) if c["type"] in TOP_TYPES),
                     key=lambda c: -c["prob"])
-    chosen, per_game = [], {}
-    for c in ranked:
-        if per_game.get(c["game"], 0) >= MAX_PER_GAME:
-            continue
-        chosen.append(c); per_game[c["game"]] = per_game.get(c["game"], 0) + 1
+    chosen, dropped, per_game = [], [], {}
+    for i, c in enumerate(ranked):
         if len(chosen) == TOP_N:
             break
+        if per_game.get(c["game"], 0) >= MAX_PER_GAME:
+            continue
+        g = by_id[c["game"]]
+        faded = g["away"] if c["side"] == g["home"] else g["home"]
+        if trend_status(trend, faded) == "red":
+            # betting against a cold team: 8-13 when added Nov 25; cold teams tend to bounce back
+            dropped.append(dict(c, red_flag=f"Betting against a cold team: {faded} has been trailing its KenPom projection",
+                                would_rank=i + 1))
+            continue
+        chosen.append(c); per_game[c["game"]] = per_game.get(c["game"], 0) + 1
     for c in chosen:
         g = by_id[c["game"]]
         c.update({"matchup": f"{g['away']} @ {g['home']}", "tip": g["tip"], "neutral": g["neutral"],
                   "same_game": per_game[c["game"]] > 1})
         g.setdefault("top_plays", []).append(c)
-    return chosen, []
+    for c in dropped:
+        g = by_id[c["game"]]
+        c.update({"matchup": f"{g['away']} @ {g['home']}", "tip": g["tip"], "neutral": g["neutral"], "same_game": False})
+        g.setdefault("top5_dropped", []).append(c)
+    return chosen, dropped
 
 
 # ------------------------------------------------------------ Green cards ---
