@@ -1,0 +1,82 @@
+{
+ "frozen_at": "Nov 25, 2026 9:33 AM ET",
+ "top5": [
+  {
+   "type": "Moneyline",
+   "side": "Texas A&M",
+   "line": null,
+   "price": -205,
+   "book": "median",
+   "prob": 0.678,
+   "be": 0.672,
+   "why": "Model 68% vs. market 65%",
+   "game": "121900856124ad773bef8181c1d657f8",
+   "matchup": "Texas A&M @ Xavier",
+   "tip": "2:30 PM",
+   "neutral": true,
+   "same_game": false
+  },
+  {
+   "type": "Moneyline",
+   "side": "The Citadel",
+   "line": null,
+   "price": -170,
+   "book": "median",
+   "prob": 0.673,
+   "be": 0.63,
+   "why": "Model 67% vs. market 61%",
+   "game": "47afd1035c7a612b40883776528fff6c",
+   "matchup": "USC Upstate @ The Citadel",
+   "tip": "7:00 PM",
+   "neutral": false,
+   "same_game": false
+  },
+  {
+   "type": "Moneyline",
+   "side": "LSU",
+   "line": null,
+   "price": -190,
+   "book": "median",
+   "prob": 0.664,
+   "be": 0.655,
+   "why": "Model 66% vs. market 63%",
+   "game": "be3aefca8fa30c9f2569e0523c7c1b1e",
+   "matchup": "LSU @ Arizona St.",
+   "tip": "2:00 PM",
+   "neutral": true,
+   "same_game": false
+  },
+  {
+   "type": "Spread",
+   "side": "Arkansas Pine Bluff",
+   "line": 22.5,
+   "price": -118,
+   "book": "DK",
+   "prob": 0.64,
+   "be": 0.541,
+   "why": "KenPom +13.2 vs. line +22.5",
+   "game": "d493eae11aafe56f0c7dd6ba33cd5c7a",
+   "matchup": "Arkansas Pine Bluff @ South Dakota",
+   "tip": "2:00 PM",
+   "neutral": false,
+   "same_game": false
+  },
+  {
+   "type": "Spread",
+   "side": "Mississippi Valley St.",
+   "line": 36.5,
+   "price": -118,
+   "book": "MGM",
+   "prob": 0.632,
+   "be": 0.541,
+   "why": "KenPom +27.9 vs. line +36.5",
+   "game": "42b2cb705a43bbb8640e0c9b22eee512",
+   "matchup": "Mississippi Valley St. @ New Mexico",
+   "tip": "9:00 PM",
+   "neutral": false,
+   "same_game": false
+  }
+ ],
+ "top5_dropped": [],
+ "green_plays": []
+}
