@@ -1,0 +1,82 @@
+{
+ "frozen_at": "Nov 26, 2026 12:05 PM ET",
+ "top5": [
+  {
+   "type": "Moneyline",
+   "side": "St. John's",
+   "line": null,
+   "price": -130,
+   "book": "median",
+   "prob": 0.577,
+   "be": 0.565,
+   "why": "Model 58% vs. market 54%",
+   "game": "3cb03cfb4f93a60fd1ce506ee8555130",
+   "matchup": "St. John's @ Louisville",
+   "tip": "9:00 PM",
+   "neutral": true,
+   "same_game": false
+  },
+  {
+   "type": "Spread",
+   "side": "San Diego St.",
+   "line": 4.5,
+   "price": -110,
+   "book": "DK",
+   "prob": 0.57,
+   "be": 0.524,
+   "why": "KenPom +0.2 vs. line +4.5",
+   "game": "fce1d0e39b7353f5d69bc77cf21ee9d1",
+   "matchup": "Maryland @ San Diego St.",
+   "tip": "1:00 PM",
+   "neutral": true,
+   "same_game": false
+  },
+  {
+   "type": "Moneyline",
+   "side": "USC",
+   "line": null,
+   "price": -120,
+   "book": "median",
+   "prob": 0.558,
+   "be": 0.545,
+   "why": "Model 56% vs. market 53%",
+   "game": "ee08c726d8d81a0755cfa29f92cdedff",
+   "matchup": "Utah St. @ USC",
+   "tip": "4:30 PM",
+   "neutral": true,
+   "same_game": false
+  },
+  {
+   "type": "Spread",
+   "side": "Texas",
+   "line": -7.5,
+   "price": -115,
+   "book": "DK",
+   "prob": 0.549,
+   "be": 0.535,
+   "why": "KenPom -10.5 vs. line -7.5",
+   "game": "1ea8ceedbe8d577ba3c6ed8239137c4c",
+   "matchup": "Georgetown @ Texas",
+   "tip": "2:30 PM",
+   "neutral": true,
+   "same_game": false
+  },
+  {
+   "type": "Spread",
+   "side": "Pacific",
+   "line": -7.5,
+   "price": -110,
+   "book": "ESPN",
+   "prob": 0.548,
+   "be": 0.524,
+   "why": "KenPom -10.4 vs. line -7.5",
+   "game": "f8c8f160933b1de8443aee985386d93f",
+   "matchup": "Nebraska Omaha @ Pacific",
+   "tip": "10:30 PM",
+   "neutral": true,
+   "same_game": false
+  }
+ ],
+ "top5_dropped": [],
+ "green_plays": []
+}
