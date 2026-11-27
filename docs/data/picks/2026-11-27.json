@@ -1,0 +1,82 @@
+{
+ "frozen_at": "Nov 27, 2026 5:52 PM ET",
+ "top5": [
+  {
+   "type": "Moneyline",
+   "side": "Penn",
+   "line": null,
+   "price": -170,
+   "book": "median",
+   "prob": 0.65,
+   "be": 0.63,
+   "why": "Model 65% vs. market 60%",
+   "game": "41c094906504126724c665a8f8cbd73a",
+   "matchup": "Towson @ Penn",
+   "tip": "6:00 PM",
+   "neutral": false,
+   "same_game": false
+  },
+  {
+   "type": "Spread",
+   "side": "Tennessee",
+   "line": 3.5,
+   "price": -107,
+   "book": "DK",
+   "prob": 0.599,
+   "be": 0.517,
+   "why": "KenPom -2.7 vs. line +3.5",
+   "game": "8df0c9cd54ab128fd63e0f56b9ee0a2e",
+   "matchup": "Tennessee @ Louisville",
+   "tip": "9:00 PM",
+   "neutral": true,
+   "same_game": false
+  },
+  {
+   "type": "Spread",
+   "side": "Western Kentucky",
+   "line": 27.5,
+   "price": -116,
+   "book": "DK",
+   "prob": 0.573,
+   "be": 0.537,
+   "why": "KenPom +23.0 vs. line +27.5",
+   "game": "1f87dcbca697a752ec04a6d6294636f0",
+   "matchup": "Western Kentucky @ Illinois",
+   "tip": "6:00 PM",
+   "neutral": false,
+   "same_game": false
+  },
+  {
+   "type": "Spread",
+   "side": "Oakland",
+   "line": 36.5,
+   "price": -115,
+   "book": "MGM",
+   "prob": 0.564,
+   "be": 0.535,
+   "why": "KenPom +32.6 vs. line +36.5",
+   "game": "9666ebe69d71e8c0cf9a8f7ed988130b",
+   "matchup": "Oakland @ Houston",
+   "tip": "7:30 PM",
+   "neutral": false,
+   "same_game": false
+  },
+  {
+   "type": "Spread",
+   "side": "Alabama",
+   "line": 2.5,
+   "price": -118,
+   "book": "FD",
+   "prob": 0.557,
+   "be": 0.541,
+   "why": "KenPom -1.0 vs. line +2.5",
+   "game": "692fbccb2725151453aade80cc1002a4",
+   "matchup": "Miami FL @ Alabama",
+   "tip": "8:30 PM",
+   "neutral": true,
+   "same_game": false
+  }
+ ],
+ "top5_dropped": [],
+ "green_plays": []
+}
