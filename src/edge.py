@@ -346,8 +346,9 @@ def top_plays(games, trend=None):
             continue
         g = by_id[c["game"]]
         faded = g["away"] if c["side"] == g["home"] else g["home"]
-        if trend_status(trend, faded) == "red":
-            # betting against a cold team: 8-13 when added Nov 25; cold teams tend to bounce back
+        if False and trend_status(trend, faded) == "red":
+            # Nov 25 rule (drop bets against a cold team) reverted Nov 27: went 0-3 on day one and
+            # the spot regressed to 15-16. Team trends stay as card notes only.
             dropped.append(dict(c, red_flag=f"Betting against a cold team: {faded} has been trailing its KenPom projection",
                                 would_rank=i + 1))
             continue
