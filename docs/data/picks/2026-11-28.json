@@ -1,0 +1,82 @@
+{
+ "frozen_at": "Nov 28, 2026 11:14 AM ET",
+ "top5": [
+  {
+   "type": "Moneyline",
+   "side": "Minnesota",
+   "line": null,
+   "price": -275,
+   "book": "median",
+   "prob": 0.737,
+   "be": 0.733,
+   "why": "Model 74% vs. market 70%",
+   "game": "2969a91168251baffa46c87c548deab4",
+   "matchup": "California @ Minnesota",
+   "tip": "8:00 PM",
+   "neutral": true,
+   "same_game": false
+  },
+  {
+   "type": "Moneyline",
+   "side": "American",
+   "line": null,
+   "price": -180,
+   "book": "median",
+   "prob": 0.661,
+   "be": 0.643,
+   "why": "Model 66% vs. market 62%",
+   "game": "f74785461a18d105d8e622152c252eab",
+   "matchup": "UMass Lowell @ American",
+   "tip": "4:00 PM",
+   "neutral": false,
+   "same_game": false
+  },
+  {
+   "type": "Spread",
+   "side": "Alcorn St.",
+   "line": 27.5,
+   "price": -113,
+   "book": "DK",
+   "prob": 0.629,
+   "be": 0.531,
+   "why": "KenPom +19.1 vs. line +27.5",
+   "game": "6b7546051f151f75d04c67037d323b96",
+   "matchup": "Alcorn St. @ Georgia Tech",
+   "tip": "1:00 PM",
+   "neutral": false,
+   "same_game": false
+  },
+  {
+   "type": "Spread",
+   "side": "Prairie View A&M",
+   "line": 33.5,
+   "price": -112,
+   "book": "DK",
+   "prob": 0.624,
+   "be": 0.528,
+   "why": "KenPom +25.5 vs. line +33.5",
+   "game": "01b42eb6b1e23ee85c7d97b0c211ef15",
+   "matchup": "Prairie View A&M @ Iowa",
+   "tip": "2:00 PM",
+   "neutral": false,
+   "same_game": false
+  },
+  {
+   "type": "Moneyline",
+   "side": "Hofstra",
+   "line": null,
+   "price": -118,
+   "book": "median",
+   "prob": 0.613,
+   "be": 0.541,
+   "why": "Model 61% vs. market 52%",
+   "game": "8ec4611ab3948ec44a5bf544d46e2be5",
+   "matchup": "Merrimack @ Hofstra",
+   "tip": "3:30 PM",
+   "neutral": false,
+   "same_game": false
+  }
+ ],
+ "top5_dropped": [],
+ "green_plays": []
+}
